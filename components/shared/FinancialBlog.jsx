@@ -14,7 +14,7 @@ const FinancialBlog = ({ className = "dark:bg-dark pb-150 pt-150" }) => {
         "https://daikimedia.com/wp-json/wp/v2/posts?page=1&per_page=3"
       );
       if (!response.ok) {
-        throw new Error("Failed to fetch blog data");
+        throw new Error("Failed to fetch blogs data");
       }
       const data = await response.json();
       setBlogs(data);
