@@ -28,11 +28,10 @@ const playfair = Playfair_Display({
 
 export const metadata = {
   title: {
-    default: "Daiki Media - Aplio Sass Landing Page",
-    template: "%s - Aplio Sass Landing Page",
+    default: "Daiki Media | Expert SEO & Website Development Agency",
   },
   description:
-    "Aplio is an exceptional Next js template tailored for SaaS landing websites. Embodying the essence of modern SaaS platforms.",
+    "Daiki Media offers top-notch SEO and website development services to help businesses grow online. Build stunning websites, improve search rankings, and boost traffic with our expert team. Contact us today!",
 };
 
 export default function RootLayout({ children }) {
