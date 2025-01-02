@@ -1,0 +1,40 @@
+{
+  "ClientData": [
+    {
+      "id": 1,
+      "imageLight": "/images/clients/buds-organic-logo.webp",
+      "imageDark": "/images/clients/buds-organic-logo.webp"
+    },
+
+    {
+      "id": 3,
+      "imageLight": "/images/clients/doc-on-call-logo.svg",
+      "imageDark": "/images/clients/doc-on-call-logo.svg"
+    },
+    {
+      "id": 4,
+      "imageLight": "/images/clients/sehat-hair-logo.png",
+      "imageDark": "/images/clients/sehat-hair-logo.png"
+    },
+    {
+      "id": 5,
+      "imageLight": "/images/clients/speed-home-logo.svg",
+      "imageDark": "/images/clients/speed-home-logo.svg"
+    },
+    {
+      "id": 6,
+      "imageLight": "/images/clients/mplus-logo.avif",
+      "imageDark": "/images/clients/mplus-logo.avif"
+    },
+    {
+      "id": 7,
+      "imageLight": "/images/clients/sevengift-logo.png",
+      "imageDark": "/images/clients/sevengift-logo.png"
+    },
+    {
+      "id": 8,
+      "imageLight": "/images/clients/uni-logo.webp",
+      "imageDark": "/images/clients/uni-logo.webp"
+    }
+  ]
+}

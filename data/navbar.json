@@ -1,0 +1,232 @@
+{
+  "menuData": {
+    "logoLight": "/images/logo.png",
+    "logoDark": "/images/logo-light.svg",
+    "btnLlink": "/request-demo",
+    "menuContent": [
+      {
+        "id": 1,
+        "title": "Home",
+        "path": "/",
+        "newTab": false
+      },
+      {
+        "id": 2,
+        "title": "About",
+        "path": "/about",
+        "newTab": false
+      },
+      {
+        "id": 3,
+        "title": "SEO Services",
+        "newTab": false,
+        "megaMenu": true,
+        "submenu": [
+          {
+            "id": 3.1,
+            "header": "origanic search",
+            "path": "#",
+            "newTab": false
+          },
+          {
+            "id": 3.1,
+            "title": "SEO Services",
+            "path": "/services/seo-services",
+            "newTab": false
+          },
+          {
+            "id": 3.1,
+            "title": "Enterprise SEO Services",
+            "path": "/services/enterprise-seo-services",
+            "newTab": false
+          },
+          {
+            "id": 3.1,
+            "title": "Digital Marketing Services",
+            "path": "/services/digital-marketing-services",
+            "newTab": false
+          },
+          {
+            "id": 3.1,
+            "title": "Local SEO Services",
+            "path": "/services/local-seo-services",
+            "newTab": false
+          },
+          {
+            "id": 3.1,
+            "title": "Google Local Services Ads Management",
+            "path": "/services/google-local-services-ads",
+            "newTab": false
+          },
+          {
+            "id": 3.1,
+            "title": "SEO Audits",
+            "path": "/services/seo-audits-services",
+            "newTab": false
+          },
+          {
+            "id": 3.1,
+            "title": "Generative Engine & Chat Optimization",
+            "path": "/services/generative-engine-optimization",
+            "newTab": false
+          },
+          {
+            "id": 3.2,
+            "header": "Digital Advertising",
+            "path": "#",
+            "newTab": false
+          },
+          {
+            "id": 3.2,
+            "title": "PPC Management Services",
+            "path": "/services/ppc-management",
+            "newTab": false
+          },
+          {
+            "id": 3.2,
+            "title": "Enterprise PPC Management Services",
+            "path": "/services/enterprise-ppc-management",
+            "newTab": false
+          },
+          {
+            "id": 3.2,
+            "title": "Social Media Advertising",
+            "path": "/services/social-media-advertising",
+            "newTab": false
+          },
+          {
+            "id": 3.2,
+            "title": "Enterprise Social Media Advertising",
+            "path": "/services/enterprise-social-media-advertising",
+            "newTab": false
+          },
+          {
+            "id": 3.2,
+            "title": "Programmatic Advertising Solutions",
+            "path": "/services/programmatic-advertising-solutions",
+            "newTab": false
+          },
+          {
+            "id": 3.2,
+            "title": "Geographical Fencing Technology",
+            "path": "/services/addressable-geofencing-advertising",
+            "newTab": false
+          },
+          {
+            "id": 3.3,
+            "header": "Ecommerce",
+            "path": "#",
+            "newTab": false
+          },
+          {
+            "id": 3.3,
+            "title": "Ecommerce SEO Services",
+            "path": "/services/ecommerce-seo-strategies",
+            "newTab": false
+          },
+          {
+            "id": 3.3,
+            "title": "Ecommerce PPC Campaigns",
+            "path": "/services/ecommerce-ppc-campaigns",
+            "newTab": false
+          },
+          {
+            "id": 3.3,
+            "title": "Ecommerce Social Media Advertising",
+            "path": "/services/ecommerce-social-media-advertising",
+            "newTab": false
+          },
+          {
+            "id": 3.3,
+            "title": "Ecommerce Website Development Services",
+            "path": "/services/ecommerce-website-development",
+            "newTab": false
+          },
+          {
+            "id": 3.3,
+            "title": "Shopping Feed Automation",
+            "path": "/services/shopping-feed-automation",
+            "newTab": false
+          },
+          {
+            "id": 3.3,
+            "title": "Digital Marketing Services",
+            "path": "/services/ecommerce-digital-marketing",
+            "newTab": false
+          },
+          {
+            "id": 3.3,
+            "title": "Ecommerce Marketing Resources",
+            "path": "/services/ecommerce-marketing-resource",
+            "newTab": false
+          },
+          {
+            "id": 3.4,
+            "header": "Learn",
+            "path": "#",
+            "newTab": false
+          },
+          {
+            "id": 3.4,
+            "title": "Our SEO Results",
+            "path": "/learn/our-seo-results",
+            "newTab": false
+          },
+          {
+            "id": 3.4,
+            "title": "What Is an SEO Company?",
+            "path": "/learn/what-is-seo-company",
+            "newTab": false
+          },
+          {
+            "id": 3.4,
+            "title": "Who Is the Best SEO Company?",
+            "path": "/learn/who-is-best-seo-company",
+            "newTab": false
+          },
+          {
+            "id": 3.4,
+            "title": "SEO Guide for Marketing Managers",
+            "path": "/learn/seo-guide-for-managers",
+            "newTab": false
+          },
+          {
+            "id": 3.4,
+            "title": "What Is Digital Marketing?",
+            "path": "/learn/what-is-digital-marketing",
+            "newTab": false
+          },
+          {
+            "id": 3.4,
+            "title": "Best Digital Marketing Tools",
+            "path": "/learn/best-marketing-tools",
+            "newTab": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Website",
+        "path": "/services/web-development",
+        "newTab": false
+      },
+      {
+        "id": 5,
+        "title": "Copywriting",
+        "path": "/services/copywriting-services",
+        "newTab": false
+      },
+      {
+        "id": 6,
+        "title": "Blog",
+        "path": "/blog"
+      },
+      {
+        "id": 7,
+        "title": "Contact Us",
+        "path": "/contact",
+        "newTab": false
+      }
+    ]
+  }
+}

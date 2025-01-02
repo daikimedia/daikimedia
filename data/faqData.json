@@ -1,0 +1,48 @@
+{
+  "FAQData": [
+    {
+      "id": 1,
+      "type": [
+        "general",
+        "changelog"
+      ],
+      "question": "What is a digital agency and how can it help my business?",
+      "answer": "A digital agency like daiki media is a strategic partner that helps businesses thrive in the digital landscape. We provide comprehensive digital solutions including web development, app creation, digital marketing, UI/UX design, and SEO services. Our team of experts combines creative innovation with technical expertise to help businesses increase their online visibility, engage customers more effectively, and drive sustainable growth through digital channels."
+    },
+    {
+      "id": 2,
+      "type": [
+        "general"
+      ],
+      "question": "What services does daiki media provide?",
+      "answer": "daiki media offers a full spectrum of digital services including custom website and app development, digital marketing and SEO optimization, UI/UX design and branding, content creation and copywriting, social media management, e-commerce solutions, and digital strategy consulting. Each service is tailored to meet your specific business goals and target audience needs, ensuring maximum impact and ROI for your digital investments."
+    },
+    {
+      "id": 3,
+      "type": [
+        "general",
+        "changelog"
+      ],
+      "question": "How do you measure and report on digital marketing success?",
+      "answer": "We believe in transparent, data-driven results. Our reporting process includes monthly performance analytics reports, real-time campaign tracking dashboards, KPI monitoring, ROI analysis, and regular strategy review meetings. We use advanced analytics tools to track metrics that matter to your business, from website traffic and conversion rates to social media engagement and search rankings."
+    },
+    {
+      "id": 4,
+      "type": [
+        "general",
+        "terms"
+      ],
+      "question": "What makes daiki media different from other digital agencies?",
+      "answer": "daiki media stands out through our data-driven approach to digital solutions, custom strategies tailored to your business goals, experienced team of digital specialists, continuous learning and adaptation to digital trends, focus on measurable results and ROI, transparent communication and reporting, and long-term partnership approach. We combine technical expertise with creative innovation to deliver solutions that drive real business growth."
+    },
+    {
+      "id": 5,
+      "type": [
+        "changelog",
+        "terms"
+      ],
+      "question": "How do you approach project timelines and communication?",
+      "answer": "We maintain clear, consistent communication throughout every project through detailed project timelines with key milestones, regular progress updates and check-ins, dedicated project managers, real-time collaboration tools, clear deliverables and expectations, and agile methodology for flexible adaptation. Our goal is to make the process transparent and efficient while delivering high-quality results on schedule."
+    }
+  ]
+}
