@@ -1,38 +1,49 @@
-"use client";
 import Footer from "@/components/footer/Footer";
 import NewsLetter from "@/components/shared/NewsLetter";
 import PageHero from "@/components/shared/PageHero";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
-import { useEffect, useState } from "react";
 
-const BlogDetails = ({ params }) => {
-  const [blog, setBlog] = useState(null);
-
-  useEffect(() => {
-    if (!params.slug) return;
-
-    const fetchBlogPost = async () => {
-      try {
-        const response = await fetch(
-          `https://daiki.media/wp-json/wp/v2/posts?slug=${params.slug}`
-        );
-        const result = await response.json();
-        setBlog(result[0]);
-      } catch (error) {
-        console.error("Error fetching blog post:", error);
+async function getBlogData(slug) {
+  try {
+    const response = await fetch(
+      `https://daiki.media/wp-json/wp/v2/posts?slug=${slug}`,
+      {
+        next: { revalidate: 10 },
       }
-    };
+    );
 
-    fetchBlogPost();
-  }, [params.slug]);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch blog data: ${response.status}`);
+    }
+
+    const result = await response.json();
+    return result.length > 0 ? result[0] : null;
+  } catch (error) {
+    console.error("Error fetching blog data:", error);
+    return null;
+  }
+}
+
+export default async function BlogDetails({ params }) {
+  const { slug } = params;
+  const blog = await getBlogData(slug);
 
   if (!blog) {
     return (
       <div className="flex justify-center items-center h-screen">
-        <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-gray-900"></div>
+        <p className="text-lg text-gray-700">
+          Blog post not found or failed to load.
+        </p>
       </div>
     );
   }
+
+  const decodeHtmlEntities = (html) => {
+    if (typeof window === "undefined") return html; // Prevent SSR issues
+    const textArea = document.createElement("textarea");
+    textArea.innerHTML = html;
+    return textArea.value;
+  };
 
   return (
     <>
@@ -40,15 +51,20 @@ const BlogDetails = ({ params }) => {
       <main className="flex flex-col items-center justify-center min-h-screen">
         <PageHero
           subtitle="BLOG Details"
-          title="Recent blogs created <br/> by aplio"
+          title="Recent blogs created <br/> by Daikai Media"
         />
         <article className="relative pb-150 w-full max-w-4xl mx-auto text-center">
           <div className="absolute -top-[250px] left-1/2 -z-10 h-[550px] w-full -translate-x-1/2 bg-[url('/images/hero-gradient.png')] bg-cover bg-center bg-no-repeat opacity-70 md:hidden"></div>
           <div className="container relative">
             <div className="mb-16 overflow-hidden rounded-medium p-2.5 max-md:h-[400px] flex justify-center items-center">
               <img
-                src={blog?.yoast_head_json?.og_image?.[0]?.url}
-                alt={blog.title.rendered || "Blog image"}
+                src={
+                  blog.yoast_head_json?.og_image?.[0]?.url ||
+                  "/images/default-blog.jpg"
+                }
+                alt={decodeHtmlEntities(
+                  blog.title?.rendered || "Untitled Blog"
+                )}
                 className="rounded max-md:h-full max-md:object-cover w-[700px] h-[500px] max-md:object-center"
                 width={400}
                 height={300}
@@ -57,10 +73,12 @@ const BlogDetails = ({ params }) => {
 
             <div className="blog-details text-center mb-12">
               <h2 className="text-3xl font-bold md:ml-[120px] mb-4">
-                {blog.title.rendered}
+                {decodeHtmlEntities(blog.title?.rendered || "Untitled Blog")}
               </h2>
               <div className="mb-6 flex items-center justify-center gap-x-2">
-                <p className="text-lg">{blog.author_name}</p>
+                <p className="text-lg">
+                  {blog.author_name || "Unknown Author"}
+                </p>
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +105,9 @@ const BlogDetails = ({ params }) => {
             <div className="blog-details-body text-center">
               <div
                 className="text-gray-700 leading-relaxed mx-auto max-w-4xl"
-                dangerouslySetInnerHTML={{ __html: blog.content.rendered }}
+                dangerouslySetInnerHTML={{
+                  __html: decodeHtmlEntities(blog.content?.rendered || ""),
+                }}
               ></div>
             </div>
           </div>
@@ -98,6 +118,4 @@ const BlogDetails = ({ params }) => {
       <Footer />
     </>
   );
-};
-
-export default BlogDetails;
+}
