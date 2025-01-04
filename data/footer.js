@@ -4,7 +4,7 @@ export const FooterData = {
   logoDark: "/images/logo-light.svg",
   footerText:
     "Boost your online presence with Daiki Media's expert digital marketing, SEO, and web development solutions. Contact us today to grow your brand and reach new customers effectively.",
-  copyright: `${new Date().getFullYear()} Aplio. All Rights Reserved`,
+  copyright: `${new Date().getFullYear()} Daiki Media. All Rights Reserved`,
   email: "lukesh@daikimedia.com",
   phone: "+601114850067",
   expolre: [

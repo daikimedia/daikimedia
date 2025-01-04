@@ -5,7 +5,7 @@
       "featured": false,
       "title": "Basic",
       "desc": "Ideal for startups or small businesses looking to establish an online presence.",
-      "priceMonthly": "19.00",
+      "priceMonthly": "3500",
       "priceYearly": "3500",
       "save": "",
       "priceList": [
@@ -28,7 +28,7 @@
       "featured": true,
       "title": "Standard Plan",
       "desc": "Perfect for growing businesses looking to attract more customers.",
-      "priceMonthly": "32.00",
+      "priceMonthly": "5000",
       "priceYearly": "5000",
       "save": "",
       "priceList": [
@@ -51,7 +51,7 @@
       "featured": false,
       "title": "Premium Plan",
       "desc": "Tailored for businesses that want a full-service digital transformation.",
-      "priceMonthly": "48.00",
+      "priceMonthly": "Custom Pricing",
       "priceYearly": "Custom Pricing",
       "save": "",
       "priceList": [
