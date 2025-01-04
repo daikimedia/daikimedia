@@ -14,7 +14,7 @@ const BlogDetails = ({ params }) => {
     const fetchBlogPost = async () => {
       try {
         const response = await fetch(
-          `https://daikimedia.com/wp-json/wp/v2/posts?slug=${params.slug}`
+          `https://daiki.media/wp-json/wp/v2/posts?slug=${params.slug}`
         );
         const result = await response.json();
         setBlog(result[0]);
@@ -56,7 +56,9 @@ const BlogDetails = ({ params }) => {
             </div>
 
             <div className="blog-details text-center mb-12">
-              <h2 className="text-3xl font-bold md:ml-[120px] mb-4">{blog.title.rendered}</h2>
+              <h2 className="text-3xl font-bold md:ml-[120px] mb-4">
+                {blog.title.rendered}
+              </h2>
               <div className="mb-6 flex items-center justify-center gap-x-2">
                 <p className="text-lg">{blog.author_name}</p>
                 <span>
@@ -76,7 +78,9 @@ const BlogDetails = ({ params }) => {
                     />
                   </svg>
                 </span>
-                <p className="text-lg">{new Date(blog.date).toLocaleDateString()}</p>
+                <p className="text-lg">
+                  {new Date(blog.date).toLocaleDateString()}
+                </p>
               </div>
             </div>
 
@@ -95,6 +99,5 @@ const BlogDetails = ({ params }) => {
     </>
   );
 };
-
 
 export default BlogDetails;

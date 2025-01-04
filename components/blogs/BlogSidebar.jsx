@@ -1,8 +1,8 @@
-'use client';
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+"use client";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 const BlogSidebar = ({ search, setSearch }) => {
   const [activeCategory, setActiveCategory] = useState(null);
@@ -13,15 +13,15 @@ const BlogSidebar = ({ search, setSearch }) => {
 
   // Fetch categories and tags from WordPress API
   useEffect(() => {
-    fetch('https://daikimedia.com/wp-json/wp/v2/categories')
+    fetch("https://daiki.media/wp-json/wp/v2/categories")
       .then((response) => response.json())
       .then((data) => setCategories(data))
-      .catch((error) => console.error('Error fetching categories:', error));
+      .catch((error) => console.error("Error fetching categories:", error));
 
-    fetch('https://daikimedia.com/wp-json/wp/v2/tags')
+    fetch("https://daiki.media/wp-json/wp/v2/tags")
       .then((response) => response.json())
       .then((data) => setTags(data))
-      .catch((error) => console.error('Error fetching tags:', error));
+      .catch((error) => console.error("Error fetching tags:", error));
   }, []);
 
   const handleCategoryClick = (categorySlug) => {
@@ -62,7 +62,7 @@ const BlogSidebar = ({ search, setSearch }) => {
                   key={category.id}
                   onClick={() => handleCategoryClick(category.slug)}
                   className={`relative flex items-center justify-between py-5 w-full text-left font-medium ${
-                    activeCategory === category.slug ? 'bg-gray-200' : ''
+                    activeCategory === category.slug ? "bg-gray-200" : ""
                   }`}
                 >
                   {category.name}
@@ -82,7 +82,7 @@ const BlogSidebar = ({ search, setSearch }) => {
                     key={tag.id}
                     onClick={() => handleTagClick(tag.id)}
                     className={`btn-outline btn-sm ${
-                      activeTag === tag.id ? 'bg-primary text-white' : ''
+                      activeTag === tag.id ? "bg-primary text-white" : ""
                     }`}
                   >
                     {tag.name}
