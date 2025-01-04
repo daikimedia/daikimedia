@@ -8,7 +8,7 @@ import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 import getMarkDownData from "@/utils/getMarkDownData";
 
 export default async function Blog() {
-  const metadataRes = await fetch("https://daikimedia.com/wp-json/wp/v2/posts");
+  const metadataRes = await fetch("https://daiki.media/wp-json/wp/v2/posts");
   const metadata = await metadataRes.json();
 
   const blogs = getMarkDownData("content/blogs");

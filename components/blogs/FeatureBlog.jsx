@@ -13,7 +13,7 @@ const FeatureBlog = () => {
   const fetchBlogs = async () => {
     try {
       const response = await fetch(
-        "https://daikimedia.com/wp-json/wp/v2/posts?page=1&per_page=10"
+        "https://daiki.media/wp-json/wp/v2/posts?page=1&per_page=10"
       );
       if (!response.ok) {
         throw new Error("Failed to fetch blog data");

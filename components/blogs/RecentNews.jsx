@@ -1,34 +1,34 @@
-'use client'
-import { useState, useEffect } from 'react'
-import Pagination from '../shared/Pagination'
-import BlogItems from './BlogItems'
+"use client";
+import { useState, useEffect } from "react";
+import Pagination from "../shared/Pagination";
+import BlogItems from "./BlogItems";
 
 const RecentNews = () => {
-  const [currentPage, setCurrentPage] = useState(1)
-  const [featureBlog, setFeatureBlog] = useState([])
-  const [isLoading, setIsLoading] = useState(true)
-  const itemsPerPage = 12
-  const totalPage = Math.ceil(featureBlog.length / itemsPerPage)
+  const [currentPage, setCurrentPage] = useState(1);
+  const [featureBlog, setFeatureBlog] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const itemsPerPage = 12;
+  const totalPage = Math.ceil(featureBlog.length / itemsPerPage);
 
   const paginateData = () => {
-    const startIndex = (currentPage - 1) * itemsPerPage
-    const endIndex = startIndex + itemsPerPage
-    return featureBlog.slice(startIndex, endIndex)
-  }
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    return featureBlog.slice(startIndex, endIndex);
+  };
 
-  const currentPageData = paginateData()
+  const currentPageData = paginateData();
 
   const goToNextPage = () => {
     if (currentPage < totalPage) {
-      setCurrentPage((prevPage) => prevPage + 1)
+      setCurrentPage((prevPage) => prevPage + 1);
     }
-  }
+  };
 
   const goToPreviousPage = () => {
     if (currentPage > 1) {
-      setCurrentPage((prevPage) => prevPage - 1)
+      setCurrentPage((prevPage) => prevPage - 1);
     }
-  }
+  };
 
   const paginateFunction = {
     totalPage,
@@ -36,37 +36,42 @@ const RecentNews = () => {
     setCurrentPage,
     goToNextPage,
     goToPreviousPage,
-  }
+  };
 
   const fetchBlogs = async () => {
     try {
       const response = await fetch(
-        "https://daikimedia.com/wp-json/wp/v2/posts?page=1&per_page=100"
-      )
+        "https://daiki.media/wp-json/wp/v2/posts?page=1&per_page=100"
+      );
       if (!response.ok) {
-        throw new Error("Failed to fetch blog data")
+        throw new Error("Failed to fetch blog data");
       }
-      const data = await response.json()
+      const data = await response.json();
 
-      setFeatureBlog(data)
-      setIsLoading(false)
+      setFeatureBlog(data);
+      setIsLoading(false);
     } catch (error) {
-      console.error("Error fetching blog data:", error)
-      setIsLoading(false)
+      console.error("Error fetching blog data:", error);
+      setIsLoading(false);
     }
-  }
+  };
 
   useEffect(() => {
-    fetchBlogs()
-  }, [])
+    fetchBlogs();
+  }, []);
 
   return (
     <section className="relative py-150 max-md:py-20">
       <div className="absolute left-1/2 top-20 -z-10 h-[550px] w-full -translate-x-1/2 bg-[url('/images/hero-gradient.png')] bg-cover bg-center bg-no-repeat opacity-70 md:hidden"></div>
       <div className="container relative mb-16">
         <div className="mx-auto mb-16 max-w-[550px] text-center">
-          <p className="section-tagline text-gray-900">Stay updated with the latest trends, news, and insights from the world of Daikai Media.</p>
-          <h2 className="text-2xl font-semibold text-gray-900">Our Recent News & Insights</h2>
+          <p className="section-tagline text-gray-900">
+            Stay updated with the latest trends, news, and insights from the
+            world of Daikai Media.
+          </p>
+          <h2 className="text-2xl font-semibold text-gray-900">
+            Our Recent News & Insights
+          </h2>
         </div>
         <div className="relative z-10">
           <div className="absolute left-1/2 top-60 -z-10 flex -translate-x-1/2 -translate-y-1/2 max-md:hidden max-md:flex-col">
@@ -90,7 +95,7 @@ const RecentNews = () => {
                   date={blog.date}
                   thumbnail={blog?.yoast_head_json?.og_image?.[0]?.url}
                   status={blog.categories}
-                  title={blog.title?.rendered || 'Untitled'}
+                  title={blog.title?.rendered || "Untitled"}
                   column={true}
                 />
               ))}
@@ -100,7 +105,7 @@ const RecentNews = () => {
       </div>
       <Pagination paginateFunction={paginateFunction} />
     </section>
-  )
-}
+  );
+};
 
-export default RecentNews
+export default RecentNews;
