@@ -12,21 +12,19 @@ export async function generateMetadata({ params }) {
 
 export async function generateStaticParams() {
   const careerData = getMarkDownData("content/blogs");
-  return careerData.map((item) => ({ category: item.data.categories,
-  }));
+  return careerData.map((item) => ({ category: item.data.categories }));
 }
-
 
 const CategoryPage = ({ params }) => {
   const blogs = getMarkDownData("content/blogs");
 
   const decodedCategory = decodeURIComponent(
-    params.category.replace(/%20/g, " "),
+    params.category.replace(/%20/g, " ")
   );
 
   // Filter blogs based on the decoded category
   const categoryBlog = blogs.filter(
-    (blog) => blog.data.categories === decodedCategory,
+    (blog) => blog.data.categories === decodedCategory
   );
 
   return (
@@ -35,7 +33,7 @@ const CategoryPage = ({ params }) => {
       <main>
         <PageHero
           subtitle="BLOG Category"
-          title="Recent blogs created <br/> by aplio"
+          title="Recent blogs created <br/> by Daiki Media"
         />
         <section className="relative mb-150">
           <div className="absolute -top-[250px] left-1/2 -z-10 h-[550px] w-full -translate-x-1/2  bg-[url('/images/hero-gradient.png')] bg-cover bg-center bg-no-repeat opacity-70 md:hidden"></div>

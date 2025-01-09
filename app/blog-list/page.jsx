@@ -17,7 +17,7 @@ const BlogListPage = () => {
       <main>
         <PageHero
           subtitle="BLOG LIST"
-          title="Recent blogs created <br/> by aplio"
+          title="Recent blogs created <br/> by Daiki Media"
         />
         <section className="relative mb-150">
           <div className="absolute -top-[250px] left-1/2 -z-10 h-[550px] w-full -translate-x-1/2  bg-[url('/images/hero-gradient.png')] bg-cover bg-center bg-no-repeat opacity-70 md:hidden"></div>

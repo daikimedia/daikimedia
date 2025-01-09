@@ -17,7 +17,7 @@ const CareerPage = () => {
       <main>
         <PageHero
           subtitle="CAREER PAGE"
-          title="Become a part of the <br/> aplio team"
+          title="Become a part of the <br/> Daiki Media team"
         />
         <CareerDetails />
         <PaymentFeatures
