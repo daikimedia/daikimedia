@@ -3,6 +3,7 @@ import "@/scss/theme.scss";
 import PropTypes from "prop-types";
 import { cn } from "@/utils/cn";
 import { Inter, Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
+import Script from "next/script";
 
 const inter = Inter({
   weight: ["200", "300", "400", "500", "600", "700", "800"],
@@ -37,6 +38,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16658963349"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16658963349');
+          `}
+        </Script>
+      </head>
       <body
         className={cn(
           "relative overflow-x-hidden bg-white text-base antialiased dark:bg-dark-300",

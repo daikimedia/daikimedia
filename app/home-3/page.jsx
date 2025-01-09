@@ -15,8 +15,10 @@ import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 
 export const metadata = {
   title: "Banking",
-  description: "Discover Daikai Media's banking services for seamless financial management.",
-  keywords: "Daikai Media, banking services, secure banking, online banking, financial management",
+  description:
+    "Discover Daikai Media's banking services for seamless financial management.",
+  keywords:
+    "Daikai Media, banking services, secure banking, online banking, financial management",
 };
 
 const HomePage3 = () => {
@@ -27,7 +29,7 @@ const HomePage3 = () => {
       <main>
         <PageHero
           subtitle="MONITOR YOUR MONEY"
-          title="The future of business is being <br> shaped by aplio"
+          title="The future of business is being <br> shaped by Daiki Media"
           paragraph="Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin, though it looks like it"
         />
         <BankingDetails />

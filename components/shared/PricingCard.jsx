@@ -24,16 +24,22 @@ const PricingCard = ({ price, isAnnual }) => {
           {isAnnual ? (
             <div className="price-month mb-16">
               <h2>
-                RM<span>{price.priceMonthly}</span>
+                <span>
+                  {price.priceMonthly === "Custom Pricing"
+                    ? "Custom Pricing"
+                    : `RM ${price.priceMonthly}`}
+                </span>
               </h2>
-              <p>Per Month</p>
             </div>
           ) : (
             <div className="price-year mb-16">
               <h2>
-                RM<span>{price.priceYearly}</span>
+                <span>
+                  {price.yearly === "Custom Pricing"
+                    ? "Custom Pricing"
+                    : `RM ${price.yearly}`}
+                </span>
               </h2>
-              <p>Per Month</p>
             </div>
           )}
 

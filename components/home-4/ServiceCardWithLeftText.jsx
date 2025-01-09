@@ -1,57 +1,57 @@
-import financeDarkSVG from '@/public/images/home-4-img/finance-dark.svg'
-import financeSVG from '@/public/images/home-4-img/finance.svg'
-import investmentDarkSVG from '@/public/images/home-4-img/investment-dark.svg'
-import investmentSVG from '@/public/images/home-4-img/investment.svg'
-import salesDarkSVG from '@/public/images/home-4-img/sales-dark.svg'
-import salesSVG from '@/public/images/home-4-img/sales.svg'
-import trackDarkSVG from '@/public/images/home-4-img/track-dark.svg'
-import trackSVG from '@/public/images/home-4-img/track.svg'
-import Image from 'next/image'
-import Link from 'next/link'
+import financeDarkSVG from "@/public/images/home-4-img/finance-dark.svg";
+import financeSVG from "@/public/images/home-4-img/finance.svg";
+import investmentDarkSVG from "@/public/images/home-4-img/investment-dark.svg";
+import investmentSVG from "@/public/images/home-4-img/investment.svg";
+import salesDarkSVG from "@/public/images/home-4-img/sales-dark.svg";
+import salesSVG from "@/public/images/home-4-img/sales.svg";
+import trackDarkSVG from "@/public/images/home-4-img/track-dark.svg";
+import trackSVG from "@/public/images/home-4-img/track.svg";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function ServiceCardWithLeftText() {
   const servicesCard = [
     {
       id: 1,
       svg: investmentSVG,
-      slug: 'finance-analyse',
+      slug: "finance-analyse",
       darkSvg: investmentDarkSVG,
-      title: 'Real-Time Analytics',
+      title: "Real-Time Analytics",
       description:
         "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin, though it looks like it",
-      button: 'See More',
+      button: "See More",
     },
     {
       id: 2,
       svg: financeSVG,
-      slug: 'effeciency',
+      slug: "effeciency",
       darkSvg: financeDarkSVG,
-      title: 'Risk Management',
+      title: "Risk Management",
       description:
         "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin, though it looks like it",
-      button: 'See More',
+      button: "See More",
     },
     {
       id: 3,
       svg: salesSVG,
-      slug: 'sales',
+      slug: "sales",
       darkSvg: salesDarkSVG,
-      title: 'Sales Management',
+      title: "Sales Management",
       description:
         "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin, though it looks like it",
-      button: 'See More',
+      button: "See More",
     },
     {
       id: 4,
       svg: trackSVG,
-      slug: 'finance-analyse',
+      slug: "finance-analyse",
       darkSvg: trackDarkSVG,
-      title: 'Track Conversions',
+      title: "Track Conversions",
       description:
         "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin, though it looks like it",
-      button: 'See More',
+      button: "See More",
     },
-  ]
+  ];
 
   return (
     <section className="container pt-12 ">
@@ -64,11 +64,11 @@ export default function ServiceCardWithLeftText() {
             <h2 className="mb-8">
               The world&apos;s best <br />
               companies trust <br />
-              aplio.
+              Daiki Media.
             </h2>
             <p className="mb-8 max-w-[520px]">
-              Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It&apos;s not Latin,
-              though it looks like it
+              Until recently, the prevailing view assumed lorem ipsum was born
+              as a nonsense text. It&apos;s not Latin, though it looks like it
             </p>
             <Link href="/services" className="btn">
               Get More Services
@@ -88,16 +88,28 @@ export default function ServiceCardWithLeftText() {
               {servicesCard.map((service) => (
                 <div
                   className="relative scale-100 rounded-medium bg-white p-2.5 shadow-nav transition-transform duration-500 hover:scale-105 hover:transition-transform hover:duration-500 dark:bg-dark-200"
-                  key={service.id}>
+                  key={service.id}
+                >
                   <div className="dark:border-borderColour-dark rounded border border-dashed border-gray-100  p-10 dark:border-opacity-15 max-lg:p-5">
-                    <Image src={service.svg} alt="service logo" className="mb-6 inline-block dark:hidden" />
-                    <Image src={service.darkSvg} alt="service logo" className="mb-6 hidden dark:inline-block" />
+                    <Image
+                      src={service.svg}
+                      alt="service logo"
+                      className="mb-6 inline-block dark:hidden"
+                    />
+                    <Image
+                      src={service.darkSvg}
+                      alt="service logo"
+                      className="mb-6 hidden dark:inline-block"
+                    />
 
                     <Link href={`/services/${service.slug}`} className="block">
                       <h3 className="mb-2.5">{service.title}</h3>
                     </Link>
                     <p className="mb-6">{service.description}</p>
-                    <Link href={`/services/${service.slug}`} className="btn-outline btn-sm">
+                    <Link
+                      href={`/services/${service.slug}`}
+                      className="btn-outline btn-sm"
+                    >
                       {service.button}
                     </Link>
                   </div>
@@ -108,5 +120,5 @@ export default function ServiceCardWithLeftText() {
         </div>
       </div>
     </section>
-  )
+  );
 }
