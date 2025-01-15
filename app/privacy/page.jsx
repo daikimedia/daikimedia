@@ -5,13 +5,12 @@ import getMarkDownData from "@/utils/getMarkDownData";
 import ReactMarkdown from "react-markdown";
 
 export const metadata = {
-  title: "Privacy Policy | Daikai Media",
+  title: "Privacy Policy - Learn About Daiki Media’s Data Protection Practices",
   description:
-    "Read Daikai Media's Privacy Policy to understand how we collect, use, and protect your data. We are committed to maintaining the privacy and security of your information while providing our services.",
+    "Review Daiki Media’s privacy policy in KL. Understand how we collect, use, and protect your data while ensuring your privacy.",
   keywords:
     "privacy policy, data protection, user privacy, privacy notice, Daikai Media privacy, data security, information collection",
 };
-
 
 const Privacy = () => {
   const privacy = getMarkDownData("content/privacy/");

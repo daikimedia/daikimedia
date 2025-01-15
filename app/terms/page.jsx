@@ -5,9 +5,11 @@ import GetMarkDownData from "@/utils/getMarkDownData";
 import ReactMarkdown from "react-markdown";
 
 export const metadata = {
-  title: "Terms & Conditions | Daikai Media",
-  description: "Read the Terms & Conditions for using Daikai Media's services. Understand the rules, guidelines, and policies that govern your use of our platform and offerings.",
-  keywords: "Terms & Conditions, Daikai Media, user agreement, legal policies, platform rules, terms of service, privacy policy",
+  title: "Terms of Service - Daiki Media’s Terms and Conditions",
+  description:
+    "Review Daiki Media’s terms of service in KL. Understand our policies, user rights, and obligations for using our digital marketing services.",
+  keywords:
+    "Terms & Conditions, Daikai Media, user agreement, legal policies, platform rules, terms of service, privacy policy",
   author: "Daikai Media Team",
   robots: "index, follow",
 };

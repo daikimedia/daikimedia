@@ -3,6 +3,12 @@ import { useState, useEffect } from "react";
 import Pagination from "../shared/Pagination";
 import BlogItems from "./BlogItems";
 
+export const metadata = {
+  title: "Daiki Media Blog - Insights on Digital Marketing and Strategies",
+  description:
+    "Stay updated with Daiki Media's blog in KL. Explore expert insights, tips, and strategies on SEO, PPC, social media, and more.",
+};
+
 const BlogList = ({ blogItemData }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 1;

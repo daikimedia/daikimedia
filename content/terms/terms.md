@@ -1,37 +1,68 @@
----
-title: Terms & Conditions
----
+# Terms & Conditions
 
-At Aplio, we take your privacy seriously. This privacy policy explains how we collect, use, and protect your personal information.
+Welcome to Daiki Media. These Terms & Conditions govern your use of our services and website. By accessing our website or engaging our services, you agree to these terms.
 
-### Information We Collect
+### Services
 
-We collect personal information that you provide to us such as your name, email address, and phone number when you submit a contact form or sign up for our newsletter. We also collect information about your visit to our website, including your IP address, browser type, and the pages you visit.
+Daiki Media provides SEO and digital marketing services. While we strive to deliver optimal results, we cannot guarantee specific rankings or outcomes as search engine algorithms and market conditions constantly evolve. All services are provided on a best-effort basis using industry-standard practices.
 
-### Use of Information
+### Service Agreement
 
-We use the information we collect to provide you with our services, respond to your inquiries, and send you marketing communications. We may also use your information to improve our website and to comply with legal obligations.
+1. Upon engaging our services, you agree to provide accurate and complete information necessary for us to perform our SEO services effectively.
+2. You authorize us to make changes to your website and digital properties as needed to implement SEO strategies.
+3. We reserve the right to refuse service to anyone for any reason at our discretion.
+4. Service fees are non-refundable unless otherwise specified in a separate written agreement.
 
-### Protection of Information
+### Client Responsibilities
 
-We take appropriate measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction. We use industry-standard security measures such as SSL encryption to protect your data during transmission.
+You agree to:
 
-### Disclosure of Information
+- Provide timely access to necessary websites, accounts, and materials
+- Respond to requests for approval or information within reasonable timeframes
+- Maintain ownership and control of your websites and digital properties
+- Ensure all content provided to us is original or properly licensed
+- Comply with search engine guidelines and terms of service
 
-We do not share your personal information with third parties except as required by law or as necessary to provide our services. We may share your information with our trusted partners who assist us in operating our website or providing our services.
+### Intellectual Property
 
-### Cookies
+All methodologies, strategies, and proprietary tools developed by Daiki Media remain our intellectual property. You retain ownership of your website content and materials provided to us. Any content we create for you becomes your property upon full payment for services.
 
-We use cookies and other similar technologies to collect information about your visit to our website. You may disable cookies in your browser settings, but please note that some features of our website may not function properly without cookies.
+### Payment Terms
 
-### Your Rights
+Payment terms will be specified in your service agreement. Late payments may result in service suspension. We reserve the right to modify our pricing with 30 days notice for ongoing services.
 
-You have the right to access, update, and delete your personal information. You may also object to our use of your personal information for marketing purposes. If you wish to exercise any of these rights, please contact us using the information below.
+### Limitation of Liability
 
-### Updates to Privacy Policy
+Daiki Media is not liable for:
 
-We may update this privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on our website. You are advised to review this privacy policy periodically for any changes.
+- Changes in search engine algorithms affecting rankings
+- Actions taken by third-party websites or platforms
+- Loss of business or revenue related to SEO performance
+- Damages exceeding the amount paid for services
+- Consequences of client-directed changes to SEO strategy
+
+### Confidentiality
+
+We maintain strict confidentiality of all client information and data. However, we may use non-identifying information for case studies or marketing purposes unless explicitly prohibited in writing.
+
+### Term and Termination
+
+- Service agreements may be terminated by either party with 30 days written notice
+- Immediate termination may occur in cases of material breach
+- Upon termination, you remain responsible for any fees incurred
+- We will provide reasonable assistance in transitioning services
+
+### Modifications to Terms
+
+We reserve the right to modify these terms at any time. Changes will be effective upon posting to our website. Continued use of our services constitutes acceptance of modified terms.
+
+### Governing Law
+
+These terms are governed by [Your State/Country] law. Any disputes will be resolved in the courts of [Your Jurisdiction].
 
 ### Contact Us
 
-If you have any questions or concerns about this privacy policy or our use of your personal information, please contact us at [coantct](hello@aplio.com).
+For questions about these terms or our services, please contact:
+
+Daiki Media  
+Email: lukesh@daikimedia.com

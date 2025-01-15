@@ -4,16 +4,13 @@ import SecondaryNavbar from "@/components/navbar/SecondaryNavbar";
 import NewsLetter from "@/components/shared/NewsLetter";
 
 export const metadata = {
-  title: "Request a Demo | Daikai Media",
+  title: "Request a Demo - Experience Daiki Media’s Services in Action",
   description:
-    "Request a personalized demo from Daikai Media to see how our services can benefit your business. Get a hands-on experience with our solutions tailored to your needs.",
+    "Schedule a demo with Daiki Media in KL to see how our digital marketing solutions can help grow your business effectively.",
   keywords:
     "request demo, product demo, Daikai Media demo, personalized demo, business solutions, demo request, software demo",
   author: "Daikai Media Team",
 };
-
-
-
 
 const RequestDemo = () => {
   return (
