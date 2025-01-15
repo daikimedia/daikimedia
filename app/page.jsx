@@ -15,7 +15,19 @@ import CustomSectionOne from "@/components/customSections/customSectionOne";
 import ContentCards from "@/components/customSections/customContentCards";
 import ComprehensiveServicesShowcase from "@/components/customSections/comprehensiveServicesShowcase";
 export const metadata = {
-  title: "Daiki Media",
+  title: "Daiki Media | Expert Digital Marketing & SEO Services in Malaysia",
+  description:
+    "Daiki Media offers expert digital marketing, SEO, web development, UI/UX design, copywriting, and app development to elevate your business in KL, Malaysia.",
+  keywords:
+    "digital marketing, SEO, web development, UI/UX design, copywriting, app development, KL, Malaysia",
+  og_title: "Daiki Media | Expert Digital Marketing & SEO Services in Malaysia",
+  og_description:
+    "Daiki Media offers expert digital marketing, SEO, web development, UI/UX design, copywriting, and app development to elevate your business in KL, Malaysia.",
+  og_image: "https://daikimedia.com/images/logo.png",
+  og_url: "https://daikimedia.com",
+  og_type: "website",
+  og_site_name: "Daiki Media",
+  og_locale: "en_US",
 };
 
 export default function Home() {

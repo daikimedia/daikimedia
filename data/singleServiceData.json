@@ -4,6 +4,8 @@
       "id": 1,
       "slug": "seo-services",
       "title": "SEO Services",
+      "metaTitle": "Professional SEO Services in Malaysia | Daiki Media - Drive Traffic & Boost Rankings",
+      "metaDescription": "Optimize your website with Daiki Media's expert SEO services in KL, featuring keyword research, on-page optimization, and link-building strategies.",
       "subTitle": "Daiki Media SEO Services",
       "heroSection": {
         "title": "Strategic SEO That Delivers Growth",
@@ -189,6 +191,8 @@
     {
       "id": 2,
       "slug": "enterprise-seo-services",
+      "metaTitle": "Enterprise SEO Services in Malaysia | Daiki Media",
+      "metaDescription": "Enhance your enterprise's search rankings in KL with Daiki Media's tailored SEO strategies, driving organic growth and online visibility.",
       "title": "Enterprise SEO Services",
       "subTitle": "Daiki Media Enterprise SEO",
       "heroSection": {
@@ -371,6 +375,8 @@
     {
       "id": 3,
       "slug": "digital-marketing-services",
+      "metaTitle": "Digital Marketing Services in Malaysia | Daiki Media",
+      "metaDescription": "Elevate your brand in KL with Daiki Media's comprehensive digital marketing solutions, including SEO, PPC, and social media strategies.",
       "title": "Digital Marketing Services",
       "subTitle": "Daiki Media Digital Marketing",
       "heroSection": {
@@ -554,6 +560,8 @@
     {
       "id": 4,
       "slug": "local-seo-services",
+      "metaTitle": "Local SEO Services in Malaysia | Daiki Media",
+      "metaDescription": "Enhance your brand's visibility and growth in KL with Daiki Media’s tailored SEO, PPC, and social media strategies for maximum results.",
       "title": "Local SEO Services",
       "subTitle": "Boost Your Local Presence and Drive More Revenue with Daiki Media",
       "heroSection": {
@@ -740,6 +748,8 @@
     {
       "id": 5,
       "slug": "google-local-services-ads",
+      "metaTitle": "Google Local Services Ads Management in Malaysia | Daiki Media",
+      "metaDescription": "Boost your local visibility in KL with Daiki Media's expert Google Local Services Ads management, driving quality leads to your business.",
       "title": "Google Local Services Ads",
       "subTitle": "Maximize Your Local Reach with Google Local Services Ads",
       "heroSection": {
@@ -918,6 +928,8 @@
       "id": 6,
       "slug": "seo-audits-services",
       "title": "SEO Audit Services",
+      "metaTitle": "Comprehensive SEO Audit Services in Malaysia | Daiki Media",
+      "metaDescription": "Enhance your website's performance in KL with Daiki Media’s comprehensive SEO audits, identifying and resolving issues to boost search rankings.",
       "subTitle": "Unlock Your Website’s Full Potential with Expert SEO Audits",
       "heroSection": {
         "title": "Maximize Your Search Visibility & Drive Conversions with a Tailored SEO Strategy",
@@ -1099,6 +1111,8 @@
     {
       "id": 7,
       "slug": "generative-engine-optimization",
+      "metaTitle": "Generative Engine Optimization Services - Boost Visibility in AI Searches",
+      "metaDescription": "Optimize your website for AI-driven searches in KL. Daiki Media’s GEO services enhance visibility, traffic, and engagement across generative platforms.",
       "title": "Generative Engine Optimization (GEO)",
       "subTitle": "Unlock Your Business Potential with Generative Engine Optimization (GEO)",
       "heroSection": {
@@ -1280,6 +1294,8 @@
     {
       "id": 8,
       "slug": "ppc-management",
+      "metaTitle": "PPC Management Services - Maximize ROI with Daiki Media",
+      "metaDescription": "Drive targeted traffic to your KL business with expert PPC management by Daiki Media, optimizing campaigns for higher ROI, conversions, and growth.",
       "title": "PPC Management Services",
       "subTitle": "Transform Every Click into a Valuable Conversion",
       "heroSection": {
@@ -1444,6 +1460,8 @@
     {
       "id": 9,
       "slug": "enterprise-ppc-management",
+      "metaTitle": "Enterprise PPC Management - Scalable Solutions for Maximum ROI",
+      "metaDescription": "Daiki Media offers enterprise PPC management services in KL, delivering scalable strategies to optimize ad spend, boost conversions, and maximize growth.",
       "title": "Enterprise PPC Management Services",
       "subTitle": "Maximize Your ROAS with Award-Winning Enterprise PPC Management",
       "heroSection": {
@@ -1614,6 +1632,8 @@
       "id": 10,
       "slug": "social-media-advertising",
       "title": "Social Media Advertising Services",
+      "metaTitle": "Social Media Advertising Services - Amplify Engagement with Daiki Media",
+      "metaDescription": "Boost your brand’s visibility with targeted social media advertising in KL. Daiki Media creates impactful campaigns for maximum engagement and ROI.",
       "subTitle": "Maximize Your Business Potential with Expert Social Media Advertising",
       "heroSection": {
         "title": "Maximize Your Business Potential with Expert Social Media Advertising",
@@ -1790,6 +1810,8 @@
       "id": 11,
       "slug": "enterprise-social-media-advertising",
       "title": "Enterprise Social Media Advertising Services",
+      "metaTitle": "Enterprise Social Media Advertising - Drive Scalable Results with Experts",
+      "metaDescription": "Daiki Media’s enterprise social media advertising in KL delivers tailored strategies, enhancing brand visibility, engagement, and scalable growth across all platforms.",
       "subTitle": "Maximize Your Brand’s Full Potential with Expert Social Media Advertising",
       "heroSection": {
         "title": "Supercharge Your Brand with Enterprise Social Media Advertising",
@@ -1963,6 +1985,8 @@
       "id": 12,
       "slug": "programmatic-advertising-solutions",
       "title": "Programmatic Advertising Solutions",
+      "metaTitle": "Programmatic Advertising Solutions - Smarter Ad Campaigns with Daiki Media",
+      "metaDescription": "Maximize ad efficiency in KL with Daiki Media’s programmatic advertising solutions. Leverage data-driven strategies for targeted, scalable, and impactful campaigns.",
       "subTitle": "Maximize Your Advertising Reach with Hassle-Free Programmatic Solutions",
       "heroSection": {
         "title": "Maximize Your Advertising Reach with Hassle-Free Programmatic Solutions",
@@ -2166,6 +2190,8 @@
       "id": 13,
       "slug": "addressable-geofencing-advertising",
       "title": "Addressable Geofencing Advertising",
+      "metaTitle": "Addressable Geofencing Advertising - Precise Targeting with Daiki Media",
+      "metaDescription": "Reach your audience with precision using Daiki Media's addressable geofencing advertising in KL. Drive engagement and conversions through hyper-local targeting.",
       "subTitle": "Transform Your Business with Addressable Geofencing Advertising",
       "heroSection": {
         "title": "Transform Your Business with Addressable Geofencing Advertising",
@@ -2372,6 +2398,8 @@
       "id": 14,
       "slug": "ecommerce-seo-strategies",
       "title": "Ecommerce SEO Strategies",
+      "metaTitle": "Ecommerce SEO Strategies - Boost Online Store Traffic and Sales",
+      "metaDescription": "Enhance your ecommerce store’s visibility in KL with Daiki Media’s SEO strategies. Drive organic traffic, improve rankings, and maximize conversions.",
       "subTitle": "Capture more online sales and drive revenue growth with Daiki Media’s powerful ecommerce SEO services.",
       "heroSection": {
         "title": "Elevate Your Ecommerce Success with Proven SEO Strategies",
@@ -2553,6 +2581,8 @@
       "id": 15,
       "slug": "ecommerce-ppc-campaigns",
       "title": "Ecommerce PPC Campaigns",
+      "metaTitle": "Ecommerce PPC Campaigns - Drive Sales with Targeted Ad Strategies",
+      "metaDescription": "Maximize ecommerce sales in KL with Daiki Media’s PPC campaigns. Leverage targeted ads to drive traffic, conversions, and business growth.",
       "subTitle": "Maximize Your Ecommerce Sales with Expert PPC Campaigns",
       "heroSection": {
         "title": "Maximize Your Ecommerce Sales with Expert PPC Campaigns",
@@ -2730,6 +2760,8 @@
       "id": 16,
       "slug": "ecommerce-social-media-advertising",
       "title": "Ecommerce Social Media Advertising",
+      "metaTitle": "Ecommerce Social Media Advertising - Boost Sales and Brand Awareness",
+      "metaDescription": "Drive ecommerce growth in KL with targeted social media advertising. Daiki Media creates engaging campaigns to increase traffic, sales, and brand visibility.",
       "subTitle": "Grow Your Ecommerce Sales with Expert Social Media Advertising",
       "heroSection": {
         "title": "Grow Your Ecommerce Sales with Expert Social Media Advertising",
@@ -2926,6 +2958,8 @@
       "id": 17,
       "slug": "ecommerce-website-development",
       "title": "Ecommerce Website Development",
+      "metaTitle": "Ecommerce Website Development - Build a High-Converting Online Store",
+      "metaDescription": "Create a powerful online store with Daiki Media’s ecommerce website development services in KL. Enhance user experience, boost conversions, and drive sales.",
       "subTitle": "Transform Your Ecommerce Store and Boost Your Sales",
       "heroSection": {
         "title": "Transform Your Ecommerce Store and Boost Your Sales",
@@ -3113,6 +3147,8 @@
       "id": 18,
       "slug": "shopping-feed-automation",
       "title": "Shopping Feed Automation",
+      "metaTitle": "Shopping Feed Automation - Streamline Product Listings with Daiki Media",
+      "metaDescription": "Optimize your product listings in KL with Daiki Media’s shopping feed automation. Improve accuracy, increase visibility, and drive more sales.",
       "subTitle": "Maximize Your Sales with Seamless Shopping Feed and Coupon Management",
       "heroSection": {
         "title": "Take Your Ecommerce Marketing to the Next Level",
@@ -3331,6 +3367,8 @@
       "slug": "ecommerce-digital-marketing",
       "title": "Ecommerce Digital Marketing",
       "subTitle": "Maximize Your Online Store's Potential",
+      "metaTitle": "Ecommerce Digital Marketing - Boost Sales with Targeted Strategies",
+      "metaDescription": "Daiki Media’s ecommerce digital marketing services in KL drive traffic, improve conversions, and enhance online visibility for greater business growth.",
       "heroSection": {
         "title": "Drive Ecommerce Success with Daiki Media",
         "description": "Ready to take your ecommerce business to new heights? At Daiki Media, we specialize in launching powerful, data-driven marketing campaigns that not only increase online sales but also boost customer retention and drive revenue growth. Our expertise spans SEO, web design, Amazon marketing, email campaigns, and more, all tailored to elevate your ecommerce brand’s presence and profitability.",
@@ -3513,6 +3551,8 @@
       "slug": "ecommerce-marketing-resource",
       "title": "Ecommerce Marketing Resource",
       "subTitle": "Maximize Your Online Store's Potential",
+      "metaTitle": "Ecommerce Marketing Resource - Expert Strategies for Business Growth",
+      "metaDescription": "Access Daiki Media’s ecommerce marketing resources in KL for expert insights and strategies to drive traffic, optimize conversions, and increase sales.",
       "heroSection": {
         "title": "Transform Your Ecommerce Success with Expert Digital Marketing",
         "description": "Unlock the true potential of your ecommerce business with Daiki Media's expert digital marketing strategies. From startups to scalable growth, our customized solutions enhance your online visibility, drive sales, and ensure long-term success.",
@@ -3726,6 +3766,8 @@
       "id": 21,
       "slug": "web-development",
       "title": "Web Development",
+      "metaTitle": "Our SEO Results - Proven Strategies for Digital Success",
+      "metaDescription": "Explore Daiki Media’s SEO success stories in KL. Learn how our strategies drive organic traffic, improve rankings, and enhance conversions.",
       "subTitle": "Transform Your Business with Malaysia’s Leading Web Development Agency",
       "heroSection": {
         "title": "Transform Your Business with Malaysia’s Leading Web Development Agency",
@@ -3899,6 +3941,8 @@
       "slug": "copywriting-services",
       "title": "Copywriting Services",
       "subTitle": "Engage your audience, build your brand, and drive conversions with compelling, SEO-optimized copy created by our expert writers.",
+      "metaTitle": "Copywriting Services - Craft Engaging Content that Drives Results",
+      "metaDescription": "Enhance your brand’s message with Daiki Media’s professional copywriting services in KL. Create compelling content that boosts engagement and conversions.",
       "heroSection": {
         "title": "Words That Convert: Professional Copywriting Services by Daiki Media",
         "description": "Engage your audience, build your brand, and drive conversions with compelling, SEO-optimized copy created by our expert writers.",

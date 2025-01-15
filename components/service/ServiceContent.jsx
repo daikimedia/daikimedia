@@ -9,7 +9,6 @@ import { ServiceProcess } from "@/components/service-single/serviceProcess";
 import { FaqSection } from "@/components/service-single/faqSection";
 import Clients from "@/components/shared/Clients";
 
-
 const ServiceContent = ({ data }) => {
   return (
     <>

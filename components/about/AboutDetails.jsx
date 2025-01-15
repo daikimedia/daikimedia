@@ -1,29 +1,36 @@
-import Image from 'next/image'
-
+import Image from "next/image";
 
 export const metadata = {
-  title: "About Us | Daikai Media",
+  title: "About Us | Daiki Media - Digital Marketing Experts in Malaysia",
   description:
-    "Discover Daikai Media's journey, mission, and vision. Learn about our team and how we are revolutionizing the media industry with cutting-edge digital solutions.",
+    "Learn about Daiki Media, a trusted digital marketing agency in KL, Malaysia, empowering businesses with innovative and result-driven strategies.",
   keywords:
-    "Daikai Media, about us, company mission, media industry, digital solutions, innovative technology, media team, company vision",
+    "digital marketing, SEO, web development, UI/UX design, copywriting, app development, KL, Malaysia",
+  og_title: "Daiki Media | Expert Digital Marketing & SEO Services in Malaysia",
+  og_description:
+    "Learn about Daiki Media, a trusted digital marketing agency in KL, Malaysia, empowering businesses with innovative and result-driven strategies.",
+  og_image: "https://daikimedia.com/images/logo.png",
+  og_url: "https://daikimedia.com",
+  og_type: "website",
+  og_site_name: "Daiki Media",
+  og_locale: "en_US",
 };
 
 const AboutDetails = () => {
   const AboutImages = [
     {
       id: 1,
-      image: '/images/about/hello1.avif',
+      image: "/images/about/hello1.avif",
     },
     {
       id: 2,
-      image: '/images/about/hello2.avif',
+      image: "/images/about/hello2.avif",
     },
     {
       id: 3,
-      image: '/images/about/hello3.avif',
+      image: "/images/about/hello3.avif",
     },
-  ]
+  ];
   return (
     <section className="relative">
       <div className="absolute -top-[300px] left-1/2 -z-10 h-[550px] w-full -translate-x-1/2  bg-[url('/images/hero-gradient.png')] bg-cover bg-center bg-no-repeat opacity-70 md:hidden"></div>
@@ -35,8 +42,17 @@ const AboutDetails = () => {
         </div>
         <div className="mb-[160px] grid grid-cols-3 items-center gap-10  max-md:mb-25 max-md:grid-cols-1">
           {AboutImages.map((items) => (
-            <div className="overflow-hidden rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200" key={items.id}>
-              <Image src={items.image} alt="about images" className="h-auto w-full rounded" width={383} height={494} />
+            <div
+              className="overflow-hidden rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200"
+              key={items.id}
+            >
+              <Image
+                src={items.image}
+                alt="about images"
+                className="h-auto w-full rounded"
+                width={383}
+                height={494}
+              />
             </div>
           ))}
         </div>
@@ -50,20 +66,23 @@ const AboutDetails = () => {
           </div>
           <div className="max-w-[590px] py-10 max-md:col-span-full md:col-span-6">
             <p>
-              Daiki Media has over 10 years of experience in the digital marketing industry, delivering exceptional
-              results. Our team of experts creates customized solutions to help businesses grow online and achieve their
-              goals. We specialize in SEO, web development, and digital marketing strategies that ensure long-term
-              success.
+              Daiki Media has over 10 years of experience in the digital
+              marketing industry, delivering exceptional results. Our team of
+              experts creates customized solutions to help businesses grow
+              online and achieve their goals. We specialize in SEO, web
+              development, and digital marketing strategies that ensure
+              long-term success.
               <br />
               <br />
-              Whether you need to enhance your online presence or drive measurable results, we’re here to transform your
-              brand and help you succeed in the competitive digital landscape.
+              Whether you need to enhance your online presence or drive
+              measurable results, we’re here to transform your brand and help
+              you succeed in the competitive digital landscape.
             </p>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutDetails
+export default AboutDetails;

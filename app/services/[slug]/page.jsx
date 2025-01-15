@@ -7,7 +7,8 @@ import ServiceList from "@/data/singleServiceData";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 export async function generateMetadata({ params }) {
   return {
-    title: params.slug,
+    title: params.metaTitle,
+    description: params.metaDescription,
   };
 }
 
