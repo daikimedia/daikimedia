@@ -6,8 +6,9 @@ import PageHero from "@/components/shared/PageHero";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 
 export const metadata = {
-  title: "Contact",
-  description: "Get in touch with Daikai Media for inquiries, partnerships, or any questions you may have.",
+  title: "Contact Daiki Media - Get in Touch with Our Team",
+  description:
+    "Reach out to Daiki Media in KL for inquiries, support, or consultations. Our team is ready to help you with all your digital marketing needs.",
   keywords: "contact, Daikai Media contact, media inquiries, reach us",
 };
 
