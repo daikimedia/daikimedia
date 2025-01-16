@@ -31,43 +31,43 @@
           {
             "id": 3.1,
             "title": "SEO Services",
-            "path": "/services/seo-services",
+            "path": "/seo-services",
             "newTab": false
           },
           {
             "id": 3.1,
             "title": "Enterprise SEO Services",
-            "path": "/services/enterprise-seo-services",
+            "path": "/enterprise-seo-services",
             "newTab": false
           },
           {
             "id": 3.1,
             "title": "Digital Marketing Services",
-            "path": "/services/digital-marketing-services",
+            "path": "/digital-marketing-services",
             "newTab": false
           },
           {
             "id": 3.1,
             "title": "Local SEO Services",
-            "path": "/services/local-seo-services",
+            "path": "/local-seo-services",
             "newTab": false
           },
           {
             "id": 3.1,
             "title": "Google Local Services Ads Management",
-            "path": "/services/google-local-services-ads",
+            "path": "/google-local-services-ads",
             "newTab": false
           },
           {
             "id": 3.1,
             "title": "SEO Audits",
-            "path": "/services/seo-audits-services",
+            "path": "/seo-audits-services",
             "newTab": false
           },
           {
             "id": 3.1,
             "title": "Generative Engine & Chat Optimization",
-            "path": "/services/generative-engine-optimization",
+            "path": "/generative-engine-optimization",
             "newTab": false
           },
           {
@@ -79,37 +79,37 @@
           {
             "id": 3.2,
             "title": "PPC Management Services",
-            "path": "/services/ppc-management",
+            "path": "/ppc-management",
             "newTab": false
           },
           {
             "id": 3.2,
             "title": "Enterprise PPC Management Services",
-            "path": "/services/enterprise-ppc-management",
+            "path": "/enterprise-ppc-management",
             "newTab": false
           },
           {
             "id": 3.2,
             "title": "Social Media Advertising",
-            "path": "/services/social-media-advertising",
+            "path": "/social-media-advertising",
             "newTab": false
           },
           {
             "id": 3.2,
             "title": "Enterprise Social Media Advertising",
-            "path": "/services/enterprise-social-media-advertising",
+            "path": "/enterprise-social-media-advertising",
             "newTab": false
           },
           {
             "id": 3.2,
             "title": "Programmatic Advertising Solutions",
-            "path": "/services/programmatic-advertising-solutions",
+            "path": "/programmatic-advertising-solutions",
             "newTab": false
           },
           {
             "id": 3.2,
             "title": "Geographical Fencing Technology",
-            "path": "/services/addressable-geofencing-advertising",
+            "path": "/addressable-geofencing-advertising",
             "newTab": false
           },
           {
@@ -121,43 +121,43 @@
           {
             "id": 3.3,
             "title": "Ecommerce SEO Services",
-            "path": "/services/ecommerce-seo-strategies",
+            "path": "/ecommerce-seo-strategies",
             "newTab": false
           },
           {
             "id": 3.3,
             "title": "Ecommerce PPC Campaigns",
-            "path": "/services/ecommerce-ppc-campaigns",
+            "path": "/ecommerce-ppc-campaigns",
             "newTab": false
           },
           {
             "id": 3.3,
             "title": "Ecommerce Social Media Advertising",
-            "path": "/services/ecommerce-social-media-advertising",
+            "path": "/ecommerce-social-media-advertising",
             "newTab": false
           },
           {
             "id": 3.3,
             "title": "Ecommerce Website Development Services",
-            "path": "/services/ecommerce-website-development",
+            "path": "/ecommerce-website-development",
             "newTab": false
           },
           {
             "id": 3.3,
             "title": "Shopping Feed Automation",
-            "path": "/services/shopping-feed-automation",
+            "path": "/shopping-feed-automation",
             "newTab": false
           },
           {
             "id": 3.3,
             "title": "Digital Marketing Services",
-            "path": "/services/ecommerce-digital-marketing",
+            "path": "/ecommerce-digital-marketing",
             "newTab": false
           },
           {
             "id": 3.3,
             "title": "Ecommerce Marketing Resources",
-            "path": "/services/ecommerce-marketing-resource",
+            "path": "/ecommerce-marketing-resource",
             "newTab": false
           },
           {
@@ -207,13 +207,13 @@
       {
         "id": 4,
         "title": "Website",
-        "path": "/services/web-development",
+        "path": "/web-development",
         "newTab": false
       },
       {
         "id": 5,
         "title": "Copywriting",
-        "path": "/services/copywriting-services",
+        "path": "/copywriting-services",
         "newTab": false
       },
       {

@@ -11,59 +11,59 @@ export const FooterData = {
     {
       id: 1,
       name: "SEO Services",
-      link: "/services/seo-services",
+      link: "/seo-services",
     },
     {
       id: 2,
       name: "Enterprise SEO",
-      link: "/services/enterprise-seo-services",
+      link: "/enterprise-seo-services",
     },
     {
       id: 3,
       name: "Digital Marketing",
-      link: "/services/digital-marketing-services",
+      link: "/digital-marketing-services",
     },
     {
       id: 4,
       name: "Local SEO",
-      link: "/services/local-seo-services",
+      link: "/local-seo-services",
     },
     {
       id: 5,
       name: "Google Local Ads",
-      link: "/services/google-local-services-ads",
+      link: "/google-local-services-ads",
     },
     {
       id: 6,
       name: "SEO Audits",
-      link: "/services/seo-audits-services",
+      link: "/seo-audits-services",
     },
   ],
   resources: [
     {
       id: 1,
       name: "PPC Management Services",
-      link: "/services/ppc-management",
+      link: "/ppc-management",
     },
     {
       id: 2,
       name: "Enterprise PPC Management Services",
-      link: "/services/enterprise-ppc-management",
+      link: "/enterprise-ppc-management",
     },
     {
       id: 3,
       name: "Social Media Advertising",
-      link: "/services/social-media-advertising",
+      link: "/social-media-advertising",
     },
     {
       id: 4,
       name: "Enterprise Social Media Advertising",
-      link: "/services/enterprise-social-media-advertising",
+      link: "/enterprise-social-media-advertising",
     },
     {
       id: 5,
       name: "Programmatic Advertising Solutions",
-      link: "/services/programmatic-advertising-solutions",
+      link: "/programmatic-advertising-solutions",
     },
   ],
 
