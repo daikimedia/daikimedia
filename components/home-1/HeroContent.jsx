@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { motion } from "framer-motion";
 import { fadeFromLeftAnimation } from "@/data/animation";
 import Image from "next/image";
@@ -15,11 +15,11 @@ const HeroContent = () => {
           5k+ Trusted Businesses
         </p>
         <h1 className="mb-12 max-md:mb-8">
-          Transform Your
+          Grow Your Revenue
           <span className="inline-block rounded-[88px] border-2 border-paragraph bg-[#D9D9D900] px-5 pb-2.5 pt-0.5 font-playfair italic leading-none dark:border-[#F0F3EA]">
-            Business Growth
+            with SEO & Digital
           </span>
-          Daiki Media
+          Marketing Services.
         </h1>
         <p className="mb-8 max-w-[590px] max-md:mb-8">
           Partner with a results-driven digital agency that delivers measurable
@@ -50,7 +50,6 @@ const HeroContent = () => {
           </div>
         </motion.div>
       </div>
-
     </FadeUpAnimation>
   );
 };

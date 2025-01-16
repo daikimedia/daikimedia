@@ -102,12 +102,12 @@ export default function ServiceCardWithLeftText() {
                       className="mb-6 hidden dark:inline-block"
                     />
 
-                    <Link href={`/services/${service.slug}`} className="block">
+                    <Link href={`/${service.slug}`} className="block">
                       <h3 className="mb-2.5">{service.title}</h3>
                     </Link>
                     <p className="mb-6">{service.description}</p>
                     <Link
-                      href={`/services/${service.slug}`}
+                      href={`/${service.slug}`}
                       className="btn-outline btn-sm"
                     >
                       {service.button}
