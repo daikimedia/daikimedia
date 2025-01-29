@@ -1,14 +1,17 @@
-import HeroLine1 from '../icons/HeroLine1'
-import HeroLine2 from '../icons/HeroLine2'
-import HeroLine3 from '../icons/HeroLine3'
-import HeroLine4 from '../icons/HeroLine4'
-import HeroContent from './HeroContent'
+"use client";
+import HeroLine1 from "../icons/HeroLine1";
+import HeroLine2 from "../icons/HeroLine2";
+import HeroLine3 from "../icons/HeroLine3";
+import HeroLine4 from "../icons/HeroLine4";
+import HeroContent from "./HeroContent";
+import { HeroContactForm } from "./HeroContact";
 
 const Hero = () => {
   return (
     <section
       className="hero max-mb:pb-[70px] max-mb:pb-[70px] relative overflow-hidden bg-gray pb-[140px] pt-[230px] dark:bg-dark max-lg:pb-25 max-lg:pt-[160px]"
-      id="scene">
+      id="scene"
+    >
       <div className="absolute left-1/2 top-0 max-w-[1612px] -translate-x-1/2 max-lg:hidden">
         <HeroLine1 />
       </div>
@@ -24,8 +27,11 @@ const Hero = () => {
       <div className="container">
         <HeroContent />
       </div>
+      <div>
+        <HeroContactForm />
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
