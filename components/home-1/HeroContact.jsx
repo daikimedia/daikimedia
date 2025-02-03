@@ -52,7 +52,11 @@ export const HeroContactForm = () => {
 
   return (
     <div className="relative w-full container mx-auto mt-8 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg z-55">
-      <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-4">
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col md:flex-row gap-4hero-contact-form "
+        id="hero-contact-form"
+      >
         <div className="flex-1">
           <select
             value={formData.need}
