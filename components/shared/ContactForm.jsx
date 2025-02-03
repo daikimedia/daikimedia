@@ -88,7 +88,11 @@ const ContactForm = () => {
           </div>
           <div className=" rounded-medium bg-white p-2.5 shadow-nav  dark:bg-dark-200">
             <div className="rounded border border-dashed border-gray-100 bg-white p-12 dark:border-borderColor-dark dark:bg-dark-200 max-md:p-5  ">
-              <form onSubmit={handleSubmit}>
+              <form
+                onSubmit={handleSubmit}
+                id="contact-form"
+                className="contact-form"
+              >
                 <div className="grid grid-cols-12 max-md:gap-y-10 md:gap-8 md:gap-x-12">
                   <div className="max-md:col-span-full md:col-span-6">
                     <label
