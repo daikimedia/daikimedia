@@ -1,4 +1,6 @@
-import { Instagram, Twitter, Facebook, Linkedin } from "lucide-react";
+import { Instagram, Twitter, Facebook, Linkedin , } from "lucide-react";
+import { FaTelegramPlane } from "react-icons/fa";
+
 export const FooterData = {
   logo: "/images/logo.png",
   logoDark: "/images/logo-light.svg",
@@ -88,5 +90,11 @@ export const FooterData = {
       name: <Instagram />,
       link: "https://www.instagram.com/daikimedia/",
     },
+    {
+      id: 5,
+      name: <FaTelegramPlane />, 
+      link: "https://t.me/daikimedia",
+    }
+     
   ],
 };
