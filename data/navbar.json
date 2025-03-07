@@ -71,6 +71,12 @@
             "newTab": false
           },
           {
+            "id": 3.1,
+            "title": "Localized SEO for iGamings",
+            "path": "/localized-seo-for-igaming",
+            "newTab": false 
+          },
+          {
             "id": 3.2,
             "header": "Digital Advertising",
             "path": "#",
@@ -82,6 +88,7 @@
             "path": "/ppc-management",
             "newTab": false
           },
+          
           {
             "id": 3.2,
             "title": "Enterprise PPC Management Services",
