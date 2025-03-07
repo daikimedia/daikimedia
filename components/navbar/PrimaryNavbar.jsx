@@ -84,28 +84,35 @@ const PrimaryNavbar = () => {
                         className="ml-1 mt-1 text-paragraph duration-500 group-hover:rotate-180 dark:text-white"
                       />
                     </Link>
-                    <div className="absolute left-0 top-12 z-10 lg:grid-cols-4 gap-4 text-bold  w-full origin-top scale-y-0 items-center  rounded-medium bg-white p-2.5 text-gray-900 opacity-0 shadow-lg duration-500  group-hover:scale-y-100 group-hover:opacity-100 dark:bg-dark-200 dark:text-white md:grid-cols-12">
-                      <ul className="col-span-10 columns-4  gap-10 px-15">
-                        {menuItem.submenu.map((submenuItem) => (
-                          <li
-                            className="relative text-sm  overflow-hidden py-2.5 capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform  before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:before:bg-white"
-                            key={submenuItem.id}
-                          >
-                            <Link href={submenuItem.path} className="flex ">
-                              {/* {submenuItem.header} */}
-                              <span class=" text-black">
-                                {submenuItem.title}{" "}
-                              </span>
-                              <span
-                                href="#"
-                                class="text-md text-black font-bold"
-                              >
-                                {submenuItem.header}
-                              </span>
-                            </Link>
-                          </li>
+                    <div className="absolute left-0 top-12 z-10 w-full origin-top scale-y-0 rounded-medium h-[500px] bg-white p-2.5 text-gray-900 opacity-0 shadow-lg duration-500 group-hover:scale-y-100 group-hover:opacity-100 dark:bg-dark-200 dark:text-white">
+                      <div className="grid grid-cols-4 gap-6 px-4">
+                        {["3.1", "3.2", "3.3", "3.4"].map((category) => (
+                          <div key={category} className="h-64 ">
+                            {menuItem.submenu
+                              .filter(item => String(item.id).startsWith(category) && item.header)
+                              .map(headerItem => (
+                                <div key={headerItem.id}>
+                                  <h5 className="font-bold mb-2 text-black">{headerItem.header}</h5>
+                                  <ul>
+                                    {menuItem.submenu
+                                      .filter(item => String(item.id).startsWith(category) && !item.header)
+                                      .map((submenuItem) => (
+                                        <li
+                                          className="relative text-sm py-2 capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:before:bg-white"
+                                          key={submenuItem.id}
+                                        >
+                                          <Link href={submenuItem.path} className="flex">
+                                            <span className="text-black">{submenuItem.title}</span>
+                                          </Link>
+                                        </li>
+                                      ))
+                                    }
+                                  </ul>
+                                </div>
+                              ))}
+                          </div>
                         ))}
-                      </ul>
+                      </div>
                     </div>
                   </>
                 ) : (
@@ -243,26 +250,38 @@ const PrimaryNavbar = () => {
                           className="ml-auto mt-1 text-paragraph duration-500 group-hover:rotate-180 dark:text-white"
                         />
                       </Link>
-                      <div className="absolute left-0 top-12 z-10 w-full origin-top scale-y-0  items-center rounded-medium bg-white p-5 text-gray-900 opacity-0 shadow-lg  duration-500 group-hover:scale-y-100 group-hover:opacity-100 dark:bg-dark-200 dark:text-white">
-                        <ul className="mb-15 columns-2 gap-10">
-                          {menuItem.submenu.map((submenuItem) => (
-                            <li
-                              className="relative overflow-hidden py-2.5 text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform  before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:before:bg-white"
-                              key={submenuItem.id}
-                            >
-                              <Link
-                                href={submenuItem.path}
-                                className="flex"
-                                onClick={() =>
-                                  setShowMobileMenu(!showMobileMenu)
-                                }
-                              >
-                                {submenuItem.title}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                  
+                      <div className="absolute left-0 top-12 z-10 w-full origin-top scale-y-0 rounded-medium bg-white p-2.5 text-gray-900 opacity-0 shadow-lg duration-500 group-hover:scale-y-100 group-hover:opacity-100 dark:bg-dark-200 dark:text-white"> 
+  <div className="grid grid-cols-4 gap-6 px-4">
+    {["3.2", "3.1", "3.3", "3.4"].map((category) => (
+      <div key={category}>
+        {menuItem.submenu
+          .filter(item => String(item.id).startsWith(category) && item.header)
+          .map(headerItem => (
+            <div key={headerItem.id}>
+              <h3 className="font-bold mb-2 text-black">{headerItem.header}</h3>
+              <ul>
+                {menuItem.submenu
+                  .filter(item => String(item.id).startsWith(category) && !item.header)
+                  .map((submenuItem) => (
+                    <li 
+                      className="relative text-sm py-2 capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:before:bg-white" 
+                      key={submenuItem.id} 
+                    > 
+                      <Link href={submenuItem.path} className="flex"> 
+                        <span className="text-black">{submenuItem.title}</span> 
+                      </Link> 
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+          ))}
+      </div>
+    ))}
+  </div>
+</div>
+
                     </>
                   ) : (
                     <>

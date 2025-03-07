@@ -9,47 +9,44 @@ import { ServiceProcess } from "@/components/service-single/serviceProcess";
 import { FaqSection } from "@/components/service-single/faqSection";
 import Clients from "@/components/shared/Clients";
 
-const ServiceContent = ({ data }) => {
+const ServiceContent = ({ data = {} }) => {
+  console.log("ServiceContent data:", data);
+
   return (
     <>
       <section>
         <PageHero
-          subtitle={data.subTitle}
-          title={data.heroSection.title}
-          paragraph={data.heroSection.description}
-          link={data.heroSection.link}
+          subtitle={data?.subTitle || "Default Subtitle"}
+          title={data?.heroSection?.title || "Default Title"}
+          paragraph={data?.heroSection?.description || "Default Description"}
+          link={data?.heroSection?.link || "#"}
         />
 
-        <ServiceInclude data={data.servicesInclude} />
-
-        <InfoStatsSection data={data.infoStatsSection} />
-
+        {data?.servicesInclude && <ServiceInclude data={data.servicesInclude} />}
+        {data?.infoStatsSection && <InfoStatsSection data={data.infoStatsSection} />}
+        
         <Clients />
 
-        <CardsSection data={data.cardsSection} />
+        {data?.cardsSection && <CardsSection data={data.cardsSection} />}
+        {data?.ctaSection && <CallToAction data={data.ctaSection} />}
+        {data?.comparison && <Comparison data={data.comparison} />}
+        {data?.serviceProcess && <ServiceProcess data={data.serviceProcess} />}
+        {data?.additionalInfo && <AdditionalInfo data={data.additionalInfo} />}
+        {data?.faqSection && <FaqSection data={data.faqSection} />}
 
-        <CallToAction data={data.ctaSection} />
-
-        <Comparison data={data.comparison} />
-
-        <ServiceProcess data={data.serviceProcess} />
-
-        <AdditionalInfo data={data.additionalInfo} />
-
-        <FaqSection data={data.faqSection} />
-
-        {/* Conclusion */}
-        <section>
-          <div className="mb-[100px] text-center">
-            <p className="mb-4 font-medium uppercase">TOP INTEGRATION</p>
-            <h2 className="mb-10 max-lg:mb-10">
-              {data.conclusionSection.title}
-            </h2>
-            <p className="mx-auto mb-12 max-w-[590px] max-lg:mb-10">
-              {data.conclusionSection.description}
-            </p>
-          </div>
-        </section>
+        {data?.conclusionSection && (
+          <section>
+            <div className="mb-[100px] text-center">
+              <p className="mb-4 font-medium uppercase">TOP INTEGRATION</p>
+              <h2 className="mb-10 max-lg:mb-10">
+                {data.conclusionSection?.title || "Default Conclusion Title"}
+              </h2>
+              <p className="mx-auto mb-12 max-w-[590px] max-lg:mb-10">
+                {data.conclusionSection?.description || "Default Conclusion Description"}
+              </p>
+            </div>
+          </section>
+        )}
       </section>
     </>
   );
