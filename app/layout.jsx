@@ -39,6 +39,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+      <meta name="google-site-verification" content="EIBnMq71KKUDT895qyPc5L_RMaDrmBpUG8pgX3FO6N4" />
+
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
