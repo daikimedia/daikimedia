@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Pagination from "../shared/Pagination";
 import BlogItems from "./BlogItems";
+import blogData from "../../data/singleBlogData.json";
 
 const RecentNews = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -9,6 +10,25 @@ const RecentNews = () => {
   const [isLoading, setIsLoading] = useState(true);
   const itemsPerPage = 12;
   const totalPage = Math.ceil(featureBlog.length / itemsPerPage);
+
+  useEffect(() => {
+    // Process blog data to remove HTML tags from content before setting state
+    const processedBlogData = blogData.map(blog => {
+      // Function to strip HTML tags
+      const stripHtml = (html) => {
+        if (!html) return "";
+        return html.replace(/<\/?[^>]+(>|$)/g, "");
+      };
+      
+      return {
+        ...blog,
+        content: stripHtml(blog.content)
+      };
+    });
+    
+    setFeatureBlog(processedBlogData);
+    setIsLoading(false);
+  }, []);
 
   const paginateData = () => {
     const startIndex = (currentPage - 1) * itemsPerPage;
@@ -37,28 +57,6 @@ const RecentNews = () => {
     goToNextPage,
     goToPreviousPage,
   };
-
-  const fetchBlogs = async () => {
-    try {
-      const response = await fetch(
-        "https://daiki.media/wp-json/wp/v2/posts?page=1&per_page=100"
-      );
-      if (!response.ok) {
-        throw new Error("Failed to fetch blog data");
-      }
-      const data = await response.json();
-
-      setFeatureBlog(data);
-      setIsLoading(false);
-    } catch (error) {
-      console.error("Error fetching blog data:", error);
-      setIsLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchBlogs();
-  }, []);
 
   return (
     <section className="relative py-150 max-md:py-20">
@@ -93,9 +91,9 @@ const RecentNews = () => {
                   blogData={blog}
                   content={blog.content}
                   date={blog.date}
-                  thumbnail={blog?.yoast_head_json?.og_image?.[0]?.url}
+                  thumbnail={blog.featuredImage}
                   status={blog.categories}
-                  title={blog.title?.rendered || "Untitled"}
+                  title={blog.title || "Untitled"}
                   column={true}
                 />
               ))}
