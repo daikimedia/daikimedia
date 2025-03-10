@@ -5,37 +5,26 @@ import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import blogData from "../../data/singleBlogData.json";
 
 const FeatureBlog = () => {
   const [featureBlog, setFeatureBlog] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  const fetchBlogs = async () => {
-    try {
-      const response = await fetch(
-        "https://daiki.media/wp-json/wp/v2/posts?page=1&per_page=10"
-      );
-      if (!response.ok) {
-        throw new Error("Failed to fetch blog data");
-      }
-      const data = await response.json();
-      setFeatureBlog(data);
-    } catch (error) {
-      console.error("Error fetching blog data:", error);
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
   useEffect(() => {
-    fetchBlogs();
+    setFeatureBlog(blogData);
+    setIsLoading(false);
   }, []);
 
   const stripHTML = (html) => {
     const tempDiv = document.createElement("div");
     tempDiv.innerHTML = html;
-    // Remove all HTML tags
     return tempDiv.textContent || tempDiv.innerText || "";
+  };
+
+  const fixImagePath = (path) => {
+    if (!path) return '';
+    return path.replace(/\\/g, '/');
   };
 
   const featuredBlogFiltered = featureBlog.filter(
@@ -75,22 +64,19 @@ const FeatureBlog = () => {
                         <div className="rounded border border-dashed border-gray-100 p-6 dark:border-borderColor-dark max-md:p-4">
                           <div className="grid grid-cols-2 items-center gap-12 max-md:grid-cols-1 max-md:gap-y-5">
                             <div className="relative h-full w-full xl:min-h-[330px]">
-                              {blogItem.yoast_head_json?.og_image?.[0]?.url && (
+                              {blogItem.featuredImage && (
                                 <img
-                                  src={blogItem.yoast_head_json.og_image[0].url}
-                                  alt={blogItem.title?.rendered || "Blog image"}
+                                  src={fixImagePath(blogItem.featuredImage)}
+                                  alt={blogItem.title || "Blog image"}
                                   className="w-full rounded-xl max-md:h-[350px] max-md:object-cover max-md:object-center"
                                 />
                               )}
                             </div>
 
                             <div>
-                              <Link
-                                href={`/blog/${blogItem.slug}`}
-                                className="block"
-                              >
+                              <Link href={`/blog/${blogItem.slug}`} className="block">
                                 <h3 className="mb-3 font-semibold leading-[1.33]">
-                                  {stripHTML(blogItem.title?.rendered || "")}
+                                  {stripHTML(blogItem.title || "")}
                                 </h3>
                               </Link>
                               <div className="mb-4 flex items-center gap-x-2">
