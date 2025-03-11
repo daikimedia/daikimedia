@@ -38,40 +38,41 @@ const Clients = ({
             </div>
           )}
 
-          <Marquee pauseOnHover className="!flex" gradient={false}>
-            {ClientData.map((clients) => (
-              <div
-                className="marquee-content-list relative flex items-center justify-center"
-                key={clients.id}
-                style={{ width: "180px", height: "60px", padding: "0 40px" }}
-              >
-                <div className="relative w-full h-full flex items-center justify-center">
-                  <Image
-                    src={clients.imageLight}
-                    alt={`${clients.id} logo`}
-                    className="dark:hidden object-contain"
-                    fill
-                    sizes="160px"
-                    style={{
-                      maxWidth: "100%",
-                      maxHeight: "100%",
-                    }}
-                  />
-                  <Image
-                    src={clients.imageDark}
-                    alt={`${clients.id} logo`}
-                    className="hidden dark:block object-contain"
-                    fill
-                    sizes="160px"
-                    style={{
-                      maxWidth: "100%",
-                      maxHeight: "100%",
-                    }}
-                  />
-                </div>
-              </div>
-            ))}
-          </Marquee>
+<Marquee pauseOnHover className="!flex" gradient={false}>
+  {ClientData.map((clients) => (
+    <div
+      className="marquee-content-list relative flex items-center justify-center"
+      key={clients.id}
+      style={{ width: "180px", height: "60px", padding: "0 40px" }}
+    >
+      <Link href={clients.link || "#"} target="_blank" rel="noopener noreferrer" className="relative w-full h-full flex items-center justify-center">
+        <Image
+          src={clients.imageLight}
+          alt={`${clients.id} logo`}
+          className="dark:hidden object-contain"
+          fill
+          sizes="160px"
+          style={{
+            maxWidth: "100%",
+            maxHeight: "100%",
+          }}
+        />
+        <Image
+          src={clients.imageDark}
+          alt={`${clients.id} logo`}
+          className="hidden dark:block object-contain"
+          fill
+          sizes="160px"
+          style={{
+            maxWidth: "100%",
+            maxHeight: "100%",
+          }}
+        />
+      </Link>
+    </div>
+  ))}
+</Marquee>
+
         </div>
         {sectionTitle && (
           <div className="mt-15 flex items-center o justify-center ">
