@@ -37,7 +37,7 @@ const ShareClientMarquee = ({
                   width={120}
                   height={22}
                 />
-                <Image
+                <Image  
                   src={clients.imageDark}
                   alt="group"
                   className="hidden h-auto w-auto dark:inline-block"
