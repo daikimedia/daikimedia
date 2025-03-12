@@ -31,18 +31,13 @@ export const HeroContactForm = () => {
         message: `${formData.need} and my budget is ${formData.budget}`,
       };
 
-      const res = await emailjs.send(
-        serviceID,
-        templateID,
-        emailParams,
-        userID
-      );
+      const res = await emailjs.send(serviceID, templateID, emailParams, userID);
 
       if (res.status === 200) {
         alert("Message sent successfully!");
         setFormData({
           email: "",
-          message: "",
+          budget: "",
         });
       }
     } catch (error) {
@@ -54,14 +49,14 @@ export const HeroContactForm = () => {
     <div className="relative w-full container mx-auto mt-8 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg z-55">
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col md:flex-row gap-4hero-contact-form "
+        className="flex flex-col sm:flex-col md:flex-row gap-4"
         id="hero-contact-form"
       >
-        <div className="flex-1">
+        <div className="w-full md:flex-1 relative">
           <select
             value={formData.need}
             onChange={(e) => setFormData({ ...formData, need: e.target.value })}
-            className="block w-full rounded-[48px] border border-borderColor bg-white px-5 py-2.5 text-sm text-paragraph-light outline-none transition-all duration-300 placeholder:text-paragraph-light focus:border-primary dark:border-borderColor-dark dark:bg-dark-200 dark:placeholder:text-paragraph-light dark:focus:border-primary"
+            className="block w-full rounded-[48px] border border-borderColor bg-white px-5 py-2.5 pr-10 text-sm text-paragraph-light outline-none transition-all duration-300 placeholder:text-paragraph-light focus:border-primary dark:border-borderColor-dark dark:bg-dark-200 dark:placeholder:text-paragraph-light dark:focus:border-primary appearance-none"
           >
             {needs.map((need) => (
               <option key={need} value={need}>
@@ -69,29 +64,28 @@ export const HeroContactForm = () => {
               </option>
             ))}
           </select>
+          <div className="absolute right-4 top-1/2 transform -translate-y-1/2 pointer-events-none">
+            ▼
+          </div>
         </div>
 
-        <div className="flex-1">
+        <div className="w-full md:flex-1">
           <input
             type="email"
             placeholder="Enter your email"
             value={formData.email}
-            onChange={(e) =>
-              setFormData({ ...formData, email: e.target.value })
-            }
+            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             className="block w-full rounded-[48px] border border-borderColor bg-white px-5 py-2.5 text-sm text-paragraph-light outline-none transition-all duration-300 placeholder:text-paragraph-light focus:border-primary dark:border-borderColor-dark dark:bg-dark-200 dark:placeholder:text-paragraph-light dark:focus:border-primary"
             required
           />
         </div>
 
-        <div className="flex-1">
+        <div className="w-full md:flex-1">
           <input
             type="number"
             placeholder="Monthly budget (USD)"
             value={formData.budget}
-            onChange={(e) =>
-              setFormData({ ...formData, budget: e.target.value })
-            }
+            onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
             className="block w-full rounded-[48px] border border-borderColor bg-white px-5 py-2.5 text-sm text-paragraph-light outline-none transition-all duration-300 placeholder:text-paragraph-light focus:border-primary dark:border-borderColor-dark dark:bg-dark-200 dark:placeholder:text-paragraph-light dark:focus:border-primary"
             min="0"
             step="100"
@@ -99,7 +93,10 @@ export const HeroContactForm = () => {
           />
         </div>
 
-        <button type="submit" className="btn text-white">
+        <button
+          type="submit"
+          className="btn text-white w-full md:w-auto"
+        >
           GET A FREE QUOTE
         </button>
       </form>
