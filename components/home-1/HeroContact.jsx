@@ -1,49 +1,49 @@
-import { useState } from "react";
-import emailjs from "@emailjs/browser";
+import { useState } from 'react'
+import emailjs from '@emailjs/browser'
 
 export const HeroContactForm = () => {
   const [formData, setFormData] = useState({
-    need: "I need more revenue for my business",
-    email: "",
-    budget: "",
-  });
+    need: 'I need more revenue for my business',
+    email: '',
+    budget: '',
+  })
 
   const needs = [
-    "I need more revenue for my business",
-    "I need more traffic to my website",
-    "I need more customers",
-    "I need more leads",
-    "I need more sales",
-    "I need help with brand awareness",
-    "All of the above",
-  ];
+    'I need more revenue for my business',
+    'I need more traffic to my website',
+    'I need more customers',
+    'I need more leads',
+    'I need more sales',
+    'I need help with brand awareness',
+    'All of the above',
+  ]
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    const serviceID = "service_ei97658";
-    const templateID = "template_vmm2hwi";
-    const userID = "A7u3t1t9TNX-4LxrF";
+    const serviceID = 'service_ei97658'
+    const templateID = 'template_vmm2hwi'
+    const userID = 'A7u3t1t9TNX-4LxrF'
 
     try {
       const emailParams = {
         from_email: formData.email,
         message: `${formData.need} and my budget is ${formData.budget}`,
-      };
+      }
 
-      const res = await emailjs.send(serviceID, templateID, emailParams, userID);
+      const res = await emailjs.send(serviceID, templateID, emailParams, userID)
 
       if (res.status === 200) {
-        alert("Message sent successfully!");
+        alert('Message sent successfully!')
         setFormData({
-          email: "",
-          budget: "",
-        });
+          email: '',
+          budget: '',
+        })
       }
     } catch (error) {
-      console.error("Failed to send message. Please try again later.");
+      console.error('Failed to send message. Please try again later.')
     }
-  };
+  }
 
   return (
     <div className="relative w-full container mx-auto mt-8 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg z-55">
@@ -92,14 +92,10 @@ export const HeroContactForm = () => {
             required
           />
         </div>
-
-        <button
-          type="submit"
-          className="btn text-white w-full md:w-auto"
-        >
+        <button type="submit" className="btn text-white w-full md:w-auto">
           GET A FREE QUOTE
         </button>
       </form>
     </div>
-  );
-};
+  )
+}
