@@ -6,9 +6,7 @@ import blogData from "@/data/singleBlogData.json";
 
 export default function BlogDetails({ params }) {
   const { slug } = params;
-  
   const blog = blogData.find((item) => item.slug === slug);
-
   if (!blog) {
     return (
       <div className="flex justify-center items-center h-screen">
