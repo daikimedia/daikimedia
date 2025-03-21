@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Footer from "@/components/footer/Footer";
 import NewsLetter from "@/components/shared/NewsLetter";
 import PageHero from "@/components/shared/PageHero";
@@ -7,6 +8,7 @@ import blogData from "@/data/singleBlogData.json";
 export default function BlogDetails({ params }) {
   const { slug } = params;
   const blog = blogData.find((item) => item.slug === slug);
+  
   if (!blog) {
     return (
       <div className="flex justify-center items-center h-screen">
@@ -18,7 +20,7 @@ export default function BlogDetails({ params }) {
   }
 
   const decodeHtmlEntities = (html) => {
-    if (typeof window === "undefined") return html; 
+    if (typeof window === "undefined") return html;
     const textArea = document.createElement("textarea");
     textArea.innerHTML = html;
     return textArea.value;
@@ -26,12 +28,16 @@ export default function BlogDetails({ params }) {
 
   return (
     <>
+      <Head>
+        <title>{decodeHtmlEntities(blog.title || "Blog Details")}</title>
+        <meta
+          name="description"
+          content={decodeHtmlEntities(blog.description || blog.content.substring(0, 150) || "Blog post details")}
+        />
+      </Head>
       <PrimaryNavbar />
       <main className="flex flex-col items-center justify-center min-h-screen">
-        <PageHero
-          subtitle="BLOG Details"
-          title="Recent blogs created <br/> by Daikai Media"
-        />
+        <PageHero subtitle="BLOG Details" title="Recent blogs created <br/> by Daikai Media" />
         <article className="relative pb-150 w-full max-w-4xl mx-auto text-center">
           <div className="absolute -top-[250px] left-1/2 -z-10 h-[550px] w-full -translate-x-1/2 bg-[url('/images/hero-gradient.png')] bg-cover bg-center bg-no-repeat opacity-70 md:hidden"></div>
           <div className="container relative">
