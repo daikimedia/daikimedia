@@ -12,9 +12,7 @@ const RecentNews = () => {
   const totalPage = Math.ceil(featureBlog.length / itemsPerPage);
 
   useEffect(() => {
-    // Process blog data to remove HTML tags from content before setting state
     const processedBlogData = blogData.map(blog => {
-      // Function to strip HTML tags
       const stripHtml = (html) => {
         if (!html) return "";
         return html.replace(/<\/?[^>]+(>|$)/g, "");
