@@ -34,7 +34,7 @@ export default function BlogDetails({ params }) {
           name="description"
           content={decodeHtmlEntities(blog.description || blog.content.substring(0, 150) || "Blog post details")}
         />
-      </Head>
+      </Head>  
       <PrimaryNavbar />
       <main className="flex flex-col items-center justify-center min-h-screen">
         <PageHero subtitle="BLOG Details" title="Recent blogs created <br/> by Daikai Media" />
