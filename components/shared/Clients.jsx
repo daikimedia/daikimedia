@@ -3,7 +3,6 @@ import { cn } from "@/utils/cn";
 import Image from "next/image";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
-// import clientBorderDark from "../../public/images/clients/client-border-dark.svg";
 import clientBorder from "../../public/images/clients/client-border.svg";
 
 const Clients = ({
