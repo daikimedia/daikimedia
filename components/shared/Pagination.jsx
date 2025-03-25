@@ -9,42 +9,40 @@ const Pagination = ({ paginateFunction }) => {
   return (
     <div className="container">
       <ul className="flex items-center justify-center gap-2">
-        <li className="group">
+        {/* Previous Page Button */}
+        <li>
           <button
             onClick={goToPreviousPage}
-            className={`group flex h-10 w-10 items-center justify-center rounded-full border border-borderColor text-sm font-medium duration-300 dark:border-borderColor-dark ${
-              currentPage === 1 ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer hover:bg-primary'
-            }`}
+            className={`flex h-10 w-10 items-center justify-center rounded-full border border-gray-400 text-black text-sm font-medium duration-300 
+              ${currentPage === 1 ? 'opacity-50 cursor-not-allowed text-gray-400' : 'hover:bg-gray-200'}`}
             disabled={currentPage === 1}
           >
-            <FontAwesomeIcon
-              icon={faArrowLeft}
-              className={`${currentPage === 1 ? '' : 'dark:group-hover:text-paragraph'} duration-300`}
-            />
+            <FontAwesomeIcon icon={faArrowLeft} />
           </button>
         </li>
+
+        {/* Page Numbers */}
         {Array.from({ length: totalPage }, (_, index) => (
-          <li className={`group ${index + 1 === currentPage ? 'page-active' : ''}`} key={index}>
+          <li key={index}>
             <button
-              className="flex h-10 w-10 items-center justify-center rounded-full text-sm font-medium duration-300 hover:bg-primary hover:text-paragraph group-[.page-active]:bg-primary dark:group-[.page-active]:text-paragraph"
+              className={`flex h-10 w-10 items-center justify-center rounded-full text-sm font-medium duration-300
+                ${index + 1 === currentPage ? 'bg-black text-white' : 'hover:bg-gray-200 hover:text-black'}`}
               onClick={() => setCurrentPage(index + 1)}
             >
               {index + 1}
             </button>
           </li>
         ))}
-        <li className="group">
+
+        {/* Next Page Button */}
+        <li>
           <button
             onClick={goToNextPage}
-            className={`group flex h-10 w-10 items-center justify-center rounded-full border border-borderColor text-sm font-medium duration-300 dark:border-borderColor-dark ${
-              currentPage === totalPage ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer hover:bg-primary'
-            }`}
+            className={`flex h-10 w-10 items-center justify-center rounded-full border border-gray-400 text-black text-sm font-medium duration-300 
+              ${currentPage === totalPage ? 'opacity-50 cursor-not-allowed text-gray-400' : 'hover:bg-gray-200'}`}
             disabled={currentPage === totalPage}
           >
-            <FontAwesomeIcon
-              icon={faArrowRight}
-              className={`${currentPage === totalPage ? '' : 'dark:group-hover:text-paragraph'} duration-300`}
-            />
+            <FontAwesomeIcon icon={faArrowRight} />
           </button>
         </li>
       </ul>
