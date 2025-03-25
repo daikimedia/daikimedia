@@ -27,7 +27,7 @@ const Pagination = ({ paginateFunction }) => {
             <button
               className={`flex h-10 w-10 items-center justify-center rounded-full text-sm font-medium duration-300
                 ${index + 1 === currentPage ? 'bg-black text-white' : 'hover:bg-gray-200 hover:text-black'}`}
-              onClick={() => setCurrentPage(index + 1)}
+              onClick={() => setCurrentPage(index +  1)}
             >
               {index + 1}
             </button>
@@ -39,7 +39,7 @@ const Pagination = ({ paginateFunction }) => {
           <button
             onClick={goToNextPage}
             className={`flex h-10 w-10 items-center justify-center rounded-full border border-gray-400 text-black text-sm font-medium duration-300 
-              ${currentPage === totalPage ? 'opacity-50 cursor-not-allowed text-gray-400' : 'hover:bg-gray-200'}`}
+              ${currentPage === totalPage ? 'opacity-50 cursor-not-allowed text-gray-400' : 'hover:bg-gray-200 '}`}
             disabled={currentPage === totalPage}
           >
             <FontAwesomeIcon icon={faArrowRight} />
