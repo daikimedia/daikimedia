@@ -10,12 +10,12 @@ const Clients = ({
   sectionDetails = true,
   border = true,
   className = "pb-[145px] max-lg:py-20 bg-white dark:bg-dark-300 mt-6",
-}) => {
-  const { ClientData } = ClientList;
+}) => { 
+  const { ClientData } = ClientList; 
   return (
     <section className={cn("client", className)}>
       <div className="container overflow-hidden max-lg:!px-0">
-        <div className="mx-auto max-w-[550px] text-center max-lg:px-2.5">
+        <div className="mx-auto max-w-[550px] text-center max-lg:px-2.5"> 
           {sectionTitle && (
             <h2 className="mb-10">Best Companies Trust Daiki Media.</h2>
           )}
@@ -24,8 +24,7 @@ const Clients = ({
               Trusted by thousands of companies across 50+ countries
             </p>
           )}
-        </div>
-
+        </div> 
         <div className="relative py-8 before:absolute before:-right-0.5 before:top-1/2 before:z-10 before:h-[40px] before:w-[120px] before:-translate-y-1/2  before:bg-gradient-to-l before:from-white before:from-[37.5%] after:absolute after:-left-0.5 after:top-1/2 after:z-10 after:h-[40px] after:w-[120px] after:-translate-y-1/2  after:bg-gradient-to-r after:from-white  after:from-[37.5%] dark:before:from-dark-gradient dark:after:from-dark-gradient">
           {border && (
             <div className="absolute left-0 top-1/2 h-full w-full -translate-y-1/2 ">
@@ -37,45 +36,44 @@ const Clients = ({
             </div>
           )}
 
-<Marquee pauseOnHover className="!flex" gradient={false}>
-  {ClientData.map((clients) => (
-    <div
-      className="marquee-content-list relative flex items-center justify-center"
-      key={clients.id}
-      style={{ width: "180px", height: "60px", padding: "0 40px" }}
-    >
-      <Link href={clients.link || "#"} target="_blank" rel="noopener noreferrer" className="relative w-full h-full flex items-center justify-center">
-        <Image
-          src={clients.imageLight}
-          alt={`${clients.id} logo`}
-          className="dark:hidden object-contain"
-          fill
-          sizes="160px"
-          style={{
-            maxWidth: "100%",
-            maxHeight: "100%",
-          }}
-        />
-        <Image
-          src={clients.imageDark}
-          alt={`${clients.id} logo`}
-          className="hidden dark:block object-contain"
-          fill
-          sizes="160px"
-          style={{
-            maxWidth: "100%",
-            maxHeight: "100%",
-          }}
-        />
-      </Link>
-    </div>
-  ))}
-</Marquee>
-
+          <Marquee pauseOnHover className="!flex" gradient={false}>
+            {ClientData.map((clients) => (
+              <div
+                className="marquee-content-list relative flex items-center justify-center"
+                key={clients.id}
+                style={{ width: "180px", height: "60px", padding: "0 40px" }}
+              >
+                <Link href={clients.link || "#"} target="_blank" rel="noopener noreferrer" className="relative w-full h-full flex items-center justify-center">
+                  <Image
+                    src={clients.imageLight}
+                    alt={`${clients.id} logo`}
+                    className="dark:hidden object-contain"
+                    fill
+                    sizes="160px"
+                    style={{
+                      maxWidth: "100%",
+                      maxHeight: "100%",
+                    }}
+                  />
+                  <Image
+                    src={clients.imageDark}
+                    alt={`${clients.id} logo`}
+                    className="hidden dark:block object-contain"
+                    fill
+                    sizes="160px"
+                    style={{
+                      maxWidth: "100%",
+                      maxHeight: "100%",
+                    }}
+                  />
+                </Link> 
+              </div>
+            ))}
+          </Marquee>
         </div>
         {sectionTitle && (
           <div className="mt-15 flex items-center o justify-center ">
-            <Link
+            <Link 
               href="/contact"
               className=" dark:bg-white dark:text-black hover:dark:bg-black hover:dark:text-white btn-outline"
             >
