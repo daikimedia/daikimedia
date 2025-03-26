@@ -1,3 +1,6 @@
+"use client";
+import { useState, useEffect } from "react";
+import { useParams } from "next/navigation";
 import Head from "next/head";
 import Footer from "@/components/footer/Footer";
 import NewsLetter from "@/components/shared/NewsLetter";
@@ -5,16 +8,49 @@ import PageHero from "@/components/shared/PageHero";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 import blogData from "@/data/singleBlogData.json";
 
-export default function BlogDetails({ params }) {
-  const { slug } = params;
-  const blog = blogData.find((item) => item.slug === slug);
-  
+export default function BlogDetails() {
+  const { slug } = useParams(); 
+  const [blog, setBlog] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    if (!slug) return;
+
+    const fetchBlog = async () => {
+      setIsLoading(true);
+
+      try {
+        let foundBlog = blogData.find((item) => item.slug === slug);
+        if (foundBlog) {
+          setBlog(foundBlog);
+        } else {
+          const response = await fetch(`https://cms.daikimedia.com/api/blogs/${slug}`);
+          if (!response.ok) throw new Error("Failed to fetch blog");
+          const data = await response.json();
+          setBlog(data);
+        }
+      } catch (error) {
+        console.error("Error fetching blog:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchBlog();
+  }, [slug]);
+
+  if (isLoading) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <p className="text-lg text-gray-700">Loading...</p>
+      </div>
+    );
+  }
+
   if (!blog) {
     return (
       <div className="flex justify-center items-center h-screen">
-        <p className="text-lg text-gray-700">
-          Blog post not found or failed to load.
-        </p>
+        <p className="text-lg text-gray-700">Blog post not found.</p>
       </div>
     );
   }
@@ -32,9 +68,9 @@ export default function BlogDetails({ params }) {
         <title>{decodeHtmlEntities(blog.title || "Blog Details")}</title>
         <meta
           name="description"
-          content={decodeHtmlEntities(blog.description || blog.content.substring(0, 150) || "Blog post details")}
+          content={decodeHtmlEntities(blog.description || blog.content?.substring(0, 150) || "Blog post details")}
         />
-      </Head>  
+      </Head>
       <PrimaryNavbar />
       <main className="flex flex-col items-center justify-center min-h-screen">
         <PageHero subtitle="BLOG Details" title="Recent blogs created <br/> by Daikai Media" />
@@ -58,23 +94,11 @@ export default function BlogDetails({ params }) {
               <div className="mb-6 flex items-center justify-center gap-x-2">
                 <p className="text-lg">{blog.author || "Unknown Author"}</p>
                 <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="5"
-                    height="6"
-                    viewBox="0 0 5 6"
-                    fill="none"
-                  >
-                    <circle
-                      cx="2.5"
-                      cy="3"
-                      r="2.5"
-                      fill="#D8DBD0"
-                      className="dark:fill-[#3B3C39]"
-                    />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="5" height="6" viewBox="0 0 5 6" fill="none">
+                    <circle cx="2.5" cy="3" r="2.5" fill="#D8DBD0" className="dark:fill-[#3B3C39]" />
                   </svg>
                 </span>
-                <p className="text-lg">{blog.date}</p>
+                <p className="text-lg">{blog.date || "Unknown Date"}</p>
               </div>
             </div>
 
