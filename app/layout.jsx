@@ -1,5 +1,4 @@
 import "@/scss/theme.scss";
-// import Providers from "@/utils/providers";
 import PropTypes from "prop-types";
 import { cn } from "@/utils/cn";
 import { Inter, Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
@@ -28,9 +27,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata = {
-  title: {
-    default: "Daiki Media | Expert SEO & Website Development Agency",
-  },
+  title: "Daiki Media | Expert SEO & Website Development Agency",
   description:
     "Daiki Media offers top-notch SEO and website development services to help businesses grow online. Build stunning websites, improve search rankings, and boost traffic with our expert team. Contact us today!",
 };
@@ -39,16 +36,20 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <meta name="google-site-verification" content="EIBnMq71KKUDT895qyPc5L_RMaDrmBpUG8pgX3FO6N4" />
-
+        <meta
+          name="google-site-verification"
+          content="EIBnMq71KKUDT895qyPc5L_RMaDrmBpUG8pgX3FO6N4"
+        />
+        
+        {/*  Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
-          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-NZZ2849');
-        `}
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-NZZ2849');
+          `}
         </Script>
         <noscript>
           <iframe
@@ -58,6 +59,35 @@ export default function RootLayout({ children }) {
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
+
+        {/*Schema Markup for SEO */}
+        <Script
+          id="schema-markup"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Daiki Media",
+              "url": "https://daikimedia.com",
+              "description": "Daiki Media provides expert SEO and website development services.",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "123 Main Street",
+                "addressLocality": "New York",
+                "addressRegion": "NY",
+                "postalCode": "10001",
+                "addressCountry": "US"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-234-567-890",
+                "contactType": "customer service"
+              }
+            })
+          }}
+        />
       </head>
       <body
         className={cn(
@@ -67,14 +97,7 @@ export default function RootLayout({ children }) {
           playfair.variable
         )}
       >
-        {/* <Providers
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        > */}
         {children}
-        {/* </Providers> */}
       </body>
     </html>
   );
