@@ -99,7 +99,7 @@ const RecentNews = () => {
           )}
         </div>
       </div>
-      <Pagination paginateFunction={paginateFunction} />
+      <Pagination paginateFunction={paginateFunction} />  
     </section>
   );
 };
