@@ -12,25 +12,42 @@ export default function BlogDetails() {
   const { slug } = useParams(); 
   const [blog, setBlog] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     if (!slug) return;
 
     const fetchBlog = async () => {
       setIsLoading(true);
+      setError(null);
 
       try {
+        console.log("Fetching blog for slug:", slug);
+
+        // Check local JSON data first
         let foundBlog = blogData.find((item) => item.slug === slug);
         if (foundBlog) {
+          console.log("Found blog in local data.");
           setBlog(foundBlog);
         } else {
-          const response = await fetch(`https://cms.daikimedia.com/api/blogs/${slug}`);
-          if (!response.ok) throw new Error("Failed to fetch blog");
+          // Fetch from API
+          const response = await fetch(`https://cms.daikimedia.com/api/blogs/${slug}`, {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          });
+
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+
           const data = await response.json();
           setBlog(data);
         }
       } catch (error) {
-        console.error("Error fetching blog:", error);
+        console.error("Error fetching blog:", error.message);
+        setError(error.message);
       } finally {
         setIsLoading(false);
       }
@@ -43,6 +60,14 @@ export default function BlogDetails() {
     return (
       <div className="flex justify-center items-center h-screen">
         <p className="text-lg text-gray-700">Loading...</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <p className="text-lg text-red-600">Error: {error}</p>
       </div>
     );
   }
