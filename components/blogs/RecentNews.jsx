@@ -14,35 +14,40 @@ const RecentNews = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        // Pehle JSON data ko process karo
-        const processedBlogData = blogData.map(blog => {
+        console.log("Fetching blogs...");
+
+        // Process JSON data first
+        const processedBlogData = blogData.map((blog) => {
           const stripHtml = (html) => {
             if (!html) return "";
             return html.replace(/<\/?[^>]+(>|$)/g, "");
           };
-          
+
           return {
             ...blog,
-            content: stripHtml(blog.content)
+            content: stripHtml(blog.content),
           };
         });
 
-        // API se data fetch karo
+        console.log("Local JSON blogs processed:", processedBlogData);
+
+        // Fetch data from API
         const response = await fetch(`https://cms.daikimedia.com/api/blogs`);
         
         if (response.ok) {
           const apiBlogs = await response.json();
-          
-          // API blogs ko process karo
-          const processedApiBlogData = apiBlogs.map(blog => {
+          console.log("API blogs fetched:", apiBlogs);
+
+          // Process API blogs
+          const processedApiBlogData = apiBlogs.map((blog) => {
             const stripHtml = (html) => {
               if (!html) return "";
               return html.replace(/<\/?[^>]+(>|$)/g, "");
             };
-            
+
             return {
               ...blog,
-              content: stripHtml(blog.content)
+              content: stripHtml(blog.content),
             };
           });
 
@@ -50,18 +55,19 @@ const RecentNews = () => {
           const combinedBlogs = [
             ...processedBlogData,
             ...processedApiBlogData.filter(
-              apiBlog => !processedBlogData.some(jsonBlog => jsonBlog.slug === apiBlog.slug)
-            )
+              (apiBlog) =>
+                !processedBlogData.some((jsonBlog) => jsonBlog.slug === apiBlog.slug)
+            ),
           ];
 
+          console.log("Combined blogs list:", combinedBlogs);
           setFeatureBlog(combinedBlogs);
         } else {
-          // Agar API call fail hoti hai, to sirf JSON data use karo
+          console.error("API fetch failed, using only local JSON data.");
           setFeatureBlog(processedBlogData);
         }
       } catch (error) {
         console.error("Error fetching blogs:", error);
-        // Agar koi error aata hai, to sirf JSON data use karo
         setFeatureBlog(processedBlogData);
       } finally {
         setIsLoading(false);
@@ -142,7 +148,7 @@ const RecentNews = () => {
           )}
         </div>
       </div>
-      <Pagination paginateFunction={paginateFunction} />  
+      <Pagination paginateFunction={paginateFunction} />
     </section>
   );
 };
