@@ -12,20 +12,69 @@ const RecentNews = () => {
   const totalPage = Math.ceil(featureBlog.length / itemsPerPage);
 
   useEffect(() => {
-    const processedBlogData = blogData.map(blog => {
-      const stripHtml = (html) => {
-        if (!html) return "";
-        return html.replace(/<\/?[^>]+(>|$)/g, "");
-      };
-      
-      return {
-        ...blog,
-        content: stripHtml(blog.content)
-      };
-    });
-    
-    setFeatureBlog(processedBlogData);
-    setIsLoading(false);
+    const fetchBlogs = async () => {
+      try {
+        console.log("Fetching blogs...");
+
+        // Process JSON data first
+        const processedBlogData = blogData.map((blog) => {
+          const stripHtml = (html) => {
+            if (!html) return "";
+            return html.replace(/<\/?[^>]+(>|$)/g, "");
+          };
+
+          return {
+            ...blog,
+            content: stripHtml(blog.content),
+          };
+        });
+
+        console.log("Local JSON blogs processed:", processedBlogData);
+
+        // Fetch data from API
+        const response = await fetch(`https://cms.daikimedia.com/api/blogs`);
+        
+        if (response.ok) {
+          const apiBlogs = await response.json();
+          console.log("API blogs fetched:", apiBlogs);
+
+          // Process API blogs
+          const processedApiBlogData = apiBlogs.map((blog) => {
+            const stripHtml = (html) => {
+              if (!html) return "";
+              return html.replace(/<\/?[^>]+(>|$)/g, "");
+            };
+
+            return {
+              ...blog,
+              content: stripHtml(blog.content),
+            };
+          });
+
+          // Combine JSON and API blogs, remove duplicates
+          const combinedBlogs = [
+            ...processedBlogData,
+            ...processedApiBlogData.filter(
+              (apiBlog) =>
+                !processedBlogData.some((jsonBlog) => jsonBlog.slug === apiBlog.slug)
+            ),
+          ];
+
+          console.log("Combined blogs list:", combinedBlogs);
+          setFeatureBlog(combinedBlogs);
+        } else {
+          console.error("API fetch failed, using only local JSON data.");
+          setFeatureBlog(processedBlogData);
+        }
+      } catch (error) {
+        console.error("Error fetching blogs:", error);
+        setFeatureBlog(processedBlogData);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchBlogs();
   }, []);
 
   const paginateData = () => {
@@ -99,7 +148,7 @@ const RecentNews = () => {
           )}
         </div>
       </div>
-      <Pagination paginateFunction={paginateFunction} />  
+      <Pagination paginateFunction={paginateFunction} />
     </section>
   );
 };
