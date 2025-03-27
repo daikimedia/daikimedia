@@ -9,40 +9,58 @@ import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 import blogData from "@/data/singleBlogData.json";
 
 export default function BlogDetails() {
-  const { slug } = useParams(); 
+  const { slug } = useParams();
+  const [allBlogs, setAllBlogs] = useState([]);
   const [blog, setBlog] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    if (!slug) return;
-
-    const fetchBlog = async () => {
+    const fetchAllBlogs = async () => {
       setIsLoading(true);
+      setError(null);
 
       try {
-        let foundBlog = blogData.find((item) => item.slug === slug);
+        const response = await fetch(`https://cms.daikimedia.com/api/blogs`);
+        
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        setAllBlogs(data);
+
+        const foundBlog = data.find(item => item.slug === slug);
         if (foundBlog) {
           setBlog(foundBlog);
         } else {
-          const response = await fetch(`https://cms.daikimedia.com/api/blogs/${slug}`);
-          if (!response.ok) throw new Error("Failed to fetch blog");
-          const data = await response.json();
-          setBlog(data);
+          setError("Blog not found");
         }
       } catch (error) {
-        console.error("Error fetching blog:", error);
+        console.error("Error fetching blogs:", error);
+        setError(error.message);
       } finally {
         setIsLoading(false);
       }
     };
 
-    fetchBlog();
+    if (slug) {
+      fetchAllBlogs();
+    }
   }, [slug]);
 
   if (isLoading) {
     return (
       <div className="flex justify-center items-center h-screen">
         <p className="text-lg text-gray-700">Loading...</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <p className="text-lg text-red-600">{error}</p>
       </div>
     );
   }
@@ -119,4 +137,3 @@ export default function BlogDetails() {
     </>
   );
 }
-
