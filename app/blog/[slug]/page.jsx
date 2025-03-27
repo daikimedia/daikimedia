@@ -24,10 +24,17 @@ export default function BlogDetails() {
         if (foundBlog) {
           setBlog(foundBlog);
         } else {
-          const response = await fetch(`https://cms.daikimedia.com/api/blogs/${slug}`);
-          if (!response.ok) throw new Error("Failed to fetch blog");
-          const data = await response.json();
-          setBlog(data);
+          const response = await fetch("https://cms.daikimedia.com/api/blogs");
+          if (!response.ok) throw new Error("Failed to fetch blogs");
+          
+          const blogs = await response.json();
+          const apiBlog = blogs.find(blog => blog.slug === slug);
+          
+          if (apiBlog) {
+            setBlog(apiBlog);
+          } else {
+            throw new Error("Blog not found");
+          }
         }
       } catch (error) {
         console.error("Error fetching blog:", error);

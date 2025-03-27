@@ -17,29 +17,21 @@ const FooterV2 = () => {
             <Image
               src={FooterData.logo}
               alt="logo"
-              className="mb-10 mb-10 inline-block dark:hidden"
+              className="mb-10  inline-block dark:hidden"
               width={70}
               height={29}
             />
             <Image
               src={FooterData.logoDark}
               alt="logo dark version"
-              className="mb-10 mb-10 hidden dark:inline-block"
+              className="mb-10  hidden dark:inline-block"
               width={70}
               height={29}
             />
             <p className="max-w-[350px] max-lg:mx-auto">{FooterData.footerText}</p>
           </div>
           <div>
-            <ul className="social-link flex items-center gap-4 max-lg:justify-center">
-              {FooterData.socialLinks.map((items) => (
-                <li key={items.id}>
-                  <Link href={items.link} className="transiton-all">
-                    {items.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+
           </div>
         </div>
         <div className="seperator mb-10">
