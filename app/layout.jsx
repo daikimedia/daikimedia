@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
           name="google-site-verification"
           content="EIBnMq71KKUDT895qyPc5L_RMaDrmBpUG8pgX3FO6N4"
         />
-        
+
         {/*  Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
@@ -74,15 +74,15 @@ export default function RootLayout({ children }) {
               "description": "Daiki Media provides expert SEO and website development services.",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "123 Main Street",
-                "addressLocality": "New York",
-                "addressRegion": "NY",
-                "postalCode": "10001",
-                "addressCountry": "US"
+                "streetAddress": "Jalan Ara, SD 7/3d, Bandar Sri Damansara",
+                "addressLocality": "Kuala Lumpur",
+                "addressRegion": "KL",
+                "postalCode": "52200",
+                "addressCountry": "MY"
               },
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+1-234-567-890",
+                "telephone": "+601114850067",
                 "contactType": "customer service"
               }
             })

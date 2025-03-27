@@ -70,14 +70,16 @@ const Footer = () => {
               </Link>
             </p>
             <ul className="social-link flex items-center gap-4 max-lg:justify-center">
-              {FooterData.socialLinks.map((items) => (
-                <li key={items.id}>
-                  <Link href={items.link} className="transiton-all fill-none">
-                    {items.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+             {FooterData.socialLinks.map((items) => (
+               <li key={items.id}>
+                 <Link href={items.link} className="transition-all">
+                   {items.name}
+                 </Link>
+               </li>
+             ))}
+           </ul>
+           <div className="text-black">Jalan Ara, SD 7/3d, Bandar Sri Damansara, 52200 Kuala Lumpur</div>
+
           </div>
         </div>
 
