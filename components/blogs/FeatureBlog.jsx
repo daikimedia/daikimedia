@@ -24,7 +24,7 @@ const FeatureBlog = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        // Dynamically import blog data
+
         const processedBlogData = await importBlogData();
 
         const stripHtml = (html) => {
@@ -32,7 +32,6 @@ const FeatureBlog = () => {
           return html.replace(/<\/?[^>]+(>|$)/g, "");
         };
 
-        // Process imported blog data
         const processedBlogs = processedBlogData.map(blog => ({
           ...blog,
           content: stripHtml(blog.content?.rendered || blog.content || "")
@@ -154,3 +153,7 @@ const FeatureBlog = () => {
 };
 
 export default FeatureBlog;
+
+
+
+
