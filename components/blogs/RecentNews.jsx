@@ -13,7 +13,6 @@ const RecentNews = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        // Process local JSON data first
         const processedLocalBlogData = blogData.map((blog) => {
           const stripHtml = (html) => {
             if (!html) return "";

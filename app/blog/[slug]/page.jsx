@@ -63,7 +63,6 @@ export default function BlogDetails() {
       </div>
     );
   }
-
   if (!blog) {
     return (
       <div className="flex justify-center items-center h-screen">
