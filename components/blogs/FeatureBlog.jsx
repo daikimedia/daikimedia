@@ -24,6 +24,7 @@ const FeatureBlog = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
+
         const processedBlogData = await importBlogData();
 
         const stripHtml = (html) => {
@@ -37,7 +38,8 @@ const FeatureBlog = () => {
         }));
 
         // Fetch data from API
-        const response = await fetch(`https://cms.daikimedia.com/api/blogs`);
+        const response = await fetch("https://cms.daikimedia.com/api/blogs");
+
         
         if (response.ok) {
           const apiBlogs = await response.json();
@@ -62,6 +64,7 @@ const FeatureBlog = () => {
       } catch (error) {
         console.error("Error fetching blogs:", error);
         setFeatureBlog([]);
+
       } finally {
         setIsLoading(false);
       }
