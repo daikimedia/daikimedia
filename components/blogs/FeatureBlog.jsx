@@ -27,13 +27,11 @@ const FeatureBlog = () => {
           };
         });
 
-        // Fetch data from API
         const response = await fetch(`https://cms.daikimedia.com/api/blogs`);
         
         if (response.ok) {
           const apiBlogs = await response.json();
           
-          // Process API blogs
           const processedApiBlogData = apiBlogs.map(blog => {
             const stripHtml = (html) => {
               if (!html) return "";
@@ -46,7 +44,6 @@ const FeatureBlog = () => {
             };
           });
 
-          // Combine JSON and API blogs, remove duplicates
           const combinedBlogs = [
             ...processedBlogData,
             ...processedApiBlogData.filter(

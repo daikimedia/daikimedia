@@ -38,7 +38,6 @@ const RecentNews = () => {
           const apiBlogs = await response.json();
           console.log("API blogs fetched:", apiBlogs);
 
-          // Process API blogs
           const processedApiBlogData = apiBlogs.map((blog) => {
             const stripHtml = (html) => {
               if (!html) return "";
@@ -51,7 +50,6 @@ const RecentNews = () => {
             };
           });
 
-          // Combine JSON and API blogs, remove duplicates
           const combinedBlogs = [
             ...processedBlogData,
             ...processedApiBlogData.filter(
