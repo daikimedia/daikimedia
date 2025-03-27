@@ -12,20 +12,63 @@ const RecentNews = () => {
   const totalPage = Math.ceil(featureBlog.length / itemsPerPage);
 
   useEffect(() => {
-    const processedBlogData = blogData.map(blog => {
-      const stripHtml = (html) => {
-        if (!html) return "";
-        return html.replace(/<\/?[^>]+(>|$)/g, "");
-      };
-      
-      return {
-        ...blog,
-        content: stripHtml(blog.content)
-      };
-    });
-    
-    setFeatureBlog(processedBlogData);
-    setIsLoading(false);
+    const fetchBlogs = async () => {
+      try {
+        // Pehle JSON data ko process karo
+        const processedBlogData = blogData.map(blog => {
+          const stripHtml = (html) => {
+            if (!html) return "";
+            return html.replace(/<\/?[^>]+(>|$)/g, "");
+          };
+          
+          return {
+            ...blog,
+            content: stripHtml(blog.content)
+          };
+        });
+
+        // API se data fetch karo
+        const response = await fetch(`https://cms.daikimedia.com/api/blogs`);
+        
+        if (response.ok) {
+          const apiBlogs = await response.json();
+          
+          // API blogs ko process karo
+          const processedApiBlogData = apiBlogs.map(blog => {
+            const stripHtml = (html) => {
+              if (!html) return "";
+              return html.replace(/<\/?[^>]+(>|$)/g, "");
+            };
+            
+            return {
+              ...blog,
+              content: stripHtml(blog.content)
+            };
+          });
+
+          // Combine JSON and API blogs, remove duplicates
+          const combinedBlogs = [
+            ...processedBlogData,
+            ...processedApiBlogData.filter(
+              apiBlog => !processedBlogData.some(jsonBlog => jsonBlog.slug === apiBlog.slug)
+            )
+          ];
+
+          setFeatureBlog(combinedBlogs);
+        } else {
+          // Agar API call fail hoti hai, to sirf JSON data use karo
+          setFeatureBlog(processedBlogData);
+        }
+      } catch (error) {
+        console.error("Error fetching blogs:", error);
+        // Agar koi error aata hai, to sirf JSON data use karo
+        setFeatureBlog(processedBlogData);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchBlogs();
   }, []);
 
   const paginateData = () => {
