@@ -1,21 +1,24 @@
+// import solutionImageDark from "@/public/images/solution/solution-dark.png";
+// import solutionImage from "@/public/images/solution/solution.png";
+// import Image from "next/image";
 import Link from "next/link";
 import SolutionAnimation from "@/components/home-1/SolutionAnimation";
 
 const CustomSectionOne = () => {
   return (
     <main>
-      <section className="relative overflow-hidden bg-white dark:bg-dark-300 py-20 lg:pb-15 lg:pt-[160px]">
-        <div className="container px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 1xl:gap-x-24">
-            <div className="order-2 lg:order-1">
-              <div className="relative mx-auto aspect-video">
+      <section className="relative overflow-hidden bg-white dark:bg-dark-300 max-lg:pb-150 max-lg:pt-20 lg:pb-15">
+        <div className="container">
+          <div className="grid grid-cols-2 items-center gap-10 max-md:grid-cols-1 1xl:gap-x-24">
+            <div className="max-md:order-2">
+              <div className="relative mx-auto aspect-video ">
                 <SolutionAnimation />
               </div>
             </div>
-            <div className="order-1 lg:order-2 lg:-mt-15">
+            <div className="max-md:order-1 lg:-mt-15">
               <p className="section-tagline">Strong Solutions</p>
               <h2 className="mb-8 max-lg:mb-4">
-                Unleash Business Growth with Daiki Media: Your All-in-One
+                app.js with Daiki Media: Your All-in-One
                 Digital Partner{" "}
               </h2>
               <p className="mb-11 max-lg:mb-6">
@@ -44,9 +47,9 @@ const CustomSectionOne = () => {
       </section>
 
       <section className="relative overflow-hidden bg-white pb-150 pt-[160px] dark:bg-dark-300 max-lg:pb-150 max-lg:pt-20 lg:pb-15">
-        <div className="container px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 1xl:gap-x-24">
-            <div className="lg:-mt-15">
+        <div className="container">
+          <div className="grid grid-cols-2 items-center gap-10 max-md:grid-cols-1 1xl:gap-x-24">
+            <div className="max-md:order-1 lg:-mt-15">
               <p className="section-tagline">Strong Solutions</p>
               <h2 className="mb-8 max-lg:mb-4">
                 How Daiki Media Drives Revenue Across Channels?
@@ -68,8 +71,8 @@ const CustomSectionOne = () => {
                 Start Your Journey
               </Link>
             </div>
-            <div>
-              <div className="relative mx-auto aspect-video">
+            <div className="max-md:order-2">
+              <div className="relative mx-auto aspect-video ">
                 <SolutionAnimation />
               </div>
             </div>
