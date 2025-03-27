@@ -6,11 +6,10 @@ import Footer from "@/components/footer/Footer";
 import NewsLetter from "@/components/shared/NewsLetter";
 import PageHero from "@/components/shared/PageHero";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
-import blogData from "@/data/singleBlogData.json";
 
 export default function BlogDetails() {
   const { slug } = useParams();
-  const [allBlogs, setAllBlogs] = useState([]);
+  const [ setAllBlogs] = useState([]);
   const [blog, setBlog] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);

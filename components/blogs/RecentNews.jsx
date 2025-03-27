@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import Pagination from "../shared/Pagination";
 import BlogItems from "./BlogItems";
 import blogData from "../../data/singleBlogData.json";
@@ -9,15 +9,12 @@ const RecentNews = () => {
   const [featureBlog, setFeatureBlog] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const itemsPerPage = 12;
-  const totalPage = Math.ceil(featureBlog.length / itemsPerPage);
 
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        console.log("Fetching blogs...");
-
-        // Process JSON data first
-        const processedBlogData = blogData.map((blog) => {
+        // Process local JSON data first
+        const processedLocalBlogData = blogData.map((blog) => {
           const stripHtml = (html) => {
             if (!html) return "";
             return html.replace(/<\/?[^>]+(>|$)/g, "");
@@ -25,66 +22,77 @@ const RecentNews = () => {
 
           return {
             ...blog,
-            content: stripHtml(blog.content),
+            content: stripHtml(blog.content?.rendered || blog.content || ""),
           };
         });
 
-        console.log("Local JSON blogs processed:", processedBlogData);
+        try {
+          // Fetch data from API
+          const response = await fetch(`https://cms.daikimedia.com/api/blogs`);
+          
+          if (response.ok) {
+            const apiBlogs = await response.json();
 
-        // Fetch data from API
-        const response = await fetch(`https://cms.daikimedia.com/api/blogs`);
-        
-        if (response.ok) {
-          const apiBlogs = await response.json();
-          console.log("API blogs fetched:", apiBlogs);
+            // Process API blogs
+            const processedApiBlogData = apiBlogs.map((blog) => {
+              const stripHtml = (html) => {
+                if (!html) return "";
+                return html.replace(/<\/?[^>]+(>|$)/g, "");
+              };
 
-          const processedApiBlogData = apiBlogs.map((blog) => {
-            const stripHtml = (html) => {
-              if (!html) return "";
-              return html.replace(/<\/?[^>]+(>|$)/g, "");
-            };
+              return {
+                ...blog,
+                content: stripHtml(blog.content?.rendered || blog.content || ""),
+              };
+            });
 
-            return {
-              ...blog,
-              content: stripHtml(blog.content),
-            };
-          });
+            // Combine blogs, removing duplicates
+            const combinedBlogs = [
+              ...processedLocalBlogData,
+              ...processedApiBlogData.filter(
+                (apiBlog) =>
+                  !processedLocalBlogData.some((jsonBlog) => jsonBlog.slug === apiBlog.slug)
+              ),
+            ];
 
-          const combinedBlogs = [
-            ...processedBlogData,
-            ...processedApiBlogData.filter(
-              (apiBlog) =>
-                !processedBlogData.some((jsonBlog) => jsonBlog.slug === apiBlog.slug)
-            ),
-          ];
-
-          console.log("Combined blogs list:", combinedBlogs);
-          setFeatureBlog(combinedBlogs);
-        } else {
-          console.error("API fetch failed, using only local JSON data.");
-          setFeatureBlog(processedBlogData);
+            setFeatureBlog(combinedBlogs);
+          } else {
+            // Fallback to local data if API fetch fails
+            setFeatureBlog(processedLocalBlogData);
+          }
+        } catch (apiError) {
+          console.error("API fetch error:", apiError);
+          setFeatureBlog(processedLocalBlogData);
         }
       } catch (error) {
-        console.error("Error fetching blogs:", error);
-        setFeatureBlog(processedBlogData);
+        console.error("Error processing blogs:", error);
+        setFeatureBlog([]);
       } finally {
         setIsLoading(false);
       }
     };
 
     fetchBlogs();
-  }, []);
+  }, []); // Empty dependency array to run only once
 
-  const paginateData = () => {
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
-    return featureBlog.slice(startIndex, endIndex);
-  };
+  // Use useMemo to calculate total pages and paginated data
+  const paginationData = useMemo(() => {
+    const totalPage = Math.ceil(featureBlog.length / itemsPerPage);
+    
+    const paginateData = () => {
+      const startIndex = (currentPage - 1) * itemsPerPage;
+      const endIndex = startIndex + itemsPerPage;
+      return featureBlog.slice(startIndex, endIndex);
+    };
 
-  const currentPageData = paginateData();
+    return {
+      totalPage,
+      currentPageData: paginateData()
+    };
+  }, [featureBlog, currentPage, itemsPerPage]);
 
   const goToNextPage = () => {
-    if (currentPage < totalPage) {
+    if (currentPage < paginationData.totalPage) {
       setCurrentPage((prevPage) => prevPage + 1);
     }
   };
@@ -96,7 +104,7 @@ const RecentNews = () => {
   };
 
   const paginateFunction = {
-    totalPage,
+    totalPage: paginationData.totalPage,
     currentPage,
     setCurrentPage,
     goToNextPage,
@@ -128,7 +136,7 @@ const RecentNews = () => {
             </div>
           ) : (
             <div className="grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1">
-              {currentPageData.map((blog) => (
+              {paginationData.currentPageData.map((blog) => (
                 <BlogItems
                   key={blog.id}
                   id={blog.id}
