@@ -9,7 +9,7 @@ import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 import blogData from "@/data/singleBlogData.json";
 
 export default function BlogDetails() {
-  const { slug } = useParams(); 
+  const { slug } = useParams();
   const [blog, setBlog] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
