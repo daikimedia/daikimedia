@@ -5,7 +5,17 @@ import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import blogData from "../../data/singleBlogData.json";
+
+// Dynamically import blog data
+const importBlogData = async () => {
+  try {
+    const blogData = await import("../../data/singleBlogData.json");
+    return blogData.default || blogData;
+  } catch (error) {
+    console.error("Error importing blog data:", error);
+    return [];
+  }
+};
 
 const FeatureBlog = () => {
   const [featureBlog, setFeatureBlog] = useState([]);
@@ -14,55 +24,48 @@ const FeatureBlog = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        // Process JSON data
-        const processedBlogData = blogData.map(blog => {
-          const stripHtml = (html) => {
-            if (!html) return "";
-            return html.replace(/<\/?[^>]+(>|$)/g, "");
-          };
-          
-          return {
-            ...blog,
-            content: stripHtml(blog.content?.rendered || blog.content || "")
-          };
-        });
+        // Dynamically import blog data
+        const processedBlogData = await importBlogData();
+
+        const stripHtml = (html) => {
+          if (!html) return "";
+          return html.replace(/<\/?[^>]+(>|$)/g, "");
+        };
+
+        // Process imported blog data
+        const processedBlogs = processedBlogData.map(blog => ({
+          ...blog,
+          content: stripHtml(blog.content?.rendered || blog.content || "")
+        }));
 
         // Fetch data from API
-        const response = await fetch(`https://cms.daikimedia.com/api/blogs`);
+        const response = await fetch("https://cms.daikimedia.com/api/blogs");
+
         
         if (response.ok) {
           const apiBlogs = await response.json();
           
-          // Process API blogs
-          const processedApiBlogData = apiBlogs.map(blog => {
-            const stripHtml = (html) => {
-              if (!html) return "";
-              return html.replace(/<\/?[^>]+(>|$)/g, "");
-            };
-            
-            return {
-              ...blog,
-              content: stripHtml(blog.content?.rendered || blog.content || "")
-            };
-          });
+          const processedApiBlogData = apiBlogs.map(blog => ({
+            ...blog,
+            content: stripHtml(blog.content?.rendered || blog.content || "")
+          }));
 
-          // Combine JSON and API blogs, remove duplicates
           const combinedBlogs = [
-            ...processedBlogData,
+            ...processedBlogs,
             ...processedApiBlogData.filter(
-              apiBlog => !processedBlogData.some(jsonBlog => jsonBlog.slug === apiBlog.slug)
+              apiBlog => !processedBlogs.some(jsonBlog => jsonBlog.slug === apiBlog.slug)
             )
           ];
 
           setFeatureBlog(combinedBlogs);
         } else {
-          // If API call fails, use only JSON data
-          setFeatureBlog(processedBlogData);
+          // If API call fails, use only imported JSON data
+          setFeatureBlog(processedBlogs);
         }
       } catch (error) {
         console.error("Error fetching blogs:", error);
-        // If any error occurs, use only JSON data
-        setFeatureBlog(processedBlogData);
+        setFeatureBlog([]);
+
       } finally {
         setIsLoading(false);
       }
@@ -72,6 +75,7 @@ const FeatureBlog = () => {
   }, []);
 
   const stripHTML = (html) => {
+    if (typeof document === 'undefined') return html;
     const tempDiv = document.createElement("div");
     tempDiv.innerHTML = html;
     return tempDiv.textContent || tempDiv.innerText || "";
@@ -88,7 +92,6 @@ const FeatureBlog = () => {
 
   return (
     <div className="relative">
-      {/* Rest of the component remains the same */}
       {isLoading ? (
         <p className="text-center">Loading blogs...</p>
       ) : (
