@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import Pagination from "../shared/Pagination";
 import BlogItems from "./BlogItems";
 import blogData from "../../data/singleBlogData.json";
@@ -9,35 +9,90 @@ const RecentNews = () => {
   const [featureBlog, setFeatureBlog] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const itemsPerPage = 12;
-  const totalPage = Math.ceil(featureBlog.length / itemsPerPage);
 
   useEffect(() => {
-    const processedBlogData = blogData.map(blog => {
-      const stripHtml = (html) => {
-        if (!html) return "";
-        return html.replace(/<\/?[^>]+(>|$)/g, "");
-      };
-      
-      return {
-        ...blog,
-        content: stripHtml(blog.content)
-      };
-    });
-    
-    setFeatureBlog(processedBlogData);
-    setIsLoading(false);
+    const fetchBlogs = async () => {
+      try {
+        const stripHtml = (html) => {
+          if (!html) return "";
+          return html.replace(/<\/?[^>]+(>|$)/g, "");
+        };
+
+        const processedLocalBlogData = blogData.map((blog) => ({
+          ...blog,
+          content: stripHtml(blog.content?.rendered || blog.content || ""),
+        }));
+
+        try {
+          // Fetch data from API
+          const response = await fetch(`https://cms.daikimedia.com/api/blogs`);
+
+          if (response.ok) {
+            const apiBlogs = await response.json();
+
+            // Process API blogs
+            const processedApiBlogData = apiBlogs.map((blog) => ({
+              ...blog,
+              content: stripHtml(blog.content?.rendered || blog.content || ""),
+              featuredImage: fixImagePath(blog.featuredImage), // ✅ Fix only API images
+              date: blog.created_at || "Unknown Creator", // ✅ Replace date with created_by
+            }));
+
+            // Combine blogs, removing duplicates
+            const combinedBlogs = [
+              ...processedLocalBlogData,
+              ...processedApiBlogData.filter(
+                (apiBlog) =>
+                  !processedLocalBlogData.some((jsonBlog) => jsonBlog.slug === apiBlog.slug)
+              ),
+            ];
+
+            setFeatureBlog(combinedBlogs);
+          } else {
+            setFeatureBlog(processedLocalBlogData);
+          }
+        } catch (apiError) {
+          console.error("API fetch error:", apiError);
+          setFeatureBlog(processedLocalBlogData);
+        }
+      } catch (error) {
+        console.error("Error processing blogs:", error);
+        setFeatureBlog([]);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchBlogs();
   }, []);
 
-  const paginateData = () => {
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    const endIndex = startIndex + itemsPerPage;
-    return featureBlog.slice(startIndex, endIndex);
+  // ✅ Only fix API image URLs (JSON images remain unchanged)
+  const fixImagePath = (path) => {
+    if (!path) return "";
+    if (!path.startsWith("http")) {
+      return `https://cms.daikimedia.com/${path.replace(/\\/g, "/")}`;
+    }
+    return path;
   };
 
-  const currentPageData = paginateData();
+  // Memoized pagination logic
+  const paginationData = useMemo(() => {
+    const totalPage = Math.ceil(featureBlog.length / itemsPerPage);
+    
+    const paginateData = () => {
+      const startIndex = (currentPage - 1) * itemsPerPage;
+      const endIndex = startIndex + itemsPerPage;
+      return featureBlog.slice(startIndex, endIndex);
+    };
+
+    return {
+      totalPage,
+      currentPageData: paginateData()
+    };
+  }, [featureBlog, currentPage, itemsPerPage]);
 
   const goToNextPage = () => {
-    if (currentPage < totalPage) {
+    if (currentPage < paginationData.totalPage) {
       setCurrentPage((prevPage) => prevPage + 1);
     }
   };
@@ -49,7 +104,7 @@ const RecentNews = () => {
   };
 
   const paginateFunction = {
-    totalPage,
+    totalPage: paginationData.totalPage,
     currentPage,
     setCurrentPage,
     goToNextPage,
@@ -70,25 +125,20 @@ const RecentNews = () => {
           </h2>
         </div>
         <div className="relative z-10">
-          <div className="absolute left-1/2 top-60 -z-10 flex -translate-x-1/2 -translate-y-1/2 max-md:hidden max-md:flex-col">
-            <div className="rounded-full bg-primary-200/20 blur-[145px] max-1xl:h-[335px] max-1xl:w-[335px] 1xl:h-[442px] 1xl:w-[442px]"></div>
-            <div className="-ml-[170px] rounded-full bg-primary-200/25 blur-[145px] max-1xl:h-[335px] max-1xl:w-[335px] max-md:ml-0 1xl:h-[442px] 1xl:w-[442px]"></div>
-            <div className="-ml-[170px] rounded-full bg-primary-200/20 blur-[145px] max-1xl:h-[335px] max-1xl:w-[335px] max-md:ml-0 1xl:h-[442px] 1xl:w-[442px]"></div>
-          </div>
           {isLoading ? (
             <div className="flex justify-center items-center py-10">
               <p className="text-lg text-gray-600">Loading...</p>
             </div>
           ) : (
             <div className="grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1">
-              {currentPageData.map((blog) => (
+              {paginationData.currentPageData.map((blog) => (
                 <BlogItems
                   key={blog.id}
                   id={blog.id}
                   slug={blog.slug}
                   blogData={blog}
                   content={blog.content}
-                  date={blog.date}
+                  date={blog.date} // ✅ Now this shows `created_by` instead of actual date
                   thumbnail={blog.featuredImage}
                   status={blog.categories}
                   title={blog.title || "Untitled"}
@@ -99,7 +149,7 @@ const RecentNews = () => {
           )}
         </div>
       </div>
-      <Pagination paginateFunction={paginateFunction} />  
+      <Pagination paginateFunction={paginateFunction} />
     </section>
   );
 };

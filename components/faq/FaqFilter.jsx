@@ -68,5 +68,4 @@ const FaqFilter = () => {
     </motion.div>
   )
 }
-
 export default FaqFilter
