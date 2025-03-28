@@ -6,11 +6,13 @@ import Footer from "@/components/footer/Footer";
 import NewsLetter from "@/components/shared/NewsLetter";
 import PageHero from "@/components/shared/PageHero";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
+import blogData from "@/data/singleBlogData.json";
 
 export default function BlogDetails() {
   const { slug } = useParams();
-  const [ setAllBlogs] = useState([]);
+  const [allBlogs, setAllBlogs] = useState([]);
   const [blog, setBlog] = useState(null);
+  const [isApiBlog, setIsApiBlog] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -20,24 +22,35 @@ export default function BlogDetails() {
       setError(null);
 
       try {
-        const response = await fetch(`https://cms.daikimedia.com/api/blogs`);
-        
+        // API se blogs fetch karo
+        const response = await fetch("https://cms.daikimedia.com/api/blogs");
+
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-        
+
         const data = await response.json();
         setAllBlogs(data);
 
-        const foundBlog = data.find(item => item.slug === slug);
+        // API blogs me slug match karo
+        const foundBlog = data.find((item) => item.slug === slug);
         if (foundBlog) {
           setBlog(foundBlog);
+          setIsApiBlog(true);
         } else {
-          setError("Blog not found");
+          throw new Error("Blog not found in API");
         }
       } catch (error) {
         console.error("Error fetching blogs:", error);
         setError(error.message);
+
+        // JSON data se check karo agar API fail ho gayi
+        const fallbackBlog = blogData.find((item) => item.slug === slug);
+        if (fallbackBlog) {
+          setBlog(fallbackBlog);
+          setIsApiBlog(false);
+          setError(null); // Reset error
+        }
       } finally {
         setIsLoading(false);
       }
@@ -63,6 +76,7 @@ export default function BlogDetails() {
       </div>
     );
   }
+
   if (!blog) {
     return (
       <div className="flex justify-center items-center h-screen">
@@ -78,6 +92,22 @@ export default function BlogDetails() {
     return textArea.value;
   };
 
+  // ✅ Fixing Image Path Based on API or JSON
+  const getImageUrl = (imagePath) => {
+    if (!imagePath) return "/images/default-blog.jpg"; // Default image if none provided
+    return isApiBlog ? `http://cms.daikimedia.com/${imagePath}` : imagePath;
+  };
+
+  // ✅ Fixing Date Handling Based on API or JSON
+  const getFormattedDate = () => {
+    if (isApiBlog) {
+      return blog.created_at ? blog.created_at.split("T")[0] : "Unknown Date"; // API Blog Date
+    } else {
+      return blog.date ? blog.date.split("T")[0] : "Unknown Date"; // JSON Blog Date
+    }
+  };
+  
+
   return (
     <>
       <Head>
@@ -91,11 +121,10 @@ export default function BlogDetails() {
       <main className="flex flex-col items-center justify-center min-h-screen">
         <PageHero subtitle="BLOG Details" title="Recent blogs created <br/> by Daikai Media" />
         <article className="relative pb-150 w-full max-w-4xl mx-auto text-center">
-          <div className="absolute -top-[250px] left-1/2 -z-10 h-[550px] w-full -translate-x-1/2 bg-[url('/images/hero-gradient.png')] bg-cover bg-center bg-no-repeat opacity-70 md:hidden"></div>
           <div className="container relative">
             <div className="mb-16 overflow-hidden rounded-medium p-2.5 max-md:h-[400px] flex justify-center items-center">
               <img
-                src={blog.featuredImage || "/images/default-blog.jpg"}
+                src={getImageUrl(blog.featuredImage)}
                 alt={decodeHtmlEntities(blog.title || "Untitled Blog")}
                 className="rounded max-md:h-full max-md:object-cover w-[700px] h-[500px] max-md:object-center"
                 width={400}
@@ -114,7 +143,7 @@ export default function BlogDetails() {
                     <circle cx="2.5" cy="3" r="2.5" fill="#D8DBD0" className="dark:fill-[#3B3C39]" />
                   </svg>
                 </span>
-                <p className="text-lg">{blog.date || "Unknown Date"}</p>
+                <p className="text-lg">{getFormattedDate()}</p>
               </div>
             </div>
 
