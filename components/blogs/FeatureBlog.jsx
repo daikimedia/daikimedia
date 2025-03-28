@@ -24,7 +24,6 @@ const FeatureBlog = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-
         const processedBlogData = await importBlogData();
 
         const stripHtml = (html) => {
@@ -32,39 +31,39 @@ const FeatureBlog = () => {
           return html.replace(/<\/?[^>]+(>|$)/g, "");
         };
 
-        const processedBlogs = processedBlogData.map(blog => ({
+        const processedBlogs = processedBlogData.map((blog) => ({
           ...blog,
-          content: stripHtml(blog.content?.rendered || blog.content || "")
+          content: stripHtml(blog.content?.rendered || blog.content || ""),
         }));
 
         // Fetch data from API
         const response = await fetch("https://cms.daikimedia.com/api/blogs");
 
-        
         if (response.ok) {
           const apiBlogs = await response.json();
-          
-          const processedApiBlogData = apiBlogs.map(blog => ({
+
+          const processedApiBlogData = apiBlogs.map((blog) => ({
             ...blog,
-            content: stripHtml(blog.content?.rendered || blog.content || "")
+            content: stripHtml(blog.content?.rendered || blog.content || ""),
+            featuredImage: fixImagePath(blog.featuredImage), // ✅ Fix only API images
+            date: blog.created_at || "Unknown Creator", // ✅ Replace date with created_by
           }));
 
           const combinedBlogs = [
             ...processedBlogs,
             ...processedApiBlogData.filter(
-              apiBlog => !processedBlogs.some(jsonBlog => jsonBlog.slug === apiBlog.slug)
-            )
+              (apiBlog) =>
+                !processedBlogs.some((jsonBlog) => jsonBlog.slug === apiBlog.slug)
+            ),
           ];
 
           setFeatureBlog(combinedBlogs);
         } else {
-          // If API call fails, use only imported JSON data
           setFeatureBlog(processedBlogs);
         }
       } catch (error) {
         console.error("Error fetching blogs:", error);
         setFeatureBlog([]);
-
       } finally {
         setIsLoading(false);
       }
@@ -74,15 +73,22 @@ const FeatureBlog = () => {
   }, []);
 
   const stripHTML = (html) => {
-    if (typeof document === 'undefined') return html;
+    if (typeof document === "undefined") return html;
     const tempDiv = document.createElement("div");
     tempDiv.innerHTML = html;
     return tempDiv.textContent || tempDiv.innerText || "";
   };
 
+  // 🛠 Only fix API image URLs, JSON images remain unchanged
   const fixImagePath = (path) => {
-    if (!path) return '';
-    return path.replace(/\\/g, '/');
+    if (!path) return "";
+
+    // If path is relative (not full URL), prepend the CMS base URL
+    if (!path.startsWith("http")) {
+      return `https://cms.daikimedia.com/${path.replace(/\\/g, "/")}`;
+    }
+
+    return path;
   };
 
   const featuredBlogFiltered = featureBlog.filter(
@@ -115,7 +121,7 @@ const FeatureBlog = () => {
                         <div className="relative h-full w-full xl:min-h-[330px]">
                           {blogItem.featuredImage && (
                             <img
-                              src={fixImagePath(blogItem.featuredImage)}
+                              src={blogItem.featuredImage} // ✅ No change needed here
                               alt={blogItem.title || "Blog image"}
                               className="w-full rounded-xl max-md:h-[350px] max-md:object-cover max-md:object-center"
                             />
@@ -129,9 +135,7 @@ const FeatureBlog = () => {
                             </h3>
                           </Link>
                           <div className="mb-4 flex items-center gap-x-2">
-                            <p>
-                              {new Date(blogItem.date).toLocaleDateString()}
-                            </p>
+                            <p>{new Date(blogItem.date).toLocaleDateString()}</p>
                           </div>
                           <ReactMarkdown className="mb-6">
                             {contentPreview}
@@ -153,7 +157,3 @@ const FeatureBlog = () => {
 };
 
 export default FeatureBlog;
-
-
-
-
