@@ -11,6 +11,7 @@ import blogData from "@/data/singleBlogData.json";
 export default function BlogDetails() {
   const { slug } = useParams();
   const [allBlogs, setAllBlogs] = useState([]); 
+  const [blog, setBlog] = useState(null);
   const [isApiBlog, setIsApiBlog] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -29,7 +30,7 @@ export default function BlogDetails() {
         }
 
         const data = await response.json();
-        setAllBlogs(data); // Correctly setting all blogs
+        setAllBlogs(data);
 
         // API blogs me slug match karo
         const foundBlog = data.find((item) => item.slug === slug);
@@ -105,6 +106,7 @@ export default function BlogDetails() {
       return blog.date ? blog.date.split("T")[0] : "Unknown Date"; // JSON Blog Date
     }
   };
+  
 
   return (
     <>
