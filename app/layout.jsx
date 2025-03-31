@@ -41,6 +41,20 @@ export default function RootLayout({ children }) {
           content="EIBnMq71KKUDT895qyPc5L_RMaDrmBpUG8pgX3FO6N4"
         />
 
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Daiki Media" />
+        <meta property="og:description" content="Daiki Media provides expert SEO and website development services." />
+        <meta property="og:image" content="/public/logo.png" />
+        <meta property="og:url" content="https://www.daikimedia.com/" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="daiki media" />
+        <meta name="twitter:description" content="Daiki Media provides expert SEO and website development services." />
+        <meta name="twitter:image" content="/pulic/logo.png" />
+        <meta name="twitter:site" content="@daiki.Media" />
+
         {/*  Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
@@ -51,14 +65,6 @@ export default function RootLayout({ children }) {
             })(window,document,'script','dataLayer','GTM-NZZ2849');
           `}
         </Script>
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-NZZ2849"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          />
-        </noscript>
 
         {/*Schema Markup for SEO */}
         <Script
@@ -89,19 +95,6 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-       {/* Open Graph Meta Tags */}
-       <meta property="og:title" content="Daiki Media" />
-      <meta property="og:description" content="Daiki Media provides expert SEO and website development services." />
-      <meta property="og:image" content="/public/logo.png" />
-      <meta property="og:url" content="https://www.daikimedia.com/" />
-      <meta property="og:type" content="website" />
-
-      {/* Twitter Card Meta Tags */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Aapki Website ka Title" />
-      <meta name="twitter:description" content="Aapki website ka chhota sa description." />
-      <meta name="twitter:image" content="https://yourwebsite.com/your-image.jpg" />
-      <meta name="twitter:site" content="@yourtwitterhandle" />
       <body
         className={cn(
           "relative overflow-x-hidden bg-white text-base antialiased dark:bg-dark-300",
@@ -110,6 +103,14 @@ export default function RootLayout({ children }) {
           playfair.variable
         )}
       >
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NZZ2849"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         {children}
       </body>
     </html>
