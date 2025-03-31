@@ -10,8 +10,6 @@ import { FaqSection } from "@/components/service-single/faqSection";
 import Clients from "@/components/shared/Clients";
 
 const ServiceContent = ({ data = {} }) => {
-  console.log("ServiceContent data:", data);
-
   return (
     <>
       <section>

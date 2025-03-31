@@ -39,7 +39,7 @@ const PrimaryNavbar = () => {
             <Link href="/">
               <img src="/images/logo.png" alt="logo" className="dark:hidden" width={120} height={100} />
               <img
-                src="/images/logoes.png"
+                src="/images/logo.png"
                 alt="logo dark version"
                 className="hidden dark:inline-block"
                 width={160}
