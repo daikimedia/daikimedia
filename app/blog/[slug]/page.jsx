@@ -10,6 +10,7 @@ import blogData from "@/data/singleBlogData.json";
 
 export default function BlogDetails() {
   const { slug } = useParams();
+
   const [blog, setBlog] = useState(null);
   const [isApiBlog, setIsApiBlog] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
