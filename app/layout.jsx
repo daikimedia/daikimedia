@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
         <meta property="og:type" content="website" />
 
         {/* Twitter Card Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary_large_image " />
         <meta name="twitter:title" content="daiki media" />
         <meta name="twitter:description" content="Daiki Media provides expert SEO and website development services." />
         <meta name="twitter:image" content="/pulic/logo.png" />
@@ -73,13 +73,13 @@ export default function RootLayout({ children }) {
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              "@context": "https://schema.org",
+              "@context": "https://schema.org ",
               "@type": "LocalBusiness",
               "name": "Daiki Media",
-              "url": "https://daikimedia.com",
+              "url": "https://daikimedia.com ",
               "description": "Daiki Media provides expert SEO and website development services.",
               "address": {
-                "@type": "PostalAddress",
+                "@type": "PostalAddress ",
                 "streetAddress": "Jalan Ara, SD 7/3d, Bandar Sri Damansara",
                 "addressLocality": "Kuala Lumpur",
                 "addressRegion": "KL",
