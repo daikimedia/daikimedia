@@ -73,7 +73,13 @@
           {
             "id": "3.1.8",
             "title": "Localized SEO for iGamings",
-            "path": "/localized-seo-for-igaming",
+            "path": "localized-seo-for-igaming",
+            "newTab": false 
+          },
+          {
+            "id": "3.1.9",
+            "title": " iGaming casino industry",
+            "path": "/iGaming-casino-industry",
             "newTab": false 
           },
           {
@@ -91,8 +97,8 @@
           
           {
             "id": "3.2.2",
-            "title": "Enterprise PPC Management Services",
-            "path": "/enterprise-ppc-management",
+            "title": "Enterprise PPC Management Services ",
+            "path": "/enterprise-ppc-management ",
             "newTab": false
           },
           {
