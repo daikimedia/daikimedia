@@ -34,12 +34,14 @@ const SolutionAnimation = () => {
           alt="solution image"
           fill
           className="object-cover dark:hidden"
+                           loading="lazy"
         />
         <Image
           src={solutionImage1Dark}
           alt="solution image"
           fill
           className="hidden object-cover dark:inline-block"
+               loading="lazy"
         />
       </motion.div>
 
@@ -55,12 +57,14 @@ const SolutionAnimation = () => {
           alt="solution image"
           fill
           className="object-cover dark:hidden"
+               loading="lazy"
         />
         <Image
           src={solutionImage2Dark}
           alt="solution image"
           fill
           className="hidden object-cover dark:inline-block"
+               loading="lazy"
         />
       </motion.div>
     </div>

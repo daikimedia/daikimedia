@@ -46,6 +46,7 @@ const HeroContent = () => {
               src={heroCircleLight}
               alt="Hero Image"
               className="h-full w-full rounded-2xl "
+              loading="lazy"
             />
           </div>
         </motion.div>

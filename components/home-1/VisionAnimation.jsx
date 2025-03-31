@@ -32,11 +32,13 @@ const VisionAnimation = () => {
           src={visionImage2Light}
           alt="vision image shape"
           className="h-full w-full object-cover dark:hidden"
+               loading="lazy"
         />
         <Image
           src={visionImage2Dark}
           alt="vision image shape"
           className="hidden h-full w-full object-cover dark:inline-block"
+               loading="lazy"
         />
       </motion.div>
   
@@ -51,11 +53,13 @@ const VisionAnimation = () => {
           src={visionImage3Light}
           alt="vision image shape"
           className="h-full w-full object-cover dark:hidden"
+               loading="lazy"
         />
         <Image
           src={visionImage3Dark}
           alt="vision image shape"
           className="hidden h-full w-full object-cover dark:inline-block"
+               loading="lazy"
         />
       </motion.div>
     </div>

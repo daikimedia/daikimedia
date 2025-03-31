@@ -31,7 +31,6 @@ export const metadata = {
   description:
     "Daiki Media offers top-notch SEO and website development services to help businesses grow online. Build stunning websites, improve search rankings, and boost traffic with our expert team. Contact us today!",
 };
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -40,21 +39,16 @@ export default function RootLayout({ children }) {
           name="google-site-verification"
           content="EIBnMq71KKUDT895qyPc5L_RMaDrmBpUG8pgX3FO6N4"
         />
-        {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Daiki Media" />
         <meta property="og:description" content="Daiki Media provides expert SEO and website development services." />
         <meta property="og:image" content="https://www.daikimedia.com/images/logo.png" />
         <meta property="og:url" content="https://www.daikimedia.com/" />
         <meta property="og:type" content="website" />
-
-        {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image " />
         <meta name="twitter:title" content="daiki media" />
         <meta name="twitter:description" content="Daiki Media provides expert SEO and website development services." />
         <meta name="twitter:image" content="https://www.daikimedia.com/images/logo.png" />
         <meta name="twitter:site" content="@daiki.Media" />
-
-        {/*  Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -64,7 +58,6 @@ export default function RootLayout({ children }) {
             })(window,document,'script','dataLayer','GTM-NZZ2849');
           `}
         </Script>
-             {/*Schema Markup for SEO */}
              <Script
           id="schema-markup"
           type="application/ld+json"

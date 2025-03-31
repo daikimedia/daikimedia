@@ -103,6 +103,7 @@ const IntegrationAnimation = () => {
                   className="inline-block"
                   width={40}
                   height={40}
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -206,6 +207,7 @@ const IntegrationAnimation = () => {
                   className="inline-block"
                   width={40}
                   height={40}
+                 loading="lazy"
                 />
               </div>
             </div>
@@ -309,6 +311,7 @@ const IntegrationAnimation = () => {
                   className="inline-block"
                   width={40}
                   height={40}
+                 loading="lazy"
                 />
               </div>
             </div>
@@ -413,6 +416,7 @@ const IntegrationAnimation = () => {
                   className="inline-block"
                   width={40}
                   height={40}
+                 loading="lazy"
                 />
               </div>
             </div>
@@ -516,6 +520,7 @@ const IntegrationAnimation = () => {
                   className="inline-block"
                   width={40}
                   height={40}
+                 loading="lazy"
                 />
               </div>
             </div>
@@ -619,6 +624,7 @@ const IntegrationAnimation = () => {
                   className="inline-block"
                   width={40}
                   height={40}
+                 loading="lazy"
                 />
               </div>
             </div>
@@ -725,6 +731,7 @@ const IntegrationAnimation = () => {
               className="inline-block"
               width={40}
               height={40}
+                 loading="lazy"
             />
           </div>
         </div>
@@ -737,6 +744,7 @@ const IntegrationAnimation = () => {
               className="inline-block"
               width={40}
               height={40}
+                 loading="lazy"
             />
           </div>
         </div>
@@ -749,6 +757,7 @@ const IntegrationAnimation = () => {
               className="inline-block"
               width={40}
               height={40}
+                 loading="lazy"
             />
           </div>
         </div>
@@ -760,6 +769,7 @@ const IntegrationAnimation = () => {
               className="inline-block"
               width={40}
               height={40}
+                 loading="lazy"
             />
           </div>
         </div>
@@ -771,6 +781,7 @@ const IntegrationAnimation = () => {
               className="inline-block"
               width={40}
               height={40}
+                 loading="lazy"
             />
           </div>
         </div>
@@ -782,6 +793,7 @@ const IntegrationAnimation = () => {
               className="inline-block"
               width={40}
               height={40}
+                 loading="lazy"
             />
           </div>
         </div>
