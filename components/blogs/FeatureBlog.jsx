@@ -45,8 +45,8 @@ const FeatureBlog = () => {
           const processedApiBlogData = apiBlogs.map((blog) => ({
             ...blog,
             content: stripHtml(blog.content?.rendered || blog.content || ""),
-            featuredImage: fixImagePath(blog.featuredImage), // ✅ Fix only API images
-            date: blog.created_at || "Unknown Creator", // ✅ Replace date with created_by
+            featuredImage: fixImagePath(blog.featuredImage), 
+            date: blog.created_at || "Unknown Creator", 
           }));
 
           const combinedBlogs = [
@@ -79,11 +79,10 @@ const FeatureBlog = () => {
     return tempDiv.textContent || tempDiv.innerText || "";
   };
 
-  // 🛠 Only fix API image URLs, JSON images remain unchanged
+  
   const fixImagePath = (path) => {
     if (!path) return "";
 
-    // If path is relative (not full URL), prepend the CMS base URL
     if (!path.startsWith("http")) {
       return `https://cms.daikimedia.com/${path.replace(/\\/g, "/")}`;
     }

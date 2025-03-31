@@ -102,6 +102,7 @@ export default function RootLayout({ children }) {
           jakarta_sans.variable,
           playfair.variable
         )}
+        suppressHydrationWarning={true}
       >
         <noscript>
           <iframe

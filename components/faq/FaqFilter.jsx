@@ -20,9 +20,12 @@ const FaqFilter = () => {
   }
 
   useEffect(() => {
-    const generalFaq = FAQData.filter((faq) => faq.type.includes('general'))
-    setFilterData(generalFaq)
-  }, [])
+    if (FAQData) {
+      const generalFaq = FAQData.filter((faq) => faq.type.includes('general'));
+      setFilterData(generalFaq);
+    }
+  }, [FAQData]); 
+  
 
   const handleClick = (type) => {
     const data = FAQData.filter((item) => item.type.includes(type))

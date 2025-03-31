@@ -1,8 +1,6 @@
-// import solutionImageDark from "@/public/images/solution/solution-dark.png";
-// import solutionImage from "@/public/images/solution/solution.png";
+
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import Image from "next/image";
 import Link from "next/link";
 import SolutionAnimation from "./SolutionAnimation";
 

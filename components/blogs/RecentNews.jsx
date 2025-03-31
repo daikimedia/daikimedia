@@ -24,21 +24,19 @@ const RecentNews = () => {
         }));
 
         try {
-          // Fetch data from API
           const response = await fetch(`https://cms.daikimedia.com/api/blogs`);
 
           if (response.ok) {
             const apiBlogs = await response.json();
 
-            // Process API blogs
             const processedApiBlogData = apiBlogs.map((blog) => ({
               ...blog,
               content: stripHtml(blog.content?.rendered || blog.content || ""),
-              featuredImage: fixImagePath(blog.featuredImage), // ✅ Fix only API images
-              date: blog.created_at || "Unknown Creator", // ✅ Replace date with created_by
+              featuredImage: fixImagePath(blog.featuredImage), 
+              date: blog.created_at || "Unknown Creator", 
             }));
 
-            // Combine blogs, removing duplicates
+            
             const combinedBlogs = [
               ...processedLocalBlogData,
               ...processedApiBlogData.filter(
@@ -66,7 +64,6 @@ const RecentNews = () => {
     fetchBlogs();
   }, []);
 
-  // ✅ Only fix API image URLs (JSON images remain unchanged)
   const fixImagePath = (path) => {
     if (!path) return "";
     if (!path.startsWith("http")) {
@@ -75,7 +72,7 @@ const RecentNews = () => {
     return path;
   };
 
-  // Memoized pagination logic
+  
   const paginationData = useMemo(() => {
     const totalPage = Math.ceil(featureBlog.length / itemsPerPage);
     
@@ -138,7 +135,7 @@ const RecentNews = () => {
                   slug={blog.slug}
                   blogData={blog}
                   content={blog.content}
-                  date={blog.date} // ✅ Now this shows `created_by` instead of actual date
+                  date={blog.date} 
                   thumbnail={blog.featuredImage}
                   status={blog.categories}
                   title={blog.title || "Untitled"}
