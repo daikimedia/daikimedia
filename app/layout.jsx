@@ -40,7 +40,6 @@ export default function RootLayout({ children }) {
           name="google-site-verification"
           content="EIBnMq71KKUDT895qyPc5L_RMaDrmBpUG8pgX3FO6N4"
         />
-
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Daiki Media" />
         <meta property="og:description" content="Daiki Media provides expert SEO and website development services." />
