@@ -8,7 +8,7 @@ const nextConfig = {
       },
     ];
   },
-  compress: true, // HTML minify ke liye compression enable
+  compress: true, 
 };
 
 module.exports = nextConfig;
