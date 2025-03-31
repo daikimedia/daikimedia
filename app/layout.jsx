@@ -40,6 +40,31 @@ export default function RootLayout({ children }) {
           name="google-site-verification"
           content="EIBnMq71KKUDT895qyPc5L_RMaDrmBpUG8pgX3FO6N4"
         />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Daiki Media" />
+        <meta property="og:description" content="Daiki Media provides expert SEO and website development services." />
+        <meta property="og:image" content="/public/logo.png" />
+        <meta property="og:url" content="https://www.daikimedia.com/" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image " />
+        <meta name="twitter:title" content="daiki media" />
+        <meta name="twitter:description" content="Daiki Media provides expert SEO and website development services." />
+        <meta name="twitter:image" content="/pulic/logo.png" />
+        <meta name="twitter:site" content="@daiki.Media" />
+
+        {/*  Google Tag Manager */}
+        <Script id="google-tag-manager" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-NZZ2849');
+          `}
+        </Script>
              {/*Schema Markup for SEO */}
              <Script
           id="schema-markup"
@@ -47,13 +72,13 @@ export default function RootLayout({ children }) {
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              "@context": "https://schema.org",
+              "@context": "https://schema.org ",
               "@type": "LocalBusiness",
               "name": "Daiki Media",
-              "url": "https://daikimedia.com",
+              "url": "https://daikimedia.com ",
               "description": "Daiki Media provides expert SEO and website development services.",
               "address": {
-                "@type": "PostalAddress",
+                "@type": "PostalAddress ",
                 "streetAddress": "Jalan Ara, SD 7/3d, Bandar Sri Damansara",
                 "addressLocality": "Kuala Lumpur",
                 "addressRegion": "KL",
@@ -88,19 +113,6 @@ export default function RootLayout({ children }) {
           />
         </noscript>
       </head>
-       {/* Open Graph Meta Tags */}
-       <meta property="og:title" content="Daiki Media" />
-      <meta property="og:description" content="Daiki Media provides expert SEO and website development services." />
-      <meta property="og:image" content="/public/logo.png" />
-      <meta property="og:url" content="https://www.daikimedia.com/" />
-      <meta property="og:type" content="website" />
-
-      {/* Twitter Card Meta Tags */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Aapki Website ka Title" />
-      <meta name="twitter:description" content="Aapki website ka chhota sa description." />
-      <meta name="twitter:image" content="https://yourwebsite.com/your-image.jpg" />
-      <meta name="twitter:site" content="@yourtwitterhandle" />
       <body
         className={cn(
           "relative overflow-x-hidden bg-white text-base antialiased dark:bg-dark-300",
@@ -110,6 +122,14 @@ export default function RootLayout({ children }) {
         )}
         suppressHydrationWarning={true}
       >
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-NZZ2849"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         {children}
       </body>
     </html>
