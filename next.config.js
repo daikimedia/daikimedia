@@ -4,7 +4,7 @@ const nextConfig = {
     return [
       {
         source: '/api/blogs/:slug',
-        destination: 'https://cms.daikimedia.com/api/blogs/:slug',
+        destination: 'https://cms.daikimedia.com/api/blogs/:slug ',
       },
     ];
   },
