@@ -39,10 +39,10 @@ const Clients = ({
           <Marquee pauseOnHover className="!flex" gradient={false}>
             {ClientData.map((clients) => (
               <div
-                className="marquee-content-list relative flex items-center justify-center"
-                key={clients.id}
-                style={{ width: "180px", height: "60px", padding: "0 40px" }}
-              >
+              className="marquee-content-list relative flex items-center justify-center w-[180px] h-[60px] px-10"
+              key={clients.id}
+            >
+            
                 <Link href={clients.link || "#"} target="_blank" rel="noopener noreferrer" className="relative w-full h-full flex items-center justify-center">
                   <Image
                     src={clients.imageLight}
