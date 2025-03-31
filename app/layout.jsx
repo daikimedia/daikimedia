@@ -89,6 +89,19 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
+       {/* Open Graph Meta Tags */}
+       <meta property="og:title" content="Daiki Media" />
+      <meta property="og:description" content="Daiki Media provides expert SEO and website development services." />
+      <meta property="og:image" content="/public/logo.png" />
+      <meta property="og:url" content="https://www.daikimedia.com/" />
+      <meta property="og:type" content="website" />
+
+      {/* Twitter Card Meta Tags */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Aapki Website ka Title" />
+      <meta name="twitter:description" content="Aapki website ka chhota sa description." />
+      <meta name="twitter:image" content="https://yourwebsite.com/your-image.jpg" />
+      <meta name="twitter:site" content="@yourtwitterhandle" />
       <body
         className={cn(
           "relative overflow-x-hidden bg-white text-base antialiased dark:bg-dark-300",
