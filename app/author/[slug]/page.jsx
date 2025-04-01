@@ -132,7 +132,6 @@ export default function AuthorDetails() {
                   )}
                 </div>
               </div>
-              
               {author.published_blogs?.length > 0 && (
                 <div className="bg-gray-50 p-8 md:p-12 border-t border-gray-200 mt-8">
                   <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
