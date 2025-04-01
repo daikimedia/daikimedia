@@ -33,7 +33,6 @@ export default function AuthorDetails() {
     }
   }, [params?.id]);
 
-  // Meta title and description
   const metaTitle = author ? `${decodeHtmlEntities(author.name)} - Author Profile` : "Author Details";
   const metaDescription = author ? decodeHtmlEntities(author.bio).substring(0, 160) : "Author profile details";
 
@@ -58,7 +57,6 @@ export default function AuthorDetails() {
             </div>
           ) : author ? (
             <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
-              {/* Author header section */}
               <div className="md:flex">
                 <div className="md:w-1/3 bg-gradient-to-b from-blue-100 to-blue-50 p-6 flex justify-center items-start">
                   <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-lg">
@@ -80,7 +78,6 @@ export default function AuthorDetails() {
                     <p dangerouslySetInnerHTML={{ __html: decodeHtmlEntities(author.bio) }}></p>
                   </div>
                   
-                  {/* Social links */}
                   <div className="flex flex-wrap gap-3 mt-4">
                     {author.social_links?.linkedin && (
                       <Link 
@@ -127,9 +124,7 @@ export default function AuthorDetails() {
                   </div>
                 </div>
               </div>
-              
-              {/* Published Blogs Section */}
-              {author.published_blogs?.length > 0 && (
+                            {author.published_blogs?.length > 0 && (
                 <div className="border-t border-gray-200 p-6">
                   <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
                     <span className="inline-block w-1 h-6 bg-blue-600 mr-3"></span>
