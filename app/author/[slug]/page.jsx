@@ -123,7 +123,6 @@ export default function AuthorDetails() {
                     </svg>
                     About
                   </h3>
-                  
                   {author.bio ? (
                     <div className="prose max-w-none text-gray-700 leading-relaxed">
                       <p dangerouslySetInnerHTML={{ __html: decodeHtmlEntities(author.bio) }}></p>
