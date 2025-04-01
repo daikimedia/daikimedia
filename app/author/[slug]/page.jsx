@@ -123,7 +123,6 @@ export default function AuthorDetails() {
                     </svg>
                     About
                   </h3>
-                  
                   {author.bio ? (
                     <div className="prose max-w-none text-gray-700 leading-relaxed">
                       <p dangerouslySetInnerHTML={{ __html: decodeHtmlEntities(author.bio) }}></p>
@@ -133,7 +132,6 @@ export default function AuthorDetails() {
                   )}
                 </div>
               </div>
-              
               {author.published_blogs?.length > 0 && (
                 <div className="bg-gray-50 p-8 md:p-12 border-t border-gray-200 mt-8">
                   <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
