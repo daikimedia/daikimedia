@@ -136,8 +136,8 @@ export default function BlogDetails() {
           name="description"
           content={decodeHtmlEntities(
             blog.description ||
-              blog.content?.substring(0, 150) ||
-              "Blog post details"
+            blog.content?.substring(0, 150) ||
+            "Blog post details"
           )}
         />
       </Head>
@@ -164,7 +164,10 @@ export default function BlogDetails() {
                 {decodeHtmlEntities(blog.title || "Untitled Blog")}
               </h2>
               <div className="mb-6 flex items-center justify-center gap-x-2">
-                <p className="text-lg">{blog.author || "Unknown Author"}</p>
+                <p className="text-lg">
+                  <a href="/author/lukesh-pillai">{blog.author || "Unknown Author"}</a>
+                </p>
+
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
