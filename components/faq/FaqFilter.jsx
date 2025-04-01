@@ -24,7 +24,7 @@ const FaqFilter = () => {
       const generalFaq = FAQData.filter((faq) => faq.type.includes('general'));
       setFilterData(generalFaq);
     }
-  }, [FAQData]); // Added FAQData as a dependency
+  }, [FAQData]); 
   
 
   const handleClick = (type) => {

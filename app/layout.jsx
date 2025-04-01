@@ -54,6 +54,20 @@ export default function RootLayout({ children }) {
         <meta name="twitter:image" content="https://www.daikimedia.com/images/logo.png" />
         <meta name="twitter:site" content="@daiki.Media" />
 
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Daiki Media" />
+        <meta property="og:description" content="Daiki Media provides expert SEO and website development services." />
+        <meta property="og:image" content="/public/logo.png" />
+        <meta property="og:url" content="https://www.daikimedia.com/" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image " />
+        <meta name="twitter:title" content="daiki media" />
+        <meta name="twitter:description" content="Daiki Media provides expert SEO and website development services." />
+        <meta name="twitter:image" content="/pulic/logo.png" />
+        <meta name="twitter:site" content="@daiki.Media" />
+
         {/*  Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
@@ -64,8 +78,7 @@ export default function RootLayout({ children }) {
             })(window,document,'script','dataLayer','GTM-NZZ2849');
           `}
         </Script>
-             {/*Schema Markup for SEO */}
-             <Script
+
           id="schema-markup"
           type="application/ld+json"
           strategy="afterInteractive"
