@@ -1,0 +1,20 @@
+{
+    "id": 1,
+    "slug": "lukesh-pillai",
+    "name": "Lukesh Pillai",
+    "bio": "Lukesh Pillai is a seasoned SEO specialist and digital marketing expert with over five years of experience in the industry. Passionate about fitness and wellness, he combines his analytical skills with a deep understanding of digital trends to help businesses grow online. His expertise spans search engine optimization, content strategy, and performance marketing",
+    "profile_picture": "/images/authors/lukesh-pillai.jpg",
+    "social_links": {
+      "linkedin": "https://www.linkedin.com/in/lukeshpillai",
+      "twitter": "https://twitter.com/lukeshpillai"
+    },
+    "specialization": ": SEO Specialist, Digital Marketing Expert",
+    "published_blogs": [
+      "blog/seo-myths-debunked-insights-from-malaysias-top-consultants",
+      "blog/localized-seo-for-igaming",
+      "blog/how-funnel-design-can-boost-your-business-in-malaysia",
+      "blog/enterprise-seo-vs-small-business-seo-key-differences-and-why-they-matter",
+      "blog/igaming-seo-top-challenges-and-how-to-overcome-them-in-2024"
+    ]
+  }
+  
