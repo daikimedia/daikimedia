@@ -10,12 +10,11 @@ import blogData from "@/data/singleBlogData.json";
 
 export default function BlogDetails() {
   const { slug } = useParams();
-
   const [blog, setBlog] = useState(null);
   const [isApiBlog, setIsApiBlog] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [relatedBlogs, setRelatedBlogs] = useState([]); // Changed from allBlogs to relatedBlogs
+  const [relatedBlogs, setRelatedBlogs] = useState([]); 
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -31,13 +30,12 @@ export default function BlogDetails() {
 
         const data = await response.json();
 
-        // Find the current blog
+        
         const foundBlog = data.find((item) => item.slug === slug);
         if (foundBlog) {
           setBlog(foundBlog);
           setIsApiBlog(true);
 
-          // Find related blogs (e.g., from the same category or author)
           const related = data
             .filter(
               (item) =>
@@ -45,7 +43,7 @@ export default function BlogDetails() {
                 (item.category === foundBlog.category ||
                   item.author === foundBlog.author)
             )
-            .slice(0, 3); // Limit to 3 related blogs
+            .slice(0, 3); 
 
           setRelatedBlogs(related);
         } else {
@@ -55,13 +53,13 @@ export default function BlogDetails() {
         console.error("Error fetching blogs:", error);
         setError(error.message);
 
-        // Fallback to local JSON data
+      
         const fallbackBlog = blogData.find((item) => item.slug === slug);
         if (fallbackBlog) {
           setBlog(fallbackBlog);
           setIsApiBlog(false);
 
-          // Find related blogs from local data
+          
           const related = blogData
             .filter(
               (item) =>
@@ -198,7 +196,7 @@ export default function BlogDetails() {
               ></div>
             </div>
 
-            {/* Related Blogs Section */}
+            
             {false && (
               <div className="mt-16">
                 <h3 className="text-2xl font-bold mb-8">Related Blogs</h3>
