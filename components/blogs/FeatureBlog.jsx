@@ -6,7 +6,7 @@ import ReactMarkdown from "react-markdown";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Dynamically import blog data
+
 const importBlogData = async () => {
   try {
     const blogData = await import("../../data/singleBlogData.json");
@@ -36,7 +36,7 @@ const FeatureBlog = () => {
           content: stripHtml(blog.content?.rendered || blog.content || ""),
         }));
 
-        // Fetch data from API
+        
         const response = await fetch("https://cms.daikimedia.com/api/blogs");
 
         if (response.ok) {
@@ -79,14 +79,11 @@ const FeatureBlog = () => {
     return tempDiv.textContent || tempDiv.innerText || "";
   };
 
-  
   const fixImagePath = (path) => {
     if (!path) return "";
-
     if (!path.startsWith("http")) {
       return `https://cms.daikimedia.com/${path.replace(/\\/g, "/")}`;
     }
-
     return path;
   };
 
@@ -107,26 +104,25 @@ const FeatureBlog = () => {
           className="swiper !pb-20 md:!px-6"
         >
           {featuredBlogFiltered.length > 0 ? (
-            featuredBlogFiltered.map((blogItem) => {
+            featuredBlogFiltered.map((blogItem, index) => {
               const contentPreview = blogItem.content
                 ? stripHTML(blogItem.content).slice(0, 120)
                 : "";
 
               return (
-                <SwiperSlide key={blogItem.id}>
+                <SwiperSlide key={`${blogItem.slug || blogItem.id || "blog"}-${index}`}>
                   <article className="swiper-slide rounded-medium bg-white p-2.5 shadow-nav dark:bg-dark-200">
                     <div className="rounded border border-dashed border-gray-100 p-6 dark:border-borderColor-dark max-md:p-4">
                       <div className="grid grid-cols-2 items-center gap-12 max-md:grid-cols-1 max-md:gap-y-5">
                         <div className="relative h-full w-full xl:min-h-[330px]">
                           {blogItem.featuredImage && (
                             <img
-                              src={blogItem.featuredImage} // ✅ No change needed here
+                              src={blogItem.featuredImage}
                               alt={blogItem.title || "Blog image"}
                               className="w-full rounded-xl max-md:h-[350px] max-md:object-cover max-md:object-center"
                             />
                           )}
                         </div>
-
                         <div>
                           <Link href={`/blog/${blogItem.slug}`} className="block">
                             <h3 className="mb-3 font-semibold leading-[1.33]">

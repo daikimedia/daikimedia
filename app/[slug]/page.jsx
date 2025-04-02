@@ -7,13 +7,15 @@ import ServiceList from "@/data/singleServiceData";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 
 export async function generateMetadata({ params }) {
-  const slug = params.slug;
+  if (!params) return {}; 
+  const slug = await params.slug; 
+
   const { SingleServiceData } = ServiceList;
   const data = SingleServiceData.find((post) => post.slug === slug);
 
   return {
-    title: data?.metaTitle,
-    description: data?.metaDescription,
+    title: data?.metaTitle || "Default Title",
+    description: data?.metaDescription || "Default Description",
   };
 }
 
@@ -24,10 +26,9 @@ export async function generateStaticParams() {
   }));
 }
 
-const ServiceDetails = (props) => {
+const ServiceDetails = ({ params }) => {
   const { SingleServiceData } = ServiceList;
-  // console.log(SingleServiceData);
-  const slug = props.params.slug;
+  const slug = params?.slug; 
   const data = SingleServiceData.find((post) => post.slug === slug);
 
   return (
