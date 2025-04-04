@@ -15,12 +15,12 @@ import CustomSectionOne from "@/components/customSections/customSectionOne";
 import ContentCards from "@/components/customSections/customContentCards";
 import ComprehensiveServicesShowcase from "@/components/customSections/comprehensiveServicesShowcase";
 export const metadata = {
-  title: "Daiki Media | Expert Digital Marketing & SEO Services in Malaysia",
+  title: "Digital Marketing Agency Kuala Lumpur | Search Engine Optimization and Digital Marketing | Seo Agencies | Daiki Media",
   description:
     "Daiki Media offers expert digital marketing, SEO, web development, UI/UX design, copywriting, and app development to elevate your business in KL, Malaysia.",
   keywords:
-    "digital marketing, SEO, web development, UI/UX design, copywriting, app development, KL, Malaysia",
-  og_title: "Daiki Media | Expert Digital Marketing & SEO Services in Malaysia",
+    "Digital marketing agency Kuala Lumpur , Search engine optimization and digital marketing, Best SEO agencies",
+  og_title: "Digital Marketing Agency Kuala Lumpur | Search Engine Optimization and Digital Marketing | Seo Agencies | Daiki Media",
   og_description:
     "Daiki Media offers expert digital marketing, SEO, web development, UI/UX design, copywriting, and app development to elevate your business in KL, Malaysia.",
   og_image: "https://daikimedia.com/images/logo.png",
