@@ -3,7 +3,7 @@ import SeoCompany from "@/components/lear/seo-company/seoCompany";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 
 export const metadata = {
-  title: "SEO Company | Daikai Media",
+  title: "SEO Optimization Companies | Expert SEO Services for Business | Daiki Media",
   description:
     "Partner with Daikai Media, your trusted SEO company, to boost your website's search engine rankings and drive organic traffic. Our tailored SEO strategies help you achieve long-term success.",
   keywords:

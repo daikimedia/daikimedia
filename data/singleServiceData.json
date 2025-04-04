@@ -4,11 +4,19 @@
       "id": 1,
       "slug": "seo-services",
       "title": "SEO Services",
-      "metaTitle": "Professional SEO Services in Malaysia | Daiki Media - Drive Traffic & Boost Rankings",
+      "metaTitle": "Seo For CasinoSites | Seo Services Malaysia | Seo Expert in Miami | Seo Agencies in Dallas | Daiki Media",
       "metaDescription": "Optimize your website with Daiki Media's expert SEO services in KL, featuring keyword research, on-page optimization, and link-building strategies.",
       "subTitle": "Daiki Media SEO Services",
+
+      "metaKeywords": [
+        "casino seo",
+        "seo services malaysia",
+        "seo expert malaysia",
+        "seo agencies"
+      ],
       "heroSection": {
         "title": "Strategic SEO That Delivers Growth",
+        "canonicalUrl": "https://www.daikimedia.com/seo-services",
         "description": "Transform your digital presence with advanced SEO strategies tailored to your business needs. Maximize search visibility, drive revenue growth, and achieve sustainable success through proven methodologies and data-backed solutions.",
         "ctaButton": "Get a Free SEO Audit Today",
         "link": "https://api.whatsapp.com/send?phone=601114850067"
@@ -375,10 +383,41 @@
     {
       "id": 3,
       "slug": "digital-marketing-services",
-      "metaTitle": "Digital Marketing Services in Malaysia | Daiki Media",
-      "metaDescription": "Elevate your brand in KL with Daiki Media's comprehensive digital marketing solutions, including SEO, PPC, and social media strategies.",
+      "metaTitle": "Digital Marketing Company Malaysia | Digital Marketing Services | Seo Services in Kl | Digital Marketing Agency | Daiki Media",
+"metaDescription": "Boost your brand in Kuala Lumpur with Daiki Media's expert digital marketing services...",
+"metaKeywords": [
+  {
+    "keyword": "digital marketing company malaysia",
+    "url": "https://www.daikimedia.com/digital-marketing-services"
+  },
+  {
+    "keyword": "digital marketing services",
+    "url": "https://www.daikimedia.com/digital-marketing-services"
+  },
+  {
+    "keyword": "best digital marketing services",
+    "url": "https://www.daikimedia.com/digital-marketing-services"
+  },
+  {
+    "keyword": "seo digital marketing services",
+    "url": "https://www.daikimedia.com/digital-marketing-services"
+  },
+  {
+    "keyword": "digital marketing agency malaysia",
+    "url": "https://www.daikimedia.com/digital-marketing-services"
+  },
+  {
+    "keyword": "best digital agency malaysia",
+    "url": "https://www.daikimedia.com/digital-marketing-services"
+  },
+  {
+    "keyword": "full service digital marketing company",
+    "url": "https://www.daikimedia.com/digital-marketing-services"
+  }
+],
       "title": "Digital Marketing Services",
       "subTitle": "Daiki Media Digital Marketing",
+      "canonicalUrl": "https://www.daikimedia.com/digital-marketing-services",
       "heroSection": {
         "title": "Empower Your Digital Growth with Data-Driven Marketing",
         "description": "Daiki Media leverages cutting-edge tools and expert strategies to transform your marketing efforts into measurable success.",
@@ -560,10 +599,15 @@
     {
       "id": 4,
       "slug": "local-seo-services",
-      "metaTitle": "Local SEO Services in Malaysia | Daiki Media",
+      "metaTitle": "Google My Business Services | Local Seo Services for Businesses | Local Digital Marketing | Daiki Media",
       "metaDescription": "Enhance your brand's visibility and growth in KL with Daiki Media’s tailored SEO, PPC, and social media strategies for maximum results.",
       "title": "Local SEO Services",
+      "metaKeywords": [
+        "local seo services for businesses",
+        "local seo malaysia"
+      ],
       "subTitle": "Boost Your Local Presence and Drive More Revenue with Daiki Media",
+      "canonicalUrl": "https://www.daikimedia.com/local-seo-services",
       "heroSection": {
         "title": "Boost Your Local Presence and Drive More Revenue with Daiki Media",
         "description": "Empowering businesses with cutting-edge local SEO strategies to connect with nearby customers, enhance visibility, and grow revenue. Tailored solutions for every business need.",
@@ -2398,9 +2442,20 @@
       "id": 14,
       "slug": "ecommerce-seo-strategies",
       "title": "Ecommerce SEO Strategies",
-      "metaTitle": "Ecommerce SEO Strategies - Boost Online Store Traffic and Sales",
-      "metaDescription": "Enhance your ecommerce store’s visibility in KL with Daiki Media’s SEO strategies. Drive organic traffic, improve rankings, and maximize conversions.",
+      "metaTitle": "Ecommerce Seo Services | Ecommerce Digital Marketing Strategies | Daiki Media",
+      "metaKeywords": [
+  {
+    "keyword": "ecommerce seo services",
+    "url": "https://www.daikimedia.com/ecommerce-seo-strategies"
+  },
+  {
+    "keyword": "ecommerce seo strategies",
+    "url": "https://www.daikimedia.com/ecommerce-seo-strategies"
+  }
+],
+      "metaDescription": "Ecommerce SEO services and strategies by Daiki Media help boost your online store's performance. Drive targeted traffic, enhance rankings, and increase conversions.",
       "subTitle": "Capture more online sales and drive revenue growth with Daiki Media’s powerful ecommerce SEO services.",
+      "canonicalUrl": "https://www.daikimedia.com/ecommerce-seo-strategies",
       "heroSection": {
         "title": "Elevate Your Ecommerce Success with Proven SEO Strategies",
         "description": "Capture more online sales and drive revenue growth with Daiki Media’s powerful ecommerce SEO services. Let us help you unlock the full potential of your business.",
@@ -4123,8 +4178,9 @@
       "id": 23,
       "slug": "localized-seo-for-igaming",
       "title": "Localized SEO for iGaming",
+      "canonicalUrl": "https://www.daikimedia.com/localized-seo-for-igaming",
       "subTitle": "Gain a competitive edge in regional betting and casino markets with precision-targeted SEO strategies that attract high-value players across multiple jurisdictions while maintaining strict compliance with local gambling regulations.",
-      "metaTitle": "Localized SEO Services for iGaming | Target Regional Casino & Betting Markets",
+      "metaTitle": "Igaming Seo Agency | Igaming Digital Marketing Company | Batting Sites Seo | Casino Sites Seo Agency | Daiki Media",
       "metaDescription": "Dominate local iGaming markets with Daiki Media's specialized localization SEO strategies. We help casinos, sportsbooks, and betting platforms increase visibility and player acquisition in each target jurisdiction.",
       "heroSection": {
         "title": "Market-Specific SEO for Online Casinos, Sportsbooks & Betting Platforms",

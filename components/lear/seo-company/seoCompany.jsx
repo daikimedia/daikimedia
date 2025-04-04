@@ -67,7 +67,8 @@ const faqs = [
   },
 ];
 export const metadata = {
-  title: "SEO Company | Daikai Media",
+  title: "SEO Optimization Companies | Expert SEO Services for Business | Daiki Media",
+  canonicalUrl: "https://www.daikimedia.com/learn/what-is-seo-company",
   description:
     "Partner with Daikai Media, a leading SEO company. Explore our tailored strategies to enhance online visibility and achieve top search engine rankings for your business.",
   keywords:

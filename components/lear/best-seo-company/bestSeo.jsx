@@ -7,7 +7,7 @@ import { Star } from "lucide-react";
 export const metadata = {
   title: "Best SEO Practices | Daikai Media",
   description:
-    "Master the best SEO practices with Daikai Media. Optimize your website for search engines and boost your online visibility with expert strategies and tools.",
+    "Master the best SEO practices with Daikai Media. Optimize your website for search engines and boost your online visibility with expert strategies and tools. SEO optimization companies, Daikai Media provides expert services to improve your website’s rankings and drive organic traffic, ensuring long-term growth and success.",
   keywords:
     "Best SEO, Daikai Media, SEO optimization, search engine optimization, SEO tools, SEO strategies, website ranking, online visibility",
 };
@@ -173,6 +173,7 @@ export default function BestSeo() {
       <section className=" py-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center rounded-3xl mb-12">
+          <h1>What is an SEO Company and Why Your Business Needs One</h1>
             <h2 className="text-4xl dark:text-white font-extrabold mb-4 relative inline-block">
               Who Is the Best SEO Company? Discover Why It&lsquo;s Daiki Media!
               <span className="absolute bottom-0 left-0 w-full h-1 bg-black transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
@@ -210,9 +211,9 @@ export default function BestSeo() {
       <section className="py-16">
         <div className="text-black flex items-center justify-center p-6">
           <div className="max-w-5xl w-full p-8">
-            <h1 className="text-4xl font-bold mb-6 text-center text-gray-900">
+            <h2 className="text-4xl font-bold mb-6 text-center text-gray-900">
               Key Qualities of a Top SEO Company
-            </h1>
+            </h2>
             <p className="text-lg mb-12 text-center text-gray-600">
               Not all SEO companies are created equal. A top-tier SEO agency
               excels in the following areas:
@@ -245,9 +246,9 @@ export default function BestSeo() {
       <section className="py-16">
         <div className="container flex items-center justify-center p-6">
           <div className="max-w-6xl w-full rounded-3xl bg-white shadow-xl p-12 border-4 border-black">
-            <h1 className="text-4xl font-extrabold mb-8 text-center dark:text-gray-800">
+            <h2 className="text-4xl font-extrabold mb-8 text-center dark:text-gray-800">
               Why Choose Daiki Media for Your SEO Needs?
-            </h1>
+            </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="p-8 rounded-3xl border-2 border-black shadow-2xl hover:shadow-3xl hover:scale-105 transition-all duration-300">
@@ -439,9 +440,9 @@ export default function BestSeo() {
       <section className="py-10">
         <div className="p-6">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-3xl font-bold text-center mb-8 text-black">
+            <h2 className="text-3xl font-bold text-center mb-8 text-black">
               Busting Myths About SEO Agencies
-            </h1>
+            </h2>
             <div className="space-y-6">
               {myths.map((item, index) => (
                 <div
@@ -589,9 +590,9 @@ export default function BestSeo() {
       <section className=" py-16">
         <div className="px-4">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl font-extrabold text-center mb-12 dark:text-white">
+            <h2 className="text-4xl font-extrabold text-center mb-12 dark:text-white">
               Busting Myths About SEO Agencies
-            </h1>
+            </h2>
 
             <div className="space-y-8">
               {myths.map((item, index) => (
