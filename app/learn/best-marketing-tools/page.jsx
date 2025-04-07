@@ -8,7 +8,7 @@ export const metadata = {
   description:
     "Explore a wide range of digital marketing tools offered by Daikai Media. Enhance your marketing strategies with top-tier tools for SEO, analytics, and more.",
   keywords:
-    "digital marketing tools, SEO tools, marketing strategies, analytics tools, Daikai Media, marketing automation",
+    "best seo company",
 };
 
 const DigitalMarketingToolsPage = () => {

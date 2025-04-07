@@ -70,7 +70,7 @@ export const metadata = {
   title: "SEO Optimization Companies | Expert SEO Services for Business | Daiki Media",
   canonicalUrl: "https://www.daikimedia.com/learn/what-is-seo-company",
   description:
-    "Partner with Daikai Media, a leading SEO company. Explore our tailored strategies to enhance online visibility and achieve top search engine rankings for your business.",
+    "SEO optimization companies, Daikai Media provides expert services to improve your website’s rankings and drive organic traffic, ensuring long-term growth and success.",
   keywords:
     "SEO company, Daikai Media, search engine optimization, SEO services, online visibility, SEO strategies, improve website ranking",
 };
