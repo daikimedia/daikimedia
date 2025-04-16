@@ -61,9 +61,6 @@ const HeroContent = () => {
               src={isMobile ? heroCircleLightMobile : heroCircleLight}
               alt="Hero Image"
               className="h-full w-full rounded-2xl"
-              layout="fill" // This ensures the image is responsive
-              objectFit="cover" // Keeps the image properly scaled without distortion
-              priority // Optimizes the image loading
             />
           </div>
         </motion.div>
