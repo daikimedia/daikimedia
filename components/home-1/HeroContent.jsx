@@ -1,13 +1,27 @@
 "use client";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { fadeFromLeftAnimation } from "@/data/animation";
 import Image from "next/image";
 
 import heroCircleLight from "../../public/images/hero/testimg.jpg";
+import heroCircleLightMobile from "../../public/images/hero/testimg-mobile.jpg";
 
 import FadeUpAnimation from "../animations/FadeUpAnimation";
 
 const HeroContent = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreen = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkScreen(); // Run on mount
+    window.addEventListener("resize", checkScreen);
+    return () => window.removeEventListener("resize", checkScreen);
+  }, []);
+
   return (
     <FadeUpAnimation className="relative z-10 grid grid-cols-12 items-center max-lg:gap-y-10">
       <div className="col-span-12 md:col-span-6">
@@ -34,6 +48,7 @@ const HeroContent = () => {
           Get Started
         </a>
       </div>
+
       <div className="col-span-12 md:col-span-6">
         <motion.div
           variants={fadeFromLeftAnimation}
@@ -43,9 +58,9 @@ const HeroContent = () => {
         >
           <div className="absolute">
             <Image
-              src={heroCircleLight}
+              src={isMobile ? heroCircleLightMobile : heroCircleLight}
               alt="Hero Image"
-              className="h-full w-full rounded-2xl "
+              className="h-full w-full rounded-2xl"
             />
           </div>
         </motion.div>
