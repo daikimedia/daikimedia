@@ -42,38 +42,19 @@ export default function RootLayout({ children }) {
           name="google-site-verification"
           content="EIBnMq71KKUDT895qyPc5L_RMaDrmBpUG8pgX3FO6N4"
         />
-        <link rel="canonical" href="https://www.daikimedia.com/" />
-        <link
-          rel="preload"
-          as="image"
-          href="/images/hero/testimg.jpg"
-          imageSrcSet="/images/hero/testimg@2x.jpg 2x"
-        />
-
+        <link rel="canonical" href="https://www.daikimedia.com/" />	
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Daiki Media" />
-        <meta
-          property="og:description"
-          content="Daiki Media provides expert SEO and website development services."
-        />
-        <meta
-          property="og:image"
-          content="https://www.daikimedia.com/images/logo.png"
-        />
+        <meta property="og:description" content="Daiki Media provides expert SEO and website development services." />
+        <meta property="og:image" content="https://www.daikimedia.com/images/logo.png" />
         <meta property="og:url" content="https://www.daikimedia.com/" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image " />
         <meta name="twitter:title" content="daiki media" />
-        <meta
-          name="twitter:description"
-          content="Daiki Media provides expert SEO and website development services."
-        />
-        <meta
-          name="twitter:image"
-          content="https://www.daikimedia.com/images/logo.png"
-        />
+        <meta name="twitter:description" content="Daiki Media provides expert SEO and website development services." />
+        <meta name="twitter:image" content="https://www.daikimedia.com/images/logo.png" />
         <meta name="twitter:site" content="@daiki.Media" />
 
         {/* Google Tag Manager */}
@@ -96,26 +77,26 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org ",
               "@type": "LocalBusiness",
-              name: "Daiki Media",
-              url: "https://daikimedia.com ",
-              description:
-                "Daiki Media provides expert SEO and website development services.",
-              address: {
+              "name": "Daiki Media",
+              "url": "https://daikimedia.com ",
+              "description": "Daiki Media provides expert SEO and website development services.",
+              "address": {
                 "@type": "PostalAddress ",
-                streetAddress: "Jalan Ara, SD 7/3d, Bandar Sri Damansara",
-                addressLocality: "Kuala Lumpur",
-                addressRegion: "KL",
-                postalCode: "52200",
-                addressCountry: "MY",
+                "streetAddress": "Jalan Ara, SD 7/3d, Bandar Sri Damansara",
+                "addressLocality": "Kuala Lumpur",
+                "addressRegion": "KL",
+                "postalCode": "52200",
+                "addressCountry": "MY"
               },
-              contactPoint: {
+              "contactPoint": {
                 "@type": "ContactPoint",
-                telephone: "+601114850067 ",
-                contactType: "customer service ",
-              },
-            }),
+                "telephone": "+601114850067 ",
+                "contactType": "customer service "
+              }
+            })
           }}
         />
+
       </head>
       <body
         className={cn(
@@ -126,7 +107,7 @@ export default function RootLayout({ children }) {
         )}
         suppressHydrationWarning={true}
       >
-        <GTMNoScript />
+<GTMNoScript />
         {children}
       </body>
     </html>

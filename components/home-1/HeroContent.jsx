@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { fadeFromLeftAnimation } from "@/data/animation";
 import Image from "next/image";
 
-import heroCircleLight from "../../public/images/hero/testimg.jpg";
-import heroCircleLightMobile from "../../public/images/hero/testimg-mobile.jpg";
+import heroCircleLight from "../../public/images/hero/testimg.webp";
+import heroCircleLightMobile from "../../public/images/hero/testimg-mobile.webp";
 
 import FadeUpAnimation from "../animations/FadeUpAnimation";
 
@@ -61,7 +61,7 @@ const HeroContent = () => {
   alt="Hero Image"
   width={isMobile ? 375 : 600}
   height={isMobile ? 500 : 800}
-  priority
+  priority={true} 
   placeholder="blur"
   sizes="(max-width: 768px) 100vw, 50vw"
   className="rounded-2xl object-cover"
