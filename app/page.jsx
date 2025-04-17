@@ -72,7 +72,6 @@ export default function Home() {
         <CustomSectionOne />
         <ContentCards />
         <ComprehensiveServicesShowcase />
-        <Testimonial />
         <Faq />
         <Cta />
         <FinancialBlog />
