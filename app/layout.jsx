@@ -62,9 +62,6 @@ export default function RootLayout({ children }) {
           id="google-tag-manager"
           strategy="lazyOnload" // Load after page is interactive
           src="https://www.googletagmanager.com/gtag/js?id=GTM-NZZ2849"
-          onError={(e) => {
-            console.error("GTM script failed to load:", e);
-          }}
         />
       </head>
       <body
