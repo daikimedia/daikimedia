@@ -8,13 +8,7 @@ const nextConfig = {
       },
     ];
   },
-  compress: true,
-  webpack: (config, { dev, isServer }) => {
-    if (!dev && !isServer) {
-      config.optimization.usedExports = true;
-    }
-    return config;
-  },
+  compress: true, 
 };
 
 module.exports = nextConfig;
