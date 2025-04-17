@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { cn } from "@/utils/cn";
 import { Inter, Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import Script from "next/script";
+import GTMNoScript from "@/components/GTMNoScript";
 
 const inter = Inter({
   weight: ["200", "300", "400", "500", "600", "700", "800"],
@@ -10,6 +11,7 @@ const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-inter",
+  preload: true,
 });
 const jakarta_sans = Plus_Jakarta_Sans({
   weight: ["200", "300", "400", "500", "600", "700", "800"],
@@ -105,15 +107,7 @@ export default function RootLayout({ children }) {
         )}
         suppressHydrationWarning={true}
       >
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-NZZ2849"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-            loading="lazy"
-          />
-        </noscript>
+<GTMNoScript />
         {children}
       </body>
     </html>
