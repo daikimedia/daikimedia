@@ -50,23 +50,23 @@ const HeroContent = () => {
       </div>
 
       <div className="col-span-12 md:col-span-6">
-        <motion.div
-          variants={fadeFromLeftAnimation}
-          initial="initial"
-          animate="animate"
-          className="relative md:min-h-[530px] w-full max-md:min-h-[400px]"
-        >
-          <div className="absolute inset-0">
-            <Image
-              src={isMobile ? heroCircleLightMobile : heroCircleLight}
-              alt="Hero Image"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="rounded-2xl object-cover"
-              priority // important if it's above-the-fold
-            />
-          </div>
-        </motion.div>
+      <motion.div
+  variants={fadeFromLeftAnimation}
+  initial="initial"
+  animate="animate"
+  className="relative md:min-h-[530px] w-full max-md:min-h-[400px]"
+>
+  <Image
+    src={isMobile ? heroCircleLightMobile : heroCircleLight}
+    alt="Hero Image"
+    width={1200}
+    height={800}
+    sizes="(max-width: 768px) 100vw, 50vw"
+    className="rounded-2xl object-cover w-full h-full"
+    priority
+  />
+</motion.div>
+
       </div>
     </FadeUpAnimation>
   );
