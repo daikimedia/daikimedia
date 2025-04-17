@@ -201,23 +201,26 @@ export default function BlogDetails() {
               <div className="mt-16">
                 <h3 className="text-2xl font-bold mb-8">Related Blogs</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  {relatedBlogs.map((relatedBlog) => (
-                    <div
-                      key={relatedBlog.slug}
-                      className="border rounded-lg p-4"
-                    >
-                      <img
-                        src={getImageUrl(relatedBlog.featuredImage)}
-                        alt={relatedBlog.title}
-                        className="w-full h-48 object-cover rounded-md mb-4"
-                      />
-                      <h4 className="text-xl font-semibold mb-2">
-                        {decodeHtmlEntities(relatedBlog.title)}
-                      </h4>
-                      <p className="text-gray-600">{relatedBlog.author}</p>
-                    </div>
-                  ))}
-                </div>
+  {relatedBlogs.slice(0, 10).map((relatedBlog) => ( // Limit to 6 items
+    <div
+      key={relatedBlog.slug}
+      className="border rounded-lg p-4"
+    >
+      <img
+        src={getImageUrl(relatedBlog.featuredImage)}
+        alt={relatedBlog.title}
+        className="w-full h-48 object-cover rounded-md mb-4"
+        width={300} // Add explicit width
+        height={192} // Add explicit height (proportional to h-48)
+        loading="lazy" // Lazy load images
+      />
+      <h4 className="text-xl font-semibold mb-2">
+        {decodeHtmlEntities(relatedBlog.title)}
+      </h4>
+      <p className="text-gray-600">{relatedBlog.author}</p>
+    </div>
+  ))}
+</div>
               </div>
             )}
           </div>
