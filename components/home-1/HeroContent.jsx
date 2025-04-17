@@ -56,11 +56,14 @@ const HeroContent = () => {
           animate="animate"
           className="relative md:min-h-[530px] w-full max-md:min-h-[400px]"
         >
-          <div className="absolute">
+          <div className="absolute inset-0">
             <Image
               src={isMobile ? heroCircleLightMobile : heroCircleLight}
               alt="Hero Image"
-              className="h-full w-full rounded-2xl"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="rounded-2xl object-cover"
+              priority // important if it's above-the-fold
             />
           </div>
         </motion.div>
