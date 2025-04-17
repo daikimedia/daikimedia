@@ -56,15 +56,17 @@ const HeroContent = () => {
   animate="animate"
   className="relative md:min-h-[530px] w-full max-md:min-h-[400px]"
 >
-  <Image
-    src={isMobile ? heroCircleLightMobile : heroCircleLight}
-    alt="Hero Image"
-    width={1200}
-    height={800}
-    sizes="(max-width: 768px) 100vw, 50vw"
-    className="rounded-2xl object-cover w-full h-full"
-    priority
-  />
+<Image
+  src={isMobile ? heroCircleLightMobile : heroCircleLight}
+  alt="Hero Image"
+  width={isMobile ? 375 : 600}
+  height={isMobile ? 500 : 800}
+  priority
+  placeholder="blur"
+  sizes="(max-width: 768px) 100vw, 50vw"
+  className="rounded-2xl object-cover"
+/>
+
 </motion.div>
 
       </div>
