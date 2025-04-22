@@ -11,6 +11,7 @@ import Counter from "@/components/shared/Counter";
 import FinancialBlog from "@/components/shared/FinancialBlog";
 import Services from "@/components/shared/Services";
 import Testimonial from "@/components/shared/Testimonial";
+import Image from 'next/image';
 import CustomSectionOne from "@/components/customSections/customSectionOne";
 import ContentCards from "@/components/customSections/customContentCards";
 import ComprehensiveServicesShowcase from "@/components/customSections/comprehensiveServicesShowcase";
@@ -56,11 +57,12 @@ export default function Home() {
 
           {/* Image Section */}
           <div className="">
-            <img
-              src="/images/partners.jpeg"
-              alt="Google and Meta Partner"
-              className="w-fit rounded-lg shadow-md"
-            />
+          <Image
+  src="/images/partners.jpeg"
+  alt="Google and Meta Partner"
+  width={400} // set your desired width
+  height={300} // set your desired height
+/>
           </div>
         </div>
         <Clients />
