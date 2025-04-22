@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:description" content="Daiki Media provides expert SEO and website development services." />
         <meta name="twitter:image" content="https://www.daikimedia.com/images/logo.png" />
         <meta name="twitter:site" content="@daiki.Media" />
-
+        <GTMNoScript />
         {/* Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
@@ -107,7 +107,6 @@ export default function RootLayout({ children }) {
         )}
         suppressHydrationWarning={true}
       >
-<GTMNoScript />
         {children}
       </body>
     </html>
