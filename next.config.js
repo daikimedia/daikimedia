@@ -20,6 +20,11 @@ const nextConfig = {
   },
 
   compress: true,
+
+  // Move experimental inside nextConfig
+  experimental: {
+    optimizeCss: true, // This requires the critters package
+  }
 };
 
 module.exports = withBundleAnalyzer(nextConfig);
