@@ -90,11 +90,13 @@ const Footer = () => {
             src={footerSeperator}
             alt="footer-seperator"
             className="w-full object-cover dark:hidden max-md:h-[1px]"
+            loading="lazy"
           />
           <Image
             src={footerSeperatorDark}
             alt="footer-seperator"
             className="hidden w-full object-cover dark:block max-md:h-[1px]"
+            loading="lazy"
           />
         </div>
 

@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { fadeFromLeftAnimation } from "@/data/animation";
 import Image from "next/image";
 
-import heroCircleLight from "../../public/images/hero/testimg.webp";
-import heroCircleLightMobile from "../../public/images/hero/testimg-mobile.webp";
+import heroCircleLight from "../../public/images/hero/testimg.avif";
+import heroCircleLightMobile from "../../public/images/hero/testimg-mobile.avif";
 
 import FadeUpAnimation from "../animations/FadeUpAnimation";
 
@@ -17,7 +17,7 @@ const HeroContent = () => {
       setIsMobile(window.innerWidth < 768);
     };
 
-    checkScreen(); // Run on mount
+    checkScreen();
     window.addEventListener("resize", checkScreen);
     return () => window.removeEventListener("resize", checkScreen);
   }, []);
@@ -50,25 +50,23 @@ const HeroContent = () => {
       </div>
 
       <div className="col-span-12 md:col-span-6">
-      <motion.div
-  variants={fadeFromLeftAnimation}
-  initial="initial"
-  animate="animate"
-  className="relative md:min-h-[530px] w-full max-md:min-h-[400px]"
->
-<Image
-  src={isMobile ? heroCircleLightMobile : heroCircleLight}
-  alt="Hero Image"
-  width={isMobile ? 375 : 600}
-  height={isMobile ? 500 : 800}
-  loading="eager"
-  placeholder="blur"
-  sizes="(max-width: 768px) 100vw, 50vw"
-  className="rounded-2xl object-cover"
-/>
-
-</motion.div>
-
+        <motion.div
+          variants={fadeFromLeftAnimation}
+          initial="initial"
+          animate="animate"
+          className="relative md:min-h-[530px] w-full max-md:min-h-[400px]"
+        >
+          <Image
+            src={isMobile ? heroCircleLightMobile : heroCircleLight}
+            alt="Hero Image"
+            width={isMobile ? 375 : 600}
+            height={isMobile ? 500 : 800}
+            priority // 👈 Ensures fast load
+            placeholder="blur"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="rounded-2xl object-cover"
+          />
+        </motion.div>
       </div>
     </FadeUpAnimation>
   );
