@@ -10,17 +10,18 @@ import heroCircleLightMobile from "../../public/images/hero/testimg-mobile.avif"
 import FadeUpAnimation from "../animations/FadeUpAnimation";
 
 const HeroContent = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(null); // Start as null to avoid mismatch on server vs client
 
   useEffect(() => {
-    const checkScreen = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
+    const checkScreen = () => setIsMobile(window.innerWidth < 768);
     checkScreen();
     window.addEventListener("resize", checkScreen);
     return () => window.removeEventListener("resize", checkScreen);
   }, []);
+
+  const selectedImage = isMobile ? heroCircleLightMobile : heroCircleLight;
+  const imageWidth = isMobile ? 375 : 600;
+  const imageHeight = isMobile ? 500 : 800;
 
   return (
     <FadeUpAnimation className="relative z-10 grid grid-cols-12 items-center max-lg:gap-y-10">
@@ -29,10 +30,10 @@ const HeroContent = () => {
           5k+ Trusted Businesses
         </p>
         <h1 className="mb-12 max-md:mb-8">
-          Grow Your Revenue
+          Grow Your Revenue{" "}
           <span className="inline-block rounded-[88px] border-2 border-paragraph bg-[#D9D9D900] px-5 pb-2.5 pt-0.5 font-playfair italic leading-none dark:border-[#F0F3EA]">
             with SEO & Digital
-          </span>
+          </span>{" "}
           Marketing Services.
         </h1>
         <p className="mb-8 max-w-[590px] max-md:mb-8">
@@ -43,7 +44,8 @@ const HeroContent = () => {
         <a
           href="https://api.whatsapp.com/send?phone=601114850067"
           target="_blank"
-          className="btn col-span-4 max-lg:!px-3 max-lg:!text-sm xs:col-span-4 "
+          rel="noopener noreferrer"
+          className="btn col-span-4 max-lg:!px-3 max-lg:!text-sm xs:col-span-4"
         >
           Get Started
         </a>
@@ -56,16 +58,18 @@ const HeroContent = () => {
           animate="animate"
           className="relative md:min-h-[530px] w-full max-md:min-h-[400px]"
         >
-          <Image
-            src={isMobile ? heroCircleLightMobile : heroCircleLight}
-            alt="Hero Image"
-            width={isMobile ? 375 : 600}
-            height={isMobile ? 500 : 800}
-            priority // 👈 Ensures fast load
-            placeholder="blur"
-            sizes="(max-width: 768px) 100vw, 50vw"
-            className="rounded-2xl object-cover"
-          />
+          {isMobile !== null && (
+            <Image
+              src={selectedImage}
+              alt="Hero Image"
+              width={imageWidth}
+              height={imageHeight}
+              priority
+              placeholder="empty" // Remove blur if you don’t use blurDataURL
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="rounded-2xl object-cover"
+            />
+          )}
         </motion.div>
       </div>
     </FadeUpAnimation>
