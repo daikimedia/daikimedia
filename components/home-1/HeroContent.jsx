@@ -61,7 +61,7 @@ const HeroContent = () => {
   alt="Hero Image"
   width={isMobile ? 375 : 600}
   height={isMobile ? 500 : 800}
-  priority={true} 
+  loading="eager"
   placeholder="blur"
   sizes="(max-width: 768px) 100vw, 50vw"
   className="rounded-2xl object-cover"
