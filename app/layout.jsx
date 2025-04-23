@@ -42,12 +42,7 @@ export default function RootLayout({ children }) {
           name="google-site-verification"
           content="EIBnMq71KKUDT895qyPc5L_RMaDrmBpUG8pgX3FO6N4"
         />
-              <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
+        
         <link rel="canonical" href="https://www.daikimedia.com/" />	
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Daiki Media" />
