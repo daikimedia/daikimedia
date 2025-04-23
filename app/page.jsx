@@ -1,27 +1,29 @@
+
 import Footer from "@/components/footer/Footer";
 import Cta from "@/components/home-1/Cta";
-import Faq from "@/components/home-1/Faq";
 import Hero from "@/components/home-1/Hero";
 import Integration from "@/components/home-1/Integration";
 import Solution from "@/components/home-1/Solution";
 import Vision from "@/components/home-1/Vision";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
-import Clients from "@/components/shared/Clients";
-import Counter from "@/components/shared/Counter";
+import LazyFaq from "@/components/lazy/LazyFaq";
+import LazyCounter from "@/components/lazy/LazyCounter";
+import LazyClients from "@/components/lazy/LazyClients";
 import FinancialBlog from "@/components/shared/FinancialBlog";
 import Services from "@/components/shared/Services";
-import Testimonial from "@/components/shared/Testimonial";
-import Image from 'next/image';
+import Image from "next/image";
 import CustomSectionOne from "@/components/customSections/customSectionOne";
 import ContentCards from "@/components/customSections/customContentCards";
 import ComprehensiveServicesShowcase from "@/components/customSections/comprehensiveServicesShowcase";
 export const metadata = {
-  title: "Digital Marketing Agency Kuala Lumpur | Search Engine Optimization and Digital Marketing | Seo Agencies | Daiki Media",
+  title:
+    "Digital Marketing Agency Kuala Lumpur | Search Engine Optimization and Digital Marketing | Seo Agencies | Daiki Media",
   description:
     "Daiki Media offers expert digital marketing, SEO, web development, UI/UX design, copywriting, and app development to elevate your business in KL, Malaysia.",
   keywords:
     "Digital marketing agency Kuala Lumpur , Search engine optimization and digital marketing, Best SEO agencies",
-  og_title: "Digital Marketing Agency Kuala Lumpur | Search Engine Optimization and Digital Marketing | Seo Agencies | Daiki Media",
+  og_title:
+    "Digital Marketing Agency Kuala Lumpur | Search Engine Optimization and Digital Marketing | Seo Agencies | Daiki Media",
   og_description:
     "Daiki Media offers expert digital marketing, SEO, web development, UI/UX design, copywriting, and app development to elevate your business in KL, Malaysia.",
   og_image: "https://daikimedia.com/images/logo.png",
@@ -57,24 +59,24 @@ export default function Home() {
 
           {/* Image Section */}
           <div className="">
-          <Image
-  src="/images/partners.jpeg"
-  alt="Google and Meta Partner"
-  width={400} // set your desired width
-  height={300} // set your desired height
-/>
+            <Image
+              src="/images/partners.jpeg"
+              alt="Google and Meta Partner"
+              width={400}
+              height={300}
+            />
           </div>
         </div>
-        <Clients />
+        <LazyClients />
         <Services />
-        <Counter />
+        <LazyCounter />
         <Vision />
         <Solution />
         <Integration />
         <CustomSectionOne />
         <ContentCards />
         <ComprehensiveServicesShowcase />
-        <Faq />
+        <LazyFaq />
         <Cta />
         <FinancialBlog />
       </main>
