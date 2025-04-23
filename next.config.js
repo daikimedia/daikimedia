@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
+
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true', // Only analyze when explicitly set
+});
+
 const nextConfig = {
   async rewrites() {
     return [
@@ -11,10 +16,10 @@ const nextConfig = {
 
   images: {
     formats: ['image/webp'],
-    minimumCacheTTL: 60, // seconds
+    minimumCacheTTL: 60, // in seconds
   },
 
   compress: true,
 };
 
-module.exports = nextConfig;
+module.exports = withBundleAnalyzer(nextConfig);
