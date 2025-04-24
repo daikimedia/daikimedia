@@ -3,22 +3,27 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { fadeFromLeftAnimation } from "@/data/animation";
 import Image from "next/image";
+import FadeUpAnimation from "../animations/FadeUpAnimation";
 
 import heroCircleLight from "../../public/images/hero/testimg.avif";
 import heroCircleLightMobile from "../../public/images/hero/testimg-mobile.avif";
 
-import FadeUpAnimation from "../animations/FadeUpAnimation";
-
-const HeroContent = () => {
-  const [isMobile, setIsMobile] = useState(null); // Start as null to avoid mismatch on server vs client
+// Optional: Move screen size logic to a custom hook
+const useIsMobile = (breakpoint = 768) => {
+  const [isMobile, setIsMobile] = useState(null);
 
   useEffect(() => {
-    const checkScreen = () => setIsMobile(window.innerWidth < 768);
+    const checkScreen = () => setIsMobile(window.innerWidth < breakpoint);
     checkScreen();
     window.addEventListener("resize", checkScreen);
     return () => window.removeEventListener("resize", checkScreen);
-  }, []);
+  }, [breakpoint]);
 
+  return isMobile;
+};
+
+const HeroContent = () => {
+  const isMobile = useIsMobile();
   const selectedImage = isMobile ? heroCircleLightMobile : heroCircleLight;
   const imageWidth = isMobile ? 375 : 600;
   const imageHeight = isMobile ? 500 : 800;
@@ -31,7 +36,7 @@ const HeroContent = () => {
         </p>
         <h1 className="mb-12 max-md:mb-8">
           Grow Your Revenue{" "}
-          <span className="inline-block rounded-[88px] border-2 border-paragraph bg-[#D9D9D900] px-5 pb-2.5 pt-0.5 font-playfair italic leading-none dark:border-[#F0F3EA]">
+          <span className="inline-block rounded-[88px] border-2 border-paragraph bg-transparent px-5 pb-2.5 pt-1 font-playfair italic leading-none dark:border-[#F0F3EA]">
             with SEO & Digital
           </span>{" "}
           Marketing Services.
@@ -56,16 +61,18 @@ const HeroContent = () => {
           variants={fadeFromLeftAnimation}
           initial="initial"
           animate="animate"
+          transition={{ delay: 0.2, duration: 0.8 }}
           className="relative md:min-h-[530px] w-full max-md:min-h-[400px]"
         >
           {isMobile !== null && (
             <Image
               src={selectedImage}
-              alt="Hero Image"
+              alt="Illustration representing SEO and digital marketing growth"
               width={imageWidth}
               height={imageHeight}
               priority
-              placeholder="empty" // Remove blur if you don’t use blurDataURL
+              loading="eager"
+              placeholder="empty"
               sizes="(max-width: 768px) 100vw, 50vw"
               className="rounded-2xl object-cover"
             />
