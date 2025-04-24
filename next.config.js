@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true', // Only analyze when explicitly set
+  enabled: process.env.ANALYZE === 'true',
+});
+
+module.exports = withBundleAnalyzer({
+  reactStrictMode: true,
 });
 
 const nextConfig = {
