@@ -1,12 +1,34 @@
-import { useState } from 'react'
-import emailjs from '@emailjs/browser'
+import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 export const HeroContactForm = () => {
   const [formData, setFormData] = useState({
     need: 'I need more revenue for my business',
     email: '',
     budget: '',
-  })
+  });
+
+  const handleChange = (field) => (e) =>
+    setFormData({ ...formData, [field]: e.target.value });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const serviceID = 'service_ei97658';
+    const templateID = 'template_vmm2hwi';
+    const userID = 'A7u3t1t9TNX-4LxrF';
+
+    try {
+      await emailjs.send(serviceID, templateID, {
+        from_email: formData.email,
+        message: `${formData.need} and my budget is ${formData.budget}`,
+      }, userID);
+
+      alert('Message sent successfully!');
+      setFormData({ need: 'I need more revenue for my business', email: '', budget: '' });
+    } catch (error) {
+      console.error('Failed to send message.', error);
+    }
+  };
 
   const needs = [
     'I need more revenue for my business',
@@ -16,86 +38,45 @@ export const HeroContactForm = () => {
     'I need more sales',
     'I need help with brand awareness',
     'All of the above',
-  ]
-
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-
-    const serviceID = 'service_ei97658'
-    const templateID = 'template_vmm2hwi'
-    const userID = 'A7u3t1t9TNX-4LxrF'
-
-    try {
-      const emailParams = {
-        from_email: formData.email,
-        message: `${formData.need} and my budget is ${formData.budget}`,
-      }
-
-      const res = await emailjs.send(serviceID, templateID, emailParams, userID)
-
-      if (res.status === 200) {
-        alert('Message sent successfully!')
-        setFormData({
-          email: '',
-          budget: '',
-        })
-      }
-    } catch (error) {
-      console.error('Failed to send message. Please try again later.')
-    }
-  }
+  ];
 
   return (
-    <div className="relative w-full container mx-auto mt-8 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg z-55">
-      <form
-        onSubmit={handleSubmit}
-        className="flex flex-col sm:flex-col md:flex-row gap-4"
-        id="hero-contact-form"
-      >
-        <div className="w-full md:flex-1 relative">
-          <select
-            value={formData.need}
-            onChange={(e) => setFormData({ ...formData, need: e.target.value })}
-            className="block w-full rounded-[48px] border border-borderColor bg-white px-5 py-2.5 pr-10 text-sm text-paragraph-light outline-none transition-all duration-300 placeholder:text-paragraph-light focus:border-primary dark:border-borderColor-dark dark:bg-dark-200 dark:placeholder:text-paragraph-light dark:focus:border-primary appearance-none"
-          >
-            {needs.map((need) => (
-              <option key={need} value={need}>
-                {need}
-              </option>
-            ))}
-          </select>
-          <div className="absolute right-4 top-1/2 transform -translate-y-1/2 pointer-events-none">
-            ▼
-          </div>
-        </div>
+    <div className="relative container mx-auto mt-8 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg z-55">
+      <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-4">
+        <select
+          value={formData.need}
+          onChange={handleChange('need')}
+          className="w-full md:flex-1 rounded-[48px] border bg-white px-5 py-2.5 text-sm text-paragraph-light outline-none focus:border-primary transition-all dark:bg-dark-200 dark:border-borderColor-dark dark:focus:border-primary"
+        >
+          {needs.map((need) => (
+            <option key={need} value={need}>{need}</option>
+          ))}
+        </select>
 
-        <div className="w-full md:flex-1">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            value={formData.email}
-            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="block w-full rounded-[48px] border border-borderColor bg-white px-5 py-2.5 text-sm text-paragraph-light outline-none transition-all duration-300 placeholder:text-paragraph-light focus:border-primary dark:border-borderColor-dark dark:bg-dark-200 dark:placeholder:text-paragraph-light dark:focus:border-primary"
-            required
-          />
-        </div>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          value={formData.email}
+          onChange={handleChange('email')}
+          required
+          className="w-full md:flex-1 rounded-[48px] border bg-white px-5 py-2.5 text-sm text-paragraph-light outline-none focus:border-primary transition-all dark:bg-dark-200 dark:border-borderColor-dark dark:focus:border-primary"
+        />
 
-        <div className="w-full md:flex-1">
-          <input
-            type="number"
-            placeholder="Monthly budget (USD)"
-            value={formData.budget}
-            onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-            className="block w-full rounded-[48px] border border-borderColor bg-white px-5 py-2.5 text-sm text-paragraph-light outline-none transition-all duration-300 placeholder:text-paragraph-light focus:border-primary dark:border-borderColor-dark dark:bg-dark-200 dark:placeholder:text-paragraph-light dark:focus:border-primary"
-            min="0"
-            step="100"
-            required
-          />
-        </div>
+        <input
+          type="number"
+          placeholder="Monthly budget (USD)"
+          value={formData.budget}
+          onChange={handleChange('budget')}
+          required
+          min="0"
+          step="100"
+          className="w-full md:flex-1 rounded-[48px] border bg-white px-5 py-2.5 text-sm text-paragraph-light outline-none focus:border-primary transition-all dark:bg-dark-200 dark:border-borderColor-dark dark:focus:border-primary"
+        />
+
         <button type="submit" className="btn text-white w-full md:w-auto">
           GET A FREE QUOTE
         </button>
       </form>
     </div>
-  )
-}
+  );
+};
