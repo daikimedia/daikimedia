@@ -19,6 +19,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "clsx": "^2.1.0",
     "compression": "^1.8.0",
+    "critters-webpack-plugin": "^3.0.2",
     "framer-motion": "^11.0.20",
     "gray-matter": "^4.0.3",
     "gsap": "^3.12.5",
