@@ -1,6 +1,20 @@
-// Do NOT use "use client" here
-import HomePage from "./HomePage";
 
+import Footer from "@/components/footer/Footer";
+import Cta from "@/components/home-1/Cta";
+import Hero from "@/components/home-1/Hero";
+import Integration from "@/components/home-1/Integration";
+import Solution from "@/components/home-1/Solution";
+import Vision from "@/components/home-1/Vision";
+import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
+import LazyFaq from "@/components/lazy/LazyFaq";
+import LazyCounter from "@/components/lazy/LazyCounter";
+import LazyClients from "@/components/lazy/LazyClients";
+import FinancialBlog from "@/components/shared/FinancialBlog";
+import Services from "@/components/shared/Services";
+import Image from "next/image";
+import CustomSectionOne from "@/components/customSections/customSectionOne";
+import ContentCards from "@/components/customSections/customContentCards";
+import ComprehensiveServicesShowcase from "@/components/customSections/comprehensiveServicesShowcase";
 export const metadata = {
   title:
     "Digital Marketing Agency Kuala Lumpur | Search Engine Optimization and Digital Marketing | Seo Agencies | Daiki Media",
@@ -19,6 +33,55 @@ export const metadata = {
   og_locale: "en_US",
 };
 
-export default function Page() {
-  return <HomePage />;
+export default function Home() {
+  return (
+    <>
+      <PrimaryNavbar />
+      <main>
+        <Hero />
+        <div className="py-16 flex flex-wrap items-center justify-center gap-8 px-4 max-lg:flex-col">
+          {/* Text Section */}
+          <div className="text-center lg:text-left">
+            <h2 className="mb-6 text-3xl font-bold">Google and Meta Partner</h2>
+            <p className="text-gray-600">
+              We are proud partners with industry leaders like{" "}
+              <a
+                href="https://www.designrush.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                www.designrush.com
+              </a>
+              <br />
+              Delivering cutting-edge solutions for your business.
+            </p>
+          </div>
+
+          {/* Image Section */}
+          <div className="">
+            <Image
+              src="/images/partners.jpeg"
+              alt="Google and Meta Partner"
+              width={400}
+              height={300}
+            />
+          </div>
+        </div>
+        <LazyClients />
+        <Services />
+        <LazyCounter />
+        <Vision />
+        <Solution />
+        <Integration />
+        <CustomSectionOne />
+        <ContentCards />
+        <ComprehensiveServicesShowcase />
+        <LazyFaq />
+        <Cta />
+        <FinancialBlog />
+      </main>
+
+      <Footer />
+    </>
+  );
 }
