@@ -56,7 +56,6 @@ export default function ServiceCardWithLeftText() {
   return (
     <section className="container pt-12 ">
       <div className="grid grid-cols-12 max-md:gap-y-8 md:gap-8">
-        {/* text content---------- */}
         <div className="col-span-12 md:col-span-4">
           <div className="max-md: mb-15">
             <p className="section-tagline">Our Services</p>
@@ -76,7 +75,6 @@ export default function ServiceCardWithLeftText() {
           </div>
         </div>
 
-        {/* Card Content------ */}
 
         <div className="col-span-12 md:col-span-8 1xl:pl-[120px]">
           <div className="relative z-10">

@@ -9,48 +9,77 @@ import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 import blogData from "@/data/singleBlogData.json";
 
 export default function BlogDetails() {
-  const { slug } = useParams(); 
+  const { slug } = useParams();
   const [blog, setBlog] = useState(null);
+  const [isApiBlog, setIsApiBlog] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [relatedBlogs, setRelatedBlogs] = useState([]); 
 
   useEffect(() => {
-    if (!slug) return;
-
-    const fetchBlog = async () => {
+    const fetchBlogs = async () => {
       setIsLoading(true);
       setError(null);
 
       try {
-        console.log("Fetching blog for slug:", slug);
+        const response = await fetch("https://cms.daikimedia.com/api/blogs");
 
-        // Check local JSON data first
-        let foundBlog = blogData.find((item) => item.slug === slug);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        
+        const foundBlog = data.find((item) => item.slug === slug);
         if (foundBlog) {
-          console.log("Found blog in local data.");
           setBlog(foundBlog);
+          setIsApiBlog(true);
+
+          const related = data
+            .filter(
+              (item) =>
+                item.slug !== slug &&
+                (item.category === foundBlog.category ||
+                  item.author === foundBlog.author)
+            )
+            .slice(0, 3); 
+
+          setRelatedBlogs(related);
         } else {
-          const response = await fetch("https://cms.daikimedia.com/api/blogs");
-          if (!response.ok) throw new Error("Failed to fetch blogs");
-          
-          const blogs = await response.json();
-          const apiBlog = blogs.find(blog => blog.slug === slug);
-          
-          if (apiBlog) {
-            setBlog(apiBlog);
-          } else {
-            throw new Error("Blog not found");
-          }
+          throw new Error("Blog not found in API");
         }
       } catch (error) {
-        console.error("Error fetching blog:", error.message);
+        console.error("Error fetching blogs:", error);
         setError(error.message);
+
+      
+        const fallbackBlog = blogData.find((item) => item.slug === slug);
+        if (fallbackBlog) {
+          setBlog(fallbackBlog);
+          setIsApiBlog(false);
+
+          
+          const related = blogData
+            .filter(
+              (item) =>
+                item.slug !== slug &&
+                (item.category === fallbackBlog.category ||
+                  item.author === fallbackBlog.author)
+            )
+            .slice(0, 3);
+
+          setRelatedBlogs(related);
+          setError(null);
+        }
       } finally {
         setIsLoading(false);
       }
     };
 
-    fetchBlog();
+    if (slug) {
+      fetchBlogs();
+    }
   }, [slug]);
 
   if (isLoading) {
@@ -64,7 +93,7 @@ export default function BlogDetails() {
   if (error) {
     return (
       <div className="flex justify-center items-center h-screen">
-        <p className="text-lg text-red-600">Error: {error}</p>
+        <p className="text-lg text-red-600">{error}</p>
       </div>
     );
   }
@@ -84,24 +113,43 @@ export default function BlogDetails() {
     return textArea.value;
   };
 
+  const getImageUrl = (imagePath) => {
+    if (!imagePath) return "/images/default-blog.jpg";
+    return isApiBlog ? `http://cms.daikimedia.com/${imagePath}` : imagePath;
+  };
+
+  const getFormattedDate = () => {
+    if (isApiBlog) {
+      return blog.created_at ? blog.created_at.split("T")[0] : "Unknown Date";
+    } else {
+      return blog.date ? blog.date.split("T")[0] : "Unknown Date";
+    }
+  };
+
   return (
     <>
       <Head>
         <title>{decodeHtmlEntities(blog.title || "Blog Details")}</title>
         <meta
           name="description"
-          content={decodeHtmlEntities(blog.description || blog.content?.substring(0, 150) || "Blog post details")}
+          content={decodeHtmlEntities(
+            blog.description ||
+            blog.content?.substring(0, 150) ||
+            "Blog post details"
+          )}
         />
       </Head>
       <PrimaryNavbar />
       <main className="flex flex-col items-center justify-center min-h-screen">
-        <PageHero subtitle="BLOG Details" title="Recent blogs created <br/> by Daikai Media" />
+        <PageHero
+          subtitle="BLOG Details"
+          title="Recent blogs created <br/> by Daikai Media"
+        />
         <article className="relative pb-150 w-full max-w-4xl mx-auto text-center">
-          <div className="absolute -top-[250px] left-1/2 -z-10 h-[550px] w-full -translate-x-1/2 bg-[url('/images/hero-gradient.png')] bg-cover bg-center bg-no-repeat opacity-70 md:hidden"></div>
           <div className="container relative">
             <div className="mb-16 overflow-hidden rounded-medium p-2.5 max-md:h-[400px] flex justify-center items-center">
               <img
-                src={blog.featuredImage || "/images/default-blog.jpg"}
+                src={getImageUrl(blog.featuredImage)}
                 alt={decodeHtmlEntities(blog.title || "Untitled Blog")}
                 className="rounded max-md:h-full max-md:object-cover w-[700px] h-[500px] max-md:object-center"
                 width={400}
@@ -114,13 +162,28 @@ export default function BlogDetails() {
                 {decodeHtmlEntities(blog.title || "Untitled Blog")}
               </h2>
               <div className="mb-6 flex items-center justify-center gap-x-2">
-                <p className="text-lg">{blog.author || "Unknown Author"}</p>
+                <p className="text-lg">
+                  <a href="/author/lukesh-pillai">{blog.author || "Unknown Author"}</a>
+                </p>
+
                 <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="5" height="6" viewBox="0 0 5 6" fill="none">
-                    <circle cx="2.5" cy="3" r="2.5" fill="#D8DBD0" className="dark:fill-[#3B3C39]" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="5"
+                    height="6"
+                    viewBox="0 0 5 6"
+                    fill="none"
+                  >
+                    <circle
+                      cx="2.5"
+                      cy="3"
+                      r="2.5"
+                      fill="#D8DBD0"
+                      className="dark:fill-[#3B3C39]"
+                    />
                   </svg>
                 </span>
-                <p className="text-lg">{blog.date || "Unknown Date"}</p>
+                <p className="text-lg">{getFormattedDate()}</p>
               </div>
             </div>
 
@@ -132,6 +195,34 @@ export default function BlogDetails() {
                 }}
               ></div>
             </div>
+
+            
+            {false && (
+              <div className="mt-16">
+                <h3 className="text-2xl font-bold mb-8">Related Blogs</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+  {relatedBlogs.slice(0, 10).map((relatedBlog) => ( // Limit to 6 items
+    <div
+      key={relatedBlog.slug}
+      className="border rounded-lg p-4"
+    >
+      <img
+        src={getImageUrl(relatedBlog.featuredImage)}
+        alt={relatedBlog.title}
+        className="w-full h-48 object-cover rounded-md mb-4"
+        width={300} // Add explicit width
+        height={192} // Add explicit height (proportional to h-48)
+        loading="lazy" // Lazy load images
+      />
+      <h4 className="text-xl font-semibold mb-2">
+        {decodeHtmlEntities(relatedBlog.title)}
+      </h4>
+      <p className="text-gray-600">{relatedBlog.author}</p>
+    </div>
+  ))}
+</div>
+              </div>
+            )}
           </div>
         </article>
 

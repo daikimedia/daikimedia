@@ -8,7 +8,7 @@ export const metadata = {
   description:
     "Explore the world of digital marketing with Daikai Media. Learn about strategies, tools, and techniques to elevate your brand's presence online.",
   keywords:
-    "digital marketing, online marketing, digital marketing strategies, marketing tools, brand promotion, SEO, social media marketing",
+    "seo optimization companies",
 };
 
 const DigitalMarketingPage = () => {

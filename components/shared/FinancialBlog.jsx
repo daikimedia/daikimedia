@@ -56,13 +56,13 @@ const FinancialBlog = ({ className = "dark:bg-dark pb-150 pt-150" }) => {
                 key={blogItems.id}
               >
                 <div className="h-full rounded border border-dashed border-gray-100 p-6 dark:border-borderColor-dark">
-                  <img
+                  {/* <img
                     src={blogItems.yoast_head_json.og_image[0].url}
                     alt="Blog Image"
                     className="mb-6 w-full rounded-md"
                     width={339}
-                    height={198}
-                  />
+                    height={198} */}
+                  {/* /> */}
                   <div>
                     <Link href={`/blog/${blogItems.slug}`} className="block">
                       <h3 className="mb-3 font-semibold leading-[1.33]">
@@ -83,6 +83,7 @@ const FinancialBlog = ({ className = "dark:bg-dark pb-150 pt-150" }) => {
         </div>
       </div>
     </section>
+  
   );
 };
 

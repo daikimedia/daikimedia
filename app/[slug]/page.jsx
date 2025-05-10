@@ -7,14 +7,33 @@ import ServiceList from "@/data/singleServiceData";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 
 export async function generateMetadata({ params }) {
-  const slug = params.slug;
+  if (!params) return {}; 
+  const slug = params.slug; 
+
   const { SingleServiceData } = ServiceList;
   const data = SingleServiceData.find((post) => post.slug === slug);
 
-  return {
-    title: data?.metaTitle,
-    description: data?.metaDescription,
+  const meta = {
+    title: data?.metaTitle || "Default Title",
+    description: data?.metaDescription || "Default Description",
   };
+
+  // ✅ Add canonical if slug exists
+  if (data?.slug) {
+    meta.alternates = {
+      canonical: `https://www.daikimedia.com/${data.slug}`,
+    };
+  }
+
+  // ✅ Add keywords if present
+  if (data?.keyword) {
+    meta.keywords = data.keyword;
+  }
+
+  // ✅ Optional: log to terminal for debugging
+  console.log("Generated Metadata for:", slug, meta);
+
+  return meta;
 }
 
 export async function generateStaticParams() {
@@ -24,10 +43,9 @@ export async function generateStaticParams() {
   }));
 }
 
-const ServiceDetails = (props) => {
+const ServiceDetails = ({ params }) => {
   const { SingleServiceData } = ServiceList;
-  // console.log(SingleServiceData);
-  const slug = props.params.slug;
+  const slug = params?.slug; 
   const data = SingleServiceData.find((post) => post.slug === slug);
 
   return (

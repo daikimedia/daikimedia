@@ -22,11 +22,11 @@ const Cta = () => {
           </h2>
           <p className="mx-auto mb-12 max-w-[400px] max-lg:mt-6">
             Our custom web design solutions are crafted to bring your business vision to life with the highest quality and results-driven approach.
-
           </p>
           <Link href="/contact" className="btn">
             Get Started Today
           </Link>
+          {/* Minor change: Added a comment for Git to detect this file as modified */}
           <ul className="mx-auto mt-20 flex max-w-[815px] items-center justify-between max-lg:mt-5 max-md:flex-col max-md:gap-5">
             <li className="flex items-center">
               <svg

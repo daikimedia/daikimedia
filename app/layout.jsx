@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { cn } from "@/utils/cn";
 import { Inter, Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import Script from "next/script";
+import GTMNoScript from "@/components/GTMNoScript";
 
 const inter = Inter({
   weight: ["200", "300", "400", "500", "600", "700", "800"],
@@ -10,6 +11,7 @@ const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-inter",
+  preload: true,
 });
 const jakarta_sans = Plus_Jakarta_Sans({
   weight: ["200", "300", "400", "500", "600", "700", "800"],
@@ -40,9 +42,25 @@ export default function RootLayout({ children }) {
           name="google-site-verification"
           content="EIBnMq71KKUDT895qyPc5L_RMaDrmBpUG8pgX3FO6N4"
         />
+        <link rel="preload" as="image" href="https://www.daikimedia.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftestimg.81f0ff33.avif&w=1920&q=75" type="image/avif" />
 
-        {/*  Google Tag Manager */}
-        <Script id="google-tag-manager" strategy="afterInteractive">
+        <link rel="canonical" href="https://www.daikimedia.com/" />	
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Daiki Media" />
+        <meta property="og:description" content="Daiki Media provides expert SEO and website development services." />
+        <meta property="og:image" content="https://www.daikimedia.com/images/logo.png" />
+        <meta property="og:url" content="https://www.daikimedia.com/" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image " />
+        <meta name="twitter:title" content="daiki media" />
+        <meta name="twitter:description" content="Daiki Media provides expert SEO and website development services." />
+        <meta name="twitter:image" content="https://www.daikimedia.com/images/logo.png" />
+        <meta name="twitter:site" content="@daiki.Media" />
+        <GTMNoScript />
+        {/* Google Tag Manager */}
+        <Script id="google-tag-manager" strategy="lazyOnload">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -51,29 +69,21 @@ export default function RootLayout({ children }) {
             })(window,document,'script','dataLayer','GTM-NZZ2849');
           `}
         </Script>
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-NZZ2849"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          />
-        </noscript>
 
-        {/*Schema Markup for SEO */}
+        {/* Schema Markup */}
         <Script
           id="schema-markup"
           type="application/ld+json"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              "@context": "https://schema.org",
+              "@context": "https://schema.org ",
               "@type": "LocalBusiness",
               "name": "Daiki Media",
-              "url": "https://daikimedia.com",
+              "url": "https://daikimedia.com ",
               "description": "Daiki Media provides expert SEO and website development services.",
               "address": {
-                "@type": "PostalAddress",
+                "@type": "PostalAddress ",
                 "streetAddress": "Jalan Ara, SD 7/3d, Bandar Sri Damansara",
                 "addressLocality": "Kuala Lumpur",
                 "addressRegion": "KL",
@@ -82,12 +92,13 @@ export default function RootLayout({ children }) {
               },
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+601114850067",
-                "contactType": "customer service"
+                "telephone": "+601114850067 ",
+                "contactType": "customer service "
               }
             })
           }}
         />
+
       </head>
       <body
         className={cn(
@@ -96,6 +107,7 @@ export default function RootLayout({ children }) {
           jakarta_sans.variable,
           playfair.variable
         )}
+        suppressHydrationWarning={true}
       >
         {children}
       </body>

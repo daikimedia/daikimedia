@@ -5,11 +5,31 @@ import NewsLetter from "@/components/shared/NewsLetter";
 import Pricing from "@/components/shared/Pricing";
 import ServiceList from "@/data/singleServiceData";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
+
 export async function generateMetadata({ params }) {
-  return {
-    title: params.metaTitle,
-    description: params.metaDescription,
+  const { SingleServiceData } = ServiceList;
+  const data = SingleServiceData.find((item) => item.slug === params.slug);
+
+  if (!data) return {};
+
+  const meta = {
+    title: data.metaTitle || data.title,
+    description: data.metaDescription || "",
   };
+
+  if (data.slug) {
+    meta.alternates = {
+      canonical: `https://www.daikimedia.com/${data.slug}`,
+    };
+  }
+
+  if (data.keyword) {
+    meta.keywords = data.keyword;
+  }
+
+  console.log("Generated Metadata for", data.slug, meta);
+
+  return meta;
 }
 
 export async function generateStaticParams() {
