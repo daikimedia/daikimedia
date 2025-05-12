@@ -796,6 +796,7 @@
       "metaDescription": "Boost your local visibility in KL with Daiki Media's expert Google Local Services Ads management, driving quality leads to your business.",
       "title": "Google Local Services Ads",
       "subTitle": "Maximize Your Local Reach with Google Local Services Ads",
+      "canonicalUrl": "https://www.daikimedia.com/google-local-services-ads",
       "heroSection": {
         "title": "Maximize Your Local Reach with Google Local Services Ads",
         "description": "Get the visibility your business deserves! Daiki Media's expert management of Google Local Services Ads (LSAs) helps you attract local leads, boost foot traffic, and skyrocket conversions.",
@@ -975,6 +976,8 @@
       "metaTitle": "Comprehensive SEO Audit Services in Malaysia | Daiki Media",
       "metaDescription": "Enhance your website's performance in KL with Daiki Media’s comprehensive SEO audits, identifying and resolving issues to boost search rankings.",
       "subTitle": "Unlock Your Website’s Full Potential with Expert SEO Audits",
+      "canonicalUrl": "https://www.daikimedia.com/seo-audits-services",
+
       "heroSection": {
         "title": "Maximize Your Search Visibility & Drive Conversions with a Tailored SEO Strategy",
         "description": "Elevate your rankings, attract more traffic, and increase conversions. Let our experts perform a comprehensive SEO audit that uncovers hidden opportunities for growth.",
@@ -1159,6 +1162,7 @@
       "metaDescription": "Optimize your website for AI-driven searches in KL. Daiki Media’s GEO services enhance visibility, traffic, and engagement across generative platforms.",
       "title": "Generative Engine Optimization (GEO)",
       "subTitle": "Unlock Your Business Potential with Generative Engine Optimization (GEO)",
+      "canonicalUrl": "https://www.daikimedia.com/generative-engine-optimization",
       "heroSection": {
         "title": "Leverage the power of AI-driven search experiences with Daiki Media’s GEO services",
         "description": "Enhance your website’s visibility and capture traffic from AI platforms like Copilot, Perplexity, and SearchGPT. Request a custom proposal now!",
@@ -1338,10 +1342,11 @@
     {
       "id": 8,
       "slug": "ppc-management",
-      "metaTitle": "PPC Management Services - Maximize ROI with Daiki Media",
+      "metaTitle": "SEO Services - Maximize ROI with Daiki Media",
       "metaDescription": "Drive targeted traffic to your KL business with expert PPC management by Daiki Media, optimizing campaigns for higher ROI, conversions, and growth.",
       "title": "PPC Management Services",
       "subTitle": "Transform Every Click into a Valuable Conversion",
+      "canonicalUrl": "https://www.daikimedia.com/ppc-management",
       "heroSection": {
         "title": "Achieve Exceptional ROI with Expert-Managed PPC Services",
         "description": "Transform every click into a valuable conversion with strategic, industry-leading pay-per-click campaigns designed to maximize your business's online growth.",
@@ -1508,6 +1513,7 @@
       "metaDescription": "Daiki Media offers enterprise PPC management services in KL, delivering scalable strategies to optimize ad spend, boost conversions, and maximize growth.",
       "title": "Enterprise PPC Management Services",
       "subTitle": "Maximize Your ROAS with Award-Winning Enterprise PPC Management",
+      "canonicalUrl": "https://www.daikimedia.com/enterprise-ppc-management",
       "heroSection": {
         "title": "Maximize Your ROAS with Award-Winning Enterprise PPC Management",
         "description": "Drive measurable results with customized enterprise PPC campaigns that boost sales, leads, and revenue. Partner with Daiki Media, the industry leader in PPC management, to achieve your business goals.",
@@ -1679,6 +1685,7 @@
       "metaTitle": "Social Media Advertising Services - Amplify Engagement with Daiki Media",
       "metaDescription": "Boost your brand’s visibility with targeted social media advertising in KL. Daiki Media creates impactful campaigns for maximum engagement and ROI.",
       "subTitle": "Maximize Your Business Potential with Expert Social Media Advertising",
+       "canonicalUrl": "https://www.daikimedia.com/social-media-advertising",
       "heroSection": {
         "title": "Maximize Your Business Potential with Expert Social Media Advertising",
         "description": "Unlock a 25% Lift in Sales with Daiki Media! Partner with Daiki Media and watch your business thrive through expertly managed social media campaigns. From building your brand's online presence to generating qualified leads, we create tailored strategies designed for measurable success.",
@@ -1857,6 +1864,7 @@
       "metaTitle": "Enterprise Social Media Advertising - Drive Scalable Results with Experts",
       "metaDescription": "Daiki Media’s enterprise social media advertising in KL delivers tailored strategies, enhancing brand visibility, engagement, and scalable growth across all platforms.",
       "subTitle": "Maximize Your Brand’s Full Potential with Expert Social Media Advertising",
+      "canonicalUrl": "https://www.daikimedia.com/enterprise-social-media-advertising",
       "heroSection": {
         "title": "Supercharge Your Brand with Enterprise Social Media Advertising",
         "description": "Transform your online presence with Daiki Media’s cutting-edge social media advertising solutions. From Facebook to LinkedIn, we drive targeted traffic, increase conversions, and maximize your ROI. Whether you're aiming for brand awareness, lead generation, or sales growth, our expertise ensures measurable results across multiple platforms. Request your free proposal today and see how we can accelerate your revenue!",
@@ -2032,6 +2040,7 @@
       "metaTitle": "Programmatic Advertising Solutions - Smarter Ad Campaigns with Daiki Media",
       "metaDescription": "Maximize ad efficiency in KL with Daiki Media’s programmatic advertising solutions. Leverage data-driven strategies for targeted, scalable, and impactful campaigns.",
       "subTitle": "Maximize Your Advertising Reach with Hassle-Free Programmatic Solutions",
+      "canonicalUrl": "https://www.daikimedia.com/programmatic-advertising-solutions",
       "heroSection": {
         "title": "Maximize Your Advertising Reach with Hassle-Free Programmatic Solutions",
         "description": "Tired of managing your paid ad campaigns manually? With Daiki Media's cutting-edge programmatic advertising services, we automate your ad placements to optimize visibility and boost ROI by up to 70%. Whether you’re a small business or a large enterprise, we craft tailored strategies that work for you. Ready to take your advertising efforts to the next level? Get a free proposal today and see the difference we can make.",
@@ -2237,6 +2246,7 @@
       "metaTitle": "Addressable Geofencing Advertising - Precise Targeting with Daiki Media",
       "metaDescription": "Reach your audience with precision using Daiki Media's addressable geofencing advertising in KL. Drive engagement and conversions through hyper-local targeting.",
       "subTitle": "Transform Your Business with Addressable Geofencing Advertising",
+      "canonicalUrl": "https://www.daikimedia.com/addressable-geofencing-advertising",
       "heroSection": {
         "title": "Transform Your Business with Addressable Geofencing Advertising",
         "description": "Unlock the power of hyper-targeted, address-based campaigns that drive real results—more in-store visits, phone calls, and ultimately, sales. With Daiki Media's addressable geofencing services, your business can reach the right audience at the right time, with precision targeting that maximizes ROI.",
@@ -2639,6 +2649,7 @@
       "metaTitle": "Ecommerce PPC Campaigns - Drive Sales with Targeted Ad Strategies",
       "metaDescription": "Maximize ecommerce sales in KL with Daiki Media’s PPC campaigns. Leverage targeted ads to drive traffic, conversions, and business growth.",
       "subTitle": "Maximize Your Ecommerce Sales with Expert PPC Campaigns",
+      "canonicalUrl": "https://www.daikimedia.com/ecommerce-ppc-campaigns",
       "heroSection": {
         "title": "Maximize Your Ecommerce Sales with Expert PPC Campaigns",
         "description": "Unlock your ecommerce store’s full potential with customized PPC strategies designed to drive traffic and sales. At Daiki Media, our team of seasoned experts optimizes your ad spend across Google, Bing, and social media platforms. Let us manage your PPC campaigns while you focus on growing your business.",
@@ -2818,6 +2829,7 @@
       "metaTitle": "Ecommerce Social Media Advertising - Boost Sales and Brand Awareness",
       "metaDescription": "Drive ecommerce growth in KL with targeted social media advertising. Daiki Media creates engaging campaigns to increase traffic, sales, and brand visibility.",
       "subTitle": "Grow Your Ecommerce Sales with Expert Social Media Advertising",
+      "canonicalUrl": "https://www.daikimedia.com/ecommerce-social-media-advertising",
       "heroSection": {
         "title": "Grow Your Ecommerce Sales with Expert Social Media Advertising",
         "description": "Unlock the full potential of your ecommerce store with Daiki Media's specialized social media advertising services. As a Meta Business Partner, we craft high-conversion ads designed to drive traffic and increase your revenue. Whether you're looking to expand your reach on Facebook, Instagram, or other leading platforms, Daiki Media provides you with expert strategies to achieve growth.",
@@ -3016,6 +3028,7 @@
       "metaTitle": "Ecommerce Website Development - Build a High-Converting Online Store",
       "metaDescription": "Create a powerful online store with Daiki Media’s ecommerce website development services in KL. Enhance user experience, boost conversions, and drive sales.",
       "subTitle": "Transform Your Ecommerce Store and Boost Your Sales",
+      "canonicalUrl": "https://www.daikimedia.com/ecommerce-website-development",
       "heroSection": {
         "title": "Transform Your Ecommerce Store and Boost Your Sales",
         "description": "Unlock the potential of your online store with Daiki Media's expert Ecommerce Website Development Services. We design high-performance, user-friendly ecommerce websites that not only drive sales but also enhance the customer experience.",
@@ -3205,6 +3218,7 @@
       "metaTitle": "Shopping Feed Automation - Streamline Product Listings with Daiki Media",
       "metaDescription": "Optimize your product listings in KL with Daiki Media’s shopping feed automation. Improve accuracy, increase visibility, and drive more sales.",
       "subTitle": "Maximize Your Sales with Seamless Shopping Feed and Coupon Management",
+      "canonicalUrl": "https://www.daikimedia.com/shopping-feed-automation",
       "heroSection": {
         "title": "Take Your Ecommerce Marketing to the Next Level",
         "description": "Ready to amplify your online store’s performance? Let the experts at Daiki Media elevate your business with customized shopping feeds and dynamic coupon campaigns. From optimizing product feeds to creating targeted promotions, we ensure your ecommerce brand is set for success.",
@@ -3423,6 +3437,7 @@
       "title": "Ecommerce Digital Marketing",
       "subTitle": "Maximize Your Online Store's Potential",
       "metaTitle": "Ecommerce Digital Marketing - Boost Sales with Targeted Strategies",
+      "canonicalUrl": "https://www.daikimedia.com/ecommerce-digital-marketing",
       "metaDescription": "Daiki Media’s ecommerce digital marketing services in KL drive traffic, improve conversions, and enhance online visibility for greater business growth.",
       "heroSection": {
         "title": "Drive Ecommerce Success with Daiki Media",
@@ -3607,6 +3622,7 @@
       "title": "Ecommerce Marketing Resource",
       "subTitle": "Maximize Your Online Store's Potential",
       "metaTitle": "Ecommerce Marketing Resource - Expert Strategies for Business Growth",
+      "canonicalUrl": "https://www.daikimedia.com/ecommerce-marketing-resource",
       "metaDescription": "Access Daiki Media’s ecommerce marketing resources in KL for expert insights and strategies to drive traffic, optimize conversions, and increase sales.",
       "heroSection": {
         "title": "Transform Your Ecommerce Success with Expert Digital Marketing",
@@ -3822,6 +3838,7 @@
       "slug": "web-development",
       "title": "Web Development",
       "metaTitle": "Our SEO Results - Proven Strategies for Digital Success",
+      "canonicalUrl": "https://www.daikimedia.com/web-development",
       "metaDescription": "Explore Daiki Media’s SEO success stories in KL. Learn how our strategies drive organic traffic, improve rankings, and enhance conversions.",
       "subTitle": "Transform Your Business with Malaysia’s Leading Web Development Agency",
       "heroSection": {
@@ -3998,6 +4015,7 @@
       "subTitle": "Engage your audience, build your brand, and drive conversions with compelling, SEO-optimized copy created by our expert writers.",
       "metaTitle": "Copywriting Services - Craft Engaging Content that Drives Results",
       "metaDescription": "Enhance your brand’s message with Daiki Media’s professional copywriting services in KL. Create compelling content that boosts engagement and conversions.",
+      "canonicalUrl": "https://www.daikimedia.com/copywriting-services",
       "heroSection": {
         "title": "Words That Convert: Professional Copywriting Services by Daiki Media",
         "description": "Engage your audience, build your brand, and drive conversions with compelling, SEO-optimized copy created by our expert writers.",
@@ -4388,6 +4406,7 @@
       "title": "Casino iGaming SEO Services",
       "subTitle": "Struggling to get your online casino noticed? We craft smart SEO strategies that bring in real players, boost rankings, and keep you ahead of the competition—all while ensuring compliance with industry regulations.",
       "metaTitle": "Casino SEO Services | Expert iGaming SEO for Online Casinos",
+      "canonicalUrl": "https://www.daikimedia.com/iGaming-casino-industry",
       "metaDescription": "Let’s get your casino ranking higher with tailored SEO strategies. More traffic, more players, and more revenue—without breaking any compliance rules.",
       "heroSection": {
         "title": "SEO That Drives Real Players to Your Online Casino",

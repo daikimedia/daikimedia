@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
         />
         <link rel="preload" as="image" href="https://www.daikimedia.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftestimg.81f0ff33.avif&w=1920&q=75" type="image/avif" />
 
-        <link rel="canonical" href="https://www.daikimedia.com/" />	
+        {/* <link rel="canonical" href="https://www.daikimedia.com/" />	 */}
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Daiki Media" />
         <meta property="og:description" content="Daiki Media provides expert SEO and website development services." />
