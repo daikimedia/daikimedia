@@ -9,6 +9,9 @@ export const metadata = {
     "Explore the world of digital marketing with Daikai Media. Learn about strategies, tools, and techniques to elevate your brand's presence online.",
   keywords:
     "seo optimization companies",
+          alternates: {
+    canonical: "https://www.daikimedia.com/learn/what-is-digital-marketing",
+  },
 };
 
 const DigitalMarketingPage = () => {
