@@ -9,6 +9,9 @@ export const metadata = {
     "Discover the impressive SEO results achieved by Daikai Media. Learn how our tailored SEO strategies have driven success for businesses across various industries.",
   keywords:
     "SEO results, Daikai Media, SEO strategies, business growth, search engine optimization, digital marketing",
+        alternates: {
+    canonical: "https://www.daikimedia.com/learn/our-seo-results",
+  },
 };
 
 const OurSeoResult = () => {

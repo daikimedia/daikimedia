@@ -9,6 +9,9 @@ export const metadata = {
   keywords:
     "SEO company, SEO services, search engine optimization, organic traffic, SEO strategies, digital marketing, SEO experts",
   author: "Daikai Media Team",
+        alternates: {
+    canonical: "https://www.daikimedia.com/learn/who-is-best-seo-company",
+  },
 };
 
 const BestSeoCompany = () => {
