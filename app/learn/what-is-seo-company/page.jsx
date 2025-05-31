@@ -8,6 +8,9 @@ export const metadata = {
     "Partner with Daikai Media, your trusted SEO company, to boost your website's search engine rankings and drive organic traffic. Our tailored SEO strategies help you achieve long-term success.",
   keywords:
     "SEO company, SEO services, search engine optimization, organic traffic, SEO strategies, digital marketing, SEO experts",
+          alternates: {
+    canonical: "https://www.daikimedia.com/learn/what-is-seo-company",
+  },
 };
 
 const SeoCompanyPage = () => {

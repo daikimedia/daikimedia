@@ -9,6 +9,9 @@ export const metadata = {
     "A comprehensive guide to SEO by Daikai Media. Learn the best practices, strategies, and techniques for improving your website's search engine rankings.",
   keywords:
     "SEO guide, search engine optimization, SEO techniques, SEO strategies, digital marketing, SEO best practices",
+          alternates: {
+    canonical: "https://www.daikimedia.com/learn/seo-guide-for-managers",
+  },
 };
 
 const SeoGuide = () => {

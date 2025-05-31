@@ -17,6 +17,9 @@ export const metadata = {
   og_type: "website",
   og_site_name: "Daiki Media",
   og_locale: "en_US",
+  alternates: {
+    canonical: "https://daikimedia.com",
+  },
 };
 
 export default function Page() {
