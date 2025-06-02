@@ -35,16 +35,8 @@ const CompanyCard = ({ company }) => {
                         </div>
                     </div>
                 </div>
-                <div className="text-right">
-                    <Link href={company?.websiteUrl} className="btn flex items-center gap-1">
-                        {/* Large screen: show text */}
-                        <span className="hidden sm:inline">Visit Website</span>
 
-                        {/* Small screen: show icon only */}
-                        <ArrowUpRight className="inline sm:hidden w-4 h-4" />
-                    </Link>
-                </div>
-            </div>
+            </div >
 
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
@@ -106,17 +98,28 @@ const CompanyCard = ({ company }) => {
                     </p>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
 const SeoFirmSection = () => {
     return (
-        <div className="bg-gray-50 py-8">
+        <div className="bg-gray-50 py-8 mt-20">
             <div className="container mx-auto px-4">
-                <h1 className="text-3xl font-bold text-center mb-8 text-gray-900">
-                    Top Companies
-                </h1>
+                <div className="max-w-4xl mx-auto px-4 text-center py-10">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                        Top SEO Companies in Malaysia
+                    </h1>
+
+                    <p className="text-lg sm:text-xl font-semibold text-gray-700 mb-4">
+                        Driving Traffic, Leads, and Revenue with Tailored Strategies and Award–Winning Expertise
+                    </p>
+
+                    <p className="text-base sm:text-lg text-gray-600">
+                        Partner with top SEO firms and let them handle the complexities of digital marketing. With a proven track record of success, they’ll help you achieve higher website traffic, increased leads, and exponential revenue growth.
+                    </p>
+                </div>
+
                 <div className="space-y-6">
                     {companiesData.companies.map((company) => (
                         <CompanyCard key={company.id} company={company} />

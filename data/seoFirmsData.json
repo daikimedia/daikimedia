@@ -2,7 +2,7 @@
   "companies": [
     {
       "id": 1,
-      "name": "Daikai Media",
+      "name": "Daiki Media",
       "logo": "/images/logo.png",
       "verified": true,
       "rating": 4.9,
@@ -10,7 +10,7 @@
       "priceRange": "$1,000+",
       "hourlyRate": "< $25 / hr",
       "employeeCount": "50 - 249",
-      "location": "Serves Malaysia",
+      "location": "Kuala Lumpur, Malaysia",
       "services": [
         {
           "name": "Search Engine Optimization",
@@ -29,20 +29,20 @@
         }
       ],
       "additionalServices": 2,
-      "description": "PageTraffic is a highly regarded SEO agency specializing in comprehensive Search Optimization and Digital Visibility Enhancement. The reviews consistently highlight their expertise in SEO services, with 100% of reviewers praising their clear, methodical approach and the measurable improvements in website ranking and online visibility. Clients commend their professionalism, responsive communication, and strategic insights that lead to sustainable, long-term SEO success.",
+      "description": "Daiki Media is a highly regarded SEO agency specializing in comprehensive Search Optimization and Digital Visibility Enhancement. Reviews consistently highlight their expertise in SEO services, with 100% of clients praising their clear, methodical approach and the measurable improvements in website rankings and online presence. Clients commend Daiki Media for their professionalism, responsive communication, and strategic insights that drive sustainable, long-term SEO success.",
       "websiteUrl": "https://evendigit.com"
     },
     {
       "id": 2,
-      "name": "PageTraffic",
-      "logo": "/images/company/pagetraffic-logo-white.png",
+      "name": "Perfect Viral",
+      "logo": "/images/company/perfect-viral.png",
       "verified": true,
       "rating": 4.9,
       "reviewsCount": 92,
-      "priceRange": "$1,000+",
-      "hourlyRate": "< $25 / hr",
-      "employeeCount": "50 - 249",
-      "location": "Serves Malaysia",
+      "priceRange": "$5,000+",
+      "hourlyRate": "< $150 - $199 / hr",
+      "employeeCount": "2  - 9",
+      "location": "Tanjung Bungah, Malaysia",
       "services": [
         {
           "name": "Search Engine Optimization",
@@ -61,20 +61,20 @@
         }
       ],
       "additionalServices": 2,
-      "description": "PageTraffic is a highly regarded SEO agency specializing in comprehensive Search Optimization and Digital Visibility Enhancement. The reviews consistently highlight their expertise in SEO services, with 100% of reviewers praising their clear, methodical approach and the measurable improvements in website ranking and online visibility. Clients commend their professionalism, responsive communication, and strategic insights that lead to sustainable, long-term SEO success.",
-      "websiteUrl": "https://www.pagetraffic.in/"
+      "description": "SEO agency Perfect Viral is headquartered in Tanjung Bungah, Malaysia. They provide Search Engine Optimization and Web Design and were founded in 2014.",
+      "websiteUrl": "https://www.perfectviral.com/"
     },
     {
       "id": 3,
-      "name": "Rasonix",
-      "logo": "/images/company/blue_logo.webp",
+      "name": "Ulement Sdn Bhd",
+      "logo": "/images/company/Ulement-Sdn-Bhd.webp",
       "verified": true,
-      "rating": 5,
+      "rating": 0,
       "reviewsCount": 92,
-      "priceRange": "$5,000+",
-      "hourlyRate": "< $25 - $40 / hr",
-      "employeeCount": "10 - 49",
-      "location": "Serves Malaysia",
+      "priceRange": "$1,000+",
+      "hourlyRate": "< $25 - $49 / hr",
+      "employeeCount": "2 - 9",
+      "location": "Bayan Lepas, Malaysia",
       "services": [
         {
           "name": "Search Engine Optimization",
@@ -93,20 +93,20 @@
         }
       ],
       "additionalServices": 2,
-      "description": "Rasonix is a versatile service provider specializing in digital solutions, including website development and online visibility enhancement. They have consistently demonstrated technical expertise and personalized support, with 100% of reviewers noting their effective project management and responsiveness. Their efforts in establishing a strong online presence and local visibility are frequently highlighted by clients.",
-      "websiteUrl": "https://rasonix.com/"
+      "description": "Ulement Sdn Bhd is a web design company. Based in Bayan Lepas, Malaysia, their team specializes in Web Design and Digital Strategy.",
+      "websiteUrl": "https://ulement.com/"
     },
     {
       "id": 4,
-      "name": "RankFast",
-      "logo": "/images/company/white-logo.svg",
+      "name": "HiSEVEN",
+      "logo": "/images/company/hiseven.ico",
       "verified": true,
-      "rating": 4.9,
+      "rating": 0,
       "reviewsCount": 92,
-      "priceRange": "$1000+",
-      "hourlyRate": "< $25 - $49 / hr",
+      "priceRange": "Undisclosed",
+      "hourlyRate": "Undisclosed",
       "employeeCount": "50-249",
-      "location": "Serves Malaysia",
+      "location": "Kuala Lumpur, Malaysia",
       "services": [
         {
           "name": "Search Engine Optimization",
@@ -125,20 +125,20 @@
         }
       ],
       "additionalServices": 2,
-      "description": "RankFast is an SEO agency specializing in enhancing digital visibility and optimizing online presence for various businesses. Across reviews, 95% of clients express satisfaction with their project management and SEO expertise, appreciating their ability to deliver measurable improvements in website ranking and organic traffic. Notably, 80% of reviewers highlight their tailored approach and clear communication, while a few suggest minor improvements in response time.",
-      "websiteUrl": "https://rankfast.co/"
+      "description": "Branding company HiSEVEN was launched in 2014. The team offers Branding and Marketing Strategy.",
+      "websiteUrl": "https://www.hiseven.com/"
     },
     {
       "id": 5,
-      "name": "EvenDigit",
-      "logo": "/images/company//logo_elem_v1-1.webp",
+      "name": "Xwork Digital Agency",
+      "logo": "/images/company/xwork.png",
       "verified": true,
-      "rating": 4.9,
+      "rating": 0,
       "reviewsCount": 92,
-      "priceRange": "$1,000+",
-      "hourlyRate": "< $ 25 / hr",
-      "employeeCount": "",
-      "location": "Serves Malaysia",
+      "priceRange": "$5,000+",
+      "hourlyRate": "< $100 - $149 / hr",
+      "employeeCount": "2-9",
+      "location": "Skudai, Malaysia",
       "services": [
         {
           "name": "Search Engine Optimization",
@@ -157,8 +157,8 @@
         }
       ],
       "additionalServices": 2,
-      "description": "EvenDigit is a proficient digital marketing agency specializing in SEO and broader digital marketing strategies, including Search Engine Marketing and Online Visibility enhancement. Across reviews, 100% of clients commend their transparency, timely delivery, and data-driven approach, with 90% praising their exceptional customer service and responsiveness. Many attest to improved website rankings and increased lead generation, illustrating EvenDigit's commitment to enhancing digital visibility and driving business growth.",
-      "websiteUrl": "https://www.evendigit.com/"
+      "description": "Xwork Digital Agency is an e-commerce development firm. The team offers E-Commerce Development and Graphic Design and is located in Skudai, Malaysia.",
+      "websiteUrl": "https://www.xwork.my/"
     },
     {
       "id": 6,
@@ -226,15 +226,15 @@
     },
     {
       "id": 8,
-      "name": "SEO Experts Company India",
-      "logo": "/images/company/seci-logo-light-HD-v2.1.png",
+      "name": "Sensorytics Solutions Inc",
+      "logo": "/images/company/Sensorytics-Solutions-Inc.ico",
       "verified": true,
-      "rating": 5,
+      "rating": 0,
       "reviewsCount": 92,
       "priceRange": "$1,000+",
       "hourlyRate": " < $25 / hr",
       "employeeCount": "2 - 9",
-      "location": "Serves Malaysia",
+      "location": "Cyberjaya, Malaysia",
       "services": [
         {
           "name": "Search Engine Optimization",
@@ -253,20 +253,20 @@
         }
       ],
       "additionalServices": 2,
-      "description": "SEO Experts Company India is a proficient SEO agency known for enhancing website ranking and online visibility through organic search optimization and SERP optimization. With a 100% positive feedback rate across reviews, clients commend their technical expertise, commitment to Google best practices, and personalized strategies for sectors like real estate, finance, and hospitality. Over 70% of reviews highlight their emphasis on local SEO and industry-specific keyword research, further reinforcing their reputation for improving digital visibility enhancement.",
-      "websiteUrl": "https://seoexpertscompanyindia.com/"
+      "description": "Launched in 2023, Sensorytics Solutions Inc, a small SEO company, is in Cyberjaya, Malaysia. Their services include Search Engine Optimization and Web Design",
+      "websiteUrl": "https://sensoryticsiot.com/"
     },
     {
       "id": 9,
-      "name": "e intelligence",
-      "logo": "/images/company/eintelligence-logo.svg",
+      "name": "Denave",
+      "logo": "/images/company/denave.png",
       "verified": true,
-      "rating": 4.9,
+      "rating": 4,
       "reviewsCount": 92,
       "priceRange": "$1,000+",
       "hourlyRate": "<$25 - $49 / hr",
-      "employeeCount": "10 - 49",
-      "location": "Serves Malaysia",
+      "employeeCount": "250 - 999",
+      "location": "Kuala Lumpur, Malaysia",
       "services": [
         {
           "name": "Search Engine Optimization",
@@ -285,8 +285,8 @@
         }
       ],
       "additionalServices": 2,
-      "description": "e intelligence is an SEO agency specializing in Search Optimization and Digital Visibility Enhancement. Across multiple reviews, clients praised their expertise in SEO, with 90% of reviews highlighting successful Website SEO Services, improved SERP Optimization, and enhanced Online Visibility. Clients also appreciated e intelligence's commitment to deadlines and robust project management, though 20% mentioned room for improvement in communication and reporting efficiency.",
-      "websiteUrl": "https://eintelligenceweb.com/"
+      "description": "Denave is a digital marketing company specializing in Search Engine Optimization and digital visibility enhancement services. Reviews highlight their comprehensive approach, including on-page and off-page SEO, leading to a 92% ROI growth. Clients appreciate their responsiveness and timely project management, although suggestions for more structured feedback mechanisms were noted.",
+      "websiteUrl": "https://www.denave.com/"
     },
     {
       "id": 10,
