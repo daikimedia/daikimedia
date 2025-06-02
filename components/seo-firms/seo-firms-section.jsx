@@ -1,6 +1,7 @@
 import React from 'react';
 import { Tag, Star, MapPin, Users, Clock, Briefcase } from 'lucide-react';
 import Link from 'next/link';
+import { ArrowUpRight } from "lucide-react";
 
 import companiesData from '../../data/seoFirmsData.json';
 
@@ -34,12 +35,8 @@ const CompanyCard = ({ company }) => {
                         </div>
                     </div>
                 </div>
-                <div className="text-right">
-                    <Link href={company?.websiteUrl} className="btn">
-                        Visit Website
-                    </Link>
-                </div>
-            </div>
+
+            </div >
 
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
@@ -96,22 +93,33 @@ const CompanyCard = ({ company }) => {
                     <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">
                         About Company
                     </h3>
-                    <p className="text-gray-700 text-base leading-relaxed">
+                    <p className="text-gray-700 text-justify">
                         {company.description}
                     </p>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
 const SeoFirmSection = () => {
     return (
-        <div className="bg-gray-50 py-8">
+        <div className="bg-gray-50 py-8 mt-20">
             <div className="container mx-auto px-4">
-                <h1 className="text-3xl font-bold text-center mb-8 text-gray-900">
-                    Top Companies
-                </h1>
+                <div className="max-w-4xl mx-auto px-4 text-center py-10">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                        Top SEO Companies in Malaysia
+                    </h1>
+
+                    <p className="text-lg sm:text-xl font-semibold text-gray-700 mb-4">
+                        Driving Traffic, Leads, and Revenue with Tailored Strategies and Award–Winning Expertise
+                    </p>
+
+                    <p className="text-base sm:text-lg text-gray-600">
+                        Partner with top SEO firms and let them handle the complexities of digital marketing. With a proven track record of success, they’ll help you achieve higher website traffic, increased leads, and exponential revenue growth.
+                    </p>
+                </div>
+
                 <div className="space-y-6">
                     {companiesData.companies.map((company) => (
                         <CompanyCard key={company.id} company={company} />
