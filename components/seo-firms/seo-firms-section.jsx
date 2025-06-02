@@ -1,6 +1,7 @@
 import React from 'react';
 import { Tag, Star, MapPin, Users, Clock, Briefcase } from 'lucide-react';
 import Link from 'next/link';
+import { ArrowUpRight } from "lucide-react";
 
 import companiesData from '../../data/seoFirmsData.json';
 
@@ -35,8 +36,12 @@ const CompanyCard = ({ company }) => {
                     </div>
                 </div>
                 <div className="text-right">
-                    <Link href={company?.websiteUrl} className="btn">
-                        Visit Website
+                    <Link href={company?.websiteUrl} className="btn flex items-center gap-1">
+                        {/* Large screen: show text */}
+                        <span className="hidden sm:inline">Visit Website</span>
+
+                        {/* Small screen: show icon only */}
+                        <ArrowUpRight className="inline sm:hidden w-4 h-4" />
                     </Link>
                 </div>
             </div>
@@ -96,7 +101,7 @@ const CompanyCard = ({ company }) => {
                     <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">
                         About Company
                     </h3>
-                    <p className="text-gray-700 text-base leading-relaxed">
+                    <p className="text-gray-700 text-justify">
                         {company.description}
                     </p>
                 </div>
