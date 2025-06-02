@@ -1,0 +1,1590 @@
+{
+  "companies": [
+    {
+      "id": 1,
+      "name": "Daikai Media",
+      "logo": "/images/logo.png",
+      "verified": true,
+      "rating": 4.9,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "< $25 / hr",
+      "employeeCount": "50 - 249",
+      "location": "Serves Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 40,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Web Design",
+          "percentage": 20,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Ecommerce Marketing",
+          "percentage": 15,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "PageTraffic is a highly regarded SEO agency specializing in comprehensive Search Optimization and Digital Visibility Enhancement. The reviews consistently highlight their expertise in SEO services, with 100% of reviewers praising their clear, methodical approach and the measurable improvements in website ranking and online visibility. Clients commend their professionalism, responsive communication, and strategic insights that lead to sustainable, long-term SEO success.",
+      "websiteUrl": "https://evendigit.com"
+    },
+    {
+      "id": 2,
+      "name": "PageTraffic",
+      "logo": "/images/company/pagetraffic-logo-white.png",
+      "verified": true,
+      "rating": 4.9,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "< $25 / hr",
+      "employeeCount": "50 - 249",
+      "location": "Serves Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 40,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Web Design",
+          "percentage": 20,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Ecommerce Marketing",
+          "percentage": 15,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "PageTraffic is a highly regarded SEO agency specializing in comprehensive Search Optimization and Digital Visibility Enhancement. The reviews consistently highlight their expertise in SEO services, with 100% of reviewers praising their clear, methodical approach and the measurable improvements in website ranking and online visibility. Clients commend their professionalism, responsive communication, and strategic insights that lead to sustainable, long-term SEO success.",
+      "websiteUrl": "https://www.pagetraffic.in/"
+    },
+    {
+      "id": 3,
+      "name": "Rasonix",
+      "logo": "/images/company/blue_logo.webp",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$5,000+",
+      "hourlyRate": "< $25 - $40 / hr",
+      "employeeCount": "10 - 49",
+      "location": "Serves Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 20,
+          "color": "#1976D2"
+        },
+        {
+          "name": "web Devlopment",
+          "percentage": 25,
+          "color": "#00ACC1"
+        },
+        {
+          "name": " E-Commerce Development",
+          "percentage": 20,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Rasonix is a versatile service provider specializing in digital solutions, including website development and online visibility enhancement. They have consistently demonstrated technical expertise and personalized support, with 100% of reviewers noting their effective project management and responsiveness. Their efforts in establishing a strong online presence and local visibility are frequently highlighted by clients.",
+      "websiteUrl": "https://rasonix.com/"
+    },
+    {
+      "id": 4,
+      "name": "RankFast",
+      "logo": "/images/company/white-logo.svg",
+      "verified": true,
+      "rating": 4.9,
+      "reviewsCount": 92,
+      "priceRange": "$1000+",
+      "hourlyRate": "< $25 - $49 / hr",
+      "employeeCount": "50-249",
+      "location": "Serves Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 80,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Pay Per Click",
+          "percentage": 10,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "UX/UI Design",
+          "percentage": 10,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "RankFast is an SEO agency specializing in enhancing digital visibility and optimizing online presence for various businesses. Across reviews, 95% of clients express satisfaction with their project management and SEO expertise, appreciating their ability to deliver measurable improvements in website ranking and organic traffic. Notably, 80% of reviewers highlight their tailored approach and clear communication, while a few suggest minor improvements in response time.",
+      "websiteUrl": "https://rankfast.co/"
+    },
+    {
+      "id": 5,
+      "name": "EvenDigit",
+      "logo": "/images/company//logo_elem_v1-1.webp",
+      "verified": true,
+      "rating": 4.9,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "< $ 25 / hr",
+      "employeeCount": "",
+      "location": "Serves Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 30,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Pay Per Click",
+          "percentage": 30,
+          "color": "#00ACC1"
+        },
+        {
+          "name": " Social Media Marketing",
+          "percentage": 20,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "EvenDigit is a proficient digital marketing agency specializing in SEO and broader digital marketing strategies, including Search Engine Marketing and Online Visibility enhancement. Across reviews, 100% of clients commend their transparency, timely delivery, and data-driven approach, with 90% praising their exceptional customer service and responsiveness. Many attest to improved website rankings and increased lead generation, illustrating EvenDigit's commitment to enhancing digital visibility and driving business growth.",
+      "websiteUrl": "https://www.evendigit.com/"
+    },
+    {
+      "id": 6,
+      "name": "SEO.my",
+      "logo": "/images/company/seo-malaysia.png",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "< $ 25 / hr",
+      "employeeCount": "50 - 249",
+      "location": "Kuala Lumpur, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 100,
+          "color": "#1976D2"
+        },
+        {
+          "name": "",
+          "percentage": 0,
+          "color": "#00ACC1"
+        },
+        {
+          "name": " ",
+          "percentage": 0,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "SEO.my is a specialized SEO agency that excels in enhancing digital visibility through a comprehensive suite of website SEO services, including SERP optimization and on-page SEO. Across multiple reviews, clients unanimously praise the company's tailored strategies, with 100% satisfaction in aligning SEO efforts with industry-specific needs, leading to improved website ranking and increased organic traffic. Their expertise in organic search optimization and digital visibility enhancement is consistently highlighted as a key strength.",
+      "websiteUrl": "https://www.seo.my/"
+    },
+    {
+      "id": 7,
+      "name": "Primal",
+      "logo": "/images/company/primal-white-logo-web.svg",
+      "verified": true,
+      "rating": 4.7,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "< $100 - $149 / hr",
+      "employeeCount": "50 - 249",
+      "location": "Kuala Lumpur, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 40,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Pay Per Click",
+          "percentage": 20,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Social Media Marketing",
+          "percentage": 20,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Primal is an SEO agency specializing in enhancing digital visibility through comprehensive search engine optimization and marketing services. Reviews indicate a high level of client satisfaction, with 100% positive feedback highlighting their effective strategies in improving website rankings and online visibility. Clients appreciate Primal's commitment to customized solutions, clear communication, and proactive problem-solving.",
+      "websiteUrl": "https://www.primal.com.my/"
+    },
+    {
+      "id": 8,
+      "name": "SEO Experts Company India",
+      "logo": "/images/company/seci-logo-light-HD-v2.1.png",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": " < $25 / hr",
+      "employeeCount": "2 - 9",
+      "location": "Serves Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 100,
+          "color": "#1976D2"
+        },
+        {
+          "name": "",
+          "percentage": 0,
+          "color": "#00ACC1"
+        },
+        {
+          "name": " ",
+          "percentage": 0,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "SEO Experts Company India is a proficient SEO agency known for enhancing website ranking and online visibility through organic search optimization and SERP optimization. With a 100% positive feedback rate across reviews, clients commend their technical expertise, commitment to Google best practices, and personalized strategies for sectors like real estate, finance, and hospitality. Over 70% of reviews highlight their emphasis on local SEO and industry-specific keyword research, further reinforcing their reputation for improving digital visibility enhancement.",
+      "websiteUrl": "https://seoexpertscompanyindia.com/"
+    },
+    {
+      "id": 9,
+      "name": "e intelligence",
+      "logo": "/images/company/eintelligence-logo.svg",
+      "verified": true,
+      "rating": 4.9,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "<$25 - $49 / hr",
+      "employeeCount": "10 - 49",
+      "location": "Serves Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 50,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Pay Per Click",
+          "percentage": 30,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Low/No Code Development ",
+          "percentage": 10,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "e intelligence is an SEO agency specializing in Search Optimization and Digital Visibility Enhancement. Across multiple reviews, clients praised their expertise in SEO, with 90% of reviews highlighting successful Website SEO Services, improved SERP Optimization, and enhanced Online Visibility. Clients also appreciated e intelligence's commitment to deadlines and robust project management, though 20% mentioned room for improvement in communication and reporting efficiency.",
+      "websiteUrl": "https://eintelligenceweb.com/"
+    },
+    {
+      "id": 10,
+      "name": "Primal",
+      "logo": "/images/company/primal-white-logo-web.svg",
+      "verified": true,
+      "rating": 4.7,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "< $100 - $149 / hr",
+      "employeeCount": "50 - 249",
+      "location": "Kuala Lumpur, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 40,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Pay Per Click",
+          "percentage": 20,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Social Media Marketing",
+          "percentage": 20,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Primal is an SEO agency specializing in enhancing digital visibility through comprehensive search engine optimization and marketing services. Reviews indicate a high level of client satisfaction, with 100% positive feedback highlighting their effective strategies in improving website rankings and online visibility. Clients appreciate Primal's commitment to customized solutions, clear communication, and proactive problem-solving.",
+      "websiteUrl": "https://www.primal.com.my/"
+    },
+    {
+      "id": 11,
+      "name": "AJ Marketing",
+      "logo": "/images/company/logo white transperent 500-04_edited.avif",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$5,000+",
+      "hourlyRate": "<$25 - $49 / hr",
+      "employeeCount": "10 - 49",
+      "location": "Kuala Lumpur, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 10,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Advertising",
+          "percentage": 10,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "  Branding",
+          "percentage": 10,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "AJ Marketing is a digital marketing agency specializing in Search Optimization and Online Visibility initiatives. Clients frequently commend the agency for its strategic thinking and effective execution, with 100% of reviewers highlighting their exemplary project management and campaign results. AJ Marketing is particularly valued for enhancing digital visibility across various platforms, reaching vast audiences, and delivering on client objectives efficiently and innovatively.",
+      "websiteUrl": "https://www.ajmarketing.io/"
+    },
+    {
+      "id": 12,
+      "name": "Xedea",
+      "logo": "/images/company/Xedea-Logo_Final-Version_1.png",
+      "verified": true,
+      "rating": 4.8,
+      "reviewsCount": 92,
+      "priceRange": "$5,000+",
+      "hourlyRate": "<$100 - $149 / hr",
+      "employeeCount": "10 - 49",
+      "location": "Subang Jaya, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 50,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Pay Per Click",
+          "percentage": 20,
+          "color": "#00ACC1"
+        },
+        {
+          "name": " Social Media Marketing",
+          "percentage": 20,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Xedea is an SEO agency specializing in enhancing digital visibility through website SEO services and search engine marketing. The overall feedback from their reviews indicates a high level of professionalism, with 100% of reviewers appreciating their responsive and results-oriented approach. Notably, the company excels at achieving SEO and SEM objectives, such as improving online visibility and generating leads effectively.",
+      "websiteUrl": "https://xedea.com/"
+    },
+    {
+      "id": 13,
+      "name": "Jemmy Digital",
+      "logo": "/images/company/",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "< $50 - $99 / hr",
+      "employeeCount": "2 - 9",
+      "location": "Kuala Lumpur, Malaysiaa",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 60,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Pay Per Click",
+          "percentage": 25,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Web Design",
+          "percentage": 10,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Jemmy Digital offers professional web design and Search Engine Optimization services, emphasizing creativity and effective communication. Reviews highlight their ability to deliver impressive initial drafts and maintain a responsive workflow, contributing positively to clients' online visibility and website ranking. Their patience and professionalism are consistently praised, although suggestions for more unique design insights were noted.",
+      "websiteUrl": "https://jemmydigital.com.my"
+    },
+    {
+      "id": 14,
+      "name": "JinMatic",
+      "logo": "/images/company/jinmatic-logo.png",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "<$100 - $149 / hr",
+      "employeeCount": "50 - 249",
+      "location": "Kuala Lumpur, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 75,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Content Marketing",
+          "percentage": 10,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Digital Strategy",
+          "percentage": 10,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "JinMatic is an SEO agency providing comprehensive Search Optimization and Website Ranking services. They consistently receive positive feedback, with clients unanimously praising their professionalism, effective communication, and tangible results in enhancing digital visibility. Approximately 100% of reviewers highlight their ability to improve online traffic and their exceptional project management skills.",
+      "websiteUrl": "https://jinmatic.com/"
+    },
+    {
+      "id": 15,
+      "name": "WoWoNiNi Sdn Bhd",
+      "logo": "/images/company/",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$5,000+",
+      "hourlyRate": "<$25 - $49 / hr",
+      "employeeCount": "2 - 9",
+      "location": "Cyberjaya, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 20,
+          "color": "#1976D2"
+        },
+        {
+          "name": " E-Commerce Development",
+          "percentage": 25,
+          "color": "#00ACC1"
+        },
+        {
+          "name": " UX/UI Design",
+          "percentage": 20,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "WoWoNiNi Sdn Bhd is a web development company noted for providing comprehensive website services, including design, maintenance, and hosting, with a focus on aligning with client values and budget constraints. Overall, 100% of reviews highlight their timeliness, responsiveness, and effective communication, with clients consistently praising their collaborative approach and problem-solving skills.",
+      "websiteUrl": "https://wowonini.com/"
+    },
+    {
+      "id": 16,
+      "name": "Zoewebs",
+      "logo": "/images/company/cropped-zoewebs-logo-300x130-1.webp",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "< $25 - $49 / hr",
+      "employeeCount": "10 - 49",
+      "location": "Perai, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 15,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Web Design",
+          "percentage": 25,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Web Development ",
+          "percentage": 20,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Zoewebs is a digital marketing company specializing in SEO, web development, and online visibility enhancement. They are praised for their expertise and effective marketing strategies, with 100% of reviews highlighting their successful project management and communication. Clients commend their ability to tailor services to specific needs, resulting in high ROI and improved website ranking.",
+      "websiteUrl": "https://www.zoewebs.com/"
+    },
+    {
+      "id": 17,
+      "name": "Webfluentia",
+      "logo": "/images/company/webfluentia-logo-332x96.DXERQU-k.avif",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "< $25 - $49 / hr",
+      "employeeCount": "2 - 9",
+      "location": "Kuala Lumpur, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 10,
+          "color": "#1976D2"
+        },
+        {
+          "name": "AI Development",
+          "percentage": 25,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Conversion Optimization",
+          "percentage": 20,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Webfluentia is an SEO agency specializing in enhancing digital visibility through comprehensive website SEO services and search optimization strategies. All reviews reflect a positive sentiment, highlighting their technical expertise, effective project management, and remarkable outcomes like a 20% increase in website traffic and a 90% improvement in website load speed, with no noted areas for improvement.",
+      "websiteUrl": "https://www.webfluentia.com"
+    },
+    {
+      "id": 18,
+      "name": "Pounce Agency",
+      "logo": "/images/company/Pounce-Logo-White-Large.png",
+      "verified": true,
+      "rating": 4.9,
+      "reviewsCount": 92,
+      "priceRange": "$5,000+",
+      "hourlyRate": "<$200 - $300 / hr",
+      "employeeCount": "10 - 49",
+      "location": "Kuala Lumpur, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 20,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Digital Strategy",
+          "percentage": 25,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Marketing Strategy",
+          "percentage": 20,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Pounce Agency is an SEO agency specializing in website SEO services, search engine marketing, and digital visibility enhancement. Their clients have reported a significant increase in online visibility, with one client noting that their web traffic doubled. Notably, 100% of reviewers commend their industry-specific expertise and attention to detail.",
+      "websiteUrl": "https://pounceagency.com.au/"
+    },
+    {
+      "id": 19,
+      "name": "Benova Tech Sdn Bhd",
+      "logo": "/images/company/benova-logo.webp",
+      "verified": true,
+      "rating": 4.9,
+      "reviewsCount": 92,
+      "priceRange": "$5,000+",
+      "hourlyRate": "<$50 - $99 / hr",
+      "employeeCount": "10 - 49",
+      "location": "Bayan Lepas, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 20,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Web Design",
+          "percentage": 60,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "UX/UI Design ",
+          "percentage": 20,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Benova Tech Sdn Bhd is a web development company specializing in e-commerce solutions, providing clients with creative control and technical support. Reviews highlight their effective project management and communication, with 100% of reviewers noting ease of communication, though feedback on responsiveness varies. Overall, the company is commended for accommodating client requests and delivering satisfactory results.",
+      "websiteUrl": "https://benova.com.my/"
+    },
+    {
+      "id": 20,
+      "name": "Majiska Digital Marketing",
+      "logo": "/images/company/macgad-logo-text-white.png",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "<$50 - $99 / hr",
+      "employeeCount": "2 - 9",
+      "location": "Klang, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 30,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Web Design",
+          "percentage": 30,
+          "color": "#00ACC1"
+        },
+        {
+          "name": " Pay Per Click",
+          "percentage": 20,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Majiska Digital Marketing is an SEO agency specializing in Search Optimization and Online Visibility enhancement. Their expertise has led to significant improvements in website ranking, with 100% of reviewers highlighting their strategic approach and transparency. Clients commend their exceptional project management, resulting in increased organic search visibility and leads, despite being considered somewhat costly.",
+      "websiteUrl": "https://www.majiska.com.my/"
+    },
+    {
+      "id": 21,
+      "name": "Macgad Technology Sdn Bhd",
+      "logo": "/images/company/macgad-logo-text-white.png",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$5,000+",
+      "hourlyRate": "<$25 - $49 / hr",
+      "employeeCount": "2 - 9",
+      "location": "Petaling Jaya, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 25,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Pay Per Click",
+          "percentage": 25,
+          "color": "#00ACC1"
+        },
+        {
+          "name": " Social Media Marketing",
+          "percentage": 25,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Macgad Technology Sdn Bhd is a digital marketing agency specializing in SEO and online visibility enhancement. The company has received consistently positive feedback, with clients praising their industry expertise, responsiveness, and transparency. Approximately 100% of reviewers mentioned their high ratings and effective project management, highlighting their ability to deliver measurable results and tailored strategies.",
+      "websiteUrl": "https://www.macgad.com/"
+    },
+    {
+      "id": 22,
+      "name": "Code Melding",
+      "logo": "/images/company/",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "<$25 - $49 / hr",
+      "employeeCount": "10 - 49",
+      "location": "Petaling Jaya, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 15,
+          "color": "#1976D2"
+        },
+        {
+          "name": "AI Consulting",
+          "percentage": 15,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "AI Development ",
+          "percentage": 15,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Code Melding is a technology solutions company specializing in VPN server setups, mobile app development for iOS and Android, and responsive website creation. Clients commend their high-efficiency communication and professional project management, with 100% of reviews highlighting their timely delivery and responsiveness. While some suggest more frequent progress updates, overall satisfaction remains high.",
+      "websiteUrl": "https://codemelding.com/"
+    },
+    {
+      "id": 23,
+      "name": "TNT SEO",
+      "logo": "/images/company/TNTSEO-LOGO-H100-WHITE.png",
+      "verified": true,
+      "rating": 0,
+      "reviewsCount": 92,
+      "priceRange": "$5,000+",
+      "hourlyRate": "Undisclosed",
+      "employeeCount": "2 - 9",
+      "location": "Petaling Jaya, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 100,
+          "color": "#1976D2"
+        },
+        {
+          "name": "",
+          "percentage": 0,
+          "color": "#00ACC1"
+        },
+        {
+          "name": " ",
+          "percentage": 0,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "SEO agency TNT SEO is based in Petaling Jaya, Malaysia. Their services include Search Engine Optimization",
+      "websiteUrl": "https://tntseo.com/"
+    },
+    {
+      "id": 24,
+      "name": "Growth.pro",
+      "logo": "/images/company/growth_logo.webp",
+      "verified": true,
+      "rating": 0,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "< $50 - $99 / hr",
+      "employeeCount": "10 - 49",
+      "location": "George Town, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 70,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Web Design",
+          "percentage": 20,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Content Marketing",
+          "percentage": 10,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Growth.pro is a small SEO agency launched in 2018. Their team offers Search Engine Optimization and Web Design.",
+      "websiteUrl": "https://www.growth.pro/"
+    },
+    {
+      "id": 25,
+      "name": "BUSINESS THRUST SDN BHD",
+      "logo": "/images/company/bthrust.png",
+      "verified": true,
+      "rating": 0,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "< $25 - $49 / hr",
+      "employeeCount": "50 - 249",
+      "location": "Kuala Lumpur, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 80,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Digital Strategy",
+          "percentage": 10,
+          "color": "#00ACC1"
+        },
+        {
+          "name": " Pay Per Click",
+          "percentage": 10,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "BUSINESS THRUST SDN BHD, a midsize SEO services firm, is headquartered in Kuala Lumpur, Malaysia. The team focuses on Search Engine Optimization and Digital Strategy.",
+      "websiteUrl": "https://www.bthrust.com.my/"
+    },
+  {
+      "id": 26,
+      "name": "Fuse Solutions",
+      "logo": "/images/company/Fuse-Solutions.png",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$5,000+",
+      "hourlyRate": "< $50 - $99 / hr",
+      "employeeCount": "10 - 49",
+      "location": "Petaling Jaya, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 25,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Custom Software Development",
+          "percentage": 25,
+          "color": "#00ACC1"
+        },
+        {
+          "name": " Mobile App Development",
+          "percentage": 25,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Fuse Solutions is a SEO services firm. The Petaling Jaya, Malaysia-based company focuses on Search Engine Optimization and Custom Software Development.",
+      "websiteUrl": "https://www.fusesolutions.com/"
+    },
+    {
+      "id": 27,
+      "name": "Nuweb Sdn Bhd",
+      "logo": "/images/company/Nuweb-Sdn-Bhd.webp",
+      "verified": true,
+      "rating": 0,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "Undisclosed",
+      "employeeCount": "2 - 9",
+      "location": "Puchong, Malaysia",
+      "services": [
+        {
+          "name": " Search Engine Optimization",
+          "percentage": 60,
+          "color": "#1976D2"
+        },
+        {
+          "name": " Pay Per Click",
+          "percentage": 20,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Web Design ",
+          "percentage": 20,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "SEO services firm Nuweb Sdn Bhd was launched in 2010. The small team specializes in Search Engine Optimization and Pay Per Click.",
+      "websiteUrl": "https://www.nuweb.com.my/"
+    },
+    {
+      "id": 28,
+      "name": "BizTransit Sdn Bhd",
+      "logo": "/images/company/biztransit.gif",
+      "verified": true,
+      "rating": 0,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "<$100 - $149 / hr",
+      "employeeCount": "2 - 9",
+      "location": "Kuala Lumpur, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 100,
+          "color": "#1976D2"
+        },
+        {
+          "name": "",
+          "percentage": 0,
+          "color": "#00ACC1"
+        },
+        {
+          "name": " ",
+          "percentage": 0,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "BizTransit Sdn Bhd is a SEO agency. Their small team is in Kuala Lumpur, Malaysia. Their services include Search Engine Optimization.",
+      "websiteUrl": "https://biztransit.com/"
+    },
+    {
+      "id": 29,
+      "name": "Magnes Marketing",
+      "logo": "/images/company/Magnes-Marketing.webp",
+      "verified": true,
+      "rating": 0,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "< $25 - $49 / hr",
+      "employeeCount": "2 - 9",
+      "location": "Klang, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 85,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Content Marketing",
+          "percentage": 10,
+          "color": "#00ACC1"
+        },
+        {
+          "name": " Digital Strategy",
+          "percentage": 5,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Magnes Marketing is a SEO services firm established in 2020. In Klang, Malaysia, the team focuses on Search Engine Optimization and Content Marketing.",
+      "websiteUrl": "https://magnesmarketing.com/"
+    },
+    {
+      "id": 30,
+      "name": "SEOGIN™",
+      "logo": "/images/company/SEOGIN™.svg",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "<$100 - $149 / hr",
+      "employeeCount": "10 - 49",
+      "location": "Kuala Lumpur, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 80,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Content Marketing",
+          "percentage": 10,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Content Writing Services ",
+          "percentage": 10,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "SEOGIN™ is a SEO company. The Singapore-based team provides Search Engine Optimization and Content Marketing.",
+      "websiteUrl": "https://www.seogin.com/"
+    },
+    {
+      "id": 31,
+      "name": "Lins advertising & marketing sdn bhd",
+      "logo": "/images/company/Lins-advertising-&-marketing-sdn-bhd.png",
+      "verified": true,
+      "rating": 0,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "<$25 - $49 / hr",
+      "employeeCount": "50 - 249",
+      "location": "Kuala Lumpur, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 50,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Advertising",
+          "percentage": 50,
+          "color": "#00ACC1"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Lins advertising & marketing sdn bhd is an Advertising and SEO agency. They are in Kuala Lumpur, Malaysia. Their team specializes in Advertising and Search Engine Optimization.",
+      "websiteUrl": "https://www.linsad.com.my/"
+    },
+    {
+      "id": 32,
+      "name": "Hatch and Vox",
+      "logo": "/images/company/Hatch-and-Vox.svg",
+      "verified": true,
+      "rating": 0,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "< $50 - $99 / hr",
+      "employeeCount": "2 - 9",
+      "location": "Labuan, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 80,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Web Design",
+          "percentage": 10,
+          "color": "#00ACC1"
+        },
+        {
+          "name": " Pay Per Click",
+          "percentage": 10,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Founded in 2023, Hatch and Vox is a small Labuan, Malaysia-based SEO services firm. Their services include Search Engine Optimization and Pay Per Click.",
+      "websiteUrl": "https://hatchandvox.com/"
+    },
+    {
+      "id": 33,
+      "name": "Digital Workie",
+      "logo": "/images/company/Digital-Workie.png",
+      "verified": true,
+      "rating": 0,
+      "reviewsCount": 92,
+      "priceRange": "$10,000+",
+      "hourlyRate": "< $100 - $149 / hr",
+      "employeeCount": "2 - 9",
+      "location": "Kuala Lumpur, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 75,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Pay Per Click",
+          "percentage": 15,
+          "color": "#00ACC1"
+        },
+        {
+          "name": " Ecommerce Marketing ",
+          "percentage": 10,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Digital Workie is a SEO company. They are located in Kuala Lumpur, Malaysia and have small team of experts. Their services include Search Engine Optimization and Pay Per Click.",
+      "websiteUrl": "https://digitalworkie.com/"
+    },
+    {
+      "id": 34,
+      "name": "SearchGuru",
+      "logo": "/images/company/SearchGuru.png",
+      "verified": true,
+      "rating": 0,
+      "reviewsCount": 92,
+      "priceRange": "$5,000+",
+      "hourlyRate": "<$100 - $149 / hr",
+      "employeeCount": "50 - 249",
+      "location": "Kuala Lumpur, Malaysia",
+      "services": [
+        {
+          "name": " Search Engine Optimization",
+          "percentage": 50,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Pay Per Click",
+          "percentage": 50,
+          "color": "#00ACC1"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "SearchGuru is a midsize SEO services firm and pay per click agency. Established in 2011, the team offers Search Engine Optimization and Pay Per Click.",
+      "websiteUrl": "https://thesearchguru.com/"
+    },
+    {
+      "id": 35,
+      "name": "MarkRanc",
+      "logo": "/images/company/MarkRanc.png",
+      "verified": true,
+      "rating": 0,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "<$25 - $49 / hr",
+      "employeeCount": "10 - 49",
+      "location": "Petaling Jaya, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 60,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Content Marketing",
+          "percentage": 30,
+          "color": "#00ACC1"
+        },
+        {
+          "name": " Social Media Marketing",
+          "percentage": 10,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "MarkRanc is a SEO agency established in 2022. The team focuses on Search Engine Optimization and Content Marketing.",
+      "websiteUrl": "https://www.markranc.com/"
+    },
+    {
+      "id": 36,
+      "name": "Mediaplus Digital Pte Ltd",
+      "logo": "/images/company/Mediaplus-Digital-Pte-Ltd.webp",
+      "verified": true,
+      "rating": 0,
+      "reviewsCount": 92,
+      "priceRange": "$5,000+",
+      "hourlyRate": "< $100 - $149 / hr",
+      "employeeCount": "50 - 249",
+      "location": "Miri, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 25,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Pay Per Click",
+          "percentage": 20,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "E-Commerce Development ",
+          "percentage": 15,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Established in 2010, Mediaplus Digital Pte Ltd is a SEO company. The midsize team focuses on Search Engine Optimization and Pay Per Click.",
+      "websiteUrl": "https://mediaplus.com.sg/"
+    },
+    {
+      "id": 37,
+      "name": "iMarketing MY - Search Marketing Agency Malaysia",
+      "logo": "/images/company/iMarketing.png",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "< $25 - $49 / hr",
+      "employeeCount": "10 - 49",
+      "location": "Kuala Lumpur, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 50,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Pay Per Click",
+          "percentage": 25,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Content Marketing ",
+          "percentage": 20,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "iMarketing MY - Digital Marketing Agency Malaysia offers SEM services aimed at increasing website traffic and visibility. Clients, notably in the real estate sector, commend the agency for its efficiency, market knowledge, and proactive communication. The overall feedback highlights significant improvements in website performance and a high level of client satisfaction with the services provided.",
+      "websiteUrl": "https://imarketing.my/"
+    },
+    {
+      "id": 38,
+      "name": "MFMY SEO Service Malaysia",
+      "logo": "/images/company/MFMY-SEO-Service-Malaysia.png",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "< $25 / hr",
+      "employeeCount": "< $25 / hr",
+      "location": "Petaling Jaya, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 50,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Pay Per Click",
+          "percentage": 25,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Low/No Code Development",
+          "percentage": 25,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "MFMY SEO Service Malaysia offers comprehensive Search Engine Optimization and digital marketing services, focusing on increasing online visibility and website ranking. Reviews highlight the company's effective strategies, consistent top Google SERP rankings, and substantial growth in online presence and sales. Clients appreciate their independent project management and results-driven approach.",
+      "websiteUrl": "https://mfmy.my/"
+    },
+    {
+      "id": 39,
+      "name": "2Stallions Digital Marketing Agency",
+      "logo": "/images/company/2Stallions-Digital-Marketing-Agency.webp",
+      "verified": true,
+      "rating": 0,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "< $50 - $99 / hr",
+      "employeeCount": "10 - 49",
+      "location": "Kuala Lumpur, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 30,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Pay Per Click",
+          "percentage": 30,
+          "color": "#00ACC1"
+        },
+        {
+          "name": " Digital Strategy",
+          "percentage": 40,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "2Stallions Digital Marketing Agency is a SEO services firm founded in 2012. The team offers Search Engine Optimization and Pay Per Click.",
+      "websiteUrl": "https://2stallions.com/"
+    },
+    {
+      "id": 40,
+      "name": "LOCUS-T",
+      "logo": "/images/company/LOCUS-T.svg",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "< $25 / hr",
+      "employeeCount": "50 - 249",
+      "location": "Petaling Jaya, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 40,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Pay Per Click",
+          "percentage": 40,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Web Development ",
+          "percentage": 20,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "LOCUS-T, a pay per click company, is headquartered in Petaling Jaya, Malaysia and George Town, Malaysia. The team specializes in Pay Per Click and Search Engine Optimization.",
+      "websiteUrl": "https://www.locus-t.com.my/"
+    },
+    {
+      "id": 41,
+      "name": "Bike Bear",
+      "logo": "/images/company/Bike-Bear.gif",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "< $100 - $149 / hr",
+      "employeeCount": "10 - 49",
+      "location": "Petaling Jaya, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 10,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Web Design",
+          "percentage": 25,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Web Development ",
+          "percentage": 65,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Bike Bear is a web design company. Launched in 2013, the team offers Web Design and Web Development. The firm is located in Petaling Jaya, Malaysia and Singapore, Singapore.",
+      "websiteUrl": "https://www.bikebear.com.my/"
+    },
+    {
+      "id": 42,
+      "name": "Seenlyst",
+      "logo": "/images/company/Seenlyst.webp",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "< $50 - $99 / hr",
+      "employeeCount": "2 - 9",
+      "location": "Shah Alam, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 50,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Pay Per Click",
+          "percentage": 40,
+          "color": "#00ACC1"
+        },
+        {
+          "name": " Web Design",
+          "percentage": 10,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Seenlyst is a SEO agency. Their small team of employees is based in Shah Alam, Malaysia. Their team specializes in Search Engine Optimization and Pay Per Click.",
+      "websiteUrl": "https://www.seenlyst.com/"
+    },
+    {
+      "id": 43,
+      "name": "CLARINI ONLINE MARKETING SDN. BHD.",
+      "logo": "/images/company/CLARINI-ONLINE-MARKETING-SDN-BHD.png",
+      "verified": true,
+      "rating": 0,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "<$50 - $99 / hr",
+      "employeeCount": "2 - 9",
+      "location": "Penampang, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 50,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Pay Per Click",
+          "percentage": 50,
+          "color": "#00ACC1"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Established in 2015, CLARINI ONLINE MARKETING SDN. BHD. Is a small Penampang, Malaysia-based SEO agency and pay per click agency. Their services include Search Engine Optimization and Pay Per Click.",
+      "websiteUrl": "https://clarinionlinemarketing.com/"
+    },
+    {
+      "id": 44,
+      "name": "Netmore Sdn Bhd",
+      "logo": "/images/company/Netmore-Sdn-Bhd.png",
+      "verified": true,
+      "rating": 0,
+      "reviewsCount": 92,
+      "priceRange": "$5,000+",
+      "hourlyRate": "< $100 - $149 / hr",
+      "employeeCount": "2 - 9",
+      "location": "Kuala Lumpur, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 20,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Web Design",
+          "percentage": 70,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "E-Commerce Development",
+          "percentage": 10,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Web design company Netmore Sdn Bhd was established in 2013. The team specializes in Web Design and Search Engine Optimization",
+      "websiteUrl": "https://www.netmore.com.my/"
+    },
+    {
+      "id": 45,
+      "name": "Arcadia Bytes",
+      "logo": "/images/company/Arcadia-Bytes.webp",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "< $25 / hr",
+      "employeeCount": "2 - 9",
+      "location": "Bayan Lepas, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 25,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Web Design",
+          "percentage": 30,
+          "color": "#00ACC1"
+        },
+        {
+          "name": " E-Commerce Development",
+          "percentage": 25,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Arcadia Bytes specializes in e-commerce development, website design, and digital marketing collateral. The reviews highlight their innovative designs, professional approach, and the significant impact of their services on clients' online sales and customer acquisition. Clients appreciate their reasonable pricing, extensive knowledge, and effective communication throughout the project.",
+      "websiteUrl": "https://arcadiabytes.com/"
+    },
+    {
+      "id": 46,
+      "name": "Nextsclick Digital",
+      "logo": "/images/company/Nextsclick-Digital.png",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$10,000+",
+      "hourlyRate": "Undisclosed",
+      "employeeCount": "2 - 9",
+      "location": "Kuala Lumpur, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 20,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Branding",
+          "percentage": 25,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Digital Strategy ",
+          "percentage": 20,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Nextsclick Digital is a branding agency established in 2018. The team focuses on Branding and Digital Strategy and is located in Kuala Lumpur, Malaysia.",
+      "websiteUrl": "https://nextsclick.com/"
+    },
+    {
+      "id": 47,
+      "name": "Paperballad",
+      "logo": "/images/company/Paperballad.png",
+      "verified": true,
+      "rating": 0,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "Undisclosed",
+      "employeeCount": "2 - 9",
+      "location": "Kuala Lumpur, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 20,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Content Marketing",
+          "percentage": 40,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Business Consulting ",
+          "percentage": 30,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Paperballad is a Content Marketing company. Their team is based in Kuala Lumpur, Malaysia. The company specializes in Content Marketing and Business Consulting.",
+      "websiteUrl": "https://paperballad.com/"
+    },
+    {
+      "id": 48,
+      "name": "Nerdy Ape",
+      "logo": "/images/company/Nerdy-Ape.png",
+      "verified": true,
+      "rating": 0,
+      "reviewsCount": 92,
+      "priceRange": "$1,000+",
+      "hourlyRate": "<$25 - $49 / hr",
+      "employeeCount": "2 - 9",
+      "location": "Kuala Lumpur, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 20,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Web Design",
+          "percentage": 60,
+          "color": "#00ACC1"
+        },
+        {
+          "name": " Digital Strategy",
+          "percentage": 20,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Nerdy Ape is a web design company. They offer Web Design and Search Engine Optimization and were founded in 2017. The company is based in Kuala Lumpur, Malaysia.",
+      "websiteUrl": "https://nerdyape.com/"
+    },
+    {
+      "id": 49,
+      "name": "Nick Metrics Marketing Agency",
+      "logo": "/images/company/Nick-Metrics-Marketing-Agency.png",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$50,000+",
+      "hourlyRate": "<$150 - $199 / hr",
+      "employeeCount": "10 - 49",
+      "location": "Kuala Lumpur, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 15,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Digital Strategy",
+          "percentage": 25,
+          "color": "#00ACC1"
+        },
+        {
+          "name": "Other Digital Marketing",
+          "percentage": 20,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Digital Strategy company Nick Metrics Marketing Agency was established in 2017. Based in Kuala Lumpur, Malaysia and Hyderabad, India, the team focuses on Digital Strategy and Other Digital",
+      "websiteUrl": "https://www.nickmetrics.com/"
+    },
+    {
+      "id": 50,
+      "name": "Magnus Digital Sdn Bhd",
+      "logo": "/images/company/Magnus-Digital-Sdn-Bhd.svg",
+      "verified": true,
+      "rating": 5,
+      "reviewsCount": 92,
+      "priceRange": "$5,000+",
+      "hourlyRate": "< $100 - $149 / hr",
+      "employeeCount": "10 - 49",
+      "location": "Kuala Lumpur, Malaysia",
+      "services": [
+        {
+          "name": "Search Engine Optimization",
+          "percentage": 30,
+          "color": "#1976D2"
+        },
+        {
+          "name": "Social Media Marketing",
+          "percentage": 35,
+          "color": "#00ACC1"
+        },
+        {
+          "name": " Web Development",
+          "percentage": 35,
+          "color": "#4CAF50"
+        }
+      ],
+      "additionalServices": 2,
+      "description": "Magnus Digital Sdn Bhd, a small social media marketing company, is based in Kuala Lumpur, Malaysia. The team offers Social Media Marketing and Web Development.",
+      "websiteUrl": "https://magnusdigital.my/"
+    }
+  ]
+}
+
