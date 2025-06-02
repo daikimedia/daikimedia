@@ -12,21 +12,25 @@ const CompanyCard = ({ company }) => {
                     <img
                         src={company.logo}
                         alt={`${company.name} logo`}
-                        className="w-16 h-16 rounded-full  flex items-center justify-center text-white font-bold text-xl"
+                        className="w-16 h-16 rounded-full bg-black/50 object-contain p-2"
                     />
                     <div>
                         <div className="flex items-center space-x-2">
                             <h2 className="text-2xl font-semibold text-gray-900">{company.name}</h2>
                         </div>
                         <div className="flex items-center space-x-2 mt-1">
-                            <div className="flex items-center">
-                                <span className="text-xl font-bold text-gray-900">{company.rating}</span>
-                                <div className="flex ml-1">
-                                    {[...Array(5)].map((_, i) => (
-                                        <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                                    ))}
+                            {company.rating > 0 ? (
+                                <div className="flex items-center">
+                                    <span className="text-xl font-bold text-gray-900">{company.rating}</span>
+                                    <div className="flex ml-1">
+                                        {[...Array(5)].map((_, i) => (
+                                            <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                                        ))}
+                                    </div>
                                 </div>
-                            </div>
+                            ) : (
+                                <span className="text-gray-500 text-sm">No reviews yet</span>
+                            )}
                         </div>
                     </div>
                 </div>

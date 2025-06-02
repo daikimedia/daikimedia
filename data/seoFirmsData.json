@@ -14,17 +14,17 @@
       "services": [
         {
           "name": "Search Engine Optimization",
-          "percentage": 40,
+          "percentage": 80,
           "color": "#1976D2"
         },
         {
           "name": "Web Design",
-          "percentage": 20,
+          "percentage": 10,
           "color": "#00ACC1"
         },
         {
           "name": "Ecommerce Marketing",
-          "percentage": 15,
+          "percentage": 10,
           "color": "#4CAF50"
         }
       ],
@@ -386,10 +386,10 @@
     },
     {
       "id": 13,
-      "name": "Jemmy Digital",
-      "logo": "/images/company/",
+      "name": "MindYourWeb",
+      "logo": "/images/company/mindyourweb.webp",
       "verified": true,
-      "rating": 5,
+      "rating": 0,
       "reviewsCount": 92,
       "priceRange": "$1,000+",
       "hourlyRate": "< $50 - $99 / hr",
@@ -398,23 +398,23 @@
       "services": [
         {
           "name": "Search Engine Optimization",
-          "percentage": 60,
+          "percentage": 20,
           "color": "#1976D2"
         },
         {
-          "name": "Pay Per Click",
-          "percentage": 25,
+          "name": "Web Design",
+          "percentage": 50,
           "color": "#00ACC1"
         },
         {
-          "name": "Web Design",
-          "percentage": 10,
+          "name": "Web Development",
+          "percentage": 30,
           "color": "#4CAF50"
         }
       ],
       "additionalServices": 2,
-      "description": "Jemmy Digital offers professional web design and Search Engine Optimization services, emphasizing creativity and effective communication. Reviews highlight their ability to deliver impressive initial drafts and maintain a responsive workflow, contributing positively to clients' online visibility and website ranking. Their patience and professionalism are consistently praised, although suggestions for more unique design insights were noted.",
-      "websiteUrl": "https://jemmydigital.com.my"
+      "description": "In Kuala Lumpur, Malaysia, MindYourWeb is a web design agency. They focus on Web Design and Web Development.",
+      "websiteUrl": "https://www.mindyourweb.com.my/"
     },
     {
       "id": 14,
@@ -451,7 +451,7 @@
     {
       "id": 15,
       "name": "WoWoNiNi Sdn Bhd",
-      "logo": "/images/company/",
+      "logo": "/images/company/Wowonini.png",
       "verified": true,
       "rating": 5,
       "reviewsCount": 92,
@@ -611,7 +611,7 @@
     {
       "id": 20,
       "name": "Majiska Digital Marketing",
-      "logo": "/images/company/macgad-logo-text-white.png",
+      "logo": "/images/company/majiska-digital-marketing.png",
       "verified": true,
       "rating": 5,
       "reviewsCount": 92,
@@ -674,35 +674,35 @@
     },
     {
       "id": 22,
-      "name": "Code Melding",
-      "logo": "/images/company/",
+      "name": "Team CloudSource",
+      "logo": "/images/company/teamcloudsource.webp",
       "verified": true,
-      "rating": 5,
+      "rating": 0,
       "reviewsCount": 92,
       "priceRange": "$1,000+",
-      "hourlyRate": "<$25 - $49 / hr",
+      "hourlyRate": "<$50 - $99 / hr",
       "employeeCount": "10 - 49",
       "location": "Petaling Jaya, Malaysia",
       "services": [
         {
           "name": "Search Engine Optimization",
-          "percentage": 15,
+          "percentage": 30,
           "color": "#1976D2"
         },
         {
-          "name": "AI Consulting",
-          "percentage": 15,
+          "name": "CRM Consulting and SI",
+          "percentage": 30,
           "color": "#00ACC1"
         },
         {
-          "name": "AI Development ",
-          "percentage": 15,
+          "name": "Social Media Marketing",
+          "percentage": 40,
           "color": "#4CAF50"
         }
       ],
       "additionalServices": 2,
-      "description": "Code Melding is a technology solutions company specializing in VPN server setups, mobile app development for iOS and Android, and responsive website creation. Clients commend their high-efficiency communication and professional project management, with 100% of reviews highlighting their timely delivery and responsiveness. While some suggest more frequent progress updates, overall satisfaction remains high.",
-      "websiteUrl": "https://codemelding.com/"
+      "description": "Team CloudSource is a social media marketing agency. Their small team is located in Petaling Jaya, Malaysia. Their services include Social Media Marketing and Search Engine Optimization.",
+      "websiteUrl": "https://www.teamcloudsource.com/"
     },
     {
       "id": 23,
@@ -800,7 +800,7 @@
       "description": "BUSINESS THRUST SDN BHD, a midsize SEO services firm, is headquartered in Kuala Lumpur, Malaysia. The team focuses on Search Engine Optimization and Digital Strategy.",
       "websiteUrl": "https://www.bthrust.com.my/"
     },
-  {
+    {
       "id": 26,
       "name": "Fuse Solutions",
       "logo": "/images/company/Fuse-Solutions.png",
@@ -1587,4 +1587,3 @@
     }
   ]
 }
-
