@@ -14,13 +14,13 @@ export const metadata = {
   robots: "index, follow",
   openGraph: {
     type: "website",
-    url: "https://www.daikimedia.com/testimonials",
+    url: "https://daikimedia.com/testimonials",
     title: "Testimonials | Daikai Media",
     description: "Hear from our clients about how Daikai Media helped their business grow and succeed. Real reviews and success stories.",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@daikimedia",
+    site: "@daikimedia", 
     title: "Testimonials | Daikai Media",
     description: "Read real success stories from our clients and partners.",
   },
