@@ -24,7 +24,7 @@
         "submenu": [
           {
             "id": 3.1,
-            "header": "origanic search",
+            "header": "Organic Search",
             "path": "#",
             "newTab": false
           },
