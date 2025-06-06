@@ -80,7 +80,7 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org ",
               "@type": "LocalBusiness",
               "name": "Daiki Media",
-              "url": "https://www.daikimedia.com ",
+              "url": "https://daikimedia.com ",
               "description": "Daiki Media provides expert SEO and website development services.",
               "address": {
                 "@type": "PostalAddress ",
