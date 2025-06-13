@@ -36,7 +36,7 @@ const FeatureBlog = () => {
           content: stripHtml(blog.content?.rendered || blog.content || ""),
         }));
 
-        
+
         const response = await fetch("https://cms.daikimedia.com/api/blogs");
 
         if (response.ok) {
@@ -45,8 +45,8 @@ const FeatureBlog = () => {
           const processedApiBlogData = apiBlogs.map((blog) => ({
             ...blog,
             content: stripHtml(blog.content?.rendered || blog.content || ""),
-            featuredImage: fixImagePath(blog.featuredImage), 
-            date: blog.created_at || "Unknown Creator", 
+            featuredImage: fixImagePath(blog.featuredImage),
+            date: blog.created_at || "Unknown Creator",
           }));
 
           const combinedBlogs = [
@@ -104,7 +104,7 @@ const FeatureBlog = () => {
           className="swiper !pb-20 md:!px-6"
         >
           {featuredBlogFiltered.length > 0 ? (
-            featuredBlogFiltered.map((blogItem, index) => {
+            featuredBlogFiltered.slice(0, 3).map((blogItem, index) => {
               const contentPreview = blogItem.content
                 ? stripHTML(blogItem.content).slice(0, 120)
                 : "";

@@ -1,0 +1,41 @@
+{
+    "developers": [
+        {
+            "id": 1,
+            "name": "Tech Solutions Malaysia",
+            "logo": "/images/company/tech-solutions.png",
+            "verified": true,
+            "rating": 4.8,
+            "reviewsCount": 124,
+            "priceRange": "$5,000 - $25,000",
+            "hourlyRate": "$50 - $100 / hr",
+            "employeeCount": "25 - 99",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Custom Web Development",
+                    "percentage": 45,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "E-commerce Development",
+                    "percentage": 25,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "Mobile App Development",
+                    "percentage": 20,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "UI/UX Design",
+                    "percentage": 10,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Tech Solutions Malaysia is a leading web development company specializing in custom web applications, e-commerce platforms, and mobile app development. With over 8 years of experience, they have delivered 200+ successful projects for clients ranging from startups to enterprise-level businesses.",
+            "websiteUrl": "https://www.techsolutionsmalaysia.com/"
+        }
+    ]
+}
