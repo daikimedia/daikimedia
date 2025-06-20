@@ -1,0 +1,964 @@
+{
+    "developers": [
+        {
+            "id": 1,
+            "name": "Daiki Media",
+            "logo": "/images/logo.png",
+            "verified": true,
+            "rating": 5,
+            "reviewsCount": 92,
+            "priceRange": "$1,000+",
+            "hourlyRate": "< $25 / hr",
+            "employeeCount": "50 - 249",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Search Engine Optimization",
+                    "percentage": 80,
+                    "color": "#1976D2"
+                },
+                {
+                    "name": "Web Design",
+                    "percentage": 10,
+                    "color": "#00ACC1"
+                },
+                {
+                    "name": "Ecommerce Marketing",
+                    "percentage": 10,
+                    "color": "#4CAF50"
+                }
+            ],
+            "additionalServices": 2,
+            "description": "Daiki Media is a highly regarded digital marketing agency specializing in comprehensive SEO and Digital Marketing solutions. Reviews consistently highlight their expertise in digital marketing services, with 100% of clients praising their clear, methodical approach and the measurable improvements in online presence and ROI.",
+            "websiteUrl": "https://www.daikimedia.com/"
+        },
+        {
+            "id": 2,
+            "name": "Lizard Global",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/64883b259c20767d49781fb4e014cd33.png",
+            "verified": true,
+            "rating": 4.8,
+            "reviewsCount": 124,
+            "priceRange": "$10,000+",
+            "hourlyRate": "$50 - $99 / hr",
+            "employeeCount": "50 - 249",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 30,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "Mobile App Development",
+                    "percentage": 60,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "Custom Software Development",
+                    "percentage": 10,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Lizard Global is a web development company specializing in web application development, front-end and back-end development, and custom website development. With overwhelmingly positive feedback, including timely delivery and responsiveness, 100% of reviewers commend their reliability and project management. Approximately 90% highlight their proactive involvement and strategic thinking, making them an esteemed partner in diverse projects.",
+            "websiteUrl": "https://www.techsolutionsmalaysia.com/"
+        },
+        {
+            "id": 3,
+            "name": "Techies App Technologies Sdn. Bhd.",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/73f25d49107f06d326049cc12f974f5a.jpeg",
+            "verified": true,
+            "rating": 4.9,
+            "reviewsCount": 124,
+            "priceRange": "$10,000+",
+            "hourlyRate": "$50 - $99 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Petaling Jaya, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 15,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "Mobile App Development",
+                    "percentage": 65,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "E-Commerce Development",
+                    "percentage": 10,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Techies App Technologies Sdn. Bhd. is a web development company specializing in full-stack web development and custom website development. With over 80% of reviews highlighting their budget-friendly pricing and alignment with company values, they are praised for their innovative web programming and front-end development skills. While their project management and responsiveness are often commended, about 10% of reviews suggest improvements in communication and application updates",
+            "websiteUrl": "https://techies.app/"
+        },
+        {
+            "id": 4,
+            "name": "Synergy Labs",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/0886fc975f069329ad84afd6c14a0212_2539170867af52a22a5ca.jpg",
+            "verified": true,
+            "rating": 4.9,
+            "reviewsCount": 124,
+            "priceRange": "$25,000+",
+            "hourlyRate": "$50 - $99 / hr",
+            "employeeCount": "50 - 249",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 25,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "Mobile App Development",
+                    "percentage": 50,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "AI Development",
+                    "percentage": 25,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Synergy Labs is a versatile web development and design company with expertise in full-stack web and mobile app development, UX/UI design, and custom website development. Reviews indicate a high satisfaction rate with 100% positive feedback, particularly highlighting their collaborative approach, adherence to deadlines, and user-centered design. Clients frequently praise their project management and responsiveness, with several noting improvements in user engagement and business performance.",
+            "websiteUrl": "https://www.synergylabs.co/"
+        },
+        {
+            "id": 5,
+            "name": "Upstack Studio",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/afaaaeae08a7485ff232dce478d8aa44.png",
+            "verified": true,
+            "rating": 4.9,
+            "reviewsCount": 124,
+            "priceRange": "$10,000+",
+            "hourlyRate": "$50 - $99 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 20,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "Mobile App Development",
+                    "percentage": 70,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "UX/UI Design",
+                    "percentage": 10,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Upstack Studio is a custom website development company specializing in full-stack web development, web application development, and front-end development. Their reviews highlight an 80% positive feedback rate, emphasizing their responsiveness, transparency, and expertise in UX/UI and web design. However, some clients noted minor timeline challenges, suggesting room for improvement in project estimation.",
+            "websiteUrl": "https://upstackstudio.com/"
+        },
+        {
+            "id": 6,
+            "name": "Webby Group",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/0dd6228e9733921cf612d238e1a9aaf7_517435489670d2f6dbec47.png",
+            "verified": true,
+            "rating": 4.9,
+            "reviewsCount": 124,
+            "priceRange": "$25,000+",
+            "hourlyRate": "$50 - $99 / hr",
+            "employeeCount": "50 - 249",
+            "location": "Puchong, Malaysia",
+            "services": [
+                {
+                    "name": " Web Development",
+                    "percentage": 20,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": " Cloud Consulting & SI",
+                    "percentage": 60,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": " Mobile App Development",
+                    "percentage": 20,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Webby Group is a reputable web development company specializing in custom website development, full-stack web development, and web application development. They have received overwhelmingly positive feedback, with clients praising their responsiveness, adaptability, and ability to deliver projects on time. Approximately 100% of reviewers highlight their excellent project management skills and strong customer focus.",
+            "websiteUrl": "https://www.webbygroup.com/"
+        },
+        {
+            "id": 7,
+            "name": "Snappymob",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/4f7d498452acb023b83477f2e17d68f1_1345925791682589fce6cc7.png",
+            "verified": true,
+            "rating": 4.9,
+            "reviewsCount": 124,
+            "priceRange": "$10,000+",
+            "hourlyRate": "$50 - $99 / hr",
+            "employeeCount": "50 - 249",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": " Web Development",
+                    "percentage": 45,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": " IT Strategy Consulting",
+                    "percentage": 30,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "Mobile App Development",
+                    "percentage": 25,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Snappymob is a full-stack web development company recognized for its expertise in web design and project management. The client feedback highlights effective communication, timely project delivery, and the ability to handle complex customization needs. Approximately 100% of reviewers noted the team's flexibility and commitment to quality, with minor suggestions for faster initial communication.",
+            "websiteUrl": "https://www.snappymob.com/"
+        },
+        {
+            "id": 8,
+            "name": "Hivekind",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/7bfa6f671264d87628a9869a31d89aa5.png",
+            "verified": true,
+            "rating": 4.9,
+            "reviewsCount": 124,
+            "priceRange": "$10,000+",
+            "hourlyRate": "$50 - $99 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 20,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "  Custom Software Development",
+                    "percentage": 20,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": " AI Consulting",
+                    "percentage": 10,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Other services",
+                    "percentage": 50,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Hivekind is a full-stack web development company noted for its expertise in both web application development and custom website development. Across reviews, 100% of clients highlight Hivekind's strong project management and collaborative approach. Clients consistently commend Hivekind for delivering high-quality, timely solutions and fostering strategic partnerships, though some mention the need for more flexible team augmentation.",
+            "websiteUrl": "https://hivekind.com/"
+        },
+        {
+            "id": 9,
+            "name": "Excelfixer Sdn Bhd",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/14bf8bde2e5b07ff9f2cab7cb02fe339.png",
+            "verified": true,
+            "rating": 5,
+            "reviewsCount": 124,
+            "priceRange": "$10,000+",
+            "hourlyRate": "$25 - $49 / hr",
+            "employeeCount": "2 - 9",
+            "location": "Petaling Jaya, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 25,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "Mobile App Development",
+                    "percentage": 50,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "Web Design",
+                    "percentage": 15,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Other services",
+                    "percentage": 10,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Excelfixer Sdn Bhd is a proficient web development company offering services like custom website development and web application solutions. They have received overwhelmingly positive feedback, with clients praising their expertise, timely delivery, and strong communication, as highlighted by 100% of reviewers. Their commitment to quality and client satisfaction is evident through their proactive approach and post-project support.",
+            "websiteUrl": "https://excelfixer.com/"
+        },
+        {
+            "id": 10,
+            "name": "Shortcut Asia",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/c2ce42b25cd0996514529795e4bec334.png",
+            "verified": true,
+            "rating": 4.8,
+            "reviewsCount": 124,
+            "priceRange": "$10,000+",
+            "hourlyRate": " $50 - $99 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 30,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "Mobile App Development",
+                    "percentage": 35,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "Custom Software Development",
+                    "percentage": 25,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Shortcut Asia is a software development company specializing in mobile and web applications, with expertise in technologies like React Native, AWS, and Ruby on Rails. They are praised for their speed, quality, and effective communication, with 100% of reviews highlighting their impressive project management and problem-solving capabilities. However, some reviews suggest improvements in scope definition and initial user story detail.",
+            "websiteUrl": "https://shortcut.my/"
+        },
+        {
+            "id": 11,
+            "name": "SegWitz",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/65ec98dfb352a6d32e83a3f6c621b144.png",
+            "verified": true,
+            "rating": 5,
+            "reviewsCount": 124,
+            "priceRange": "$5,000+",
+            "hourlyRate": " $50 - $99 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Puchong, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 50,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "Mobile App Development",
+                    "percentage": 50,
+                    "color": "#4CAF50"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "SegWitz is a development company specializing in comprehensive solutions for mobile apps and web panels, with notable expertise in sports venue booking and management systems. They are praised for their ability to understand client needs and deliver on promises, resulting in successful project launches with over 3,000 active users. Approximately 100% of reviews highlight their effective project management and commitment to clear communication.",
+            "websiteUrl": "https://segwitz.com/"
+        },
+        {
+            "id": 12,
+            "name": "WoWoNiNi Sdn Bhd",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/f16bba0fadc08b7b2e54543b0a2fad38.jpg",
+            "verified": true,
+            "rating": 5,
+            "reviewsCount": 124,
+            "priceRange": "$5,000+",
+            "hourlyRate": "$25 - $49 / hr",
+            "employeeCount": "2 - 9",
+            "location": "Cyberjaya, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 20,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "E-Commerce Development",
+                    "percentage": 20,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "Search Engine Optimization",
+                    "percentage": 60,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "WoWoNiNi Sdn Bhd is a web development company specializing in Website Development, Web Design, and Web Programming. Their clients commend them for timely project completion, excellent communication, and responsiveness. Approximately 100% of reviews highlight their good value for cost, while 85% emphasize their problem-solving skills and customer service. Overall, feedback is predominantly positive, with minor suggestions for clearer communication.",
+            "websiteUrl": "https://wowonini.com/"
+        },
+        {
+            "id": 13,
+            "name": "Trimantium GrowthOps",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/0-1_9.png",
+            "verified": true,
+            "rating": 5,
+            "reviewsCount": 124,
+            "priceRange": "$25,000+",
+            "hourlyRate": " / hr$100 - $149 / hr",
+            "employeeCount": "50 - 249",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 20,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "Cloud Consulting & SI",
+                    "percentage": 40,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "AI Development",
+                    "percentage": 10,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Trimantium GrowthOps (formerly 3wks) is a dynamic technology consulting company known for its expertise in rapid application development, particularly on Google App Engine. Reviews highlight their agility, with 100% noting their commitment to lean methodologies and delivering real features swiftly. Clients appreciate their innovative problem-solving approach, with no negative feedback reported. Their unique ability to break down complex projects into manageable tasks has been consistently praised.",
+            "websiteUrl": "https://www.growthops.asia/"
+        },
+        {
+            "id": 14,
+            "name": "Zoewebs",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/d90d48280cdae1087d763342d9b73f30.png",
+            "verified": true,
+            "rating": 5,
+            "reviewsCount": 124,
+            "priceRange": "$1,000+",
+            "hourlyRate": "$25 - $49 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Perai, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 25,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "Web Design",
+                    "percentage": 25,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "Pay Per Click",
+                    "percentage": 20,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Zoewebs is a comprehensive web development company specializing in Website Development and digital marketing services. They have received predominantly positive feedback, with clients praising their responsive service and professional expertise. Approximately 80% of reviewers highlight their effective project management and communication, although a few mention room for improvement in technical execution.",
+            "websiteUrl": "https://www.zoewebs.com/"
+        },
+        {
+            "id": 15,
+            "name": "Specflux Solutions",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/ba4ad90a2f1adffca1e35b3744ed57ad.png",
+            "verified": true,
+            "rating": 5,
+            "reviewsCount": 124,
+            "priceRange": "$1,000+",
+            "hourlyRate": " < $25 / hr",
+            "employeeCount": "2 - 9",
+            "location": "Ipoh, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 10,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "Web Design",
+                    "percentage": 30,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "Custom Software Development",
+                    "percentage": 15,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Specflux Solutions is a web development company specializing in e-commerce solutions and responsive website redesigns. They have consistently impressed clients with their proactive support and expertise, contributing to enhanced sales and conversions. With 100% positive feedback, clients particularly praise their smooth communication and collaborative approach.",
+            "websiteUrl": "https://www.specflux.com/"
+        },
+        {
+            "id": 15,
+            "name": "Global Line Network",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/8d2823cde8aab2a24544ad731938271a.png",
+            "verified": true,
+            "rating": 4.5,
+            "reviewsCount": 124,
+            "priceRange": "$5,000+",
+            "hourlyRate": "$25 - $49 / hr",
+            "employeeCount": "10 - 49",
+            "location": "kl, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 30,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "Mobile App Development",
+                    "percentage": 70,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "UX/UI Design",
+                    "percentage": 10,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Global Line Network is a mobile app development company that specializes in creating booking applications, catering to industries such as hotel management. Based on their review, 100% of the feedback is positive, highlighting their effective communication and ability to deliver a competitive product. However, 100% of reviewers also note that their inexperience with hotel booking engines resulted in a lengthier development process.",
+            "websiteUrl": "https://globalline.my/"
+        },
+        {
+            "id": 17,
+            "name": "INKA Creative Agency",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/7e8d46a73023680571c3e2f465a8d1e3.jpeg",
+            "verified": true,
+            "rating": 4.7,
+            "reviewsCount": 124,
+            "priceRange": "$25,000+",
+            "hourlyRate": " Undisclosed",
+            "employeeCount": "10 - 49",
+            "location": "Wilayah Persekutuan, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 30,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "Branding",
+                    "percentage": 70,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "Print Design",
+                    "percentage": 10,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "INKA Creative Agency is a versatile creative firm specializing in design, website development, and IT advisory services. Reviews indicate a high level of client satisfaction, with 100% of reviewers praising their aesthetic design skills, commitment, and efficient project management. Clients particularly appreciate their ability to deliver projects on time and within budget, even in challenging situations.",
+            "websiteUrl": "https://www.cypfirzt.com/"
+        },
+        {
+            "id": 18,
+            "name": "GR Tech",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/423edadce5ee147d4811586e56de9bed.png",
+            "verified": true,
+            "rating": 4.6,
+            "reviewsCount": 124,
+            "priceRange": "Undisclosed",
+            "hourlyRate": " < 25/ hr",
+            "employeeCount": "10 - 49",
+            "location": "Cyberjaya, Malaysia",
+            "services": [
+                {
+                    "name": "Web Developmen",
+                    "percentage": 10,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "Custom Software Development",
+                    "percentage": 90,
+                    "color": "#4CAF50"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "GR Tech is a web development company specializing in Custom Website Development and Web Application Development. The reviews highlight their strong communication and project management skills, with 100% of reviewers praising their responsiveness and ability to execute projects effectively. Notable achievements include successful website rebranding and migration, high client satisfaction, and proactive security measures.",
+            "websiteUrl": "https://www.grtech.com/"
+        },
+        {
+            "id": 19,
+            "name": "Cal Studio Website Design",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/c350f17b4c9e42c52e3c2f7e6b491ab7.jpeg",
+            "verified": true,
+            "rating": 5,
+            "reviewsCount": 124,
+            "priceRange": "Undisclosed",
+            "hourlyRate": " Undisclosed",
+            "employeeCount": "2 - 9",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 30,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "Custom Software Development",
+                    "percentage": 70,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "E-Commerce Development",
+                    "percentage": 10,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Cal Studio Website Design is a web development company specializing in custom website development and web design. Their clients appreciate their ability to deliver well-designed, user-friendly websites, as evidenced by positive feedback on user engagement and navigation. The client testimonials reflect complete satisfaction with their services, with no areas identified for improvement.",
+            "websiteUrl": "https://www.cal-webdesign.com/"
+        },
+        {
+            "id": 20,
+            "name": "Ecompile",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/46aaca52abf71f3cf82b7d44b0dc8dab.png",
+            "verified": true,
+            "rating": 4.7,
+            "reviewsCount": 124,
+            "priceRange": "$1,000+",
+            "hourlyRate": "$50 - $99 / hr",
+            "employeeCount": "2 - 9",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 30,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "E-Commerce Development",
+                    "percentage": 25,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "Web Design",
+                    "percentage": 25,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Ecompile, a Web Development company specializing in Custom Website Development and Web Design, consistently delivers high-quality projects with a flexible and responsive communication style. Clients appreciate their problem-solving skills and willingness to make unlimited revisions, resulting in a strong positive feedback rate, though some suggest a more visual project timeline could enhance client expectations.",
+            "websiteUrl": "https://ecompile.io/"
+        },
+        {
+            "id": 21,
+            "name": "Access Information & Technology Sdn Bhd",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/1822a3f52432d9bc363523d00199ef39.jpg",
+            "verified": true,
+            "rating": 4.9,
+            "reviewsCount": 124,
+            "priceRange": "Undisclosed",
+            "hourlyRate": " Undisclosed",
+            "employeeCount": "10 - 49",
+            "location": "Cyberjaya, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 30,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": " Mobile App Development",
+                    "percentage": 70,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "Mobile & App Marketing",
+                    "percentage": 10,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Access Information & Technology Sdn Bhd is a web development company specializing in custom website development and full-stack web development services. Reviewers consistently praise the company's commitment and professionalism, with approximately 100% expressing satisfaction in project management and communication. Clients highlight their ability to deliver projects beyond expectations, particularly in web development and UX design. ",
+            "websiteUrl": "https://access-itech.com/en"
+        },
+        {
+            "id": 22,
+            "name": "Catz Media Technology",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/7f99d5c1c4ab989c8953e3dbee964441.png",
+            "verified": true,
+            "rating": 5,
+            "reviewsCount": 124,
+            "priceRange": "$1,000+",
+            "hourlyRate": "$25 - $49 / hr",
+            "employeeCount": "2 - 9",
+            "location": "Seri Kembangan, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 30,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "E-Commerce Development",
+                    "percentage": 20,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "Low/No Code Development",
+                    "percentage": 19,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Catz Media Technology is a web development company known for creating visually appealing and user-friendly e-commerce websites. The company has received consistently positive feedback, with 100% of reviewers noting their sincerity and supportive nature. They are praised for their exceptional project management and ability to significantly improve user experience.",
+            "websiteUrl": "https://catzmedia.com/"
+        },
+        {
+            "id": 23,
+            "name": "TECHTICIAN",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/fcacc185e581b587f99e32e6ebb27c0e.svg",
+            "verified": true,
+            "rating": 5,
+            "reviewsCount": 124,
+            "priceRange": "$5,000+",
+            "hourlyRate": " $50 - $99 / hr",
+            "employeeCount": "2 - 9",
+            "location": "Ipoh, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 30,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": " UX/UI Design",
+                    "percentage": 70,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "Product Design",
+                    "percentage": 10,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "TECHTICIAN is a web development company specializing in website development and SEO services. The feedback from their client highlights TECHTICIAN's rapid development process and effective communication, with 100% of the review describing a positive experience. Impressively, their services improved the client's online presence and search visibility, demonstrating their proficiency in custom website development and web application development.",
+            "websiteUrl": "https://www.techticiansystems.com/"
+        },
+        {
+            "id": 24,
+            "name": "DEZGN STUDIO TECH SDN. BHD.",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/139e02334e2a27b82cead728c8aa782d.png",
+            "verified": true,
+            "rating": 5,
+            "reviewsCount": 124,
+            "priceRange": "$10,000+",
+            "hourlyRate": " Undisclosed",
+            "employeeCount": "2 - 9",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 10,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": " Custom Software Development",
+                    "percentage": 30,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "AR/VR Development",
+                    "percentage": 10,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "DEZGN Studio is a design agency specializing in UI/UX design, branding, and mobile application development. The reviews highlight their creativity, quick turnaround times, and proactive problem-solving abilities, with 100% positive feedback on their professionalism and effectiveness in communication. Many clients appreciate their understanding of user needs and ability to generate innovative solutions that exceed expectations.",
+            "websiteUrl": "https://www.dezgnstudio.com/"
+        },
+        {
+            "id": 25,
+            "name": "Original Intelligence Sdn Bhd",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/4fb3c4e64ac743b508891f3b8ed92307.jpeg",
+            "verified": true,
+            "rating": 4.8,
+            "reviewsCount": 124,
+            "priceRange": "$5,000+",
+            "hourlyRate": " $25 - $49 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Petaling Jaya, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 20,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "Cloud Consulting & SI",
+                    "percentage": 20,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "Custom Software Develop",
+                    "percentage": 60,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Original Intelligence Sdn Bhd is a software development company specializing in customized solutions for HR management and attendance tracking systems. Reviews highlight their effective project management and keen ability to tailor solutions to client needs, with 100% of reviewers noting their reliability and personalized support. Clients appreciate the personal attention from leadership and the reasonable pricing for enhancements.",
+            "websiteUrl": "https://oriq.com/"
+        },
+        {
+            "id": 26,
+            "name": "I Concept Digital",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/a58a9a9923de7c50c0ee8787157d0e08.svg",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 124,
+            "priceRange": "$10,000+",
+            "hourlyRate": " $100 - $149 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Subang Jaya, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 20,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "Web Design",
+                    "percentage": 25,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "E-Commerce Development",
+                    "percentage": 15,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "I Concept Digital is a web design company. Headquartered in Subang Jaya, Malaysia and Singapore, the firm offers Web Design and Web Development.",
+            "websiteUrl": "https://iconceptdigital.com/"
+        },
+        {
+            "id": 27,
+            "name": "Fuse Solutions",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/f4962eb9250209654d153b6e9c5ba5ba.jpg",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 124,
+            "priceRange": "$5,000+",
+            "hourlyRate": " $50 - $99 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Petaling Jaya, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 25,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "Custom Software Development",
+                    "percentage": 25,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "Mobile App Development",
+                    "percentage": 25,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Fuse Solutions is a SEO services firm. The Petaling Jaya, Malaysia-based company focuses on Search Engine Optimization and Custom Software Development.",
+            "websiteUrl": "https://www.fusesolutions.com/"
+        },
+        {
+            "id": 28,
+            "name": "PROTEUS-DT",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/bc5897d5cb2219fb9a5ebcfb54f2076e_751429667675aa45561642.jpg",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 124,
+            "priceRange": "$50,000+",
+            "hourlyRate": " $100 - $149 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 25,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "Custom Software Development",
+                    "percentage": 35,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "AI Development",
+                    "percentage": 10,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "PROTEUS-DT is a custom software development company. In Singapore, Singapore and Kuala Lumpur, Malaysia, the firm specializes in Custom Software Development and Web Development.",
+            "websiteUrl": "https://www.proteus-dt.com/"
+        },
+        {
+            "id": 29,
+            "name": "Advisory Apps",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/ef03a655239f32cc99510a732af1c584.png",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 124,
+            "priceRange": "$10,000+",
+            "hourlyRate": "$50 - $99 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 13,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "Mobile App Development",
+                    "percentage": 21,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "AR/VR Development",
+                    "percentage": 30,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Advisory Apps, an application development firm, was established in 2012. The small team focuses on Mobile App Development and Custom Software Development.",
+            "websiteUrl": "https://advisoryapps.com/"
+        },
+        {
+            "id": 30,
+            "name": "Mindset AG",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/dee4faf980545bd6b8afce11e55a76e8.png",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 124,
+            "priceRange": "$10,000+",
+            "hourlyRate": "$50 - $99 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Web Development",
+                    "percentage": 20,
+                    "color": "#2196F3"
+                },
+                {
+                    "name": "E-Commerce Development",
+                    "percentage": 30,
+                    "color": "#4CAF50"
+                },
+                {
+                    "name": "Custom Software Development",
+                    "percentage": 15,
+                    "color": "#FF9800"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Established in 2019, Mindset AG is an e-commerce development company. The small team focuses on E-Commerce Development and Web Development.",
+            "websiteUrl": "https://mindset.swiss/en/"
+        }
+    ]
+}
