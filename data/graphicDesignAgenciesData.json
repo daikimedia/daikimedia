@@ -1,0 +1,329 @@
+{
+    "graphicDesign": [
+        {
+            "id": 1,
+            "name": "Daiki Media",
+            "logo": "/images/logo.png",
+            "verified": true,
+            "rating": 5,
+            "reviewsCount": 92,
+            "priceRange": "$1,000+",
+            "hourlyRate": "< $25 / hr",
+            "employeeCount": "50 - 249",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Search Engine Optimization",
+                    "percentage": 80,
+                    "color": "#1976D2"
+                },
+                {
+                    "name": "Web Design",
+                    "percentage": 10,
+                    "color": "#00ACC1"
+                },
+                {
+                    "name": "Ecommerce Marketing",
+                    "percentage": 10,
+                    "color": "#4CAF50"
+                }
+            ],
+            "additionalServices": 2,
+            "description": "Daiki Media is a highly regarded digital marketing agency specializing in comprehensive SEO and Digital Marketing solutions. Reviews consistently highlight their expertise in digital marketing services, with 100% of clients praising their clear, methodical approach and the measurable improvements in online presence and ROI.",
+            "websiteUrl": "https://www.daikimedia.com/"
+        },
+        {
+            "id": 2,
+            "name": "Perfect Viral",
+            "logo": "/images/company/perfect-viral.png",
+            "verified": true,
+            "rating": 4.9,
+            "reviewsCount": 87,
+            "priceRange": "$5,000+",
+            "hourlyRate": "$150 - $199 / hr",
+            "employeeCount": "2 - 9",
+            "location": "Tanjung Bungah, Malaysia",
+            "services": [
+                {
+                    "name": "Social Media Marketing",
+                    "percentage": 40,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Content Marketing",
+                    "percentage": 30,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "PPC Advertising",
+                    "percentage": 20,
+                    "color": "#9C27B0"
+                },
+                {
+                    "name": "Email Marketing",
+                    "percentage": 10,
+                    "color": "#795548"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Perfect Viral is a creative digital marketing agency based in Tanjung Bungah, Malaysia. They specialize in viral marketing campaigns, social media management, and brand building. Founded in 2014, they have helped numerous brands achieve viral success through innovative marketing strategies.",
+            "websiteUrl": "https://www.perfectviral.com/"
+        },
+        {
+            "id": 3,
+            "name": "Logo Talks",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/28a560bf3ba3e421802be6c0b8fe2d14.png",
+            "verified": true,
+            "rating": 4.9,
+            "reviewsCount": 87,
+            "priceRange": "$5,000+",
+            "hourlyRate": "$150 - $199 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": " Graphic Design",
+                    "percentage": 20,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Content Marketing",
+                    "percentage": 50,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "PPC Advertising",
+                    "percentage": 30,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 4,
+            "description": "Logo Talks is a branding agency specializing in creating brand identities, logos, and marketing materials, with a particular focus on real estate and diverse sectors. Reviews highlight their creativity, timeliness, and excellent project management, with 80% emphasizing their fast response and 70% noting their ability to align designs with clients' visions. Clients appreciate their competitive pricing and dedication to client satisfaction.",
+            "websiteUrl": "https://www.perfectviral.com/"
+        },
+        {
+            "id": 4,
+            "name": "Pounce Agency",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/49c5bcb635505df7d07c6ac1597d00d6.png",
+            "verified": true,
+            "rating": 4.9,
+            "reviewsCount": 87,
+            "priceRange": "$5,000+",
+            "hourlyRate": "$200 - $300 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": " Graphic Design",
+                    "percentage": 25,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Content Marketing",
+                    "percentage": 45,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "PPC Advertising",
+                    "percentage": 30,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 5,
+            "description": "Pounce Agency offers services in Artistic Design, Branding, and Creative Design. The reviews highlight their strong project management, responsiveness, and deep understanding of clients' visions. Clients appreciate their ability to bring brands to life through detailed and thoughtful design services, including logo design and comprehensive brand guidelines.",
+            "websiteUrl": "https://clutch.co/profile/pounce-agency"
+        },
+        {
+            "id": 5,
+            "name": "Cal Studio Website Design",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/c350f17b4c9e42c52e3c2f7e6b491ab7.jpeg",
+            "verified": true,
+            "rating": 4.9,
+            "reviewsCount": 87,
+            "priceRange": "Undisclosed",
+            "hourlyRate": "Undisclosed",
+            "employeeCount": "2 - 9",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": " Graphic Design",
+                    "percentage": 20,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Content Marketing",
+                    "percentage": 60,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "PPC Advertising",
+                    "percentage": 20,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 6,
+            "description": "Cal Studio Website Design is a website development company that specializes in creating custom websites, particularly using WordPress. Their clients appreciate their design expertise and effective user experience, with 100% of reviewers expressing satisfaction with the overall design and navigation of their websites. The company is noted for providing valuable advice and guidance throughout the project.",
+            "websiteUrl": "https://clutch.co/profile/cal-studio-website-design"
+        },
+        {
+            "id": 6,
+            "name": "Wevia",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/9adc7cdf1190fa676340a3bd5029fd61.png",
+            "verified": true,
+            "rating": 4.9,
+            "reviewsCount": 87,
+            "priceRange": "$5,000+",
+            "hourlyRate": "Undisclosed",
+            "employeeCount": "2 - 9",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": " Graphic Design",
+                    "percentage": 50,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Content Marketing",
+                    "percentage": 40,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "PPC Advertising",
+                    "percentage": 10,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 7,
+            "description": "Wevia is a creative graphic design company specializing in Digital Designs and Branding, as evidenced by their work on promotional material and conference booth design. With 100% positive feedback, clients praise their expertise in print colors and branding, timely delivery, and responsiveness, showcasing their proficiency in Graphic Design Services.",
+            "websiteUrl": "https://clutch.co/profile/wevia"
+        },
+        {
+            "id": 7,
+            "name": "Webwooter",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/ab109f3d40f500648c4175bd5fda3a2a.png",
+            "verified": true,
+            "rating": 4.9,
+            "reviewsCount": 87,
+            "priceRange": "$10,000+",
+            "hourlyRate": "$50 - $99 / hr",
+            "employeeCount": "250 - 999",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": " Graphic Design",
+                    "percentage": 35,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Content Marketing",
+                    "percentage": 45,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "PPC Advertising",
+                    "percentage": 20,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 8,
+            "description": "Webwooter specializes in digital marketing services, including social media marketing, SEO, and paid advertising. Client feedback highlights their exceptional portfolio, timely delivery, and effective communication. Overall, Webwooter is praised for their ability to grow channels and generate leads, making them a reliable partner for digital marketing initiatives.",
+            "websiteUrl": "https://clutch.co/profile/webwooter"
+        },
+        {
+            "id": 8,
+            "name": "Alexandre Bernard Asia",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/e4efa10eb1feb0c75c0d37af2406833f.png",
+            "verified": true,
+            "rating": 4.9,
+            "reviewsCount": 87,
+            "priceRange": "$10,000+",
+            "hourlyRate": "$300+ / hr",
+            "employeeCount": "2 - 9",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": " Graphic Design",
+                    "percentage": 40,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Content Marketing",
+                    "percentage": 10,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "PPC Advertising",
+                    "percentage": 50,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 9,
+            "description": "Established in 2018, Alexandre Bernard Asia is an Advertising company. Their team offers Advertising and Branding.",
+            "websiteUrl": "https://clutch.co/profile/alexandre-bernard-asia"
+        },
+        {
+            "id": 9,
+            "name": "Light Up 7",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/9fd7624e8542bfc8037371612ab28a3b.png",
+            "verified": true,
+            "rating": 4.9,
+            "reviewsCount": 87,
+            "priceRange": "$1,000+",
+            "hourlyRate": "$100 - $149 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": " Graphic Design",
+                    "percentage": 50,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Content Marketing",
+                    "percentage": 25,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "PPC Advertising",
+                    "percentage": 25,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 10,
+            "description": "Light Up 7, a Corporate Photography company, was founded in 2014. Located in Kuala Lumpur, Malaysia, the team provides Corporate Photography and Digital Strategy.",
+            "websiteUrl": "https://clutch.co/profile/light-7"
+        },
+        {
+            "id": 10,
+            "name": "Brand360",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/brand360.jpg",
+            "verified": true,
+            "rating": 4.9,
+            "reviewsCount": 87,
+            "priceRange": "Undisclosed",
+            "hourlyRate": "Undisclosed",
+            "employeeCount": "10 - 49",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": " Graphic Design",
+                    "percentage": 70,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Content Marketing",
+                    "percentage": 10,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "PPC Advertising",
+                    "percentage": 20,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Branding firm Brand360 was established in 2007. The company focuses on Branding and Marketing Strategy.",
+            "websiteUrl": "https://clutch.co/profile/brand360"
+        }
+    ]
+}
