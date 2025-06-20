@@ -4,6 +4,7 @@ import { Tag, Star, MapPin, Users, Clock, Briefcase, Search, ChevronDown, ArrowU
 import Link from 'next/link';
 
 import LazyClients from "@/components/lazy/LazyClients";
+import companiesData from '../../data/seoFirmsData.json';
 
 const CompanyCard = ({ company }) => {
     const imgRef = useRef(null);
@@ -39,9 +40,7 @@ const CompanyCard = ({ company }) => {
                             totalB += pixel[2];
                             validSamples++;
                         }
-                    } catch (e) {
-                        console.warn("Error getting pixel data at", x, y, e);
-                    }
+                    } catch (e) { }
                 });
 
                 if (validSamples > 0) {
@@ -259,30 +258,12 @@ const FilterDropdown = ({ label, icon, options, value, onChange, placeholder }) 
     );
 };
 
-// Main dynamic component
-const DynamicCompanyListing = ({
-    data,
-    title = "Best Companies",
-    subtitle = "Driving Results with Expertise",
-    description = "Explore our curated list of top companies.",
-    dataKey = "companies", // key to access data array
-    showClients = true,
-    whatsappNumber = "601114850067",
-    whatsappText = "Free Website Audit"
-}) => {
+const SeoFirmSection = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedRating, setSelectedRating] = useState('');
     const [selectedTeamSize, setSelectedTeamSize] = useState('');
     const [selectedPriceRange, setSelectedPriceRange] = useState('');
-    const [filteredCompanies, setFilteredCompanies] = useState([]);
-
-    // Get companies data from the provided data object
-    const companiesData = data?.[dataKey] || [];
-
-    // Initialize filtered companies
-    useEffect(() => {
-        setFilteredCompanies(companiesData);
-    }, [companiesData]);
+    const [filteredCompanies, setFilteredCompanies] = useState(companiesData.companies);
 
     // Filter options
     const ratingOptions = [
@@ -304,7 +285,7 @@ const DynamicCompanyListing = ({
     ];
 
     const priceRangeOptions = [
-        { label: 'Budget', value: '' },
+        { label: ' Budgets', value: '' },
         { label: 'Under $1,000', value: '<$1,000' },
         { label: '$1,000 - $3,000', value: '$1,000-$3,000' },
         { label: '$3,000 - $5,000', value: '$3,000-$5,000' },
@@ -315,7 +296,7 @@ const DynamicCompanyListing = ({
 
     // Filter logic
     useEffect(() => {
-        let filtered = companiesData;
+        let filtered = companiesData.companies;
 
         // Search filter
         if (searchTerm) {
@@ -344,13 +325,17 @@ const DynamicCompanyListing = ({
         // Team size filter
         if (selectedTeamSize) {
             filtered = filtered.filter(company => {
+                // Convert employee count range like "10-49" to actual min and max numbers
                 const count = company.employeeCount;
+
+                // Extract numbers from string like "10-49 employees"
                 const match = count.match(/(\d+)(?:\D+)?(\d+)?/);
                 if (!match) return false;
 
                 const min = parseInt(match[1]);
                 const max = match[2] ? parseInt(match[2]) : Infinity;
 
+                // Now match based on selectedTeamSize
                 switch (selectedTeamSize) {
                     case '2-9':
                         return min <= 9 && max >= 2;
@@ -383,36 +368,25 @@ const DynamicCompanyListing = ({
         }
 
         setFilteredCompanies(filtered);
-    }, [searchTerm, selectedRating, selectedTeamSize, selectedPriceRange, companiesData]);
+    }, [searchTerm, selectedRating, selectedTeamSize, selectedPriceRange]);
 
     return (
-        <div className="py-8">
-            <div className="container mx-auto px-4 py-32">
-                <div className="h-96 flex items-center justify-center px-4">
-                    <div className="max-w-5xl mx-auto text-center py-12">
-                        <div className="mb-12">
-                            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
-                                {title}
-                            </h1>
+        <div className="bg-gray-50 py-8">
+            <div className="container mx-auto px-4 mt-10">
+                <SeoHeroSection />
+                <LazyClients />
+                <div className="max-w-4xl mx-auto px-4 text-center py-6 sm:py-10">
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
+                        Best SEO Agencies in Malaysia
+                    </h1>
+                    <p className="text-base sm:text-lg md:text-xl font-semibold text-gray-700 mb-3 sm:mb-4">
+                        Driving Traffic, Leads, and Revenue with Tailored Strategies and Award–Winning Expertise
+                    </p>
+                    <p className="text-sm sm:text-base md:text-lg text-gray-600">
+                        When it comes to SEO agencies, options are plenty. Below, you’ll discover a curated list of the top SEO firms in Malaysia, from Kuala Lumpur to Penang to Johor Bahru. Explore each company’s profile below — and keep reading to find out what makes them stand out among the best in the industry.
 
-                            <p className="text-base sm:text-lg md:text-xl font-semibold text-gray-700 mb-3 sm:mb-4">
-                                {subtitle}
-                            </p>
 
-                            <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
-                                {description}
-                            </p>
-
-                            <a
-                                href={`https://api.whatsapp.com/send?phone=${whatsappNumber}`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn col-span-4 max-lg:!px-3 max-lg:!text-sm xs:col-span-4"
-                            >
-                                Get Started
-                            </a>
-                        </div>
-                    </div>
+                    </p>
                 </div>
 
                 {/* Filter Section */}
@@ -462,7 +436,7 @@ const DynamicCompanyListing = ({
                                 options={priceRangeOptions}
                                 value={selectedPriceRange ? priceRangeOptions.find(opt => opt.value === selectedPriceRange)?.label : ''}
                                 onChange={setSelectedPriceRange}
-                                placeholder="Budget"
+                                placeholder=" Budgets"
                             />
                         </div>
                     </div>
@@ -481,11 +455,9 @@ const DynamicCompanyListing = ({
                         </div>
                     )}
                 </div>
-
-                {showClients && <LazyClients />}
             </div>
         </div>
     );
 };
 
-export default DynamicCompanyListing;
+export default SeoFirmSection;
