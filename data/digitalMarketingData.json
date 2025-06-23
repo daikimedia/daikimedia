@@ -324,6 +324,696 @@
             "additionalServices": 3,
             "description": "WebNIC is a domain registration and SSL service provider praised for its efficient and seamless panel, making the purchasing process smooth and intuitive. The company received 100% positive feedback, with clients highlighting its excellent project management and budget-friendly pricing. Respondents emphasized the helpfulness and efficiency of WebNIC's services without identifying any areas for improvement.",
             "websiteUrl": "https://gambarr.com/en/"
+        },
+        {
+            "id": 11,
+            "name": "CUBEevo Advertising & Digital Agency",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/387d31d7c4cb35d4a389bf8f098a2e3a.png",
+            "verified": true,
+            "rating": 5,
+            "reviewsCount": 100,
+            "priceRange": "$1,000+",
+            "hourlyRate": "$25 - $49 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Logo",
+                    "percentage": 20,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Packaging Design",
+                    "percentage": 20,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "UX/UI Design",
+                    "percentage": 20,
+                    "color": "#9C27B0"
+                },
+                {
+                    "name": "Other Design",
+                    "percentage": 40,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "CUBEevo Advertising & Digital Agency is a branding and design agency known for its creative and outstanding design services. Their communication is highly professional and responsive, with 100% of reviewers noting their impressive project management skills. Clients appreciate their ability to differentiate brands, although there is a suggestion to expand into TikTok marketing.",
+            "websiteUrl": "https://www.cubeevo.com/"
+        },
+        {
+            "id": 12,
+            "name": "Benova Tech Sdn Bhd",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/d6dc5c5314d34f80db1bbbaa9a75361e.jpg",
+            "verified": true,
+            "rating": 4.9,
+            "reviewsCount": 100,
+            "priceRange": "$5,000+",
+            "hourlyRate": "$50 - $99 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Bayan Lepas, Malaysia",
+            "services": [
+                {
+                    "name": "Web Design",
+                    "percentage": 60,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Search Engine Optimization",
+                    "percentage": 20,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "UX/UI Design",
+                    "percentage": 20,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Benova Tech Sdn Bhd is a web development company specializing in e-commerce solutions, providing clients with creative control and technical support. Reviews highlight their effective project management and communication, with 100% of reviewers noting ease of communication, though feedback on responsiveness varies. Overall, the company is commended for accommodating client requests and delivering satisfactory results.",
+            "websiteUrl": "https://benova.com.my/"
+        },
+        {
+            "id": 13,
+            "name": "Upstream BPO",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/498a7da9c6fe8d4b24496582cd8e5787.png",
+            "verified": true,
+            "rating": 5,
+            "reviewsCount": 100,
+            "priceRange": "$1,000+",
+            "hourlyRate": "Undisclosed",
+            "employeeCount": "1,000 - 9,999",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": " Call Center Services",
+                    "percentage": 65,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Sales Outsourcing",
+                    "percentage": 25,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": " Social Media Marketing",
+                    "percentage": 10,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Upstream BPO is a versatile business process outsourcing company specializing in social media marketing, answering services, and customer service solutions. They have been praised for their commitment, flexibility, and significant impact on clients' operations. With a 100% positive feedback rate, recurring themes in reviews highlight their excellent communication, attention to detail, and alignment with client values, leading to increased efficiency and cost savings.",
+            "websiteUrl": "https://www.upstreambpo.com/"
+        },
+        {
+            "id": 14,
+            "name": "Quocent",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/f5bd8a5e2995656b267117874c0e0b4f.jpeg",
+            "verified": true,
+            "rating": 4.5,
+            "reviewsCount": 100,
+            "priceRange": "$25,000+",
+            "hourlyRate": "< $25 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "AI Development",
+                    "percentage": 4,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Application Management & Support",
+                    "percentage": 4,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": " BI & Big Data Consulting",
+                    "percentage": 4,
+                    "color": "#9C27B0"
+                },
+                {
+                    "name": "Other services",
+                    "percentage": 88,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Quocent is an IT services company specializing in project management, software architecture, development, and quality assurance. Feedback indicates a strong caliber and quality work, with 100% of reviewers praising their problem-solving capabilities. However, 100% also suggest improvements in response time and adherence to project timelines.",
+            "websiteUrl": "https://quocent.com/"
+        },
+        {
+            "id": 15,
+            "name": "Code Melding",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/e2f60fe83c768ef9a3cbe14f790c9196_194610779664f86aec7224.png",
+            "verified": true,
+            "rating": 5,
+            "reviewsCount": 100,
+            "priceRange": "$1,000+",
+            "hourlyRate": "$25 - $49 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Petaling Jaya, Malaysia",
+            "services": [
+                {
+                    "name": "AI Consulting",
+                    "percentage": 15,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "AI Development",
+                    "percentage": 15,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Blockchain",
+                    "percentage": 15,
+                    "color": "#9C27B0"
+                },
+                {
+                    "name": "Other services",
+                    "percentage": 55,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Code Melding is a technology solutions company specializing in VPN server setups, mobile app development for iOS and Android, and responsive website creation. Clients commend their high-efficiency communication and professional project management, with 100% of reviews highlighting their timely delivery and responsiveness. While some suggest more frequent progress updates, overall satisfaction remains high.",
+            "websiteUrl": "https://codemelding.com/"
+        },
+        {
+            "id": 16,
+            "name": "Access Information & Technology Sdn Bhd",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/1822a3f52432d9bc363523d00199ef39.jpg",
+            "verified": true,
+            "rating": 4.9,
+            "reviewsCount": 100,
+            "priceRange": "Undisclosed",
+            "hourlyRate": "Undisclosed",
+            "employeeCount": "10 - 49",
+            "location": "Cyberjaya, Malaysia",
+            "services": [
+                {
+                    "name": "Mobile App Development",
+                    "percentage": 30,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Web Development",
+                    "percentage": 30,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Mobile & App Marketing",
+                    "percentage": 10,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Access Information & Technology Sdn Bhd is a web development company specializing in application development and digital solutions. Reviewers highlight their commitment, effective project management, and ability to deliver projects on time, despite challenges such as time zone differences. The feedback is overwhelmingly positive, with 100% of reviewers expressing satisfaction with their services and praising the professionalism and support provided by the team, particularly the CEO, Moeen.",
+            "websiteUrl": "https://access-itech.com/en"
+        },
+        {
+            "id": 17,
+            "name": "NetDB Services ",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/06af314b1d2204082c8a61d816d87fe2_175110256167ac4042ab5e4.png",
+            "verified": true,
+            "rating": 5,
+            "reviewsCount": 100,
+            "priceRange": "$5,000+",
+            "hourlyRate": "$100 - $149 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Puchong, Malaysia",
+            "services": [
+                {
+                    "name": "API Development",
+                    "percentage": 10,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Custom Software Development",
+                    "percentage": 10,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": " E-Commerce Development",
+                    "percentage": 10,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "NetDB Services is a software development house dedicated to delivering innovative and reliable digital solutions. We help businesses grow by providing efficient, scalable, and high-quality",
+            "websiteUrl": "https://netdbservices.com/"
+        },
+        {
+            "id": 18,
+            "name": "elfo",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/fca790832b6c20d81171b646e44025f4.png",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "Undisclosed",
+            "hourlyRate": "Undisclosed",
+            "employeeCount": "50 - 249",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Content Marketing",
+                    "percentage": 12,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Conversion Optimization",
+                    "percentage": 12,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": " Digital Strategy",
+                    "percentage": 12,
+                    "color": "#9C27B0"
+                },
+                {
+                    "name": "Other Digital Marketing",
+                    "percentage": 64,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Elfo, a Digital Strategy company, was founded in 2018. The team offers Digital Strategy and Social Media Marketing.",
+            "websiteUrl": "https://www.elfo.com/"
+        },
+        {
+            "id": 19,
+            "name": "Nick Metrics Marketing Agency",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/4e08c63fa014efa6f624f698affed8b8.jpeg",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$50,000+",
+            "hourlyRate": "$150 - $199 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Digital Strategy",
+                    "percentage": 20,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Other Digital Marketing",
+                    "percentage": 20,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": " Content Marketing",
+                    "percentage": 15,
+                    "color": "#9C27B0"
+                },
+                {
+                    "name": "Other Services",
+                    "percentage": 45,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Digital Strategy company Nick Metrics Marketing Agency was established in 2017. Based in Kuala Lumpur, Malaysia and Hyderabad, India, the team focuses on Digital Strategy and Other Digital",
+            "websiteUrl": "https://www.nickmetrics.com/"
+        },
+        {
+            "id": 20,
+            "name": "Exabytes Network Sdn. Bhd",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/da4583698e9d96bc14892c0600c7308e.jpeg",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$1,000+",
+            "hourlyRate": "$25 - $49 / hr",
+            "employeeCount": "50 - 249",
+            "location": "Bayan Lepas, Malaysia",
+            "services": [
+                {
+                    "name": "Content Marketing",
+                    "percentage": 20,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Other Digital Marketing",
+                    "percentage": 20,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Pay Per Click",
+                    "percentage": 20,
+                    "color": "#9C27B0"
+                },
+                {
+                    "name": "Other Services",
+                    "percentage": 40,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Exabytes Network Sdn. Bhd is a Content Marketing company. Their midsize team is headquartered in Bayan Lepas, Malaysia. Their services include Content Marketing and Other Digital Marketing.",
+            "websiteUrl": "https://www.exabytes.com/"
+        },
+        {
+            "id": 21,
+            "name": "Mediaplus Digital Pte Ltd",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/mediaplus_logo.png",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$5,000+",
+            "hourlyRate": "$100 - $149 / hr",
+            "employeeCount": "50 - 249",
+            "location": "Miri, Malaysia",
+            "services": [
+                {
+                    "name": "Search Engine Optimization",
+                    "percentage": 25,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": " Pay Per Click",
+                    "percentage": 20,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "E-Commerce Development",
+                    "percentage": 15,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Established in 2010, Mediaplus Digital Pte Ltd is a SEO company. The midsize team focuses on Search Engine Optimization and Pay Per Click.",
+            "websiteUrl": "https://mediaplus.com.sg/"
+        },
+        {
+            "id": 22,
+            "name": "2Stallions Digital Marketing Agency",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/70646a96e986c4775651537d9fd8f0cd.jpg",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$1,000+",
+            "hourlyRate": "$50 - $99 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Pay Per Click",
+                    "percentage": 30,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Search Engine Optimization",
+                    "percentage": 30,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Digital Strategy",
+                    "percentage": 10,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "2Stallions Digital Marketing Agency is a SEO services firm founded in 2012. The team offers Search Engine Optimization and Pay Per Click.",
+            "websiteUrl": "https://2stallions.com/"
+        },
+        {
+            "id": 23,
+            "name": "MYSense Marketing",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/de28653282b8bed61fc7d3fd9120506d.jpeg",
+            "verified": true,
+            "rating": 5,
+            "reviewsCount": 100,
+            "priceRange": "$1,000+",
+            "hourlyRate": "$25 - $49 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Petaling Jaya, Malaysia",
+            "services": [
+                {
+                    "name": "Digital Strategy",
+                    "percentage": 40,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Social Media Marketing",
+                    "percentage": 20,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Business Consulting",
+                    "percentage": 15,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "MYSense Marketing offers brand building, digital platform presence, and lead generation services. Reviews highlight their expertise in elevating brand awareness and driving conversions, with clients noting significant improvements in leads and appointments. Feedback emphasizes their innovative approach and effective project management, although there is a desire for more cost-effective campaigns.",
+            "websiteUrl": "https://mysense.com.my/"
+        },
+        {
+            "id": 24,
+            "name": "BitQuest Sdn Bhd",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/e196d756649b487fcba0cf6c4b1bc26a.png",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "Undisclosed",
+            "hourlyRate": "Undisclosed",
+            "employeeCount": "10 - 49",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Search Engine Optimization",
+                    "percentage": 30,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Social Media Marketing",
+                    "percentage": 30,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Pay Per Click",
+                    "percentage": 20,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "BitQuest Sdn Bhd, a SEO company, was founded in 2017. The agency provides Search Engine Optimization and Social Media Marketing, and is small.",
+            "websiteUrl": "https://www.bitquest.net/"
+        },
+        {
+            "id": 25,
+            "name": "Wave Evolution",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/wave_evolution.png",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$5,000+",
+            "hourlyRate": "$100 - $149 / hr",
+            "employeeCount": "2 - 9",
+            "location": "Petaling Jaya, Malaysia",
+            "services": [
+                {
+                    "name": "Email Marketing",
+                    "percentage": 25,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Pay Per Click",
+                    "percentage": 25,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Search Engine Optimization",
+                    "percentage": 25,
+                    "color": "#9C27B0"
+                },
+                {
+                    "name": "Social Media Marketing",
+                    "percentage": 25,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Wave Evolution is an Email Marketing company. Based in Petaling Jaya, Malaysia, the company was founded in 2007. Their team specializes in Email Marketing and Pay Per Click.",
+            "websiteUrl": "https://www.waveevo.com/"
+        },
+        {
+            "id": 26,
+            "name": "ViSight Marketing as a Service",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/53fb9efe0bd1f6e958c3ba8b0ca954fa.png",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$1,000+",
+            "hourlyRate": "< $25 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Pay Per Click",
+                    "percentage": 40,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": " Search Engine Optimization",
+                    "percentage": 30,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Social Media Marketing",
+                    "percentage": 20,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "ViSight Marketing as a Service is a PPC agency. Launched in 2011, the firm is in Kuala Lumpur, Malaysia. Their services include Pay Per Click and Search Engine Optimization.",
+            "websiteUrl": "https://visightlimited.com/"
+        },
+        {
+            "id": 27,
+            "name": "Whoosh Media",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/e0234bc6e6463d5e51e6081b21a1bd5f.jpg",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$1,000+",
+            "hourlyRate": "< $25 / hr",
+            "employeeCount": "50 - 249",
+            "location": "Petaling Jaya, Malaysia",
+            "services": [
+                {
+                    "name": "Branding",
+                    "percentage": 20,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Content Marketing",
+                    "percentage": 20,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "  Search Engine Optimization",
+                    "percentage": 15,
+                    "color": "#9C27B0"
+                },
+                {
+                    "name": "Other Services",
+                    "percentage": 45,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Whoosh Media is a branding agency headquartered in Petaling Jaya, Malaysia and Singapore, Singapore. They specialize in Branding and Content Marketing and were established in 2017",
+            "websiteUrl": "https://www.whoosh-media.com/"
+        },
+        {
+            "id": 28,
+            "name": "Paperballad",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/2add32b5ec477a019b14b20efb4edada.png",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$1,000+",
+            "hourlyRate": "Undisclosed",
+            "employeeCount": "2 - 9",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Content Marketing",
+                    "percentage": 40,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": " Business Consulting",
+                    "percentage": 30,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": " Branding",
+                    "percentage": 10,
+                    "color": "#9C27B0"
+                },
+                {
+                    "name": "Other Services",
+                    "percentage": 20,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Paperballad is a Content Marketing company. Their team is based in Kuala Lumpur, Malaysia. The company specializes in Content Marketing and Business Consulting.",
+            "websiteUrl": "https://paperballad.com/"
+        },
+        {
+            "id": 29,
+            "name": "Fovty Tech Sdn Bhd",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/d80867ad90b2b6033309c8b4ce1b5861.png",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$50,000+",
+            "hourlyRate": "$50 - $99 / hr",
+            "employeeCount": "250 - 999",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": " Affiliate Marketing",
+                    "percentage": 10,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Content Marketing",
+                    "percentage": 10,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Conversion Optimization",
+                    "percentage": 10,
+                    "color": "#9C27B0"
+                },
+                {
+                    "name": "Other Services",
+                    "percentage": 70,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Established in 2020, Fovty Tech Sdn Bhd is a Digital Strategy company. The agency focuses on Digital Strategy and Social Media Marketing.",
+            "websiteUrl": "https://fovtytech.com/"
+        },
+        {
+            "id": 30,
+            "name": "TIARA DIGITAL ADVERTISING",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/6339631fdc3d8de801c928fb5a8ea18b.png",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$1,000+",
+            "hourlyRate": "Undisclosed",
+            "employeeCount": "10 - 49",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Content Marketing",
+                    "percentage": 20,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Pay Per Click",
+                    "percentage": 20,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Social Media Marketing",
+                    "percentage": 20,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "TIARA DIGITAL ADVERTISING is a social media marketing firm. The team offers Social Media Marketing and Content Marketing, and the firm is located in Kuala Lumpur, Malaysia.",
+            "websiteUrl": "https://tiara.my/"
         }
     ]
 }
