@@ -324,6 +324,671 @@
             "additionalServices": 3,
             "description": "Branding firm Brand360 was established in 2007. The company focuses on Branding and Marketing Strategy.",
             "websiteUrl": "https://clutch.co/profile/brand360"
+        },
+        {
+            "id": 11,
+            "name": "Getright Malaysia Sdn Bhd",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/getright_malaysia_sdn_bhd_logo.png",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$5,000+",
+            "hourlyRate": "$100 - $149 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Petaling Jaya, Malaysia",
+            "services": [
+                {
+                    "name": "Graphic Design",
+                    "percentage": 20,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Mobile & App Marketing",
+                    "percentage": 20,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Search Engine Optimizati",
+                    "percentage": 20,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Other Services",
+                    "percentage": 60,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Getright Malaysia Sdn Bhd is a small graphic design agency based in Petaling Jaya, Malaysia and Kuala Lumpur, Malaysia. The team offers Graphic Design and Mobile & App Marketing.",
+            "websiteUrl": "https://www.getright.com.my/"
+        },
+        {
+            "id": 12,
+            "name": "Kingdom Digital",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/kingdom_digital.png",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$5,000+",
+            "hourlyRate": "$100 - $149 / hr",
+            "employeeCount": "50 - 249",
+            "location": "Petaling Jaya, Malaysia",
+            "services": [
+                {
+                    "name": "Graphic Design",
+                    "percentage": 25,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Social Media Marketing",
+                    "percentage": 20,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Digital Strategy",
+                    "percentage": 15,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Kingdom Digital is a social media marketing firm launched in 2007. The midsize team provides Social Media Marketing and Digital Strategy.",
+            "websiteUrl": "https://kingdomdigital.com.my/"
+        },
+        {
+            "id": 13,
+            "name": "Company Profile Design MY",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/a6fbe74b307826edce2dd9ac6797d2dc_14427738166798b654082ea.jpg",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "Undisclosed",
+            "hourlyRate": "Undisclosed",
+            "employeeCount": "50 - 249",
+            "location": "Banting, Malaysia",
+            "services": [
+                {
+                    "name": "Graphic Design",
+                    "percentage": 20,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Logo",
+                    "percentage": 20,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Other Design",
+                    "percentage": 20,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Company Profile Design MY is an user experience design agency. The Banting, Malaysia-based firm was established in 2023. Their team offers UX/UI Design and Graphic Design.",
+            "websiteUrl": "https://www.companyprofiledesign.my/"
+        },
+        {
+            "id": 14,
+            "name": "Xwork Digital Agency",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/xwork_digital_agency.png",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$5,000+",
+            "hourlyRate": "$100 - $149 / hr",
+            "employeeCount": "2 - 9",
+            "location": "Skudai, Malaysia",
+            "services": [
+                {
+                    "name": "Graphic Design",
+                    "percentage": 20,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "E-Commerce Development",
+                    "percentage": 20,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Pay Per Click",
+                    "percentage": 25,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Xwork Digital Agency is an e-commerce development firm. The team offers E-Commerce Development and Graphic Design and is located in Skudai, Malaysia.",
+            "websiteUrl": "https://www.xwork.my/"
+        },
+        {
+            "id": 15,
+            "name": "Atelier Oost",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/7e3bc4d5d30842ca0cb0d9ffa95bfea9.png",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$5,000+",
+            "hourlyRate": "Undisclosed",
+            "employeeCount": "2 - 9",
+            "location": "Johor Bahru, Malaysia",
+            "services": [
+                {
+                    "name": "Graphic Design",
+                    "percentage": 20,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Branding",
+                    "percentage": 50,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Content Writing Services",
+                    "percentage": 15,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Atelier Oost is a branding company. Established in 2009, their team provides Branding and Graphic Design.",
+            "websiteUrl": "https://www.atelier-oost.com/"
+        },
+        {
+            "id": 16,
+            "name": "3thirds Inc",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/8d892533bbc2d347c8e2d8dadc771966.jpg",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$1,000+",
+            "hourlyRate": "$150 - $199 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Subang Jaya, Malaysia",
+            "services": [
+                {
+                    "name": "Graphic Design",
+                    "percentage": 10,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Advertising",
+                    "percentage": 10,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": " Branding",
+                    "percentage": 10,
+                    "color": "#9C27B0"
+                },
+                {
+                    "name": "Other Services",
+                    "percentage": 70,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "3thirds Inc is a small Advertising company. Founded in 1996, the team provides Advertising and Branding.",
+            "websiteUrl": "https://www.3thirds.my/"
+        },
+        {
+            "id": 17,
+            "name": "Kreativ Hub",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/c4597934c4ff8aa5b5d25f26898d3d87.jpeg",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$1,000+",
+            "hourlyRate": "$25 - $49 / hr",
+            "employeeCount": "2 - 9",
+            "location": "Cheras, Malaysia",
+            "services": [
+                {
+                    "name": "Graphic Design",
+                    "percentage": 25,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Video Production",
+                    "percentage": 20,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": " Logo",
+                    "percentage": 15,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Kreativ Hub is a graphic design agency. Located in Cheras, Malaysia, the agency focuses on Graphic Design and Video Production.",
+            "websiteUrl": "https://www.kreative-hub.com/"
+        },
+        {
+            "id": 18,
+            "name": "Project M Advertising & Brand Consultancy",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/b561dd7ec84b539ac1b98405c96da73f.jpg",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "Undisclosed",
+            "hourlyRate": "Undisclosed",
+            "employeeCount": "10 - 49",
+            "location": "Johor Bahru, Malaysia",
+            "services": [
+                {
+                    "name": " Graphic Design",
+                    "percentage": 10,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Branding",
+                    "percentage": 60,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Corporate Photography ",
+                    "percentage": 10,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Established in 2013, Project M Advertising & Brand Consultancy, a small branding firm, is in Johor Bahru, Malaysia. Their team provides Branding and Social Media Marketing.",
+            "websiteUrl": "https://www.projectm.my/"
+        },
+        {
+            "id": 19,
+            "name": "decore",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/e16909f0ff8519ee1b0d6259f48e5682.jpg",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$5,000+",
+            "hourlyRate": "$25 - $49 / hr",
+            "employeeCount": "2 - 9",
+            "location": "Petaling Jaya, Malaysia",
+            "services": [
+                {
+                    "name": "Graphic Design",
+                    "percentage": 20,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Advertising",
+                    "percentage": 20,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Branding",
+                    "percentage": 20,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Located in Petaling Jaya, Malaysia, decore is an Advertising company. The team offers Advertising and Branding.",
+            "websiteUrl": "https://www.merriam-webster.com/dictionary/decore"
+        },
+        {
+            "id": 20,
+            "name": "DNL Group",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/7bfb08cad4000a93469b44aad9784e6b_13968149966832b37a04611.jpg",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "Undisclosed",
+            "hourlyRate": "Undisclosed",
+            "employeeCount": "2 - 9",
+            "location": "Kajang, Malaysia",
+            "services": [
+                {
+                    "name": "Graphic Design",
+                    "percentage": 20,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": " Event Management",
+                    "percentage": 60,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": " Corporate Photography",
+                    "percentage": 10,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "DNL Group is an Event Management company. They focus on Event Management and Graphic Design and are headquartered in Kajang, Malaysia.",
+            "websiteUrl": "https://www.dnlgroup.in/"
+        },
+        {
+            "id": 21,
+            "name": "Fusionbrand",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/0c579c5c1fd34ec5847d6343c81ccc23_21391070316715df3932f18.png",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$25,000+",
+            "hourlyRate": "Undisclosed",
+            "employeeCount": "10 - 49",
+            "location": "Petaling Jaya, Malaysia",
+            "services": [
+                {
+                    "name": "Graphic Design",
+                    "percentage": 10,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Branding",
+                    "percentage": 25,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Logo",
+                    "percentage": 15,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Fusionbrand is a branding firm founded in 2003. The small team offers Branding and Logo.",
+            "websiteUrl": "https://fusionbrand.com/"
+        },
+        {
+            "id": 22,
+            "name": "Silver Mouse",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/313e8dd6bf1176df4a130a474e5ffd31.gif",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$1,000+",
+            "hourlyRate": "$50 - $99 / hr",
+            "employeeCount": "10 - 49",
+            "location": "Petaling Jaya, Malaysia",
+            "services": [
+                {
+                    "name": "Graphic Design",
+                    "percentage": 10,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Pay Per Click",
+                    "percentage": 20,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Social Media Marketing",
+                    "percentage": 20,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Pay per click agency Silver Mouse is headquartered in Petaling Jaya, Malaysia. Established in 2014, the team focuses on Pay Per Click and Social Media Marketing.",
+            "websiteUrl": "https://www.silvermouse.com.my/"
+        },
+        {
+            "id": 23,
+            "name": "Budget website design | Unlimited Pages In Malaysia",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/1f075fb510fcae28e5885e7d05356924.png",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$1,000+",
+            "hourlyRate": "< $25 / hr",
+            "employeeCount": "2 - 9",
+            "location": "Johor Bahru, Malaysia",
+            "services": [
+                {
+                    "name": "Graphic Design",
+                    "percentage": 10,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Web Design",
+                    "percentage": 60,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Logo",
+                    "percentage": 10,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Budget website design | Unlimited Pages In Malaysia is a web design agency. The agency is in Johor Bahru, Malaysia. Their team specializes in Web Design and Graphic Design.",
+            "websiteUrl": "https://budgetwebdesign.com.my/"
+        },
+        {
+            "id": 24,
+            "name": "PYORR Creative Studio",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/5e55cb5890bb3b5df196e75f3295c47f.jpeg",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$1,000+",
+            "hourlyRate": "Undisclosed",
+            "employeeCount": "2 - 9",
+            "location": "Cyberjaya, Malaysia",
+            "services": [
+                {
+                    "name": "Graphic Design",
+                    "percentage": 20,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Print Design",
+                    "percentage": 20,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "UX/UI Design",
+                    "percentage": 20,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Small user experience design agency PYORR Creative Studio, is based in Cyberjaya, Malaysia. The team specializes in UX/UI Design and Graphic Design.",
+            "websiteUrl": "https://pyorrcreative.my/"
+        },
+        {
+            "id": 25,
+            "name": "Signcotive Sdn Bhd",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/bbd362ea670205278e668f84edcefca1_1465258523677af8865f82e.png",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$10,000+",
+            "hourlyRate": "$50 - $99 / hr",
+            "employeeCount": "2 - 9",
+            "location": "Petaling Jaya, Malaysia",
+            "services": [
+                {
+                    "name": "Graphic Design",
+                    "percentage": 20,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Branding",
+                    "percentage": 20,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Search Engine Optimization",
+                    "percentage": 20,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Signcotive Sdn Bhd is a branding firm. The company is in Petaling Jaya, Malaysia. Their team offers Branding and Search Engine Optimization.",
+            "websiteUrl": "https://signcotive.com/"
+        },
+        {
+            "id": 26,
+            "name": "Scalemodel3dprinting",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/511e38eb45bae796137cf8d8e8eb3b87_805280738679b269fa9a47.png",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "Undisclosed",
+            "hourlyRate": "Undisclosed",
+            "employeeCount": "2 - 9",
+            "location": "Subang Jaya, Malaysia",
+            "services": [
+                {
+                    "name": " Graphic Design",
+                    "percentage": 20,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Contract Manufacturing",
+                    "percentage": 20,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "IT Managed Services",
+                    "percentage": 20,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Scalemodel3dprinting, a Product Design company, is headquartered in Subang Jaya, Malaysia. They offer Product Design and Graphic Design and were launched in 2010.",
+            "websiteUrl": "https://scalemodel3dprinting.com/"
+        },
+        {
+            "id": 27,
+            "name": "Digital Mill",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/39f162a2c7b7d3189fe3b7d3a0365e1c.png",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$1,000+",
+            "hourlyRate": "< $25 / hr",
+            "employeeCount": "2 - 9",
+            "location": "Petaling Jaya, Malaysia",
+            "services": [
+                {
+                    "name": " Graphic Design",
+                    "percentage": 15,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Advertising",
+                    "percentage": 15,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Content Marketing",
+                    "percentage": 15,
+                    "color": "#9C27B0"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Digital Mill is an Advertising company established in 2021. Headquartered in Leeds, England and Petaling Jaya, Malaysia, the team focuses on Advertising and Content Marketing.",
+            "websiteUrl": "https://digitalmill.studio/"
+        },
+        {
+            "id": 28,
+            "name": "Gin+ Tonic",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/00e77b42eb743074fa57a46570f463a3.png",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$1,000+",
+            "hourlyRate": "Undisclosed",
+            "employeeCount": "2 - 9",
+            "location": "Johor Bahru, Malaysia",
+            "services": [
+                {
+                    "name": " Graphic Design",
+                    "percentage": 10,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Advertising",
+                    "percentage": 10,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Branding",
+                    "percentage": 10,
+                    "color": "#9C27B0"
+                },
+                {
+                    "name": "Other Services",
+                    "percentage": 70,
+                    "color": "#4CAF50"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Gin+ Tonic is an Advertising company. Their team is based in Johor Bahru, Malaysia and provides Advertising and Branding.",
+            "websiteUrl": "https://www.ginplustonic.co/"
+        },
+        {
+            "id": 29,
+            "name": "W3Rider Global Sdn. Bhd.",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/ef2d5b762d631a7786611a1e4c87c724.png",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$1,000+",
+            "hourlyRate": "$25 - $49 / hr",
+            "employeeCount": "2 - 9",
+            "location": "Seremban, Malaysia",
+            "services": [
+                {
+                    "name": "Graphic Design",
+                    "percentage": 10,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": "Mobile App Development",
+                    "percentage": 40,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Search Engine Optimization",
+                    "percentage": 30,
+                    "color": "#9C27B0"
+                },
+                {
+                    "name": "Other Services",
+                    "percentage": 10,
+                    "color": "#4CAF50"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "W3Rider Global Sdn. Bhd. Is a mobile app development company. The Seremban, Malaysia-based team provides Mobile App Development and Search Engine Optimization.",
+            "websiteUrl": "https://www.w3rider.my/"
+        },
+        {
+            "id": 30,
+            "name": "Malaysia Social Media Marketing Agency",
+            "logo": "https://img.shgstatic.com/clutch-static-prod/image/scale/50x50/s3fs-public/logos/d33ba021854d638194559d5d153fd937.jpg",
+            "verified": true,
+            "rating": 0,
+            "reviewsCount": 100,
+            "priceRange": "$1,000+",
+            "hourlyRate": "$25 - $49 / hr",
+            "employeeCount": "2 - 9",
+            "location": "Kuala Lumpur, Malaysia",
+            "services": [
+                {
+                    "name": "Graphic Design",
+                    "percentage": 10,
+                    "color": "#E91E63"
+                },
+                {
+                    "name": " Social Media Marketing",
+                    "percentage": 30,
+                    "color": "#FF9800"
+                },
+                {
+                    "name": "Search Engine Optimization",
+                    "percentage": 20,
+                    "color": "#9C27B0"
+                },
+                {
+                    "name": "Other Services",
+                    "percentage": 40,
+                    "color": "#4CAF50"
+                }
+            ],
+            "additionalServices": 3,
+            "description": "Malaysia Social Media Marketing Agency is a Kuala Lumpur, Malaysia-based social media marketing agency. They provide Social Media Marketing and Search Engine Optimization.",
+            "websiteUrl": "https://malaysiasocialmediamarketing.com/"
         }
     ]
 }

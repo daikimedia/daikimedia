@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Minus,
   Plus,
@@ -46,12 +46,12 @@ const benefits = [
 
 const faqs = [
   {
-    question: " What is the average cost of hiring an SEO company?",
+    question: "What is the average cost of hiring an SEO company?",
     answer:
       "The cost varies based on services, but quality SEO typically ranges from $750 to $5000 per month.",
   },
   {
-    question: " How long does it take to see results?",
+    question: "How long does it take to see results?",
     answer:
       "While some improvements can be seen in 3-6 months, consistent SEO delivers long-term results over time.",
   },
@@ -66,6 +66,116 @@ const faqs = [
       "We offer personalized strategies, transparent reporting, and a proven track record of helping businesses grow organically.",
   },
 ];
+
+const paaQuestions = [
+  {
+    question: "How does Search Engine Optimization (SEO) improve a website’s visibility?",
+    answer: "SEO, short for Search Engine Optimization, refers to the strategic process of improving a website's visibility on platforms like Google. It works by optimizing various elements on your website — such as content, meta tags, internal linking, and page speed — to make it easier for search engines to understand and rank your pages. By aligning your site with search engine algorithms and user intent, SEO helps you attract more qualified traffic, boost brand credibility, and ultimately drive better conversions without relying on paid ads.",
+  },
+  {
+    question: "What are the main types of SEO strategies?",
+    answer: "The four main categories of SEO are: 1) On-Page SEO – This focuses on optimizing the content and structure within your website, like meta tags, keywords, headers, and internal linking. 2) Off-Page SEO – It involves building authority through backlinks, brand mentions, and sharing content across other platforms. 3) Technical SEO – This ensures your site meets search engine requirements by improving speed, mobile-friendliness, security (HTTPS), and crawlability. 4) Local SEO– Aimed at improving visibility for location-based searches, using tools like Google Business Profile, local citations, and reviews. Each type plays a vital role in helping your website rank higher and connect better with the right audience.",
+  },
+  {
+    question: "How can I start learning SEO for free?",
+    answer: "Yes, you can absolutely learn and master SEO for free if you're consistent and curious. There are tons of high-quality resources available online — including blogs, YouTube tutorials, free SEO tools, and forums — that cover everything from basics to advanced strategies. By applying what you learn through hands-on practice on your own website or a demo project, you can build real SEO skills without spending a single rupee. The key is dedication, staying updated with Google algorithm changes, and practicing regularly."
+  },
+  {
+    question: "Can you share some real-life examples of SEO in action?",
+    answer: "Sure! Here are some real examples of how SEO works in practice: 1) Optimizing a blog post by using the right keywords, adding internal links, writing a compelling meta title and description — so it appears on Google when users search for related topics. 2) Improving page speed and mobile responsiveness to reduce bounce rate and increase rankings on mobile search results. 3) Building backlinks by guest posting on relevant websites or getting listed in niche directories — helping your domain gain authority in Google's eyes. 4) Creating a Google Business Profile for a local service (like a salon or a clinic) so it shows up in nearby searches like 'best salon near me.' 5) Fixing broken links and duplicate content to ensure search engines crawl your site smoothly and rank it better. Each of these actions directly helps a site become more visible, user-friendly, and search engine ready.",
+  },
+  {
+    question: "Which three core pillars form the foundation of SEO?",
+    answer: "The three core pillars of SEO are: 1) Technical SEO – This sets the foundation by ensuring your website is crawlable, secure (HTTPS), mobile-friendly, and loads fast. It helps search engines properly access and index your site. 2) On-Page SEO – This focuses on everything visible on your website — like keyword-optimized content, title tags, headers, images, and internal links. It ensures your pages are relevant and valuable to both users and search engines. 3) Off-Page SEO – This builds your site's authority through external signals like backlinks, social shares, and brand mentions. It shows search engines that others trust your content. Together, these three areas work in harmony to boost visibility, increase traffic, and improve overall rankings in search results.",
+  },
+  {
+    question: "What is the most effective tool for SEO?",
+    answer: "To implement strong SEO strategies, marketers and website owners rely on powerful tools that offer deep insights and automation. Here are some of the most trusted ones: 1) Google Search Console – Free tool by Google to monitor website performance, indexing status, and fix technical issues. 2) Ahrefs– Great for backlink analysis, keyword research, and competitor tracking. 3) Yoast SEO (for WordPress) – Helps optimize on-page content with real-time suggestions. 4) Screaming Frog– A desktop crawler that scans your site for broken links, duplicate content, and technical errors. 5) Ubersuggest – Beginner-friendly tool for keyword research, traffic insights, and SEO audits. 6) Google Analytics – Tracks user behavior, traffic sources, and engagement to help refine SEO strategies. Using a mix of these tools helps you stay ahead in SEO by combining data, optimization, and strategy.",
+  },
+  {
+    question: "Do I need an expert, or can I do SEO on my own?",
+    answer: "Yes, you can do SEO on your own, but it requires dedication, learning, and consistent effort. Many businesses successfully manage their SEO in-house by using free resources, tools, and guides available online. However, SEO is complex and constantly evolving, so it can be time-consuming to stay updated with algorithm changes and best practices. Professional SEO companies like Daiki Media have the expertise, tools, and experience to deliver faster results while you focus on running your business. The choice depends on your available time, budget, and how quickly you want to see results.",
+  },
+  {
+    question: "Does Google use SEO for its own platforms?",
+    answer: "While Google doesn't 'do SEO' for its own search engine in the traditional sense, it absolutely promotes SEO best practices for website owners. Google provides clear guidelines through its Search Essentials (formerly Webmaster Guidelines), encouraging sites to be fast, mobile-friendly, secure (HTTPS), and valuable to users. Additionally, Google offers tools like Search Console, PageSpeed Insights, and Mobile-Friendly Test to help webmasters improve their SEO. So, while Google doesn't optimize its own platform for rankings (since it runs the search engine itself), it actively educates and supports the global SEO community in building better, search-friendly websites.",
+  },
+  {
+    question: "What exactly is a backlink and why does it matter?",
+    answer: "Backlinks are links from other websites that point to your site — like digital votes of trust. When a reputable website links to your content, it signals to search engines that your page is valuable, credible, and worth ranking higher. Here's how they work: 1) Authority Boost – The more high-quality backlinks you earn, the more search engines trust your domain. 2) Referral Traffic – Backlinks also drive visitors from other websites directly to yours, increasing exposure. 3) Indexing Support – Search engines discover new pages faster when they are linked from other indexed sites. 4) Relevance Signals– If a backlink comes from a site in a similar niche, it helps Google understand your content's context better. But not all backlinks are equal — links from spammy or irrelevant sources can harm SEO. So quality matters more than quantity.",
+  }
+];
+
+// Schema generation functions
+const generateFAQSchema = (faqs) => {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+};
+
+const generateArticleSchema = () => {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "What is an SEO Company and Why Your Business Needs One",
+    "description": "Discover how Daiki Media can help your business rank higher, drive traffic, and grow revenue with expert SEO services.",
+    "author": {
+      "@type": "Organization",
+      "name": "Daiki Media"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Daiki Media",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.daikimedia.com/logo.png"
+      }
+    },
+    "datePublished": "2024-01-01",
+    "dateModified": "2024-12-01",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.daikimedia.com/learn/what-is-seo-company"
+    }
+  };
+};
+
+const generateBreadcrumbSchema = () => {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.daikimedia.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Learn",
+        "item": "https://www.daikimedia.com/learn"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "What is SEO Company",
+        "item": "https://www.daikimedia.com/learn/what-is-seo-company"
+      }
+    ]
+  };
+};
+
 export const metadata = {
   title: "SEO Optimization Companies | Expert SEO Services for Business | Daiki Media",
   canonicalUrl: "https://www.daikimedia.com/learn/what-is-seo-company",
@@ -75,14 +185,68 @@ export const metadata = {
     "SEO company, Daikai Media, search engine optimization, SEO services, online visibility, SEO strategies, improve website ranking",
 };
 
+
 export default function SeoCompany() {
   const [openIndex, setOpenIndex] = useState(null);
+  const [openPAAIndex, setOpenPAAIndex] = useState(null);
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
+  const togglePAA = (index) => {
+    setOpenPAAIndex(openPAAIndex === index ? null : index);
+  };
+
+  // Add structured data to head
+  useEffect(() => {
+    // FAQ Schema
+    const faqSchema = generateFAQSchema([...faqs, ...paaQuestions]);
+    const faqScript = document.createElement('script');
+    faqScript.type = 'application/ld+json';
+    faqScript.text = JSON.stringify(faqSchema);
+    faqScript.id = 'faq-schema';
+
+    // Article Schema
+    const articleSchema = generateArticleSchema();
+    const articleScript = document.createElement('script');
+    articleScript.type = 'application/ld+json';
+    articleScript.text = JSON.stringify(articleSchema);
+    articleScript.id = 'article-schema';
+
+    // Breadcrumb Schema
+    const breadcrumbSchema = generateBreadcrumbSchema();
+    const breadcrumbScript = document.createElement('script');
+    breadcrumbScript.type = 'application/ld+json';
+    breadcrumbScript.text = JSON.stringify(breadcrumbSchema);
+    breadcrumbScript.id = 'breadcrumb-schema';
+
+    // Add to head
+    document.head.appendChild(faqScript);
+    document.head.appendChild(articleScript);
+    document.head.appendChild(breadcrumbScript);
+
+    // Cleanup function
+    return () => {
+      const existingFaqScript = document.getElementById('faq-schema');
+      const existingArticleScript = document.getElementById('article-schema');
+      const existingBreadcrumbScript = document.getElementById('breadcrumb-schema');
+
+      if (existingFaqScript) {
+        document.head.removeChild(existingFaqScript);
+      }
+      if (existingArticleScript) {
+        document.head.removeChild(existingArticleScript);
+      }
+      if (existingBreadcrumbScript) {
+        document.head.removeChild(existingBreadcrumbScript);
+      }
+    };
+  }, []);
+
+
   return (
-    <div className="min-h-screen">
+    <div className=" container mx-auto">
       {/* Hero Section */}
       <section className="mt-32 px-4">
         <div className="max-w-6xl mx-auto text-center">
@@ -115,7 +279,7 @@ export default function SeoCompany() {
             </p>
             <a
               href="/contact"
-              className="inline-block bg-white dark:text-black dark:hover:text-white  font-semibold px-6 py-3 rounded-full shadow hover:bg-black hover:text-white transition duration-300"
+              className="btn btn-navbar btn-sm"
             >
               Contact Us
             </a>
@@ -140,7 +304,7 @@ export default function SeoCompany() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-4">
-            <div className="p-6 rounded-3xl border-2 bg-white border-black hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out transform">
+            <div className="p-6 rounded-3xl border-2 bg-white border-black  transition-all duration-300 ease-in-out transform">
               <div className="flex items-center mb-4">
                 <KeyRound className="w-8 h-8 text-black mr-3" />
                 <h3 className="text-xl dark:text-black font-semibold">1. Keyword Research</h3>
@@ -150,7 +314,7 @@ export default function SeoCompany() {
               </p>
             </div>
 
-            <div className="p-6 rounded-3xl border-2 bg-white border-black hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out transform">
+            <div className="p-6 rounded-3xl border-2 bg-white border-black  transition-all duration-300 ease-in-out transform">
               <div className="flex items-center mb-4">
                 <FileCode className="w-8 h-8 text-black mr-3" />
                 <h3 className="text-xl  dark:text-black font-semibold">2. On-Page SEO</h3>
@@ -161,7 +325,7 @@ export default function SeoCompany() {
               </p>
             </div>
 
-            <div className="p-6 rounded-3xl border-2 border-black bg-white hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out transform">
+            <div className="p-6 rounded-3xl border-2 border-black bg-white  transition-all duration-300 ease-in-out transform">
               <div className="flex items-center mb-4">
                 <Cpu className="w-8 h-8 text-black mr-3" />
                 <h3 className="text-xl dark:text-black font-semibold">3. Technical SEO</h3>
@@ -169,7 +333,7 @@ export default function SeoCompany() {
               <p className="dark:text-black">Ensuring your website is fast, secure, and mobile-friendly.</p>
             </div>
 
-            <div className="p-6 rounded-3xl border-2 bg-white border-black hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out transform">
+            <div className="p-6 rounded-3xl border-2 bg-white border-black transition-all duration-300 ease-in-out transform">
               <div className="flex items-center mb-4">
                 <Link2 className="w-8 h-8 text-black mr-3" />
                 <h3 className="text-xl font-semibold dark:text-black">4. Off-Page SEO</h3>
@@ -200,80 +364,9 @@ export default function SeoCompany() {
         </div>
       </section>
 
-      {/* mini CTA Section */}
+      {/* Benefits Section */}
       <section className="mt-32">
-        <div className="container mx-auto px-6 lg:px-12">
-          <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-8">
-            The Role of an SEO Company: From Strategy to Execution
-          </h1>
-          <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-12">
-            An SEO company like Daiki Media does more than tweak keywords. We
-            offer end-to-end solutions to improve your online visibility.
-            Here&apos;s how:
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white border-2 border-black shadow-lg rounded-3xl p-6 hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out transform">
-              <h2 className="text-xl font-semibold dark:text-red-500 mb-4">
-                Website Audits
-              </h2>
-              <p className="dark:text-gray-600">
-                Comprehensive analysis of your website&apos;s performance.
-              </p>
-            </div>
-            <div className="bg-white border-2 border-black shadow-lg rounded-3xl p-6 hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out transform">
-              <h2 className="text-xl font-semibold dark:text-red-500 mb-4">
-                Competitor Analysis
-              </h2>
-              <p className="dark:text-gray-600">
-                Studying your industry to outrank your competitors.
-              </p>
-            </div>
-            <div className="bg-white border-2 border-black shadow-lg rounded-3xl p-6 hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out transform">
-              <h2 className="text-xl font-semibold dark:text-red-500 mb-4">
-                Customized Strategies
-              </h2>
-              <p className="dark:text-gray-600">
-                Tailoring solutions based on your goals and audience.
-              </p>
-            </div>
-            <div className="bg-white border-2 border-black shadow-lg rounded-3xl p-6 hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out transform">
-              <h2 className="text-xl font-semibold dark:text-red-500 mb-4">
-                Content Creation
-              </h2>
-              <p className="dark:text-gray-600">
-                Developing blog posts, landing pages, and other content
-                optimized for search.
-              </p>
-            </div>
-            <div className="bg-white border-2 border-black shadow-lg rounded-3xl p-6 hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out transform">
-              <h2 className="text-xl font-semibold dark:text-red-500 mb-4">
-                Technical Fixes
-              </h2>
-              <p className="dark:text-gray-600">
-                Improving site speed, fixing broken links, and enhancing mobile
-                usability.
-              </p>
-            </div>
-            <div className="bg-white border-2 border-black shadow-lg rounded-3xl p-6 hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out transform">
-              <h2 className="text-xl font-semibold dark:text-red-500 mb-4">
-                Analytics & Reporting
-              </h2>
-              <p className="dark:text-gray-600">
-                Measuring performance and adapting strategies for continuous
-                growth.
-              </p>
-            </div>
-          </div>
-          <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto mt-12">
-            At Daiki Media, we don&apos;t just help you rank higher; we help you
-            convert visitors into customers.
-          </p>
-        </div>
-      </section>
-
-      {/* card 4 Section */}
-      <section className="mt-32">
-        <div className=" px-6 lg:px-12 py-10 rounded-3xl shadow-lg border border-black">
+        <div className=" px-6 lg:px-12 py-10 container mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-black">
             Why Your Business Needs Daiki Media&apos;s SEO Expertise
           </h2>
@@ -285,7 +378,7 @@ export default function SeoCompany() {
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-3xl border border-black shadow-md hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-105"
+                className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-3xl border border-black shadow-md  transition-all duration-300 ease-in-out transform "
               >
                 <div className="bg-black rounded-full p-3 mb-4">
                   <benefit.icon className="w-8 h-8 text-white" />
@@ -306,91 +399,18 @@ export default function SeoCompany() {
         </div>
       </section>
 
-      <section className="mt-32">
-        <div className="container mx-auto px-6 lg:px-12 py-10 rounded-xl border-2xl shadow-lg border border-gray-300">
-          <h1 className="text-3xl lg:text-4xl font-bold dark:text-white text-center mb-8">
-            The Role of an SEO Company: From Strategy to Execution
-          </h1>
-          <p className="text-lg dark:text-white text-center max-w-3xl mx-auto mb-12">
-            An SEO company like Daiki Media does more than tweak keywords. We
-            offer end-to-end solutions to improve your online visibility.
-            Here&apos;s how:
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white shadow-md rounded-3xl p-6 border border-gray-300 hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-105">
-              <h2 className="text-xl font-semibold dark:text-red-500 mb-4">
-                Website Audits
-              </h2>
-              <p className="dark:text-gray-600">
-                Comprehensive analysis of your website&apos;s performance.
-              </p>
-            </div>
-            <div className="bg-white shadow-md rounded-3xl p-6 border border-gray-300 hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-105">
-              <h2 className="text-xl font-semibold dark:text-red-500 mb-4">
-                Competitor Analysis
-              </h2>
-              <p className="dark:text-gray-600">
-                Studying your industry to outrank your competitors.
-              </p>
-            </div>
-            <div className="bg-white shadow-md rounded-3xl p-6 border border-black hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-105">
-              <h2 className="text-xl font-semibold dark:text-red-500 mb-4">
-                Customized Strategies
-              </h2>
-              <p className="dark:text-gray-600">
-                Tailoring solutions based on your goals and audience.
-              </p>
-            </div>
-            <div className="bg-white shadow-md rounded-3xl p-6 border border-black hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-105">
-              <h2 className="text-xl font-semibold dark:text-red-500 mb-4">
-                Content Creation
-              </h2>
-              <p className="dark:text-gray-600">
-                Developing blog posts, landing pages, and other content
-                optimized for search.
-              </p>
-            </div>
-            <div className="bg-white shadow-md rounded-3xl p-6 border border-black hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-105">
-              <h2 className="text-xl font-semibold dark:text-red-500 mb-4">
-                Technical Fixes
-              </h2>
-              <p className="dark:text-gray-600">
-                Improving site speed, fixing broken links, and enhancing mobile
-                usability.
-              </p>
-            </div>
-            <div className="bg-white shadow-md rounded-3xl p-6 border border-black hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-105">
-              <h2 className="text-xl font-semibold dark:text-red-500 mb-4">
-                Analytics & Reporting
-              </h2>
-              <p className="dark:text-gray-600">
-                Measuring performance and adapting strategies for continuous
-                growth.
-              </p>
-            </div>
-          </div>
-          <p className="text-lg dark:text-white text-center max-w-3xl mx-auto mt-12">
-            At Daiki Media, we don&apos;t just help you rank higher; we help you
-            convert visitors into customers.
-          </p>
-        </div>
-      </section>
-
-      {/* faqs */}
-      <section className="mt-32 py-16">
+      {/* FAQ Section */}
+      <section className="mt-32 py-16" itemScope itemType="https://schema.org/FAQPage">
         <div className="px-4">
           <div className="grid grid-cols-2 gap-10 max-lg:grid-cols-1 xl:gap-x-24">
             <div className="mb-12">
-              <h3 className="text-sm text-red-500 font-medium mb-2">
-                FAQ&apos;S
-              </h3>
+
               <h2 className="text-4xl font-extrabold mb-4 text-gray-900">
-                Frequently Asked Questions About Digital Agency Services
+                Frequently Asked Questions About SEO Services
               </h2>
               <p className="text-gray-600 text-lg">
-                Get answers to common questions about our digital agency
-                services, processes, and how we can help transform your
-                business&apos;s digital presence.
+                Get answers to common questions about our SEO services, processes,
+                and how we can help transform your business&apos;s online presence.
               </p>
             </div>
 
@@ -398,29 +418,94 @@ export default function SeoCompany() {
               {faqs.map((faq, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-3xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
+                  className="bg-white rounded-3xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 ease-in-out"
+                  itemScope
+                  itemProp="mainEntity"
+                  itemType="https://schema.org/Question"
                 >
                   <button
                     onClick={() => toggleFAQ(index)}
                     className="w-full px-6 py-4 flex justify-between items-center text-left focus:outline-none"
                     aria-expanded={openIndex === index}
                   >
-                    <span className="font-medium text-lg text-gray-800">
+                    <span className="font-medium text-lg text-gray-800" itemProp="name">
                       {faq.question}
                     </span>
                     <span className="ml-4 flex-shrink-0">
                       {openIndex === index ? (
-                        <Minus className="h-5 w-5 text-red-500" />
+                        <Minus className="h-5 w-5 text-black" />
                       ) : (
-                        <Plus className="h-5 w-5 text-red-500" />
+                        <Plus className="h-5 w-5 text-black" />
                       )}
                     </span>
                   </button>
                   <div
                     className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? "max-h-40 pb-4" : "max-h-0"
                       }`}
+                    itemScope
+                    itemProp="acceptedAnswer"
+                    itemType="https://schema.org/Answer"
                   >
-                    <p className="dark:text-gray-600 text-lg">{faq.answer}</p>
+                    <p className="dark:text-gray-600 text-lg" itemProp="text">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* People Also Ask Section */}
+      <section className=" py-16">
+        <div className="px-4">
+          <div className=" items-center text-center ">
+            <div className="mb-12">
+              <h2 className="text-4xl font-extrabold mb-4 text-gray-900">
+                People Also Ask
+              </h2>
+              <p className="text-gray-600 text-lg">
+                Explore additional questions and insights about SEO and how
+                we can support your business goals.
+              </p>
+            </div>
+
+            <div className="space-y-2">
+              {paaQuestions.map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-3xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 ease-in-out"
+                  itemScope
+                  itemProp="mainEntity"
+                  itemType="https://schema.org/Question"
+                >
+                  <button
+                    onClick={() => togglePAA(index)}
+                    className="w-full px-6 py-4 flex justify-between items-center text-left focus:outline-none"
+                    aria-expanded={openPAAIndex === index}
+                  >
+                    <span className="font-medium text-lg text-black" itemProp="name">
+                      {item.question}
+                    </span>
+                    <span className="ml-4 flex-shrink-0">
+                      {openPAAIndex === index ? (
+                        <Minus className="h-5 w-5 text-black" />
+                      ) : (
+                        <Plus className="h-5 w-5 text-black" />
+                      )}
+                    </span>
+                  </button>
+                  <div
+                    className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${openPAAIndex === index ? "max-h-96 pb-4" : "max-h-0"
+                      }`}
+                    itemScope
+                    itemProp="acceptedAnswer"
+                    itemType="https://schema.org/Answer"
+                  >
+                    <div className="dark:text-gray-300 text-base" itemProp="text">
+                      {item.answer}
+                    </div>
                   </div>
                 </div>
               ))}
