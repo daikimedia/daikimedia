@@ -69,7 +69,7 @@ const faqs = [
 
 const paaQuestions = [
   {
-    question: "How does Search Engine Optimization (SEO) improve a website’s visibility?",
+    question: "How does Search Engine Optimization (SEO) improve a website's visibility?",
     answer: "SEO, short for Search Engine Optimization, refers to the strategic process of improving a website's visibility on platforms like Google. It works by optimizing various elements on your website — such as content, meta tags, internal linking, and page speed — to make it easier for search engines to understand and rank your pages. By aligning your site with search engine algorithms and user intent, SEO helps you attract more qualified traffic, boost brand credibility, and ultimately drive better conversions without relying on paid ads.",
   },
   {
@@ -106,12 +106,15 @@ const paaQuestions = [
   }
 ];
 
-// Schema generation functions
-const generateFAQSchema = (faqs) => {
+// FIXED: Single FAQ Schema combining both sections
+const generateCombinedFAQSchema = () => {
+  // Combine both FAQ arrays
+  const allFAQs = [...faqs, ...paaQuestions];
+
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": faqs.map(faq => ({
+    "mainEntity": allFAQs.map(faq => ({
       "@type": "Question",
       "name": faq.question,
       "acceptedAnswer": {
@@ -140,8 +143,8 @@ const generateArticleSchema = () => {
         "url": "https://www.daikimedia.com/logo.png"
       }
     },
-    "datePublished": "2024-01-01",
-    "dateModified": "2024-12-01",
+    "datePublished": "2024-01-01T00:00:00Z",
+    "dateModified": "2024-12-01T00:00:00Z",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://www.daikimedia.com/learn/what-is-seo-company"
@@ -180,11 +183,10 @@ export const metadata = {
   title: "SEO Optimization Companies | Expert SEO Services for Business | Daiki Media",
   canonicalUrl: "https://www.daikimedia.com/learn/what-is-seo-company",
   description:
-    "SEO optimization companies, Daikai Media provides expert services to improve your website’s rankings and drive organic traffic, ensuring long-term growth and success.",
+    "SEO optimization companies, Daikai Media provides expert services to improve your website's rankings and drive organic traffic, ensuring long-term growth and success.",
   keywords:
     "SEO company, Daikai Media, search engine optimization, SEO services, online visibility, SEO strategies, improve website ranking",
 };
-
 
 export default function SeoCompany() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -198,14 +200,18 @@ export default function SeoCompany() {
     setOpenPAAIndex(openPAAIndex === index ? null : index);
   };
 
-  // Add structured data to head
+  // FIXED: Single schema implementation
   useEffect(() => {
-    // FAQ Schema
-    const faqSchema = generateFAQSchema([...faqs, ...paaQuestions]);
+    // Clean up existing schemas first
+    const existingSchemas = document.querySelectorAll('[id$="-schema"]');
+    existingSchemas.forEach(schema => schema.remove());
+
+    // SINGLE FAQ Schema combining both sections
+    const combinedFAQSchema = generateCombinedFAQSchema();
     const faqScript = document.createElement('script');
     faqScript.type = 'application/ld+json';
-    faqScript.text = JSON.stringify(faqSchema);
-    faqScript.id = 'faq-schema';
+    faqScript.text = JSON.stringify(combinedFAQSchema);
+    faqScript.id = 'combined-faq-schema';
 
     // Article Schema
     const articleSchema = generateArticleSchema();
@@ -228,25 +234,22 @@ export default function SeoCompany() {
 
     // Cleanup function
     return () => {
-      const existingFaqScript = document.getElementById('faq-schema');
-      const existingArticleScript = document.getElementById('article-schema');
-      const existingBreadcrumbScript = document.getElementById('breadcrumb-schema');
+      const schemas = [
+        document.getElementById('combined-faq-schema'),
+        document.getElementById('article-schema'),
+        document.getElementById('breadcrumb-schema')
+      ];
 
-      if (existingFaqScript) {
-        document.head.removeChild(existingFaqScript);
-      }
-      if (existingArticleScript) {
-        document.head.removeChild(existingArticleScript);
-      }
-      if (existingBreadcrumbScript) {
-        document.head.removeChild(existingBreadcrumbScript);
-      }
+      schemas.forEach(schema => {
+        if (schema && schema.parentNode) {
+          schema.parentNode.removeChild(schema);
+        }
+      });
     };
   }, []);
 
-
   return (
-    <div className=" container mx-auto">
+    <div className="container mx-auto">
       {/* Hero Section */}
       <section className="mt-32 px-4">
         <div className="max-w-6xl mx-auto text-center">
@@ -269,7 +272,7 @@ export default function SeoCompany() {
             audience. With proven strategies and cutting-edge tools, we
             transform websites into lead-generating machines.
           </p>
-          <div className=" py-8 px-6  text-center">
+          <div className="py-8 px-6 text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">
               Ready to make your website the cornerstone of your success?
             </h2>
@@ -288,7 +291,7 @@ export default function SeoCompany() {
       </section>
 
       {/* Comparison Section */}
-      <section className="mt-32 px-4 ">
+      <section className="mt-32 px-4">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-8 inline-block">
             Understanding SEO: The Backbone of Online Success
@@ -304,7 +307,7 @@ export default function SeoCompany() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-4">
-            <div className="p-6 rounded-3xl border-2 bg-white border-black  transition-all duration-300 ease-in-out transform">
+            <div className="p-6 rounded-3xl border-2 bg-white border-black transition-all duration-300 ease-in-out transform">
               <div className="flex items-center mb-4">
                 <KeyRound className="w-8 h-8 text-black mr-3" />
                 <h3 className="text-xl dark:text-black font-semibold">1. Keyword Research</h3>
@@ -314,10 +317,10 @@ export default function SeoCompany() {
               </p>
             </div>
 
-            <div className="p-6 rounded-3xl border-2 bg-white border-black  transition-all duration-300 ease-in-out transform">
+            <div className="p-6 rounded-3xl border-2 bg-white border-black transition-all duration-300 ease-in-out transform">
               <div className="flex items-center mb-4">
                 <FileCode className="w-8 h-8 text-black mr-3" />
-                <h3 className="text-xl  dark:text-black font-semibold">2. On-Page SEO</h3>
+                <h3 className="text-xl dark:text-black font-semibold">2. On-Page SEO</h3>
               </div>
               <p className="dark:text-black">
                 Enhancing content, meta tags, and internal links for better
@@ -325,7 +328,7 @@ export default function SeoCompany() {
               </p>
             </div>
 
-            <div className="p-6 rounded-3xl border-2 border-black bg-white  transition-all duration-300 ease-in-out transform">
+            <div className="p-6 rounded-3xl border-2 border-black bg-white transition-all duration-300 ease-in-out transform">
               <div className="flex items-center mb-4">
                 <Cpu className="w-8 h-8 text-black mr-3" />
                 <h3 className="text-xl dark:text-black font-semibold">3. Technical SEO</h3>
@@ -342,7 +345,7 @@ export default function SeoCompany() {
             </div>
           </div>
 
-          <div className="p-4 mt-12 ">
+          <div className="p-4 mt-12">
             <h3 className="text-2xl text-center font-bold mb-4">
               Why is SEO important?
             </h3>
@@ -366,7 +369,7 @@ export default function SeoCompany() {
 
       {/* Benefits Section */}
       <section className="mt-32">
-        <div className=" px-6 lg:px-12 py-10 container mx-auto">
+        <div className="px-6 lg:px-12 py-10 container mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-black">
             Why Your Business Needs Daiki Media&apos;s SEO Expertise
           </h2>
@@ -378,7 +381,7 @@ export default function SeoCompany() {
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-3xl border border-black shadow-md  transition-all duration-300 ease-in-out transform "
+                className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-3xl border border-black shadow-md transition-all duration-300 ease-in-out transform"
               >
                 <div className="bg-black rounded-full p-3 mb-4">
                   <benefit.icon className="w-8 h-8 text-white" />
@@ -391,7 +394,7 @@ export default function SeoCompany() {
             ))}
           </div>
           <div className="bg-gray-100 rounded-xl p-6 mb-8 border border-gray-300">
-            <p className="text-lg  font-semibold dark:text-black">
+            <p className="text-lg font-semibold dark:text-black">
               Did you know that businesses with strong SEO strategies can
               generate over 50% of their website traffic from organic searches?
             </p>
@@ -400,11 +403,10 @@ export default function SeoCompany() {
       </section>
 
       {/* FAQ Section */}
-      <section className="mt-32 py-16" itemScope itemType="https://schema.org/FAQPage">
+      <section className="mt-32 py-16">
         <div className="px-4">
           <div className="grid grid-cols-2 gap-10 max-lg:grid-cols-1 xl:gap-x-24">
             <div className="mb-12">
-
               <h2 className="text-4xl font-extrabold mb-4 text-gray-900">
                 Frequently Asked Questions About SEO Services
               </h2>
@@ -419,16 +421,13 @@ export default function SeoCompany() {
                 <div
                   key={index}
                   className="bg-white rounded-3xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 ease-in-out"
-                  itemScope
-                  itemProp="mainEntity"
-                  itemType="https://schema.org/Question"
                 >
                   <button
                     onClick={() => toggleFAQ(index)}
                     className="w-full px-6 py-4 flex justify-between items-center text-left focus:outline-none"
                     aria-expanded={openIndex === index}
                   >
-                    <span className="font-medium text-lg text-gray-800" itemProp="name">
+                    <span className="font-medium text-lg text-gray-800">
                       {faq.question}
                     </span>
                     <span className="ml-4 flex-shrink-0">
@@ -442,11 +441,8 @@ export default function SeoCompany() {
                   <div
                     className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? "max-h-40 pb-4" : "max-h-0"
                       }`}
-                    itemScope
-                    itemProp="acceptedAnswer"
-                    itemType="https://schema.org/Answer"
                   >
-                    <p className="dark:text-gray-600 text-lg" itemProp="text">
+                    <p className="dark:text-gray-600 text-lg">
                       {faq.answer}
                     </p>
                   </div>
@@ -458,9 +454,9 @@ export default function SeoCompany() {
       </section>
 
       {/* People Also Ask Section */}
-      <section className=" py-16">
+      <section className="py-16">
         <div className="px-4">
-          <div className=" items-center text-center ">
+          <div className="items-center text-center">
             <div className="mb-12">
               <h2 className="text-4xl font-extrabold mb-4 text-gray-900">
                 People Also Ask
@@ -476,16 +472,13 @@ export default function SeoCompany() {
                 <div
                   key={index}
                   className="bg-white rounded-3xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 ease-in-out"
-                  itemScope
-                  itemProp="mainEntity"
-                  itemType="https://schema.org/Question"
                 >
                   <button
                     onClick={() => togglePAA(index)}
                     className="w-full px-6 py-4 flex justify-between items-center text-left focus:outline-none"
                     aria-expanded={openPAAIndex === index}
                   >
-                    <span className="font-medium text-lg text-black" itemProp="name">
+                    <span className="font-medium text-lg text-black">
                       {item.question}
                     </span>
                     <span className="ml-4 flex-shrink-0">
@@ -499,11 +492,8 @@ export default function SeoCompany() {
                   <div
                     className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${openPAAIndex === index ? "max-h-96 pb-4" : "max-h-0"
                       }`}
-                    itemScope
-                    itemProp="acceptedAnswer"
-                    itemType="https://schema.org/Answer"
                   >
-                    <div className="dark:text-gray-300 text-base" itemProp="text">
+                    <div className="dark:text-gray-300 text-base">
                       {item.answer}
                     </div>
                   </div>
