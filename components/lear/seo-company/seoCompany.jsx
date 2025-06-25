@@ -403,10 +403,12 @@ export default function SeoCompany() {
       </section>
 
       {/* FAQ Section */}
-      <section className="mt-32 py-16">
-        <div className="px-4">
+      <section className="py-32">
+        <div className="container mx-auto">
           <div className="grid grid-cols-2 gap-10 max-lg:grid-cols-1 xl:gap-x-24">
-            <div className="mb-12">
+
+            {/* ✅ Sticky Left Section */}
+            <div className="mb-12 sticky top-32 self-start">
               <h2 className="text-4xl font-extrabold mb-4 text-gray-900">
                 Frequently Asked Questions About SEO Services
               </h2>
@@ -416,8 +418,9 @@ export default function SeoCompany() {
               </p>
             </div>
 
+            {/* Right side: FAQs */}
             <div className="space-y-2">
-              {faqs.map((faq, index) => (
+              {[...faqs, ...paaQuestions].map((item, index) => (
                 <div
                   key={index}
                   className="bg-white rounded-3xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 ease-in-out"
@@ -428,7 +431,7 @@ export default function SeoCompany() {
                     aria-expanded={openIndex === index}
                   >
                     <span className="font-medium text-lg text-gray-800">
-                      {faq.question}
+                      {item.question}
                     </span>
                     <span className="ml-4 flex-shrink-0">
                       {openIndex === index ? (
@@ -439,12 +442,10 @@ export default function SeoCompany() {
                     </span>
                   </button>
                   <div
-                    className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? "max-h-40 pb-4" : "max-h-0"
+                    className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? "max-h-96 pb-4" : "max-h-0"
                       }`}
                   >
-                    <p className="dark:text-gray-600 text-lg">
-                      {faq.answer}
-                    </p>
+                    <p className="dark:text-gray-600 text-lg">{item.answer}</p>
                   </div>
                 </div>
               ))}
@@ -453,56 +454,6 @@ export default function SeoCompany() {
         </div>
       </section>
 
-      {/* People Also Ask Section */}
-      <section className="py-16">
-        <div className="px-4">
-          <div className="items-center text-center">
-            <div className="mb-12">
-              <h2 className="text-4xl font-extrabold mb-4 text-gray-900">
-                People Also Ask
-              </h2>
-              <p className="text-gray-600 text-lg">
-                Explore additional questions and insights about SEO and how
-                we can support your business goals.
-              </p>
-            </div>
-
-            <div className="space-y-2">
-              {paaQuestions.map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-3xl shadow-lg border border-gray-200 overflow-hidden transition-all duration-300 ease-in-out"
-                >
-                  <button
-                    onClick={() => togglePAA(index)}
-                    className="w-full px-6 py-4 flex justify-between items-center text-left focus:outline-none"
-                    aria-expanded={openPAAIndex === index}
-                  >
-                    <span className="font-medium text-lg text-black">
-                      {item.question}
-                    </span>
-                    <span className="ml-4 flex-shrink-0">
-                      {openPAAIndex === index ? (
-                        <Minus className="h-5 w-5 text-black" />
-                      ) : (
-                        <Plus className="h-5 w-5 text-black" />
-                      )}
-                    </span>
-                  </button>
-                  <div
-                    className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${openPAAIndex === index ? "max-h-96 pb-4" : "max-h-0"
-                      }`}
-                  >
-                    <div className="dark:text-gray-300 text-base">
-                      {item.answer}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
