@@ -10,7 +10,7 @@ import Pricing from "@/components/shared/Pricing";
 export const metadata = {
   title: "Pricing | Daikai Media",
   description:
-    "Explore the pricing plans offered by Daikai Media for our digital marketing and SEO services. We offer competitive prices tailored to meet your business needs, ensuring maximum value and results.",
+    "Explore the pricing plans offered by Daiki Media for our digital marketing and SEO services. We offer competitive prices tailored to meet your business needs, ensuring maximum value and results.",
   keywords:
     "pricing, digital marketing pricing, SEO services pricing, Daikai Media pricing, affordable SEO, marketing services costs, value-driven SEO solutions",
   author: "Daikai Media Team",

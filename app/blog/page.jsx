@@ -16,12 +16,12 @@ export async function generateMetadata() {
     }
     const metadata = await res.json();
     return {
-      title: metadata[0]?.title?.rendered || "Blog | Daikai Media",
+      title: metadata[0]?.title?.rendered || "Blog | Daiki Media",
       description:
         metadata[0]?.excerpt?.rendered ||
-        "Explore the latest blogs and articles from Daikai Media.",
+        "Explore the latest blogs and articles from Daiki Media.",
       keywords: [
-        "Daikai Media",
+        "Daiki Media",
         "blogs",
         "media",
         "content",
@@ -32,10 +32,10 @@ export async function generateMetadata() {
   } catch (error) {
     console.error("Error generating metadata:", error);
     return {
-      title: "Blog | Daikai Media",
-      description: "Explore the latest blogs and articles from Daikai Media.",
+      title: "Blog | Daiki Media",
+      description: "Explore the latest blogs and articles from Daiki Media.",
       keywords: [
-        "Daikai Media",
+        "Daiki Media",
         "blogs",
         "media",
         "content",
@@ -56,12 +56,12 @@ export default async function Blog() {
     return (
       <>
         <Head>
-          <title>{metadata[0]?.title?.rendered || "Blog | Daikai Media"}</title>
+          <title>{metadata[0]?.title?.rendered || "Blog | Daiki Media"}</title>
           <meta
             name="description"
             content={
               metadata[0]?.excerpt?.rendered ||
-              "Explore the latest blogs and articles from Daikai Media."
+              "Explore the latest blogs and articles from Daiki Media."
             }
           />
           <meta
@@ -74,7 +74,7 @@ export default async function Blog() {
         <main>
           <PageHero
             subtitle="OUR BLOG"
-            title="Recent Blogs <br/> By Daikai Media"
+            title="Recent Blogs <br/> By Daiki Media"
           />
           <FeatureBlog />
           <RecentNews />

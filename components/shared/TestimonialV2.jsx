@@ -25,13 +25,13 @@ const TestimonialV2 = () => {
                 key={testimonial.id}>
                 <div className="h-full rounded border border-dashed border-gray-100 p-8 dark:border-borderColor-dark">
                   <div className="flex items-center pb-7 ">
-                    <Image
+                    {/* <Image
                       src={testimonial.author.image}
                       alt="avatar"
                       className="mr-4 rounded-full"
                       width={56}
                       height={56}
-                    />
+                    /> */}
                     <div className="block">
                       <h3 className="text-base font-semibold">{testimonial.author.name}</h3>
                       <p className="font-jakarta_sans text-sm  font-medium text-paragraph-light dark:text-[#A1A49D]">
@@ -44,7 +44,7 @@ const TestimonialV2 = () => {
                     &ldquo;{testimonial.testimonial}&rdquo;
                   </blockquote>
                   <div className="flex items-center justify-between border-t border-dashed border-gray-100 pt-7 dark:border-borderColor-dark">
-                    <div>
+                    {/* <div>
                       <Image
                         src={testimonial.logoLight}
                         alt="image"
@@ -59,7 +59,7 @@ const TestimonialV2 = () => {
                         width={110}
                         height={35}
                       />
-                    </div>
+                    </div> */}
                     <p className="text-sm text-paragraph-light dark:text-paragraph-light">{testimonial.date}</p>
                   </div>
                 </div>

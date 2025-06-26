@@ -12,6 +12,8 @@ import {
   Star,
 } from "lucide-react";
 
+
+
 export const metadata = {
   title: "SEO Results | Daikai Media",
   description:
@@ -108,6 +110,7 @@ export default function SeoResult() {
 
   return (
     <>
+
       <section className="py-32">
         <div className="container mx-auto text-center">
           <h1 className="text-base font-semibold mb-4">

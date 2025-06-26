@@ -14,8 +14,8 @@ import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 
 export const metadata = {
   title: "Payment",
-  description: "Explore payment solutions and services offered by Daikai Media.",
-  keywords: "Daikai Media, payment solutions, secure payments, online payment, financial services",
+  description: "Explore payment solutions and services offered by Daiki Media.",
+  keywords: "Daiki Media, payment solutions, secure payments, online payment, financial services",
 };
 
 const HomePage2 = () => {
