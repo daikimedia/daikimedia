@@ -270,36 +270,36 @@ export default function SeoCompany() {
         {/* Hero Section */}
         <section className="mt-32 ">
           <div className=" mx-auto text-center">
-            <h1 className="text-2xl md:text-3xl font-bold mb-4">
+            <h1 className="text-base font-bold mb-4">
               What is an SEO Company and Why Your Business Needs One
             </h1>
-            <h2 className="text-xl md:text-2xl text-gray-600 mb-6">
+            <h2 className="text-5xl font-bold mb-6 max-w-4xl mx-auto leading-snug">
               "Discover how Daiki Media can help your business rank higher,
               drive traffic, and grow revenue with expert SEO services."
             </h2>
-            <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+            <p className="text-base mb-8 max-w-4xl mx-auto">
               In today's digital age, standing out online is more challenging
               than ever. An SEO company specializes in improving your
               website's visibility on search engines like Google, driving
               organic traffic, and ensuring your business gets noticed.
             </p>
-            <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+            <p className="text-base mb-8 max-w-4xl mx-auto">
               At <strong>Daiki Media</strong>, we help businesses like yours
               unlock the potential of search engines to connect with your target
               audience. With proven strategies and cutting-edge tools, we
               transform websites into lead-generating machines.
             </p>
             <div className="py-8 px-6 text-center">
-              <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">
+              <h2 className="text-4xl font-bold text-black mb-4 leading-relaxed">
                 Ready to make your website the cornerstone of your success?
               </h2>
-              <p className="text-black text-lg mb-6">
+              <p className="text-black text-base mb-6">
                 Contact Daiki Media today and take the first step towards higher
                 rankings!
               </p>
               <a
                 href="/contact"
-                className="btn btn-xl"
+                className="btn btn-xl mt-10"
               >
                 Contact Us
               </a>
@@ -307,7 +307,7 @@ export default function SeoCompany() {
           </div>
         </section>
 
-        {/* Comparison Section */}
+        {/* Understanding SEO Section */}
         <section className="mt-32 ">
           <div className="container mx-auto ">
             <div className="relative mb-8">
@@ -317,15 +317,15 @@ export default function SeoCompany() {
             </div>
 
             <div className="mb-8">
-              <p className="text-lg leading-relaxed">
+              <p className="text-base leading-relaxed">
                 Search Engine Optimization (SEO) is the process of optimizing your
                 website to rank higher on search engines, like Google, for
                 relevant searches. It involves various techniques, including:
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-4">
-              <div className="p-6 rounded-3xl border-2 bg-white border-black transition-all">
+            <div className="grid grid-cols-1 md:grid-cols-4  mb-4">
+              <div className="p-6  bg-white border-r border-l border-black border-dashed transition-all">
                 <div className="flex items-center mb-4">
                   <KeyRound className="w-8 h-8 text-black mr-3" />
                   <h3 className="text-xl text-black font-semibold">1. Keyword Research</h3>
@@ -335,7 +335,7 @@ export default function SeoCompany() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-3xl border-2 bg-white border-black transition-all duration-300 ease-in-out transform ">
+              <div className="p-6  transition-all duration-300 ease-in-out transform ">
                 <div className="flex items-center mb-4">
                   <FileCode className="w-8 h-8 text-black mr-3" />
                   <h3 className="text-xl text-black font-semibold">2. On-Page SEO</h3>
@@ -346,7 +346,7 @@ export default function SeoCompany() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-3xl border-2 border-black bg-white transition-all duration-300 ease-in-out transform">
+              <div className="p-6 border-l border-r border-black border-dashed  bg-white transition-all duration-300 ease-in-out transform">
                 <div className="flex items-center mb-4">
                   <Cpu className="w-8 h-8 text-black mr-3" />
                   <h3 className="text-xl text-black font-semibold">3. Technical SEO</h3>
@@ -354,7 +354,7 @@ export default function SeoCompany() {
                 <p className="text-black">Ensuring your website is fast, secure, and mobile-friendly.</p>
               </div>
 
-              <div className="p-6 rounded-3xl border-2 bg-white border-black transition-all duration-300 ease-in-out transform ">
+              <div className="p-6 border-r border-black border-dashed bg-white border-black transition-all duration-300 ease-in-out transform ">
                 <div className="flex items-center mb-4">
                   <Link2 className="w-8 h-8 text-black mr-3" />
                   <h3 className="text-xl font-semibold text-black">4. Off-Page SEO</h3>
@@ -363,22 +363,19 @@ export default function SeoCompany() {
               </div>
             </div>
 
-            <div className="p-4 mt-12">
-              <h3 className="text-2xl text-center font-bold mb-4">
+            <div className=" mt-32">
+              <h3 className="text-5xl text-center font-bold mb-10">
                 Why is SEO important?
               </h3>
-              <p className="text-lg mb-6">
+              <p className="text-base text-center mb-6">
                 With billions of searches happening daily, SEO is the bridge
                 between your website and the audience searching for your products
                 or services.
               </p>
-              <div className="flex items-center justify-between">
-                <div className="flex items-center">
-                  <p className="text-xl font-semibold">Key Insight:</p>
-                </div>
-                <p className="text-lg italic flex-1 ml-4">
-                  "93% of online experiences begin with a search engine. Are
-                  you leveraging SEO to capture this traffic?"
+              <div className="flex items-center justify-center text-center  mx-auto px-4">
+                <p className="text-xl font-semibold mr-4">Key Insight:</p>
+                <p className="text-lg italic">
+                  "93% of online experiences begin with a search engine. Are you leveraging SEO to capture this traffic?"
                 </p>
               </div>
             </div>
@@ -386,12 +383,12 @@ export default function SeoCompany() {
         </section>
 
         {/* Benefits Section */}
-        <section className="mt-32">
+        <section className="py-32">
           <div className=" container mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-black">
+            <h2 className="text-4xl  font-bold mb-6 text-center text-black">
               Why Your Business Needs Daiki Media's SEO Expertise
             </h2>
-            <p className="text-gray-700 mb-8 text-center">
+            <p className=" mb-8 text-center">
               Investing in an SEO company comes with countless benefits. Here are
               some of the biggest advantages of partnering with Daiki Media:
             </p>
