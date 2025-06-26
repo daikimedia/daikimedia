@@ -108,17 +108,17 @@ export default function SeoResult() {
 
   return (
     <>
-      <section className="mt-32 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+      <section className="py-32">
+        <div className="container mx-auto text-center">
+          <h1 className="text-base font-semibold mb-4">
             Elevate Your Business with Daiki Media&apos;s Proven Digital
             Solutions
           </h1>
-          <h2 className="text-xl md:text-2xl text-gray-600 mb-6">
+          <h2 className="text-5xl font-bold mb-6 max-w-4xl mx-auto leading-snug">
             Driving Traffic, Leads, and Revenue with Tailored Strategies and
             Award-Winning Expertise
           </h2>
-          <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-base  mb-8 max-w-4xl mx-auto">
             Partner with Daiki Media and let us handle the complexities of
             digital marketing. With our proven track record of success,
             we&apos;ll help you achieve higher website traffic, increased leads,
@@ -126,7 +126,7 @@ export default function SeoResult() {
           </p>
           <a
             href="https://api.whatsapp.com/send?phone=601114850067"
-            className="bg-black text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-800 transition-all duration-300"
+            className="btn btn-xl mt-10"
           >
             Let&apos;s Grow Your Business – Get Started Today!
           </a>
@@ -134,9 +134,9 @@ export default function SeoResult() {
       </section>
 
       {/* Comparison Section */}
-      <section className="py-32 mt-12 px-4 ">
+      <section className=" px-4 ">
         <div className="flex items-center justify-center p-4">
-          <div className="bg-white rounded-3xl shadow-2xl border border-black w-full max-w-4xl overflow-hidden">
+          <div className="bg-white rounded-3xl shadow-xl border border-black container mx-auto">
             <div className="p-8">
               <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">
                 Daiki Media vs. Competitors
@@ -171,56 +171,58 @@ export default function SeoResult() {
       </section>
 
       {/* mini CTA Section */}
-      <section className="mb-10 max-w-5xl mx-auto">
+      <section className="py-32   mx-auto">
         <div className="rounded-3xl p-5 text-center">
-          <p className="text-xl dark:text-white  mb-6">
+          <p className="text-base dark:text-white  mb-6">
             Ready to take your business to the next level? With Daiki
             Media&apos;s specialized solutions and proven success, achieving
             your goals has never been easier.
           </p>
           <a
             href="https://api.whatsapp.com/send?phone=601114850067"
-            className="bg-white dark:text-black text-lg font-bold py-3 px-6 rounded-full hover:bg-black dark:hover:text-white border-2  transition duration-300"
+            className="btn btn-xl mt-10"
           >
             Contact Us Today
           </a>
         </div>
       </section>
 
-      {/* mini CTA Section */}
-      <section className="py-20">
-        <div className="max-w-6xl dark:text-black  mx-auto px-4">
-          <h2 className="text-4xl dark:text-white font-bold text-center mb-16 ">
+      {/* Case Studies Section */}
+      <section className="">
+        <div className="container dark:text-black  mx-auto">
+          <h2 className="text-4xl dark:text-white font-bold text-center mb-10 ">
             Case Studies
-            <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-black mt-4"></span>
           </h2>
 
           <div className="space-y-28">
             {caseStudies.map((study, index) => (
               <div
                 key={index}
-                className={`bg-white border-2 border-black rounded-3xl overflow-hidden transition-all duration-300 hover:shadow-2xl transform hover:scale-105 ${study.featured ? "hover:-translate-y-2" : ""}`}
+                className={`bg-white overflow-hidden  transform  ${study.featured ? "hover:-translate-y-0" : ""}`}
               >
-                <div className="p-8 md:p-12 relative">
+                <div className=" relative">
                   {study.featured && (
-                    <div className="absolute top-0 right-0 dark:bg-white dark:text-black text-xs font-bold px-4 py-2 rounded-bl-2xl border-l-2 border-b-2 border-gray-200">
-                      Featured Case Study
+                    <div className="absolute top-0 right-0 dark:bg-white dark:text-black text-xs font-bold px-4 py-2 rounded-bl-2xl border-l border-b-2 border-gray-200">
+                      {/* Featured Case Study */}
                     </div>
                   )}
-                  <div className="flex flex-col md:flex-row items-start md:items-center mb-8">
-                    <div className="bg-gray-100 p-4 rounded-full mb-4 md:mb-0 md:mr-6 transition-transform transform hover:scale-110">
-                      <study.icon className="w-8 h-8 text-gray-600 transition-transform transform hover:scale-110" />
-                    </div>
-                    <h3 className="text-3xl dark:text-black font-bold">{study.company}</h3>
+                  <div className="flex flex-col md:flex-row items-center justify-center mb-8">
+                    {/* <div className="bg-gray-100 p-4 rounded-full mb-4 md:mb-0 md:mr-6 transition-transform transform ">
+                      <study.icon className="w-8 h-8 " />
+                    </div> */}
+                    <h3 className="text-3xl dark:text-black  font-bold mb-8">{study.company}</h3>
                   </div>
-                  <div className="grid  md:grid-cols-2 gap-8">
-                    <div>
+                  <div className="grid md:grid-cols-3 gap-0 border-x border-dashed border-gray-300">
+                    {/* Column 1 - Challenge */}
+                    <div className="px-6 py-4 border-r border-dashed border-gray-300">
                       <h4 className="text-xl font-semibold mb-4 dark:text-black flex items-center">
                         <Users className="w-6 h-6 mr-2 dark:text-black" /> Challenge:
                       </h4>
                       <p className="dark:text-black">{study.challenge}</p>
                     </div>
-                    <div>
+
+                    {/* Column 2 - Solution */}
+                    <div className="px-6 py-4 border-r border-dashed border-gray-300">
                       <h4 className="text-xl font-semibold dark:text-black mb-4 flex items-center">
                         <CheckCircle className="w-6 h-6 mr-2 dark:text-black" /> Solution:
                       </h4>
@@ -233,22 +235,25 @@ export default function SeoResult() {
                         ))}
                       </ul>
                     </div>
+
+                    {/* Column 3 - Results */}
+                    <div className="px-6 py-4">
+                      <h4 className="text-xl dark:text-black font-semibold mb-4 flex items-center">
+                        <TrendingUp className="w-6 h-6 mr-2 dark:text-black" /> Results:
+                      </h4>
+                      <ul className="space-y-2">
+                        {study.results.map((item, i) => (
+                          <li key={i} className="flex items-start">
+                            <CheckCircle className="w-5 h-5 mr-2 mt-1 flex-shrink-0 text-black" />
+                            <span className="text-gray-600">{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                  <div className="mt-8 ">
-                    <h4 className="text-xl  dark:text-black font-semibold mb-4 flex items-center">
-                      <TrendingUp className="w-6 h-6 mr-2  dark:text-black" /> Results:
-                    </h4>
-                    <ul className="space-y-2">
-                      {study.results.map((item, i) => (
-                        <li key={i} className="flex items-start">
-                          <CheckCircle className="w-5 h-5 mr-2 mt-1 flex-shrink-0 text-black" />
-                          <span className="text-gray-600">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="mt-12 text-center">
-                    <button className="inline-flex items-center justify-center px-8 py-4 border-2 border-black text-lg font-bold rounded-full text-black bg-white hover:bg-black hover:text-white transition duration-300 ease-in-out">
+
+                  <div className="mt-20 text-center">
+                    <button className="inline-flex items-center justify-center btn btn-xl">
                       {study.video ? (
                         <>
                           <PlayCircle className="w-6 h-6 mr-2  dark:text-black" />
@@ -267,12 +272,12 @@ export default function SeoResult() {
             ))}
           </div>
         </div>
-      </section>
+      </section >
 
       {/* testimonials Section */}
 
-      <section className="mt-32 mb-[150px] px-4">
-        <div className="max-w-6xl mx-auto px-4">
+      < section className=" py-32" >
+        <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">
             What Our Clients Say
           </h2>
@@ -280,7 +285,7 @@ export default function SeoResult() {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-white border border-black  dark:text-black rounded-2xl p-6 shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl hover:border-gray-800 flex flex-col justify-between"
+                className="bg-white border border-black  dark:text-black rounded-2xl p-6 shadow-lg transition-transform transform  flex flex-col justify-between"
                 style={{ minHeight: "380px" }}
               >
                 <p className="dark:text-black italic mb-4 flex-grow">{`"${testimonial.quote}"`}</p>
@@ -294,9 +299,9 @@ export default function SeoResult() {
                 </div>
                 <div className="flex items-center">
                   {/* Placeholder for Image */}
-                  <div className="w-14 h-14 bg-gray-200 border border-gray-300 rounded-full flex items-center justify-center mr-3">
+                  {/* <div className="w-14 h-14 bg-gray-200 border border-gray-300 rounded-full flex items-center justify-center mr-3">
                     <span className="text-xs  dark:text-black">56X56</span>
-                  </div>
+                  </div> */}
                   <div>
                     <h3 className="font-semibold  dark:text-black">
                       {testimonial.author}
@@ -308,7 +313,7 @@ export default function SeoResult() {
             ))}
           </div>
         </div>
-      </section>
+      </section >
     </>
   );
 }
