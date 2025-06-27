@@ -31,7 +31,7 @@ export async function generateMetadata({ params }) {
   }
 
   // ✅ Optional: log to terminal for debugging
-  console.log("Generated Metadata for:", slug, meta);
+  // console.log("Generated Metadata for:", slug, meta);
 
   return meta;
 }

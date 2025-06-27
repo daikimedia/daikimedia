@@ -1,5 +1,5 @@
 import TestimonialList from '@/data/testimonial'
-import Image from 'next/image'
+// import Image from 'next/image'
 import React from 'react'
 import TestmonialBg from '../icons/TestmonialBg'
 import FadeUpOneByOneAnimation from '../animations/FadeUpOneByOneAnimation'

@@ -1,4 +1,4 @@
-import Head from 'next/head';
+
 import PropTypes from 'prop-types';
 
 const BlogSchema = ({ posts }) => {
@@ -45,12 +45,12 @@ const BlogSchema = ({ posts }) => {
     };
 
     return (
-        <Head>
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-            />
-        </Head>
+
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+
     );
 };
 

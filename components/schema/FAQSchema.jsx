@@ -15,6 +15,7 @@ const FAQSchema = ({ faqs }) => {
             }
         }))
     };
+    // console.log("schema", schema)
 
     return (
         <script

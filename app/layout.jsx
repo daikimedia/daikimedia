@@ -6,7 +6,7 @@ import Script from "next/script";
 import GTMNoScript from "@/components/GTMNoScript";
 import OrganizationSchema from "@/components/schema/OrganizationSchema";
 import DynamicBreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
-import Head from "next/head";
+// import Head from "next/head";
 const inter = Inter({
   weight: ["200", "300", "400", "500", "600", "700", "800"],
   style: ["normal"],
@@ -39,7 +39,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <meta
           name="google-site-verification"
           content="EIBnMq71KKUDT895qyPc5L_RMaDrmBpUG8pgX3FO6N4"
@@ -101,7 +101,7 @@ export default function RootLayout({ children }) {
           }}
         />
 
-      </Head>
+      </head>
       <body
         className={cn(
           "relative overflow-x-hidden bg-white text-base antialiased dark:bg-dark-300",
