@@ -7,11 +7,11 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 export const metadata = {
-  title: "Contact Us | Daikai Media",
+  title: "Contact Us | Daiki Media",
   description:
-    "Get in touch with Daikai Media to discuss your marketing needs. Fill out the contact form and let our team help you grow your business with tailored solutions.",
+    "Get in touch with Daiki Media to discuss your marketing needs. Fill out the contact form and let our team help you grow your business with tailored solutions.",
   keywords:
-    "Daikai Media, contact us, get in touch, marketing services, business solutions, digital marketing, contact form, customer support",
+    "Daiki Media, contact us, get in touch, marketing services, business solutions, digital marketing, contact form, customer support",
 };
 
 const ContactForm = () => {

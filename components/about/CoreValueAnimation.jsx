@@ -1,7 +1,7 @@
 'use client'
 import { fadeFromRightAnimation, fadeUpAnimation } from '@/data/animation'
 import useWhileInView from '@/hooks/useWhileInView'
-import about from '@/public/images/about/about.jpg'
+import imageOnlineValueDark from '@/public/images/about/onlinePayment-dark.png'
 import imageShapeDark from '@/public/images/about/onlinePayment-shape-dark.png'
 import imageShape from '@/public/images/about/onlinePayment-shape.png'
 import imageOnlineValue from '@/public/images/about/onlinePayment.png'
@@ -27,7 +27,7 @@ const CoreValueAnimation = () => {
         className="max-w-[250px] dark:hidden lg:max-w-[320px] xl:max-w-[420px]"
       />
       <Image
-        src={about}
+        src={imageOnlineValueDark}
         alt="banking image"
         className="hidden max-w-[250px]  dark:inline-block lg:max-w-[320px] xl:max-w-[420px]"
       />

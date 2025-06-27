@@ -3,11 +3,11 @@ import React from 'react'
 
 
 export const metadata = {
-  title: "Call to Action V2 | Daikai Media",
+  title: "Call to Action V2 | Daiki Media",
   description:
-    "Experience the enhanced call-to-action section on Daikai Media. Take the next step to drive your business success with our innovative marketing solutions and services.",
+    "Experience the enhanced call-to-action section on Daiki Media. Take the next step to drive your business success with our innovative marketing solutions and services.",
   keywords:
-    "Daikai Media, call to action, business growth, digital marketing, engagement, services, business development, marketing solutions, action plan",
+    "Daiki Media, call to action, business growth, digital marketing, engagement, services, business development, marketing solutions, action plan",
 };
 
 const CallToActionV2 = () => {

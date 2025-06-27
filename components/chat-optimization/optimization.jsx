@@ -1,9 +1,9 @@
 export const metadata = {
-  title: "Chat Optimization | Daikai Media",
+  title: "Chat Optimization | Daiki Media",
   description:
-    "Optimize your customer interactions with Daikai Media's Chat Optimization tools. Enhance engagement, streamline communication, and improve user satisfaction.",
+    "Optimize your customer interactions with Daiki Media's Chat Optimization tools. Enhance engagement, streamline communication, and improve user satisfaction.",
   keywords:
-    "Chat optimization, Daikai Media, customer engagement, chatbot solutions, streamline communication, improve user satisfaction, live chat tools",
+    "Chat optimization, Daiki Media, customer engagement, chatbot solutions, streamline communication, improve user satisfaction, live chat tools",
 };
 
 export default function ChatOptimization() {

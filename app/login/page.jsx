@@ -5,11 +5,11 @@ import NewsLetter from "@/components/shared/NewsLetter";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Login | Daikai Media",
+  title: "Login | Daiki Media",
   description:
-    "Access your Daikai Media account by logging in. Manage your profile, track your services, and stay updated with the latest content.",
+    "Access your Daiki Media account by logging in. Manage your profile, track your services, and stay updated with the latest content.",
   keywords:
-    "login, Daikai Media, user account, profile management, services, digital marketing",
+    "login, Daiki Media, user account, profile management, services, digital marketing",
 };
 
 

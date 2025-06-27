@@ -19,11 +19,11 @@ const challenges = [
   },
 ];
 export const metadata = {
-  title: "Marketing Managers | Daikai Media",
+  title: "Marketing Managers | Daiki Media",
   description:
-    "Empower your marketing managers with Daikai Media. Explore tools, strategies, and insights designed to help managers lead successful marketing campaigns.",
+    "Empower your marketing managers with Daiki Media. Explore tools, strategies, and insights designed to help managers lead successful marketing campaigns.",
   keywords:
-    "Marketing managers, Daikai Media, marketing tools, leadership strategies, marketing campaigns, team management, successful marketing",
+    "Marketing managers, Daiki Media, marketing tools, leadership strategies, marketing campaigns, team management, successful marketing",
 };
 
 

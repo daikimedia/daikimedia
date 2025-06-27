@@ -4,7 +4,7 @@ import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 
 
 export const metadata = {
-  title: "SEO Guide | Daikai Media",
+  title: "SEO Guide | Daiki Media",
   description:
     "A comprehensive guide to SEO by Daiki Media. Learn the best practices, strategies, and techniques for improving your website's search engine rankings.",
   keywords:

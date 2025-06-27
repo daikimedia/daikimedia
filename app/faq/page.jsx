@@ -4,10 +4,10 @@ import PageHero from "@/components/shared/PageHero";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 
 export const metadata = {
-  title: "FAQ | Daikai Media",
-  description: "Find answers to frequently asked questions about Daikai Media, our services, and how we work. Get all the information you need to understand our platform and offerings.",
-  keywords: "FAQ, Daikai Media, questions, answers, media, services, platform",
-  robots: "index, follow", 
+  title: "FAQ | Daiki Media",
+  description: "Find answers to frequently asked questions about Daiki Media, our services, and how we work. Get all the information you need to understand our platform and offerings.",
+  keywords: "FAQ, Daiki Media, questions, answers, media, services, platform",
+  robots: "index, follow",
 };
 
 const FaqPage = () => {

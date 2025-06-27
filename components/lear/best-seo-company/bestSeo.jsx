@@ -5,11 +5,11 @@ import { Star } from "lucide-react";
 
 
 export const metadata = {
-  title: "Best SEO Practices | Daikai Media",
+  title: "Best SEO Practices | Daiki Media",
   description:
-    "Master the best SEO practices with Daikai Media. Optimize your website for search engines and boost your online visibility with expert strategies and tools. SEO optimization companies, Daikai Media provides expert services to improve your website’s rankings and drive organic traffic, ensuring long-term growth and success.",
+    "Master the best SEO practices with Daiki Media. Optimize your website for search engines and boost your online visibility with expert strategies and tools. SEO optimization companies, Daiki Media provides expert services to improve your website’s rankings and drive organic traffic, ensuring long-term growth and success.",
   keywords:
-    "Best SEO, Daikai Media, SEO optimization, search engine optimization, SEO tools, SEO strategies, website ranking, online visibility",
+    "Best SEO, Daiki Media, SEO optimization, search engine optimization, SEO tools, SEO strategies, website ranking, online visibility",
 };
 
 
@@ -173,7 +173,7 @@ export default function BestSeo() {
       <section className=" py-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center rounded-3xl mb-12">
-          <h1>What is an SEO Company and Why Your Business Needs One</h1>
+            <h1>What is an SEO Company and Why Your Business Needs One</h1>
             <h2 className="text-4xl dark:text-white font-extrabold mb-4 relative inline-block">
               Who Is the Best SEO Company? Discover Why It&lsquo;s Daiki Media!
               <span className="absolute bottom-0 left-0 w-full h-1 bg-black transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>

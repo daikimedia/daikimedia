@@ -12,8 +12,8 @@ import TeamMembers from "@/components/shared/TeamMembers";
 export const metadata = {
   title: "Crypto Currency",
   description: "Stay updated with the latest trends and services in cryptocurrency offered by Daiki Media.",
-  keywords: "Daikai Media, cryptocurrency, blockchain, digital currency, crypto services",
-  author: "Daikai Media Team",
+  keywords: "Daiki Media, cryptocurrency, blockchain, digital currency, crypto services",
+  author: "Daiki Media Team",
 };
 const HomePage7 = () => {
   return (

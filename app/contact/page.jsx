@@ -9,7 +9,7 @@ export const metadata = {
   title: "Contact Daiki Media - Get in Touch with Our Team",
   description:
     "Reach out to Daiki Media in KL for inquiries, support, or consultations. Our team is ready to help you with all your digital marketing needs.",
-  keywords: "contact, Daikai Media contact, media inquiries, reach us",
+  keywords: "contact, Daiki Media contact, media inquiries, reach us",
 };
 
 const page = () => {

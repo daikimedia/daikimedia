@@ -2,11 +2,11 @@ import Link from 'next/link'
 
 
 export const metadata = {
-  title: "Call to Action | Daikai Media",
+  title: "Call to Action | Daiki Media",
   description:
-    "Take the next step with Daikai Media. Discover our compelling call-to-action to engage with our services and elevate your business growth through innovative digital marketing solutions.",
+    "Take the next step with Daiki Media. Discover our compelling call-to-action to engage with our services and elevate your business growth through innovative digital marketing solutions.",
   keywords:
-    "Daikai Media, call to action, business growth, digital marketing, engagement, services, marketing solutions, business development",
+    "Daiki Media, call to action, business growth, digital marketing, engagement, services, marketing solutions, business development",
 };
 
 const CallToAction = ({ title }) => {

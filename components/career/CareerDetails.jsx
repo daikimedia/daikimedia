@@ -7,11 +7,11 @@ import Image from 'next/image'
 import { useRef } from 'react'
 
 export const metadata = {
-  title: "Career Details | Daikai Media",
+  title: "Career Details | Daiki Media",
   description:
-    "Explore exciting career opportunities at Daikai Media. Join our innovative team and be part of shaping the future of digital media and marketing.",
+    "Explore exciting career opportunities at Daiki Media. Join our innovative team and be part of shaping the future of digital media and marketing.",
   keywords:
-    "Daikai Media, career opportunities, digital media jobs, marketing careers, work with us, join our team, job openings, innovative careers",
+    "Daiki Media, career opportunities, digital media jobs, marketing careers, work with us, join our team, job openings, innovative careers",
 };
 
 

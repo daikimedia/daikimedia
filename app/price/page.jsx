@@ -8,12 +8,12 @@ import NewsLetter from "@/components/shared/NewsLetter";
 import Pricing from "@/components/shared/Pricing";
 
 export const metadata = {
-  title: "Pricing | Daikai Media",
+  title: "Pricing | Daiki Media",
   description:
     "Explore the pricing plans offered by Daiki Media for our digital marketing and SEO services. We offer competitive prices tailored to meet your business needs, ensuring maximum value and results.",
   keywords:
-    "pricing, digital marketing pricing, SEO services pricing, Daikai Media pricing, affordable SEO, marketing services costs, value-driven SEO solutions",
-  author: "Daikai Media Team",
+    "pricing, digital marketing pricing, SEO services pricing, Daiki Media pricing, affordable SEO, marketing services costs, value-driven SEO solutions",
+  author: "Daiki Media Team",
 };
 
 const Price = () => {

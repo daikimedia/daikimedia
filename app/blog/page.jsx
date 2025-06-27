@@ -66,7 +66,7 @@ export default async function Blog() {
           />
           <meta
             name="keywords"
-            content="Daikai Media, blogs, media, content, articles, updates"
+            content="Daiki Media, blogs, media, content, articles, updates"
           />
         </Head>
 

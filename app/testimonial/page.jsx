@@ -7,21 +7,21 @@ import Pricing from "@/components/shared/Pricing";
 import TestimonialSingle from "@/components/testimonial/TestimonialSingle";
 
 export const metadata = {
-  title: "Testimonials | Daikai Media",
-  description: "Discover the success stories and feedback from our clients. Learn how Daikai Media's innovative media solutions have helped businesses and content creators thrive.",
-  keywords: "Testimonials, Daikai Media, client feedback, reviews, success stories, media solutions, satisfied clients, content creators, business growth",
-  author: "Daikai Media Team",
+  title: "Testimonials | Daiki Media",
+  description: "Discover the success stories and feedback from our clients. Learn how Daiki Media's innovative media solutions have helped businesses and content creators thrive.",
+  keywords: "Testimonials, Daiki Media, client feedback, reviews, success stories, media solutions, satisfied clients, content creators, business growth",
+  author: "Daiki Media Team",
   robots: "index, follow",
   openGraph: {
     type: "website",
     url: "https://daikimedia.com/testimonials",
-    title: "Testimonials | Daikai Media",
-    description: "Hear from our clients about how Daikai Media helped their business grow and succeed. Real reviews and success stories.",
+    title: "Testimonials | Daiki Media",
+    description: "Hear from our clients about how Daiki Media helped their business grow and succeed. Real reviews and success stories.",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@daikimedia", 
-    title: "Testimonials | Daikai Media",
+    site: "@daikimedia",
+    title: "Testimonials | Daiki Media",
     description: "Read real success stories from our clients and partners.",
   },
 };

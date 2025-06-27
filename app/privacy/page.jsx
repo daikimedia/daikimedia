@@ -9,7 +9,7 @@ export const metadata = {
   description:
     "Review Daiki Media’s privacy policy in KL. Understand how we collect, use, and protect your data while ensuring your privacy.",
   keywords:
-    "privacy policy, data protection, user privacy, privacy notice, Daikai Media privacy, data security, information collection",
+    "privacy policy, data protection, user privacy, privacy notice, Daiki Media privacy, data security, information collection",
 };
 
 const Privacy = () => {
