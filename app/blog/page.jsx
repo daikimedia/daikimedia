@@ -5,62 +5,25 @@ import Footer from "@/components/footer/Footer";
 import NewsLetter from "@/components/shared/NewsLetter";
 import PageHero from "@/components/shared/PageHero";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
+import ArticleSchema from "@/components/schema/ArticleSchema";
 
-export async function generateMetadata() {
+export default async function Blog() {
   try {
     const res = await fetch("https://daiki.media/wp-json/wp/v2/posts", {
       next: { revalidate: 10 },
     });
-    if (!res.ok) {
-      throw new Error("Failed to fetch metadata");
-    }
-    const metadata = await res.json();
-    return {
-      title: metadata[0]?.title?.rendered || "Blog | Daiki Media",
-      description:
-        metadata[0]?.excerpt?.rendered ||
-        "Explore the latest blogs and articles from Daiki Media.",
-      keywords: [
-        "Daiki Media",
-        "blogs",
-        "media",
-        "content",
-        "articles",
-        "updates",
-      ],
-    };
-  } catch (error) {
-    console.error("Error generating metadata:", error);
-    return {
-      title: "Blog | Daiki Media",
-      description: "Explore the latest blogs and articles from Daiki Media.",
-      keywords: [
-        "Daiki Media",
-        "blogs",
-        "media",
-        "content",
-        "articles",
-        "updates",
-      ],
-    };
-  }
-}
+    const metadata = res.ok ? await res.json() : [];
 
-export default async function Blog() {
-  try {
-    const metadataRes = await fetch("https://daiki.media/wp-json/wp/v2/posts", {
-      next: { revalidate: 10 },
-    });
-    const metadata = metadataRes.ok ? await metadataRes.json() : [];
+    const firstPost = metadata[0] || {};
 
     return (
       <>
         <Head>
-          <title>{metadata[0]?.title?.rendered || "Blog | Daiki Media"}</title>
+          <title>{firstPost?.title?.rendered || "Blog | Daiki Media"}</title>
           <meta
             name="description"
             content={
-              metadata[0]?.excerpt?.rendered ||
+              firstPost?.excerpt?.rendered?.replace(/<[^>]+>/g, '') ||
               "Explore the latest blogs and articles from Daiki Media."
             }
           />
@@ -70,12 +33,22 @@ export default async function Blog() {
           />
         </Head>
 
+        <ArticleSchema
+          headline={firstPost?.title?.rendered || "Blog | Daiki Media"}
+          description={firstPost?.excerpt?.rendered?.replace(/<[^>]+>/g, '') || "Explore the latest blogs and articles from Daiki Media."}
+          authorName="Daiki Media"
+          authorUrl="https://www.daikimedia.com"
+          publisherName="Daiki Media"
+          publisherLogo="https://www.daikimedia.com/logo.png"
+          datePublished={firstPost?.date || new Date().toISOString()}
+          dateModified={firstPost?.modified || new Date().toISOString()}
+          mainEntityUrl={`https://www.daikimedia.com/blog/${firstPost?.slug}`}
+          imageUrl={firstPost?.yoast_head_json?.og_image?.[0]?.url || "https://www.daikimedia.com/default-image.jpg"}
+        />
+
         <PrimaryNavbar />
         <main>
-          <PageHero
-            subtitle="OUR BLOG"
-            title="Recent Blogs <br/> By Daiki Media"
-          />
+          <PageHero subtitle="OUR BLOG" title="Recent Blogs <br/> By Daiki Media" />
           <FeatureBlog />
           <RecentNews />
           <NewsLetter />
@@ -88,9 +61,7 @@ export default async function Blog() {
     return (
       <div>
         <h1>Error Loading Blogs</h1>
-        <p>
-          Sorry, we couldn&apos;t load the blog content. Please try again later.
-        </p>
+        <p>Sorry, we couldn&apos;t load the blog content. Please try again later.</p>
       </div>
     );
   }

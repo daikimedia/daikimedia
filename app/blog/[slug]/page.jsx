@@ -6,6 +6,7 @@ import Footer from "@/components/footer/Footer";
 import NewsLetter from "@/components/shared/NewsLetter";
 import PageHero from "@/components/shared/PageHero";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
+import ArticleSchema from "@/components/schema/ArticleSchema";
 import blogData from "@/data/singleBlogData.json";
 
 export default function BlogDetails() {
@@ -30,7 +31,6 @@ export default function BlogDetails() {
 
         const data = await response.json();
 
-
         const foundBlog = data.find((item) => item.slug === slug);
         if (foundBlog) {
           setBlog(foundBlog);
@@ -53,12 +53,10 @@ export default function BlogDetails() {
         console.error("Error fetching blogs:", error);
         setError(error.message);
 
-
         const fallbackBlog = blogData.find((item) => item.slug === slug);
         if (fallbackBlog) {
           setBlog(fallbackBlog);
           setIsApiBlog(false);
-
 
           const related = blogData
             .filter(
@@ -126,6 +124,23 @@ export default function BlogDetails() {
     }
   };
 
+  // Function to get full ISO date for schema
+  const getSchemaDate = (dateField) => {
+    if (isApiBlog) {
+      return blog[dateField] || blog.created_at || new Date().toISOString();
+    } else {
+      return blog[dateField] || blog.date || new Date().toISOString();
+    }
+  };
+
+  // Function to get current page URL
+  const getCurrentUrl = () => {
+    if (typeof window !== "undefined") {
+      return window.location.href;
+    }
+    return `https://yourdomain.com/blog/${slug}`; // Replace with your actual domain
+  };
+
   return (
     <>
       <Head>
@@ -139,8 +154,29 @@ export default function BlogDetails() {
           )}
         />
       </Head>
+
+
+      <ArticleSchema
+        headline={decodeHtmlEntities(blog.title || "Untitled Blog")}
+        description={decodeHtmlEntities(
+          blog.description ||
+          blog.content?.replace(/<[^>]*>/g, "").substring(0, 160) ||
+          "Blog post content"
+        )}
+        authorName={blog.author || "Daiki Media"}
+        authorUrl="https://daikimedia.com/author"
+        publisherName="Daiki Media"
+        publisherLogo="https://daikimedia.com/logo.png"
+        datePublished={getSchemaDate("created_at")}
+        dateModified={getSchemaDate("updated_at") || getSchemaDate("created_at")}
+        mainEntityUrl={getCurrentUrl()}
+        imageUrl={getImageUrl(blog.featuredImage)}
+        imageWidth={1200}
+        imageHeight={630}
+      />
+
       <PrimaryNavbar />
-      <main className="flex flex-col items-center justify-center min-h-screen">
+      <main className="flex flex-col items-center justify-center ">
         <PageHero
           subtitle="BLOG Details"
           title="Recent blogs created <br/> by Daiki Media"
@@ -196,12 +232,11 @@ export default function BlogDetails() {
               ></div>
             </div>
 
-
             {false && (
               <div className="mt-16">
                 <h3 className="text-2xl font-bold mb-8">Related Blogs</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  {relatedBlogs.slice(0, 10).map((relatedBlog) => ( // Limit to 6 items
+                  {relatedBlogs.slice(0, 10).map((relatedBlog) => (
                     <div
                       key={relatedBlog.slug}
                       className="border rounded-lg p-4"
@@ -210,9 +245,9 @@ export default function BlogDetails() {
                         src={getImageUrl(relatedBlog.featuredImage)}
                         alt={relatedBlog.title}
                         className="w-full h-48 object-cover rounded-md mb-4"
-                        width={300} // Add explicit width
-                        height={192} // Add explicit height (proportional to h-48)
-                        loading="lazy" // Lazy load images
+                        width={300}
+                        height={192}
+                        loading="lazy"
                       />
                       <h4 className="text-xl font-semibold mb-2">
                         {decodeHtmlEntities(relatedBlog.title)}
