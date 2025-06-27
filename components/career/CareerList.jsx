@@ -2,11 +2,11 @@ import getMarkDownData from '@/utils/getMarkDownData'
 import Link from 'next/link'
 
 export const metadata = {
-  title: "Career List | Daikai Media",
+  title: "Career List | Daiki Media",
   description:
-    "Browse the latest career opportunities at Daikai Media. Discover job openings and apply to join a dynamic team dedicated to digital innovation.",
+    "Browse the latest career opportunities at Daiki Media. Discover job openings and apply to join a dynamic team dedicated to digital innovation.",
   keywords:
-    "Daikai Media, career list, job openings, digital marketing careers, work with us, career opportunities, join our team, job vacancies",
+    "Daiki Media, career list, job openings, digital marketing careers, work with us, career opportunities, join our team, job vacancies",
 };
 
 const CareerList = () => {

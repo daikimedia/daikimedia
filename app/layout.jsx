@@ -4,7 +4,9 @@ import { cn } from "@/utils/cn";
 import { Inter, Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import Script from "next/script";
 import GTMNoScript from "@/components/GTMNoScript";
-
+import OrganizationSchema from "@/components/schema/OrganizationSchema";
+import DynamicBreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
+// import Head from "next/head";
 const inter = Inter({
   weight: ["200", "300", "400", "500", "600", "700", "800"],
   style: ["normal"],
@@ -109,7 +111,10 @@ export default function RootLayout({ children }) {
         )}
         suppressHydrationWarning={true}
       >
+        <DynamicBreadcrumbSchema />
         {children}
+
+        <OrganizationSchema />
       </body>
     </html>
   );

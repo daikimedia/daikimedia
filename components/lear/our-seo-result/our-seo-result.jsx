@@ -12,12 +12,14 @@ import {
   Star,
 } from "lucide-react";
 
+
+
 export const metadata = {
-  title: "SEO Results | Daikai Media",
+  title: "SEO Results | Daiki Media",
   description:
-    "Discover how Daikai Media helps achieve outstanding SEO results. Learn about strategies, tools, and insights that enhance your website's search engine performance.",
+    "Discover how Daiki Media helps achieve outstanding SEO results. Learn about strategies, tools, and insights that enhance your website's search engine performance.",
   keywords:
-    "SEO results, Daikai Media, search engine optimization, SEO tools, website ranking, SEO strategies, improve SEO performance",
+    "SEO results, Daiki Media, search engine optimization, SEO tools, website ranking, SEO strategies, improve SEO performance",
 };
 
 
@@ -108,6 +110,7 @@ export default function SeoResult() {
 
   return (
     <>
+
       <section className="py-32">
         <div className="container mx-auto text-center">
           <h1 className="text-base font-semibold mb-4">

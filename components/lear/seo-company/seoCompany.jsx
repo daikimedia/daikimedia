@@ -13,6 +13,9 @@ import {
   Zap,
   Brain,
 } from "lucide-react";
+import FAQSchema from "@/components/schema/FAQSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema"
+import ArticleSchema from "@/components/schema/ArticleSchema"
 
 const benefits = [
   {
@@ -109,146 +112,21 @@ const paaQuestions = [
 // All FAQ data combined for schema
 const allFAQs = [...faqs, ...paaQuestions];
 
-// Schema components that render as script tags
-const FAQSchema = () => {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": allFAQs.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
-  };
 
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
-  );
-};
+const breadcrumbs = [
+  { name: 'Home', url: 'https://www.daikimedia.com' },
+  { name: 'Learn', url: 'https://www.daikimedia.com/learn' },
+  { name: 'What is SEO Company', url: 'https://www.daikimedia.com/learn/what-is-seo-company' }
+];
 
-const ArticleSchema = () => {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "What is an SEO Company and Why Your Business Needs One",
-    "description": "Discover how Daiki Media can help your business rank higher, drive traffic, and grow revenue with expert SEO services.",
-    "author": {
-      "@type": "Organization",
-      "name": "Daiki Media",
-      "url": "https://www.daikimedia.com"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Daiki Media",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.daikimedia.com/logo.png",
-        "width": 200,
-        "height": 60
-      }
-    },
-    "datePublished": "2024-01-01T00:00:00Z",
-    "dateModified": "2024-12-01T00:00:00Z",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.daikimedia.com/learn/what-is-seo-company"
-    },
-    "image": {
-      "@type": "ImageObject",
-      "url": "https://www.daikimedia.com/seo-company-guide.jpg",
-      "width": 1200,
-      "height": 630
-    }
-  };
 
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
-  );
-};
-
-const BreadcrumbSchema = () => {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://www.daikimedia.com"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Learn",
-        "item": "https://www.daikimedia.com/learn"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "What is SEO Company",
-        "item": "https://www.daikimedia.com/learn/what-is-seo-company"
-      }
-    ]
-  };
-
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
-  );
-};
-
-const OrganizationSchema = () => {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Daiki Media",
-    "url": "https://www.daikimedia.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.daikimedia.com/logo.png",
-      "width": 200,
-      "height": 60
-    },
-    "description": "Expert SEO services to improve your website's rankings and drive organic traffic, ensuring long-term growth and success.",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+601114850067",
-      "contactType": "customer service",
-      "availableLanguage": "English"
-    },
-    "sameAs": [
-      "https://www.facebook.com/daikimedia",
-      "https://www.twitter.com/daikimedia",
-      "https://www.linkedin.com/company/daikimedia"
-    ]
-  };
-
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
-  );
-};
 export const metadata = {
   title: "SEO Optimization Companies | Expert SEO Services for Business | Daiki Media",
   canonicalUrl: "https://www.daikimedia.com/learn/what-is-seo-company",
   description:
-    "SEO optimization companies, Daikai Media provides expert services to improve your website's rankings and drive organic traffic, ensuring long-term growth and success.",
+    "SEO optimization companies, Daiki Media provides expert services to improve your website's rankings and drive organic traffic, ensuring long-term growth and success.",
   keywords:
-    "SEO company, Daikai Media, search engine optimization, SEO services, online visibility, SEO strategies, improve website ranking",
+    "SEO company, Daiki Media, search engine optimization, SEO services, online visibility, SEO strategies, improve website ranking",
 };
 
 export default function SeoCompany() {
@@ -260,11 +138,22 @@ export default function SeoCompany() {
 
   return (
     <>
-      {/* Schema Markup - Rendered in head */}
-      <FAQSchema />
-      <ArticleSchema />
-      <BreadcrumbSchema />
-      <OrganizationSchema />
+
+      <FAQSchema faqs={allFAQs} />
+
+      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <ArticleSchema
+        headline="What is an SEO Company and Why Your Business Needs One"
+        description="Discover how Daiki Media can help your business rank higher, drive traffic, and grow revenue with expert SEO services."
+        authorName="Daiki Media"
+        authorUrl="https://www.daikimedia.com"
+        publisherName="Daiki Media"
+        publisherLogo="https://www.daikimedia.com/logo.png"
+        datePublished="2024-01-01T00:00:00Z"
+        dateModified="2024-12-01T00:00:00Z"
+        mainEntityUrl="https://www.daikimedia.com/learn/what-is-seo-company"
+        imageUrl="https://www.daikimedia.com/seo-company-guide.jpg"
+      />
 
       <div className="container mx-auto">
         {/* Hero Section */}

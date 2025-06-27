@@ -5,11 +5,11 @@ import PricingCards from './PricingCards'
 
 
 export const metadata = {
-  title: "Pricing | Daikai Media",
+  title: "Pricing | Daiki Media",
   description:
-    "Discover the pricing plans for Daikai Media's services. Choose the best plan that fits your business needs and start growing with expert digital marketing and analytics solutions.",
+    "Discover the pricing plans for Daiki Media's services. Choose the best plan that fits your business needs and start growing with expert digital marketing and analytics solutions.",
   keywords:
-    "Daikai Media, pricing, digital marketing, analytics, business solutions, pricing plans, affordable marketing services",
+    "Daiki Media, pricing, digital marketing, analytics, business solutions, pricing plans, affordable marketing services",
 };
 
 const PricingV2 = ({

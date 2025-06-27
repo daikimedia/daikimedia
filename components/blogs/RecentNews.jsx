@@ -32,11 +32,11 @@ const RecentNews = () => {
             const processedApiBlogData = apiBlogs.map((blog) => ({
               ...blog,
               content: stripHtml(blog.content?.rendered || blog.content || ""),
-              featuredImage: fixImagePath(blog.featuredImage), 
-              date: blog.created_at || "Unknown Creator", 
+              featuredImage: fixImagePath(blog.featuredImage),
+              date: blog.created_at || "Unknown Creator",
             }));
 
-            
+
             const combinedBlogs = [
               ...processedLocalBlogData,
               ...processedApiBlogData.filter(
@@ -72,10 +72,10 @@ const RecentNews = () => {
     return path;
   };
 
-  
+
   const paginationData = useMemo(() => {
     const totalPage = Math.ceil(featureBlog.length / itemsPerPage);
-    
+
     const paginateData = () => {
       const startIndex = (currentPage - 1) * itemsPerPage;
       const endIndex = startIndex + itemsPerPage;
@@ -115,7 +115,7 @@ const RecentNews = () => {
         <div className="mx-auto mb-16 max-w-[550px] text-center">
           <p className="section-tagline text-gray-900">
             Stay updated with the latest trends, news, and insights from the
-            world of Daikai Media.
+            world of Daiki Media.
           </p>
           <h2 className="text-2xl font-semibold text-gray-900">
             Our Recent News & Insights
@@ -135,7 +135,7 @@ const RecentNews = () => {
                   slug={blog.slug}
                   blogData={blog}
                   content={blog.content}
-                  date={blog.date} 
+                  date={blog.date}
                   thumbnail={blog.featuredImage}
                   status={blog.categories}
                   title={blog.title || "Untitled"}

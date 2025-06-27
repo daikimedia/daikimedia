@@ -2,11 +2,11 @@ import ServiceBoxes from './ServiceBoxes'
 
 
 export const metadata = {
-  title: "Services | Daikai Media",
+  title: "Services | Daiki Media",
   description:
-    "Discover the wide range of services offered by Daikai Media. From digital marketing to analytics and creative solutions, we help you grow your business.",
+    "Discover the wide range of services offered by Daiki Media. From digital marketing to analytics and creative solutions, we help you grow your business.",
   keywords:
-    "Daikai Media, services, digital marketing, analytics, creative solutions, business growth, marketing services, business solutions",
+    "Daiki Media, services, digital marketing, analytics, creative solutions, business growth, marketing services, business solutions",
 };
 
 const Services = ({ sectionDetails = true }) => {
@@ -35,7 +35,7 @@ const Services = ({ sectionDetails = true }) => {
             <div className="rounded-full bg-primary-200/25 blur-[145px] lg:-ml-[170px] lg:h-[330px] lg:w-[330px] xl:h-[442px] xl:w-[442px]"></div>
             <div className="lg-ml-[170px] rounded-full bg-primary-200/20 blur-[145px] lg:h-[330px] lg:w-[330px] xl:h-[442px] xl:w-[442px]"></div>
           </div>
-          <ServiceBoxes/>
+          <ServiceBoxes />
         </div>
       </div>
     </section>

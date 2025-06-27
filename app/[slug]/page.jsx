@@ -7,8 +7,8 @@ import ServiceList from "@/data/singleServiceData";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 
 export async function generateMetadata({ params }) {
-  if (!params) return {}; 
-  const slug = params.slug; 
+  if (!params) return {};
+  const slug = params.slug;
 
   const { SingleServiceData } = ServiceList;
   const data = SingleServiceData.find((post) => post.slug === slug);
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }) {
   }
 
   // ✅ Optional: log to terminal for debugging
-  console.log("Generated Metadata for:", slug, meta);
+  // console.log("Generated Metadata for:", slug, meta);
 
   return meta;
 }
@@ -45,7 +45,7 @@ export async function generateStaticParams() {
 
 const ServiceDetails = ({ params }) => {
   const { SingleServiceData } = ServiceList;
-  const slug = params?.slug; 
+  const slug = params?.slug;
   const data = SingleServiceData.find((post) => post.slug === slug);
 
   return (

@@ -3,11 +3,11 @@ import CounterAnimation from '@/utils/CounterAnimation'
 
 
 export const metadata = {
-  title: "Counter | Daikai Media",
+  title: "Counter | Daiki Media",
   description:
-    "Explore the power of analytics with Daikai Media's counter tool. Track real-time data and gain valuable insights to make informed business decisions.",
+    "Explore the power of analytics with Daiki Media's counter tool. Track real-time data and gain valuable insights to make informed business decisions.",
   keywords:
-    "Daikai Media, counter, analytics, real-time data, business insights, tracking tool, data visualization, marketing tools",
+    "Daiki Media, counter, analytics, real-time data, business insights, tracking tool, data visualization, marketing tools",
 };
 
 const Counter = () => {

@@ -14,7 +14,7 @@ export default function BlogDetails() {
   const [isApiBlog, setIsApiBlog] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [relatedBlogs, setRelatedBlogs] = useState([]); 
+  const [relatedBlogs, setRelatedBlogs] = useState([]);
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -30,7 +30,7 @@ export default function BlogDetails() {
 
         const data = await response.json();
 
-        
+
         const foundBlog = data.find((item) => item.slug === slug);
         if (foundBlog) {
           setBlog(foundBlog);
@@ -43,7 +43,7 @@ export default function BlogDetails() {
                 (item.category === foundBlog.category ||
                   item.author === foundBlog.author)
             )
-            .slice(0, 3); 
+            .slice(0, 3);
 
           setRelatedBlogs(related);
         } else {
@@ -53,13 +53,13 @@ export default function BlogDetails() {
         console.error("Error fetching blogs:", error);
         setError(error.message);
 
-      
+
         const fallbackBlog = blogData.find((item) => item.slug === slug);
         if (fallbackBlog) {
           setBlog(fallbackBlog);
           setIsApiBlog(false);
 
-          
+
           const related = blogData
             .filter(
               (item) =>
@@ -143,7 +143,7 @@ export default function BlogDetails() {
       <main className="flex flex-col items-center justify-center min-h-screen">
         <PageHero
           subtitle="BLOG Details"
-          title="Recent blogs created <br/> by Daikai Media"
+          title="Recent blogs created <br/> by Daiki Media"
         />
         <article className="relative pb-150 w-full max-w-4xl mx-auto text-center">
           <div className="container relative">
@@ -196,31 +196,31 @@ export default function BlogDetails() {
               ></div>
             </div>
 
-            
+
             {false && (
               <div className="mt-16">
                 <h3 className="text-2xl font-bold mb-8">Related Blogs</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-  {relatedBlogs.slice(0, 10).map((relatedBlog) => ( // Limit to 6 items
-    <div
-      key={relatedBlog.slug}
-      className="border rounded-lg p-4"
-    >
-      <img
-        src={getImageUrl(relatedBlog.featuredImage)}
-        alt={relatedBlog.title}
-        className="w-full h-48 object-cover rounded-md mb-4"
-        width={300} // Add explicit width
-        height={192} // Add explicit height (proportional to h-48)
-        loading="lazy" // Lazy load images
-      />
-      <h4 className="text-xl font-semibold mb-2">
-        {decodeHtmlEntities(relatedBlog.title)}
-      </h4>
-      <p className="text-gray-600">{relatedBlog.author}</p>
-    </div>
-  ))}
-</div>
+                  {relatedBlogs.slice(0, 10).map((relatedBlog) => ( // Limit to 6 items
+                    <div
+                      key={relatedBlog.slug}
+                      className="border rounded-lg p-4"
+                    >
+                      <img
+                        src={getImageUrl(relatedBlog.featuredImage)}
+                        alt={relatedBlog.title}
+                        className="w-full h-48 object-cover rounded-md mb-4"
+                        width={300} // Add explicit width
+                        height={192} // Add explicit height (proportional to h-48)
+                        loading="lazy" // Lazy load images
+                      />
+                      <h4 className="text-xl font-semibold mb-2">
+                        {decodeHtmlEntities(relatedBlog.title)}
+                      </h4>
+                      <p className="text-gray-600">{relatedBlog.author}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
           </div>

@@ -9,8 +9,8 @@ export const metadata = {
   description:
     "Review Daiki Media’s terms of service in KL. Understand our policies, user rights, and obligations for using our digital marketing services.",
   keywords:
-    "Terms & Conditions, Daikai Media, user agreement, legal policies, platform rules, terms of service, privacy policy",
-  author: "Daikai Media Team",
+    "Terms & Conditions, Daiki Media, user agreement, legal policies, platform rules, terms of service, privacy policy",
+  author: "Daiki Media Team",
   robots: "index, follow",
 };
 
