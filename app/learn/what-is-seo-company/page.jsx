@@ -3,11 +3,11 @@ import SeoCompany from "@/components/lear/seo-company/seoCompany";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 
 export const metadata = {
-  title: "SEO Optimization Companies | Expert SEO Services for Business | Daiki Media",
+  title: "Top SEO Optimization Companies to Grow Your Business | Daiki Media",
   description:
-    "Partner with Daiki Media, your trusted SEO company, to boost your website's search engine rankings and drive organic traffic. Our tailored SEO strategies help you achieve long-term success.",
+    "Partner with top SEO optimization companies to boost search rankings, visibility, and online growth using proven strategies from Malaysia’s trusted agency, Daiki Media.",
   keywords:
-    "SEO company, SEO services, search engine optimization, organic traffic, SEO strategies, digital marketing, SEO experts",
+    "seo optimization companies",
   alternates: {
     canonical: "https://www.daikimedia.com/learn/what-is-seo-company",
   },

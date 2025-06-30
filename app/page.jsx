@@ -3,15 +3,15 @@ import HomePage from "./HomePage";
 
 export const metadata = {
   title:
-    "Digital Marketing Agency Kuala Lumpur | Search Engine Optimization and Digital Marketing | Seo Agencies | Daiki Media",
+    "Digital Marketing Agency Kuala Lumpur | Daiki Media",
   description:
-    "Daiki Media offers expert digital marketing, SEO, web development, UI/UX design, copywriting, and app development to elevate your business in KL, Malaysia.",
+    "Partner with Daiki Media, a top digital marketing agency in Kuala Lumpur offering expert SEO and online marketing strategies that drive measurable business growth.",
   keywords:
-    "Digital marketing agency Kuala Lumpur , Search engine optimization and digital marketing, Best SEO agencies",
+    "digital marketing agency kuala lumpur, search engine optimization and digital marketing,best seo agencies",
   og_title:
-    "Digital Marketing Agency Kuala Lumpur | Search Engine Optimization and Digital Marketing | Seo Agencies | Daiki Media",
+    "Digital Marketing Agency Kuala Lumpur | Daiki Media",
   og_description:
-    "Daiki Media offers expert digital marketing, SEO, web development, UI/UX design, copywriting, and app development to elevate your business in KL, Malaysia.",
+    "Partner with Daiki Media, a top digital marketing agency in Kuala Lumpur offering expert SEO and online marketing strategies that drive measurable business growth.",
   og_image: "https://daikimedia.com/images/logo.png",
   og_url: "https://daikimedia.com",
   og_type: "website",
