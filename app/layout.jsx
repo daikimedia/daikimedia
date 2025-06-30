@@ -6,6 +6,7 @@ import Script from "next/script";
 import GTMNoScript from "@/components/GTMNoScript";
 import OrganizationSchema from "@/components/schema/OrganizationSchema";
 import DynamicBreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
+import ReviewSchema from "@/components/schema/ReviewSchema";
 // import Head from "next/head";
 const inter = Inter({
   weight: ["200", "300", "400", "500", "600", "700", "800"],
@@ -113,7 +114,7 @@ export default function RootLayout({ children }) {
       >
         <DynamicBreadcrumbSchema />
         {children}
-
+        <ReviewSchema />
         <OrganizationSchema />
       </body>
     </html>
