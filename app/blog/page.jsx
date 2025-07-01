@@ -33,18 +33,6 @@ export default async function Blog() {
           />
         </Head>
 
-        <ArticleSchema
-          headline={firstPost?.title?.rendered || "Blog | Daiki Media"}
-          description={firstPost?.excerpt?.rendered?.replace(/<[^>]+>/g, '') || "Explore the latest blogs and articles from Daiki Media."}
-          authorName="Daiki Media"
-          authorUrl="https://www.daikimedia.com"
-          publisherName="Daiki Media"
-          publisherLogo="https://www.daikimedia.com/logo.png"
-          datePublished={firstPost?.date || new Date().toISOString()}
-          dateModified={firstPost?.modified || new Date().toISOString()}
-          mainEntityUrl={`https://www.daikimedia.com/blog/${firstPost?.slug}`}
-          imageUrl={firstPost?.yoast_head_json?.og_image?.[0]?.url || "https://www.daikimedia.com/default-image.jpg"}
-        />
 
         <PrimaryNavbar />
         <main>

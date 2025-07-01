@@ -153,6 +153,7 @@ export default function BlogDetails() {
             "Blog post details"
           )}
         />
+
       </Head>
 
 
