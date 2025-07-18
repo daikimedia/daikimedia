@@ -12,8 +12,8 @@ import CallToActionV2 from "@/components/shared/CallToActionV2";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 export const metadata = {
   title: "Chatbot",
-  description: "Discover Daikai Media's AI-powered chatbot solutions designed to enhance customer interaction and automate support.",
-  keywords: "Daikai Media, chatbot solutions, AI chatbots, customer support, business automation, conversational AI",
+  description: "Discover Daiki Media's AI-powered chatbot solutions designed to enhance customer interaction and automate support.",
+  keywords: "Daiki Media, chatbot solutions, AI chatbots, customer support, business automation, conversational AI",
 };
 const HomePage6 = () => {
   return (

@@ -27,7 +27,6 @@ export async function generateMetadata({ params }) {
     meta.keywords = data.keyword;
   }
 
-  console.log("Generated Metadata for", data.slug, meta);
 
   return meta;
 }

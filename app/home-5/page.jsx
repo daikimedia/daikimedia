@@ -12,8 +12,8 @@ import Testimonial from "@/components/shared/Testimonial";
 
 export const metadata = {
   title: "Hosting",
-  description: "Find out about Daikai Media's reliable hosting services for websites and applications.",
-  keywords: "Daikai Media, hosting services, website hosting, cloud hosting, web services",
+  description: "Find out about Daiki Media's reliable hosting services for websites and applications.",
+  keywords: "Daiki Media, hosting services, website hosting, cloud hosting, web services",
 };
 export default function HomePage5() {
   return (

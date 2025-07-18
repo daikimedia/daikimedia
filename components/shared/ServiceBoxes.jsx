@@ -34,7 +34,7 @@ const ServiceBoxes = () => {
       {uniqueServiceData.map((items) => (
         <div
           className="relative scale-100 rounded-medium bg-white p-2.5 shadow-nav transition-transform duration-500 hover:scale-105 hover:transition-transform hover:duration-500 dark:bg-dark-200"
-          key={items.id} 
+          key={items.id}
         >
           <div className="h-full rounded border border-dashed border-gray-100 dark:text-white p-10 dark:border-borderColor-dark max-lg:p-5">
             <Image

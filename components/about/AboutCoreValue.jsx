@@ -1,10 +1,10 @@
 import CoreValueAnimation from './CoreValueAnimation'
 export const metadata = {
-  title: "Core Values | Daikai Media",
+  title: "Core Values | Daiki Media",
   description:
-    "Learn about the core values that drive Daikai Media. Our principles guide everything we do, from creating innovative digital solutions to fostering a culture of excellence.",
+    "Learn about the core values that drive Daiki Media. Our principles guide everything we do, from creating innovative digital solutions to fostering a culture of excellence.",
   keywords:
-    "Daikai Media, core values, company principles, digital innovation, company culture, business ethics, integrity, teamwork, excellence",
+    "Daiki Media, core values, company principles, digital innovation, company culture, business ethics, integrity, teamwork, excellence",
 };
 
 const AboutCoreValue = () => {

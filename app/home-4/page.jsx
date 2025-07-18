@@ -15,8 +15,8 @@ import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 
 export const metadata = {
   title: "analaytics",
-  description: "Daikai Media offers cutting-edge digital solutions, including web development, AI, and blockchain services to empower your business.",
-  keywords: "Daikai Media, digital solutions, web development, AI, blockchain, technology services",
+  description: "Daiki Media offers cutting-edge digital solutions, including web development, AI, and blockchain services to empower your business.",
+  keywords: "Daiki Media, digital solutions, web development, AI, blockchain, technology services",
 };
 
 const HomePage4 = () => {

@@ -1,10 +1,10 @@
 'use client'
 import { fadeFromRightAnimation, fadeUpAnimation } from '@/data/animation'
 import useWhileInView from '@/hooks/useWhileInView'
-import imageOnlineValueDark from '@/public/images/about/onlinePayment-dark.png'
+import img2 from '@/public/images/about/img2.jpg'
 import imageShapeDark from '@/public/images/about/onlinePayment-shape-dark.png'
-import imageShape from '@/public/images/about/onlinePayment-shape.png'
-import imageOnlineValue from '@/public/images/about/onlinePayment.png'
+// import imageShape from '@/public/images/about/onlinePayment-shape.png'
+import img1 from '@/public/images/about/img1.jpg'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { useRef } from 'react'
@@ -22,12 +22,12 @@ const CoreValueAnimation = () => {
       animate={controlAnimation}
       variants={fadeUpAnimation}>
       <Image
-        src={imageOnlineValue}
+        src={img1}
         alt="banking image"
         className="max-w-[250px] dark:hidden lg:max-w-[320px] xl:max-w-[420px]"
       />
       <Image
-        src={imageOnlineValueDark}
+        src={img2}
         alt="banking image"
         className="hidden max-w-[250px]  dark:inline-block lg:max-w-[320px] xl:max-w-[420px]"
       />
@@ -37,7 +37,7 @@ const CoreValueAnimation = () => {
         initial="initial"
         animate={controlAnimation2}
         variants={fadeFromRightAnimation}>
-        <Image src={imageShape} alt="banking image" className="dark:hidden" />
+        <Image src={img2} alt="banking image" className="dark:hidden" />
         <Image src={imageShapeDark} alt="banking image" className="hidden dark:inline-block " />
       </motion.div>
 

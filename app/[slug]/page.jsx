@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Footer from "@/components/footer/Footer";
 import ServiceContent from "@/components/service/ServiceContent";
 import MembersCounter from "@/components/shared/MembersCounter";
@@ -5,10 +6,11 @@ import NewsLetter from "@/components/shared/NewsLetter";
 import Pricing from "@/components/shared/Pricing";
 import ServiceList from "@/data/singleServiceData";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
+import ServiceSchema from "@/components/schema/ServicesSchema";
 
 export async function generateMetadata({ params }) {
-  if (!params) return {}; 
-  const slug = params.slug; 
+  if (!params) return {};
+  const slug = params.slug;
 
   const { SingleServiceData } = ServiceList;
   const data = SingleServiceData.find((post) => post.slug === slug);
@@ -18,20 +20,15 @@ export async function generateMetadata({ params }) {
     description: data?.metaDescription || "Default Description",
   };
 
-  // ✅ Add canonical if slug exists
   if (data?.slug) {
     meta.alternates = {
       canonical: `https://www.daikimedia.com/${data.slug}`,
     };
   }
 
-  // ✅ Add keywords if present
   if (data?.keyword) {
     meta.keywords = data.keyword;
   }
-
-  // ✅ Optional: log to terminal for debugging
-  console.log("Generated Metadata for:", slug, meta);
 
   return meta;
 }
@@ -45,11 +42,15 @@ export async function generateStaticParams() {
 
 const ServiceDetails = ({ params }) => {
   const { SingleServiceData } = ServiceList;
-  const slug = params?.slug; 
+  const slug = params?.slug;
   const data = SingleServiceData.find((post) => post.slug === slug);
 
   return (
     <>
+      <Head>
+        <ServiceSchema data={data} />
+      </Head>
+
       <PrimaryNavbar />
       <main>
         <ServiceContent data={data} />

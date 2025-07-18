@@ -4,7 +4,10 @@ import { cn } from "@/utils/cn";
 import { Inter, Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import Script from "next/script";
 import GTMNoScript from "@/components/GTMNoScript";
-
+import OrganizationSchema from "@/components/schema/OrganizationSchema";
+import DynamicBreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
+import ReviewSchema from "@/components/schema/ReviewSchema";
+// import Head from "next/head";
 const inter = Inter({
   weight: ["200", "300", "400", "500", "600", "700", "800"],
   style: ["normal"],
@@ -44,7 +47,7 @@ export default function RootLayout({ children }) {
         />
         <link rel="preload" as="image" href="https://www.daikimedia.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftestimg.81f0ff33.avif&w=1920&q=75" type="image/avif" />
 
-        <link rel="canonical" href="https://www.daikimedia.com/" />	
+        {/* <link rel="canonical" href="https://www.daikimedia.com/" />	 */}
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Daiki Media" />
         <meta property="og:description" content="Daiki Media provides expert SEO and website development services." />
@@ -60,7 +63,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:site" content="@daiki.Media" />
         <GTMNoScript />
         {/* Google Tag Manager */}
-        <Script id="google-tag-manager" strategy="afterInteractive">
+        <Script id="google-tag-manager" strategy="lazyOnload">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -109,7 +112,10 @@ export default function RootLayout({ children }) {
         )}
         suppressHydrationWarning={true}
       >
+        <DynamicBreadcrumbSchema />
         {children}
+        <ReviewSchema />
+        <OrganizationSchema />
       </body>
     </html>
   );

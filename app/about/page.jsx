@@ -11,9 +11,9 @@ import TestimonialV2 from "@/components/shared/TestimonialV2"
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 
 export const metadata = {
-  title: "About | Daikai Media",
-  description: "Learn more about Daikai Media, our mission, values, and the team behind our success.",
-  keywords: "about, Daikai Media, our mission, media company, team",
+  title: "About | Daiki Media",
+  description: "Learn more about Daiki Media, our mission, values, and the team behind our success.",
+  keywords: "about, Daiki Media, our mission, media company, team",
 };
 const About = () => {
   const { AboutFeaturesData } = AboutFeature;

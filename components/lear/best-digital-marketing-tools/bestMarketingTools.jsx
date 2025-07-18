@@ -1,16 +1,16 @@
 import React from "react";
 
 export const metadata = {
-  title: "Digital Marketing Tools | Daikai Media",
+  title: "Digital Marketing Tools | Daiki Media",
   description:
-    "Discover powerful digital marketing tools with Daikai Media to enhance your online presence. Explore strategies, analytics, and resources tailored to your needs.",
+    "Discover powerful digital marketing tools with Daiki Media to enhance your online presence. Explore strategies, analytics, and resources tailored to your needs.",
   keywords:
-    "Digital Marketing Tools, Daikai Media, online marketing, marketing analytics, SEO tools, social media tools, content marketing",
+    "Digital Marketing Tools, Daiki Media, online marketing, marketing analytics, SEO tools, social media tools, content marketing",
 };
 
 export default function DigitalMarketingTools() {
 
-  
+
   return (
     <div className=" mt-32 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto text-start ">

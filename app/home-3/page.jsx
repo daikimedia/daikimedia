@@ -16,9 +16,9 @@ import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 export const metadata = {
   title: "Banking",
   description:
-    "Discover Daikai Media's banking services for seamless financial management.",
+    "Discover Daiki Media's banking services for seamless financial management.",
   keywords:
-    "Daikai Media, banking services, secure banking, online banking, financial management",
+    "Daiki Media, banking services, secure banking, online banking, financial management",
 };
 
 const HomePage3 = () => {

@@ -8,8 +8,8 @@ export const metadata = {
   description:
     "Schedule a demo with Daiki Media in KL to see how our digital marketing solutions can help grow your business effectively.",
   keywords:
-    "request demo, product demo, Daikai Media demo, personalized demo, business solutions, demo request, software demo",
-  author: "Daikai Media Team",
+    "request demo, product demo, Daiki Media demo, personalized demo, business solutions, demo request, software demo",
+  author: "Daiki Media Team",
 };
 
 const RequestDemo = () => {

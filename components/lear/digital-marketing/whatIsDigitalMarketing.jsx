@@ -2,11 +2,11 @@
 import React from "react";
 
 export const metadata = {
-  title: "What Is Digital Marketing? | Daikai Media",
+  title: "What Is Digital Marketing? | Daiki Media",
   description:
-    "Discover what digital marketing is with Daikai Media. Learn the fundamentals of online marketing strategies and how they can help grow your business.",
+    "Discover what digital marketing is with Daiki Media. Learn the fundamentals of online marketing strategies and how they can help grow your business.",
   keywords:
-    "What is digital marketing, Daikai Media, digital marketing fundamentals, online marketing, marketing strategies, grow your business, digital advertising",
+    "What is digital marketing, Daiki Media, digital marketing fundamentals, online marketing, marketing strategies, grow your business, digital advertising",
 };
 
 

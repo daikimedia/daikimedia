@@ -22,7 +22,7 @@ const ServiceContent = ({ data = {} }) => {
 
         {data?.servicesInclude && <ServiceInclude data={data.servicesInclude} />}
         {data?.infoStatsSection && <InfoStatsSection data={data.infoStatsSection} />}
-        
+
         <Clients />
 
         {data?.cardsSection && <CardsSection data={data.cardsSection} />}
