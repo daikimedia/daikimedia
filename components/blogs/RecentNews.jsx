@@ -10,59 +10,71 @@ const RecentNews = () => {
   const [isLoading, setIsLoading] = useState(true);
   const itemsPerPage = 12;
 
-  useEffect(() => {
-    const fetchBlogs = async () => {
-      try {
-        const stripHtml = (html) => {
-          if (!html) return "";
-          return html.replace(/<\/?[^>]+(>|$)/g, "");
-        };
+useEffect(() => {
+  const fetchBlogs = async () => {
+    setIsLoading(true);
 
-        const processedLocalBlogData = blogData.map((blog) => ({
-          ...blog,
-          content: stripHtml(blog.content?.rendered || blog.content || ""),
-        }));
-
-        try {
-          const response = await fetch(`https://cms.daikimedia.com/api/blogs`);
-
-          if (response.ok) {
-            const apiBlogs = await response.json();
-
-            const processedApiBlogData = apiBlogs.map((blog) => ({
-              ...blog,
-              content: stripHtml(blog.content?.rendered || blog.content || ""),
-              featuredImage: fixImagePath(blog.featuredImage),
-              date: blog.created_at || "Unknown Creator",
-            }));
-
-
-            const combinedBlogs = [
-              ...processedLocalBlogData,
-              ...processedApiBlogData.filter(
-                (apiBlog) =>
-                  !processedLocalBlogData.some((jsonBlog) => jsonBlog.slug === apiBlog.slug)
-              ),
-            ];
-
-            setFeatureBlog(combinedBlogs);
-          } else {
-            setFeatureBlog(processedLocalBlogData);
-          }
-        } catch (apiError) {
-          console.error("API fetch error:", apiError);
-          setFeatureBlog(processedLocalBlogData);
-        }
-      } catch (error) {
-        console.error("Error processing blogs:", error);
-        setFeatureBlog([]);
-      } finally {
-        setIsLoading(false);
-      }
+    const stripHtml = (html) => {
+      if (!html) return "";
+      return html.replace(/<\/?[^>]+(>|$)/g, "");
     };
 
-    fetchBlogs();
-  }, []);
+    const fixImagePath = (path) => {
+      if (!path) return "";
+      if (!path.startsWith("http")) {
+        return `https://cms.daikimedia.com/${path.replace(/\\/g, "/")}`;
+      }
+      return path;
+    };
+
+    try {
+      const response = await fetch("https://cms.daikimedia.com/api/blogs");
+
+      const processedLocalBlogData = blogData.map((blog) => ({
+        ...blog,
+        content: stripHtml(blog.content?.rendered || blog.content || ""),
+      }));
+
+      if (response.ok) {
+        const apiBlogs = await response.json();
+
+        const processedApiBlogData = apiBlogs.map((blog) => ({
+          ...blog,
+          content: stripHtml(blog.content?.rendered || blog.content || ""),
+          featuredImage: fixImagePath(blog.featuredImage),
+          date: blog.created_at || "Unknown Creator",
+        }));
+
+        // ✅ API first, then JSON
+        const combinedBlogs = [
+          ...processedApiBlogData,
+          ...processedLocalBlogData.filter(
+            (jsonBlog) =>
+              !apiBlogs.some((apiBlog) => apiBlog.slug === jsonBlog.slug)
+          ),
+        ];
+
+        setFeatureBlog(combinedBlogs);
+      } else {
+        // API failed: use JSON only
+        setFeatureBlog(processedLocalBlogData);
+      }
+    } catch (error) {
+      console.error("Error fetching blogs:", error);
+
+      const processedLocalBlogData = blogData.map((blog) => ({
+        ...blog,
+        content: stripHtml(blog.content?.rendered || blog.content || ""),
+      }));
+
+      setFeatureBlog(processedLocalBlogData);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  fetchBlogs();
+}, []);
 
   const fixImagePath = (path) => {
     if (!path) return "";
