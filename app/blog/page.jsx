@@ -5,7 +5,6 @@ import Footer from "@/components/footer/Footer";
 import NewsLetter from "@/components/shared/NewsLetter";
 import PageHero from "@/components/shared/PageHero";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
-import ArticleSchema from "@/components/schema/ArticleSchema";
 
 export default async function Blog() {
   try {
