@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
+import dayjs from "dayjs";
 
 const BlogItems = ({ slug, blogData, content, column, thumbnail }) => {
   const stripHTML = (html) => {
@@ -32,7 +33,7 @@ const BlogItems = ({ slug, blogData, content, column, thumbnail }) => {
       <div className="rounded-2xl border p-6 ease-in-out max-md:px-4">
         <div className="space-y-4">
           <div className="text-sm text-gray-500 dark:text-gray-400">
-            <p>{new Date(blogData.date).toLocaleDateString()}</p>
+            <p>{dayjs(blogData.date).format("MMMM D, YYYY")}</p>
           </div>
           <div className="mb-6">
             <img

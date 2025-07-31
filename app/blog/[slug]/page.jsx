@@ -4,6 +4,7 @@ import NewsLetter from "@/components/shared/NewsLetter";
 import PageHero from "@/components/shared/PageHero";
 import ArticleSchema from "@/components/schema/ArticleSchema";
 import blogData from "@/data/singleBlogData.json";
+import dayjs from "dayjs";
 
 async function getBlogsFromAPI() {
   try {
@@ -25,9 +26,7 @@ async function getBlogsFromAPI() {
   }
 }
 
-// Get blog data with fallback
 async function getBlogData(slug) {
-  // Try API first
   const apiBlogs = await getBlogsFromAPI();
 
   if (apiBlogs) {
@@ -50,7 +49,6 @@ async function getBlogData(slug) {
     }
   }
 
-  // Fallback to local data
   const localBlog = blogData.find((item) => item.slug === slug);
   if (localBlog) {
     const relatedBlogs = blogData
@@ -72,11 +70,9 @@ async function getBlogData(slug) {
   return null;
 }
 
-// Generate static params for all blog posts
 export async function generateStaticParams() {
   const params = [];
 
-  // Get slugs from API
   try {
     const apiBlogs = await getBlogsFromAPI();
     if (apiBlogs) {
@@ -86,10 +82,8 @@ export async function generateStaticParams() {
     console.error("Error fetching API slugs:", error);
   }
 
-  // Add slugs from local data as fallback
   params.push(...blogData.map((blog) => ({ slug: blog.slug })));
 
-  // Remove duplicates
   const uniqueParams = params.filter(
     (param, index, self) =>
       index === self.findIndex((p) => p.slug === param.slug)
@@ -98,7 +92,6 @@ export async function generateStaticParams() {
   return uniqueParams;
 }
 
-// Generate metadata for SEO
 export async function generateMetadata({ params }) {
   const { slug } = params;
   const data = await getBlogData(slug);
@@ -185,13 +178,16 @@ export default async function BlogDetails({ params }) {
   };
 
   const getImageUrl = (imagePath) => {
-    if (!imagePath) return "/images/default-blog.jpg";
+    if (!imagePath || imagePath === "")
+      return "/images/blog/blog-fallback-img.webp";
     return isApiBlog ? `http://cms.daikimedia.com/${imagePath}` : imagePath;
   };
 
   const getFormattedDate = () => {
     if (isApiBlog) {
-      return blog.created_at ? blog.created_at.split("T")[0] : "Unknown Date";
+      return blog.created_at
+        ? dayjs(blog.created_at).format("MMMM D, YYYY")
+        : "Unknown Date";
     } else {
       return blog.date ? blog.date.split("T")[0] : "Unknown Date";
     }
@@ -206,7 +202,7 @@ export default async function BlogDetails({ params }) {
   };
 
   const getCurrentUrl = () => {
-    return `https://yourdomain.com/blog/${slug}`; // Replace with your actual domain
+    return `https://daikimedia.com/blog/${slug}`;
   };
 
   return (
@@ -234,8 +230,8 @@ export default async function BlogDetails({ params }) {
 
       <main className="flex flex-col items-center justify-center">
         <PageHero
-          subtitle="BLOG Details"
-          title="Recent blogs created <br/> by Daiki Media"
+          subtitle=""
+          title={decodeHtmlEntities(blog.title || "Untitled Blog")}
         />
         <article className="relative pb-150 w-full max-w-4xl mx-auto text-center">
           <div className="container relative">
@@ -251,13 +247,10 @@ export default async function BlogDetails({ params }) {
             </div>
 
             <div className="blog-details text-center mb-12">
-              <h1 className="text-3xl font-bold md:ml-[120px] mb-4">
-                {decodeHtmlEntities(blog.title || "Untitled Blog")}
-              </h1>
               <div className="mb-6 flex items-center justify-center gap-x-2">
                 <p className="text-lg">
                   <a href="/author/lukesh-pillai">
-                    {blog.author || "Unknown Author"}
+                    {blog.author || "Daiki Media"}
                   </a>
                 </p>
 
@@ -289,7 +282,7 @@ export default async function BlogDetails({ params }) {
 
             <div className="blog-details-body text-center">
               <div
-                className="text-gray-700 leading-relaxed mx-auto max-w-4xl prose prose-lg max-w-none"
+                className="text-gray-700 leading-relaxed mx-auto max-w-4xl prose prose-lg "
                 dangerouslySetInnerHTML={{
                   __html: decodeHtmlEntities(blog.content || ""),
                 }}
@@ -299,7 +292,11 @@ export default async function BlogDetails({ params }) {
             {relatedBlogs.length > 0 && (
               <div className="mt-16">
                 <h2 className="text-2xl font-bold mb-8">Related Blogs</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                  className={`grid grid-cols-1 md:grid-cols-${
+                    relatedBlogs.length > 4 ? 4 : relatedBlogs.length
+                  } gap-8`}
+                >
                   {relatedBlogs.map((relatedBlog) => (
                     <div
                       key={relatedBlog.slug}
