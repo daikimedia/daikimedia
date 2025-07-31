@@ -14,6 +14,16 @@ const nextConfig = {
     ];
   },
 
+  async redirects() {
+    return [
+      {
+        source: "/learn/:slug",
+        destination: "/:slug",
+        permanent: true,
+      },
+    ];
+  },
+
   images: {
     formats: ["image/webp"],
     minimumCacheTTL: 60,
