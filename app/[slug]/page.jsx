@@ -9,7 +9,7 @@ import ServiceSchema from "@/components/schema/ServicesSchema";
 
 export async function generateMetadata({ params }) {
   if (!params) return {};
-  const slug = params.slug;
+  const { slug } = await params;
 
   const { SingleServiceData } = ServiceList;
   const data = SingleServiceData.find((post) => post.slug === slug);
@@ -39,9 +39,9 @@ export async function generateStaticParams() {
   }));
 }
 
-const ServiceDetails = ({ params }) => {
+const ServiceDetails = async ({ params }) => {
   const { SingleServiceData } = ServiceList;
-  const slug = params?.slug;
+  const { slug } = await params;
   const data = SingleServiceData.find((post) => post.slug === slug);
 
   return (

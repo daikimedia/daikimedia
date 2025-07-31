@@ -76,14 +76,6 @@ const RecentNews = () => {
     fetchBlogs();
   }, []);
 
-  const fixImagePath = (path) => {
-    if (!path) return "";
-    if (!path.startsWith("http")) {
-      return `https://cms.daikimedia.com/${path.replace(/\\/g, "/")}`;
-    }
-    return path;
-  };
-
   const paginationData = useMemo(() => {
     const totalPage = Math.ceil(featureBlog.length / itemsPerPage);
 

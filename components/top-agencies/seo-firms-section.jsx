@@ -299,7 +299,6 @@ const FilterDropdown = ({
   );
 };
 
-// Main dynamic component
 const DynamicCompanyListing = ({
   data,
   title = "Best Companies",
@@ -308,7 +307,6 @@ const DynamicCompanyListing = ({
   dataKey = "companies", // key to access data array
   showClients = true,
   whatsappNumber = "601114850067",
-  whatsappText = "Free Website Audit",
 }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedRating, setSelectedRating] = useState("");
