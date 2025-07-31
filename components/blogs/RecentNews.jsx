@@ -10,71 +10,71 @@ const RecentNews = () => {
   const [isLoading, setIsLoading] = useState(true);
   const itemsPerPage = 12;
 
-useEffect(() => {
-  const fetchBlogs = async () => {
-    setIsLoading(true);
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      setIsLoading(true);
 
-    const stripHtml = (html) => {
-      if (!html) return "";
-      return html.replace(/<\/?[^>]+(>|$)/g, "");
-    };
+      const stripHtml = (html) => {
+        if (!html) return "";
+        return html.replace(/<\/?[^>]+(>|$)/g, "");
+      };
 
-    const fixImagePath = (path) => {
-      if (!path) return "";
-      if (!path.startsWith("http")) {
-        return `https://cms.daikimedia.com/${path.replace(/\\/g, "/")}`;
-      }
-      return path;
-    };
+      const fixImagePath = (path) => {
+        if (!path) return "";
+        if (!path.startsWith("http")) {
+          return `https://cms.daikimedia.com/${path.replace(/\\/g, "/")}`;
+        }
+        return path;
+      };
 
-    try {
-      const response = await fetch("https://cms.daikimedia.com/api/blogs");
+      try {
+        const response = await fetch("https://cms.daikimedia.com/api/blogs");
 
-      const processedLocalBlogData = blogData.map((blog) => ({
-        ...blog,
-        content: stripHtml(blog.content?.rendered || blog.content || ""),
-      }));
-
-      if (response.ok) {
-        const apiBlogs = await response.json();
-
-        const processedApiBlogData = apiBlogs.map((blog) => ({
+        const processedLocalBlogData = blogData.map((blog) => ({
           ...blog,
           content: stripHtml(blog.content?.rendered || blog.content || ""),
-          featuredImage: fixImagePath(blog.featuredImage),
-          date: blog.created_at || "Unknown Creator",
         }));
 
-        // ✅ API first, then JSON
-        const combinedBlogs = [
-          ...processedApiBlogData,
-          ...processedLocalBlogData.filter(
-            (jsonBlog) =>
-              !apiBlogs.some((apiBlog) => apiBlog.slug === jsonBlog.slug)
-          ),
-        ];
+        if (response.ok) {
+          const apiBlogs = await response.json();
 
-        setFeatureBlog(combinedBlogs);
-      } else {
-        // API failed: use JSON only
+          const processedApiBlogData = apiBlogs.map((blog) => ({
+            ...blog,
+            content: stripHtml(blog.content?.rendered || blog.content || ""),
+            featuredImage: fixImagePath(blog.featuredImage),
+            date: blog.created_at || "Unknown Creator",
+          }));
+
+          // ✅ API first, then JSON
+          const combinedBlogs = [
+            ...processedApiBlogData,
+            ...processedLocalBlogData.filter(
+              (jsonBlog) =>
+                !apiBlogs.some((apiBlog) => apiBlog.slug === jsonBlog.slug)
+            ),
+          ];
+
+          setFeatureBlog(combinedBlogs);
+        } else {
+          // API failed: use JSON only
+          setFeatureBlog(processedLocalBlogData);
+        }
+      } catch (error) {
+        console.error("Error fetching blogs:", error);
+
+        const processedLocalBlogData = blogData.map((blog) => ({
+          ...blog,
+          content: stripHtml(blog.content?.rendered || blog.content || ""),
+        }));
+
         setFeatureBlog(processedLocalBlogData);
+      } finally {
+        setIsLoading(false);
       }
-    } catch (error) {
-      console.error("Error fetching blogs:", error);
+    };
 
-      const processedLocalBlogData = blogData.map((blog) => ({
-        ...blog,
-        content: stripHtml(blog.content?.rendered || blog.content || ""),
-      }));
-
-      setFeatureBlog(processedLocalBlogData);
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
-  fetchBlogs();
-}, []);
+    fetchBlogs();
+  }, []);
 
   const fixImagePath = (path) => {
     if (!path) return "";
@@ -83,7 +83,6 @@ useEffect(() => {
     }
     return path;
   };
-
 
   const paginationData = useMemo(() => {
     const totalPage = Math.ceil(featureBlog.length / itemsPerPage);
@@ -96,7 +95,7 @@ useEffect(() => {
 
     return {
       totalPage,
-      currentPageData: paginateData()
+      currentPageData: paginateData(),
     };
   }, [featureBlog, currentPage, itemsPerPage]);
 

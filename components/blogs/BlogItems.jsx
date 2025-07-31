@@ -22,6 +22,11 @@ const BlogItems = ({ slug, blogData, content, column, thumbnail }) => {
       ? stripHTML(blogData.title.rendered)
       : blogData.title;
 
+  const imageUrl =
+    thumbnail && thumbnail !== ""
+      ? thumbnail
+      : "/images/blog/blog-fallback-img.webp";
+
   return column ? (
     <article className="rounded-medium bg-white p-2.5">
       <div className="rounded-2xl border p-6 ease-in-out max-md:px-4">
@@ -31,11 +36,11 @@ const BlogItems = ({ slug, blogData, content, column, thumbnail }) => {
           </div>
           <div className="mb-6">
             <img
-              src={thumbnail}
+              src={imageUrl}
               alt="service logo"
               className="aspect-square h-[200px] w-full rounded-lg object-cover object-center shadow-md transition-all duration-300 ease-in-out"
               width={350}
-              height={200}
+              height={400}
             />
           </div>
           <div className="space-y-4">
@@ -62,7 +67,7 @@ const BlogItems = ({ slug, blogData, content, column, thumbnail }) => {
     <article className="rounded-medium p-2.5 shadow-nav">
       <div className="rounded border border-dashed border-gray-500 p-6 max-md:p-4">
         <Image
-          src={thumbnail}
+          src={thumbnail || "/images/blog/blog-fallback-img.webp"}
           alt="Blog Image"
           className="mb-6 w-full rounded-md"
           width={389}

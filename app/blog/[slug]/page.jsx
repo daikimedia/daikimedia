@@ -1,113 +1,187 @@
-"use client";
-import { useState, useEffect } from "react";
-import { useParams } from "next/navigation";
-import Head from "next/head";
+import { notFound } from "next/navigation";
 import Footer from "@/components/footer/Footer";
 import NewsLetter from "@/components/shared/NewsLetter";
 import PageHero from "@/components/shared/PageHero";
 import ArticleSchema from "@/components/schema/ArticleSchema";
 import blogData from "@/data/singleBlogData.json";
 
-export default function BlogDetails() {
-  const { slug } = useParams();
-  const [blog, setBlog] = useState(null);
-  const [isApiBlog, setIsApiBlog] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [relatedBlogs, setRelatedBlogs] = useState([]);
+async function getBlogsFromAPI() {
+  try {
+    const response = await fetch("https://cms.daikimedia.com/api/blogs", {
+      next: {
+        revalidate: 3600,
+        tags: ["blogs"],
+      },
+    });
 
-  useEffect(() => {
-    const fetchBlogs = async () => {
-      setIsLoading(true);
-      setError(null);
-
-      try {
-        const response = await fetch("https://cms.daikimedia.com/api/blogs");
-
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        const data = await response.json();
-
-        const foundBlog = data.find((item) => item.slug === slug);
-        if (foundBlog) {
-          setBlog(foundBlog);
-          setIsApiBlog(true);
-
-          const related = data
-            .filter(
-              (item) =>
-                item.slug !== slug &&
-                (item.category === foundBlog.category ||
-                  item.author === foundBlog.author)
-            )
-            .slice(0, 3);
-
-          setRelatedBlogs(related);
-        } else {
-          throw new Error("Blog not found in API");
-        }
-      } catch (error) {
-        console.error("Error fetching blogs:", error);
-        setError(error.message);
-
-        const fallbackBlog = blogData.find((item) => item.slug === slug);
-        if (fallbackBlog) {
-          setBlog(fallbackBlog);
-          setIsApiBlog(false);
-
-          const related = blogData
-            .filter(
-              (item) =>
-                item.slug !== slug &&
-                (item.category === fallbackBlog.category ||
-                  item.author === fallbackBlog.author)
-            )
-            .slice(0, 3);
-
-          setRelatedBlogs(related);
-          setError(null);
-        }
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    if (slug) {
-      fetchBlogs();
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
-  }, [slug]);
 
-  if (isLoading) {
-    return (
-      <div className="flex justify-center items-center h-screen">
-        <p className="text-lg text-gray-700">Loading...</p>
-      </div>
-    );
+    return await response.json();
+  } catch (error) {
+    console.error("Error fetching blogs from API:", error);
+    return null;
+  }
+}
+
+// Get blog data with fallback
+async function getBlogData(slug) {
+  // Try API first
+  const apiBlogs = await getBlogsFromAPI();
+
+  if (apiBlogs) {
+    const apiBlog = apiBlogs.find((item) => item.slug === slug);
+    if (apiBlog) {
+      const relatedBlogs = apiBlogs
+        .filter(
+          (item) =>
+            item.slug !== slug &&
+            (item.category === apiBlog.category ||
+              item.author === apiBlog.author)
+        )
+        .slice(0, 3);
+
+      return {
+        blog: apiBlog,
+        relatedBlogs,
+        isApiBlog: true,
+      };
+    }
   }
 
-  if (error) {
-    return (
-      <div className="flex justify-center items-center h-screen">
-        <p className="text-lg text-red-600">{error}</p>
-      </div>
-    );
+  // Fallback to local data
+  const localBlog = blogData.find((item) => item.slug === slug);
+  if (localBlog) {
+    const relatedBlogs = blogData
+      .filter(
+        (item) =>
+          item.slug !== slug &&
+          (item.category === localBlog.category ||
+            item.author === localBlog.author)
+      )
+      .slice(0, 3);
+
+    return {
+      blog: localBlog,
+      relatedBlogs,
+      isApiBlog: false,
+    };
   }
 
-  if (!blog) {
-    return (
-      <div className="flex justify-center items-center h-screen">
-        <p className="text-lg text-gray-700">Blog post not found.</p>
-      </div>
-    );
+  return null;
+}
+
+// Generate static params for all blog posts
+export async function generateStaticParams() {
+  const params = [];
+
+  // Get slugs from API
+  try {
+    const apiBlogs = await getBlogsFromAPI();
+    if (apiBlogs) {
+      params.push(...apiBlogs.map((blog) => ({ slug: blog.slug })));
+    }
+  } catch (error) {
+    console.error("Error fetching API slugs:", error);
   }
+
+  // Add slugs from local data as fallback
+  params.push(...blogData.map((blog) => ({ slug: blog.slug })));
+
+  // Remove duplicates
+  const uniqueParams = params.filter(
+    (param, index, self) =>
+      index === self.findIndex((p) => p.slug === param.slug)
+  );
+
+  return uniqueParams;
+}
+
+// Generate metadata for SEO
+export async function generateMetadata({ params }) {
+  const { slug } = params;
+  const data = await getBlogData(slug);
+
+  if (!data?.blog) {
+    return {
+      title: "Blog Not Found",
+      description: "The requested blog post could not be found.",
+    };
+  }
+
+  const { blog, isApiBlog } = data;
 
   const decodeHtmlEntities = (html) => {
-    if (typeof window === "undefined") return html;
-    const textArea = document.createElement("textarea");
-    textArea.innerHTML = html;
-    return textArea.value;
+    if (!html) return "";
+    return html
+      .replace(/&amp;/g, "&")
+      .replace(/&lt;/g, "<")
+      .replace(/&gt;/g, ">")
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, "'");
+  };
+
+  const getImageUrl = (imagePath) => {
+    if (!imagePath) return "/images/blog/blog-fallback-img.webp";
+    return isApiBlog ? `http://cms.daikimedia.com/${imagePath}` : imagePath;
+  };
+
+  const title = decodeHtmlEntities(blog.title || "Blog Details");
+  const description = decodeHtmlEntities(
+    blog.description ||
+      blog.content?.replace(/<[^>]*>/g, "").substring(0, 150) ||
+      "Blog post details"
+  );
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      images: [
+        {
+          url: getImageUrl(blog.featuredImage),
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+      type: "article",
+      publishedTime: isApiBlog ? blog.created_at : blog.date,
+      authors: [blog.author || "Daiki Media"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [getImageUrl(blog.featuredImage)],
+    },
+    alternates: {
+      canonical: `https://daikimedia.com/blog/${slug}`,
+    },
+  };
+}
+
+export default async function BlogDetails({ params }) {
+  const { slug } = params;
+  const data = await getBlogData(slug);
+
+  if (!data?.blog) {
+    notFound();
+  }
+
+  const { blog, relatedBlogs, isApiBlog } = data;
+
+  const decodeHtmlEntities = (html) => {
+    if (!html) return "";
+    return html
+      .replace(/&amp;/g, "&")
+      .replace(/&lt;/g, "<")
+      .replace(/&gt;/g, ">")
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, "'");
   };
 
   const getImageUrl = (imagePath) => {
@@ -123,7 +197,6 @@ export default function BlogDetails() {
     }
   };
 
-  // Function to get full ISO date for schema
   const getSchemaDate = (dateField) => {
     if (isApiBlog) {
       return blog[dateField] || blog.created_at || new Date().toISOString();
@@ -132,28 +205,12 @@ export default function BlogDetails() {
     }
   };
 
-  // Function to get current page URL
   const getCurrentUrl = () => {
-    if (typeof window !== "undefined") {
-      return window.location.href;
-    }
     return `https://yourdomain.com/blog/${slug}`; // Replace with your actual domain
   };
 
   return (
     <>
-      <Head>
-        <title>{decodeHtmlEntities(blog.title || "Blog Details")}</title>
-        <meta
-          name="description"
-          content={decodeHtmlEntities(
-            blog.description ||
-              blog.content?.substring(0, 150) ||
-              "Blog post details"
-          )}
-        />
-      </Head>
-
       <ArticleSchema
         headline={decodeHtmlEntities(blog.title || "Untitled Blog")}
         description={decodeHtmlEntities(
@@ -175,7 +232,7 @@ export default function BlogDetails() {
         imageHeight={630}
       />
 
-      <main className="flex flex-col items-center justify-center ">
+      <main className="flex flex-col items-center justify-center">
         <PageHero
           subtitle="BLOG Details"
           title="Recent blogs created <br/> by Daiki Media"
@@ -187,15 +244,16 @@ export default function BlogDetails() {
                 src={getImageUrl(blog.featuredImage)}
                 alt={decodeHtmlEntities(blog.title || "Untitled Blog")}
                 className="rounded max-md:h-full max-md:object-cover w-[700px] h-[500px] max-md:object-center"
-                width={400}
-                height={300}
+                width={700}
+                height={500}
+                priority
               />
             </div>
 
             <div className="blog-details text-center mb-12">
-              <h2 className="text-3xl font-bold md:ml-[120px] mb-4">
+              <h1 className="text-3xl font-bold md:ml-[120px] mb-4">
                 {decodeHtmlEntities(blog.title || "Untitled Blog")}
-              </h2>
+              </h1>
               <div className="mb-6 flex items-center justify-center gap-x-2">
                 <p className="text-lg">
                   <a href="/author/lukesh-pillai">
@@ -220,39 +278,46 @@ export default function BlogDetails() {
                     />
                   </svg>
                 </span>
-                <p className="text-lg">{getFormattedDate()}</p>
+                <time
+                  dateTime={isApiBlog ? blog.created_at : blog.date}
+                  className="text-lg"
+                >
+                  {getFormattedDate()}
+                </time>
               </div>
             </div>
 
             <div className="blog-details-body text-center">
               <div
-                className="text-gray-700 leading-relaxed mx-auto max-w-4xl"
+                className="text-gray-700 leading-relaxed mx-auto max-w-4xl prose prose-lg max-w-none"
                 dangerouslySetInnerHTML={{
                   __html: decodeHtmlEntities(blog.content || ""),
                 }}
               ></div>
             </div>
 
-            {false && (
+            {relatedBlogs.length > 0 && (
               <div className="mt-16">
-                <h3 className="text-2xl font-bold mb-8">Related Blogs</h3>
+                <h2 className="text-2xl font-bold mb-8">Related Blogs</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  {relatedBlogs.slice(0, 10).map((relatedBlog) => (
+                  {relatedBlogs.map((relatedBlog) => (
                     <div
                       key={relatedBlog.slug}
                       className="border rounded-lg p-4"
                     >
                       <img
                         src={getImageUrl(relatedBlog.featuredImage)}
-                        alt={relatedBlog.title}
+                        alt={decodeHtmlEntities(relatedBlog.title)}
                         className="w-full h-48 object-cover rounded-md mb-4"
                         width={300}
                         height={192}
                         loading="lazy"
                       />
-                      <h4 className="text-xl font-semibold mb-2">
-                        {decodeHtmlEntities(relatedBlog.title)}
-                      </h4>
+                      <h3 className="text-xl font-semibold mb-2">
+                        <a href={`/blog/${relatedBlog.slug}`}>
+                          {decodeHtmlEntities(relatedBlog.title)}
+                        </a>
+                      </h3>
                       <p className="text-gray-600">{relatedBlog.author}</p>
                     </div>
                   ))}
