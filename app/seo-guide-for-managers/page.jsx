@@ -2,7 +2,6 @@ import Footer from "@/components/footer/Footer";
 import MarketingManagers from "@/components/lear/marketing-managers/marketingManagers";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 
-
 export const metadata = {
   title: "SEO Guide | Daiki Media",
   description:
@@ -10,7 +9,7 @@ export const metadata = {
   keywords:
     "SEO guide, search engine optimization, SEO techniques, SEO strategies, digital marketing, SEO best practices",
   alternates: {
-    canonical: "https://www.daikimedia.com/learn/seo-guide-for-managers",
+    canonical: "https://www.daikimedia.com/seo-guide-for-managers",
   },
 };
 

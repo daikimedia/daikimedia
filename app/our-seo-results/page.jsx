@@ -2,7 +2,6 @@ import Footer from "@/components/footer/Footer";
 import SeoResult from "@/components/lear/our-seo-result/our-seo-result";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 
-
 export const metadata = {
   title: "Our SEO Result | Daiki Media",
   description:
@@ -10,7 +9,7 @@ export const metadata = {
   keywords:
     "SEO results, Daiki Media, SEO strategies, business growth, search engine optimization, digital marketing",
   alternates: {
-    canonical: "https://www.daikimedia.com/learn/our-seo-results",
+    canonical: "https://www.daikimedia.com/our-seo-results",
   },
 };
 

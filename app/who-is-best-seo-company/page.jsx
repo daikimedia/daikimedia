@@ -6,11 +6,10 @@ export const metadata = {
   title: "Find the Best SEO Company with Tailored Growth Plans | Daiki Media",
   description:
     "Choose the best SEO company for tailored strategies that boost search visibility, increase organic traffic, and grow your online presence with Daiki Media.",
-  keywords:
-    "best seo company",
+  keywords: "best seo company",
   author: "Daiki Media Team",
   alternates: {
-    canonical: "https://www.daikimedia.com/learn/who-is-best-seo-company",
+    canonical: "https://www.daikimedia.com/who-is-best-seo-company",
   },
 };
 
