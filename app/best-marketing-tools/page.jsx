@@ -1,6 +1,5 @@
 import Footer from "@/components/footer/Footer";
 import DigitalMarketingTools from "@/components/lear/best-digital-marketing-tools/bestMarketingTools";
-import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 
 export const metadata = {
   title: "Digital Marketing Tools | Daiki Media",
@@ -15,7 +14,6 @@ export const metadata = {
 const DigitalMarketingToolsPage = () => {
   return (
     <>
-      <PrimaryNavbar />
       <main>
         <section>
           <DigitalMarketingTools />

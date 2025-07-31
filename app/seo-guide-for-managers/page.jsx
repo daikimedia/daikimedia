@@ -1,6 +1,5 @@
 import Footer from "@/components/footer/Footer";
 import MarketingManagers from "@/components/lear/marketing-managers/marketingManagers";
-import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 
 export const metadata = {
   title: "SEO Guide | Daiki Media",
@@ -16,7 +15,6 @@ export const metadata = {
 const SeoGuide = () => {
   return (
     <>
-      <PrimaryNavbar />
       <main>
         <section>
           <MarketingManagers />

@@ -14,11 +14,19 @@ const Vision = dynamic(() => import("@/components/home-1/Vision"));
 const LazyFaq = dynamic(() => import("@/components/lazy/LazyFaq"));
 const LazyCounter = dynamic(() => import("@/components/lazy/LazyCounter"));
 const LazyClients = dynamic(() => import("@/components/lazy/LazyClients"));
-const FinancialBlog = dynamic(() => import("@/components/shared/FinancialBlog"));
+const FinancialBlog = dynamic(
+  () => import("@/components/shared/FinancialBlog")
+);
 const Services = dynamic(() => import("@/components/shared/Services"));
-const CustomSectionOne = dynamic(() => import("@/components/customSections/customSectionOne"));
-const ContentCards = dynamic(() => import("@/components/customSections/customContentCards"));
-const ComprehensiveServicesShowcase = dynamic(() => import("@/components/customSections/comprehensiveServicesShowcase"));
+const CustomSectionOne = dynamic(
+  () => import("@/components/customSections/customSectionOne")
+);
+const ContentCards = dynamic(
+  () => import("@/components/customSections/customContentCards")
+);
+const ComprehensiveServicesShowcase = dynamic(
+  () => import("@/components/customSections/comprehensiveServicesShowcase")
+);
 
 export default function HomePage() {
   return (

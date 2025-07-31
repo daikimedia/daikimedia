@@ -1,5 +1,4 @@
 import Footer from "@/components/footer/Footer";
-import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 import WhatIsDigitalMarketing from "../../components/lear/digital-marketing/whatIsDigitalMarketing";
 
 export const metadata = {
@@ -15,7 +14,6 @@ export const metadata = {
 const DigitalMarketingPage = () => {
   return (
     <>
-      <PrimaryNavbar />
       <main>
         <section>
           <WhatIsDigitalMarketing />

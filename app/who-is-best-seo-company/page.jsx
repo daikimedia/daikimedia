@@ -1,6 +1,5 @@
 import Footer from "@/components/footer/Footer";
 import BestSeo from "@/components/lear/best-seo-company/bestSeo";
-import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 
 export const metadata = {
   title: "Find the Best SEO Company with Tailored Growth Plans | Daiki Media",
@@ -16,7 +15,6 @@ export const metadata = {
 const BestSeoCompany = () => {
   return (
     <>
-      <PrimaryNavbar />
       <main>
         <section>
           <BestSeo />

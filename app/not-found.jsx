@@ -1,6 +1,5 @@
 import Link from "next/link";
 import FadeUpAnimation from "@/components/animations/FadeUpAnimation";
-import SecondaryNavbar from "@/components/navbar/SecondaryNavbar";
 import Footer from "@/components/footer/Footer";
 
 export const metadata = {
@@ -10,7 +9,6 @@ export const metadata = {
 const NotFound = () => {
   return (
     <>
-      <SecondaryNavbar />
       <main className="mb-150 pt-[200px]">
         <FadeUpAnimation className="container relative">
           <div className="mx-auto max-w-[700px] text-center">

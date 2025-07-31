@@ -1,6 +1,5 @@
 import Footer from "@/components/footer/Footer";
 import SeoCompany from "@/components/lear/seo-company/seoCompany";
-import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 
 export const metadata = {
   title: "Top SEO Optimization Companies to Grow Your Business | Daiki Media",
@@ -15,7 +14,6 @@ export const metadata = {
 const SeoCompanyPage = () => {
   return (
     <>
-      <PrimaryNavbar />
       <main>
         <section>
           <SeoCompany />

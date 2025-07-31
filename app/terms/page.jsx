@@ -1,5 +1,4 @@
 import Footer from "@/components/footer/Footer";
-import SecondaryNavbar from "@/components/navbar/SecondaryNavbar";
 import NewsLetter from "@/components/shared/NewsLetter";
 import GetMarkDownData from "@/utils/getMarkDownData";
 import ReactMarkdown from "react-markdown";
@@ -18,7 +17,6 @@ const TermsCondition = () => {
   const terms = GetMarkDownData("content/terms");
   return (
     <>
-      <SecondaryNavbar />
       <main>
         <section className="relative overflow-hidden pb-150 pt-[250px] max-md:pt-150">
           <div className="absolute -top-[800px] left-0 right-0 h-full w-full bg-[url('/images/core-gradient.png')] bg-[length:600px_1000px] bg-center bg-no-repeat opacity-70 md:hidden"></div>

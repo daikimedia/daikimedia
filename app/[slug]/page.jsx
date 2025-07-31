@@ -5,7 +5,6 @@ import MembersCounter from "@/components/shared/MembersCounter";
 import NewsLetter from "@/components/shared/NewsLetter";
 import Pricing from "@/components/shared/Pricing";
 import ServiceList from "@/data/singleServiceData";
-import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 import ServiceSchema from "@/components/schema/ServicesSchema";
 
 export async function generateMetadata({ params }) {
@@ -51,7 +50,6 @@ const ServiceDetails = ({ params }) => {
         <ServiceSchema data={data} />
       </Head>
 
-      <PrimaryNavbar />
       <main>
         <ServiceContent data={data} />
         <MembersCounter />

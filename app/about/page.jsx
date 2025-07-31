@@ -7,19 +7,18 @@ import PageHero from "@/components/shared/PageHero";
 import PaymentFeatures from "@/components/shared/PaymentFeatures";
 import TeamMembers from "@/components/shared/TeamMembers";
 import AboutFeature from "@/data/aboutFeaturesData";
-import TestimonialV2 from "@/components/shared/TestimonialV2"
-import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
+import TestimonialV2 from "@/components/shared/TestimonialV2";
 
 export const metadata = {
   title: "About | Daiki Media",
-  description: "Learn more about Daiki Media, our mission, values, and the team behind our success.",
+  description:
+    "Learn more about Daiki Media, our mission, values, and the team behind our success.",
   keywords: "about, Daiki Media, our mission, media company, team",
 };
 const About = () => {
   const { AboutFeaturesData } = AboutFeature;
   return (
     <>
-      <PrimaryNavbar />
       <main>
         <PageHero
           subtitle="About Daiki Media"

@@ -1,5 +1,4 @@
 import Footer from "@/components/footer/Footer";
-import SecondaryNavbar from "@/components/navbar/SecondaryNavbar";
 import Counter from "@/components/shared/Counter";
 import Faq from "@/components/shared/Faq";
 import NewsLetter from "@/components/shared/NewsLetter";
@@ -9,15 +8,16 @@ import TeamMemberAnimation from "@/components/team/TeamMemberAnimation";
 
 export const metadata = {
   title: "Our Teams | Daiki Media",
-  description: "Meet the talented and dedicated team behind Daiki Media. Learn about the professionals who drive our mission and work towards delivering high-quality media solutions.",
-  keywords: "Our Teams, Daiki Media, team, professionals, media, content creators, staff, about us",
+  description:
+    "Meet the talented and dedicated team behind Daiki Media. Learn about the professionals who drive our mission and work towards delivering high-quality media solutions.",
+  keywords:
+    "Our Teams, Daiki Media, team, professionals, media, content creators, staff, about us",
   robots: "index, follow",
 };
 
 const Teams = () => {
   return (
     <>
-      <SecondaryNavbar />
       <main>
         <PageHero
           subtitle="OUR TEAM"

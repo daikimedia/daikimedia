@@ -1,6 +1,5 @@
 import Footer from "@/components/footer/Footer";
 import SeoResult from "@/components/lear/our-seo-result/our-seo-result";
-import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 
 export const metadata = {
   title: "Our SEO Result | Daiki Media",
@@ -16,7 +15,6 @@ export const metadata = {
 const OurSeoResult = () => {
   return (
     <>
-      <PrimaryNavbar />
       <main>
         <section>
           <SeoResult />

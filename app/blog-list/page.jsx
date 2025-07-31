@@ -2,7 +2,6 @@ import BlogSearch from "@/components/blogs/BlogSearch";
 import Footer from "@/components/footer/Footer";
 import PageHero from "@/components/shared/PageHero";
 import getMarkDownData from "@/utils/getMarkDownData";
-import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 
 export const metadata = {
   title: "Blog-list",
@@ -13,7 +12,6 @@ const BlogListPage = () => {
 
   return (
     <>
-      <PrimaryNavbar />
       <main>
         <PageHero
           subtitle="BLOG LIST"

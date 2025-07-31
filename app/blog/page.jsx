@@ -4,7 +4,6 @@ import RecentNews from "@/components/blogs/RecentNews";
 import Footer from "@/components/footer/Footer";
 import NewsLetter from "@/components/shared/NewsLetter";
 import PageHero from "@/components/shared/PageHero";
-import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 
 export default async function Blog() {
   try {
@@ -22,7 +21,7 @@ export default async function Blog() {
           <meta
             name="description"
             content={
-              firstPost?.excerpt?.rendered?.replace(/<[^>]+>/g, '') ||
+              firstPost?.excerpt?.rendered?.replace(/<[^>]+>/g, "") ||
               "Explore the latest blogs and articles from Daiki Media."
             }
           />
@@ -32,10 +31,11 @@ export default async function Blog() {
           />
         </Head>
 
-
-        <PrimaryNavbar />
         <main>
-          <PageHero subtitle="OUR BLOG" title="Recent Blogs <br/> By Daiki Media" />
+          <PageHero
+            subtitle="OUR BLOG"
+            title="Recent Blogs <br/> By Daiki Media"
+          />
           <FeatureBlog />
           <RecentNews />
           <NewsLetter />
@@ -48,7 +48,9 @@ export default async function Blog() {
     return (
       <div>
         <h1>Error Loading Blogs</h1>
-        <p>Sorry, we couldn&apos;t load the blog content. Please try again later.</p>
+        <p>
+          Sorry, we couldn&apos;t load the blog content. Please try again later.
+        </p>
       </div>
     );
   }

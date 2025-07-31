@@ -3,7 +3,6 @@ import Footer from "@/components/footer/Footer";
 import ContactForm from "@/components/shared/ContactForm";
 import NewsLetter from "@/components/shared/NewsLetter";
 import PageHero from "@/components/shared/PageHero";
-import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 
 export const metadata = {
   title: "Contact Daiki Media - Get in Touch with Our Team",
@@ -15,7 +14,6 @@ export const metadata = {
 const page = () => {
   return (
     <>
-      <PrimaryNavbar />
       <main>
         <PageHero
           subtitle="GET IN TOUCH"

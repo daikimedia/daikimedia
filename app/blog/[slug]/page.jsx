@@ -5,7 +5,6 @@ import Head from "next/head";
 import Footer from "@/components/footer/Footer";
 import NewsLetter from "@/components/shared/NewsLetter";
 import PageHero from "@/components/shared/PageHero";
-import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 import ArticleSchema from "@/components/schema/ArticleSchema";
 import blogData from "@/data/singleBlogData.json";
 
@@ -149,34 +148,33 @@ export default function BlogDetails() {
           name="description"
           content={decodeHtmlEntities(
             blog.description ||
-            blog.content?.substring(0, 150) ||
-            "Blog post details"
+              blog.content?.substring(0, 150) ||
+              "Blog post details"
           )}
         />
-
       </Head>
-
 
       <ArticleSchema
         headline={decodeHtmlEntities(blog.title || "Untitled Blog")}
         description={decodeHtmlEntities(
           blog.description ||
-          blog.content?.replace(/<[^>]*>/g, "").substring(0, 160) ||
-          "Blog post content"
+            blog.content?.replace(/<[^>]*>/g, "").substring(0, 160) ||
+            "Blog post content"
         )}
         authorName={blog.author || "Daiki Media"}
         authorUrl="https://daikimedia.com/author"
         publisherName="Daiki Media"
         publisherLogo="https://daikimedia.com/logo.png"
         datePublished={getSchemaDate("created_at")}
-        dateModified={getSchemaDate("updated_at") || getSchemaDate("created_at")}
+        dateModified={
+          getSchemaDate("updated_at") || getSchemaDate("created_at")
+        }
         mainEntityUrl={getCurrentUrl()}
         imageUrl={getImageUrl(blog.featuredImage)}
         imageWidth={1200}
         imageHeight={630}
       />
 
-      <PrimaryNavbar />
       <main className="flex flex-col items-center justify-center ">
         <PageHero
           subtitle="BLOG Details"
@@ -200,7 +198,9 @@ export default function BlogDetails() {
               </h2>
               <div className="mb-6 flex items-center justify-center gap-x-2">
                 <p className="text-lg">
-                  <a href="/author/lukesh-pillai">{blog.author || "Unknown Author"}</a>
+                  <a href="/author/lukesh-pillai">
+                    {blog.author || "Unknown Author"}
+                  </a>
                 </p>
 
                 <span>

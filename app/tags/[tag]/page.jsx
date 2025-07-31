@@ -1,6 +1,5 @@
 import BlogSearch from "@/components/blogs/BlogSearch";
 import Footer from "@/components/footer/Footer";
-import SecondaryNavbar from "@/components/navbar/SecondaryNavbar";
 import PageHero from "@/components/shared/PageHero";
 import getMarkDownData from "@/utils/getMarkDownData";
 
@@ -23,7 +22,6 @@ const BlogTags = ({ params }) => {
   const tagsBlog = blogs.filter((blog) => blog.data.tags === decodedTags);
   return (
     <>
-      <SecondaryNavbar />
       <main>
         <PageHero
           subtitle="BLOG Category"
