@@ -1,43 +1,49 @@
-"use client"
-import NavbarItem from "@/data/navbar"
-import { cn } from "@/utils/cn"
-import { faAngleDown, faTimes } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import Link from "next/link"
-import { useEffect, useState } from "react"
-import { createPortal } from "react-dom"
-import SearchOption from "./SearchOption"
+"use client";
+import NavbarItem from "@/data/navbar";
+import { cn } from "@/utils/cn";
+import { faAngleDown, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
+import SearchOption from "./SearchOption";
 
 const PrimaryNavbar = () => {
-  const { menuData } = NavbarItem
-  const [showSearch, setShowSearch] = useState(false)
-  const [showMobileMenu, setShowMobileMenu] = useState(false)
-  const [sticky, setSticky] = useState(true)
+  const { menuData } = NavbarItem;
+  const [showSearch, setShowSearch] = useState(false);
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [sticky, setSticky] = useState(true);
 
   const handleStickyNavbar = () => {
-    setSticky(true)
-  }
+    setSticky(true);
+  };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleStickyNavbar)
+    window.addEventListener("scroll", handleStickyNavbar);
 
     return () => {
-      window.removeEventListener("scroll", handleStickyNavbar)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleStickyNavbar);
+    };
+  }, []);
 
   return (
     <>
       <header
         className={cn(
           "fixed left-0 z-50 w-full bg-transparent pt-8 transition-all duration-500 max-md:z-[500]",
-          sticky ? "nav-sticky" : "",
+          sticky ? "nav-sticky" : ""
         )}
       >
         <nav className="container dark:text-white relative flex items-center">
           <div className="nav-logo xl:min-w-[150px]">
             <Link href="/">
-              <img src="/images/logo.png" alt="logo" className="dark:hidden" width={120} height={100} />
+              <img
+                src="/images/logo.png"
+                alt="logo"
+                className="dark:hidden"
+                width={120}
+                height={100}
+              />
               <img
                 src="/images/logo.png"
                 alt="logo dark version"
@@ -58,7 +64,7 @@ const PrimaryNavbar = () => {
                   <Link
                     href={menuItem.path}
                     className={cn(
-                      "flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5",
+                      "flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5"
                     )}
                   >
                     {menuItem.title}
@@ -69,7 +75,7 @@ const PrimaryNavbar = () => {
                       href="#"
                       className={cn(
                         "hover:border-borderColour dark:hover:border-borderColour/10 group flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium leading-8 text-paragraph transition-colors duration-500 hover:bg-white hover:duration-500 dark:text-white dark:hover:bg-dark-200 lg:px-4 xl:px-5",
-                        menuItem.title === "page" ? "active" : "",
+                        menuItem.title === "page" ? "active" : ""
                       )}
                     >
                       {menuItem.title}
@@ -83,20 +89,36 @@ const PrimaryNavbar = () => {
                         {["3.1", "3.2", "3.3", "3.4"].map((category) => (
                           <div key={category} className="h-64 ">
                             {menuItem.submenu
-                              .filter((item) => String(item.id).startsWith(category) && item.header)
+                              .filter(
+                                (item) =>
+                                  String(item.id).startsWith(category) &&
+                                  item.header
+                              )
                               .map((headerItem) => (
                                 <div key={headerItem.id}>
-                                  <h5 className="font-bold mb-2 text-black dark:text-white">{headerItem.header}</h5>
+                                  <h5 className="font-bold mb-2 text-black dark:text-white">
+                                    {headerItem.header}
+                                  </h5>
                                   <ul>
                                     {menuItem.submenu
-                                      .filter((item) => String(item.id).startsWith(category) && !item.header)
+                                      .filter(
+                                        (item) =>
+                                          String(item.id).startsWith(
+                                            category
+                                          ) && !item.header
+                                      )
                                       .map((submenuItem) => (
                                         <li
                                           className="relative text-sm py-2 capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:before:bg-white"
                                           key={submenuItem.id}
                                         >
-                                          <Link href={submenuItem.path} className="flex">
-                                            <span className="text-black dark:text-white">{submenuItem.title}</span>
+                                          <Link
+                                            href={submenuItem.path}
+                                            className="flex"
+                                          >
+                                            <span className="text-black dark:text-white">
+                                              {submenuItem.title}
+                                            </span>
                                           </Link>
                                         </li>
                                       ))}
@@ -114,7 +136,7 @@ const PrimaryNavbar = () => {
                       href="#"
                       className={cn(
                         "flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5",
-                        menuItem.title === "home" ? "active" : "",
+                        menuItem.title === "home" ? "active" : ""
                       )}
                     >
                       {menuItem.title}
@@ -143,7 +165,10 @@ const PrimaryNavbar = () => {
 
           <ul className="ml-auto flex items-center [&>*:not(:last-child)]:me-2.5">
             <li className="max-lg:hidden">
-              <Link href="https://api.whatsapp.com/send?phone=601114850067" className="btn btn-navbar btn-sm">
+              <Link
+                href="https://api.whatsapp.com/send?phone=601114850067"
+                className="btn btn-navbar btn-sm"
+              >
                 Free Website Audit
               </Link>
             </li>
@@ -180,21 +205,29 @@ const PrimaryNavbar = () => {
             </li>
           </ul>
 
-          <div className={`mobile-menu max-lg:overflow-y-auto ${showMobileMenu ? "open" : ""}`}>
+          <div
+            className={`mobile-menu max-lg:overflow-y-auto ${showMobileMenu ? "open" : ""}`}
+          >
             <button
               className="navbar-toggle-close absolute right-6 top-5 h-10 w-10 rounded-full bg-white outline-none dark:bg-dark-200"
               onClick={() => setShowMobileMenu(!showMobileMenu)}
             >
-              <FontAwesomeIcon icon={faTimes} className="text-gray-800 dark:text-white" />
+              <FontAwesomeIcon
+                icon={faTimes}
+                className="text-gray-800 dark:text-white"
+              />
             </button>
             <ul className="nav-list flex w-full max-w-[500px] flex-col gap-5 landscape:h-full">
               {menuData.menuContent.map((menuItem) => (
-                <li className={cn(menuItem.path ? "relative" : "group relative")} key={menuItem.id}>
+                <li
+                  className={cn(menuItem.path ? "relative" : "group relative")}
+                  key={menuItem.id}
+                >
                   {menuItem.path ? (
                     <Link
                       href={menuItem.path}
                       className={cn(
-                        "flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium leading-8 text-gray-800 transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5",
+                        "flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium leading-8 text-gray-800 transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5"
                       )}
                       onClick={() => setShowMobileMenu(!showMobileMenu)}
                     >
@@ -218,7 +251,11 @@ const PrimaryNavbar = () => {
                           {["3.2", "3.1", "3.3", "3.4"].map((category) => (
                             <div key={category}>
                               {menuItem.submenu
-                                .filter((item) => String(item.id).startsWith(category) && item.header)
+                                .filter(
+                                  (item) =>
+                                    String(item.id).startsWith(category) &&
+                                    item.header
+                                )
                                 .map((headerItem) => (
                                   <div key={headerItem.id}>
                                     <h3 className="font-bold mb-2 text-gray-800 dark:text-white">
@@ -226,7 +263,12 @@ const PrimaryNavbar = () => {
                                     </h3>
                                     <ul>
                                       {menuItem.submenu
-                                        .filter((item) => String(item.id).startsWith(category) && !item.header)
+                                        .filter(
+                                          (item) =>
+                                            String(item.id).startsWith(
+                                              category
+                                            ) && !item.header
+                                        )
                                         .map((submenuItem) => (
                                           <li
                                             className="relative text-sm py-2 capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:before:bg-white"
@@ -235,9 +277,15 @@ const PrimaryNavbar = () => {
                                             <Link
                                               href={submenuItem.path}
                                               className="flex"
-                                              onClick={() => setShowMobileMenu(!showMobileMenu)}
+                                              onClick={() =>
+                                                setShowMobileMenu(
+                                                  !showMobileMenu
+                                                )
+                                              }
                                             >
-                                              <span className="text-gray-800 dark:text-white">{submenuItem.title}</span>
+                                              <span className="text-gray-800 dark:text-white">
+                                                {submenuItem.title}
+                                              </span>
                                             </Link>
                                           </li>
                                         ))}
@@ -295,7 +343,11 @@ const PrimaryNavbar = () => {
           </div>
         </nav>
       </header>
-      {showSearch && createPortal(<SearchOption onClose={() => setShowSearch(false)} />, document.body)}
+      {showSearch &&
+        createPortal(
+          <SearchOption onClose={() => setShowSearch(false)} />,
+          document.body
+        )}
 
       <style jsx global>{`
         /* Mobile menu styles */
@@ -394,8 +446,7 @@ const PrimaryNavbar = () => {
         }
       `}</style>
     </>
-  )
-}
+  );
+};
 
-export default PrimaryNavbar
-
+export default PrimaryNavbar;

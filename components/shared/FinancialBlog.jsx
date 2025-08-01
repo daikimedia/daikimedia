@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
+import dayjs from "dayjs";
 
 const FinancialBlog = ({ className = "dark:bg-dark pb-150 pt-150" }) => {
   const [blogs, setBlogs] = useState([]);
@@ -38,9 +39,6 @@ const FinancialBlog = ({ className = "dark:bg-dark pb-150 pt-150" }) => {
       <div className="absolute left-0 right-0 top-1/2 h-full w-full -translate-y-1/2 bg-[url('/images/service-bg.png')] bg-[length:600px_1800px] bg-center bg-no-repeat opacity-70 md:hidden"></div>
       <div className="container relative">
         <div className="mx-auto mb-16 max-w-[550px] text-center">
-          <p className="section-tagline">
-            Boost Your Financial Blog with Proven Tips and Tricks
-          </p>
           <h2>Latest News and Expert Insights</h2>
         </div>
         <div className="relative z-10">
@@ -70,7 +68,7 @@ const FinancialBlog = ({ className = "dark:bg-dark pb-150 pt-150" }) => {
                       </h3>
                     </Link>
                     <div className="mb-4 flex items-center gap-x-2 ">
-                      <p>{new Date(blogItems.date).toLocaleDateString()}</p>
+                      <p>{dayjs(blogItems.date).format("MMMM D, YYYY")}</p>
                     </div>
                     <ReactMarkdown>
                       {blogItems?.yoast_head_json.description}
@@ -83,7 +81,6 @@ const FinancialBlog = ({ className = "dark:bg-dark pb-150 pt-150" }) => {
         </div>
       </div>
     </section>
-  
   );
 };
 

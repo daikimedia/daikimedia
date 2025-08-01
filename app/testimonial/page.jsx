@@ -1,5 +1,4 @@
 import Footer from "@/components/footer/Footer";
-import SecondaryNavbar from "@/components/navbar/SecondaryNavbar";
 import Clients from "@/components/shared/Clients";
 import NewsLetter from "@/components/shared/NewsLetter";
 import PageHero from "@/components/shared/PageHero";
@@ -8,15 +7,18 @@ import TestimonialSingle from "@/components/testimonial/TestimonialSingle";
 
 export const metadata = {
   title: "Testimonials | Daiki Media",
-  description: "Discover the success stories and feedback from our clients. Learn how Daiki Media's innovative media solutions have helped businesses and content creators thrive.",
-  keywords: "Testimonials, Daiki Media, client feedback, reviews, success stories, media solutions, satisfied clients, content creators, business growth",
+  description:
+    "Discover the success stories and feedback from our clients. Learn how Daiki Media's innovative media solutions have helped businesses and content creators thrive.",
+  keywords:
+    "Testimonials, Daiki Media, client feedback, reviews, success stories, media solutions, satisfied clients, content creators, business growth",
   author: "Daiki Media Team",
   robots: "index, follow",
   openGraph: {
     type: "website",
     url: "https://daikimedia.com/testimonials",
     title: "Testimonials | Daiki Media",
-    description: "Hear from our clients about how Daiki Media helped their business grow and succeed. Real reviews and success stories.",
+    description:
+      "Hear from our clients about how Daiki Media helped their business grow and succeed. Real reviews and success stories.",
   },
   twitter: {
     card: "summary_large_image",
@@ -26,15 +28,13 @@ export const metadata = {
   },
 };
 
-
 const Testimonial = () => {
   return (
     <>
-      <SecondaryNavbar />
       <main>
         <PageHero
           title="What our customer’s say <br/> about our company"
-          paragraph="Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin, though it looks like it"
+          paragraph=""
         />
         <TestimonialSingle />
         <Clients

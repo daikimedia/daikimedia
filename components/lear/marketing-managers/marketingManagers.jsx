@@ -26,7 +26,6 @@ export const metadata = {
     "Marketing managers, Daiki Media, marketing tools, leadership strategies, marketing campaigns, team management, successful marketing",
 };
 
-
 export default function MarketingManagers() {
   return (
     <div className="mt-32">
@@ -70,12 +69,12 @@ export default function MarketingManagers() {
       {/* 2nd section */}
       <section className="py-16">
         <div className="text-black flex items-center justify-center p-6">
-          <div class="min-h-screen p-8">
-            <div class="max-w-4xl mx-auto">
-              <h1 class="text-3xl font-bold text-red-500 text-center mb-8">
+          <div className="min-h-screen p-8">
+            <div className="max-w-4xl mx-auto">
+              <h1 className="text-3xl font-bold text-red-500 text-center mb-8">
                 Why Marketing Managers Need to Prioritize SEO
               </h1>
-              <p class="text-lg text-black mb-6">
+              <p className="text-lg text-black mb-6">
                 In today&apos;s digital age, search engine optimization (SEO) is
                 no longer optional—it&apos;s essential. As a marketing manager,
                 you&apos;re responsible for driving visibility and engagement,
@@ -84,7 +83,7 @@ export default function MarketingManagers() {
                 you can consistently attract the right audience to your
                 business.
               </p>
-              <p class="text-lg text-black mb-6">
+              <p className="text-lg text-black mb-6">
                 SEO isn&apos;t just about keywords; it&apos;s about
                 understanding your audience&apos;s intent. With the right SEO
                 strategies, you can position your brand as the solution to your
@@ -92,7 +91,7 @@ export default function MarketingManagers() {
                 industry. This can translate into higher click-through rates,
                 better engagement, and ultimately, more conversions.
               </p>
-              <p class="text-lg text-black mb-6">
+              <p className="text-lg text-black mb-6">
                 Another reason SEO is vital is its long-term impact. While paid
                 advertising can bring immediate traffic, the benefits stop as
                 soon as the budget runs out. SEO, on the other hand, offers
@@ -100,7 +99,7 @@ export default function MarketingManagers() {
                 generate traffic and leads even months after optimization
                 efforts.
               </p>
-              <p class="text-lg text-black">
+              <p className="text-lg text-black">
                 Finally, an effective SEO strategy complements all other
                 marketing channels. Whether it&apos;s content marketing, social
                 media, or email campaigns, a well-optimized website enhances the
@@ -195,7 +194,6 @@ export default function MarketingManagers() {
           <div className="max-w-4xl w-full text-black">
             <h1 className="text-4xl  font-extrabold mb-6 text-center relative">
               Navigating the Complexities of SEO with Confidence
-
             </h1>
 
             <p className="text-lg mb-12 text-center text-gray-700 max-w-3xl mx-auto">

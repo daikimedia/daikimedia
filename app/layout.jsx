@@ -7,6 +7,8 @@ import GTMNoScript from "@/components/GTMNoScript";
 import OrganizationSchema from "@/components/schema/OrganizationSchema";
 import DynamicBreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import ReviewSchema from "@/components/schema/ReviewSchema";
+import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
+
 // import Head from "next/head";
 const inter = Inter({
   weight: ["200", "300", "400", "500", "600", "700", "800"],
@@ -45,21 +47,38 @@ export default function RootLayout({ children }) {
           name="google-site-verification"
           content="EIBnMq71KKUDT895qyPc5L_RMaDrmBpUG8pgX3FO6N4"
         />
-        <link rel="preload" as="image" href="https://www.daikimedia.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftestimg.81f0ff33.avif&w=1920&q=75" type="image/avif" />
+        <link
+          rel="preload"
+          as="image"
+          href="https://www.daikimedia.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftestimg.81f0ff33.avif&w=1920&q=75"
+          type="image/avif"
+        />
 
         {/* <link rel="canonical" href="https://www.daikimedia.com/" />	 */}
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Daiki Media" />
-        <meta property="og:description" content="Daiki Media provides expert SEO and website development services." />
-        <meta property="og:image" content="https://www.daikimedia.com/images/logo.png" />
+        <meta
+          property="og:description"
+          content="Daiki Media provides expert SEO and website development services."
+        />
+        <meta
+          property="og:image"
+          content="https://www.daikimedia.com/images/logo.png"
+        />
         <meta property="og:url" content="https://www.daikimedia.com/" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image " />
         <meta name="twitter:title" content="daiki media" />
-        <meta name="twitter:description" content="Daiki Media provides expert SEO and website development services." />
-        <meta name="twitter:image" content="https://www.daikimedia.com/images/logo.png" />
+        <meta
+          name="twitter:description"
+          content="Daiki Media provides expert SEO and website development services."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.daikimedia.com/images/logo.png"
+        />
         <meta name="twitter:site" content="@daiki.Media" />
         <GTMNoScript />
         {/* Google Tag Manager */}
@@ -79,7 +98,7 @@ export default function RootLayout({ children }) {
               c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
               t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
               y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "priqspzydx");`
+            })(window, document, "clarity", "script", "priqspzydx");`,
           }}
         />
 
@@ -92,26 +111,26 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org ",
               "@type": "LocalBusiness",
-              "name": "Daiki Media",
-              "url": "https://daikimedia.com ",
-              "description": "Daiki Media provides expert SEO and website development services.",
-              "address": {
+              name: "Daiki Media",
+              url: "https://daikimedia.com ",
+              description:
+                "Daiki Media provides expert SEO and website development services.",
+              address: {
                 "@type": "PostalAddress ",
-                "streetAddress": "Jalan Ara, SD 7/3d, Bandar Sri Damansara",
-                "addressLocality": "Kuala Lumpur",
-                "addressRegion": "KL",
-                "postalCode": "52200",
-                "addressCountry": "MY"
+                streetAddress: "Jalan Ara, SD 7/3d, Bandar Sri Damansara",
+                addressLocality: "Kuala Lumpur",
+                addressRegion: "KL",
+                postalCode: "52200",
+                addressCountry: "MY",
               },
-              "contactPoint": {
+              contactPoint: {
                 "@type": "ContactPoint",
-                "telephone": "+601114850067 ",
-                "contactType": "customer service "
-              }
-            })
+                telephone: "+601114850067 ",
+                contactType: "customer service ",
+              },
+            }),
           }}
         />
-
       </head>
       <body
         className={cn(
@@ -122,6 +141,7 @@ export default function RootLayout({ children }) {
         )}
         suppressHydrationWarning={true}
       >
+        <PrimaryNavbar />
         <DynamicBreadcrumbSchema />
         {children}
         <ReviewSchema />

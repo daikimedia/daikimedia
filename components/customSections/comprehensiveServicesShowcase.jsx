@@ -112,7 +112,7 @@ export default function ComprehensiveServicesShowcase() {
               <h4 className="mb-4 text-xl dark:text-black font-semibold text-gray-800">
                 Our Expertise
               </h4>
-              <div className="flex  flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4">
                 {activeService === 0 ? (
                   <>
                     <div className="flex items-center rounded-full bg-white text-black px-4 py-2 text-sm">
@@ -168,7 +168,7 @@ export default function ComprehensiveServicesShowcase() {
               </p>
               <a
                 href="https://api.whatsapp.com/send?phone=601114850067"
-                className="flex items-center rounded-full w-fit bg-white px-6  dark:text-black py-3 transition-colors hover:bg-black hover:text-white"
+                className="btn flex items-center rounded-full w-fit bg-white px-6  dark:text-black py-3 transition-colors hover:bg-black hover:text-white mt-4"
               >
                 Get Started
                 <ChevronRight className="ml-2 h-5 w-5" />

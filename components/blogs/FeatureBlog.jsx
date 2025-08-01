@@ -1,12 +1,19 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import useSWR from "swr";
 import "swiper/css";
 import "swiper/css/pagination";
+
+if (typeof window !== "undefined") {
+  const preloadLink = document.createElement("link");
+  preloadLink.rel = "preconnect";
+  preloadLink.href = "https://cms.daikimedia.com";
+  document.head.appendChild(preloadLink);
+}
 
 const importBlogData = async () => {
   try {
@@ -18,69 +25,94 @@ const importBlogData = async () => {
   }
 };
 
+const stripHtml = (html) => {
+  if (!html) return "";
+  return html.replace(/<\/?[^>]+(>|$)/g, "");
+};
+
+const fixImagePath = (path) => {
+  if (!path) return "";
+  if (!path.startsWith("http")) {
+    return `https://cms.daikimedia.com/${path.replace(/\\/g, "/")}`;
+  }
+  return path;
+};
+
+const fetcher = async (url) => {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
+
+  try {
+    const response = await fetch(url, {
+      signal: controller.signal,
+      next: { revalidate: 3600 }, // Cache for 1 hour
+    });
+
+    if (!response.ok) {
+      throw new Error(`API error: ${response.status}`);
+    }
+
+    return response.json();
+  } catch (error) {
+    console.error(`Fetch error for ${url}:`, error);
+    throw error;
+  } finally {
+    clearTimeout(timeoutId);
+  }
+};
+
 const FeatureBlog = () => {
-  const [featureBlog, setFeatureBlog] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const { data: apiBlogs, error: apiError } = useSWR(
+    "https://cms.daikimedia.com/api/blogs",
+    fetcher,
+    {
+      revalidateOnFocus: false,
+      revalidateIfStale: false,
+      dedupingInterval: 3600000,
+      errorRetryCount: 2,
+    }
+  );
 
-useEffect(() => {
-  const fetchBlogs = async () => {
-    setIsLoading(true);
-
-    const stripHtml = (html) => {
-      if (!html) return "";
-      return html.replace(/<\/?[^>]+(>|$)/g, "");
-    };
-
-    const fixImagePath = (path) => {
-      if (!path) return "";
-      if (!path.startsWith("http")) {
-        return `https://cms.daikimedia.com/${path.replace(/\\/g, "/")}`;
-      }
-      return path;
-    };
-
-    try {
-      const processedBlogData = await importBlogData();
-
-      const processedLocalBlogs = processedBlogData.map((blog) => ({
-        ...blog,
-        content: stripHtml(blog.content?.rendered || blog.content || ""),
-      }));
-
-      const response = await fetch("https://cms.daikimedia.com/api/blogs");
-
-      if (response.ok) {
-        const apiBlogs = await response.json();
-
-        const processedApiBlogData = apiBlogs.map((blog) => ({
+  const { data: localBlogData } = useSWR(
+    "local-blog-data",
+    async () => {
+      try {
+        const data = await importBlogData();
+        return data.map((blog) => ({
           ...blog,
           content: stripHtml(blog.content?.rendered || blog.content || ""),
-          featuredImage: fixImagePath(blog.featuredImage),
-          date: blog.created_at || "Unknown Date",
         }));
-
-        const combinedBlogs = [
-          ...processedApiBlogData,
-          ...processedLocalBlogs.filter(
-            (jsonBlog) =>
-              !apiBlogs.some((apiBlog) => apiBlog.slug === jsonBlog.slug)
-          ),
-        ];
-
-        setFeatureBlog(combinedBlogs);
-      } else {
-        setFeatureBlog(processedLocalBlogs);
+      } catch (error) {
+        console.error("Error loading local blog data:", error);
+        return [];
       }
-    } catch (error) {
-      console.error("Error fetching blogs:", error);
-      setFeatureBlog([]);
-    } finally {
-      setIsLoading(false);
-    }
-  };
+    },
+    { revalidateOnFocus: false }
+  );
 
-  fetchBlogs();
-}, []);
+  const processedApiBlogs = apiBlogs
+    ? apiBlogs.map((blog) => ({
+        ...blog,
+        content: stripHtml(blog.content?.rendered || blog.content || ""),
+        featuredImage: fixImagePath(blog.featuredImage),
+        date: blog.created_at || "Unknown Date",
+      }))
+    : [];
+
+  const combinedBlogs =
+    apiBlogs && localBlogData
+      ? [
+          ...processedApiBlogs,
+          ...localBlogData.filter(
+            (jsonBlog) =>
+              !processedApiBlogs.some(
+                (apiBlog) => apiBlog.slug === jsonBlog.slug
+              )
+          ),
+        ]
+      : localBlogData || [];
+
+  const isLoading = !apiBlogs && !apiError && !localBlogData;
 
   const stripHTML = (html) => {
     if (typeof document === "undefined") return html;
@@ -89,15 +121,7 @@ useEffect(() => {
     return tempDiv.textContent || tempDiv.innerText || "";
   };
 
-  const fixImagePath = (path) => {
-    if (!path) return "";
-    if (!path.startsWith("http")) {
-      return `https://cms.daikimedia.com/${path.replace(/\\/g, "/")}`;
-    }
-    return path;
-  };
-
-  const featuredBlogFiltered = featureBlog.filter(
+  const featuredBlogFiltered = combinedBlogs.filter(
     (blog) => blog.featured === true || blog.featured === undefined
   );
 
@@ -105,6 +129,10 @@ useEffect(() => {
     <div className="relative">
       {isLoading ? (
         <p className="text-center">Loading blogs...</p>
+      ) : apiError && !localBlogData?.length ? (
+        <div className="text-center p-4">
+          <p>Unable to load blogs. Please try again later.</p>
+        </div>
       ) : (
         <Swiper
           modules={[Pagination]}
@@ -120,17 +148,25 @@ useEffect(() => {
                 : "";
 
               return (
-                <SwiperSlide key={`${blogItem.slug || blogItem.id || "blog"}-${index}`}>
+                <SwiperSlide
+                  key={`${blogItem.slug || blogItem.id || "blog"}-${index}`}
+                >
                   <article>
                     <div className="grid grid-cols-2 items-center gap-12 max-md:grid-cols-1 max-md:gap-y-5">
                       <div className="relative h-full w-full xl:min-h-[330px]">
-                        {blogItem.featuredImage && (
-                          <img
-                            src={blogItem.featuredImage}
-                            alt={blogItem.title || "Blog image"}
-                            className="w-full rounded-xl max-md:h-[350px] max-md:object-cover max-md:object-center"
-                          />
-                        )}
+                        <img
+                          src={
+                            blogItem.featuredImage ||
+                            "/images/blog/blog-fallback-img.webp"
+                          }
+                          alt={blogItem.title || "Blog image"}
+                          className="w-full rounded-xl h-[450px] max-md:object-cover max-md:object-center"
+                          onError={(e) => {
+                            e.target.onerror = null;
+                            e.target.src =
+                              "/images/blog/blog-fallback-img.webp";
+                          }}
+                        />
                       </div>
                       <div>
                         <Link href={`/blog/${blogItem.slug}`} className="block">
