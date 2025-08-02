@@ -242,7 +242,6 @@ export default async function BlogDetails({ params }) {
                 className="rounded max-md:h-full max-md:object-cover w-[700px] h-[500px] max-md:object-center"
                 width={700}
                 height={500}
-                priority
               />
             </div>
 
