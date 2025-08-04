@@ -123,12 +123,16 @@ export async function generateMetadata({ params }) {
     return isApiBlog ? `http://cms.daikimedia.com/${imagePath}` : imagePath;
   };
 
-  const title = decodeHtmlEntities(blog.title || "Blog Details");
-  const description = decodeHtmlEntities(
+const title = decodeHtmlEntities(
+  blog.meta_title || blog.title || "Blog Details"
+);
+
+const description = decodeHtmlEntities(
+  blog.meta_description ||
     blog.description ||
-      blog.content?.replace(/<[^>]*>/g, "").substring(0, 150) ||
-      "Blog post details"
-  );
+    blog.content?.replace(/<[^>]*>/g, "").substring(0, 150) ||
+    "Blog post details"
+);
 
   return {
     title,
