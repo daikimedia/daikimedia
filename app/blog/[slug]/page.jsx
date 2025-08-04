@@ -10,7 +10,6 @@ async function getBlogsFromAPI() {
   try {
     const response = await fetch("https://cms.daikimedia.com/api/blogs", {
       next: {
-        revalidate: 3600,
         tags: ["blogs"],
       },
     });
@@ -27,7 +26,11 @@ async function getBlogsFromAPI() {
 }
 
 async function getBlogData(slug) {
+  console.log("Looking for blog with slug:", slug); // ✅ log slug
+
   const apiBlogs = await getBlogsFromAPI();
+  console.log("Fetched API blogs:", apiBlogs?.length); // ✅ log count
+
 
   if (apiBlogs) {
     const apiBlog = apiBlogs.find((item) => item.slug === slug);
