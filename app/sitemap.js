@@ -20,16 +20,6 @@ async function getBlogsFromAPI() {
   }
 }
 
-async function getLocalBlogs() {
-  try {
-    const blogData = await import("../data/singleBlogData.json");
-    return blogData.default || [];
-  } catch (error) {
-    console.error("Error importing blog data:", error);
-    return [];
-  }
-}
-
 async function getServiceRoutes() {
   try {
     const serviceData = await import("../data/singleServiceData.json");
@@ -67,13 +57,9 @@ async function getAuthorRoutes() {
 }
 
 export default async function sitemap() {
-  // Base URL for the site
   const baseUrl = "https://www.daikimedia.com";
-
-  // Get current date for lastModified
   const date = new Date();
 
-  // Static routes
   const staticRoutes = [
     {
       url: baseUrl,
@@ -111,7 +97,6 @@ export default async function sitemap() {
       changeFrequency: "yearly",
       priority: 0.5,
     },
-    // Add all your static routes here
     {
       url: `${baseUrl}/our-seo-results`,
       lastModified: date,
@@ -142,32 +127,17 @@ export default async function sitemap() {
       changeFrequency: "monthly",
       priority: 0.8,
     },
-    // Add more static routes as needed
   ];
 
-  // Get blog posts from API
   const apiBlogs = await getBlogsFromAPI();
-  const localBlogs = await getLocalBlogs();
 
-  // Combine and deduplicate blogs
-  const allBlogs = [...apiBlogs];
-
-  // Add local blogs that aren't already in the API blogs
-  localBlogs.forEach((localBlog) => {
-    if (!allBlogs.some((blog) => blog.slug === localBlog.slug)) {
-      allBlogs.push(localBlog);
-    }
-  });
-
-  // Create blog routes
-  const blogRoutes = allBlogs.map((blog) => ({
+  const blogRoutes = apiBlogs.map((blog) => ({
     url: `${baseUrl}/blog/${blog.slug}`,
     lastModified: blog.updated_at || blog.date || date,
     changeFrequency: "weekly",
     priority: 0.7,
   }));
 
-  // Get service routes
   const services = await getServiceRoutes();
   const serviceRoutes = services.map((service) => ({
     url: `${baseUrl}/${service.slug}`,
@@ -176,7 +146,6 @@ export default async function sitemap() {
     priority: service.priority,
   }));
 
-  // Get author routes
   const authors = await getAuthorRoutes();
   const authorRoutes = authors.map((author) => ({
     url: `${baseUrl}/author/${author.slug}`,
@@ -185,6 +154,5 @@ export default async function sitemap() {
     priority: author.priority,
   }));
 
-  // Combine all routes
   return [...staticRoutes, ...blogRoutes, ...serviceRoutes, ...authorRoutes];
 }
