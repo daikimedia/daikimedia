@@ -2,7 +2,6 @@
 import { useState, useEffect, useMemo } from "react";
 import Pagination from "../shared/Pagination";
 import BlogItems from "./BlogItems";
-import blogData from "../../data/singleBlogData.json";
 
 const RecentNews = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -30,11 +29,6 @@ const RecentNews = () => {
       try {
         const response = await fetch("https://cms.daikimedia.com/api/blogs");
 
-        const processedLocalBlogData = blogData.map((blog) => ({
-          ...blog,
-          content: stripHtml(blog.content?.rendered || blog.content || ""),
-        }));
-
         if (response.ok) {
           const apiBlogs = await response.json();
 
@@ -45,29 +39,13 @@ const RecentNews = () => {
             date: blog.created_at || "Unknown Creator",
           }));
 
-          // ✅ API first, then JSON
-          const combinedBlogs = [
-            ...processedApiBlogData,
-            ...processedLocalBlogData.filter(
-              (jsonBlog) =>
-                !apiBlogs.some((apiBlog) => apiBlog.slug === jsonBlog.slug)
-            ),
-          ];
-
-          setFeatureBlog(combinedBlogs);
+          setFeatureBlog(processedApiBlogData);
         } else {
-          // API failed: use JSON only
-          setFeatureBlog(processedLocalBlogData);
+          setFeatureBlog([]);
         }
       } catch (error) {
         console.error("Error fetching blogs:", error);
-
-        const processedLocalBlogData = blogData.map((blog) => ({
-          ...blog,
-          content: stripHtml(blog.content?.rendered || blog.content || ""),
-        }));
-
-        setFeatureBlog(processedLocalBlogData);
+        setFeatureBlog([]);
       } finally {
         setIsLoading(false);
       }

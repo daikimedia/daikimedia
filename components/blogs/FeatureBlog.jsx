@@ -15,16 +15,6 @@ if (typeof window !== "undefined") {
   document.head.appendChild(preloadLink);
 }
 
-const importBlogData = async () => {
-  try {
-    const blogData = await import("../../data/singleBlogData.json");
-    return blogData.default || blogData;
-  } catch (error) {
-    console.error("Error importing blog data:", error);
-    return [];
-  }
-};
-
 const stripHtml = (html) => {
   if (!html) return "";
   return html.replace(/<\/?[^>]+(>|$)/g, "");
@@ -40,12 +30,12 @@ const fixImagePath = (path) => {
 
 const fetcher = async (url) => {
   const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
+  const timeoutId = setTimeout(() => controller.abort(), 5000);
 
   try {
     const response = await fetch(url, {
       signal: controller.signal,
-      next: { revalidate: 3600 }, // Cache for 1 hour
+      next: { revalidate: 3600 },
     });
 
     if (!response.ok) {
@@ -73,23 +63,6 @@ const FeatureBlog = () => {
     }
   );
 
-  const { data: localBlogData } = useSWR(
-    "local-blog-data",
-    async () => {
-      try {
-        const data = await importBlogData();
-        return data.map((blog) => ({
-          ...blog,
-          content: stripHtml(blog.content?.rendered || blog.content || ""),
-        }));
-      } catch (error) {
-        console.error("Error loading local blog data:", error);
-        return [];
-      }
-    },
-    { revalidateOnFocus: false }
-  );
-
   const processedApiBlogs = apiBlogs
     ? apiBlogs.map((blog) => ({
         ...blog,
@@ -99,20 +72,7 @@ const FeatureBlog = () => {
       }))
     : [];
 
-  const combinedBlogs =
-    apiBlogs && localBlogData
-      ? [
-          ...processedApiBlogs,
-          ...localBlogData.filter(
-            (jsonBlog) =>
-              !processedApiBlogs.some(
-                (apiBlog) => apiBlog.slug === jsonBlog.slug
-              )
-          ),
-        ]
-      : localBlogData || [];
-
-  const isLoading = !apiBlogs && !apiError && !localBlogData;
+  const isLoading = !apiBlogs && !apiError;
 
   const stripHTML = (html) => {
     if (typeof document === "undefined") return html;
@@ -121,7 +81,7 @@ const FeatureBlog = () => {
     return tempDiv.textContent || tempDiv.innerText || "";
   };
 
-  const featuredBlogFiltered = combinedBlogs.filter(
+  const featuredBlogFiltered = processedApiBlogs.filter(
     (blog) => blog.featured === true || blog.featured === undefined
   );
 
@@ -129,7 +89,7 @@ const FeatureBlog = () => {
     <div className="relative">
       {isLoading ? (
         <p className="text-center">Loading blogs...</p>
-      ) : apiError && !localBlogData?.length ? (
+      ) : apiError ? (
         <div className="text-center p-4">
           <p>Unable to load blogs. Please try again later.</p>
         </div>
