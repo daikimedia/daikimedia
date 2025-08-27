@@ -89,21 +89,32 @@ const IntegrationAnimation = () => {
         <div className="relative z-10 w-full py-[175px] max-xl:py-150 max-lg:py-25">
           <div className="align-center relative mx-auto flex h-150 w-150 flex-row justify-center rounded-full bg-white shadow-nav dark:bg-dark-200">
             <div className="align-center absolute left-1/2 top-1/2 mx-auto flex h-[122px] w-[122px] -translate-x-1/2 -translate-y-1/2  flex-row justify-center rounded-full bg-primary-100 dark:bg-[#2B2D2A]">
-              <span className="inline-block px-[25px] py-[46px] text-[30px] font-semibold leading-none text-primary">
-                DaikiMedia
-              </span>
+              <div className="flex items-center justify-center w-full h-full">
+                <Image
+                  src="/images/logo-icon.png"
+                  alt="Daiki Media Logo"
+                  className="object-contain"
+                  width={100}
+                  height={50}
+                />
+              </div>
             </div>
           </div>
           <div className="absolute bottom-auto left-0 right-auto top-0 block h-full w-1/2">
             <div className="absolute bottom-auto left-0  right-auto top-0 aspect-square w-25 rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200 xl:w-[120px]">
               <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark 1xl:p-2.5">
-                <Image
-                  src="/images/twitter.svg"
-                  alt="value image"
-                  className="inline-block"
-                  width={40}
-                  height={40}
-                />
+                <div className="text-center">
+                  <svg
+                    className="mx-auto mb-1 h-8 w-8 text-gray-700"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                  </svg>
+                  <span className="text-xs font-medium text-gray-700">
+                    SEO Services
+                  </span>
+                </div>
               </div>
             </div>
             <div className="leading-0 absolute bottom-auto left-25 right-auto top-[58px] -z-10 w-auto max-xl:top-[42px] max-lg:top-5">
@@ -200,13 +211,18 @@ const IntegrationAnimation = () => {
 
             <div className="absolute bottom-auto left-10  right-auto top-1/2 aspect-square w-25 -translate-y-1/2 rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200 xl:w-[120px]">
               <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark 1xl:p-2.5">
-                <Image
-                  src="/images/snapchat.svg"
-                  alt="value image"
-                  className="inline-block"
-                  width={40}
-                  height={40}
-                />
+                <div className="text-center">
+                  <svg
+                    className="mx-auto mb-1 h-8 w-8 text-gray-700"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                  <span className="text-xs font-medium text-gray-700">
+                    Local SEO
+                  </span>
+                </div>
               </div>
             </div>
             <div className="leading-0 absolute bottom-auto left-25 right-auto top-1/2 -z-10 w-auto  -translate-y-1/2">
@@ -303,13 +319,18 @@ const IntegrationAnimation = () => {
 
             <div className="absolute bottom-0 left-0  right-auto top-auto aspect-square w-25 rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200 xl:w-[120px]">
               <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark 1xl:p-2.5">
-                <Image
-                  src="/images/dropbox.svg"
-                  alt="value image"
-                  className="inline-block"
-                  width={40}
-                  height={40}
-                />
+                <div className="text-center">
+                  <svg
+                    className="mx-auto mb-1 h-8 w-8 text-gray-700"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+                  </svg>
+                  <span className="text-xs font-medium text-gray-700">
+                    SEO Audits
+                  </span>
+                </div>
               </div>
             </div>
             <div className="leading-0 absolute -bottom-[38px] left-25 right-auto top-auto -z-10 w-auto -translate-y-1/2 max-xl:-bottom-[54px]  max-lg:-bottom-[76px]">
@@ -407,13 +428,18 @@ const IntegrationAnimation = () => {
           <div className="absolute bottom-auto left-auto right-0 top-0 block h-full w-1/2">
             <div className="absolute bottom-auto left-auto  right-0 top-0 aspect-square w-25 rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200 xl:w-[120px]">
               <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark 1xl:p-2.5">
-                <Image
-                  src="/images/slack.svg"
-                  alt="value image"
-                  className="inline-block"
-                  width={40}
-                  height={40}
-                />
+                <div className="text-center">
+                  <svg
+                    className="mx-auto mb-1 h-8 w-8 text-gray-700"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                  </svg>
+                  <span className="text-xs font-medium text-gray-700">
+                    Digital Marketing
+                  </span>
+                </div>
               </div>
             </div>
             <div className="leading-0 absolute bottom-auto left-auto right-25 top-[58px] -z-10 w-auto max-xl:top-[42px] max-lg:top-5">
@@ -510,13 +536,18 @@ const IntegrationAnimation = () => {
 
             <div className="absolute bottom-auto left-auto  right-10 top-1/2 aspect-square w-25 -translate-y-1/2 rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200 xl:w-[120px]">
               <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark 1xl:p-2.5">
-                <Image
-                  src="/images/asana.svg"
-                  alt="value image"
-                  className="inline-block"
-                  width={40}
-                  height={40}
-                />
+                <div className="text-center">
+                  <svg
+                    className="mx-auto mb-1 h-8 w-8 text-gray-700"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                  </svg>
+                  <span className="text-xs font-medium text-gray-700">
+                    Enterprise SEO
+                  </span>
+                </div>
               </div>
             </div>
             <div className="leading-0 absolute bottom-auto left-auto right-25 top-1/2 -z-10 w-auto -translate-y-1/2">
@@ -613,13 +644,27 @@ const IntegrationAnimation = () => {
 
             <div className="absolute bottom-0 left-auto  right-0 top-auto aspect-square w-25 rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200 xl:w-[120px]">
               <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark 1xl:p-2.5">
-                <Image
-                  src="/images/google-drive.svg"
-                  alt="value image"
-                  className="inline-block"
-                  width={40}
-                  height={40}
-                />
+                <div className="text-center">
+                  <svg
+                    className="mx-auto mb-1 h-8 w-8 text-gray-700"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                  </svg>
+                  <span className="text-xs font-medium text-gray-700">
+                    PPC Management
+                  </span>
+                </div>
               </div>
             </div>
             <div className="leading-0 absolute -bottom-[38px] left-auto right-25 top-auto -z-10 w-auto -translate-y-1/2 max-xl:-bottom-[54px] max-lg:-bottom-[76px]">
@@ -719,70 +764,101 @@ const IntegrationAnimation = () => {
       <div className="mt-10 grid grid-cols-2 gap-8 md:hidden">
         <div className="mx-auto aspect-square w-25  rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200">
           <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark ">
-            <Image
-              src="/images/figma.svg"
-              alt="value image"
-              className="inline-block"
-              width={40}
-              height={40}
-            />
+            <div className="text-center">
+              <svg
+                className="mx-auto mb-1 h-8 w-8 text-gray-700"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+              </svg>
+              <span className="text-xs font-medium text-gray-700">
+                SEO Services
+              </span>
+            </div>
           </div>
         </div>
 
         <div className="mx-auto aspect-square w-25  rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200">
           <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark ">
-            <Image
-              src="/images/dropbox.svg"
-              alt="value image"
-              className="inline-block"
-              width={40}
-              height={40}
-            />
+            <div className="text-center">
+              <svg
+                className="mx-auto mb-1 h-8 w-8 text-gray-700"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <span className="text-xs font-medium text-gray-700">
+                Local SEO
+              </span>
+            </div>
           </div>
         </div>
 
         <div className="mx-auto aspect-square w-25  rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200">
           <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark ">
-            <Image
-              src="/images/twitter.svg"
-              alt="value image"
-              className="inline-block"
-              width={40}
-              height={40}
-            />
+            <div className="text-center">
+              <svg
+                className="mx-auto mb-1 h-8 w-8 text-gray-700"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+              </svg>
+              <span className="text-xs font-medium text-gray-700">
+                SEO Audits
+              </span>
+            </div>
           </div>
         </div>
         <div className="mx-auto aspect-square w-25  rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200">
           <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark ">
-            <Image
-              src="/images/slack.svg"
-              alt="value image"
-              className="inline-block"
-              width={40}
-              height={40}
-            />
+            <div className="text-center">
+              <svg
+                className="mx-auto mb-1 h-8 w-8 text-gray-700"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+              </svg>
+              <span className="text-xs font-medium text-gray-700">
+                Digital Marketing
+              </span>
+            </div>
           </div>
         </div>
         <div className="mx-auto aspect-square w-25  rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200">
           <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark ">
-            <Image
-              src="/images/google-drive.svg"
-              alt="value image"
-              className="inline-block"
-              width={40}
-              height={40}
-            />
+            <div className="text-center">
+              <svg
+                className="mx-auto mb-1 h-8 w-8 text-gray-700"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+              </svg>
+              <span className="text-xs font-medium text-gray-700">
+                Enterprise SEO
+              </span>
+            </div>
           </div>
         </div>
         <div className="mx-auto aspect-square w-25  rounded-full bg-white p-2.5 shadow-box dark:bg-dark-200">
           <div className="flex aspect-square items-center justify-center rounded-full  border border-dashed border-gray-100 text-center dark:border-borderColor-dark ">
-            <Image
-              src="/images/asana.svg"
-              alt="value image"
-              className="inline-block"
-              width={40}
-              height={40}
-            />
+            <div className="text-center">
+              <svg
+                className="mx-auto mb-1 h-8 w-8 text-gray-700"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+              </svg>
+              <span className="text-xs font-medium text-gray-700">
+                PPC Management
+              </span>
+            </div>
           </div>
         </div>
       </div>
