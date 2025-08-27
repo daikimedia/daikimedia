@@ -51,7 +51,7 @@ const ContentCards = () => {
   const controlAnimation = useWhileInView(ref);
 
   return (
-    <section className="relative bg-white py-32 dark:bg-dark-300 sm:overflow-hidden">
+    <section className="relative bg-white py-16 dark:bg-dark-300 sm:overflow-hidden">
       <div className="absolute left-0 right-0 top-25 h-full w-full bg-[url('/images/service-bg.png')] bg-cover bg-center bg-no-repeat opacity-70 sm:hidden"></div>
       <div className="container">
         <div className="mb-12">

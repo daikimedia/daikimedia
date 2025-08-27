@@ -58,7 +58,7 @@ const Integration = () => {
             though it looks like nothing.
           </p>
 
-          <Link href="/contact" className="btn-outline">
+          <Link href="/contact" className="btn">
             Start Your Journey
           </Link>
         </div>

@@ -32,7 +32,7 @@ export const InfoStatsSection = ({ data }) => {
                 </li>;
               })}
             </ul>
-            <Link href={data.link} className="btn-outline">
+            <Link href={data.link} className="btn">
               Start Your Journey
             </Link>
           </div>

@@ -27,7 +27,7 @@ const Solution = () => {
               support.
             </p>
             <ul className="mb-14 flex max-lg:mb-6 max-md:flex-col max-md:gap-y-5 lg:items-center lg:[&>*:not(:last-child)]:mr-10">
-              <li className="relative flex items-center gap-x-2 ">
+              <li className="relative flex items-center gap-x-4 ">
                 <FontAwesomeIcon
                   icon={faCheck}
                   className="text-paragraph dark:text-primary"
@@ -36,7 +36,7 @@ const Solution = () => {
                   On Demand Support
                 </span>
               </li>
-              <li className="relative flex items-center gap-x-2 ">
+              <li className="relative flex items-center gap-x-4 ">
                 <FontAwesomeIcon
                   icon={faCheck}
                   className="text-paragraph dark:text-primary"
@@ -45,7 +45,7 @@ const Solution = () => {
                   Seamless Integration
                 </span>
               </li>
-              <li className="relative flex items-center gap-x-2 ">
+              <li className="relative flex items-center gap-x-4 ">
                 <FontAwesomeIcon
                   icon={faCheck}
                   className="text-paragraph dark:text-primary"
@@ -57,7 +57,7 @@ const Solution = () => {
             </ul>
             <Link
               href="https://api.whatsapp.com/send?phone=601114850067"
-              className="btn-outline dark:bg-white dark:text-black hover:dark:bg-black hover:dark:text-white"
+              className="btn dark:bg-white dark:text-black hover:dark:bg-black hover:dark:text-white"
             >
               Start Your Journey
             </Link>

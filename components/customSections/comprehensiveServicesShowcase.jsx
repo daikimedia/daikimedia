@@ -26,7 +26,7 @@ const services = [
     ],
   },
   {
-    title: "E-commerce Solutions",
+    title: "E-Commerce Solutions",
     icon: ShoppingBag,
     description:
       "Daiki Media’s e-commerce solutions enhance user experience, functionality, and sales. From responsive designs to SEO optimization, we create an exceptional shopping experience on platforms like Shopify, WooCommerce, and Magento.",
@@ -58,21 +58,23 @@ export default function ComprehensiveServicesShowcase() {
         <h2 className="mb-12 text-center pb-8  text-4xl font-bold text-gray-800">
           Enhance Your Brand with Daiki Media
         </h2>
-        <div className="mb-12 flex  justify-center space-x-4">
+        <div className="mb-12 flex flex-wrap justify-center gap-3">
           {services.map((service, index) => (
             <button
               key={index}
               onClick={() => setActiveService(index)}
-              className={`rounded-full   px-6 py-3 font-semibold transition-colors ${
-                activeService === index
-                  ? "bg-white text-gray-800 hover:bg-black hover:text-white hover:shadow-2xl"
-                  : "bg-white text-gray-800 hover:bg-black hover:text-white hover:shadow-2xl"
-              }`}
+              className={`btn rounded-full font-semibold transition-colors
+        px-3 py-2 text-sm sm:px-6 sm:py-3 sm:text-base
+        ${activeService === index
+                  ? "bg-black text-white"
+                  : "bg-gray-200 text-gray-100 hover:bg-gray-300"
+                }`}
             >
               {service.title}
             </button>
           ))}
         </div>
+
         <motion.div
           key={activeService}
           initial={{ opacity: 0, y: 20 }}
@@ -81,7 +83,7 @@ export default function ComprehensiveServicesShowcase() {
           className="grid gap-8 md:grid-cols-2"
         >
           <div className="space-y-6  ">
-            <div className="flex items-center pt-[100px] space-x-4">
+            <div className="flex items-center pt-[40px] space-x-4">
               <h3 className="text-3xl font-bold">
                 {services[activeService].title}
               </h3>
@@ -107,7 +109,7 @@ export default function ComprehensiveServicesShowcase() {
               </ul>
             </div>
           </div>
-          <div className="space-y-6 pb-15 pt-[160px]">
+          <div className="space-y-6 pb-15 pt-[100px]">
             <div className="bg-white rounded-3xl  p-6">
               <h4 className="mb-4 text-xl dark:text-black font-semibold text-gray-800">
                 Our Expertise
