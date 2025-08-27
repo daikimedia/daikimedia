@@ -9,7 +9,7 @@ import { HeroContactForm } from "./HeroContact";
 const Hero = () => {
   return (
     <section
-      className="hero max-mb:pb-[70px] max-mb:pb-[70px] relative overflow-hidden bg-gray pb-[140px] pt-[230px] dark:bg-dark max-lg:pb-25 max-lg:pt-[160px]"
+      className="hero max-mb:pb-[70px] max-mb:pb-[70px] relative overflow-hidden bg-gray pb-[140px] pt-[120px] dark:bg-dark max-lg:pb-25 max-lg:pt-[80px]"
       id="scene"
     >
       <div className="absolute left-1/2 top-0 max-w-[1612px] -translate-x-1/2 max-lg:hidden">
@@ -24,7 +24,7 @@ const Hero = () => {
       <div className="absolute bottom-0 left-0 w-full lg:hidden">
         <HeroLine4 />
       </div>
-      <div className="container">
+      <div className="container mt-16 md:mt-0">
         <HeroContent />
       </div>
       <div>

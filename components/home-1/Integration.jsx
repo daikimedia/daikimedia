@@ -6,15 +6,13 @@ const Integration = () => {
     <section className="bg-white pb-150  dark:bg-dark-300 max-md:pb-20">
       <div className="container relative z-10">
         <div className="mx-auto max-w-[620px] text-center">
-          <p className="section-tagline">Best-in-Class Integrations</p>
+          <p className="section-tagline">Best-in-Class SEO</p>
 
-          <h2 className="mb-8">
-            Unlock Productivity with 20+ Integrated Solutions
-          </h2>
+          <h2 className="mb-8">Unlock Productivity with 20+ SEO Solutions</h2>
           <p className="mb-10">
-            Unlock seamless efficiency with Daiki Media’s best-in-class
-            integrations, tailored to elevate your digital strategy and
-            streamline operations effortlessly
+            Unlock seamless efficiency with Daiki Media’s best-in-class SEO
+            solutions, tailored to elevate your digital strategy and streamline
+            operations effortlessly
           </p>
 
           <Link

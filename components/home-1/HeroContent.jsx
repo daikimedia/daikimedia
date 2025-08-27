@@ -34,14 +34,14 @@ const HeroContent = () => {
         <p className="mb-8 font-medium uppercase max-lg:mb-4">
           5k+ Trusted Businesses
         </p>
-        <h1 className="mb-12 max-md:mb-8">
+        <h1 className="mb-4 max-md:mb-8">
           Grow Your Revenue{" "}
           <span className="inline-block rounded-[88px] border-2 border-paragraph bg-transparent px-5 pb-2.5 pt-1 font-playfair italic leading-none dark:border-[#F0F3EA]">
             with SEO & Digital
           </span>{" "}
           Marketing Services.
         </h1>
-        <p className="mb-8 max-w-[590px] max-md:mb-8">
+        <p className="mb-4 max-w-[590px] max-md:mb-8">
           Partner with a results-driven digital agency that delivers measurable
           impact for forward-thinking businesses. From strategy to execution, we
           transform ideas into digital success stories.
@@ -56,13 +56,13 @@ const HeroContent = () => {
         </a>
       </div>
 
-      <div className="col-span-12 md:col-span-6">
+      <div className="col-span-12 md:col-span-6 flex items-center justify-center">
         <motion.div
           variants={fadeFromLeftAnimation}
           initial="initial"
           animate="animate"
           transition={{ delay: 0.2, duration: 0.8 }}
-          className="relative md:min-h-[530px] w-full max-md:min-h-[400px]"
+          className="relative md:min-h-[530px] w-full max-md:min-h-[400px] flex items-center justify-center"
         >
           {isMobile !== null && (
             <Image
