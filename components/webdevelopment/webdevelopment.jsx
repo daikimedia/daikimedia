@@ -280,9 +280,8 @@ export default function WebDevelopment() {
                     </span>
                   </button>
                   <div
-                    className={`px-6 overflow-hidden transition-all duration-200 ease-in-out ${
-                      openIndex === index ? "max-h-40 pb-4" : "max-h-0"
-                    }`}
+                    className={`px-6 overflow-hidden transition-all duration-200 ease-in-out ${openIndex === index ? "max-h-40 pb-4" : "max-h-0"
+                      }`}
                   >
                     <p className="text-gray-600">{faq.answer}</p>
                   </div>

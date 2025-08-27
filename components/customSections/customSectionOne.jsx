@@ -34,7 +34,7 @@ const CustomSectionOne = () => {
 
               <Link
                 href="https://api.whatsapp.com/send?phone=601114850067"
-                className="btn-outline dark:bg-white dark:text-black hover:dark:bg-black hover:dark:text-white"
+                className="btn dark:bg-white dark:text-black hover:dark:bg-black hover:dark:text-white"
               >
                 Start Your Journey
               </Link>
@@ -63,7 +63,7 @@ const CustomSectionOne = () => {
               </p>
               <Link
                 href="https://api.whatsapp.com/send?phone=601114850067"
-                className="btn-outline dark:bg-white dark:text-black hover:dark:bg-black hover:dark:text-white"
+                className="btn dark:bg-white dark:text-black hover:dark:bg-black hover:dark:text-white"
               >
                 Start Your Journey
               </Link>

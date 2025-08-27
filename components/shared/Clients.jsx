@@ -69,7 +69,7 @@ const Clients = ({
           <div className="mt-15 flex items-center o justify-center ">
             <Link
               href="/contact"
-              className=" dark:bg-white dark:text-black hover:dark:bg-black hover:dark:text-white btn-outline"
+              className=" dark:bg-white dark:text-black hover:dark:bg-black hover:dark:text-white btn"
             >
               Start your Journey
             </Link>
