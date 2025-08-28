@@ -19,11 +19,9 @@ export async function generateMetadata({ params }) {
     description: data?.metaDescription || "Default Description",
   };
 
-  if (data?.slug) {
-    meta.alternates = {
-      canonical: `https://www.daikimedia.com/${data.slug}`,
-    };
-  }
+  meta.alternates = {
+    canonical: data?.canonicalUrl || `https://www.daikimedia.com/${data.slug}`,
+  };
 
   if (data?.keyword) {
     meta.keywords = data.keyword;
