@@ -130,7 +130,15 @@ export default function RootLayout({ children }) {
               },
             }),
           }}
+
         />
+
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="JyGu1izCF2yphYtlcxseLg"
+          async
+        />
+
       </head>
       <body
         className={cn(
