@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { notFound } from "next/navigation";
 import Footer from "@/components/footer/Footer";
 import ServiceContent from "@/components/service/ServiceContent";
 import MembersCounter from "@/components/shared/MembersCounter";
@@ -14,16 +15,23 @@ export async function generateMetadata({ params }) {
   const { SingleServiceData } = ServiceList;
   const data = SingleServiceData.find((post) => post.slug === slug);
 
+  if (!data) {
+    return {
+      title: "404 || Not Found",
+      description: "The page you are looking for does not exist.",
+    };
+  }
+
   const meta = {
-    title: data?.metaTitle || "Default Title",
-    description: data?.metaDescription || "Default Description",
+    title: data.metaTitle || "Default Title",
+    description: data.metaDescription || "Default Description",
   };
 
   meta.alternates = {
-    canonical: data?.canonicalUrl || `https://www.daikimedia.com/${data.slug}`,
+    canonical: data.canonicalUrl || `https://www.daikimedia.com/${data.slug}`,
   };
 
-  if (data?.keyword) {
+  if (data.keyword) {
     meta.keywords = data.keyword;
   }
 
@@ -41,6 +49,10 @@ const ServiceDetails = async ({ params }) => {
   const { SingleServiceData } = ServiceList;
   const { slug } = await params;
   const data = SingleServiceData.find((post) => post.slug === slug);
+
+  if (!data) {
+    notFound();
+  }
 
   return (
     <>
