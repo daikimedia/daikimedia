@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import useSWR from "swr";
+import { getCMSImageUrl } from "@/utils/imageUtils";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -21,11 +22,7 @@ const stripHtml = (html) => {
 };
 
 const fixImagePath = (path) => {
-  if (!path) return "";
-  if (!path.startsWith("http")) {
-    return `https://cms.daikimedia.com/${path.replace(/\\/g, "/")}`;
-  }
-  return path;
+  return getCMSImageUrl(path);
 };
 
 const fetcher = async (url) => {

@@ -3,6 +3,8 @@ import Footer from "@/components/footer/Footer";
 import NewsLetter from "@/components/shared/NewsLetter";
 import PageHero from "@/components/shared/PageHero";
 import ArticleSchema from "@/components/schema/ArticleSchema";
+import FallbackImage from "@/components/shared/FallbackImage";
+import { getCMSImageUrl } from "@/utils/imageUtils";
 import dayjs from "dayjs";
 
 async function getBlogsFromAPI() {
@@ -25,10 +27,7 @@ async function getBlogsFromAPI() {
 }
 
 async function getBlogData(slug) {
-  console.log("Looking for blog with slug:", slug);
-
   const apiBlogs = await getBlogsFromAPI();
-  console.log("Fetched API blogs:", apiBlogs?.length);
 
   if (apiBlogs) {
     const apiBlog = apiBlogs.find((item) => item.slug === slug);
@@ -84,7 +83,7 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const { blog, isApiBlog } = data;
+  const { blog } = data;
 
   const decodeHtmlEntities = (html) => {
     if (!html) return "";
@@ -97,8 +96,7 @@ export async function generateMetadata({ params }) {
   };
 
   const getImageUrl = (imagePath) => {
-    if (!imagePath) return "/images/blog/blog-fallback-img.webp";
-    return isApiBlog ? `http://cms.daikimedia.com/${imagePath}` : imagePath;
+    return getCMSImageUrl(imagePath);
   };
 
   const title = decodeHtmlEntities(
@@ -150,7 +148,7 @@ export default async function BlogDetails({ params }) {
     notFound();
   }
 
-  const { blog, relatedBlogs, isApiBlog } = data;
+  const { blog, relatedBlogs } = data;
 
   const decodeHtmlEntities = (html) => {
     if (!html) return "";
@@ -163,9 +161,7 @@ export default async function BlogDetails({ params }) {
   };
 
   const getImageUrl = (imagePath) => {
-    if (!imagePath || imagePath === "")
-      return "/images/blog/blog-fallback-img.webp";
-    return `http://cms.daikimedia.com/${imagePath}`;
+    return getCMSImageUrl(imagePath);
   };
 
   const getFormattedDate = () => {
@@ -213,7 +209,7 @@ export default async function BlogDetails({ params }) {
         <article className="relative pb-150 w-full max-w-4xl mx-auto text-center">
           <div className="container relative">
             <div className="mb-16 overflow-hidden rounded-medium p-2.5 max-md:h-[400px] flex justify-center items-center">
-              <img
+              <FallbackImage
                 src={getImageUrl(blog.featuredImage)}
                 alt={decodeHtmlEntities(blog.title || "Untitled Blog")}
                 className="rounded max-md:h-full max-md:object-cover w-[700px] h-[500px] max-md:object-center"
@@ -273,7 +269,7 @@ export default async function BlogDetails({ params }) {
                       key={relatedBlog.slug}
                       className="border rounded-lg p-4"
                     >
-                      <img
+                      <FallbackImage
                         src={getImageUrl(relatedBlog.featuredImage)}
                         alt={decodeHtmlEntities(relatedBlog.title)}
                         className="w-full h-48 object-cover rounded-md mb-4"

@@ -2,6 +2,7 @@
 import { useState, useEffect, useMemo } from "react";
 import Pagination from "../shared/Pagination";
 import BlogItems from "./BlogItems";
+import { getCMSImageUrl } from "@/utils/imageUtils";
 
 const RecentNews = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -19,11 +20,7 @@ const RecentNews = () => {
       };
 
       const fixImagePath = (path) => {
-        if (!path) return "";
-        if (!path.startsWith("http")) {
-          return `https://cms.daikimedia.com/${path.replace(/\\/g, "/")}`;
-        }
-        return path;
+        return getCMSImageUrl(path);
       };
 
       try {
