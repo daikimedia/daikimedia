@@ -3,6 +3,8 @@ import Footer from "@/components/footer/Footer";
 import NewsLetter from "@/components/shared/NewsLetter";
 import PageHero from "@/components/shared/PageHero";
 import ArticleSchema from "@/components/schema/ArticleSchema";
+import FallbackImage from "@/components/shared/FallbackImage";
+import { getCMSImageUrl } from "@/utils/imageUtils";
 import dayjs from "dayjs";
 
 async function getBlogsFromAPI() {
@@ -25,10 +27,7 @@ async function getBlogsFromAPI() {
 }
 
 async function getBlogData(slug) {
-  console.log("Looking for blog with slug:", slug);
-
   const apiBlogs = await getBlogsFromAPI();
-  console.log("Fetched API blogs:", apiBlogs?.length);
 
   if (apiBlogs) {
     const apiBlog = apiBlogs.find((item) => item.slug === slug);
@@ -37,7 +36,8 @@ async function getBlogData(slug) {
         .filter(
           (item) =>
             item.slug !== slug &&
-            (item.category === apiBlog.category || item.author === apiBlog.author)
+            (item.category === apiBlog.category ||
+              item.author === apiBlog.author)
         )
         .slice(0, 3);
 
@@ -65,14 +65,15 @@ export async function generateStaticParams() {
   }
 
   const uniqueParams = params.filter(
-    (param, index, self) => index === self.findIndex((p) => p.slug === param.slug)
+    (param, index, self) =>
+      index === self.findIndex((p) => p.slug === param.slug)
   );
 
   return uniqueParams;
 }
 
 export async function generateMetadata({ params }) {
-  const { slug } = params;
+  const { slug } = await params;
   const data = await getBlogData(slug);
 
   if (!data?.blog) {
@@ -82,7 +83,7 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const { blog, isApiBlog } = data;
+  const { blog } = data;
 
   const decodeHtmlEntities = (html) => {
     if (!html) return "";
@@ -95,8 +96,7 @@ export async function generateMetadata({ params }) {
   };
 
   const getImageUrl = (imagePath) => {
-    if (!imagePath) return "/images/blog/blog-fallback-img.webp";
-    return isApiBlog ? `http://cms.daikimedia.com/${imagePath}` : imagePath;
+    return getCMSImageUrl(imagePath);
   };
 
   const title = decodeHtmlEntities(
@@ -135,20 +135,20 @@ export async function generateMetadata({ params }) {
       images: [getImageUrl(blog.featuredImage)],
     },
     alternates: {
-      canonical: `https://daikimedia.com/blog/${slug}`,
+      canonical: `https://www.daikimedia.com/blog/${slug}`,
     },
   };
 }
 
 export default async function BlogDetails({ params }) {
-  const { slug } = params;
+  const { slug } = await params;
   const data = await getBlogData(slug);
 
   if (!data?.blog) {
     notFound();
   }
 
-  const { blog, relatedBlogs, isApiBlog } = data;
+  const { blog, relatedBlogs } = data;
 
   const decodeHtmlEntities = (html) => {
     if (!html) return "";
@@ -161,13 +161,13 @@ export default async function BlogDetails({ params }) {
   };
 
   const getImageUrl = (imagePath) => {
-    if (!imagePath || imagePath === "")
-      return "/images/blog/blog-fallback-img.webp";
-    return `http://cms.daikimedia.com/${imagePath}`;
+    return getCMSImageUrl(imagePath);
   };
 
   const getFormattedDate = () => {
-    return blog.created_at ? dayjs(blog.created_at).format("MMMM D, YYYY") : "Unknown Date";
+    return blog.created_at
+      ? dayjs(blog.created_at).format("MMMM D, YYYY")
+      : "Unknown Date";
   };
 
   const getSchemaDate = (dateField) => {
@@ -175,7 +175,7 @@ export default async function BlogDetails({ params }) {
   };
 
   const getCurrentUrl = () => {
-    return `https://daikimedia.com/blog/${slug}`;
+    return `https://www.daikimedia.com/blog/${slug}`;
   };
 
   return (
@@ -188,11 +188,13 @@ export default async function BlogDetails({ params }) {
             "Blog post content"
         )}
         authorName={blog.author || "Daiki Media"}
-        authorUrl="https://daikimedia.com/author"
+        authorUrl="https://www.daikimedia.com/author"
         publisherName="Daiki Media"
-        publisherLogo="https://daikimedia.com/logo.png"
+        publisherLogo="https://www.daikimedia.com/logo.png"
         datePublished={getSchemaDate("created_at")}
-        dateModified={getSchemaDate("updated_at") || getSchemaDate("created_at")}
+        dateModified={
+          getSchemaDate("updated_at") || getSchemaDate("created_at")
+        }
         mainEntityUrl={getCurrentUrl()}
         imageUrl={getImageUrl(blog.featuredImage)}
         imageWidth={1200}
@@ -200,11 +202,14 @@ export default async function BlogDetails({ params }) {
       />
 
       <main className="flex flex-col items-center justify-center">
-        <PageHero subtitle="" title={decodeHtmlEntities(blog.title || "Untitled Blog")} />
+        <PageHero
+          subtitle=""
+          title={decodeHtmlEntities(blog.title || "Untitled Blog")}
+        />
         <article className="relative pb-150 w-full max-w-4xl mx-auto text-center">
           <div className="container relative">
             <div className="mb-16 overflow-hidden rounded-medium p-2.5 max-md:h-[400px] flex justify-center items-center">
-              <img
+              <FallbackImage
                 src={getImageUrl(blog.featuredImage)}
                 alt={decodeHtmlEntities(blog.title || "Untitled Blog")}
                 className="rounded max-md:h-full max-md:object-cover w-[700px] h-[500px] max-md:object-center"
@@ -216,12 +221,26 @@ export default async function BlogDetails({ params }) {
             <div className="blog-details text-center mb-12">
               <div className="mb-6 flex items-center justify-center gap-x-2">
                 <p className="text-lg">
-                  <a href="/author/lukesh-pillai">{blog.author || "Daiki Media"}</a>
+                  <a href="/author/lukesh-pillai">
+                    {blog.author || "Daiki Media"}
+                  </a>
                 </p>
 
                 <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="5" height="6" viewBox="0 0 5 6" fill="none">
-                    <circle cx="2.5" cy="3" r="2.5" fill="#D8DBD0" className="dark:fill-[#3B3C39]" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="5"
+                    height="6"
+                    viewBox="0 0 5 6"
+                    fill="none"
+                  >
+                    <circle
+                      cx="2.5"
+                      cy="3"
+                      r="2.5"
+                      fill="#D8DBD0"
+                      className="dark:fill-[#3B3C39]"
+                    />
                   </svg>
                 </span>
                 <time dateTime={blog.created_at} className="text-lg">
@@ -233,17 +252,24 @@ export default async function BlogDetails({ params }) {
             <div className="blog-details-body text-center">
               <div
                 className="text-gray-700 leading-relaxed mx-auto max-w-4xl prose prose-lg "
-                dangerouslySetInnerHTML={{ __html: decodeHtmlEntities(blog.content || "") }}
+                dangerouslySetInnerHTML={{
+                  __html: decodeHtmlEntities(blog.content || ""),
+                }}
               ></div>
             </div>
 
             {relatedBlogs.length > 0 && (
               <div className="mt-16">
                 <h2 className="text-2xl font-bold mb-8">Related Blogs</h2>
-                <div className={`grid grid-cols-1 md:grid-cols-${relatedBlogs.length > 4 ? 4 : relatedBlogs.length} gap-8`}>
+                <div
+                  className={`grid grid-cols-1 md:grid-cols-${relatedBlogs.length > 4 ? 4 : relatedBlogs.length} gap-8`}
+                >
                   {relatedBlogs.map((relatedBlog) => (
-                    <div key={relatedBlog.slug} className="border rounded-lg p-4">
-                      <img
+                    <div
+                      key={relatedBlog.slug}
+                      className="border rounded-lg p-4"
+                    >
+                      <FallbackImage
                         src={getImageUrl(relatedBlog.featuredImage)}
                         alt={decodeHtmlEntities(relatedBlog.title)}
                         className="w-full h-48 object-cover rounded-md mb-4"
@@ -252,7 +278,9 @@ export default async function BlogDetails({ params }) {
                         loading="lazy"
                       />
                       <h3 className="text-xl font-semibold mb-2">
-                        <a href={`/blog/${relatedBlog.slug}`}>{decodeHtmlEntities(relatedBlog.title)}</a>
+                        <a href={`/blog/${relatedBlog.slug}`}>
+                          {decodeHtmlEntities(relatedBlog.title)}
+                        </a>
                       </h3>
                       <p className="text-gray-600">{relatedBlog.author}</p>
                     </div>

@@ -6,11 +6,12 @@ export const metadata = {
     "Learn about Daiki Media, a trusted digital marketing agency in KL, Malaysia, empowering businesses with innovative and result-driven strategies.",
   keywords:
     "digital marketing, SEO, web development, UI/UX design, copywriting, app development, KL, Malaysia",
-  og_title: "Digital Marketing Agency Kuala Lumpur | Search Engine Optimization and Digital Marketing | Seo Agencies | Daiki Media",
+  og_title:
+    "Digital Marketing Agency Kuala Lumpur | Search Engine Optimization and Digital Marketing | Seo Agencies | Daiki Media",
   og_description:
     "Learn about Daiki Media, a trusted digital marketing agency in KL, Malaysia, empowering businesses with innovative and result-driven strategies.",
-  og_image: "https://daikimedia.com/images/logo.png",
-  og_url: "https://daikimedia.com",
+  og_image: "https://www.daikimedia.com/images/logo.png",
+  og_url: "https://www.daikimedia.com",
   og_type: "website",
   og_site_name: "Daiki Media",
   og_locale: "en_US",
