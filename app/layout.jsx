@@ -112,7 +112,7 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org ",
               "@type": "LocalBusiness",
               name: "Daiki Media",
-              url: "https://daikimedia.com ",
+              url: "https://www.daikimedia.com ",
               description:
                 "Daiki Media provides expert SEO and website development services.",
               address: {
@@ -130,7 +130,6 @@ export default function RootLayout({ children }) {
               },
             }),
           }}
-
         />
 
         <Script
@@ -138,7 +137,6 @@ export default function RootLayout({ children }) {
           data-key="JyGu1izCF2yphYtlcxseLg"
           async
         />
-
       </head>
       <body
         className={cn(

@@ -15,7 +15,7 @@ export const metadata = {
   robots: "index, follow",
   openGraph: {
     type: "website",
-    url: "https://daikimedia.com/testimonials",
+    url: "https://www.daikimedia.com/testimonials",
     title: "Testimonials | Daiki Media",
     description:
       "Hear from our clients about how Daiki Media helped their business grow and succeed. Real reviews and success stories.",
