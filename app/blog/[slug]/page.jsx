@@ -73,7 +73,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const { slug } = params;
+  const { slug } = await params;
   const data = await getBlogData(slug);
 
   if (!data?.blog) {
@@ -141,7 +141,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function BlogDetails({ params }) {
-  const { slug } = params;
+  const { slug } = await params;
   const data = await getBlogData(slug);
 
   if (!data?.blog) {
