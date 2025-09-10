@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import Footer from "@/components/footer/Footer";
 import authorData from "@/data/singleAuthor.json";
 
@@ -67,44 +68,8 @@ export default function AuthorDetails({ params }) {
   const authorSlug = params?.slug || params?.id;
 
   if (!authorSlug) {
-    return (
-      <div className="min-h-screen bg-gray-100">
-        <main className="mt-28 py-8 px-4">
-          <div className="container mx-auto max-w-5xl">
-            <div className="text-center py-12 bg-white rounded-xl shadow-lg border border-gray-200">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-16 w-16 mx-auto text-red-500 mb-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              <h2 className="text-2xl font-bold text-gray-800 mb-3">
-                Author Not Found
-              </h2>
-              <p className="text-gray-600 mb-6 max-w-md mx-auto">
-                We couldn't find the author you're looking for. They may have
-                been removed or the URL might be incorrect.
-              </p>
-              <Link
-                href="/authors"
-                className="inline-block bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition duration-300 shadow-md"
-              >
-                View All Authors
-              </Link>
-            </div>
-          </div>
-        </main>
-        <Footer />
-      </div>
-    );
+    // Redirect to main author page if no slug provided
+    redirect("/author/lukesh-pillai");
   }
 
   const author = authorsArray.find(
@@ -112,44 +77,9 @@ export default function AuthorDetails({ params }) {
   );
 
   if (!author) {
-    return (
-      <div className="min-h-screen bg-gray-100">
-        <main className="mt-28 py-8 px-4">
-          <div className="container mx-auto max-w-5xl">
-            <div className="text-center py-12 bg-white rounded-xl shadow-lg border border-gray-200">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-16 w-16 mx-auto text-red-500 mb-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              <h2 className="text-2xl font-bold text-gray-800 mb-3">
-                Author Not Found
-              </h2>
-              <p className="text-gray-600 mb-6 max-w-md mx-auto">
-                We couldn't find the author you're looking for. They may have
-                been removed or the URL might be incorrect.
-              </p>
-              <Link
-                href="/authors"
-                className="inline-block bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition duration-300 shadow-md"
-              >
-                View All Authors
-              </Link>
-            </div>
-          </div>
-        </main>
-        <Footer />
-      </div>
-    );
+    // Instead of showing 404, redirect to the main author page
+    // This handles broken author links dynamically
+    redirect("/author/lukesh-pillai");
   }
 
   return (

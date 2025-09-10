@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import Footer from "@/components/footer/Footer";
 import NewsLetter from "@/components/shared/NewsLetter";
 import PageHero from "@/components/shared/PageHero";
@@ -77,9 +77,12 @@ export async function generateMetadata({ params }) {
   const data = await getBlogData(slug);
 
   if (!data?.blog) {
+    // Return metadata for redirect - this won't be used since we redirect
+    // but it's good practice to have fallback metadata
     return {
-      title: "Blog Not Found",
-      description: "The requested blog post could not be found.",
+      title: "Redirecting to Blog",
+      description:
+        "The requested blog post could not be found. Redirecting to our blog.",
     };
   }
 
@@ -145,7 +148,9 @@ export default async function BlogDetails({ params }) {
   const data = await getBlogData(slug);
 
   if (!data?.blog) {
-    notFound();
+    // Instead of showing 404, redirect to main blog page
+    // This handles all the broken blog links from Ahrefs report dynamically
+    redirect("/blog");
   }
 
   const { blog, relatedBlogs } = data;
