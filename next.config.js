@@ -21,6 +21,17 @@ const nextConfig = {
         destination: "/:slug",
         permanent: true,
       },
+      // Handle specific broken URLs that aren't covered by dynamic validation
+      {
+        source: "/authors",
+        destination: "/author/lukesh-pillai",
+        permanent: true,
+      },
+      {
+        source: "/lukesh@daikimedia.com",
+        destination: "/author/lukesh-pillai",
+        permanent: true,
+      },
     ];
   },
 
