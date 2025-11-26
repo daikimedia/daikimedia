@@ -91,8 +91,9 @@ export default function RootLayout({ children }) {
             })(window,document,'script','dataLayer','GTM-NZZ2849');
           `}
         </Script>
-        <script
-          type="text/javascript"
+        <Script
+          id="microsoft-clarity"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `(function(c,l,a,r,i,t,y){
               c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
