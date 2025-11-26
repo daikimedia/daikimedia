@@ -258,7 +258,13 @@
         "path": "/blog"
       },
       {
-        "id": 7,
+        "id":7,
+        "title":"Case Studies",
+        "path":"/case-studies"
+      }
+      ,
+      {
+        "id": 8,
         "title": "Contact Us",
         "path": "/contact",
         "newTab": false

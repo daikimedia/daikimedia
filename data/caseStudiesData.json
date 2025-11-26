@@ -1,0 +1,809 @@
+{
+  "caseStudies": [
+    {
+      "id": 1,
+      "slug": "aesthetic-clinic-seo",
+      "niche": "Aesthetic and Weight Loss Clinic",
+      "metaTitle": "Aesthetic Clinic SEO Agency Case Study | Weight Loss & Skin Clinic Growth",
+      "metaDescription": "How our SEO agency grew a premium aesthetic and weight loss clinic from zero to steady organic enquiries using treatment page optimisation, local SEO and content clusters.",
+      "h1": "SEO Results for Premium Aesthetic and Weight Loss Clinic",
+      "title": "SEO Results for Premium Aesthetic and Weight Loss Clinic",
+      "subtitle": "Aesthetic and Weight Loss Clinic",
+      "thumbnail": "/images/case-studies/SEO-for-Aesthetic-Clinics-A-Comprehensive-Guide-to-Boosting-Your-Online-Presence.jpg",
+      "featuredImage": "/images/case-studies/SEO-for-Aesthetic-Clinics-A-Comprehensive-Guide-to-Boosting-Your-Online-Presence.jpg",
+      "excerpt": "How our SEO agency grew a premium aesthetic and weight loss clinic from zero to steady organic enquiries using treatment page optimisation, local SEO and content clusters.",
+      "background": {
+        "title": "Background of the Business",
+        "content": "A premium aesthetic and weight loss clinic in Asia partnered with our SEO agency to build an organic growth engine from the ground up. The clinic offers services such as Botox, dermal fillers, laser skin treatments, hair restoration, and medical weight management programs. When the collaboration started, the website was new, the domain had no authority, and the clinic had zero visibility in Google for its core treatment and location based keywords."
+      },
+      "initialSituation": {
+        "title": "Initial SEO Situation",
+        "content": "Before SEO work began, the clinic faced several common issues that limited organic performance:",
+        "points": [
+          "New domain with no historical backlinks or authority.",
+          "No clear keyword targeting for treatment and location keywords such as aesthetic clinic, skin clinic, and weight loss clinic searches.",
+          "Unstructured site architecture with only a few basic service pages and no content clusters.",
+          "No local SEO optimisation for Google Business Profile or map visibility.",
+          "Tracking was limited to basic traffic data without lead tracking or form conversion goals."
+        ]
+      },
+      "auditFindings": {
+        "title": "SEO Audit and Key Findings",
+        "content": "We started with a full technical and content audit to understand where the biggest opportunities were. The audit revealed several gaps that were directly holding back the clinic in competitive aesthetic and weight loss related searches.",
+        "points": [
+          "Technical issues such as missing or incomplete meta titles and descriptions, no XML sitemap submitted, and weak internal linking between key pages.",
+          "Very thin content on high value pages like Botox, laser treatments, and weight loss injections, which made it difficult for Google to understand topical relevance.",
+          "No structured data for medical services or local business, which limited rich results and trust signals.",
+          "Google Business Profile was either unoptimised or under used, with inconsistent NAP details and very few reviews.",
+          "No content designed to capture informational searches such as treatment benefits, side effects, recovery time, or pricing guidance."
+        ]
+      },
+      "strategy": {
+        "title": "SEO Strategy and Roadmap",
+        "content": "Based on the audit, we created a clear SEO roadmap that focused on building authority quickly while laying a strong foundation for long term growth. The strategy was divided into four main pillars.",
+        "pillars": [
+          {
+            "title": "Technical SEO foundation:",
+            "points": [
+              "Fix critical crawl and indexing issues and submit an accurate XML sitemap.",
+              "Optimise core web vitals and improve mobile performance for treatment pages.",
+              "Clean up duplicate or overlapping URLs so that each treatment had one strong page."
+            ]
+          },
+          {
+            "title": "On page and content strategy:",
+            "points": [
+              "Map primary, secondary, and long tail keywords to every important treatment and location page.",
+              "Rewrite titles, headings, and meta descriptions to match high intent aesthetic clinic and treatment keywords.",
+              "Create content clusters around skin rejuvenation, injectables, body contouring, and weight loss programmes."
+            ]
+          },
+          {
+            "title": "Local SEO and E E A T:",
+            "points": [
+              "Fully optimise the Google Business Profile with categories, services, photos, and UTM tagged links.",
+              "Encourage happy patients to leave authentic reviews and respond to every review.",
+              "Add detailed doctor bios, credentials, and before and after style content to improve experience and expertise signals."
+            ]
+          },
+          {
+            "title": "Authority building and links:",
+            "points": [
+              "Secure relevant local and medical directory listings to build foundational links.",
+              "Partner with local blogs and lifestyle publishers for guest content and mentions.",
+              "Promote educational content that was likely to attract natural backlinks over time."
+            ]
+          }
+        ]
+      },
+      "timeline": {
+        "title": "Implementation Timeline",
+        "content": "Work was rolled out in focused monthly sprints. The table below summarises the core activities for the first three months of the aesthetic clinic SEO campaign.",
+        "months": [
+          {
+            "month": "Month 1",
+            "focus": "Technical setup and foundations",
+            "actions": "Full SEO audit, site architecture clean up, meta title and description optimisation, sitemap and robots configuration, Google Analytics and Search Console setup."
+          },
+          {
+            "month": "Month 2",
+            "focus": "Treatment page optimisation and local SEO",
+            "actions": "Expanded and optimised service pages for injectables, laser treatments, and weight management. Implemented internal linking, launched Google Business Profile optimisation and started review acquisition."
+          },
+          {
+            "month": "Month 3",
+            "focus": "Content clusters and authority building",
+            "actions": "Published blog and guide content around aesthetic treatments and weight loss topics, strengthened internal links, and began targeted outreach and directory link building."
+          }
+        ]
+      },
+      "results": {
+        "title": "Performance Results After 3 Months",
+        "content": "From a standing start with almost no organic visibility, the aesthetic clinic achieved strong performance within the first three months of the SEO campaign. Results below are taken directly from Google Search Console.",
+        "metrics": [
+          {
+            "label": "Total clicks from organic search",
+            "value": "17,800+"
+          },
+          {
+            "label": "Total impressions in Google search results",
+            "value": "1.38 million"
+          },
+          {
+            "label": "Average click through rate",
+            "value": "1.3 percent"
+          },
+          {
+            "label": "Average position across all queries",
+            "value": "13.8"
+          }
+        ],
+        "summary": "Traffic grew steadily week by week as more treatment and location pages entered the top pages of Google. The clinic began receiving consistent enquiries for Botox, fillers, laser treatments, and doctor led weight loss programmes from organic search alone."
+      },
+      "insights": {
+        "title": "Key Insights from the Campaign",
+        "points": [
+          "Creating strong, in depth treatment pages gave Google clear signals about what the clinic specialises in.",
+          "Local SEO and review building were essential for map pack visibility in aesthetic and weight loss related searches.",
+          "Content clusters around key themes such as skin rejuvenation and body contouring helped to build topical authority.",
+          "Small technical improvements such as better internal linking and clean URLs contributed to faster ranking gains.",
+          "Using Google Search Console data weekly allowed us to refine titles, improve click through rate, and focus on the search terms that were already generating impressions."
+        ]
+      },
+      "ongoingWork": {
+        "title": "Ongoing Work and Next Steps",
+        "content": "The clinic is still in an active SEO contract and the focus has now shifted from visibility to conversion growth. Future work includes A B testing of landing pages, adding more before and after style content, building FAQ sections for every treatment, and expanding content into new themes such as men focused aesthetic treatments and long term skin health programmes."
+      },
+      "cta": {
+        "title": "Call to Action",
+        "content": "If your aesthetic or weight loss clinic is starting from scratch or struggling to gain traction in Google, a structured SEO framework like this can help you build predictable growth. Contact our team to request a free organic visibility review and a customised SEO roadmap for your clinic."
+      }
+    },
+    {
+      "id": 2,
+      "slug": "corporate-gifting-seo",
+      "niche": "Corporate Gifting and Business Gifts",
+      "metaTitle": "Corporate Gifting SEO Case Study | B2B Marketing Company Results",
+      "metaDescription": "See how our marketing company increased organic clicks and impressions for a corporate gift provider targeting business gift ideas, client hampers and employee appreciation boxes.",
+      "h1": "Organic Growth for Corporate Gifting and Business Gift Ideas",
+      "title": "Organic Growth for Corporate Gifting and Business Gift Ideas",
+      "subtitle": "Corporate Gifting and Business Gifts",
+      "thumbnail": "/images/case-studies/Organic Growth-for-Corporate-Gifting-and-Business-Gift-Ideas.webp",
+      "featuredImage": "/images/case-studies/Organic Growth-for-Corporate-Gifting-and-Business-Gift-Ideas.webp",
+      "excerpt": "See how our marketing company increased organic clicks and impressions for a corporate gift provider targeting business gift ideas, client hampers and employee appreciation boxes.",
+      "background": {
+        "title": "Background",
+        "content": "A B2B company specialising in creative corporate gift ideas for businesses partnered with our SEO team to turn its website into a predictable source of leads. The brand focuses on curated and customisable corporate gifts such as branded gift boxes, client appreciation hampers, and employee welcome kits. Their main objective was to increase visibility for high intent searches such as corporate gifts, business gifts, client gift boxes, and bulk corporate gifting solutions, while reducing dependency on paid ads."
+      },
+      "initialSituation": {
+        "title": "Starting Point",
+        "content": "When the campaign began, the website had some activity but was underperforming in search for its niche. Several issues were limiting organic growth:",
+        "points": [
+          "Content focused mainly on products rather than corporate gifting use-cases and buying scenarios.",
+          "Blog posts were generic and not mapped to clear keyword targets or buyer intent.",
+          "Category pages were not optimised for high value queries such as corporate gift ideas for clients, custom business gifts, or bulk corporate gifts.",
+          "Internal linking was weak, so Google had little guidance on which pages were most important for corporate gifting searches.",
+          "Titles and meta descriptions did not strongly highlight benefits like custom branding, bulk orders, and premium packaging."
+        ]
+      },
+      "strategy": {
+        "title": "SEO Strategy",
+        "content": "We designed an SEO plan focused on owning the corporate gift ideas theme, strengthening commercial landing pages, and improving click-through rates from search results. The strategy was built around three pillars:",
+        "pillars": [
+          {
+            "title": "Own the corporate gift ideas topic cluster:",
+            "points": [
+              "Build content hubs around corporate gift ideas for clients, employees, remote teams, event attendees, and seasonal occasions.",
+              "Create comparison and decision content such as corporate gifts versus vouchers, premium versus budget gifts, and personalised gifts versus standard kits."
+            ]
+          },
+          {
+            "title": "Turn category pages into high intent landing pages:",
+            "points": [
+              "Optimise core categories for keywords such as corporate gift boxes, luxury corporate gifts, custom branded gifts, and employee welcome kits.",
+              "Add persuasive copy, FAQs, and use-case sections to answer typical B2B buyer questions directly on the page."
+            ]
+          },
+          {
+            "title": "Improve visibility and click-through in search:",
+            "points": [
+              "Rewrite titles and meta descriptions to highlight unique selling points including creative gift ideas, bulk ordering, and logo branding.",
+              "Enhance internal links from idea-focused blog posts to the main money pages so that authority flows to core categories."
+            ]
+          }
+        ]
+      },
+      "execution": {
+        "title": "Execution Highlights",
+        "content": "To bring the strategy to life, we implemented a combination of content, on-page, and structural updates on the site.",
+        "points": [
+          "Mapped each existing and new URL to a defined primary keyword plus supporting long tail variations.",
+          "Launched new content clusters around corporate gift ideas for different industries, teams, and occasions such as onboarding, anniversaries, and year end celebrations.",
+          "Rewrote key landing pages to include social proof, ordering process details, minimum order quantities, and shipping information for bulk corporate gifting.",
+          "Added high visibility calls to action including Get a custom quote and Upload your logo for a free mockup to capture B2B leads.",
+          "Strengthened internal linking so every idea based article pointed back to relevant corporate gift category pages."
+        ]
+      },
+      "results": {
+        "title": "Performance Snapshot (Google Search Console)",
+        "content": "Google Search Console data shows clear growth in both visibility and traffic for the corporate gifting website. The table below compares the current six month period to the previous six months.",
+        "metrics": [
+          {
+            "label": "Total clicks from organic search",
+            "previous": "6,560",
+            "current": "8,650"
+          },
+          {
+            "label": "Total impressions in search results",
+            "previous": "537,000",
+            "current": "723,000"
+          }
+        ],
+        "summary": "This represents roughly a thirty two percent increase in organic clicks and a thirty five percent increase in impressions. The site now appears for a much wider set of corporate gifting keywords, including long tail phrases such as creative corporate gift ideas for small businesses, unique client appreciation gift boxes, and premium corporate gifts with logo."
+      },
+      "businessImpact": {
+        "title": "Business Impact",
+        "content": "As search visibility improved, the corporate gifting brand saw meaningful changes in lead quality and sales activity:",
+        "points": [
+          "More inbound enquiries for bulk corporate orders coming directly through quote and contact forms.",
+          "Growth in branded searches combining the company name with terms like corporate gifts and gift boxes.",
+          "Sales teams reported that new inbound prospects were warmer, having already explored idea based and educational content before reaching out.",
+          "The website has effectively become a corporate gifting advisor for HR managers, marketing teams, and business owners looking for reliable, creative gift solutions."
+        ]
+      },
+      "insights": {
+        "title": "Key Takeaways for Corporate Gifting Brands",
+        "points": [
+          "Owning the corporate gift ideas theme with deep, practical content attracts decision makers early in their research journey.",
+          "High quality category pages, written for real buyers and optimised for search, convert significantly better than thin product listings.",
+          "Internal linking from idea focused content to commercial pages is essential for both rankings and conversions.",
+          "Clear B2B calls to action around quotes, customisation, and bulk orders turn search traffic into real sales opportunities."
+        ]
+      },
+      "cta": {
+        "title": "Call to Action",
+        "content": "If your corporate gifting or B2B eCommerce brand wants similar organic growth, a focused SEO strategy around high intent keywords and content clusters can turn your website into a consistent pipeline of qualified leads. Contact our team to request a free visibility review and a tailored SEO roadmap for your business."
+      }
+    },
+    {
+      "id": 3,
+      "slug": "travel-website-seo",
+      "niche": "Travel Planning and Destination Guides",
+      "metaTitle": "Travel Website SEO Agency Case Study | Destination Guide Traffic Wins",
+      "metaDescription": "Discover how our SEO agency restructured a travel planning site with destination hubs and itineraries to win more clicks from city guides, trip ideas and long tail travel searches.",
+      "h1": "SEO Growth Story for a Travel Planning and Destination Guide Site",
+      "title": "SEO Growth Story for a Travel Planning and Destination Guide Site",
+      "subtitle": "Travel Planning and Destination Guides",
+      "thumbnail": "/images/case-studies/SEO-Growth-Story-for-a-Travel-Planning-and-Destination-Guide-Site.webp",
+      "featuredImage": "/images/case-studies/SEO-Growth-Story-for-a-Travel-Planning-and-Destination-Guide-Site.webp",
+      "excerpt": "Discover how our SEO agency restructured a travel planning site with destination hubs and itineraries to win more clicks from city guides, trip ideas and long tail travel searches.",
+      "background": {
+        "title": "Background",
+        "content": "A travel planning website offering destination guides, itineraries, hotel suggestions, and travel tips partnered with our SEO agency to grow organic traffic and reduce reliance on paid channels. The brand targets travellers searching for trip ideas, city guides, and practical advice on where to stay and what to do."
+      },
+      "initialSituation": {
+        "title": "Starting Point",
+        "content": "Before the SEO campaign, the website had a handful of ranking pages but lacked a clear structure and content strategy. The site was competing in a crowded travel search market without a defined topical focus.",
+        "points": [
+          "Destination pages were thin and did not properly target high intent queries such as best places to visit, things to do, or where to stay in specific cities.",
+          "Blog posts were inconsistent in quality and were not grouped into clear topic clusters for regions or travel styles.",
+          "Internal linking was weak, leaving many valuable articles orphaned or several clicks away from the home page.",
+          "Meta titles and descriptions often missed important keywords and did not encourage a strong click through from search results.",
+          "No structured process existed for researching new travel topics based on search demand and seasonality."
+        ]
+      },
+      "strategy": {
+        "title": "SEO Strategy",
+        "content": "We built an SEO strategy focused on three goals: strengthening destination authority, improving user experience on key pages, and capturing more long tail search demand for specific itineraries and travel questions.",
+        "pillars": [
+          {
+            "title": "Create destination and region hubs that grouped guides, itineraries, and hotel recommendations for each major location.",
+            "points": []
+          },
+          {
+            "title": "Optimise existing pages to align with high intent search phrases such as things to do in, 3 day itinerary in, and where to stay in.",
+            "points": []
+          },
+          {
+            "title": "Launch new supporting content around transport tips, budget breakdowns, and seasonal travel advice to capture informational searches.",
+            "points": []
+          },
+          {
+            "title": "Improve internal linking between destination hubs, itineraries, and supporting guides so users and search engines could follow a clear path.",
+            "points": []
+          },
+          {
+            "title": "Refresh titles and meta descriptions to include primary keywords while highlighting unique angles such as local tips and curated experiences.",
+            "points": []
+          }
+        ]
+      },
+      "execution": {
+        "title": "Execution Highlights",
+        "content": "Implementation focused on improving both the depth of information on key pages and the overall crawlability of the site.",
+        "points": [
+          "Expanded the top destinations with detailed sections covering attractions, food, neighbourhoods, and hotel areas.",
+          "Created itinerary style posts such as weekend trips, 5 day routes, and city combinations for popular regions.",
+          "Added internal navigation blocks on each guide to link to related content such as where to stay, transport tips, and packing advice.",
+          "Standardised on page elements including headings, summaries, FAQs, and call to action boxes to improve readability and engagement.",
+          "Regularly reviewed Google Search Console data to identify rising queries and opportunities to refine headings and titles."
+        ]
+      },
+      "results": {
+        "title": "Performance Snapshot (Last 3 Months)",
+        "content": "Within the latest three month period, the travel site has seen steady organic activity and stronger visibility in search results. The figures below are taken directly from Google Search Console.",
+        "metrics": [
+          {
+            "label": "Total clicks from organic search",
+            "value": "3,280"
+          },
+          {
+            "label": "Total impressions in Google Search",
+            "value": "64,500"
+          },
+          {
+            "label": "Average click through rate",
+            "value": "5.1 percent"
+          },
+          {
+            "label": "Average position across all queries",
+            "value": "17"
+          }
+        ],
+        "summary": "Daily traffic now consistently ranges in the dozens of organic clicks, with regular peaks as new guides are indexed and begin to rank. The stronger click through rate reflects more appealing titles and descriptions for core travel searches."
+      },
+      "businessImpact": {
+        "title": "Impact on the Travel Brand",
+        "content": "",
+        "points": [
+          "Travellers are landing on deeper destination pages rather than only the home page, resulting in longer session durations.",
+          "More users are following internal links through multiple guides within the same region, increasing overall engagement.",
+          "The site now appears for a wider variety of long tail travel queries, including itineraries, specific neighbourhoods, and seasonal tips.",
+          "Overall, the website has shifted from a loose collection of travel articles to a more structured travel planning resource that better matches how users search and plan trips."
+        ]
+      },
+      "insights": {
+        "title": "Key Takeaways for Travel Websites",
+        "points": [
+          "Destination hubs and topic clusters help search engines understand your authority for specific regions.",
+          "Itineraries and practical travel tips capture users who are closer to booking their trips.",
+          "Consistent internal linking keeps both users and crawlers exploring your most valuable content.",
+          "Small refinements to titles and meta descriptions can significantly improve click through rate even when positions stay similar."
+        ]
+      },
+      "cta": {
+        "title": "Call to Action",
+        "content": "If you operate a travel blog or planning website and want to turn it into a reliable source of organic traffic, a structured SEO strategy built around destination hubs, itineraries, and long tail travel queries can unlock meaningful growth. Reach out to our team for a free review of your current search performance and a customised travel SEO roadmap."
+      }
+    },
+    {
+      "id": 4,
+      "slug": "ceramic-coating-seo",
+      "niche": "Ceramic Coating Manufacturer",
+      "metaTitle": "Ceramic Coating SEO Services Case Study | Coating Brand Digital Marketing",
+      "metaDescription": "Learn how our digital marketing company turned a ceramic coating manufacturer's site into an education and lead engine for automotive, marine and industrial paint protection searches.",
+      "h1": "SEO and Content Strategy for a Global Ceramic Coating Brand",
+      "title": "SEO and Content Strategy for a Global Ceramic Coating Brand",
+      "subtitle": "Ceramic Coating Manufacturer",
+      "thumbnail": "/images/case-studies/SEO-and-Content-Strategy-for-a-Global-Ceramic-Coating-Brand.webp",
+      "featuredImage": "/images/case-studies/SEO-and-Content-Strategy-for-a-Global-Ceramic-Coating-Brand.webp",
+      "excerpt": "Learn how our digital marketing company turned a ceramic coating manufacturer's site into an education and lead engine for automotive, marine and industrial paint protection searches.",
+      "background": {
+        "title": "Background of the Brand",
+        "content": "A global manufacturer of ceramic coating products partnered with our SEO agency to strengthen its organic presence across automotive, marine, industrial, and household coating solutions. The brand sells protective coatings through a network of detailers, distributors, and online resellers, and wanted its website to be the central hub for education, product discovery, and lead generation. The primary goal was to increase organic visibility for searches related to ceramic coating, paint protection, and surface coatings while supporting both do it yourself customers and professional applicators worldwide."
+      },
+      "initialSituation": {
+        "title": "Initial Situation",
+        "content": "When the collaboration started, the website already had a decent footprint but was not fully capitalising on its brand authority. Several issues limited performance in search:",
+        "points": [
+          "Product pages focused heavily on technical data but lacked clear keyword targeting and benefit driven copy.",
+          "Content for ceramic coating care, installation, and comparisons was scattered and not linked into strong topic hubs.",
+          "Many regional pages and dealer related content were thin or duplicated, diluting authority.",
+          "Important educational articles were buried in the blog without internal links from key category or product pages.",
+          "Meta titles and descriptions did not consistently emphasise core phrases such as ceramic coating, paint protection, and eco friendly coatings."
+        ]
+      },
+      "strategy": {
+        "title": "SEO Strategy for Ceramic Coating Niche",
+        "content": "We developed an SEO strategy that treated the site as both a product catalogue and an educational resource. The focus was on owning the ceramic coating conversation from surface preparation to long term maintenance.",
+        "pillars": [
+          {
+            "title": "Rebuild information architecture so that automotive, marine, industrial, and home coatings each had clear category hubs with supporting content.",
+            "points": []
+          },
+          {
+            "title": "Optimise product pages for high intent keywords such as ceramic coating for cars, nano coating, paint protection coating, and eco friendly ceramic coating.",
+            "points": []
+          },
+          {
+            "title": "Create comparison and decision content that explained differences between wax, sealant, and ceramic coating solutions.",
+            "points": []
+          },
+          {
+            "title": "Launch care and maintenance guides for coated vehicles and surfaces, capturing how to type searches.",
+            "points": []
+          },
+          {
+            "title": "Strengthen internal linking between blog tutorials, product pages, and distributor enquiry forms to support both education and conversion.",
+            "points": []
+          },
+          {
+            "title": "Standardise on page elements including feature lists, application steps, FAQs, and safety notes to satisfy user expectations and improve relevance.",
+            "points": []
+          }
+        ]
+      },
+      "execution": {
+        "title": "Key Implementation Highlights",
+        "content": "Implementation combined technical clean up with content expansion aimed at both professional applicators and end users.",
+        "points": [
+          "Optimised flagship product pages with clearer benefits such as longer lasting gloss, hydrophobic performance, and environmentally responsible formulas.",
+          "Created detailed pillar pages around ceramic coating technology, including how it works, what it protects, and when it should be applied.",
+          "Grouped existing blog posts into topic clusters such as car paint protection, marine hull protection, and building surface coatings, then added hub pages to connect them.",
+          "Improved internal links from distributor and training pages to relevant product lines, helping prospects move from interest to enquiry.",
+          "Refreshed titles and descriptions to include core ceramic coating terms and strong value propositions to boost click through rate."
+        ]
+      },
+      "results": {
+        "title": "Performance Snapshot (Last 3 Months)",
+        "content": "Recent Google Search Console data shows strong activity from organic search, reflecting consistent demand for ceramic coating related information and products. The metrics below summarise performance over the last three months.",
+        "metrics": [
+          {
+            "label": "Total clicks from organic search",
+            "value": "14,400"
+          },
+          {
+            "label": "Total impressions in Google search results",
+            "value": "1,010,000"
+          },
+          {
+            "label": "Average click through rate",
+            "value": "1.4 percent"
+          },
+          {
+            "label": "Average position across all queries",
+            "value": "11.2"
+          }
+        ],
+        "summary": "Organic traffic now delivers a steady stream of visitors researching ceramic coating benefits, comparing coating types, and looking for approved applicators. Many of the brand and non brand keywords now sit just outside or within the first page of results."
+      },
+      "businessImpact": {
+        "title": "Impact on Leads and Brand Visibility",
+        "content": "",
+        "points": [
+          "Increased traffic to distributor and applicator enquiry pages, supporting growth of the global partner network.",
+          "Higher engagement on technical and educational pages, with users spending more time reading about coating technology and application processes.",
+          "Improved visibility for non branded ceramic coating terms, positioning the brand as a reference authority rather than only a product name.",
+          "The website has shifted from being primarily a brochure to acting as an educational hub for ceramic coating, guiding both professionals and consumers through research, selection, and care."
+        ]
+      },
+      "insights": {
+        "title": "Key Lessons for Coating and Detailing Brands",
+        "points": [
+          "Technical products like ceramic coatings benefit from deep educational content that explains the science in simple language.",
+          "Product pages that combine performance claims with clear search keywords are more likely to rank and convert.",
+          "Topic clusters around applications and surfaces, such as automotive, marine, and industrial, help search engines understand the full breadth of a coating portfolio.",
+          "Internal links from how to guides and comparison articles to product and enquiry pages turn research traffic into real business opportunities."
+        ]
+      },
+      "cta": {
+        "title": "Call to Action",
+        "content": "If you manufacture or distribute ceramic coatings, paint protection, or detailing chemicals, a focused SEO strategy can turn your website into a powerful education and lead generation asset. Contact our team for a free review of your current organic visibility and a customised SEO roadmap for your coating brand."
+      }
+    },
+    {
+      "id": 5,
+      "slug": "igaming-lottery-seo",
+      "niche": "iGaming and Online Lottery Platform",
+      "metaTitle": "iGaming and Online Lottery SEO Case Study | High CTR Search Performance",
+      "metaDescription": "A look at how our SEO agency organised lottery content, optimised draw pages and used schema to achieve over one hundred thousand organic clicks and strong click through rates.",
+      "h1": "SEO Performance for an iGaming and Online Lottery Platform",
+      "title": "SEO Performance for an iGaming and Online Lottery Platform",
+      "subtitle": "iGaming and Online Lottery Platform",
+      "thumbnail": "/images/case-studies/SEO-Performance-for-an-iGaming-and-Online-Lottery-Platform.jpeg",
+      "featuredImage": "/images/case-studies/SEO-Performance-for-an-iGaming-and-Online-Lottery-Platform.jpeg",
+      "excerpt": "A look at how our SEO agency organised lottery content, optimised draw pages and used schema to achieve over one hundred thousand organic clicks and strong click through rates.",
+      "background": {
+        "title": "Background",
+        "content": "An international iGaming and online lottery platform partnered with our SEO agency to grow search visibility in a highly competitive market. The website offers online lottery tickets, instant win games, and casino style content targeted at regulated markets, with a strong focus on responsible gaming and secure transactions. Paid media costs in the iGaming space are high, so the objective was to turn organic search into a reliable acquisition channel for players searching for lottery results, draw schedules, and trusted platforms to play online."
+      },
+      "initialSituation": {
+        "title": "Starting Point",
+        "content": "When we began, the platform already had authority in its niche but was not fully leveraging organic search. Key challenges included:",
+        "points": [
+          "A large number of pages targeting similar lottery and game keywords without a clear internal hierarchy.",
+          "Results and information pages that were regularly updated but not optimised for long tail queries around specific draws or jackpots.",
+          "Fragmented content for responsible gaming, bonuses, and how to play guides, making it harder for users and search engines to understand the overall structure.",
+          "Meta titles and descriptions that repeated the brand name but did not always highlight intent based keywords such as online lottery, lotto results, and safe gaming site.",
+          "Limited use of schema markup for game results, FAQs, and site navigation, which are important in a rich result heavy SERP environment."
+        ]
+      },
+      "strategy": {
+        "title": "SEO Strategy for iGaming and Lottery",
+        "content": "The SEO strategy focused on organising lottery content, capturing high intent queries around draws and results, and strengthening signals of safety and trust for new players.",
+        "pillars": [
+          {
+            "title": "Restructure the site into clear hubs for national lotteries, daily draws, instant games, and guides to help users find relevant content quickly.",
+            "points": []
+          },
+          {
+            "title": "Optimise draw and result pages for specific keywords such as latest lottery results, winning numbers for, and next jackpot for targeted games.",
+            "points": []
+          },
+          {
+            "title": "Create evergreen content explaining how to play different lotteries, how odds work, and how to set personal limits, supporting responsible gaming messaging.",
+            "points": []
+          },
+          {
+            "title": "Implement structured data for breadcrumbs, FAQs, and important game information to increase the chance of rich snippets and improved visibility.",
+            "points": []
+          },
+          {
+            "title": "Refine titles and meta descriptions so that they aligned with user intent terms like play online, check results, and secure lottery site while still meeting regulatory requirements.",
+            "points": []
+          }
+        ]
+      },
+      "execution": {
+        "title": "Implementation Highlights",
+        "content": "Implementation balanced technical SEO with content and UX changes designed specifically for the iGaming audience.",
+        "points": [
+          "Consolidated overlapping pages for the same lottery into single, stronger URLs with clear internal links from archives and related articles.",
+          "Enhanced results pages with historical data, jackpot growth information, and clear calls to action directing users to responsible play options.",
+          "Introduced region specific landing pages to better match local search behaviour and regulatory differences.",
+          "Added structured FAQs addressing withdrawals, account verification, and age restrictions, reassuring both users and search engines about platform safety.",
+          "Set up regular monitoring of Search Console data to identify rising queries tied to new jackpots or special draws and quickly update relevant content."
+        ]
+      },
+      "results": {
+        "title": "Performance Snapshot (Last 6 Months)",
+        "content": "Google Search Console data for the most recent six month period demonstrates the strength of organic performance for the iGaming and lottery platform.",
+        "metrics": [
+          {
+            "label": "Total clicks from organic search",
+            "value": "112,000"
+          },
+          {
+            "label": "Total impressions in Google search results",
+            "value": "383,000"
+          },
+          {
+            "label": "Average click through rate",
+            "value": "29.2 percent"
+          },
+          {
+            "label": "Average position across all queries",
+            "value": "19"
+          }
+        ],
+        "summary": "A click through rate of almost thirty percent highlights the strength of the platform's result snippets and the alignment between titles, descriptions, and user intent. Traffic volumes show steady daily demand for lottery and game related searches."
+      },
+      "businessImpact": {
+        "title": "Impact on Player Acquisition and Engagement",
+        "content": "",
+        "points": [
+          "More users now land directly on high intent result and draw pages where they can immediately check numbers and learn how to participate responsibly.",
+          "Organic traffic has become an important complement to paid campaigns, delivering consistent volumes of engaged visitors without bidding on increasingly expensive keywords.",
+          "Improved educational and responsible gaming content has helped strengthen user trust and align the platform with regulatory expectations.",
+          "The platform has evolved from a primarily transactional site into a resource that supports players throughout the lifecycle of discovering, understanding, and safely enjoying online lottery products."
+        ]
+      },
+      "insights": {
+        "title": "Key Lessons for iGaming and Lottery Operators",
+        "points": [
+          "Search demand around lottery and iGaming is heavily intent driven; structuring content around results, how to play, and safety builds both visibility and trust.",
+          "Consolidating overlapping pages prevents keyword cannibalisation and focuses authority on the URLs that matter most.",
+          "Schema markup and well written meta data can dramatically increase click through rate in a SERP crowded with ads and comparison sites.",
+          "Responsible gaming content is not only a regulatory requirement but also a strong trust signal for both users and search engines."
+        ]
+      },
+      "cta": {
+        "title": "Call to Action",
+        "content": "If you operate an iGaming or online lottery platform and want to strengthen organic acquisition in a competitive and regulated environment, a tailored SEO strategy can help you capture intent driven traffic while promoting safe, responsible play. Contact our team for a detailed review of your current search performance and a roadmap designed for your market and product mix."
+      }
+    },
+    {
+      "id": 6,
+      "slug": "background-screening-seo",
+      "niche": "Background Screening Provider",
+      "metaTitle": "Background Screening SEO Case Study | B2B Marketing for Verification Services",
+      "metaDescription": "How our marketing company built intent focused service pages and HR education content to attract employers searching for compliant background checks and employment screening partners.",
+      "h1": "SEO Results for a Background Screening and Employment Verification Provider",
+      "title": "SEO Results for a Background Screening and Employment Verification Provider",
+      "subtitle": "Background Screening Provider",
+      "thumbnail": "/images/case-studies/krya-screening-employment-verification.jpg",
+      "featuredImage": "/images/case-studies/krya-screening-employment-verification.jpg",
+      "excerpt": "How our marketing company built intent focused service pages and HR education content to attract employers searching for compliant background checks and employment screening partners.",
+      "background": {
+        "title": "Background",
+        "content": "A B2B background screening and employment verification provider partnered with our SEO agency to grow organic visibility and generate more qualified leads from HR teams, recruitment agencies, and compliance departments. The company delivers services such as criminal record checks, education and employment verification, identity checks, and global sanctions screening for mid sized and enterprise employers. The goal was to turn the website into a primary acquisition channel for organisations searching for reliable, compliant background checks and pre employment screening solutions."
+      },
+      "initialSituation": {
+        "title": "Starting Point",
+        "content": "At the start of the engagement, the website had a solid technical base but lacked depth around high intent keywords and buyer questions. Key challenges included:",
+        "points": [
+          "Service pages that briefly described products but did not answer detailed questions around turnaround time, coverage, and compliance standards.",
+          "Limited content addressing specific industries such as healthcare, finance, technology, and gig economy platforms that have unique screening requirements.",
+          "Blog content that focused on general HR topics rather than targeted search queries like what is background screening, how to run employment checks, or global criminal record checks.",
+          "Few comparison or solution pages explaining why a dedicated screening partner is more effective than in house checks or basic database searches.",
+          "Meta titles and descriptions that repeated similar phrases and did not fully utilise high value keywords such as pre employment screening, candidate vetting, and background check services."
+        ]
+      },
+      "strategy": {
+        "title": "SEO Strategy for Background Screening Niche",
+        "content": "We designed an SEO strategy focused on three priorities: matching how HR teams search for screening partners, showcasing compliance and data security, and capturing long tail questions about specific checks and processes.",
+        "pillars": [
+          {
+            "title": "Build out in depth service pages for each core offering, including criminal checks, right to work checks, credit checks, education verification, employment history verification, and sanctions screening.",
+            "points": []
+          },
+          {
+            "title": "Create sector specific landing pages for industries with strict regulatory requirements, highlighting how screening packages are tailored to each use case.",
+            "points": []
+          },
+          {
+            "title": "Develop a content hub around background screening education, covering topics such as legal considerations, consent, candidate experience, and international checks.",
+            "points": []
+          },
+          {
+            "title": "Introduce comparison and solution pages that explain the difference between manual checks, basic online searches, and fully managed screening solutions.",
+            "points": []
+          },
+          {
+            "title": "Refine on page SEO elements by mapping each URL to defined primary and secondary keywords and rewriting titles, headings, and meta descriptions accordingly.",
+            "points": []
+          }
+        ]
+      },
+      "execution": {
+        "title": "Implementation Highlights",
+        "content": "Execution centred on turning the website into a trusted knowledge base for background screening while removing friction for visitors who were ready to speak to sales or request a proposal.",
+        "points": [
+          "Expanded key service pages with sections covering process steps, compliance frameworks, turnaround times, and example report outputs.",
+          "Added industry specific pages and case study style content demonstrating how screening supports risk management in finance, healthcare, education, and staffing.",
+          "Published guides and FAQs answering recurring search queries about candidate consent, data protection regulations, and cross border checks.",
+          "Improved internal linking between informational guides and high intent pages such as book a demo, request pricing, and build a screening package.",
+          "Implemented consistent calls to action, including contact forms, downloadable resources, and newsletter sign ups for HR compliance updates."
+        ]
+      },
+      "results": {
+        "title": "Performance Snapshot (Last 6 Months)",
+        "content": "Google Search Console data from the most recent six month period illustrates the impact of the content and on page optimisation work on organic visibility and engagement.",
+        "metrics": [
+          {
+            "label": "Total clicks from organic search",
+            "value": "5,900"
+          },
+          {
+            "label": "Total impressions in Google search results",
+            "value": "60,200"
+          },
+          {
+            "label": "Average click through rate",
+            "value": "9.8 percent"
+          },
+          {
+            "label": "Average position across all queries",
+            "value": "8.6"
+          }
+        ],
+        "summary": "With an average position inside the first page of results and a click through rate close to ten percent, the site now attracts steady traffic from employers researching background screening processes and partners."
+      },
+      "businessImpact": {
+        "title": "Impact on Lead Generation and Sales Pipeline",
+        "content": "",
+        "points": [
+          "More inbound enquiries from HR managers and talent acquisition teams requesting quotes and implementation timelines.",
+          "Higher quality leads where prospects arrive after reading educational content and already understand the value of comprehensive screening.",
+          "Increased engagement with downloadable resources and demo request forms, feeding the sales pipeline with better informed decision makers.",
+          "The website has evolved from a simple service overview into a trusted resource for organisations looking to reduce hiring risk and stay compliant with employment regulations."
+        ]
+      },
+      "insights": {
+        "title": "Key Lessons for Background Screening Providers",
+        "points": [
+          "Prospective clients search for clear answers about process, compliance, and turnaround times; detailed service pages and FAQs are essential.",
+          "Industry specific content helps demonstrate that screening programmes can be tailored to different regulatory environments and risk profiles.",
+          "Educational hubs around legal and procedural topics build trust and authority in a space where compliance is critical.",
+          "Strong internal linking from informational content to high intent pages converts research traffic into tangible sales opportunities."
+        ]
+      },
+      "cta": {
+        "title": "Call to Action",
+        "content": "If you operate a background screening or employment verification business and want to attract more qualified B2B leads through organic search, a focused SEO strategy can position your website as both a compliance resource and a lead generation engine. Contact our team for a tailored review of your current search performance and opportunities."
+      }
+    },
+    {
+      "id": 7,
+      "slug": "property-marketplace-seo",
+      "niche": "Property Rental and Sales Marketplace",
+      "metaTitle": "Property Rental and Sales SEO Case Study | Real Estate Marketing Agency",
+      "metaDescription": "See how our real estate marketing agency grew organic traffic for a property marketplace by strengthening city pages, indexing key filters and adding guides for renters and buyers.",
+      "h1": "SEO Wins for a Property Rental and Sales Marketplace",
+      "title": "SEO Wins for a Property Rental and Sales Marketplace",
+      "subtitle": "Property Rental and Sales Marketplace",
+      "thumbnail": "/images/case-studies/SEO Wins for a Property-Rental-and-Sales-Marketplace.png",
+      "featuredImage": "/images/case-studies/SEO Wins for a Property-Rental-and-Sales-Marketplace.png",
+      "excerpt": "See how our real estate marketing agency grew organic traffic for a property marketplace by strengthening city pages, indexing key filters and adding guides for renters and buyers.",
+      "background": {
+        "title": "Background of the Marketplace",
+        "content": "A property marketplace specialising in residential rental and sales listings engaged our SEO agency to grow its organic visibility and turn location based searches into steady enquiry flow. The platform connects landlords, property managers, and real estate agents with tenants and home buyers looking for apartments, houses, and rooms across multiple cities. With search behaviour heavily focused on phrases such as apartments for rent in, houses for sale near me, and studio to rent in specific neighbourhoods, the goal was to capture this intent and make the portal the default destination for property searchers in its target regions."
+      },
+      "initialSituation": {
+        "title": "Starting Point",
+        "content": "Before the SEO programme, the marketplace already attracted some organic traffic but was not fully optimised for local, long tail property searches. Key challenges included:",
+        "points": [
+          "City and area pages that contained basic listings but lacked descriptive content and search friendly headings.",
+          "Filters and dynamic pages for bedroom count, price bands, and property types that were not easily crawlable or indexable.",
+          "Duplicate or near duplicate content across many listing pages, diluting authority for important locations.",
+          "Limited content explaining rental processes, deposits, agency fees, and buying steps for first time purchasers.",
+          "Meta titles and descriptions that repeated similar phrases and did not always include key modifiers like price range, number of bedrooms, or neighbourhood names."
+        ]
+      },
+      "strategy": {
+        "title": "SEO Strategy for Property Rental and Sales",
+        "content": "We built an SEO strategy that combined strong local landing pages, improved crawlability of listing inventory, and educational content for tenants and buyers.",
+        "pillars": [
+          {
+            "title": "Create robust location landing pages for major cities, regions, and popular neighbourhoods, incorporating introductory copy, featured listings, and internal links to key segments.",
+            "points": []
+          },
+          {
+            "title": "Optimise URL structures and internal linking so that search engines could access important combinations such as 2 bedroom apartments for rent in, pet friendly rentals in, and houses for sale under a given price.",
+            "points": []
+          },
+          {
+            "title": "Introduce canonical tags and structured listing templates to manage duplicate content generated by sorting and filtering.",
+            "points": []
+          },
+          {
+            "title": "Publish guides and FAQs covering renting processes, tenant rights, moving checklists, and step by step buying journeys.",
+            "points": []
+          },
+          {
+            "title": "Refine on page SEO for core pages by mapping them to clear primary and secondary keywords and rewriting titles and meta descriptions accordingly.",
+            "points": []
+          }
+        ]
+      },
+      "execution": {
+        "title": "Implementation Highlights",
+        "content": "Implementation was carried out while maintaining a smooth user experience for both property seekers and agents.",
+        "points": [
+          "Expanded city and neighbourhood pages with key facts, nearby amenities, average rental and sales prices, and featured properties.",
+          "Created internal navigation modules on each location page linking to popular segments such as studios, family homes, luxury apartments, and budget options.",
+          "Worked with development teams to ensure important filter combinations generated clean, indexable URLs with appropriate canonicalisation.",
+          "Added schema markup for breadcrumbs and listings where feasible to support richer search snippets.",
+          "Introduced persistent calls to action for schedule a viewing, contact agent, and save this property to encourage user engagement."
+        ]
+      },
+      "results": {
+        "title": "Performance Snapshot (Last 6 Months)",
+        "content": "The latest six month data from Google Search Console highlights the level of organic visibility achieved by the property marketplace.",
+        "metrics": [
+          {
+            "label": "Total clicks from organic search",
+            "value": "432,000"
+          },
+          {
+            "label": "Total impressions in Google search results",
+            "value": "19,000,000"
+          },
+          {
+            "label": "Average click through rate",
+            "value": "2.3 percent"
+          },
+          {
+            "label": "Average position across all queries",
+            "value": "11.6"
+          }
+        ],
+        "summary": "With hundreds of thousands of organic clicks and impressions in the tens of millions, the site now competes consistently for high volume location based property searches. The average position just outside the first page indicates significant room for further growth as on page and linking improvements continue."
+      },
+      "businessImpact": {
+        "title": "Impact on Enquiries and Market Presence",
+        "content": "",
+        "points": [
+          "Increased viewing requests and enquiry form submissions for properties in key cities and popular neighbourhoods.",
+          "Agents and landlords benefit from greater exposure for their listings, improving retention and sign up rates on the platform.",
+          "More users start their search journey on the marketplace directly after finding its city and area pages for generic property searches.",
+          "The site has matured from a listing repository into a property discovery platform that helps visitors understand areas, compare options, and take the next step toward renting or buying."
+        ]
+      },
+      "insights": {
+        "title": "Key Lessons for Property Portals",
+        "points": [
+          "Well structured city and neighbourhood landing pages are essential for ranking in competitive property markets.",
+          "Indexable and clean filter combinations allow you to capture high intent long tail searches around bedroom count, price bands, and property types.",
+          "Educational content around renting and buying reduces friction for users and builds trust for the brand.",
+          "Internal linking from guides and blogs back to location and listing pages converts research traffic into genuine enquiries."
+        ]
+      },
+      "cta": {
+        "title": "Call to Action",
+        "content": "If you operate a property rental or sales portal and want search engines to treat your site as a go to destination for local property searches, a targeted SEO strategy can help you unlock significantly more organic traffic and enquiries. Contact our team for a tailored review of your current search performance and a roadmap for improvement."
+      }
+    }
+  ]
+}
+
