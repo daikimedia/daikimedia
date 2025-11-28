@@ -5,6 +5,7 @@ import { Inter, Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import Script from "next/script";
 import GTMNoScript from "@/components/GTMNoScript";
 import OrganizationSchema from "@/components/schema/OrganizationSchema";
+import WebSiteSchema from "@/components/schema/WebSiteSchema";
 import DynamicBreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import ReviewSchema from "@/components/schema/ReviewSchema";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
@@ -153,6 +154,7 @@ export default function RootLayout({ children }) {
         {children}
         <ReviewSchema />
         <OrganizationSchema />
+        <WebSiteSchema />
       </body>
     </html>
   );

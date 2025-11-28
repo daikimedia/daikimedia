@@ -1,0 +1,776 @@
+{
+  "singapore": {
+    "meta": {
+      "title": "SEO, Digital & Social Media Marketing Agency in Singapore | DaikiMedia",
+      "description": "DaikiMedia is a results focused SEO, digital and social media marketing agency in Singapore helping clinics, SMEs and iGaming brands grow with clear and simple strategies.",
+      "keywords": "Singapore marketing agency, digital marketing Singapore, SEO Singapore, PPC Singapore",
+      "canonical": "https://www.daikimedia.com/singapore-marketing-agency"
+    },
+    "hero": {
+      "subtitle": "Singapore Marketing Agency",
+      "title": "SEO and Digital Marketing Agency in Singapore",
+      "description": "Growing a business in Singapore is not easy. The market is fast, competitive and every brand is trying to get the same customer. You need visibility, trust and a clear digital strategy. DaikiMedia helps Singapore businesses reach the right people, increase leads and grow with confidence.\n\nWe work with clinics, local service businesses, retail brands, iGaming operators and startups. Our focus is simple. Bring results that you can feel, measure and rely on.",
+      "ctaText": "Ready to grow",
+      "ctaDescription": "Let us guide you with a clear strategy that matches your goals and your budget."
+    },
+    "whyChoose": {
+      "title": "Why Singapore Brands Choose DaikiMedia",
+      "description": "Businesses in Singapore want honesty, clarity and a real partner who understands the market. Our clients choose us because:",
+      "features": [
+        {
+          "id": 1,
+          "title": "Simple Communication",
+          "desc": "We use simple words and clear plans that make sense",
+          "iconLight": "/images/checkmark.svg",
+          "iconDark": "/images/checkmark-dark.svg"
+        },
+        {
+          "id": 2,
+          "title": "Transparent Updates",
+          "desc": "We provide transparent updates and reports",
+          "iconLight": "/images/checkmark.svg",
+          "iconDark": "/images/checkmark-dark.svg"
+        },
+        {
+          "id": 3,
+          "title": "Long Term Growth",
+          "desc": "We focus on steady long term growth not shortcuts",
+          "iconLight": "/images/checkmark.svg",
+          "iconDark": "/images/checkmark-dark.svg"
+        },
+        {
+          "id": 4,
+          "title": "Industry Expertise",
+          "desc": "We understand competitive industries like clinics and iGaming",
+          "iconLight": "/images/checkmark.svg",
+          "iconDark": "/images/checkmark-dark.svg"
+        },
+        {
+          "id": 5,
+          "title": "Data Driven",
+          "desc": "We work with data backed strategies",
+          "iconLight": "/images/checkmark.svg",
+          "iconDark": "/images/checkmark-dark.svg"
+        },
+        {
+          "id": 6,
+          "title": "Personal Care",
+          "desc": "We care about your business like it is our own",
+          "iconLight": "/images/checkmark.svg",
+          "iconDark": "/images/checkmark-dark.svg"
+        }
+      ],
+      "closingNote": "Every project starts with listening. We want to know your goals, your pain points and the results you wish to see. Only then we build a plan that is realistic and achievable."
+    },
+    "seoServices": {
+      "title": "SEO Services for Singapore Businesses",
+      "description": "Search rankings matter when customers in Singapore are actively searching for solutions. We help you show up where it counts.",
+      "services": [
+        {
+          "id": 1,
+          "title": "Technical SEO",
+          "desc": "We fix the backend of your website so Google can read it easily. From speed to structure we make your site strong and smooth."
+        },
+        {
+          "id": 2,
+          "title": "On Page SEO",
+          "desc": "We improve your content, headings, images and pages so your website becomes useful, friendly and trustworthy."
+        },
+        {
+          "id": 3,
+          "title": "Content Planning",
+          "desc": "We write meaningful blogs and pages that answer real questions customers ask. This builds trust and organic visibility."
+        },
+        {
+          "id": 4,
+          "title": "Backlink Growth",
+          "desc": "We secure safe and relevant backlinks that strengthen your authority in Singapore and surrounding markets."
+        },
+        {
+          "id": 5,
+          "title": "Local SEO for Singapore SMEs",
+          "desc": "We help you rank on Google Maps and appear for searches like near me, clinic near me or service near me. This brings fast and targeted local traffic."
+        }
+      ]
+    },
+    "socialMedia": {
+      "title": "Social Media Marketing for Singapore Brands",
+      "description": "Singapore users spend hours on Facebook, TikTok and Instagram. Your brand must be visible where people spend time.",
+      "services": [
+        "Social media management",
+        "Ad campaigns on Facebook and Instagram",
+        "TikTok creative ads",
+        "Content creation and story based visuals",
+        "Monthly reports and insights"
+      ],
+      "goal": "Our goal is simple. Make people stop, notice and remember your brand."
+    },
+    "industries": {
+      "title": "Industry Focused Digital Marketing",
+      "description": "Singapore has some of the most competitive niches in Asia. We provide specialised strategies for high pressure markets.",
+      "industries": [
+        {
+          "id": 1,
+          "title": "Aesthetic Clinic SEO and Marketing Singapore",
+          "description": "The aesthetic industry is crowded and customers compare carefully. We help clinics build trust and attract high intent leads.",
+          "servicesLabel": "We create:",
+          "services": [
+            "SEO pages for treatments",
+            "Clinic focused blog content",
+            "Google Maps optimisation",
+            "Paid ads for leads",
+            "Before and after storytelling content",
+            "Appointment focused funnels"
+          ],
+          "benefit": "This helps clinics grow their brand, fill their appointment slots and build long lasting reputation."
+        },
+        {
+          "id": 2,
+          "title": "Local Business SEO for Singapore SMEs",
+          "description": "Whether you run a salon, cleaning service, tuition centre or home based business we help you reach customers in your area.",
+          "servicesLabel": "We help with:",
+          "services": [
+            "Google Business Profile",
+            "Reviews and reputation",
+            "Local keywords",
+            "Service area pages"
+          ],
+          "benefit": "This improves walk in traffic and phone call enquiries."
+        },
+        {
+          "id": 3,
+          "title": "iGaming and High CPC Industry SEO",
+          "description": "iGaming and related industries require experience and careful strategy. We help these brands grow safely and smartly.",
+          "servicesLabel": "We focus on:",
+          "services": [
+            "Technical audits",
+            "Landing page optimisation",
+            "High CPC keyword ranking",
+            "Safe promotion strategies",
+            "Performance tracking"
+          ],
+          "benefit": "Our approach is discreet, professional and tailored to your goals."
+        }
+      ]
+    },
+    "process": {
+      "title": "Our Process",
+      "description": "We keep everything simple and clear. No confusion. No complicated words.",
+      "steps": [
+        {
+          "id": 1,
+          "title": "Understanding your goals",
+          "desc": "We listen to your challenges and what results you want."
+        },
+        {
+          "id": 2,
+          "title": "Market and competitor research",
+          "desc": "We study what your Singapore competitors are doing and where the opportunities are."
+        },
+        {
+          "id": 3,
+          "title": "Website audit",
+          "desc": "We fix technical issues that stop your site from ranking."
+        },
+        {
+          "id": 4,
+          "title": "SEO and content strategy",
+          "desc": "We create a clear plan for keywords, content and structure."
+        },
+        {
+          "id": 5,
+          "title": "Execution and optimisation",
+          "desc": "We implement the changes and update everything step by step."
+        },
+        {
+          "id": 6,
+          "title": "Monthly reporting",
+          "desc": "You receive simple and easy to understand reports showing progress, rankings and leads."
+        }
+      ]
+    },
+    "caseStudies": {
+      "title": "Case Studies and Results",
+      "description": "We have helped clinics, local brands and high competition industries grow successfully.",
+      "results": [
+        {
+          "text": "Higher website traffic",
+          "icon": "TrendingUp"
+        },
+        {
+          "text": "More calls and messages",
+          "icon": "Phone"
+        },
+        {
+          "text": "Better rankings in Singapore search results",
+          "icon": "Search"
+        },
+        {
+          "text": "Stronger brand awareness",
+          "icon": "Star"
+        },
+        {
+          "text": "Long term organic growth",
+          "icon": "ArrowUp"
+        }
+      ],
+      "note": "We continue improving and adjusting based on live performance."
+    },
+    "pricing": {
+      "title": "Prices and Packages",
+      "description": "Every business in Singapore is different.\n\nYour industry, competition and goals play a big role in the cost.\n\nMost Singapore companies invest anywhere from SGD 1000 to SGD 5000 depending on complexity.\n\nWe can create a plan that fits your budget and still delivers strong results."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions (FAQs)",
+      "questions": [
+        {
+          "id": 1,
+          "question": "How much does SEO cost in Singapore?",
+          "answer": "SEO prices depend on your industry and competition. We offer flexible plans to match your needs."
+        },
+        {
+          "id": 2,
+          "question": "How long does it take to see results?",
+          "answer": "Some results start within weeks. Stable growth usually shows within three to six months depending on competition."
+        },
+        {
+          "id": 3,
+          "question": "Do you work with aesthetic clinics in Singapore?",
+          "answer": "Yes. We have strong experience with clinics and medical SEO."
+        },
+        {
+          "id": 4,
+          "question": "Do you provide iGaming SEO services?",
+          "answer": "Yes. We work with iGaming brands using safe and smart growth strategies."
+        },
+        {
+          "id": 5,
+          "question": "Can you help with local SEO and Google Maps?",
+          "answer": "Yes. We help SMEs rank locally and appear in near me searches."
+        },
+        {
+          "id": 6,
+          "question": "What makes DaikiMedia different?",
+          "answer": "We listen first. We use simple words. We care about your growth and we stay transparent from day one."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Start Growing With DaikiMedia",
+      "description": "Your business deserves real visibility, steady leads and a strong digital presence in Singapore.\n\nLet us build the strategy while you focus on running your company.",
+      "buttonText": "Book a free strategy session today",
+      "note": "We are ready to help you grow."
+    },
+    "schema": {
+      "webPage": {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "SEO, Digital & Social Media Marketing Agency in Singapore | DaikiMedia",
+        "url": "https://daikimedia.com/singapore-marketing-agency",
+        "inLanguage": "en",
+        "description": "DaikiMedia is a results focused SEO, digital and social media marketing agency in Singapore helping clinics, SMEs and iGaming brands grow with clear and simple strategies.",
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "SEO agency Singapore"
+          },
+          {
+            "@type": "Thing",
+            "name": "digital marketing agency Singapore"
+          },
+          {
+            "@type": "Thing",
+            "name": "social media marketing agency Singapore"
+          }
+        ],
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "DaikiMedia",
+          "url": "https://daikimedia.com"
+        }
+      },
+      "faqPage": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does SEO cost in Singapore?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SEO prices depend on your industry and competition. We offer flexible plans to match your needs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to see results?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Some results start within weeks. Stable growth usually shows within three to six months depending on competition."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you work with aesthetic clinics in Singapore?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We have strong experience with clinics and medical SEO."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide iGaming SEO services?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We work with iGaming brands using safe and smart growth strategies."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you help with local SEO and Google Maps?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We help SMEs rank locally and appear in near me searches."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What makes DaikiMedia different?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We listen first. We use simple words. We care about your growth and we stay transparent from day one."
+            }
+          }
+        ]
+      },
+      "service": {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "SEO, Digital and Social Media Marketing Services in Singapore",
+        "provider": {
+          "@type": "Organization",
+          "name": "DaikiMedia"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Singapore"
+        },
+        "description": "SEO, digital marketing and social media marketing services for clinics, SMEs and iGaming brands in Singapore."
+      },
+      "breadcrumbList": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://daikimedia.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Singapore",
+            "item": "https://daikimedia.com/singapore"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "SEO and Digital Marketing Agency in Singapore",
+            "item": "https://daikimedia.com/singapore-marketing-agency"
+          }
+        ]
+      }
+    }
+  },
+  "dubai": {
+    "meta": {
+      "title": "SEO, Digital & Social Media Marketing Agency in Dubai, UAE | DaikiMedia",
+      "description": "DaikiMedia is a results focused SEO, digital and social media marketing agency in Dubai and the UAE helping clinics, real estate, luxury and iGaming brands grow with clear and powerful strategies.",
+      "keywords": "Dubai marketing agency, digital marketing Dubai, SEO Dubai, PPC Dubai, UAE marketing",
+      "canonical": "https://www.daikimedia.com/dubai-marketing-agency"
+    },
+    "hero": {
+      "subtitle": "Dubai Marketing Agency",
+      "title": "SEO and Digital Marketing Agency in Dubai and the UAE",
+      "description": "Growing a business in Dubai feels exciting and intense at the same time. The market moves fast. Competitors appear overnight. Customers have high expectations. Every industry is crowded and the battle for attention is real.\n\nDaikiMedia helps Dubai brands rise above the noise with SEO, digital marketing and social media strategies that are bold, clear and built to win.\n\nWe work with clinics, real estate companies, luxury brands, iGaming platforms, startups and high ticket businesses. Our focus is simple. Bring you visibility, authority and growth you can feel.",
+      "ctaText": "Dubai rewards courage",
+      "ctaDescription": "We help you take that step with confidence and a strategy that is sharp, focused and designed for the UAE market."
+    },
+    "whyChoose": {
+      "title": "Why Dubai Companies Trust DaikiMedia",
+      "description": "Dubai business owners look for clarity, speed and strategy. They want an agency that understands the culture, the competition and the pressure to grow.",
+      "features": [
+        {
+          "id": 1,
+          "title": "Clear Communication",
+          "desc": "We communicate in simple, direct and honest words",
+          "iconLight": "/images/checkmark.svg",
+          "iconDark": "/images/checkmark-dark.svg"
+        },
+        {
+          "id": 2,
+          "title": "Research Based",
+          "desc": "We build strategies based on research and real market behaviour",
+          "iconLight": "/images/checkmark.svg",
+          "iconDark": "/images/checkmark-dark.svg"
+        },
+        {
+          "id": 3,
+          "title": "High Competition Expertise",
+          "desc": "We understand high competition and high CPC environments",
+          "iconLight": "/images/checkmark.svg",
+          "iconDark": "/images/checkmark-dark.svg"
+        },
+        {
+          "id": 4,
+          "title": "Industry Specialization",
+          "desc": "We specialise in clinics, luxury services, real estate and iGaming",
+          "iconLight": "/images/checkmark.svg",
+          "iconDark": "/images/checkmark-dark.svg"
+        },
+        {
+          "id": 5,
+          "title": "Premium Content",
+          "desc": "We deliver content that feels premium and modern",
+          "iconLight": "/images/checkmark.svg",
+          "iconDark": "/images/checkmark-dark.svg"
+        },
+        {
+          "id": 6,
+          "title": "Personal Care",
+          "desc": "We treat your brand with the same care as our own",
+          "iconLight": "/images/checkmark.svg",
+          "iconDark": "/images/checkmark-dark.svg"
+        }
+      ],
+      "closingNote": "Working with us feels like having a partner who listens, plans and moves with purpose."
+    },
+    "seoServices": {
+      "title": "SEO Services for Dubai and UAE Brands",
+      "description": "Every day thousands of customers in the UAE search for your service. When you do not appear, you lose business. We help you take that space.",
+      "services": [
+        {
+          "id": 1,
+          "title": "Technical SEO for the UAE Market",
+          "desc": "We fix speed, structure and broken elements so your website loads fast and feels smooth on both mobile and desktop. Dubai users expect quality. We make sure your website delivers it."
+        },
+        {
+          "id": 2,
+          "title": "On Page SEO",
+          "desc": "We improve your pages, content, headings and layout so Google understands your value and ranks you higher."
+        },
+        {
+          "id": 3,
+          "title": "UAE Keyword Strategy",
+          "desc": "Dubai search intent is different from other countries. Users have stronger buying power and search differently. We create a plan that targets real UAE keywords that bring real leads."
+        },
+        {
+          "id": 4,
+          "title": "Authoritative Backlinks",
+          "desc": "We build strong, safe and relevant backlinks that increase your authority and help you compete with top companies."
+        },
+        {
+          "id": 5,
+          "title": "Local SEO for Dubai Businesses",
+          "desc": "We optimise your Google Maps ranking, especially for keywords like near me, Dubai best or UAE based. This brings highly targeted customers who are ready to buy."
+        }
+      ]
+    },
+    "socialMedia": {
+      "title": "Social Media Marketing for UAE Brands",
+      "description": "Dubai is a city of visuals, trends and fast moving social media culture. To stand out you need content that looks premium and makes people stop.",
+      "services": [
+        "Social media account management",
+        "TikTok and Instagram storytelling",
+        "Creative video content",
+        "Facebook, Instagram and TikTok ads",
+        "Monthly content calendars",
+        "High quality creatives",
+        "Performance reports"
+      ],
+      "goal": "Our style matches the Dubai energy. Clean, modern and visually powerful."
+    },
+    "industries": {
+      "title": "Industry Focused Marketing for the UAE",
+      "description": "Dubai is known for luxury, competition and speed. Each niche demands a special approach.",
+      "industries": [
+        {
+          "id": 1,
+          "title": "Aesthetic Clinic Marketing in Dubai",
+          "description": "The aesthetic industry in Dubai is one of the strongest in the region. Customers look for quality, safety and results. We help clinics build trust and attract high value leads.",
+          "servicesLabel": "We create:",
+          "services": [
+            "Treatment SEO pages",
+            "Clinic focused landing pages",
+            "Google Maps optimisation",
+            "Lead focused ad funnels",
+            "Before and after storytelling content",
+            "Social proof and review strategies"
+          ],
+          "benefit": "This helps clinics appear premium and reliable while bringing consistent enquiries."
+        },
+        {
+          "id": 2,
+          "title": "Real Estate Digital Marketing and SEO",
+          "description": "Dubai real estate is fierce. New agents and new projects appear daily. To stand out you need visibility and positioning.",
+          "servicesLabel": "We help with:",
+          "services": [
+            "Real estate SEO",
+            "Project landing pages",
+            "High intent keyword targeting",
+            "Social ads for leads",
+            "Community focused content",
+            "UAE buyer search analysis"
+          ],
+          "benefit": "Our aim is simple. Bring more viewings, more leads and more conversions."
+        },
+        {
+          "id": 3,
+          "title": "iGaming and High CPC SEO for Dubai",
+          "description": "The iGaming and high CPC industry requires skill, sensitivity and a sharp ranking strategy. We help brands grow without risk.",
+          "servicesLabel": "We focus on:",
+          "services": [
+            "Safe SEO strategies",
+            "High CPC keyword targeting",
+            "Technical performance",
+            "Fast loading landing pages",
+            "Conversion focused content",
+            "Competitor gap analysis"
+          ],
+          "benefit": "This industry moves fast. We help you stay ahead."
+        }
+      ]
+    },
+    "process": {
+      "title": "Our Process",
+      "description": "We do not complicate things. We make everything clean and simple.",
+      "steps": [
+        {
+          "id": 1,
+          "title": "Listen and understand your goals",
+          "desc": "Before any plan we understand your vision and your current challenges."
+        },
+        {
+          "id": 2,
+          "title": "UAE competitor study",
+          "desc": "We study the UAE market and identify how your top competitors win."
+        },
+        {
+          "id": 3,
+          "title": "Website and technical audit",
+          "desc": "We remove issues that slow your ranking growth."
+        },
+        {
+          "id": 4,
+          "title": "Strategy and content creation",
+          "desc": "We design a plan for SEO, content and social visibility."
+        },
+        {
+          "id": 5,
+          "title": "Execution and optimisation",
+          "desc": "We implement everything step by step and monitor progress."
+        },
+        {
+          "id": 6,
+          "title": "Reporting and insights",
+          "desc": "You get clear reports that show what improved and where we are heading next."
+        }
+      ]
+    },
+    "caseStudies": {
+      "title": "Case Studies and Impact",
+      "description": "We have helped brands grow in high pressure industries.",
+      "results": [
+        {
+          "text": "More organic traffic",
+          "icon": "TrendingUp"
+        },
+        {
+          "text": "Higher lead flow",
+          "icon": "Users"
+        },
+        {
+          "text": "Strong keyword positions in the UAE",
+          "icon": "Target"
+        },
+        {
+          "text": "Premium brand presence",
+          "icon": "Award"
+        },
+        {
+          "text": "Better engagement on social media",
+          "icon": "Heart"
+        }
+      ],
+      "note": "We keep improving every month so your growth never stops."
+    },
+    "pricing": {
+      "title": "Pricing and Packages for Dubai",
+      "description": "Dubai industries have different levels of competition and each niche requires a custom approach.\n\nMost Dubai companies invest between AED 2000 and AED 12000 based on the depth of work and their goals.\n\nWe create a package that fits your budget and still provides strong growth."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "id": 1,
+          "question": "How much does SEO cost in Dubai?",
+          "answer": "It depends on your industry and how competitive your keywords are. We offer flexible plans based on your goals."
+        },
+        {
+          "id": 2,
+          "question": "How long until I see results?",
+          "answer": "Some movement begins in weeks. Strong growth usually shows between three to six months."
+        },
+        {
+          "id": 3,
+          "question": "Do you offer marketing for aesthetic clinics in Dubai?",
+          "answer": "Yes. We have deep experience with clinics and medical marketing."
+        },
+        {
+          "id": 4,
+          "question": "Do you work with high competition industries like real estate or iGaming?",
+          "answer": "Yes. We handle industries that require strong strategy and experienced execution."
+        },
+        {
+          "id": 5,
+          "question": "Can you run social media ads for Dubai audiences?",
+          "answer": "Yes. We create targeted ads that bring quality leads from the UAE market."
+        },
+        {
+          "id": 6,
+          "question": "Why should I choose DaikiMedia?",
+          "answer": "We listen carefully, plan wisely and execute with heart. Our focus is long term growth and honest communication."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Grow With DaikiMedia in Dubai",
+      "description": "Your brand deserves visibility, recognition and powerful growth in Dubai.\n\nLet us build the strategy and take care of the work so you can focus on leading your business.",
+      "buttonText": "Book a free strategy session today",
+      "note": "We are ready to help you grow in the UAE."
+    },
+    "schema": {
+      "webPage": {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "SEO, Digital & Social Media Marketing Agency in Dubai, UAE | DaikiMedia",
+        "url": "https://daikimedia.com/dubai-marketing-agency",
+        "inLanguage": "en",
+        "description": "DaikiMedia is a results focused SEO, digital and social media marketing agency in Dubai and the UAE helping clinics, real estate, luxury and iGaming brands grow with clear and powerful strategies.",
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "SEO agency Dubai"
+          },
+          {
+            "@type": "Thing",
+            "name": "digital marketing agency Dubai"
+          },
+          {
+            "@type": "Thing",
+            "name": "social media marketing agency Dubai"
+          }
+        ],
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "DaikiMedia",
+          "url": "https://daikimedia.com"
+        }
+      },
+      "faqPage": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does SEO cost in Dubai?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on your industry and how competitive your keywords are. We offer flexible plans based on your goals."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long until I see results?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Some movement begins in weeks. Strong growth usually shows between three to six months."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer marketing for aesthetic clinics in Dubai?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We have deep experience with clinics and medical marketing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you work with high competition industries like real estate or iGaming?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We handle industries that require strong strategy and experienced execution."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you run social media ads for Dubai audiences?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We create targeted ads that bring quality leads from the UAE market."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why should I choose DaikiMedia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We listen carefully, plan wisely and execute with heart. Our focus is long term growth and honest communication."
+            }
+          }
+        ]
+      },
+      "service": {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "SEO, Digital and Social Media Marketing Services in Dubai and the UAE",
+        "provider": {
+          "@type": "Organization",
+          "name": "DaikiMedia"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "United Arab Emirates"
+        },
+        "description": "SEO, digital marketing and social media marketing services for clinics, real estate, luxury and iGaming brands in Dubai and the UAE."
+      },
+      "breadcrumbList": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://daikimedia.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Dubai",
+            "item": "https://daikimedia.com/dubai"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "SEO and Digital Marketing Agency in Dubai and the UAE",
+            "item": "https://daikimedia.com/dubai-marketing-agency"
+          }
+        ]
+      }
+    }
+  }
+}
+

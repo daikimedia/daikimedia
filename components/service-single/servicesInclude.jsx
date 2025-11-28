@@ -1,13 +1,13 @@
 "use client";
 
-export const ServiceInclude = ({ data }) => {
+export const ServiceInclude = ({ data, sectionTag = "Core Service", sectionTitle = "What Do Our Services Include?" }) => {
   return (
     <section className="relative pt-15">
       <div className="absolute left-0 right-0 top-150 h-full w-full bg-[url('/images/core-gradient.png')] bg-[length:600px_1800px] bg-center bg-no-repeat opacity-70 md:hidden"></div>
       <div className="container">
         <div className="mx-auto mb-12 max-w-[575px] text-center">
-          <p className="section-tagline">Core Service</p>
-          <h2>What Do Our Services Include?</h2>
+          <p className="section-tagline">{sectionTag}</p>
+          <h2>{sectionTitle}</h2>
         </div>
 
         <div className="relative z-10">
@@ -27,7 +27,42 @@ export const ServiceInclude = ({ data }) => {
                   <h3 className="relative mb-2.5 after:absolute after:-left-[49px] after:h-full after:w-0.5 after:bg-primary after:opacity-0 after:transition-opacity after:duration-500 group-hover:after:opacity-100">
                     {items.title}
                   </h3>
-                  <p>{items.description}</p>
+                  <p className="mb-6">{items.description}</p>
+                  {items.services && items.services.length > 0 && (
+                    <div className="mb-6">
+                      <h4 className="mb-3 font-semibold">
+                        {items.servicesLabel || "We create:"}
+                      </h4>
+                      <ul className="space-y-2">
+                        {items.services.map((service, index) => (
+                          <li key={index} className="flex items-start">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              className="mr-3 mt-1 shrink-0"
+                            >
+                              <path
+                                d="M14.125 7.75L8.62497 13L5.875 10.375M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
+                                stroke=""
+                                className="stroke-paragraph dark:stroke-primary"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                            </svg>
+                            <span className="text-paragraph-light">{service}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {items.benefit && (
+                    <p className="text-paragraph-light border-t border-dashed border-gray-100 dark:border-borderColor-dark pt-4">
+                      {items.benefit}
+                    </p>
+                  )}
                 </div>
               ))}
             </div>

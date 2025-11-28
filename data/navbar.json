@@ -241,30 +241,37 @@
         ]
       },
       {
+        "id": 3.5,
+        "title": "Market",
+        "newTab": false,
+        "submenu": [
+          {
+            "id": "3.5.1",
+            "title": "Singapore Marketing Agency",
+            "path": "/singapore-marketing-agency",
+            "newTab": false
+          },
+          {
+            "id": "3.5.2",
+            "title": "Dubai Marketing Agency",
+            "path": "/dubai-marketing-agency",
+            "newTab": false
+          }
+        ]
+      },
+      {
         "id": 4,
-        "title": "Website",
-        "path": "/web-development",
-        "newTab": false
-      },
-      {
-        "id": 5,
-        "title": "Copywriting",
-        "path": "/copywriting-services",
-        "newTab": false
-      },
-      {
-        "id": 6,
         "title": "Blog",
         "path": "/blog"
       },
       {
-        "id":7,
+        "id":5,
         "title":"Case Studies",
         "path":"/case-studies"
       }
       ,
       {
-        "id": 8,
+        "id": 6,
         "title": "Contact Us",
         "path": "/contact",
         "newTab": false

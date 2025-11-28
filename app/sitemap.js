@@ -56,6 +56,24 @@ async function getAuthorRoutes() {
   }
 }
 
+async function getCaseStudyRoutes() {
+  try {
+    const caseStudyData = await import("../data/caseStudiesData.json");
+    const { caseStudies } = caseStudyData.default || {
+      caseStudies: [],
+    };
+    return caseStudies.map((caseStudy) => ({
+      slug: caseStudy.slug,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    }));
+  } catch (error) {
+    console.error("Error importing case study data:", error);
+    return [];
+  }
+}
+
 export default async function sitemap() {
   const baseUrl = "https://www.daikimedia.com";
   const date = new Date();
@@ -127,6 +145,12 @@ export default async function sitemap() {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/case-studies`,
+      lastModified: date,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
   ];
 
   const apiBlogs = await getBlogsFromAPI();
@@ -139,12 +163,25 @@ export default async function sitemap() {
   }));
 
   const services = await getServiceRoutes();
-  const serviceRoutes = services.map((service) => ({
-    url: `${baseUrl}/${service.slug}`,
-    lastModified: service.lastModified,
-    changeFrequency: service.changeFrequency,
-    priority: service.priority,
-  }));
+   // showing full site map for services
+  // const serviceRoutes = services.map((service) => ({
+    //   url: `${baseUrl}/${service.slug}`,
+    //   lastModified: service.lastModified,
+    //   changeFrequency: service.changeFrequency,
+    //   priority: service.priority,
+    // }));
+  // Exclude these specific service URLs from sitemap
+
+  
+  const excludedSlugs = ['web-development', 'copywriting-services'];
+  const serviceRoutes = services
+    .filter((service) => !excludedSlugs.includes(service.slug))
+    .map((service) => ({
+      url: `${baseUrl}/${service.slug}`,
+      lastModified: service.lastModified,
+      changeFrequency: service.changeFrequency,
+      priority: service.priority,
+    }));
 
   const authors = await getAuthorRoutes();
   const authorRoutes = authors.map((author) => ({
@@ -154,5 +191,13 @@ export default async function sitemap() {
     priority: author.priority,
   }));
 
-  return [...staticRoutes, ...blogRoutes, ...serviceRoutes, ...authorRoutes];
+  const caseStudies = await getCaseStudyRoutes();
+  const caseStudyRoutes = caseStudies.map((caseStudy) => ({
+    url: `${baseUrl}/case-studies/${caseStudy.slug}`,
+    lastModified: caseStudy.lastModified,
+    changeFrequency: caseStudy.changeFrequency,
+    priority: caseStudy.priority,
+  }));
+
+  return [...staticRoutes, ...blogRoutes, ...serviceRoutes, ...authorRoutes, ...caseStudyRoutes];
 }
