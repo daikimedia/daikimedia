@@ -20,6 +20,7 @@ const SingaporeMarketingAgency = () => {
 
   return (
     <>
+    {/* here we will crete the marketing agency schema */}
       <MarketingAgencySchema schemas={data.schema} />
       <main>
         <MarketingAgencyContent data={data} />
