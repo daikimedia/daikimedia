@@ -11,6 +11,10 @@ const Cta = dynamic(() => import("@/components/home-1/Cta"));
 const Integration = dynamic(() => import("@/components/home-1/Integration"));
 const Solution = dynamic(() => import("@/components/home-1/Solution"));
 const Vision = dynamic(() => import("@/components/home-1/Vision"));
+const RegionalStory = dynamic(() => import("@/components/home-1/RegionalStory"));
+const MarketsWeServe = dynamic(() => import("@/components/home-1/MarketsWeServe"));
+const WhoWeHelp = dynamic(() => import("@/components/home-1/WhoWeHelp"));
+const WhyChooseUs = dynamic(() => import("@/components/home-1/WhyChooseUs"));
 const LazyFaq = dynamic(() => import("@/components/lazy/LazyFaq"));
 const LazyCounter = dynamic(() => import("@/components/lazy/LazyCounter"));
 const LazyClients = dynamic(() => import("@/components/lazy/LazyClients"));
@@ -64,8 +68,12 @@ export default function HomePage() {
           </div>
         </div>
 
+        <RegionalStory />
         <LazyClients />
         <Services />
+        <MarketsWeServe />
+        <WhoWeHelp />
+        <WhyChooseUs />
         <LazyCounter />
         <Vision />
         <Solution />

@@ -23,7 +23,7 @@ export const StepsData = [
 
 export const ServiceProcess = ({ data }) => {
   return (
-    <section className="relative bg-white pb-150 dark:bg-dark-300 max-md:overflow-hidden max-md:pb-25">
+    <section className="relative bg-white pb-100 dark:bg-dark-300 max-md:overflow-hidden max-md:pb-25">
       <div className="absolute left-0 right-0 top-25 h-full w-full bg-[url('/images/core-gradient.png')] bg-[length:600px_1000px] bg-center bg-no-repeat opacity-70 md:hidden"></div>
       <div className="container ">
         <div className="mx-auto mb-12  text-center">

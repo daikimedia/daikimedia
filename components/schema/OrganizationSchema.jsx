@@ -11,14 +11,27 @@ const OrganizationSchema = () => {
       "width": 200,
       "height": 60
     },
-    "description": "Daiki Media provides expert SEO, digital marketing, and web development services, specializing in iGaming, eCommerce, and local SEO. Trusted by thousands of businesses across 50+ countries with a 93% client satisfaction rate.",
+    "description": "Daiki Media is a virtual marketing agency providing SEO, digital marketing, PPC, social media marketing and web solutions for clients in Malaysia, Singapore and the UAE.",
+    "telephone": "011-1485 0067",
+    "areaServed": [
+      {
+        "@type": "Country",
+        "name": "Malaysia"
+      },
+      {
+        "@type": "Country",
+        "name": "Singapore"
+      },
+      {
+        "@type": "Country",
+        "name": "United Arab Emirates"
+      }
+    ],
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+601114850067",
-      "contactType": "Customer Service",
-      "email": "lukesh@daikimedia.com",
-      "areaServed": ["MY", "US"],
-      "availableLanguage": ["English"]
+      "telephone": "011-1485 0067",
+      "contactType": "customer service",
+      "availableLanguage": ["en"]
     },
     "address": {
       "@type": "PostalAddress",
@@ -26,6 +39,11 @@ const OrganizationSchema = () => {
       "addressLocality": "Kuala Lumpur",
       "postalCode": "52200",
       "addressCountry": "MY"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "17"
     },
     "sameAs": [
       "https://www.facebook.com/daikimedia",
