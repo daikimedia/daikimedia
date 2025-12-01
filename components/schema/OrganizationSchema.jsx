@@ -12,7 +12,7 @@ const OrganizationSchema = () => {
       "height": 60
     },
     "description": "Daiki Media is a virtual marketing agency providing SEO, digital marketing, PPC, social media marketing and web solutions for clients in Malaysia, Singapore and the UAE.",
-    "telephone": "011-1485 0067",
+    "telephone": "601114850067",
     "areaServed": [
       {
         "@type": "Country",
@@ -29,7 +29,7 @@ const OrganizationSchema = () => {
     ],
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "011-1485 0067",
+      "telephone": "601114850067",
       "contactType": "customer service",
       "availableLanguage": ["en"]
     },

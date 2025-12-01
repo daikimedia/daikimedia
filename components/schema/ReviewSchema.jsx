@@ -7,13 +7,13 @@ const ReviewSchema = () => {
         "image": "https://www.daikimedia.com/logo.jpg",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "123 Main Street",
-            "addressLocality": "City Name",
-            "addressRegion": "State",
-            "postalCode": "12345",
-            "addressCountry": "IN"
+            "streetAddress": "Jalan Ara, SD 7/3d, Bandar Sri Damansara",
+            "addressLocality": "Kuala Lumpur",
+            "addressRegion": "KL",
+            "postalCode": "52200",
+            "addressCountry": "MY" 
         },
-        "telephone": "+91-9876543210",
+        "telephone": "601114850067",
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.8",
