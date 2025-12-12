@@ -37,7 +37,7 @@ const playfair = Playfair_Display({
 export const metadata = {
   title: "Daiki Media | Expert SEO & Website Development Agency",
   description:
-    "Daiki Media offers top-notch SEO and website development services to help businesses grow online. Build stunning websites, improve search rankings, and boost traffic with our expert team. Contact us today!",
+    "Connect with the best graphic design agencies to create visually compelling designs that strengthen brand identity and captivate target audiences effectively.",
 };
 
 export default function RootLayout({ children }) {

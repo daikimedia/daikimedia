@@ -12,7 +12,7 @@ import TestimonialV2 from "@/components/shared/TestimonialV2";
 export const metadata = {
   title: "About | Daiki Media",
   description:
-    "Learn more about Daiki Media, our mission, values, and the team behind our success.",
+    "Daiki Media provides expert SEO, web development, and digital marketing services, helping brands grow online with strategic, innovative, and results-driven solutions",
   keywords: "about, Daiki Media, our mission, media company, team",
 };
 const About = () => {
