@@ -4,7 +4,7 @@ import SeoCompany from "@/components/lear/seo-company/seoCompany";
 export const metadata = {
   title: "Top SEO Optimization Companies to Grow Your Business | Daiki Media",
   description:
-    "Partner with top SEO optimization companies to boost search rankings, visibility, and online growth using proven strategies from Malaysia’s trusted agency, Daiki Media.",
+    "Learn what an SEO company does, how it boosts website visibility, drives organic traffic, and supports business growth with proven strategies online.",
   keywords: "seo optimization companies",
   alternates: {
     canonical: "https://www.daikimedia.com/what-is-seo-company",
