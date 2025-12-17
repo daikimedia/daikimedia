@@ -1,4 +1,5 @@
-import { notFound, redirect } from "next/navigation";
+import { redirect } from "next/navigation";
+import Link from "next/link";
 import Footer from "@/components/footer/Footer";
 import NewsLetter from "@/components/shared/NewsLetter";
 import PageHero from "@/components/shared/PageHero";
@@ -226,9 +227,9 @@ export default async function BlogDetails({ params }) {
             <div className="blog-details text-center mb-12">
               <div className="mb-6 flex items-center justify-center gap-x-2">
                 <p className="text-lg">
-                  <a href="/author/lukesh-pillai">
+                  <Link href="/author/lukesh-pillai">
                     {blog.author || "Daiki Media"}
-                  </a>
+                  </Link>
                 </p>
 
                 <span>

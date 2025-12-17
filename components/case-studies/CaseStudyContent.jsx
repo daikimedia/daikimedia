@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { fadeUpAnimation } from "@/data/animation";
 import useWhileInView from "@/hooks/useWhileInView";
 import { useRef } from "react";
+import Link from "next/link";
 import FallbackImage from "@/components/shared/FallbackImage";
 
 export default function CaseStudyContent({ caseStudy }) {
@@ -558,12 +559,12 @@ export default function CaseStudyContent({ caseStudy }) {
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8 max-w-2xl mx-auto">
                   {caseStudy.cta.content}
                 </p>
-                <a
+                <Link
                   href="/contact"
                   className="btn btn-primary inline-block transition-transform duration-300 hover:scale-105"
                 >
                   Contact Our Team
-                </a>
+                </Link>
               </div>
             </div>
           </motion.section>
