@@ -28,7 +28,7 @@ export const ServiceProcess = ({ data }) => {
       <div className="container ">
         <div className="mx-auto mb-12  text-center">
           <p className="section-tagline">How it works</p>
-          <h2 className="mb-8">Easy steps, endless possibilities</h2>
+          <h2 className="mb-8">Our SEO Process From Strategy to Growth</h2>
           <p>
             Armed with concepts, we carefully design and refine every detail to
             align with your vision and goals.
