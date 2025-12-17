@@ -64,7 +64,7 @@ export const Comparison = ({ data }) => {
           <div className="px-6 py-8 bg-gray-50 dark:bg-gray-800/50 border-t border-gray-200 dark:border-gray-700">
             <div className="max-w-3xl mx-auto text-center">
               <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-gray-100">
-                Why Choose Us?
+              Dedicated iGaming SEO Specialists
               </h3>
               <p className="text-lg text-gray-600 dark:text-gray-300">
                 With Daiki Media, you get comprehensive, customizable services

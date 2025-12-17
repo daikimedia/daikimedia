@@ -9,9 +9,9 @@ import emailjs from "@emailjs/browser";
 export const metadata = {
   title: "Contact Us | Daiki Media",
   description:
-    "Get in touch with Daiki Media to discuss your marketing needs. Fill out the contact form and let our team help you grow your business with tailored solutions.",
+    "Contact Daiki Media with Daiki Media to discuss your marketing needs. Fill out the contact form and let our team help you grow your business with tailored solutions.",
   keywords:
-    "Daiki Media, contact us, get in touch, marketing services, business solutions, digital marketing, contact form, customer support",
+    "Daiki Media, contact us, Contact Daiki Media, marketing services, business solutions, digital marketing, contact form, customer support",
 };
 
 const ContactForm = () => {

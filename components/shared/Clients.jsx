@@ -17,7 +17,7 @@ const Clients = ({
       <div className="container overflow-hidden max-lg:!px-0">
         <div className="mx-auto max-w-[550px] text-center max-lg:px-2.5">
           {sectionTitle && (
-            <h2 className="mb-10">Best Companies Trust Daiki Media.</h2>
+            <h2 className="mb-10">Trusted Online Casino SEO Agency in Malaysia</h2>
           )}
           {sectionDetails && (
             <p className="text-light mb-15">

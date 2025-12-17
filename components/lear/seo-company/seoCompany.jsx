@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 import {
   Minus,
   Plus,
@@ -197,9 +198,9 @@ export default function SeoCompany() {
                 Contact Daiki Media today and take the first step towards higher
                 rankings!
               </p>
-              <a href="/contact" className="btn btn-xl mt-10">
+              <Link href="/contact" className="btn btn-xl mt-10">
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         </section>

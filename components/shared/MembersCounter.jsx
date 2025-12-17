@@ -13,7 +13,7 @@ const MembersCounter = ({ border = true }) => {
           <div className="max-lg:col-span-full lg:col-span-6">
             <div className="max-w-[550px]">
               <p className="section-tagline">Numbers</p>
-              <h2>10+ Years of Digital Excellence</h2>
+              <h2>10+ Years as a Casino SEO and iGaming Marketing Agency</h2>
             </div>
           </div>
           <div className="py-5 max-md:col-span-full md:col-span-6 lg:col-span-3">
@@ -43,7 +43,7 @@ const MembersCounter = ({ border = true }) => {
                   </h3>
                 </div>
               </div>
-              <h3 className="leading-8 ">Successful Digital Projects</h3>
+              <h3 className="leading-8 ">Successful iGaming and Casino SEO Projects </h3>
             </div>
           </div>
         </div>

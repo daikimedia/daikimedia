@@ -1,6 +1,6 @@
 "use client";
 
-export const ServiceInclude = ({ data, sectionTag = "Core Service", sectionTitle = "What Do Our Services Include?" }) => {
+export const ServiceInclude = ({ data, sectionTag = "Core Service", sectionTitle = "Online Casino SEO Services We Provide" }) => {
   return (
     <section className="relative pt-15">
       <div className="absolute left-0 right-0 top-150 h-full w-full bg-[url('/images/core-gradient.png')] bg-[length:600px_1800px] bg-center bg-no-repeat opacity-70 md:hidden"></div>

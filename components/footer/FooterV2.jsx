@@ -76,7 +76,7 @@ const FooterV2 = () => {
             </ul>
           </div>
           <div className="col-span-12 max-lg:text-center md:col-span-6 lg:col-span-2">
-            <h3 className="mb-8 text-lg font-medium">Get In touch</h3>
+            <h3 className="mb-8 text-lg font-medium">Contact Daiki Media</h3>
             <p className="mb-3">Need Support?</p>
             <p className="mb-3">
               <Link

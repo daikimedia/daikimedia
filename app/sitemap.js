@@ -1,5 +1,3 @@
-import { MetadataRoute } from "next";
-
 async function getBlogsFromAPI() {
   try {
     const response = await fetch("https://cms.daikimedia.com/api/blogs", {
