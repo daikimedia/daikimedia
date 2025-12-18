@@ -15,6 +15,7 @@ const GoogleCoreUpdateContent = () => {
   const faqs = [
     {
       id: 1,
+      
       question: "Is the December 2025 Core Update a penalty?",
       answer: "No. It is a ranking recalibration, not a punishment."
     },
@@ -46,10 +47,10 @@ const GoogleCoreUpdateContent = () => {
   ]
 
   return (
-    <article className="relative pb-150 w-full">
+    <article className="relative pb-20 w-full">
       <div className="container relative">
         {/* Introduction Section */}
-        <section className="relative mb-[160px] max-md:mb-25">
+        <section className="relative mb-20 max-md:mb-12">
           <div className="absolute -top-[300px] left-1/2 -z-10 h-[550px] w-full -translate-x-1/2 bg-[url('/images/hero-gradient.png')] bg-cover bg-center bg-no-repeat opacity-70 md:hidden"></div>
           <div className="absolute left-1/2 top-20 -z-10 flex -translate-x-1/2 -translate-y-1/2 max-md:hidden max-md:flex-col">
             <div className="rounded-full bg-primary-200/20 blur-[145px] max-1xl:h-[335px] max-1xl:w-[335px] 1xl:h-[442px] 1xl:w-[442px]"></div>
@@ -72,25 +73,39 @@ const GoogleCoreUpdateContent = () => {
           </FadeUpAnimation>
 
           <FadeUpAnimation>
-            <div className="grid grid-cols-12 gap-8 items-start">
-              <div className="max-md:col-span-full md:col-span-6">
-                <div className="max-w-[550px]">
-                  <p className="section-tagline mb-3">Understanding the Update</p>
-                  <h2 className="mb-6">What the December 2025 Core Update Really Means</h2>
+            <div className="rounded-2xl bg-primary-50 dark:bg-dark-200 p-6 md:p-8">
+              <div className="text-center mb-6">
+                <p className="section-tagline">Understanding the Update</p>
+                <h2 className="max-w-2xl mx-auto">What the December 2025 Core Update Really Means</h2>
                 </div>
+              
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-white dark:bg-dark-100 rounded-medium p-6 shadow-box border border-primary-200 dark:border-primary-800">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-primary dark:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                      </svg>
               </div>
-              <div className="max-md:col-span-full md:col-span-6">
-                <div className="rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200">
-                  <div className="rounded border border-dashed border-gray-100 p-10 dark:border-borderColor-dark max-lg:p-6">
-                    <div className="space-y-6">
-                      <p className="text-lg leading-relaxed text-paragraph-light dark:text-[#A1A49D]">
+                    <h3 className="text-lg font-semibold">What Changed</h3>
+                  </div>
+                  <p className="text-paragraph dark:text-paragraph-dark leading-relaxed">
                         Some websites saw rankings drop without obvious errors. Others gained visibility quietly, without dramatic changes. This happened because core updates do not reward tactics. They reward alignment with how Google now understands user expectations.
                       </p>
-                      <p className="text-lg leading-relaxed text-paragraph-light dark:text-[#A1A49D]">
-                        At DaikiMedia, we work with businesses across Malaysia and APAC that want stability, not guesswork. This guide explains what the December 2025 Core Update really means, how it affects websites, and what actions actually matter if your goal is sustainable growth.
-                      </p>
                     </div>
+
+                <div className="bg-white dark:bg-dark-100 rounded-medium p-6 shadow-box border border-primary-200 dark:border-primary-800">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-primary dark:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
                   </div>
+                    <h3 className="text-lg font-semibold">Our Approach</h3>
+                  </div>
+                  <p className="text-paragraph dark:text-paragraph-dark leading-relaxed">
+                    At DaikiMedia, we work with businesses across Malaysia and APAC that want stability, not guesswork. This guide explains what the December 2025 Core Update really means, how it affects websites, and what actions actually matter if your goal is sustainable growth.
+                  </p>
                 </div>
               </div>
             </div>
@@ -98,88 +113,144 @@ const GoogleCoreUpdateContent = () => {
         </section>
 
         {/* What Is the December 2025 Google Core Update */}
-        <section className="relative mb-[160px] max-md:mb-25">
+        <section className="relative mb-20 max-md:mb-12">
           <FadeUpAnimation>
-            <div className="grid grid-cols-12 gap-8 items-start">
-              <div className="max-md:col-span-full md:col-span-6 max-md:order-2">
-                <div className="rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200">
-                  <div className="rounded border border-dashed border-gray-100 p-10 dark:border-borderColor-dark max-lg:p-6">
-                    <div className="space-y-6">
-                      <p className="text-lg leading-relaxed text-paragraph-light dark:text-[#A1A49D]">
+            <div className="rounded-2xl bg-primary-50 dark:bg-dark-200 p-6 md:p-8">
+              <div className="text-center mb-6">
+                <p className="section-tagline">Core Update Explained</p>
+                <h2 className="max-w-2xl mx-auto">What Is the December 2025 Google Core Update</h2>
+              </div>
+              
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-white dark:bg-dark-100 rounded-medium p-6 shadow-box border border-primary-200 dark:border-primary-800">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-primary dark:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                      </svg>
+                    </div>
+                    <h3 className="text-lg font-semibold">Broad Update</h3>
+                  </div>
+                  <p className="text-paragraph dark:text-paragraph-dark leading-relaxed">
                         The December 2025 Core Update is a broad algorithm update that reassesses rankings across all industries and regions. It does not target a single technical issue like spam or speed.
-                      </p>
-                      <p className="text-lg leading-relaxed text-paragraph-light dark:text-[#A1A49D]">
-                        Instead, Google evaluates whether websites genuinely deserve to be recommended today.
-                      </p>
-                      <p className="text-lg leading-relaxed text-paragraph-light dark:text-[#A1A49D]">
-                        Google has stated clearly that there is nothing special creators need to do if they are already producing helpful, people first content. In other words, this update is not about fixing loopholes. It is about quality.
-                      </p>
-                      <div className="rounded-medium bg-primary-50 dark:bg-primary-900/20 p-6 border border-primary-200 dark:border-primary-800">
-                        <p className="font-semibold text-primary dark:text-primary text-lg leading-relaxed">
-                          At DaikiMedia, we summarize Google's position simply: If your website helps users make better decisions, you are moving in the right direction.
                         </p>
                       </div>
+
+                <div className="bg-white dark:bg-dark-100 rounded-medium p-6 shadow-box border border-primary-200 dark:border-primary-800">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-primary dark:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
                     </div>
+                    <h3 className="text-lg font-semibold">Quality Focus</h3>
                   </div>
+                  <p className="text-paragraph dark:text-paragraph-dark leading-relaxed">
+                    Google evaluates whether websites genuinely deserve to be recommended today. This update is not about fixing loopholes. It is about quality.
+                  </p>
+                </div>
+
+                <div className="bg-white dark:bg-dark-100 rounded-medium p-6 shadow-box border border-primary-200 dark:border-primary-800">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-primary dark:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                      </svg>
+              </div>
+                    <h3 className="text-lg font-semibold">People First</h3>
+                </div>
+                  <p className="text-paragraph dark:text-paragraph-dark leading-relaxed">
+                    Google has stated clearly that there is nothing special creators need to do if they are already producing helpful, people first content.
+                  </p>
                 </div>
               </div>
-              <div className="max-md:col-span-full md:col-span-6 max-md:order-1">
-                <div className="max-w-[550px] ml-auto max-md:ml-0">
-                  <p className="section-tagline mb-3">Core Update Explained</p>
-                  <h2 className="mb-6">What Is the December 2025 Google Core Update</h2>
-                </div>
+
+              <div className="mt-6 text-center">
+                <p className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary-100 dark:bg-primary-900/20 rounded-full text-primary font-semibold">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  If your website helps users make better decisions, you are moving in the right direction.
+                </p>
               </div>
             </div>
           </FadeUpAnimation>
         </section>
 
         {/* Why Rankings Change Section */}
-        <section className="relative mb-[160px] max-md:mb-25">
+        <section className="relative mb-20 max-md:mb-12">
           <FadeUpAnimation>
-            <div className="grid grid-cols-12 gap-8 items-start">
-              <div className="max-md:col-span-full md:col-span-6">
-                <div className="max-w-[550px]">
-                  <p className="section-tagline mb-3">Ranking Changes</p>
-                  <h2 className="mb-6">Why Rankings Change Even When Nothing Is Broken</h2>
-                </div>
-              </div>
-              <div className="max-md:col-span-full md:col-span-6">
-                <div className="rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200">
-                  <div className="rounded border border-dashed border-gray-100 p-10 dark:border-borderColor-dark max-lg:p-6">
-                    <div className="space-y-6">
-                      <p className="text-lg leading-relaxed text-paragraph-light dark:text-[#A1A49D]">
+            <div className="rounded-2xl bg-primary-50 dark:bg-dark-200 p-6 md:p-8">
+              <div className="text-center mb-6">
+                <p className="section-tagline">Ranking Changes</p>
+                <h2 className="max-w-2xl mx-auto">Why Rankings Change Even When Nothing Is Broken</h2>
+                <p className="mt-4 text-paragraph dark:text-paragraph-dark max-w-2xl mx-auto">
                         Many businesses panic after a core update because they assume rankings dropped due to a mistake.
                       </p>
-                      <p className="text-lg leading-relaxed text-paragraph-light dark:text-[#A1A49D]">
+                <p className="mt-4 text-paragraph dark:text-paragraph-dark max-w-2xl mx-auto">
                         In reality, core updates are comparative. Google is not judging your site against rules. It is judging your site against alternatives competing for the same intent.
                       </p>
-                      <div>
-                        <p className="font-semibold mb-3 text-gray-900 dark:text-white">Rankings can change because:</p>
-                        <ul className="list-disc list-inside space-y-2 ml-4 text-paragraph-light dark:text-[#A1A49D]">
-                          <li>Competitors improved clarity or depth</li>
-                          <li>Other sites better matched user intent</li>
-                          <li>Google refined how it interprets satisfaction</li>
-                          <li>User expectations evolved</li>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-white dark:bg-dark-100 rounded-medium p-6 shadow-box border border-primary-200 dark:border-primary-800">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-primary dark:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
+                      </svg>
+                    </div>
+                    <h3 className="text-lg font-semibold">Rankings Can Change Because</h3>
+                  </div>
+                  <ul className="space-y-3">
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Competitors improved clarity or depth
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Other sites better matched user intent
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Google refined how it interprets satisfaction
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      User expectations evolved
+                    </li>
                         </ul>
                       </div>
-                      <p className="text-lg leading-relaxed text-paragraph-light dark:text-[#A1A49D]">
+
+                <div className="bg-white dark:bg-dark-100 rounded-medium p-6 shadow-box border border-primary-200 dark:border-primary-800">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-primary dark:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <h3 className="text-lg font-semibold">Key Insight</h3>
+                  </div>
+                  <p className="text-paragraph dark:text-paragraph-dark leading-relaxed">
                         A ranking drop does not automatically mean your content is bad. It often means something else is now more helpful.
                       </p>
-                      <div className="rounded-medium bg-primary-50 dark:bg-primary-900/20 p-6 border border-primary-200 dark:border-primary-800">
-                        <p className="font-semibold text-primary dark:text-primary text-lg leading-relaxed">
+                </div>
+              </div>
+
+              <div className="mt-6 text-center">
+                <p className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary-100 dark:bg-primary-900/20 rounded-full text-primary font-semibold">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
                           This is where experienced guidance matters more than reactive fixes.
                         </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </FadeUpAnimation>
         </section>
 
         {/* What Google Is Reassessing Section */}
-        <section className="relative mb-[160px] max-md:mb-25">
+        <section className="relative mb-20 max-md:mb-12">
           <div className="absolute left-1/2 top-1/2 -z-10 flex -translate-x-1/2 -translate-y-1/2 max-md:hidden max-md:flex-col">
             <div className="rounded-full bg-primary-200/20 blur-[145px] max-1xl:h-[335px] max-1xl:w-[335px] 1xl:h-[442px] 1xl:w-[442px]"></div>
             <div className="-ml-[170px] rounded-full bg-primary-200/25 blur-[145px] max-1xl:h-[335px] max-1xl:w-[335px] max-md:ml-0 1xl:h-[442px] 1xl:w-[442px]"></div>
@@ -202,7 +273,6 @@ const GoogleCoreUpdateContent = () => {
                   <p className="mb-4">
                     Google increasingly evaluates quality at the site level, not just the page level.
                   </p>
-                  <p className="font-semibold mb-2">Websites that struggle often contain:</p>
                   <ul className="list-disc list-inside space-y-1 ml-4 text-sm">
                     <li>Thin or outdated articles</li>
                     <li>Duplicate or overlapping pages</li>
@@ -300,7 +370,7 @@ const GoogleCoreUpdateContent = () => {
         </section>
 
         {/* Technical Foundations Section */}
-        <section className="relative mb-[160px] max-md:mb-25">
+        <section className="relative mb-20 max-md:mb-12">
           <FadeUpAnimation className="mb-12">
             <div className="overflow-hidden rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200">
               <div className="rounded border border-dashed border-gray-100 dark:border-borderColor-dark overflow-hidden">
@@ -316,32 +386,78 @@ const GoogleCoreUpdateContent = () => {
           </FadeUpAnimation>
 
           <FadeUpAnimation>
-            <div className="grid grid-cols-12">
-              <div className="max-md:col-span-full md:col-span-6">
-                <div className="max-w-[550px]">
+            <div className="rounded-2xl bg-primary-50 dark:bg-dark-200 p-6 md:p-8">
+              <div className="text-center mb-6">
                   <p className="section-tagline">Technical SEO</p>
-                  <h2>Technical Foundations That Can Hold Back Good Content</h2>
-                </div>
-              </div>
-              <div className="max-w-[590px] py-10 max-md:col-span-full md:col-span-6">
-                <p>
+                <h2 className="max-w-2xl mx-auto">Technical Foundations That Can Hold Back Good Content</h2>
+                <p className="mt-4 text-paragraph dark:text-paragraph-dark max-w-2xl mx-auto">
                   Technical SEO does not replace content quality, but poor technical foundations can suppress even excellent content.
                 </p>
-                <br />
-                <p className="font-semibold mb-2">Sites should aim for:</p>
-                <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
-                  <li>Fast loading of main content</li>
-                  <li>Stable layouts without sudden shifts</li>
-                  <li>Smooth interaction</li>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* Sites Should Aim For Card */}
+                <div className="bg-white dark:bg-dark-100 rounded-medium p-6 shadow-box border border-primary-200 dark:border-primary-800">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-primary dark:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <h3 className="text-lg font-semibold">Sites Should Aim For</h3>
+                  </div>
+                  <ul className="space-y-3">
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Fast loading of main content
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Stable layouts without sudden shifts
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Smooth interaction
+                    </li>
                 </ul>
-                <p className="font-semibold mb-2">Common mobile issues include:</p>
-                <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
-                  <li>Text that is hard to read</li>
-                  <li>Buttons placed too close together</li>
-                  <li>Intrusive popups</li>
-                  <li>Broken mobile layouts</li>
+                </div>
+
+                {/* Common Mobile Issues Card */}
+                <div className="bg-white dark:bg-dark-100 rounded-medium p-6 shadow-box border border-primary-200 dark:border-primary-800">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-primary dark:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                      </svg>
+                    </div>
+                    <h3 className="text-lg font-semibold">Common Mobile Issues</h3>
+                  </div>
+                  <ul className="space-y-3">
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Text that is hard to read
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Buttons placed too close together
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Intrusive popups
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Broken mobile layouts
+                    </li>
                 </ul>
-                <p className="font-semibold">
+                </div>
+              </div>
+
+              <div className="mt-6 text-center">
+                <p className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary-100 dark:bg-primary-900/20 rounded-full text-primary font-semibold">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
                   Mobile usability is now a requirement, not a bonus.
                 </p>
               </div>
@@ -350,48 +466,80 @@ const GoogleCoreUpdateContent = () => {
         </section>
 
         {/* Content Quality Section */}
-        <section className="relative mb-[160px] max-md:mb-25">
-          <FadeUpAnimation className="mb-12">
-            <div className="overflow-hidden rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200">
-              <div className="rounded border border-dashed border-gray-100 dark:border-borderColor-dark overflow-hidden">
-                <FallbackImage
-                  src="/images/google-december-2025-core-update/image112.jpg"
-                  alt="Content Quality - People First Content Strategy"
-                  className="rounded w-full h-[350px] object-cover"
-                  width={1000}
-                  height={350}
-                />
-              </div>
-            </div>
-          </FadeUpAnimation>
-
+        <section className="relative mb-20 max-md:mb-12">
           <FadeUpAnimation>
-            <div className="grid grid-cols-12">
-              <div className="max-md:col-span-full md:col-span-6">
-                <div className="max-w-[550px]">
+            <div className="rounded-2xl bg-primary-50 dark:bg-dark-200 p-6 md:p-8">
+              <div className="text-center mb-6">
                   <p className="section-tagline">Content Strategy</p>
-                  <h2>Why Content Quality Is Now a Site Wide Signal</h2>
-                </div>
-              </div>
-              <div className="max-w-[590px] py-10 max-md:col-span-full md:col-span-6">
-                <p>
+                <h2 className="max-w-2xl mx-auto">Why Content Quality Is Now a Site Wide Signal</h2>
+                <p className="mt-4 text-paragraph dark:text-paragraph-dark max-w-2xl mx-auto">
                   Google no longer evaluates content in isolation. Content should exist to help users, not to manipulate search engines.
                 </p>
-                <br />
-                <p className="font-semibold mb-2">Ask honestly:</p>
-                <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
-                  <li>Does this page solve a real problem?</li>
-                  <li>Would a user trust this advice?</li>
-                  <li>Does it add value beyond competitors?</li>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* Ask Honestly Card */}
+                <div className="bg-white dark:bg-dark-100 rounded-medium p-6 shadow-box border border-primary-200 dark:border-primary-800">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-primary dark:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+            </div>
+                    <h3 className="text-lg font-semibold">Ask Honestly</h3>
+                  </div>
+                  <ul className="space-y-3">
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Does this page solve a real problem?
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Would a user trust this advice?
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Does it add value beyond competitors?
+                    </li>
                 </ul>
-                <p className="font-semibold mb-2">High performing pages usually include:</p>
-                <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
-                  <li>Original insights</li>
-                  <li>Real examples</li>
-                  <li>Practical decision guidance</li>
-                  <li>Clear explanations of pros and cons</li>
+                </div>
+
+                {/* High Performing Pages Card */}
+                <div className="bg-white dark:bg-dark-100 rounded-medium p-6 shadow-box border border-primary-200 dark:border-primary-800">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-primary dark:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                      </svg>
+                </div>
+                    <h3 className="text-lg font-semibold">High Performing Pages Include</h3>
+              </div>
+                  <ul className="space-y-3">
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Original insights
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Real examples
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Practical decision guidance
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Clear explanations of pros and cons
+                    </li>
                 </ul>
-                <p>
+                </div>
+              </div>
+
+              <div className="mt-6 text-center">
+                <p className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary-100 dark:bg-primary-900/20 rounded-full text-primary font-semibold">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   Simply rephrasing existing content is no longer enough.
                 </p>
               </div>
@@ -400,34 +548,80 @@ const GoogleCoreUpdateContent = () => {
         </section>
 
         {/* Content Pruning Section */}
-        <section className="relative mb-[160px] max-md:mb-25">
+        <section className="relative mb-20 max-md:mb-12">
           <FadeUpAnimation>
-            <div className="grid grid-cols-12">
-              <div className="max-md:col-span-full md:col-span-6">
-                <div className="max-w-[550px]">
+            <div className="rounded-2xl bg-primary-50 dark:bg-dark-200 p-6 md:p-8">
+              <div className="text-center mb-6">
                   <p className="section-tagline">Content Optimization</p>
-                  <h2>Pruning Low Value Pages Without Damaging Rankings</h2>
-                </div>
-              </div>
-              <div className="max-w-[590px] py-10 max-md:col-span-full md:col-span-6">
-                <p>
+                <h2 className="max-w-2xl mx-auto">Pruning Low Value Pages Without Damaging Rankings</h2>
+                <p className="mt-4 text-paragraph dark:text-paragraph-dark max-w-2xl mx-auto">
                   Content pruning is not about deleting aggressively. It is about improving quality ratios.
                 </p>
-                <br />
-                <p className="font-semibold mb-2">Low value pages often have:</p>
-                <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
-                  <li>No traffic</li>
-                  <li>No backlinks</li>
-                  <li>No conversions</li>
-                  <li>No unique value</li>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* Low Value Pages Card */}
+                <div className="bg-white dark:bg-dark-100 rounded-medium p-6 shadow-box border border-primary-200 dark:border-primary-800">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-primary dark:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                      </svg>
+                    </div>
+                    <h3 className="text-lg font-semibold">Low Value Pages Often Have</h3>
+                  </div>
+                  <ul className="space-y-3">
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      No traffic
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      No backlinks
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      No conversions
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      No unique value
+                    </li>
                 </ul>
-                <p className="font-semibold mb-2">However:</p>
-                <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
-                  <li>Pages with backlinks should be redirected</li>
-                  <li>Niche pages should be enhanced</li>
-                  <li>Historical content may be archived</li>
+                </div>
+
+                {/* However Card */}
+                <div className="bg-white dark:bg-dark-100 rounded-medium p-6 shadow-box border border-primary-200 dark:border-primary-800">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-primary dark:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <h3 className="text-lg font-semibold">However</h3>
+                  </div>
+                  <ul className="space-y-3">
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Pages with backlinks should be redirected
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Niche pages should be enhanced
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Historical content may be archived
+                    </li>
                 </ul>
-                <p className="font-semibold text-primary dark:text-primary">
+                </div>
+              </div>
+
+              <div className="mt-6 text-center">
+                <p className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary-100 dark:bg-primary-900/20 rounded-full text-primary font-semibold">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   At DaikiMedia, pruning is always strategic, never emotional.
                 </p>
               </div>
@@ -436,7 +630,7 @@ const GoogleCoreUpdateContent = () => {
         </section>
 
         {/* Strengthening E-E-A-T Section */}
-        <section className="relative mb-[160px] max-md:mb-25">
+        <section className="relative mb-20 max-md:mb-12">
           <div className="absolute left-1/2 top-1/2 -z-10 flex -translate-x-1/2 -translate-y-1/2 max-md:hidden max-md:flex-col">
             <div className="rounded-full bg-primary-200/20 blur-[145px] max-1xl:h-[335px] max-1xl:w-[335px] 1xl:h-[442px] 1xl:w-[442px]"></div>
             <div className="-ml-[170px] rounded-full bg-primary-200/25 blur-[145px] max-1xl:h-[335px] max-1xl:w-[335px] max-md:ml-0 1xl:h-[442px] 1xl:w-[442px]"></div>
@@ -503,40 +697,62 @@ const GoogleCoreUpdateContent = () => {
         </section>
 
         {/* Structured Data Section */}
-        <section className="relative mb-[160px] max-md:mb-25">
+        <section className="relative mb-20 max-md:mb-12">
           <FadeUpAnimation>
-            <div className="grid grid-cols-12 gap-8 items-start">
-              <div className="max-md:col-span-full md:col-span-6 max-md:order-2">
-                <div className="rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200">
-                  <div className="rounded border border-dashed border-gray-100 p-10 dark:border-borderColor-dark max-lg:p-6">
-                    <div className="space-y-6">
-                      <p className="text-lg leading-relaxed text-paragraph-light dark:text-[#A1A49D]">
+            <div className="rounded-2xl bg-primary-50 dark:bg-dark-200 p-6 md:p-8">
+              <div className="text-center mb-6">
+                <p className="section-tagline">Search Visibility</p>
+                <h2 className="max-w-2xl mx-auto">Structured Data and Search Visibility</h2>
+                <p className="mt-4 text-paragraph dark:text-paragraph-dark max-w-2xl mx-auto">
                         Structured data does not directly increase rankings, but it improves visibility.
                       </p>
-                      <div>
-                        <p className="font-semibold mb-3 text-gray-900 dark:text-white">Schema helps:</p>
-                        <ul className="list-disc list-inside space-y-2 ml-4 text-paragraph-light dark:text-[#A1A49D]">
-                          <li>Search engines understand context</li>
-                          <li>Pages qualify for rich results</li>
-                          <li>Listings earn higher click through rates</li>
+                      </div>
+              
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* Schema Helps Card */}
+                <div className="bg-white dark:bg-dark-100 rounded-medium p-6 shadow-box border border-primary-200 dark:border-primary-800">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-primary dark:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                      </svg>
+                    </div>
+                    <h3 className="text-lg font-semibold">Schema Helps</h3>
+                  </div>
+                  <ul className="space-y-3">
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Search engines understand context
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Pages qualify for rich results
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Listings earn higher click through rates
+                    </li>
                         </ul>
                       </div>
-                      <div className="rounded-medium bg-yellow-50 dark:bg-yellow-900/20 p-6 border border-yellow-200 dark:border-yellow-800">
-                        <p className="font-semibold text-yellow-800 dark:text-yellow-200 text-lg leading-relaxed">
+
+                {/* Warning Card */}
+                <div className="bg-white dark:bg-dark-100 rounded-medium p-6 shadow-box border border-primary-200 dark:border-primary-800">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-primary dark:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                      </svg>
+                    </div>
+                    <h3 className="text-lg font-semibold">Important Warning</h3>
+                  </div>
+                  <div className="rounded-medium bg-primary-50 dark:bg-primary-900/20 p-4 border border-primary-200 dark:border-primary-800">
+                    <p className="font-semibold text-primary dark:text-primary leading-relaxed">
                           Schema must always reflect visible content. Misuse can cause penalties.
                         </p>
                       </div>
-                      <p className="text-lg leading-relaxed text-paragraph-light dark:text-[#A1A49D]">
+                  <p className="mt-4 text-paragraph dark:text-paragraph-dark">
                         As AI driven search features expand, structured content becomes even more important.
                       </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="max-md:col-span-full md:col-span-6 max-md:order-1">
-                <div className="max-w-[550px] ml-auto max-md:ml-0">
-                  <p className="section-tagline mb-3">Search Visibility</p>
-                  <h2 className="mb-6">Structured Data and Search Visibility</h2>
                 </div>
               </div>
             </div>
@@ -544,7 +760,7 @@ const GoogleCoreUpdateContent = () => {
         </section>
 
         {/* Recovery Time Section */}
-        <section className="relative mb-[160px] max-md:mb-25">
+        <section className="relative mb-20 max-md:mb-12">
           <FadeUpAnimation>
             <div className="grid grid-cols-12 gap-8 items-start">
               <div className="max-md:col-span-full md:col-span-6">
@@ -581,85 +797,98 @@ const GoogleCoreUpdateContent = () => {
           </FadeUpAnimation>
         </section>
 
-        {/* FAQ Section */}
-        <section className="relative mb-[160px] max-md:mb-25">
-          <div className="absolute left-1/2 top-1/2 -z-10 flex -translate-x-1/2 -translate-y-1/2 max-md:hidden max-md:flex-col">
-            <div className="rounded-full bg-primary-200/20 blur-[145px] max-1xl:h-[335px] max-1xl:w-[335px] 1xl:h-[442px] 1xl:w-[442px]"></div>
-            <div className="-ml-[170px] rounded-full bg-primary-200/25 blur-[145px] max-1xl:h-[335px] max-1xl:w-[335px] max-md:ml-0 1xl:h-[442px] 1xl:w-[442px]"></div>
-            <div className="-ml-[170px] rounded-full bg-primary-200/20 blur-[145px] max-1xl:h-[335px] max-1xl:w-[335px] max-md:ml-0 1xl:h-[442px] 1xl:w-[442px]"></div>
-          </div>
-
-          <FadeUpAnimation>
-            <div className="mx-auto mb-12 max-w-[830px] text-center">
-              <p className="section-tagline mb-3">Common Questions</p>
-              <h2>Frequently Asked Questions</h2>
-            </div>
-          </FadeUpAnimation>
-
-          <div className="relative z-10 mx-auto max-w-[830px]">
-            <div className="[&>*:not(:last-child)]:mb-5">
-              {faqs.map((faq) => (
-                <FaqItem
-                  key={faq.id}
-                  question={faq.question}
-                  answer={faq.answer}
-                  isOpen={activeFaqIndex === faq.id}
-                  onClick={() => handleFaqClick(faq.id)}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
+       
 
         {/* DaikiMedia Partner Section */}
-        <section className="relative mb-[160px] max-md:mb-25">
+        <section className="relative mb-20 max-md:mb-12">
           <FadeUpAnimation>
-            <div className="grid grid-cols-12">
-              <div className="max-md:col-span-full md:col-span-6">
-                <div className="max-w-[550px]">
+            <div className="rounded-2xl bg-primary-50 dark:bg-dark-200 p-6 md:p-8">
+              <div className="text-center mb-6">
                   <p className="section-tagline">Your Partner</p>
-                  <h2>DaikiMedia as Your Core Update Partner</h2>
-                </div>
-              </div>
-              <div className="max-w-[590px] py-10 max-md:col-span-full md:col-span-6">
-                <p>
+                <h2 className="max-w-2xl mx-auto">DaikiMedia as Your Core Update Partner</h2>
+                <p className="mt-4 text-paragraph dark:text-paragraph-dark max-w-2xl mx-auto">
                   If your website dropped after the December 2025 Core Update, the real question is not: "How do I fix SEO?" It is: "How do I become the result Google wants to recommend?"
                 </p>
-                <br />
-                <p>
+                <p className="mt-4 text-paragraph dark:text-paragraph-dark max-w-2xl mx-auto">
                   At DaikiMedia, we do not chase algorithms. We help businesses build websites that remain relevant as algorithms evolve.
                 </p>
-                <br />
-                <p className="font-semibold mb-2">We work as a strategic partner for brands that want:</p>
-                <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
-                  <li>Long term ranking stability</li>
-                  <li>Content built for decisions, not keywords</li>
-                  <li>SEO aligned with conversion and trust</li>
-                  <li>Protection against future core updates</li>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* Strategic Partner Card */}
+                <div className="bg-white dark:bg-dark-100 rounded-medium p-6 shadow-box border border-primary-200 dark:border-primary-800">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-primary dark:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                    </div>
+                    <h3 className="text-lg font-semibold">Strategic Partner for Brands That Want</h3>
+                  </div>
+                  <ul className="space-y-3">
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Long term ranking stability
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Content built for decisions, not keywords
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      SEO aligned with conversion and trust
+                    </li>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                      Protection against future core updates
+                    </li>
                 </ul>
-                <p className="font-semibold mb-2">DaikiMedia offers Core Update Impact Reviews, where we analyze:</p>
-                <ul className="list-none space-y-2 ml-4 mb-4">
-                  <li className="flex items-start">
-                    <span className="mr-2">☐</span>
-                    <span>What actually changed</span>
+                </div>
+
+                {/* Core Update Impact Reviews Card */}
+                <div className="bg-white dark:bg-dark-100 rounded-medium p-6 shadow-box border border-primary-200 dark:border-primary-800">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-primary-100 dark:bg-primary-900/40 flex items-center justify-center">
+                      <svg className="w-5 h-5 text-primary dark:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                      </svg>
+                    </div>
+                    <h3 className="text-lg font-semibold">Core Update Impact Reviews</h3>
+                  </div>
+                  <ul className="space-y-3">
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <svg className="w-4 h-4 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4" />
+                      </svg>
+                      What actually changed
                   </li>
-                  <li className="flex items-start">
-                    <span className="mr-2">☐</span>
-                    <span>Which pages matter</span>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <svg className="w-4 h-4 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4" />
+                      </svg>
+                      Which pages matter
                   </li>
-                  <li className="flex items-start">
-                    <span className="mr-2">☐</span>
-                    <span>What should be improved, kept, or removed</span>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <svg className="w-4 h-4 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4" />
+                      </svg>
+                      What should be improved, kept, or removed
                   </li>
-                  <li className="flex items-start">
-                    <span className="mr-2">☐</span>
-                    <span>What is safe to ignore</span>
+                    <li className="flex items-center gap-3 text-paragraph dark:text-paragraph-dark">
+                      <svg className="w-4 h-4 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4" />
+                      </svg>
+                      What is safe to ignore
                   </li>
                 </ul>
-                <p className="font-semibold mb-2">
+                </div>
+              </div>
+
+              <div className="mt-6 text-center space-y-4">
+                <p className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary-100 dark:bg-primary-900/20 rounded-full text-primary font-semibold">
                   No panic. No templates. No generic advice.
                 </p>
-                <p>
+                <p className="text-paragraph dark:text-paragraph-dark max-w-2xl mx-auto">
                   If you want to understand what Google is really evaluating on your website, DaikiMedia is your partner.
                 </p>
               </div>
@@ -757,6 +986,35 @@ const GoogleCoreUpdateContent = () => {
                 </ul>
               </div>
             </FadeUpAnimation>
+          </div>
+        </section>
+         {/* FAQ Section */}
+         <section className="relative mb-20 max-md:mb-12">
+          <div className="absolute left-1/2 top-1/2 -z-10 flex -translate-x-1/2 -translate-y-1/2 max-md:hidden max-md:flex-col">
+            <div className="rounded-full bg-primary-200/20 blur-[145px] max-1xl:h-[335px] max-1xl:w-[335px] 1xl:h-[442px] 1xl:w-[442px]"></div>
+            <div className="-ml-[170px] rounded-full bg-primary-200/25 blur-[145px] max-1xl:h-[335px] max-1xl:w-[335px] max-md:ml-0 1xl:h-[442px] 1xl:w-[442px]"></div>
+            <div className="-ml-[170px] rounded-full bg-primary-200/20 blur-[145px] max-1xl:h-[335px] max-1xl:w-[335px] max-md:ml-0 1xl:h-[442px] 1xl:w-[442px]"></div>
+          </div>
+
+          <FadeUpAnimation>
+            <div className="mx-auto mb-12 max-w-[830px] text-center">
+              <p className="section-tagline mb-3">Common Questions</p>
+              <h2>Frequently Asked Questions</h2>
+            </div>
+          </FadeUpAnimation>
+
+          <div className="relative z-10 mx-auto max-w-[830px]">
+            <div className="[&>*:not(:last-child)]:mb-5">
+              {faqs.map((faq) => (
+                <FaqItem
+                  key={faq.id}
+                  question={faq.question}
+                  answer={faq.answer}
+                  isOpen={activeFaqIndex === faq.id}
+                  onClick={() => handleFaqClick(faq.id)}
+                />
+              ))}
+            </div>
           </div>
         </section>
       </div>

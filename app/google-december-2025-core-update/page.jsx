@@ -33,7 +33,6 @@ const GoogleCoreUpdatePage = () => {
           paragraph="Google's December 2025 Core Update is not a penalty and it is not a warning. It is a recalibration of how Google evaluates usefulness, trust, and relevance across the entire web."
         />
         <GoogleCoreUpdateContent />
-        <MembersCounter />
         <CallToAction title="Ready to Build a Website That Survives Core Updates?" />
         <NewsLetter />
       </main>
