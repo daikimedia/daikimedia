@@ -8,6 +8,8 @@ const Pricing = ({
   showPricingText = true,
   largeTitle = false,
   pricingDescription = false,
+  heading = "Choose the right plan for your business",
+  pricingData = null,
 }) => {
   // const [isAnnual, setIsAnnual] = useState(false);
   return (
@@ -24,9 +26,9 @@ const Pricing = ({
           <div className={cn(showPricingText ? "" : "hidden")}>
             <p className="section-tagline">Our Pricing</p>
             {largeTitle ? (
-              <h1>Choose the right plan for your business</h1>
+              <h1>{heading}</h1>
             ) : (
-              <h2>Choose the right plan for your business</h2>
+              <h2>{heading}</h2>
             )}
             {pricingDescription ? (
               <p className="mb-12 mt-10">
@@ -69,7 +71,7 @@ const Pricing = ({
           </div> */}
         </div>
         {/* Pricing Cards */}
-        <PricingCards isAnnual={true} version={false} />
+        <PricingCards isAnnual={true} version={false} customPricingData={pricingData} />
       </div>
     </section>
   );

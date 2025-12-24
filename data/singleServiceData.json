@@ -63,7 +63,7 @@
       "infoStatsSection": {
         "image": "",
         "title": "Proven SEO Results Across Industries",
-        "description": "At Daiki Media, our strategies are built on performance metrics that matter. With a 91% client retention rate—nearly double the industry standard—and 93% client satisfaction, we’re the SEO partner that businesses trust.",
+        "description": "At Daiki Media, our strategies are built on performance metrics that matter. With a 91% client retention rate—nearly double the industry standard—and 93% client satisfaction, we're the SEO partner that businesses trust.",
         "notableStats": [
           "58 SEO excellence awards in 2024 alone",
           "10% average traffic increase powered by AI insights",
@@ -71,6 +71,103 @@
         ],
         "ctaButton": "Request a Personalized SEO Strategy Now",
         "link": ""
+      },
+      "clientsSection": {
+        "title": "Why Leading Brands Trust DaikiMedia",
+        "description": "Trusted by thousands of companies across 50+ countries"
+      },
+      "servicesSection": {
+        "title": "Trusted by Innovative Businesses Worldwide",
+        "description": "Transform your digital presence with our comprehensive suite of services, trusted by industry leaders worldwide for delivering measurable results and sustainable growth."
+      },
+      "membersCounterSection": {
+        "title": "10+ Years of Digital Excellence Proven SEO Results Across Industries",
+        "metrics": [
+          {
+            "number": 98,
+            "suffix": "%",
+            "label": "Satisfaction Rate"
+          },
+          {
+            "number": 464,
+            "suffix": "+",
+            "label": "Successful Digital Projects"
+          }
+        ]
+      },
+      "pricingSection": {
+        "heading": "SEO Pricing Plans Designed for Growth",
+        "pricingData": [
+          {
+            "id": 1,
+            "featured": false,
+            "title": "Basic SEO Plan",
+            "desc": "Ideal for startups or small businesses looking to establish an online presence.",
+            "priceMonthly": "3500",
+            "priceYearly": "3500",
+            "save": "",
+            "priceList": [
+              {
+                "name": "Website with up to 5 pages"
+              },
+              {
+                "name": "Basic SEO setup (meta tags, keywords, sitemap)"
+              },
+              {
+                "name": "Responsive design (desktop & mobile-friendly)"
+              },
+              {
+                "name": "Email and chat support"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "featured": true,
+            "title": "Standard SEO Plan",
+            "desc": "Perfect for growing businesses looking to attract more customers.",
+            "priceMonthly": "5000",
+            "priceYearly": "5000",
+            "save": "",
+            "priceList": [
+              {
+                "name": "Website with up to 10 pages"
+              },
+              {
+                "name": "Advanced SEO optimization (on-page and technical SEO)"
+              },
+              {
+                "name": "Speed and performance optimization"
+              },
+              {
+                "name": "Integration with third-party tools (Google Analytics, CRM)"
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "featured": false,
+            "title": "Premium SEO Plan",
+            "desc": "Tailored for businesses that want a full-service digital transformation.",
+            "priceMonthly": "Custom Pricing",
+            "priceYearly": "Custom Pricing",
+            "save": "",
+            "priceList": [
+              {
+                "name": "Custom website design and development (unlimited pages)"
+              },
+              {
+                "name": "Full-stack SEO (on-page, off-page, local SEO, and content strategy)"
+              },
+              {
+                "name": "E-commerce integration (if needed)"
+              },
+              {
+                "name": "Monthly performance reports"
+              }
+            ]
+          }
+        ]
       },
       "cardsSection": [
         {
@@ -166,6 +263,7 @@
         "ctaButton": "Explore Case Studies and Proven Results",
         "link": "https://api.whatsapp.com/send?phone=601114850067"
       },
+      "faqSectionHeading": "Frequently Asked Questions About SEO Services",
       "faqSection": [
         {
           "id": 1,
@@ -195,7 +293,11 @@
       ],
       "conclusionSection": {
         "title": "Start Growing Your Organic Visibility With DaikiMedia",
-        "description": "Take your search performance to the next level with our proven strategies and expert team. Let’s create a custom plan tailored to your business goals."
+        "description": "Take your search performance to the next level with our proven strategies and expert team. Let's create a custom plan tailored to your business goals."
+      },
+      "newsletterSection": {
+        "heading": "Talk to an SEO Strategist at DaikiMedia",
+        "description": "By partnering with Daiki Media's expert team, we'll transform your digital vision into reality."
       }
     },
     {
@@ -4441,6 +4543,7 @@
         "ctaButton": "Claim Your Free Casino SEO Audit",
         "link": "https://api.whatsapp.com/send?phone=601114850067"
       },
+      "servicesIncludeTitle": "Online Casino SEO Services We Provide",
       "servicesInclude": [
         {
           "id": 1,
@@ -4498,6 +4601,95 @@
           ]
         }
       ],
+      "membersCounterSection": {
+        "title": "10+ Years as a Casino SEO and iGaming Marketing Agency",
+        "metrics": [
+          {
+            "number": 98,
+            "suffix": "%",
+            "label": "Client Satisfaction Rate"
+          },
+          {
+            "number": 500,
+            "suffix": "+",
+            "label": "Successful iGaming and Casino SEO Projects"
+          }
+        ]
+      },
+      "pricingSection": {
+        "heading": "Casino SEO Pricing and Packages",
+        "pricingData": [
+          {
+            "id": 1,
+            "featured": false,
+            "title": "Basic Online Casino SEO Package",
+            "desc": "Ideal for startups or small businesses looking to establish an online presence.",
+            "priceMonthly": "3500",
+            "priceYearly": "3500",
+            "save": "",
+            "priceList": [
+              {
+                "name": "Website with up to 5 pages"
+              },
+              {
+                "name": "Basic SEO setup (meta tags, keywords, sitemap)"
+              },
+              {
+                "name": "Responsive design (desktop & mobile-friendly)"
+              },
+              {
+                "name": "Email and chat support"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "featured": true,
+            "title": "Standard iGaming SEO Package",
+            "desc": "Perfect for growing businesses looking to attract more customers.",
+            "priceMonthly": "5000",
+            "priceYearly": "5000",
+            "save": "",
+            "priceList": [
+              {
+                "name": "Website with up to 10 pages"
+              },
+              {
+                "name": "Advanced SEO optimization (on-page and technical SEO)"
+              },
+              {
+                "name": "Speed and performance optimization"
+              },
+              {
+                "name": "Integration with third-party tools (Google Analytics, CRM)"
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "featured": false,
+            "title": "Custom Casino SEO Retainers and Enterprise Packages",
+            "desc": "Tailored for businesses that want a full-service digital transformation.",
+            "priceMonthly": "Custom Pricing",
+            "priceYearly": "Custom Pricing",
+            "save": "",
+            "priceList": [
+              {
+                "name": "Custom website design and development (unlimited pages)"
+              },
+              {
+                "name": "Full-stack SEO (on-page, off-page, local SEO, and content strategy)"
+              },
+              {
+                "name": "E-commerce integration (if needed)"
+              },
+              {
+                "name": "Monthly performance reports"
+              }
+            ]
+          }
+        ]
+      },
       "infoStatsSection": {
         "title": "Online Casino SEO Results and Case Studies",
         "description": "We’ve helped casinos just like yours climb the rankings and increase player acquisition. Here’s what our clients have achieved:",
@@ -4531,6 +4723,7 @@
           }
         ]
       },
+      "faqSectionHeading": "Casino SEO FAQs",
       "faqSection": [
         {
           "id": 1,
@@ -4548,6 +4741,10 @@
           "answer": "Yes! We specialize in international SEO, helping your casino reach players across different languages and jurisdictions."
         }
       ],
+      "newsletterSection": {
+        "heading": "Book a Free Online Casino SEO Consultation",
+        "description": "By partnering with Daiki Media's expert team, we'll transform your digital vision into reality."
+      },
       "conclusionSection": {
         "title": "Start Your Online Casino SEO Campaign",
         "description": "Want more players? Higher rankings? Better conversions? Our expert casino SEO strategies will get you there. Let’s make it happen!",

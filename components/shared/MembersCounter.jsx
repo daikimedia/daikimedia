@@ -1,6 +1,21 @@
 import CounterAnimation from '@/utils/CounterAnimation'
 
-const MembersCounter = ({ border = true }) => {
+const MembersCounter = ({ 
+  border = true,
+  title = "10+ Years of Digital Excellence",
+  metrics = [
+    {
+      number: 97,
+      suffix: "%",
+      label: "Satisfaction Rate"
+    },
+    {
+      number: 500,
+      suffix: "+",
+      label: "Successful iGaming and Casino SEO Projects"
+    }
+  ]
+}) => {
   return (
     <section>
       <div className="container relative">
@@ -13,39 +28,26 @@ const MembersCounter = ({ border = true }) => {
           <div className="max-lg:col-span-full lg:col-span-6">
             <div className="max-w-[550px]">
               <p className="section-tagline">Numbers</p>
-              <h2>10+ Years as a  SEO and  Marketing Agency</h2>
+              <h2>{title}</h2>
             </div>
           </div>
-          <div className="py-5 max-md:col-span-full md:col-span-6 lg:col-span-3">
-            <div className="flex items-center">
-              <div className="mr-6 h-[110px] w-[110px] rounded-full bg-white p-2.5 shadow-nav dark:bg-dark-200">
-                <div className=" flex h-[90px] w-[90px] items-center justify-center rounded-full border border-dashed border-gray-100 dark:border-borderColor-dark">
-                  <h3 className="text-[28px] leading-none text-primary dark:text-primary">
-                    <span className="counterTrusted text-[28px] leading-none text-primary dark:text-primary">
-                      <CounterAnimation number={97} />
-                    </span>
-                    %
-                  </h3>
+          {metrics.map((metric, index) => (
+            <div key={index} className="py-5 max-md:col-span-full md:col-span-6 lg:col-span-3">
+              <div className="flex items-center">
+                <div className="mr-6 h-[110px] w-[110px] rounded-full bg-white p-2.5 shadow-nav dark:bg-dark-200">
+                  <div className="flex h-[90px] w-[90px] items-center justify-center rounded-full border border-dashed border-gray-100 dark:border-borderColor-dark">
+                    <h3 className="text-[28px] leading-none text-primary dark:text-primary">
+                      <span className="counterTrusted text-[28px] leading-none text-primary dark:text-primary">
+                        <CounterAnimation number={metric.number} />
+                      </span>
+                      {metric.suffix}
+                    </h3>
+                  </div>
                 </div>
+                <h3 className="leading-8">{metric.label}</h3>
               </div>
-              <h3 className="leading-8 ">Satisfaction Rate</h3>
             </div>
-          </div>
-          <div className="py-5 max-md:col-span-full md:col-span-6 lg:col-span-3 ">
-            <div className="flex items-center">
-              <div className="mr-6 h-[110px] w-[110px] rounded-full bg-white p-2.5 shadow-nav dark:bg-dark-200">
-                <div className="flex h-[90px] w-[90px] items-center justify-center rounded-full border border-dashed border-gray-100 dark:border-borderColor-dark">
-                  <h3 className="text-[28px] leading-none text-primary dark:text-primary">
-                    <span className="counterTrusted text-[28px] leading-none text-primary dark:text-primary">
-                      <CounterAnimation number={500} />
-                    </span>
-                    +
-                  </h3>
-                </div>
-              </div>
-              <h3 className="leading-8 ">Successful iGaming and Casino SEO Projects </h3>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

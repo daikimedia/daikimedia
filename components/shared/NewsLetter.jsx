@@ -1,4 +1,7 @@
-const NewsLetter = () => {
+const NewsLetter = ({ 
+  heading = "Start your digital success story now!",
+  description = "By partnering with Daiki Media's expert team, we'll transform your digital vision into reality."
+}) => {
   return (
     <section className="relative pb-25 max-md:overflow-hidden max-md:pb-25">
       <div className="container relative max-md:text-center">
@@ -15,11 +18,10 @@ const NewsLetter = () => {
           <div className="grid-y-10 grid grid-cols-12 items-start">
             <div className="max-md:col-span-full md:col-span-6 lg:col-span-7">
               <h2 className="mb-5 text-[48px] font-semibold max-lg:text-[32px]">
-                Start your digital success story now!
+                {heading}
               </h2>
               <p>
-                By partnering with Daiki Media&apos;s expert team, we&apos;ll transform your digital vision into
-                reality.
+                {description}
               </p>
             </div>
             <div className="max-md:col-span-full max-md:mt-5 md:col-span-6 lg:col-span-5 ">

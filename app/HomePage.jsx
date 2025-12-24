@@ -69,7 +69,10 @@ export default function HomePage() {
         </div>
 
         <RegionalStory />
-        <LazyClients />
+        <LazyClients 
+          title="Best Companies Trust Daiki Media."
+          description="Trusted by thousands of companies across 50+ countries"
+        />
         <Services />
         <MarketsWeServe />
         <WhoWeHelp />

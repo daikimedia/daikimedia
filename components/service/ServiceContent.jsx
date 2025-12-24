@@ -8,6 +8,7 @@ import { AdditionalInfo } from "@/components/service-single/additionalInfo";
 import { ServiceProcess } from "@/components/service-single/serviceProcess";
 import { FaqSection } from "@/components/service-single/faqSection";
 import Clients from "@/components/shared/Clients";
+import Services from "@/components/shared/Services";
 
 const ServiceContent = ({ data = {} }) => {
   return (
@@ -20,17 +21,26 @@ const ServiceContent = ({ data = {} }) => {
           link={data?.heroSection?.link || "#"}
         />
 
-        {data?.servicesInclude && <ServiceInclude data={data.servicesInclude} />}
+        {data?.servicesInclude && <ServiceInclude data={data.servicesInclude} sectionTitle={data?.servicesIncludeTitle || "What Our SEO Services Include"} />}
         {data?.infoStatsSection && <InfoStatsSection data={data.infoStatsSection} />}
 
-        <Clients />
+        <Clients 
+          title={data?.clientsSection?.title}
+          description={data?.clientsSection?.description}
+        />
 
+        {data?.servicesSection && (
+          <Services 
+            title={data.servicesSection.title}
+            description={data.servicesSection.description}
+          />
+        )}
         {data?.cardsSection && <CardsSection data={data.cardsSection} />}
         {data?.ctaSection && <CallToAction data={data.ctaSection} />}
         {data?.comparison && <Comparison data={data.comparison} />}
         {data?.serviceProcess && <ServiceProcess data={data.serviceProcess} />}
         {data?.additionalInfo && <AdditionalInfo data={data.additionalInfo} />}
-        {data?.faqSection && <FaqSection data={data.faqSection} />}
+        {data?.faqSection && <FaqSection data={data.faqSection} heading={data?.faqSectionHeading} />}
 
         {data?.conclusionSection && (
           <section>
