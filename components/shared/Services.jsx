@@ -9,7 +9,14 @@ export const metadata = {
     "Daiki Media, services, digital marketing, analytics, creative solutions, business growth, marketing services, business solutions",
 };
 
-const Services = ({ sectionDetails = true }) => {
+const Services = ({ 
+  sectionDetails = true,
+  title = "The world's innovative businesses\nDaiki Media.",
+  description = "Transform your digital presence with our comprehensive suite of services, trusted by industry leaders worldwide for delivering measurable results and sustainable growth."
+}) => {
+  // Split title by \n to handle line breaks
+  const titleLines = title.split('\n');
+  
   return (
     <section className="relative bg-white pb-150 dark:bg-dark-300 sm:overflow-hidden">
       <div className="absolute left-0 right-0 top-25 h-full w-full bg-[url('/images/service-bg.png')] bg-cover bg-center bg-no-repeat opacity-70 sm:hidden"></div>
@@ -19,12 +26,15 @@ const Services = ({ sectionDetails = true }) => {
             <p className="section-tagline max-lg:text-center">Our Services</p>
             <div className="block max-lg:text-center lg:flex">
               <h2 className=" max-lg:mb-5">
-                The world&rsquo;s innovative businesses
-                <br /> Daiki Media.
+                {titleLines.map((line, index) => (
+                  <span key={index}>
+                    {line}
+                    {index < titleLines.length - 1 && <br />}
+                  </span>
+                ))}
               </h2>
               <p className="max-w-[520px] lg:ml-auto">
-                Transform your digital presence with our comprehensive suite of services, trusted by industry leaders
-                worldwide for delivering measurable results and sustainable growth.
+                {description}
               </p>
             </div>
           </div>

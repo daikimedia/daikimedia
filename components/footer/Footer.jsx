@@ -21,7 +21,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="col-span-12 max-lg:text-center lg:col-span-2">
-            <h3 className="mb-8 text-lg font-medium">SEO Services</h3>
+            <p className="mb-8 text-lg font-medium">SEO Services</p>
             <ul className="[&>*:not(:last-child)]:mb-3">
               {FooterData.expolre.map((items) => (
                 <li key={items.id}>
@@ -36,7 +36,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col-span-12 max-lg:text-center lg:col-span-2">
-            <h3 className="mb-8 text-lg font-medium">Digital Advertising</h3>
+            <p className="mb-8 text-lg font-medium">Digital Advertising</p>
             <ul className="[&>*:not(:last-child)]:mb-3">
               {FooterData.resources.map((items) => (
                 <li key={items.id}>
@@ -51,7 +51,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col-span-12 max-lg:text-center lg:col-span-2">
-            <h3 className="mb-8 text-lg font-medium">Contact Daiki Media</h3>
+            <p className="mb-8 text-lg font-medium">Contact Daiki Media</p>
             <p className="mb-3">
               <Link
                 href={`mailto:${FooterData.email}`}

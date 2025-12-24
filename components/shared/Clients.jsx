@@ -10,6 +10,8 @@ const Clients = ({
   sectionDetails = true,
   border = true,
   className = "pb-[145px] max-lg:py-20 bg-white dark:bg-dark-300 mt-6",
+  title = "Trusted Online Casino SEO Agency in Malaysia",
+  description = "Trusted by thousands of companies across 50+ countries",
 }) => {
   const { ClientData } = ClientList;
   return (
@@ -17,11 +19,11 @@ const Clients = ({
       <div className="container overflow-hidden max-lg:!px-0">
         <div className="mx-auto max-w-[550px] text-center max-lg:px-2.5">
           {sectionTitle && (
-            <h2 className="mb-10">Trusted Online Casino SEO Agency in Malaysia</h2>
+            <h2 className="mb-10">{title}</h2>
           )}
           {sectionDetails && (
             <p className="text-light mb-15">
-              Trusted by thousands of companies across 50+ countries
+              {description}
             </p>
           )}
         </div>

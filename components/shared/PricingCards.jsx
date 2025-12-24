@@ -5,8 +5,9 @@ import PricingCard from "./PricingCard";
 import PricingCardV2 from "./PricingCardV2";
 import { cn } from "@/utils/cn";
 
-const PricingCards = ({ isAnnual, version }) => {
+const PricingCards = ({ isAnnual, version, customPricingData = null }) => {
   const { PricingData } = Pricing;
+  const dataToUse = customPricingData || PricingData;
   return (
     <div className="relative md:z-10">
       <PricingBackground />
@@ -18,13 +19,13 @@ const PricingCards = ({ isAnnual, version }) => {
       >
         {version ? (
           <>
-            {PricingData.map((price) => (
+            {dataToUse.map((price) => (
               <PricingCardV2 price={price} key={price.id} isAnnual={isAnnual} />
             ))}
           </>
         ) : (
           <>
-            {PricingData.map((price) => (
+            {dataToUse.map((price) => (
               <PricingCard price={price} key={price.id} isAnnual={isAnnual} />
             ))}
           </>

@@ -62,9 +62,19 @@ const ServiceDetails = async ({ params }) => {
 
       <main>
         <ServiceContent data={data} />
-        <MembersCounter />
-        <Pricing className={"pt-150 max-md:pt-20"} />
-        <NewsLetter />
+        <MembersCounter 
+          title={data?.membersCounterSection?.title}
+          metrics={data?.membersCounterSection?.metrics}
+        />
+        <Pricing 
+          className={"pt-150 max-md:pt-20"}
+          heading={data?.pricingSection?.heading}
+          pricingData={data?.pricingSection?.pricingData}
+        />
+        <NewsLetter 
+          heading={data?.newsletterSection?.heading}
+          description={data?.newsletterSection?.description}
+        />
       </main>
       <Footer />
     </>
