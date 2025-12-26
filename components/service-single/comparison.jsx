@@ -1,7 +1,11 @@
 import React from "react";
 import { Check, X } from "lucide-react";
 
-export const Comparison = ({ data }) => {
+export const Comparison = ({ data, serviceTitle }) => {
+  // Dynamic bottom section content
+  const bottomSectionTitle = data?.bottomSection?.title || (serviceTitle ? `Dedicated ${serviceTitle} Specialists` : "Why Choose Daiki Media?");
+  const bottomSectionDescription = data?.bottomSection?.description || "With Daiki Media, you get comprehensive, customizable services backed by a team of 500+ experts who are committed to delivering measurable results for your business.";
+
   return (
     <section className="py-16 px-4 mb-[100px]">
       <div className="max-w-7xl mx-auto">
@@ -64,12 +68,10 @@ export const Comparison = ({ data }) => {
           <div className="px-6 py-8 bg-gray-50 dark:bg-gray-800/50 border-t border-gray-200 dark:border-gray-700">
             <div className="max-w-3xl mx-auto text-center">
               <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-gray-100">
-              Dedicated iGaming SEO Specialists
+                {bottomSectionTitle}
               </h3>
               <p className="text-lg text-gray-600 dark:text-gray-300">
-                With Daiki Media, you get comprehensive, customizable services
-                backed by a team of 500+ experts who are committed to delivering
-                measurable results for your business.
+                {bottomSectionDescription}
               </p>
             </div>
           </div>
@@ -122,12 +124,10 @@ export const Comparison = ({ data }) => {
           <div className="px-6 py-8 bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 rounded-xl shadow-lg">
             <div className="text-center">
               <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-gray-100">
-                Why Choose Us?
+                {bottomSectionTitle}
               </h3>
               <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
-                With Daiki Media, you get comprehensive, customizable services
-                backed by a team of 500+ experts who are committed to delivering
-                measurable results for your business.
+                {bottomSectionDescription}
               </p>
             </div>
           </div>

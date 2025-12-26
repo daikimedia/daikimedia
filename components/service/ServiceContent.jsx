@@ -21,7 +21,7 @@ const ServiceContent = ({ data = {} }) => {
           link={data?.heroSection?.link || "#"}
         />
 
-        {data?.servicesInclude && <ServiceInclude data={data.servicesInclude} sectionTitle={data?.servicesIncludeTitle || "What Our SEO Services Include"} />}
+        {data?.servicesInclude && <ServiceInclude data={data.servicesInclude} sectionTitle={data?.servicesIncludeTitle || `What Our ${data?.title || "Services"} Include`} />}
         {data?.infoStatsSection && <InfoStatsSection data={data.infoStatsSection} />}
 
         <Clients 
@@ -37,7 +37,17 @@ const ServiceContent = ({ data = {} }) => {
         )}
         {data?.cardsSection && <CardsSection data={data.cardsSection} />}
         {data?.ctaSection && <CallToAction data={data.ctaSection} />}
-        {data?.comparison && <Comparison data={data.comparison} />}
+        {data?.comparison && (
+          <Comparison 
+            data={{
+              ...data.comparison,
+              title: data.comparison.title === "How DaikiMedia SEO Compares to Other Agencies" 
+                ? `How DaikiMedia ${data?.title || "Services"} Compares to Other Agencies`
+                : data.comparison.title
+            }}
+            serviceTitle={data?.title}
+          />
+        )}
         {data?.serviceProcess && <ServiceProcess data={data.serviceProcess} />}
         {data?.additionalInfo && <AdditionalInfo data={data.additionalInfo} />}
         {data?.faqSection && <FaqSection data={data.faqSection} heading={data?.faqSectionHeading} />}
