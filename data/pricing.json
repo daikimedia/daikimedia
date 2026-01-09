@@ -3,7 +3,7 @@
     {
       "id": 1,
       "featured": false,
-      "title": "Basic",
+      "title": "Basic Plan",
       "desc": "Ideal for startups or small businesses looking to establish an online presence.",
       "priceMonthly": "3500",
       "priceYearly": "3500",
@@ -51,8 +51,8 @@
       "featured": false,
       "title": "Premium Plan",
       "desc": "Tailored for businesses that want a full-service digital transformation.",
-      "priceMonthly": "Custom Pricing",
-      "priceYearly": "Custom Pricing",
+      "priceMonthly": "Custom Pricing & Enterprise Accounts",
+      "priceYearly": "Custom Pricing & Enterprise Accounts",
       "save": "",
       "priceList": [
         {

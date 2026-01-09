@@ -13,20 +13,24 @@ const PricingCards = ({ isAnnual, version, customPricingData = null }) => {
       <PricingBackground />
       <div
         className={cn(
-          "relative flex items-center gap-8 max-lg:flex-col max-md:z-10",
+          "relative flex items-stretch gap-8 max-lg:flex-col max-md:z-10",
           version ? "pb-12" : ""
         )}
       >
         {version ? (
           <>
             {dataToUse.map((price) => (
-              <PricingCardV2 price={price} key={price.id} isAnnual={isAnnual} />
+              <div key={price.id} className="flex-1 flex flex-col">
+                <PricingCardV2 price={price} isAnnual={isAnnual} />
+              </div>
             ))}
           </>
         ) : (
           <>
             {dataToUse.map((price) => (
-              <PricingCard price={price} key={price.id} isAnnual={isAnnual} />
+              <div key={price.id} className="flex-1 flex flex-col">
+                <PricingCard price={price} isAnnual={isAnnual} />
+              </div>
             ))}
           </>
         )}

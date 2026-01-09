@@ -26,7 +26,7 @@ const PricingV2 = ({
           <div className={cn(showPricingText ? '' : 'hidden')}>
             <p className="section-tagline">Customizable pricing</p>
             {largeTitle ? (
-              <h1>Choose the right plan for your business</h1>
+              <h1>Pricing Plans</h1>
             ) : (
               <h2>Adaptable pricing, outstanding value.</h2>
             )}

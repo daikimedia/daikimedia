@@ -11,7 +11,7 @@ export const metadata = {
 
 const Services = ({ 
   sectionDetails = true,
-  title = "The world's innovative businesses\nDaiki Media.",
+  title = "Why Businesses Choose Daiki Media",
   description = "Transform your digital presence with our comprehensive suite of services, trusted by industry leaders worldwide for delivering measurable results and sustainable growth."
 }) => {
   // Split title by \n to handle line breaks

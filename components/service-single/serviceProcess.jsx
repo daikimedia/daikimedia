@@ -21,14 +21,14 @@ export const StepsData = [
   },
 ];
 
-export const ServiceProcess = ({ data }) => {
+export const ServiceProcess = ({ data, title }) => {
   return (
     <section className="relative bg-white pb-100 dark:bg-dark-300 max-md:overflow-hidden max-md:pb-25">
       <div className="absolute left-0 right-0 top-25 h-full w-full bg-[url('/images/core-gradient.png')] bg-[length:600px_1000px] bg-center bg-no-repeat opacity-70 md:hidden"></div>
       <div className="container ">
         <div className="mx-auto mb-12  text-center">
           <p className="section-tagline">How it works</p>
-          <h2 className="mb-8">Our SEO Process From Strategy to Growth</h2>
+          <h2 className="mb-8">{title || "Our SEO Process From Strategy to Growth"}</h2>
           <p>
             Armed with concepts, we carefully design and refine every detail to
             align with your vision and goals.

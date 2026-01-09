@@ -48,7 +48,7 @@ const ServiceContent = ({ data = {} }) => {
             serviceTitle={data?.title}
           />
         )}
-        {data?.serviceProcess && <ServiceProcess data={data.serviceProcess} />}
+        {data?.serviceProcess && <ServiceProcess data={data.serviceProcess} title={data?.serviceProcessTitle} />}
         {data?.additionalInfo && <AdditionalInfo data={data.additionalInfo} />}
         {data?.faqSection && <FaqSection data={data.faqSection} heading={data?.faqSectionHeading} />}
 
