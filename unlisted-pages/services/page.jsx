@@ -13,7 +13,7 @@ export default function ServicePage() {
       <main>
         <PageHero
           subtitle="OUR SERVICES"
-          title="The world's innovative businesses trust <br> Daiki Media. "
+          title="Why Businesses Choose Daiki Media"
           paragraph="Partner with a digital agency that combines creative innovation with technical expertise to drive your business forward."
         />
         <Services sectionDetails={false} />

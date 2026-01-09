@@ -23,8 +23,7 @@ const PricingFeature = () => {
           <div className="">
             <p className="mb-4 font-medium uppercase">OUR PRICING</p>
             <h2 className="mb-10 max-lg:mb-10">
-              Choose the right plan for <br />
-              your business
+              Pricing Plans
             </h2>
             <p className="mx-auto mb-12 max-w-[590px] max-lg:mb-10">
               Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It&rsquo;s not Latin,

@@ -81,12 +81,12 @@
         "description": "Transform your digital presence with our comprehensive suite of services, trusted by industry leaders worldwide for delivering measurable results and sustainable growth."
       },
       "membersCounterSection": {
-        "title": "10+ Years of Digital Excellence Proven SEO Results Across Industries",
+        "title": "10+ Years of Digital Experience Proven SEO Results Across Industries",
         "metrics": [
           {
             "number": 98,
             "suffix": "%",
-            "label": "Satisfaction Rate"
+            "label": "Client Satisfaction Rate (Detail)"
           },
           {
             "number": 464,
@@ -149,8 +149,8 @@
             "featured": false,
             "title": "Premium SEO Plan",
             "desc": "Tailored for businesses that want a full-service digital transformation.",
-            "priceMonthly": "Custom Pricing",
-            "priceYearly": "Custom Pricing",
+            "priceMonthly": "Custom Pricing & Enterprise Accounts",
+            "priceYearly": "Custom Pricing & Enterprise Accounts",
             "save": "",
             "priceList": [
               {
@@ -263,7 +263,7 @@
         "ctaButton": "Explore Case Studies and Proven Results",
         "link": "https://api.whatsapp.com/send?phone=601114850067"
       },
-      "faqSectionHeading": "Frequently Asked Questions About SEO Services",
+      "faqSectionHeading": "Digital Marketing FAQs",
       "faqSection": [
         {
           "id": 1,
@@ -523,51 +523,52 @@
       "subTitle": "Daiki Media Digital Marketing",
       "canonicalUrl": "https://www.daikimedia.com/digital-marketing-services",
       "heroSection": {
-        "title": "Empower Your Digital Growth with Data-Driven Marketing",
+        "title": "Digital Marketing Services in Malaysia for Scalable Business Growth",
         "description": "Daiki Media leverages cutting-edge tools and expert strategies to transform your marketing efforts into measurable success.",
         "ctaButton": "Get Your Free Strategy Call",
         "link": "https://api.whatsapp.com/send?phone=601114850067"
       },
+      "servicesIncludeTitle": "Our Full-Suite Digital Marketing Services",
       "servicesInclude": [
         {
           "id": 1,
-          "title": "Smarter Decision-Making Tools",
+          "title": "Data-Driven Strategy & Decision Tools",
           "description": "Track ROI, cost-per-lead, and channel performance with precision. Forecast returns and allocate budgets more effectively using data-driven insights."
         },
         {
           "id": 2,
-          "title": "Collaborative Campaign Management",
+          "title": "Collaborative Campaign Management & Execution",
           "description": "Stay updated on campaign progress with regular insights, strategies, and communication from your dedicated team at Daiki Media."
         },
         {
           "id": 3,
-          "title": "Competitor Strategy Insights",
+          "title": "Competitor & Market Insights",
           "description": "Benchmark against competitors and discover growth opportunities with detailed cross-channel strategy analysis."
         },
         {
           "id": 4,
-          "title": "Research-Driven Content Planning",
+          "title": "Research-Led Content & Growth Planning",
           "description": "Access quarterly content strategies based on in-depth research and performance analytics, ensuring every piece drives results."
         },
         {
           "id": 5,
-          "title": "Transparent Pricing Models",
+          "title": "Transparent & Flexible Pricing",
           "description": "Enjoy customized plans starting at $3,000/month, tailored to your industry and goals, with full-service digital support."
         },
         {
           "id": 6,
-          "title": "ROI Tracking & Analytics",
+          "title": "ROI Tracking, Analytics & Reporting",
           "description": "Gain actionable insights from comprehensive ROI tracking, bridging marketing and sales data for unified reporting and strategy refinement."
         },
         {
           "id": 7,
-          "title": "Scalable Digital Solutions",
+          "title": "Scalable Growth Solutions",
           "description": "Whether expanding a strategy or launching a new initiative, we ensure your marketing evolves with your business."
         }
       ],
       "infoStatsSection": {
         "image": "",
-        "title": "Unleashing the Power of Data-Driven Marketing",
+        "title": "Why Data-Driven Marketing Delivers Better Results",
         "description": "At Daiki Media, data is the cornerstone of every strategy. Our tools and analytics empower you to make smarter decisions and achieve outstanding results. From ROI tracking to content performance insights, we ensure your digital marketing efforts are always aligned with your business goals.",
         "notableStats": [
           "20%+ Average ROI Improvement across all marketing channels",
@@ -579,41 +580,41 @@
       },
       "cardsSection": [
         {
-          "title": "Smarter Analytics",
+          "title": "Advanced Marketing Analytics & Insights",
           "description": "Optimize your marketing spend with precise ROI and performance tracking."
         },
         {
-          "title": "Custom Strategies",
+          "title": "Custom Digital Marketing Strategies",
           "description": "Tailored digital marketing plans designed to meet your unique objectives."
         },
         {
-          "title": "Expert Insights",
+          "title": "Specialists Across SEO, PPC & Social",
           "description": "500+ strategists delivering actionable advice for maximum impact."
         },
         {
-          "title": "Integrated Tools",
+          "title": "Integrated Tools for Tracking & Attribution",
           "description": "From CRM access to full-funnel tracking, unify your marketing data."
         },
         {
-          "title": "Competitor Benchmarking",
+          "title": "Cross-Channel Competitor Benchmarking",
           "description": "Stay ahead of the curve with cross-channel performance analysis."
         },
         {
-          "title": "Scalable Growth",
+          "title": "Scalable Growth & Expansion",
           "description": "Grow your campaigns seamlessly with strategies built for scale."
         }
       ],
       "ctaSection": {
-        "title": "Let’s Transform Your Digital Marketing Together",
+        "title": "Ready to Grow Your Online Presence?",
         "description": "Achieve measurable growth and outperform competitors with Daiki Media’s expertise.",
         "ctaButton": "Get a Free Marketing Assessment",
         "link": "https://api.whatsapp.com/send?phone=601114850067"
       },
       "comparison": {
-        "title": "How DaikiMedia SEO Compares to Other Agencies",
+        "title": "Digital Marketing Agency Comparison",
         "rows": [
           {
-            "feature": "ROI Improvement",
+            "feature": "Average ROI Improvement",
             "daikiMedia": "20%+ average across channels",
             "competitors": "Limited or unclear impact"
           },
@@ -623,46 +624,50 @@
             "competitors": "Limited data resources"
           },
           {
-            "feature": "Pricing Transparency",
+            "feature": "Transparent Pricing",
             "daikiMedia": "Tailored and upfront",
             "competitors": "Often hidden costs"
           },
           {
-            "feature": "Comprehensive Services",
+            "feature": "Full-Service Capabilities",
             "daikiMedia": "Full-service agency",
             "competitors": "Limited specialization"
           },
           {
-            "feature": "Expert Team",
+            "feature": "Expert Team & Support",
             "daikiMedia": "500+ strategists and specialists",
             "competitors": "Smaller or less experienced teams"
           }
-        ]
+        ],
+        "bottomSection": {
+          "title": "Dedicated Digital Marketing Specialists"
+        }
       },
+      "serviceProcessTitle": "Our Digital Marketing Process",
       "serviceProcess": [
         {
-          "title": "Initial Consultation",
+          "title": "Discovery & Consultation",
           "desc": "Understand your business goals and marketing challenges."
         },
         {
-          "title": "Custom Strategy Development",
+          "title": "Strategy & Channel Planning",
           "desc": "Build a tailored plan based on data and industry expertise."
         },
         {
-          "title": "Implementation",
+          "title": "Campaign Launch & Execution",
           "desc": "Execute strategies with expert oversight and advanced tools."
         },
         {
-          "title": "Performance Monitoring",
+          "title": "Performance Monitoring & Optimization",
           "desc": "Track results through comprehensive analytics."
         },
         {
-          "title": "Continuous Optimization",
+          "title": "Continuous Improvement & Scaling",
           "desc": "Refine strategies for ongoing growth and ROI improvements."
         }
       ],
       "additionalInfo": {
-        "title": "Why Daiki Media Stands Out in Digital Marketing",
+        "title": "What Makes Daiki Media Different",
         "description": "With nearly three decades of experience and expertise across 200 industries, Daiki Media ensures your business thrives in the digital space. From launching new products to gaining market share, we focus on delivering results aligned with your goals.",
         "ctaButton": "See How We Can Help",
         "link": "https://api.whatsapp.com/send?phone=601114850067"
@@ -694,9 +699,14 @@
           "answer": "Detailed performance metrics, revenue insights, and industry trend analyses."
         }
       ],
+      "faqSectionHeading": "Digital Marketing FAQs",
+      "clientsSection": {
+        "title": "Trusted by Global & Regional Brands",
+        "description": "Trusted by thousands of companies across 50+ countries"
+      },
       "conclusionSection": {
-        "title": "Your Success Starts Here",
-        "description": "Partner with Daiki Media to unlock the full potential of your digital marketing. With innovative tools, expert strategies, and a client-first approach, we’re committed to driving results that matter.",
+        "title": "Start Your Growth Journey",
+        "description": "Partner with Daiki Media to unlock the full potential of your digital marketing. With innovative tools, expert strategies, and a client-first approach, we're committed to driving results that matter.",
         "ctaButton": "Schedule a Free Consultation"
       }
     },
@@ -1451,46 +1461,47 @@
       "subTitle": "Transform Every Click into a Valuable Conversion",
       "canonicalUrl": "https://www.daikimedia.com/ppc-management",
       "heroSection": {
-        "title": "Achieve Exceptional ROI with Expert-Managed PPC Services",
+        "title": "PPC Management Services in Malaysia That Drive Conversions",
         "description": "Transform every click into a valuable conversion with strategic, industry-leading pay-per-click campaigns designed to maximize your business's online growth.",
         "ctaButton": "Get Your Free Strategy Proposal Today!",
         "link": "https://api.whatsapp.com/send?phone=601114850067"
       },
+      "servicesIncludeTitle": "What Our PPC & Google Ads Services Include",
       "servicesInclude": [
         {
           "id": 1,
-          "title": "Dedicated Account Managers",
+          "title": "Dedicated PPC Account Managers",
           "description": "Our seasoned account managers deliver a tailored approach, giving your campaigns the personal attention they need to achieve and exceed your business objectives. We act as an extension of your team, working closely to drive optimal performance and ROI."
         },
         {
           "id": 2,
-          "title": "In-Depth PPC Audits",
+          "title": "Comprehensive PPC Audits",
           "description": "We conduct comprehensive audits of your current campaigns, evaluating everything from competitor ads to bid strategies, landing pages, and tracking systems. This detailed analysis ensures your campaigns are optimized for success."
         },
         {
           "id": 3,
-          "title": "Custom Strategies",
+          "title": "Custom PPC & Paid Search Strategies",
           "description": "Each business has unique goals. Our custom PPC strategies are designed to align perfectly with your objectives, maximizing every dollar spent and driving targeted, high-converting traffic to your website."
         },
         {
           "id": 4,
-          "title": "Powerful Technology",
+          "title": "Automation, Bidding & Ad Tech",
           "description": "Harness the power of cutting-edge automation and technology to streamline campaign management. With our advanced tools, we optimize your PPC campaigns for superior performance, saving you time while driving impactful results."
         },
         {
           "id": 5,
-          "title": "Comprehensive Reporting",
+          "title": "Reporting, Analytics & Attribution",
           "description": "Stay fully informed with transparent, easy-to-understand reports that provide actionable insights into your campaign's performance. We ensure you're always in the loop, with data-driven feedback for continuous improvement."
         },
         {
           "id": 6,
-          "title": "Award-Winning Results",
+          "title": "Proven Results Across Industries",
           "description": "Daiki Media’s expertise in PPC management has generated over $10 billion in revenue for our clients. Our high retention rates and proven track record make us a trusted partner for businesses aiming for long-term growth and success."
         }
       ],
       "infoStatsSection": {
         "image": "",
-        "title": "Unmatched Success with Daiki Media’s PPC Expertise",
+        "title": "Why Our PPC Management Delivers Higher ROI",
         "description": "At Daiki Media, we manage an impressive $120 million in annual ad spend, delivering Online Casino SEO Results and Case Studies. Our client satisfaction score stands at an industry-leading 93%, far surpassing the industry average of 72%. With a client retention rate of 91%, compared to the industry average of 50%, businesses trust Daiki Media to drive sustained growth and optimize their pay-per-click strategies for exceptional ROI. Our data-driven approach ensures each campaign is crafted with precision, allowing us to consistently outperform competitors and provide our clients with a measurable, positive impact on their bottom line.",
         "notableStats": [
           "We manage $120 million in annual ad spend.",
@@ -1503,41 +1514,41 @@
       },
       "cardsSection": [
         {
-          "title": "PPC Audit",
+          "title": "PPC Audit & Opportunity Review",
           "description": "A thorough audit helps identify strengths, weaknesses, and opportunities for improvement in your campaigns, providing a clear path to greater performance."
         },
         {
-          "title": "Bid Optimization",
+          "title": "Bid Optimization & Budget Control",
           "description": "Maximize the effectiveness of your ad spend with advanced bid strategies that ensure you get the best value for every dollar spent."
         },
         {
-          "title": "Competitor Analysis",
+          "title": "Competitor & Market Analysis",
           "description": "Gain an edge over competitors by leveraging insights from their PPC campaigns. Stay ahead by adapting and optimizing your own strategies based on real-time data."
         },
         {
-          "title": "Custom Ad Design",
+          "title": "Ad Copy, Creative & Extensions",
           "description": "Our creative team crafts compelling ad designs tailored to your brand, ensuring they resonate with your audience and drive conversions."
         },
         {
-          "title": "Landing Page Optimization",
+          "title": "Landing Page Conversion Optimization",
           "description": "Boost your conversion rates with landing pages that are meticulously optimized for your PPC campaigns. We ensure each page is designed to convert visitors into customers."
         },
         {
-          "title": "Real-Time Analytics",
+          "title": "Real-Time Performance Tracking",
           "description": "Track your campaign’s success with accurate, real-time analytics that provide valuable insights into your performance, empowering you to make informed decisions."
         }
       ],
       "ctaSection": {
-        "title": "Maximize Your ROI with Tailored PPC Solutions",
+        "title": "Tailored PPC Campaigns to Maximize ROI",
         "description": "Join the 500+ businesses experiencing unmatched success through our expertly managed PPC campaigns. Let Daiki Media help you drive measurable results, increase conversions, and grow revenue today!",
         "ctaButton": "Request Your Free Proposal Now",
         "link": "https://api.whatsapp.com/send?phone=601114850067"
       },
       "comparison": {
-        "title": "How DaikiMedia SEO Compares to Other Agencies",
+        "title": "PPC Agency Comparison",
         "rows": [
           {
-            "feature": "ROI-Focused Campaigns",
+            "feature": "ROI-Focused Campaign Strategy",
             "daikiMedia": "Customized for growth",
             "competitors": "One-size-fits-all strategies"
           },
@@ -1547,32 +1558,36 @@
             "competitors": "50% (industry average)"
           },
           {
-            "feature": "Satisfaction Score",
+            "feature": "Client Satisfaction Score",
             "daikiMedia": "93%",
             "competitors": "72% (industry average)"
           },
           {
-            "feature": "Award-Winning Technology",
+            "feature": "Technology & Automation Stack",
             "daikiMedia": "Industry-leading platforms",
             "competitors": "Basic tools"
           }
-        ]
+        ],
+        "bottomSection": {
+          "title": "Dedicated PPC Specialists"
+        }
       },
+      "serviceProcessTitle": "Our PPC Management Process",
       "serviceProcess": [
         {
-          "title": "Consultation",
+          "title": "Discovery & Consultation",
           "desc": "Your journey starts with a discussion about your goals and challenges with our PPC experts. We aim to understand your business and define clear objectives."
         },
         {
-          "title": "Audit & Strategy",
+          "title": "Audit, Research & Strategy",
           "desc": "We conduct an in-depth audit of your existing PPC efforts and craft a customized strategy that aligns with your goals, ensuring every decision is backed by data."
         },
         {
-          "title": "Campaign Launch",
+          "title": "Campaign Setup & Launch",
           "desc": "Our team designs, launches, and monitors your PPC campaigns, ensuring they are optimized for maximum performance from day one."
         },
         {
-          "title": "Optimization",
+          "title": "Ongoing Optimization & Scaling",
           "desc": "Through continuous A/B testing and bid adjustments, we fine-tune your campaigns to ensure they continue to deliver high performance."
         }
       ],
@@ -1604,8 +1619,28 @@
           "answer": "Daiki Media’s PPC services stand out due to our data-driven approach, customized strategies, and industry-leading technology. We focus on delivering measurable results and maximizing ROI for every client."
         }
       ],
+      "faqSectionHeading": "PPC Management FAQs",
+      "clientsSection": {
+        "title": "Trusted PPC Partner for Leading Brands",
+        "description": "Trusted by thousands of companies across 50+ countries"
+      },
+      "membersCounterSection": {
+        "title": "10+ Years in Paid Media & PPC",
+        "metrics": [
+          {
+            "number": 98,
+            "suffix": "%",
+            "label": "Client Satisfaction Rate (Detail)"
+          },
+          {
+            "number": 500,
+            "suffix": "+",
+            "label": "Successful iGaming & Casino PPC Campaigns"
+          }
+        ]
+      },
       "conclusionSection": {
-        "title": "Achieve PPC Success with Daiki Media",
+        "title": "Get a Free PPC Proposal",
         "description": "Let us help you transform your PPC campaigns and drive meaningful results for your business. Our tailored approach ensures that every dollar you invest delivers the best possible return."
       }
     },
@@ -1740,7 +1775,7 @@
           "desc": "Our team designs and launches PPC campaigns aligned with your objectives, ensuring every campaign is optimized for performance."
         },
         {
-          "title": "Optimization",
+          "title": "Ongoing Optimization & Scaling",
           "desc": "We continuously optimize campaigns to ensure maximum performance and ROI, making adjustments based on real-time analytics."
         },
         {
@@ -1749,7 +1784,7 @@
         }
       ],
       "additionalInfo": {
-        "title": "Maximize Your PPC Success with Daiki Media",
+        "title": "Why Choose Daiki Media for PPC",
         "description": "Ready to scale your business with expertly managed PPC campaigns? Daiki Media’s customized approach and powerful technology ensure your campaigns perform at the highest level, driving measurable results and increasing your ROI.",
         "ctaButton": "Contact Us to Get Started",
         "link": "https://api.whatsapp.com/send?phone=601114850067"
@@ -4612,7 +4647,7 @@
           {
             "number": 500,
             "suffix": "+",
-            "label": "Successful iGaming and Casino SEO Projects"
+            "label": "iGaming & Casino Marketing Projects"
           }
         ]
       },
@@ -4670,8 +4705,8 @@
             "featured": false,
             "title": "Custom Casino SEO Retainers and Enterprise Packages",
             "desc": "Tailored for businesses that want a full-service digital transformation.",
-            "priceMonthly": "Custom Pricing",
-            "priceYearly": "Custom Pricing",
+            "priceMonthly": "Custom Pricing & Enterprise Accounts",
+            "priceYearly": "Custom Pricing & Enterprise Accounts",
             "save": "",
             "priceList": [
               {

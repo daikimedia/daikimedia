@@ -16,8 +16,7 @@ export const CardsSection = ({ data }) => {
           <p className="section-tagline max-lg:text-center">Our Services</p>
           <div className="block max-lg:text-center lg:flex">
             <h2 className=" max-lg:mb-5">
-              The world&rsquo;s innovative businesses
-              <br /> Daiki Media.
+              Why Businesses Choose Daiki Media
             </h2>
             <p className="max-w-[520px] lg:ml-auto">
               Transform your digital presence with our comprehensive suite of

@@ -1,5 +1,5 @@
 const NewsLetter = ({ 
-  heading = "Start your digital success story now!",
+  heading = "Request a Free Marketing Assessment",
   description = "By partnering with Daiki Media's expert team, we'll transform your digital vision into reality."
 }) => {
   return (

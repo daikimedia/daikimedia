@@ -2,17 +2,17 @@ import CounterAnimation from '@/utils/CounterAnimation'
 
 const MembersCounter = ({ 
   border = true,
-  title = "10+ Years of Digital Excellence",
+  title = "10+ Years of Digital Marketing Experience",
   metrics = [
     {
       number: 97,
       suffix: "%",
-      label: "Satisfaction Rate"
+      label: "Client Satisfaction Rate (Detail)"
     },
     {
       number: 500,
       suffix: "+",
-      label: "Successful iGaming and Casino SEO Projects"
+      label: "iGaming & Casino Marketing Projects"
     }
   ]
 }) => {

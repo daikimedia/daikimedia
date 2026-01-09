@@ -4,11 +4,11 @@ import Link from "next/link";
 
 const PricingCard = ({ price, isAnnual }) => {
   return (
-    <div>
-      <div className="rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200">
+    <div className="h-full flex flex-col">
+      <div className="rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200 flex-1 flex flex-col">
         <div
           className={cn(
-            "rounded border border-dashed border-gray-100 p-8 dark:border-borderColor-dark",
+            "rounded border border-dashed border-gray-100 p-8 dark:border-borderColor-dark flex-1 flex flex-col",
             price.featured && "lg:px-8 lg:pb-15 lg:pt-3"
           )}
         >
@@ -25,9 +25,9 @@ const PricingCard = ({ price, isAnnual }) => {
             <div className="price-month mb-16">
               <h2>
                 <span>
-                  {price.priceMonthly === "Custom Pricing"
-                    ? "Custom Pricing"
-                    : `RM ${price.priceMonthly}`}
+                  {price.priceMonthly === "Custom Pricing" || price.priceMonthly === "Custom Pricing & Enterprise Options" || price.priceMonthly === "Custom Pricing & Enterprise Accounts"
+                    ? price.priceMonthly
+                    : `RM ${price.priceMonthly}/month`}
                 </span>
               </h2>
             </div>
@@ -35,15 +35,15 @@ const PricingCard = ({ price, isAnnual }) => {
             <div className="price-year mb-16">
               <h2>
                 <span>
-                  {price.yearly === "Custom Pricing"
-                    ? "Custom Pricing"
-                    : `RM ${price.yearly}`}
+                  {price.yearly === "Custom Pricing" || price.yearly === "Custom Pricing & Enterprise Options" || price.yearly === "Custom Pricing & Enterprise Accounts"
+                    ? price.yearly
+                    : `RM ${price.yearly}/month`}
                 </span>
               </h2>
             </div>
           )}
 
-          <ul className=" after:bg-[url(/images/banking/border.svg')] relative after:absolute after:-top-12 after:h-0.5 after:w-full after:bg-full after:bg-center after:bg-no-repeat dark:after:bg-[url('/images/banking/border-dark.svg')]">
+          <ul className=" after:bg-[url(/images/banking/border.svg')] relative after:absolute after:-top-12 after:h-0.5 after:w-full after:bg-full after:bg-center after:bg-no-repeat dark:after:bg-[url('/images/banking/border-dark.svg')] flex-1">
             {price.priceList.map((items, i) => (
               <li className="mb-6 flex items-center gap-3.5" key={i}>
                 <svg
@@ -71,18 +71,20 @@ const PricingCard = ({ price, isAnnual }) => {
             ))}
           </ul>
 
-          {price.featured ? (
-            <Link href="/contact" className="btn w-full py-3 text-center">
-              Get Started Now
-            </Link>
-          ) : (
-            <Link
-              href="/contact"
-              className="btn-outline w-full py-3 text-center dark:bg-transparent"
-            >
-              Boost Your Business
-            </Link>
-          )}
+          <div className="mt-auto">
+            {price.featured ? (
+              <Link href="/contact" className="btn w-full py-3 text-center">
+                Get Started Now
+              </Link>
+            ) : (
+              <Link
+                href="/contact"
+                className="btn-outline w-full py-3 text-center dark:bg-transparent"
+              >
+                Boost Your Business
+              </Link>
+            )}
+          </div>
         </div>
       </div>
     </div>
