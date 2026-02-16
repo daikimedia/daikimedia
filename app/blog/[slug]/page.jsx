@@ -226,7 +226,7 @@ export default async function BlogDetails({ params }) {
             </div>
 
             <div className="blog-details text-center mb-12">
-              <div className="mb-6 flex items-center justify-center gap-x-2">
+              <div className="mb-6 flex items-center justify-around font-bold">
                 <p className="text-lg">
                   <Link href="/author/lukesh-pillai">
                     {blog.author || "Daiki Media"}
