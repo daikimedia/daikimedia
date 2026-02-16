@@ -6,6 +6,7 @@ import PageHero from "@/components/shared/PageHero";
 import ArticleSchema from "@/components/schema/ArticleSchema";
 import FallbackImage from "@/components/shared/FallbackImage";
 import { getCMSImageUrl } from "@/utils/imageUtils";
+import BlogContent from "@/components/blogs/BlogContent";
 import dayjs from "dayjs";
 
 async function getBlogsFromAPI() {
@@ -255,14 +256,15 @@ export default async function BlogDetails({ params }) {
               </div>
             </div>
 
-            <div className="blog-details-body text-center">
+            {/* <div className="blog-details-body text-center">
               <div
                 className="text-gray-700 leading-relaxed mx-auto max-w-4xl prose prose-lg "
                 dangerouslySetInnerHTML={{
                   __html: decodeHtmlEntities(blog.content || ""),
                 }}
               ></div>
-            </div>
+            </div> */}
+            <BlogContent content={blog.content} />
 
             {relatedBlogs.length > 0 && (
               <div className="mt-16">
