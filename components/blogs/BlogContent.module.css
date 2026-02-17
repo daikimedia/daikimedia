@@ -166,11 +166,18 @@
 .wrapper ol {
   margin: 2rem 0 2.5rem;
   padding: 1.5rem 2rem;
-    background: linear-gradient(45deg, #ffffff00 0%, #4a0b0f00 50%, #ea1d2ea1 100%);
   border-radius: 20px;
   border: 1px solid #f0f0f0;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
   text-align: left;
+  background: radial-gradient(
+    140% 80% at bottom center,
+    rgba(234, 29, 46, 0.08) 0%,
+    rgba(234, 29, 46, 0.04) 35%,
+    rgba(234, 29, 46, 0.015) 55%,
+    transparent 70%
+);
+
 }
 
 .wrapper li {
