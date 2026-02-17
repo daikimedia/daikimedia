@@ -213,7 +213,7 @@ export default async function BlogDetails({ params }) {
           subtitle=""
           title={decodeHtmlEntities(blog.title || "Untitled Blog")}
         />
-        <article className="relative pb-150 w-full max-w-4xl mx-auto text-center">
+        <article className="relative pb-150 w-full max-w-4xl mx-auto">
           <div className="container relative">
             <div className="mb-16 overflow-hidden rounded-medium p-2.5 max-md:h-[400px] flex justify-center items-center">
               <FallbackImage
@@ -225,7 +225,7 @@ export default async function BlogDetails({ params }) {
               />
             </div>
 
-            <div className="blog-details text-center mb-12">
+            <div className="blog-details mb-12">
               <div className="mb-6 flex items-center justify-around font-bold">
                 <p className="text-lg">
                   <Link href="/author/lukesh-pillai">

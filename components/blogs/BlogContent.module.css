@@ -125,16 +125,12 @@
 
 /* Regular Paragraphs with subtle hover effect */
 .wrapper p {
-  color: #374151;
+  color: #111827;
   line-height: 1.8;
   margin-bottom: 1.5rem;
   font-size: 1.0625rem;
   transition: all 0.2s ease;
   padding: 0.25rem 0;
-}
-
-.wrapper p:hover {
-  color: #111827;
 }
 
 /* Strong/Bold Tags with Beautiful Background */
@@ -152,13 +148,12 @@
 /* Paragraphs containing strong tags */
 .wrapper p strong {
   font-size: 1.125rem;
-  background: #fff1f1;
+  background: linear-gradient(90deg, #fff5f5, transparent);
   padding: 0.25rem 1rem 0.25rem 1rem;
   border-radius: 30px;
   display: inline-block;
   margin-right: 0.5rem;
   border-left: none;
-  box-shadow: 0 2px 8px rgba(234, 29, 46, 0.1);
 }
 
 /* Lists with alternating background */
@@ -207,7 +202,7 @@
   font-size: 1.5rem;
   position: absolute;
   left: 0;
-  top: -4px;
+  top: 3px;
 }
 
 .wrapper ul ul {
@@ -439,7 +434,7 @@
 }
 
 .wrapper tr:nth-child(even) td {
-  background: #fafafa;
+  background: linear-gradient(90deg, #fff5f5, transparent);
 }
 
 .wrapper tr:last-child td {
@@ -467,7 +462,7 @@
 
 /* Numbered paragraphs (like 1., 2., etc) */
 .wrapper p:has(> strong:only-child) {
-  background: #fafafa;
+  background: linear-gradient(90deg, #fff5f5, transparent);
   padding: 0.5rem 1rem;
   border-radius: 40px;
   display: inline-block;
