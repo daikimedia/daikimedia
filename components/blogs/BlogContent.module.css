@@ -1,16 +1,9 @@
 .wrapper {
   max-width: 75rem;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: 1rem;
   background: #ffffff;
 }
-
-@media (min-width: 768px) {
-  .wrapper {
-    padding: 3rem 2rem;
-  }
-}
-
 /* Typography with Beautiful Background Variations */
 .wrapper h1 {
   font-size: 2.75rem;

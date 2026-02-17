@@ -225,36 +225,22 @@ export default async function BlogDetails({ params }) {
               />
             </div>
 
-            <div className="blog-details mb-12">
-              <div className="mb-6 flex items-center justify-around font-bold">
-                <p className="text-lg">
-                  <Link href="/author/lukesh-pillai">
-                    {blog.author || "Daiki Media"}
-                  </Link>
-                </p>
-
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="5"
-                    height="6"
-                    viewBox="0 0 5 6"
-                    fill="none"
-                  >
-                    <circle
-                      cx="2.5"
-                      cy="3"
-                      r="2.5"
-                      fill="#D8DBD0"
-                      className="dark:fill-[#3B3C39]"
-                    />
-                  </svg>
-                </span>
-                <time dateTime={blog.created_at} className="text-lg">
-                  {getFormattedDate()}
-                </time>
+          <div className="blog-details">
+            <div className="flex items-center justify-center gap-6">
+              <div className="flex items-center gap-2">
+                <span className="text-red-300 text-xl">✦</span>
+                <Link 
+                  href="/author/lukesh-pillai" 
+                  className="text-xl font-bold bg-gradient-to-r from-gray-900 to-red-600 bg-clip-text text-transparent hover:from-red-600 hover:to-gray-900 transition-all duration-300"
+                >
+                  {blog.author || "Daiki Media"}
+                </Link>
               </div>
+              <time dateTime={blog.created_at} className="text-lg text-black-500">
+                {getFormattedDate()}
+              </time>
             </div>
+          </div>
 
             {/* <div className="blog-details-body text-center">
               <div
