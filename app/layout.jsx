@@ -9,6 +9,8 @@ import WebSiteSchema from "@/components/schema/WebSiteSchema";
 import DynamicBreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import ReviewSchema from "@/components/schema/ReviewSchema";
 import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
+
 
 // import Head from "next/head";
 const inter = Inter({
@@ -155,6 +157,7 @@ export default function RootLayout({ children }) {
         <ReviewSchema />
         <OrganizationSchema />
         <WebSiteSchema />
+        <WhatsAppFloat />
       </body>
     </html>
   );
