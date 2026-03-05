@@ -5,6 +5,8 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 });
 
 const nextConfig = {
+  transpilePackages: ['swiper'],
+  
   async rewrites() {
     return [
       {
@@ -37,7 +39,7 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: '/:all*(svg|jpg|jpeg|png|gif|ico|webp|avif|woff|woff2)',
+        source: '/:all*(svg|jpg|jpeg|png|gif|ico|webp)',
         locale: false,
         headers: [
           {
@@ -55,34 +57,13 @@ const nextConfig = {
           },
         ],
       },
-      {
-        source: '/:path*',
-        headers: [
-          {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff',
-          },
-          {
-            key: 'X-Frame-Options',
-            value: 'DENY',
-          },
-        ],
-      },
     ];
   },
 
   images: {
-    formats: ["image/avif", "image/webp"],
+    formats: ["image/webp"],
     minimumCacheTTL: 60,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'cms.daikimedia.com',
-        pathname: '/**',
-      },
-    ],
-    deviceSizes: [640, 750, 828, 1080, 1200],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256],
+    domains: ["cms.daikimedia.com"],
   },
 
   compress: true,
@@ -91,7 +72,6 @@ const nextConfig = {
 
   experimental: {
     optimizeCss: true,
-    optimizePackageImports: ['@/components', '@/utils'],
   },
 };
 
