@@ -5,11 +5,14 @@ import HeroLine1 from "../../../components/icons/HeroLine1";
 import HeroLine2 from "../../../components/icons/HeroLine2";
 import HeroLine3 from "../../../components/icons/HeroLine3";
 import HeroLine4 from "../../../components/icons/HeroLine4";
+
 import {
-  HiOutlineTrophy,
-  HiOutlineChevronRight,
-} from "react-icons/hi2";
-import { FaRegCircleCheck, FaArrowRight, FaStar, FaRegStar } from "react-icons/fa6";
+  Trophy,
+  ChevronRight,
+  CircleCheck,
+  ArrowRight,
+} from "lucide-react";
+
 
 export const metadata = {
   title: "Casino SEO Agency in the USA | DaikiMedia",
@@ -52,7 +55,7 @@ export default function CasinoSEOPage() {
             {/* Left Content */}
             <div className="flex-1">
               <div className="inline-flex items-center gap-2 bg-rose-100 dark:bg-rose-500/10 text-rose-700 dark:text-rose-400 px-4 py-2 rounded-full text-sm font-medium mb-8">
-                <HiOutlineTrophy className="w-4 h-4" />
+                <Trophy className="w-4 h-4" />
                 <span>Casino SEO Specialists</span>
               </div>
 
@@ -81,7 +84,7 @@ export default function CasinoSEOPage() {
                   className="group bg-rose-600 hover:bg-rose-700 dark:bg-rose-600 dark:hover:bg-rose-700 text-white px-8 py-4 rounded-xl font-medium transition-all inline-flex items-center gap-2 shadow-lg shadow-rose-600/20 hover:shadow-xl hover:-translate-y-0.5"
                 >
                   Talk to DaikiMedia About a Casino SEO Strategy Built for Growth
-                  <FaArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
 
@@ -122,10 +125,10 @@ export default function CasinoSEOPage() {
       <div className="border-y border-gray-200 dark:border-gray-800 bg-white dark:bg-dark-200 py-6">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="flex flex-wrap items-center justify-center gap-8 text-sm text-gray-600 dark:text-gray-400">
-            <span className="flex items-center gap-2"><FaRegCircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400" /> Google Partner</span>
-            <span className="flex items-center gap-2"><FaRegCircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400" /> Meta Business Partner</span>
-            <span className="flex items-center gap-2"><FaRegCircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400" /> 5K+ Trusted Businesses</span>
-            <span className="flex items-center gap-2"><FaRegCircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400" /> DesignRush Agency</span>
+            <span className="flex items-center gap-2"><CircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400" /> Google Partner</span>
+            <span className="flex items-center gap-2"><CircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400" /> Meta Business Partner</span>
+            <span className="flex items-center gap-2"><CircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400" /> 5K+ Trusted Businesses</span>
+            <span className="flex items-center gap-2"><CircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400" /> DesignRush Agency</span>
           </div>
         </div>
       </div>
@@ -168,7 +171,7 @@ export default function CasinoSEOPage() {
                     "It is about giving search engines a clear reason to see your website as useful, strong, and worth surfacing"
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                      <FaRegCircleCheck className="w-5 h-5 text-rose-600 dark:text-rose-400 flex-shrink-0" />
+                      <CircleCheck className="w-5 h-5 text-rose-600 dark:text-rose-400 flex-shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -205,7 +208,7 @@ export default function CasinoSEOPage() {
             ].map((item, idx) => (
               <div key={idx} className="bg-white dark:bg-dark-300 p-6 rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
                 <div className="flex items-start gap-3">
-                  <FaRegCircleCheck className="w-5 h-5 text-rose-600 dark:text-rose-400 mt-1 flex-shrink-0" />
+                  <CircleCheck className="w-5 h-5 text-rose-600 dark:text-rose-400 mt-1 flex-shrink-0" />
                   <span className="text-gray-700 dark:text-gray-300">{item}</span>
                 </div>
               </div>
@@ -254,7 +257,7 @@ export default function CasinoSEOPage() {
                   "Generic messaging"
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2">
-                    <FaRegCircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400 flex-shrink-0" />
+                    <CircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400 flex-shrink-0" />
                     <span className="text-sm text-gray-700 dark:text-gray-300">{item}</span>
                   </div>
                 ))}
@@ -294,7 +297,7 @@ export default function CasinoSEOPage() {
               "Topical cluster development"
             ].map((service, idx) => (
               <div key={idx} className="bg-white dark:bg-dark-300 p-6 rounded-xl border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg transition-all flex items-center gap-3">
-                <FaRegCircleCheck className="w-5 h-5 text-rose-600 dark:text-rose-400 flex-shrink-0" />
+                <CircleCheck className="w-5 h-5 text-rose-600 dark:text-rose-400 flex-shrink-0" />
                 <span className="text-gray-700 dark:text-gray-300">{service}</span>
               </div>
             ))}
@@ -315,7 +318,7 @@ export default function CasinoSEOPage() {
               className="inline-flex items-center gap-2 text-rose-600 dark:text-rose-400 font-medium border-b border-rose-200 dark:border-rose-800 hover:border-rose-600 dark:hover:border-rose-400 pb-0.5 transition-colors"
             >
               Looking for a casino SEO agency that understands growth and brand positioning? Speak with DaikiMedia
-              <HiOutlineChevronRight className="w-4 h-4" />
+              <ChevronRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
@@ -354,7 +357,7 @@ export default function CasinoSEOPage() {
                   "Does it match the search intent?"
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 bg-gray-50 dark:bg-dark-200 p-4 rounded-lg border border-gray-200 dark:border-gray-800">
-                    <FaRegCircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400 flex-shrink-0" />
+                    <CircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400 flex-shrink-0" />
                     <span className="text-gray-700 dark:text-gray-300 text-sm">{item}</span>
                   </div>
                 ))}
@@ -479,7 +482,7 @@ export default function CasinoSEOPage() {
                   "Stronger user connection"
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2">
-                    <FaRegCircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400 flex-shrink-0" />
+                    <CircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400 flex-shrink-0" />
                     <span className="text-gray-700 dark:text-gray-300 text-sm">{item}</span>
                   </div>
                 ))}
@@ -561,7 +564,7 @@ export default function CasinoSEOPage() {
                 "Businesses that want branded, conversion-aware SEO content"
               ].map((item, idx) => (
                 <div key={idx} className="flex items-center gap-2 bg-gray-50 dark:bg-dark-200 p-3 rounded-lg">
-                  <FaRegCircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400 flex-shrink-0" />
+                  <CircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400 flex-shrink-0" />
                   <span className="text-gray-700 dark:text-gray-300 text-sm">{item}</span>
                 </div>
               ))}
@@ -617,7 +620,7 @@ export default function CasinoSEOPage() {
               className="inline-flex items-center gap-2 text-rose-600 dark:text-rose-400 font-medium border-b border-rose-200 dark:border-rose-800 hover:border-rose-600 dark:hover:border-rose-400 pb-0.5 transition-colors"
             >
               Want casino SEO that feels smarter, stronger, and more branded? Let's talk
-              <HiOutlineChevronRight className="w-4 h-4" />
+              <ChevronRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
@@ -693,7 +696,7 @@ export default function CasinoSEOPage() {
               className="group bg-rose-600 hover:bg-rose-700 dark:bg-rose-600 dark:hover:bg-rose-700 text-white px-8 py-4 rounded-xl font-medium transition-all inline-flex items-center gap-2 shadow-lg shadow-rose-600/20 hover:shadow-xl hover:-translate-y-0.5"
             >
               Book a Casino SEO Strategy Call with DaikiMedia
-              <FaArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
               href="/contact"

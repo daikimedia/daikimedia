@@ -1,6 +1,6 @@
 import Footer from "@/components/footer/Footer";
 import PageHero from "@/components/shared/PageHero";
-import MembersCounter from "@/components/shared/MembersCounter";
+// import MembersCounter from "@/components/shared/MembersCounter";
 import NewsLetter from "@/components/shared/NewsLetter";
 import CallToAction from "@/components/shared/CallToAction";
 import GoogleCoreUpdateContent from "@/components/google-core-update/GoogleCoreUpdateContent";

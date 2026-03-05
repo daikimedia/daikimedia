@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
-  enabled: process.env.ANALYZE === "true", // Only analyze when explicitly set
+  enabled: process.env.ANALYZE === "true",
 });
 
 const nextConfig = {
@@ -21,7 +21,6 @@ const nextConfig = {
         destination: "/:slug",
         permanent: true,
       },
-      // Handle specific broken URLs that aren't covered by dynamic validation
       {
         source: "/authors",
         destination: "/author/lukesh-pillai",
@@ -35,18 +34,30 @@ const nextConfig = {
     ];
   },
 
+  // ✅ SIMPLE cache headers for static assets
+  async headers() {
+    return [
+      {
+        source: '/_next/static/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+    ];
+  },
+
   images: {
-    formats: ["image/webp"],
+    formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 60,
     domains: ["cms.daikimedia.com"],
   },
 
   compress: true,
-
-  // Move experimental inside nextConfig
-  experimental: {
-    optimizeCss: true, // This requires the critters package
-  },
+  
+  swcMinify: true,
 };
 
 module.exports = withBundleAnalyzer(nextConfig);

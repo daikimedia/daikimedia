@@ -62,8 +62,8 @@ export default function HomePage() {
             <Image
               src="/images/partners.jpeg"
               alt="Google and Meta Partner"
-              width={400}
-              height={300}
+              width={800}
+              height={600}
             />
           </div>
         </div>

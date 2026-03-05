@@ -5,31 +5,28 @@ import HeroLine2 from "../../../components/icons/HeroLine2";
 import HeroLine3 from "../../../components/icons/HeroLine3";
 import HeroLine4 from "../../../components/icons/HeroLine4";
 import {
-  HiOutlineChartBar,
-  HiOutlineShieldCheck,
-  HiOutlineCursorArrowRipple,
-  HiOutlineMapPin,
-  HiOutlineMagnifyingGlass,
-  HiOutlineKey,
-  HiOutlineDocumentText,
-  HiOutlineFlag,
-  HiOutlineLink,
-  HiOutlineRocketLaunch,
-  HiOutlineTrophy,
-  HiOutlineChevronRight,
-  HiOutlineEye,
-  HiOutlineTrendingUp,
-  HiOutlineCog,
-  HiOutlineSparkles,
-  HiOutlineStar,
-  HiOutlineUserGroup,
-  HiOutlineClock,
-  HiOutlineGlobeAlt,
-  HiOutlineLightBulb,
-  HiOutlineAcademicCap,
-  HiOutlineBriefcase,
-} from "react-icons/hi2";
-import { FaRegCircleCheck, FaArrowRight, FaStar, FaRegStar } from "react-icons/fa6";
+  BarChart3,
+  ShieldCheck,
+  MousePointerClick,
+  MapPin,
+  Search,
+  Key,
+  FileText,
+  Flag,
+  Link as LinkIcon,
+  Rocket,
+  Trophy,
+  ChevronRight,
+  Settings,
+  Star,
+  Users,
+  Clock,
+  Globe,
+  Lightbulb,
+  CircleCheck,
+  ArrowRight
+} from "lucide-react";
+
 import Footer from "@/components/footer/Footer";
 
 export const metadata = {
@@ -71,7 +68,7 @@ export default function Page() {
             {/* Left Content - Improved typography */}
             <div className="flex-1">
               <div className="inline-flex items-center gap-2 bg-rose-100 dark:bg-rose-500/10 text-rose-700 dark:text-rose-400 px-4 py-2 rounded-full text-sm font-medium mb-8">
-                <HiOutlineTrophy className="w-4 h-4" />
+                <Trophy className="w-4 h-4" />
                 <span>Trusted by 50+ iGaming Brands</span>
               </div>
 
@@ -100,7 +97,7 @@ export default function Page() {
                   className="group bg-rose-600 hover:bg-rose-700 dark:bg-rose-600 dark:hover:bg-rose-700 text-white px-8 py-4 rounded-xl font-medium transition-all inline-flex items-center gap-2 shadow-lg shadow-rose-600/20 hover:shadow-xl hover:-translate-y-0.5"
                 >
                   Get Your Free SEO Audit
-                  <FaArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link
                   href="/case-studies"
@@ -145,10 +142,10 @@ export default function Page() {
       <div className="border-y border-gray-200 dark:border-gray-800 bg-white dark:bg-dark-200 py-6">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="flex flex-wrap items-center justify-center gap-8 text-sm text-gray-600 dark:text-gray-400">
-            <span className="flex items-center gap-2"><FaRegCircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400" /> Google Partner</span>
-            <span className="flex items-center gap-2"><FaRegCircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400" /> Meta Business Partner</span>
-            <span className="flex items-center gap-2"><FaRegCircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400" /> 5K+ Trusted Businesses</span>
-            <span className="flex items-center gap-2"><FaRegCircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400" /> DesignRush Agency</span>
+            <span className="flex items-center gap-2"><CircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400" /> Google Partner</span>
+            <span className="flex items-center gap-2"><CircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400" /> Meta Business Partner</span>
+            <span className="flex items-center gap-2"><CircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400" /> 5K+ Trusted Businesses</span>
+            <span className="flex items-center gap-2"><CircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400" /> DesignRush Agency</span>
           </div>
         </div>
       </div>
@@ -158,10 +155,10 @@ export default function Page() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { number: "50+", label: "iGaming Clients", icon: HiOutlineUserGroup },
-              { number: "8", label: "Regulated States", icon: HiOutlineFlag },
-              { number: "12", label: "Years Experience", icon: HiOutlineClock },
-              { number: "3.6M", label: "Monthly Impressions", icon: HiOutlineGlobeAlt },
+              { number: "50+", label: "iGaming Clients", icon: Users },
+              { number: "8", label: "Regulated States", icon: Flag },
+              { number: "12", label: "Years Experience", icon: Clock },
+              { number: "3.6M", label: "Monthly Impressions", icon: Globe },
             ].map((stat, idx) => (
               <div key={idx} className="text-center group">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-rose-50 dark:bg-rose-500/10 rounded-2xl mb-4 group-hover:bg-rose-100 dark:group-hover:bg-rose-500/20 transition-colors">
@@ -194,16 +191,16 @@ export default function Page() {
               <p className="text-lg font-semibold text-gray-900 dark:text-white mb-3">That means your SEO strategy needs to do more than bring traffic:</p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                  <FaRegCircleCheck className="w-5 h-5 text-rose-600 dark:text-rose-400" /> It needs to build trust
+                  <CircleCheck className="w-5 h-5 text-rose-600 dark:text-rose-400" /> It needs to build trust
                 </li>
                 <li className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                  <FaRegCircleCheck className="w-5 h-5 text-rose-600 dark:text-rose-400" /> It needs to match intent
+                  <CircleCheck className="w-5 h-5 text-rose-600 dark:text-rose-400" /> It needs to match intent
                 </li>
                 <li className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                  <FaRegCircleCheck className="w-5 h-5 text-rose-600 dark:text-rose-400" /> It needs to work market by market
+                  <CircleCheck className="w-5 h-5 text-rose-600 dark:text-rose-400" /> It needs to work market by market
                 </li>
                 <li className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                  <FaRegCircleCheck className="w-5 h-5 text-rose-600 dark:text-rose-400" /> It needs to support your commercial goals, not just vanity rankings
+                  <CircleCheck className="w-5 h-5 text-rose-600 dark:text-rose-400" /> It needs to support your commercial goals, not just vanity rankings
                 </li>
               </ul>
             </div>
@@ -213,25 +210,25 @@ export default function Page() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
             {[
               {
-                icon: HiOutlineChartBar,
+                icon: BarChart3,
                 title: "Crowded SERPs",
                 description: "Compete with affiliates and review giants. We build authority that cuts through.",
                 color: "from-rose-500 to-amber-600"
               },
               {
-                icon: HiOutlineShieldCheck,
+                icon: ShieldCheck,
                 title: "Trust & Compliance",
                 description: "Pages must build confidence and follow state rules. Our content feels human, not robotic.",
                 color: "from-blue-500 to-indigo-600"
               },
               {
-                icon: HiOutlineLightBulb,
+                icon: Lightbulb,
                 title: "Complex Intent",
                 description: "From 'best bonus' to 'is this safe?' — we map content to real user journeys.",
                 color: "from-purple-500 to-pink-600"
               },
               {
-                icon: HiOutlineMapPin,
+                icon: MapPin,
                 title: "State Nuance",
                 description: "New Jersey is not Michigan. We tailor for each regulated market's search behavior.",
                 color: "from-amber-500 to-orange-600"
@@ -317,13 +314,13 @@ export default function Page() {
 
               <div className="grid grid-cols-2 gap-4 mb-6">
                 {[
-                  { icon: HiOutlineChartBar, text: "Market Competition" },
-                  { icon: HiOutlineMagnifyingGlass, text: "Search Demand" },
-                  { icon: HiOutlineDocumentText, text: "Content Gaps" },
-                  { icon: HiOutlineCog, text: "Technical Blockers" },
-                  { icon: HiOutlineShieldCheck, text: "Trust Signals" },
-                  { icon: HiOutlineMapPin, text: "State Opportunities" },
-                  { icon: HiOutlineCursorArrowRipple, text: "Conversion Paths" },
+                  { icon: BarChart3, text: "Market Competition" },
+                  { icon: Search, text: "Search Demand" },
+                  { icon: FileText, text: "Content Gaps" },
+                  { icon: Settings, text: "Technical Blockers" },
+                  { icon: ShieldCheck, text: "Trust Signals" },
+                  { icon: MapPin, text: "State Opportunities" },
+                  { icon: MousePointerClick, text: "Conversion Paths" },
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-3 bg-white dark:bg-dark-300 p-4 rounded-xl border border-gray-200 dark:border-gray-800">
                     <item.icon className="w-5 h-5 text-rose-600 dark:text-rose-400" />
@@ -381,7 +378,7 @@ export default function Page() {
                   "SEO for new market expansion"
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2">
-                    <FaRegCircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400 flex-shrink-0" />
+                    <CircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400 flex-shrink-0" />
                     <span className="text-gray-700 dark:text-gray-300 text-sm">{item}</span>
                   </div>
                 ))}
@@ -402,7 +399,7 @@ export default function Page() {
               className="inline-flex items-center gap-2 text-rose-600 dark:text-rose-400 font-medium border-b border-rose-200 dark:border-rose-800 hover:border-rose-600 dark:hover:border-rose-400 pb-0.5 transition-colors"
             >
               Need iGaming SEO services built around growth, not guesswork? Let DaikiMedia map your next move
-              <HiOutlineChevronRight className="w-4 h-4" />
+              <ChevronRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
@@ -447,37 +444,37 @@ export default function Page() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                icon: HiOutlineMagnifyingGlass,
+                icon: Search,
                 title: "SEO Audits",
                 description: "Comprehensive technical and content audits to identify opportunities.",
                 items: ["Site architecture", "Indexation issues", "Competitor analysis"]
               },
               {
-                icon: HiOutlineKey,
+                icon: Key,
                 title: "Keyword Strategy",
                 description: "Target high-intent keywords that drive qualified traffic.",
                 items: ["Intent mapping", "State targeting", "Long-tail opportunities"]
               },
               {
-                icon: HiOutlineDocumentText,
+                icon: FileText,
                 title: "Content Strategy",
                 description: "Create content that ranks and converts while staying compliant.",
                 items: ["Topic clusters", "Trust signals", "Local relevance"]
               },
               {
-                icon: HiOutlineLink,
+                icon: LinkIcon,
                 title: "Link Building",
                 description: "Build authority with quality backlinks from trusted sources.",
                 items: ["Digital PR", "Industry partnerships", "Content outreach"]
               },
               {
-                icon: HiOutlineRocketLaunch,
+                icon: Rocket,
                 title: "Technical SEO",
                 description: "Optimize site performance and search accessibility.",
                 items: ["Core Web Vitals", "Mobile optimization", "Schema markup"]
               },
               {
-                icon: HiOutlineFlag,
+                icon: Flag,
                 title: "State SEO",
                 description: "Tailored strategies for each regulated US market.",
                 items: ["Local keywords", "Market research", "Compliance checks"]
@@ -492,7 +489,7 @@ export default function Page() {
                 <ul className="space-y-2">
                   {service.items.map((item, i) => (
                     <li key={i} className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-500">
-                      <FaRegCircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400 flex-shrink-0" />
+                      <CircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400 flex-shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -607,7 +604,7 @@ export default function Page() {
                   "Better CTA placement"
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2">
-                    <FaRegCircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400 flex-shrink-0" />
+                    <CircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400 flex-shrink-0" />
                     <span className="text-gray-700 dark:text-gray-300">{item}</span>
                   </div>
                 ))}
@@ -653,7 +650,7 @@ export default function Page() {
             ].map((item, idx) => (
               <div key={idx} className="bg-gray-50 dark:bg-dark-200 p-6 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-rose-200 dark:hover:border-rose-800 transition-all">
                 <div className="flex items-start gap-3">
-                  <FaRegCircleCheck className="w-5 h-5 text-rose-600 dark:text-rose-400 mt-1 flex-shrink-0" />
+                  <CircleCheck className="w-5 h-5 text-rose-600 dark:text-rose-400 mt-1 flex-shrink-0" />
                   <span className="text-gray-700 dark:text-gray-300">{item}</span>
                 </div>
               </div>
@@ -701,10 +698,10 @@ export default function Page() {
               </div>
               <div className="flex-1">
                 {[
-                  { icon: HiOutlineStar, title: "Proven iGaming Experts", desc: "12+ years of experience" },
-                  { icon: HiOutlineCog, title: "Custom Strategies", desc: "Tailored to your market" },
-                  { icon: HiOutlineShieldCheck, title: "White-Hat Practices", desc: "Sustainable approach" },
-                  { icon: HiOutlineChartBar, title: "Data-Driven Results", desc: "Measurable growth" },
+                  { icon: Star, title: "Proven iGaming Experts", desc: "12+ years of experience" },
+                  { icon: Settings, title: "Custom Strategies", desc: "Tailored to your market" },
+                  { icon: ShieldCheck, title: "White-Hat Practices", desc: "Sustainable approach" },
+                  { icon: BarChart3, title: "Data-Driven Results", desc: "Measurable growth" },
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3 bg-white dark:bg-dark-300 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-800 mb-4">
                     <div className="w-10 h-10 bg-rose-100 dark:bg-rose-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -739,7 +736,7 @@ export default function Page() {
                 "Gaming businesses needing organic growth"
               ].map((item, idx) => (
                 <div key={idx} className="flex items-center gap-2 bg-gray-50 dark:bg-dark-200 p-3 rounded-lg">
-                  <FaRegCircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400 flex-shrink-0" />
+                  <CircleCheck className="w-4 h-4 text-rose-600 dark:text-rose-400 flex-shrink-0" />
                   <span className="text-gray-700 dark:text-gray-300 text-sm">{item}</span>
                 </div>
               ))}
@@ -774,7 +771,7 @@ export default function Page() {
               ].map((item, idx) => (
                 <div key={idx} className="bg-white dark:bg-dark-300 p-6 rounded-xl shadow-sm border border-gray-200 dark:border-gray-800 hover:border-rose-200 dark:hover:border-rose-800 transition-all">
                   <div className="flex items-center gap-3">
-                    <HiOutlineRocketLaunch className="w-6 h-6 text-rose-600 dark:text-rose-400" />
+                    <Rocket className="w-6 h-6 text-rose-600 dark:text-rose-400" />
                     <span className="text-gray-800 dark:text-gray-200 font-medium">{item}</span>
                   </div>
                 </div>
@@ -846,7 +843,7 @@ export default function Page() {
               className="group bg-rose-600 hover:bg-rose-700 dark:bg-rose-600 dark:hover:bg-rose-700 text-white px-8 py-4 rounded-xl font-medium transition-all inline-flex items-center gap-2 shadow-lg shadow-rose-600/20 hover:shadow-xl hover:-translate-y-0.5"
             >
               Speak with DaikiMedia about iGaming SEO
-              <FaArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
               href="/contact"
@@ -870,7 +867,7 @@ export default function Page() {
             className="group inline-flex items-center gap-3 bg-white text-rose-600 px-10 py-5 rounded-xl font-semibold text-lg hover:bg-gray-50 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1"
           >
             Get Your Free Audit
-            <FaArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
       </section>
