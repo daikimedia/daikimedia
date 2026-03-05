@@ -7,7 +7,7 @@ const Testimonial = () => {
   const { TestimonialData } = TestimonialList;
   return (
     <section className="relative bg-white pb-150 pt-150 dark:bg-dark-300 max-md:py-20">
-      <div className="absolute left-0 right-0 top-1/2 h-full w-full -translate-y-1/2 bg-[url('/images/service-bg.png')] bg-center bg-no-repeat opacity-70  md:hidden"></div>
+      <div className="absolute left-0 right-0 top-1/2 h-full w-full -translate-y-1/2 bg-[url('/images/service-bg.webp')] bg-center bg-no-repeat opacity-70  md:hidden"></div>
       <div className="container relative">
         <div className="mx-auto mb-16 max-w-[550px] text-center">
           <p className="section-tagline">Testimonials</p>

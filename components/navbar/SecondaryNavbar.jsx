@@ -1,6 +1,7 @@
 "use client";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import SearchOption from "./SearchOption";
@@ -40,14 +41,14 @@ const SecondaryNavbar = ({ hideTopBar = false }) => {
         <nav className="container relative flex items-center">
           <div className="nav-logo">
             <Link href="/">
-              <img
+              <Image
                 src="/images/logo.png"
                 alt="logo"
                 className="dark:hidden"
                 width={70}
                 height={29}
               />
-              <img
+              <Image
                 src="/images/logo.png"
                 alt="logo dark version"
                 className="hidden dark:inline-block"

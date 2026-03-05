@@ -1,6 +1,7 @@
 "use client";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import SearchOption from "./SearchOption";
@@ -34,14 +35,14 @@ const PrimaryNavbar = () => {
         <nav className="container dark:text-white relative flex items-center">
           <div className="nav-logo xl:min-w-[150px]">
             <Link href="/">
-              <img
+              <Image
                 src="/images/logo.png"
                 alt="logo"
                 className="dark:hidden"
                 width={120}
                 height={100}
               />
-              <img
+              <Image
                 src="/images/logo.png"
                 alt="logo dark version"
                 className="hidden dark:inline-block"

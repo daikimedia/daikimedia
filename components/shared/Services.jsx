@@ -19,7 +19,7 @@ const Services = ({
   
   return (
     <section className="relative bg-white pb-150 dark:bg-dark-300 sm:overflow-hidden">
-      <div className="absolute left-0 right-0 top-25 h-full w-full bg-[url('/images/service-bg.png')] bg-cover bg-center bg-no-repeat opacity-70 sm:hidden"></div>
+      <div className="absolute left-0 right-0 top-25 h-full w-full bg-[url('/images/service-bg.webp')] bg-cover bg-center bg-no-repeat opacity-70 sm:hidden"></div>
       <div className="container">
         {sectionDetails && (
           <div className="mb-12">

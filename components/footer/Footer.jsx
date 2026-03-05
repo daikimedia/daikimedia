@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container">
         <div className="mb-20 grid grid-cols-12 max-lg:gap-y-10 max-lg:text-center gap-4">
           <div className="col-span-12 lg:col-span-6">
-            <img
+            <Image
               src="/images/logo.png"
               alt="logo dark version"
               className="mb-10"

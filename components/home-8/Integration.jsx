@@ -7,7 +7,7 @@ const Integration = () => {
   const { IntegrationData } = Integrationist
   return (
     <section className="relative bg-white dark:bg-dark-300 max-lg:overflow-hidden max-md:overflow-hidden">
-      <div className="absolute left-0 right-0 top-25 h-full w-full bg-[url('/images/service-bg.png')] bg-cover bg-center bg-no-repeat opacity-70  sm:hidden"></div>
+      <div className="absolute left-0 right-0 top-25 h-full w-full bg-[url('/images/service-bg.webp')] bg-cover bg-center bg-no-repeat opacity-70  sm:hidden"></div>
       <div className="container ">
         <div className="mb-12">
           <p className="section-tagline max-lg:text-center">Top Integration</p>

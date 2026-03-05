@@ -4,6 +4,7 @@ import { cn } from "@/utils/cn";
 import { faAngleDown, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const SecondaryMobileNavbar = () => {
@@ -62,14 +63,18 @@ const SecondaryMobileNavbar = () => {
         {/* Header - Fixed */}
         <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 h-20">
           <div className="flex items-center">
-            <img
+            <Image
               src="/images/logo.png"
               alt="DAIKI MEDIA"
+              width={160}
+              height={130}
               className="h-8 w-auto dark:hidden"
-            />
-            <img
+              />
+            <Image
               src="/images/logo.png"
               alt="DAIKI MEDIA dark version"
+              width={160}
+              height={130}
               className="hidden h-8 w-auto dark:block"
             />
             <span className="ml-2 text-lg font-bold text-gray-900 dark:text-white">

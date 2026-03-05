@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 export default function WhatsAppFloat() {
   return (
@@ -24,7 +25,7 @@ export default function WhatsAppFloat() {
         e.currentTarget.style.transform = 'scale(1)';
       }}
     >
-      <img
+      <Image
         src="/images/whatsapp.jpg"
         alt="WhatsApp"
         width={48}

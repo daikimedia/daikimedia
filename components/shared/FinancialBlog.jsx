@@ -36,7 +36,7 @@ const FinancialBlog = ({ className = "dark:bg-dark pb-150 pt-150" }) => {
 
   return (
     <section className={cn("relative bg-white max-md:pb-20", className)}>
-      <div className="absolute left-0 right-0 top-1/2 h-full w-full -translate-y-1/2 bg-[url('/images/service-bg.png')] bg-[length:600px_1800px] bg-center bg-no-repeat opacity-70 md:hidden"></div>
+      <div className="absolute left-0 right-0 top-1/2 h-full w-full -translate-y-1/2 bg-[url('/images/service-bg.webp')] bg-[length:600px_1800px] bg-center bg-no-repeat opacity-70 md:hidden"></div>
       <div className="container relative">
         <div className="mx-auto mb-16 max-w-[550px] text-center">
           <h2>Latest News and Expert Insights</h2>

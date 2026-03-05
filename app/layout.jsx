@@ -12,19 +12,21 @@ import PrimaryNavbar from "@/components/navbar/PrimaryNavbar";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const inter = Inter({
-  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700"],
   style: ["normal"],
   subsets: ["latin"],
   display: "swap",
   variable: "--font-inter",
   preload: true,
+  fallback: ['system-ui', 'arial'],
 });
 const jakarta_sans = Plus_Jakarta_Sans({
-  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700"],
   style: ["normal"],
   subsets: ["latin"],
   display: "swap",
   variable: "--font-jakarta_sans",
+  preload: false,
 });
 const playfair = Playfair_Display({
   weight: ["600"],
@@ -32,6 +34,7 @@ const playfair = Playfair_Display({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-playfair",
+  preload: false, 
 });
 
 export const metadata = {
@@ -51,6 +54,16 @@ export default function RootLayout({ children }) {
         
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.clarity.ms" />
+        <link rel="preconnect" href="https://connect.facebook.net" />
+        
+        {/* ✅ ADDED: Preload critical font */}
+        <link
+          rel="preload"
+          href={inter.style.fontFamily}
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
         
         <link
           rel="preload"
@@ -101,6 +114,7 @@ export default function RootLayout({ children }) {
         <WebSiteSchema />
         <WhatsAppFloat />
         
+        {/* Google Tag Manager */}
         <Script id="google-tag-manager" strategy="lazyOnload">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -111,6 +125,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
         
+        {/* Microsoft Clarity */}
         <Script
           id="microsoft-clarity"
           strategy="lazyOnload"
@@ -123,6 +138,7 @@ export default function RootLayout({ children }) {
           }}
         />
 
+        {/* Organization Schema */}
         <Script
           id="organization-schema"
           type="application/ld+json"
@@ -152,7 +168,6 @@ export default function RootLayout({ children }) {
           }}
         />
         
-
         <Script
           id="facebook-pixel"
           strategy="lazyOnload"
@@ -174,6 +189,8 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+        
+        
       </body>
     </html>
   );
