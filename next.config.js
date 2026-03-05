@@ -1,12 +1,10 @@
 /** @type {import('next').NextConfig} */
 
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
-  enabled: process.env.ANALYZE === "true",
+  enabled: process.env.ANALYZE === "true", // Only analyze when explicitly set
 });
 
 const nextConfig = {
-  transpilePackages: ['swiper'],
-  
   async rewrites() {
     return [
       {
@@ -23,6 +21,7 @@ const nextConfig = {
         destination: "/:slug",
         permanent: true,
       },
+      // Handle specific broken URLs that aren't covered by dynamic validation
       {
         source: "/authors",
         destination: "/author/lukesh-pillai",
@@ -36,30 +35,6 @@ const nextConfig = {
     ];
   },
 
-  async headers() {
-    return [
-      {
-        source: '/:all*(svg|jpg|jpeg|png|gif|ico|webp)',
-        locale: false,
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          }
-        ],
-      },
-      {
-        source: '/_next/static/:path*',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
-        ],
-      },
-    ];
-  },
-
   images: {
     formats: ["image/webp"],
     minimumCacheTTL: 60,
@@ -67,11 +42,10 @@ const nextConfig = {
   },
 
   compress: true,
-  poweredByHeader: false,
-  reactStrictMode: true,
 
+  // Move experimental inside nextConfig
   experimental: {
-    optimizeCss: true,
+    optimizeCss: true, // This requires the critters package
   },
 };
 
