@@ -62,6 +62,7 @@ export const HeroContactForm = () => {
             value={formData.need}
             onChange={(e) => setFormData({ ...formData, need: e.target.value })}
             className="block w-full rounded-[48px] border border-borderColor bg-white px-5 py-2.5 pr-10 text-sm text-paragraph-light outline-none transition-all duration-300 placeholder:text-paragraph-light focus:border-primary dark:border-borderColor-dark dark:bg-dark-200 dark:placeholder:text-paragraph-light dark:focus:border-primary appearance-none"
+            aria-label="Select your business need"
           >
             {needs.map((need) => (
               <option key={need} value={need}>
@@ -83,6 +84,7 @@ export const HeroContactForm = () => {
               setFormData({ ...formData, email: e.target.value })
             }
             className="block w-full rounded-[48px] border border-borderColor bg-white px-5 py-2.5 text-sm text-paragraph-light outline-none transition-all duration-300 placeholder:text-paragraph-light focus:border-primary dark:border-borderColor-dark dark:bg-dark-200 dark:placeholder:text-paragraph-light dark:focus:border-primary"
+            aria-label="Enter your email address"
             required
           />
         </div>
@@ -98,6 +100,7 @@ export const HeroContactForm = () => {
             className="block w-full rounded-[48px] border border-borderColor bg-white px-5 py-2.5 text-sm text-paragraph-light outline-none transition-all duration-300 placeholder:text-paragraph-light focus:border-primary dark:border-borderColor-dark dark:bg-dark-200 dark:placeholder:text-paragraph-light dark:focus:border-primary"
             min="0"
             step="100"
+            aria-label="Enter your monthly budget in USD"
             required
           />
         </div>

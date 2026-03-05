@@ -26,6 +26,8 @@ const SecondaryMobileNavbar = () => {
       {/* Mobile Menu Button */}
       <button
         className="mobile-menu-button relative h-10 w-10 rounded-full bg-white outline-none dark:bg-dark-200 lg:hidden"
+        aria-label="Open menu"
+        title="Open menu"
         onClick={() => setShowMobileMenu(!showMobileMenu)}
       >
         <svg
@@ -83,6 +85,8 @@ const SecondaryMobileNavbar = () => {
           </div>
           <button
             className="p-2 rounded-full bg-white dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors shadow-sm"
+            aria-label="close menu"
+            title="close menu"
             onClick={closeMobileMenu}
           >
             <FontAwesomeIcon

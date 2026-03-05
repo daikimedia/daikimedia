@@ -74,26 +74,31 @@ export const FooterData = {
       id: 1,
       name: <Facebook />,
       link: "https://www.facebook.com/daikimedia.malaysia",
+       ariaLabel: "Visit our Facebook page",
     },
     {
       id: 2,
       name: <Twitter />,
       link: "https://x.com/daikimedia",
+       ariaLabel: "Follow us on X (Twitter)", 
     },
     {
       id: 3,
       name: <Linkedin />,
       link: "https://www.linkedin.com/company/daikimedia/",
+      ariaLabel: "Connect with us on LinkedIn",
     },
     {
       id: 4,
       name: <Instagram />,
       link: "https://www.instagram.com/daikimedia/",
+      ariaLabel: "Follow us on Instagram",
     },
     {
       id: 5,
       name: <FaTelegramPlane />, 
       link: "https://t.me/daikimedia",
+       ariaLabel: "Join our Telegram channel",
     }
      
   ],

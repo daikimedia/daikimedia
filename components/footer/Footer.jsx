@@ -72,7 +72,10 @@ const Footer = () => {
             <ul className="social-link flex items-center gap-4 max-lg:justify-center">
               {FooterData.socialLinks.map((items) => (
                 <li key={items.id}>
-                  <Link href={items.link} className="transition-all">
+                  <Link href={items.link} 
+                    className="transition-all"
+                    aria-label={items.ariaLabel}
+                    target="_blank">
                     {items.name}
                   </Link>
                 </li>
