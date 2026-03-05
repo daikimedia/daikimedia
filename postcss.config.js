@@ -1,10 +1,3 @@
-// module.exports = {
-//   plugins: {
-//     tailwindcss: {},
-//     autoprefixer: {},
-//   },
-// }
-// postcss.config.js
 module.exports = {
   plugins: {
     'tailwindcss/nesting': {},
@@ -17,6 +10,8 @@ module.exports = {
               discardComments: { removeAll: true },
               normalizeWhitespace: true,
               minifyFontValues: { removeQuotes: true },
+              mergeLonghand: true,
+              mergeRules: true,
             }],
           },
         }
