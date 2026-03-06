@@ -61,9 +61,14 @@ const nextConfig = {
   },
 
   images: {
-    formats: ["image/webp"],
+    formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 60,
-    domains: ["cms.daikimedia.com"],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cms.daikimedia.com',
+      },
+    ],
     deviceSizes: [640, 750, 828, 1080, 1200],
     imageSizes: [16, 32, 48, 64, 96, 128, 256],
   },
@@ -71,10 +76,10 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   reactStrictMode: true,
-  swcMinify: true,
 
   experimental: {
     optimizeCss: true,
+    optimisticClientCache: true,
   },
 };
 

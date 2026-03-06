@@ -1,34 +1,9 @@
 "use client";
-import { useEffect, useState } from "react";
 import Image from "next/image";
 
-const useIsMobile = (breakpoint = 768) => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    // Use matchMedia for zero performance impact
-    const mediaQuery = window.matchMedia(`(max-width: ${breakpoint}px)`);
-    setIsMobile(mediaQuery.matches);
-    
-    const handler = (e) => setIsMobile(e.matches);
-    mediaQuery.addEventListener("change", handler);
-    return () => mediaQuery.removeEventListener("change", handler);
-  }, [breakpoint]);
-
-  return isMobile;
-};
-
 const HeroContent = () => {
-  const isMobile = useIsMobile();
-  
-  // Single image - no conditional rendering that causes reflows
-  const imageSrc = isMobile 
-    ? "/images/hero/testimg-mobile.avif"
-    : "/images/hero/testimg.avif";
-  
   return (
     <section className="relative z-10 grid grid-cols-12 items-center max-lg:gap-y-10">
-      {/* Text content - no animations, just static HTML */}
       <div className="col-span-12 md:col-span-6">
         <p className="mb-8 font-medium uppercase max-lg:mb-4">
           5k+ Trusted Businesses
@@ -55,23 +30,21 @@ const HeroContent = () => {
         </a>
       </div>
 
-      {/* Image - CRITICAL for LCP, NO wrappers, NO animations */}
-      <div className="col-span-12 md:col-span-6 flex items-center justify-center">
+      <div className="col-span-12 md:col-span-6 hidden md:flex items-center justify-center">
         <div className="relative w-full h-auto">
           <Image
-            src={imageSrc}
+            src="/images/hero/testimg-mobile.avif"
             alt="Illustration representing SEO and digital marketing growth"
-            width={isMobile ? 375 : 600}
-            height={isMobile ? 500 : 800}
+            width={600}
+            height={800}
             priority
             fetchPriority="high"
-            sizes="(max-width: 768px) 100vw, 50vw"
+            sizes="50vw"
             quality={75}
             className="rounded-2xl object-cover"
             style={{
               maxWidth: '100%',
               height: 'auto',
-              aspectRatio: isMobile ? '375/500' : '600/800'
             }}
           />
         </div>
